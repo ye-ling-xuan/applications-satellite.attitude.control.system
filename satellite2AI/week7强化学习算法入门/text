@@ -1,0 +1,18 @@
+第7周：强化学习算法入门
+7.1 常见算法简介
+PPO (Proximal Policy Optimization)：稳定、易用，适合连续动作空间。是Stable-Baselines3中推荐的首选。
+
+DDPG (Deep Deterministic Policy Gradient)：适合连续动作，但对超参数敏感。
+
+SAC (Soft Actor-Critic)：更先进，样本效率高，但稍复杂。
+
+本教程将使用 PPO，因为它对初学者友好。
+
+7.2 用PPO训练CartPole
+
+你的任务：
+
+运行代码，观察训练过程（会显示ep_len_mean等指标）。
+
+在TensorBoard中查看学习曲线：在终端运行 tensorboard --logdir ./cartpole_tensorboard，然后访问 http://localhost:6006。
+
