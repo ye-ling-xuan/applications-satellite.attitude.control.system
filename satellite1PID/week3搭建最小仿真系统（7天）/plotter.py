@@ -1,3 +1,5 @@
+#这个函数用于将仿真引擎返回的数据（时间、角度、角速度、力矩）绘制成三个垂直排列的子图
+#直观展示控制系统的动态响应。
 import matplotlib.pyplot as plt
 
 def plot_results(data):
