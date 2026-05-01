@@ -53,6 +53,7 @@ J(\pi) = \mathbb{E}_\pi \left[ \sum_{t=0}^{\infty} \gamma^t r_t \right]
   A^\pi(s, a) = Q^\pi(s, a) - V^\pi(s)
   \]
 
+
 ## 4. 演员-评论家 (Actor-Critic) 方法
 
 本项目使用一类统一框架：**Actor-Critic**。
