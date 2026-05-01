@@ -82,7 +82,7 @@ class Satellite:
 
     def set_initial_omega(self, omega_deg_s):
         """设置初始角速度，输入为 [ωx, ωy, ωz] 度/秒"""
-        self.omega = np.radians(omega_deg_s)
+        self.omega = np.radians(omega_deg_s)  #把角度转化为弧度
 
     def dynamics(self, torque):
         """
