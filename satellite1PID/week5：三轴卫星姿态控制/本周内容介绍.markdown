@@ -1,0 +1,15 @@
+# 三轴卫星姿态控制
+真实卫星是运行在三维空间中的刚体，三个旋转轴之间存在耦合（陀螺力矩），单轴模型无法体现这种特性。
+
+## 下面介绍本周内容中一些常用函数的含义
+### 1.quaternion 代表四元数
+### 2.euler 代表欧拉角
+### 3.quat_normalize(q) 代表归一化四元数（变为单位四元数）
+### 4.quat_conjugate(q) 代表求返回四元数的共轭（和四元数的逆等价）
+### 5.quat_multiply(q1, q2) 代表进行四元数乘法
+### 6.np.cross(...) 是计算向量叉乘（Cross Product） 的函数
+### 7.@ 是 NumPy 中的矩阵乘法运算符
+
+## 下面解释曲线成因：
+### https://www.doubao.com/thread/w383261c8f240c1dd
+![alt text](image.png)
