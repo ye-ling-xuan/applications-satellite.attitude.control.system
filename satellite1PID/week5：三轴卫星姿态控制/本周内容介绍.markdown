@@ -12,4 +12,4 @@
 
 ## 下面解释曲线成因：
 ### https://www.doubao.com/thread/w383261c8f240c1dd
-![alt text](image.png)
+![alt text](曲线解释和曲线成因.png)
