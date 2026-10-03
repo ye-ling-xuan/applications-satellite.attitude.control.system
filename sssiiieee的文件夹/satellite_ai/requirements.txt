@@ -1,0 +1,8 @@
+# satellite_ai 依赖（已在 sssiiieee的文件夹/venv 中安装验证通过）
+# 复现方式：python -m pip install -r requirements.txt
+numpy==2.5.3
+torch==2.14.1
+gymnasium==1.3.0
+stable-baselines3==2.9.0
+matplotlib==3.11.2
+tensorboard==2.21.0
