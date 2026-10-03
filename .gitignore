@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# 虚拟环境（venv 自带 .gitignore，此处再加保险）
+venv/
+.venv/
+
+# TensorBoard 训练曲线（可重新生成）
+**/output/tensorboard/
+
+# 训练日志（可重新生成）
+**/output/*.txt
