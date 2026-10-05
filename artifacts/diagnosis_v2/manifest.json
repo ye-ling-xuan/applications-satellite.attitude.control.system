@@ -1,0 +1,24 @@
+{
+  "archived_effective_torque_cap_nm": 1.5231883119115297,
+  "archived_model_sha256": "648ccac8aae01af41b5c146d5b81b8046bbefb5ef68780f8f381f24b80bee74f",
+  "archived_env_sha256": "09b6f2ad16d55a62b52bfccf931c934d79062fa6f22391d21dc9a7d73f2e07d3",
+  "note": "Reproduction/diagnostic cases, not an untouched final test set. Cost uses the same normalized quadratic definition; episode_return follows each original environment and is not comparable across reward definitions.",
+  "provenance": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "source_sha256": {
+      "__init__.py": "3edd659668e22b1c9163829a291747a577f622f4fafdb0934fac6a4e13b7e190",
+      "config.py": "4e1bf3e32b4e13cd9e27287079941db0f36302baceec6e1535dc7db06eb587db",
+      "controllers.py": "f7b11a951df65072b16fd89aa27eded0a93b735ac91084440c4b4b6155a486b0",
+      "core.py": "f38513330549810c479a91c43713e83cdb9fb1438ab753cd60ff7cb3a36df920",
+      "diagnose.py": "f9c759e028049751403cc03cbbd8bc0db46de082c7f9c5462dc6daebdda65938",
+      "env.py": "b59243f55be7a946b06d86c0bd015f74f450171a65aaccbfdd50575ed47bd86d",
+      "evaluate.py": "88ff400c05f36fd1c5a3265de50a2a501f0d7d1c52c75bf857f63d852422ff41",
+      "experiments.py": "5afae6b047fd8e0310bea6833c8876ee7fa8dd842e3dc47ac0da0f1b6153656e",
+      "metrics.py": "c5d74c29251a45d1f7ac1433d641d332ea650ddfac0f7a3fd5b27dabd726e29c",
+      "simulation.py": "746e507ed86e5f7cd10afb6bbd5161660e453447bf2ce2aa0c8790e4121a60dd",
+      "train.py": "4d4d243bacb2f6b9c9bdeab78360428e3ad977b7c3d3c7c1c10ce4ca8268ce97",
+      "tune.py": "6bbd90145da6b82eed1d536b04feca152a034089223f6a820676f05db7fa189b"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "controller": "PD_same_torque_cap",
+    "group": "all",
+    "episodes": 6,
+    "success_rate": 1.0,
+    "failure_rate": 0.0,
+    "mean_settling_time_success_only_s": 3.9066666666666667,
+    "mean_overshoot_deg": 2.704022960932735,
+    "mean_tail_mean_abs_error_deg": 1.5491985582150494e-05,
+    "mean_torque_effort_nm2_s": 1.436990282901356,
+    "mean_cost_integral": 0.6376642732996766
+  },
+  {
+    "controller": "PD_same_torque_cap",
+    "group": "nominal",
+    "episodes": 6,
+    "success_rate": 1.0,
+    "failure_rate": 0.0,
+    "mean_settling_time_success_only_s": 3.9066666666666667,
+    "mean_overshoot_deg": 2.704022960932735,
+    "mean_tail_mean_abs_error_deg": 1.5491985582150494e-05,
+    "mean_torque_effort_nm2_s": 1.436990282901356,
+    "mean_cost_integral": 0.6376642732996766
+  },
+  {
+    "controller": "archived_PPO_exact_dynamics",
+    "group": "all",
+    "episodes": 6,
+    "success_rate": 1.0,
+    "failure_rate": 0.0,
+    "mean_settling_time_success_only_s": 2.2866666666666666,
+    "mean_overshoot_deg": 2.3845397480253094,
+    "mean_tail_mean_abs_error_deg": 0.22878899697339292,
+    "mean_torque_effort_nm2_s": 2.368362328484146,
+    "mean_cost_integral": 0.6405608585990857
+  },
+  {
+    "controller": "archived_PPO_exact_dynamics",
+    "group": "nominal",
+    "episodes": 6,
+    "success_rate": 1.0,
+    "failure_rate": 0.0,
+    "mean_settling_time_success_only_s": 2.2866666666666666,
+    "mean_overshoot_deg": 2.3845397480253094,
+    "mean_tail_mean_abs_error_deg": 0.22878899697339292,
+    "mean_torque_effort_nm2_s": 2.368362328484146,
+    "mean_cost_integral": 0.6405608585990857
+  },
+  {
+    "controller": "archived_PPO_original_dynamics",
+    "group": "all",
+    "episodes": 6,
+    "success_rate": 1.0,
+    "failure_rate": 0.0,
+    "mean_settling_time_success_only_s": 2.3233333333333337,
+    "mean_overshoot_deg": 2.0405320189669625,
+    "mean_tail_mean_abs_error_deg": 0.22878899636904249,
+    "mean_torque_effort_nm2_s": 2.304285102636768,
+    "mean_cost_integral": 0.6282466780298868
+  },
+  {
+    "controller": "archived_PPO_original_dynamics",
+    "group": "nominal",
+    "episodes": 6,
+    "success_rate": 1.0,
+    "failure_rate": 0.0,
+    "mean_settling_time_success_only_s": 2.3233333333333337,
+    "mean_overshoot_deg": 2.0405320189669625,
+    "mean_tail_mean_abs_error_deg": 0.22878899636904249,
+    "mean_torque_effort_nm2_s": 2.304285102636768,
+    "mean_cost_integral": 0.6282466780298868
+  }
+]

@@ -1,0 +1,437 @@
+{
+  "seed": 101,
+  "selection": "minimum mean validation cost",
+  "pd_config": {
+    "dt": 0.02,
+    "duration": 10.0,
+    "inertia": 1.0,
+    "max_torque": 2.0,
+    "residual_limit": 0.5,
+    "target_deg": 0.0,
+    "failure_angle_deg": 90.0,
+    "angle_tolerance_deg": 1.0,
+    "rate_tolerance_deg_s": 0.2,
+    "hold_seconds": 1.0,
+    "kp": 6.0,
+    "kd": 3.0,
+    "ki": 0.0,
+    "angle_scale_deg": 40.0,
+    "rate_scale_deg_s": 50.0,
+    "rate_weight": 0.1,
+    "torque_weight": 0.02,
+    "slew_weight": 0.005
+  },
+  "pid_config": {
+    "dt": 0.02,
+    "duration": 10.0,
+    "inertia": 1.0,
+    "max_torque": 2.0,
+    "residual_limit": 0.5,
+    "target_deg": 0.0,
+    "failure_angle_deg": 90.0,
+    "angle_tolerance_deg": 1.0,
+    "rate_tolerance_deg_s": 0.2,
+    "hold_seconds": 1.0,
+    "kp": 6.0,
+    "kd": 3.0,
+    "ki": 0.1,
+    "angle_scale_deg": 40.0,
+    "rate_scale_deg_s": 50.0,
+    "rate_weight": 0.1,
+    "torque_weight": 0.02,
+    "slew_weight": 0.005
+  },
+  "validation_scenarios": [
+    {
+      "name": "validation_0",
+      "angle_deg": 53.22390067326647,
+      "rate_deg_s": -2.8115793331685364,
+      "inertia": 0.7,
+      "bias_torque": -0.03,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 101
+    },
+    {
+      "name": "validation_1",
+      "angle_deg": 34.176649436397255,
+      "rate_deg_s": 1.8255637045882356,
+      "inertia": 1.0,
+      "bias_torque": 0.0,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 102
+    },
+    {
+      "name": "validation_2",
+      "angle_deg": -24.680572656368618,
+      "rate_deg_s": 8.454513728458288,
+      "inertia": 1.3,
+      "bias_torque": 0.03,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 103
+    },
+    {
+      "name": "validation_3",
+      "angle_deg": 44.31978536142833,
+      "rate_deg_s": -2.7172314741895427,
+      "inertia": 0.7,
+      "bias_torque": -0.03,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 104
+    },
+    {
+      "name": "validation_4",
+      "angle_deg": 56.78121775594728,
+      "rate_deg_s": -5.509513385297375,
+      "inertia": 1.0,
+      "bias_torque": 0.0,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 105
+    },
+    {
+      "name": "validation_5",
+      "angle_deg": 36.65950415137465,
+      "rate_deg_s": 3.6179246256168813,
+      "inertia": 1.3,
+      "bias_torque": 0.03,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 106
+    },
+    {
+      "name": "validation_6",
+      "angle_deg": -3.4727374529160073,
+      "rate_deg_s": -9.383890588979806,
+      "inertia": 0.7,
+      "bias_torque": -0.03,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 107
+    },
+    {
+      "name": "validation_7",
+      "angle_deg": 47.37578436993563,
+      "rate_deg_s": 1.472650476293495,
+      "inertia": 1.0,
+      "bias_torque": 0.0,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 108
+    },
+    {
+      "name": "validation_8",
+      "angle_deg": -13.163009081618718,
+      "rate_deg_s": -2.9064192557019393,
+      "inertia": 1.3,
+      "bias_torque": 0.03,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 109
+    },
+    {
+      "name": "validation_9",
+      "angle_deg": 18.236762335248613,
+      "rate_deg_s": -3.0594315077464813,
+      "inertia": 0.7,
+      "bias_torque": -0.03,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 110
+    },
+    {
+      "name": "validation_10",
+      "angle_deg": 0.9095889779003983,
+      "rate_deg_s": -2.5812859457937787,
+      "inertia": 1.0,
+      "bias_torque": 0.0,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 111
+    },
+    {
+      "name": "validation_11",
+      "angle_deg": -53.375657526334784,
+      "rate_deg_s": -4.991815993405993,
+      "inertia": 1.3,
+      "bias_torque": 0.03,
+      "pulse_torque": 0.0,
+      "noise_std": 0.0,
+      "seed": 112
+    }
+  ],
+  "trials": [
+    {
+      "controller": "pd",
+      "kp": 1.0,
+      "kd": 1.0,
+      "ki": 0.0,
+      "validation_cost": 0.9031531719554339
+    },
+    {
+      "controller": "pd",
+      "kp": 1.0,
+      "kd": 3.0,
+      "ki": 0.0,
+      "validation_cost": 1.414976750808082
+    },
+    {
+      "controller": "pd",
+      "kp": 1.0,
+      "kd": 5.0,
+      "ki": 0.0,
+      "validation_cost": 2.1711830066192075
+    },
+    {
+      "controller": "pd",
+      "kp": 3.0,
+      "kd": 1.0,
+      "ki": 0.0,
+      "validation_cost": 0.6984761474887048
+    },
+    {
+      "controller": "pd",
+      "kp": 3.0,
+      "kd": 3.0,
+      "ki": 0.0,
+      "validation_cost": 0.6065509325163959
+    },
+    {
+      "controller": "pd",
+      "kp": 3.0,
+      "kd": 5.0,
+      "ki": 0.0,
+      "validation_cost": 0.8183559474157768
+    },
+    {
+      "controller": "pd",
+      "kp": 6.0,
+      "kd": 1.0,
+      "ki": 0.0,
+      "validation_cost": 0.8368955274986908
+    },
+    {
+      "controller": "pd",
+      "kp": 6.0,
+      "kd": 3.0,
+      "ki": 0.0,
+      "validation_cost": 0.502400861950457
+    },
+    {
+      "controller": "pd",
+      "kp": 6.0,
+      "kd": 5.0,
+      "ki": 0.0,
+      "validation_cost": 0.5416881541944724
+    },
+    {
+      "controller": "pid",
+      "kp": 1.0,
+      "kd": 1.0,
+      "ki": 0.1,
+      "validation_cost": 1.0122330052675508
+    },
+    {
+      "controller": "pid",
+      "kp": 1.0,
+      "kd": 1.0,
+      "ki": 0.3,
+      "validation_cost": 1.3385374972350508
+    },
+    {
+      "controller": "pid",
+      "kp": 1.0,
+      "kd": 1.0,
+      "ki": 0.6,
+      "validation_cost": 2.2101618957473925
+    },
+    {
+      "controller": "pid",
+      "kp": 1.0,
+      "kd": 3.0,
+      "ki": 0.1,
+      "validation_cost": 1.3287910404682965
+    },
+    {
+      "controller": "pid",
+      "kp": 1.0,
+      "kd": 3.0,
+      "ki": 0.3,
+      "validation_cost": 1.5438482342131703
+    },
+    {
+      "controller": "pid",
+      "kp": 1.0,
+      "kd": 3.0,
+      "ki": 0.6,
+      "validation_cost": 1.7221305234314157
+    },
+    {
+      "controller": "pid",
+      "kp": 1.0,
+      "kd": 5.0,
+      "ki": 0.1,
+      "validation_cost": 1.809156016742306
+    },
+    {
+      "controller": "pid",
+      "kp": 1.0,
+      "kd": 5.0,
+      "ki": 0.3,
+      "validation_cost": 1.8484325008776021
+    },
+    {
+      "controller": "pid",
+      "kp": 1.0,
+      "kd": 5.0,
+      "ki": 0.6,
+      "validation_cost": 2.209274883740289
+    },
+    {
+      "controller": "pid",
+      "kp": 3.0,
+      "kd": 1.0,
+      "ki": 0.1,
+      "validation_cost": 0.7182227223180409
+    },
+    {
+      "controller": "pid",
+      "kp": 3.0,
+      "kd": 1.0,
+      "ki": 0.3,
+      "validation_cost": 0.7633196470222773
+    },
+    {
+      "controller": "pid",
+      "kp": 3.0,
+      "kd": 1.0,
+      "ki": 0.6,
+      "validation_cost": 0.8471074993347559
+    },
+    {
+      "controller": "pid",
+      "kp": 3.0,
+      "kd": 3.0,
+      "ki": 0.1,
+      "validation_cost": 0.6078332473819709
+    },
+    {
+      "controller": "pid",
+      "kp": 3.0,
+      "kd": 3.0,
+      "ki": 0.3,
+      "validation_cost": 0.6240587787675985
+    },
+    {
+      "controller": "pid",
+      "kp": 3.0,
+      "kd": 3.0,
+      "ki": 0.6,
+      "validation_cost": 0.6522488657254044
+    },
+    {
+      "controller": "pid",
+      "kp": 3.0,
+      "kd": 5.0,
+      "ki": 0.1,
+      "validation_cost": 0.8021605857924635
+    },
+    {
+      "controller": "pid",
+      "kp": 3.0,
+      "kd": 5.0,
+      "ki": 0.3,
+      "validation_cost": 0.8125010108162839
+    },
+    {
+      "controller": "pid",
+      "kp": 3.0,
+      "kd": 5.0,
+      "ki": 0.6,
+      "validation_cost": 0.8519784311942701
+    },
+    {
+      "controller": "pid",
+      "kp": 6.0,
+      "kd": 1.0,
+      "ki": 0.1,
+      "validation_cost": 0.8429103876353206
+    },
+    {
+      "controller": "pid",
+      "kp": 6.0,
+      "kd": 1.0,
+      "ki": 0.3,
+      "validation_cost": 0.8555032508335398
+    },
+    {
+      "controller": "pid",
+      "kp": 6.0,
+      "kd": 1.0,
+      "ki": 0.6,
+      "validation_cost": 0.8755410442547498
+    },
+    {
+      "controller": "pid",
+      "kp": 6.0,
+      "kd": 3.0,
+      "ki": 0.1,
+      "validation_cost": 0.5035266186296158
+    },
+    {
+      "controller": "pid",
+      "kp": 6.0,
+      "kd": 3.0,
+      "ki": 0.3,
+      "validation_cost": 0.5063350424603147
+    },
+    {
+      "controller": "pid",
+      "kp": 6.0,
+      "kd": 3.0,
+      "ki": 0.6,
+      "validation_cost": 0.5111032750924819
+    },
+    {
+      "controller": "pid",
+      "kp": 6.0,
+      "kd": 5.0,
+      "ki": 0.1,
+      "validation_cost": 0.540981251147555
+    },
+    {
+      "controller": "pid",
+      "kp": 6.0,
+      "kd": 5.0,
+      "ki": 0.3,
+      "validation_cost": 0.5425245281448766
+    },
+    {
+      "controller": "pid",
+      "kp": 6.0,
+      "kd": 5.0,
+      "ki": 0.6,
+      "validation_cost": 0.5479851800880944
+    }
+  ],
+  "provenance": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "source_sha256": {
+      "__init__.py": "3edd659668e22b1c9163829a291747a577f622f4fafdb0934fac6a4e13b7e190",
+      "config.py": "4e1bf3e32b4e13cd9e27287079941db0f36302baceec6e1535dc7db06eb587db",
+      "controllers.py": "f7b11a951df65072b16fd89aa27eded0a93b735ac91084440c4b4b6155a486b0",
+      "core.py": "f38513330549810c479a91c43713e83cdb9fb1438ab753cd60ff7cb3a36df920",
+      "env.py": "8b8247b67ef33736cfdd8ae0e176b0a0181c07c7a6688da7e1b34f275f54db02",
+      "evaluate.py": "0077bbc1bf869191ef34b58b9d0a5c041974f887ef676cdb7d65c330bbbeeeb8",
+      "experiments.py": "5afae6b047fd8e0310bea6833c8876ee7fa8dd842e3dc47ac0da0f1b6153656e",
+      "metrics.py": "c5d74c29251a45d1f7ac1433d641d332ea650ddfac0f7a3fd5b27dabd726e29c",
+      "simulation.py": "746e507ed86e5f7cd10afb6bbd5161660e453447bf2ce2aa0c8790e4121a60dd",
+      "train.py": "23d60ac96d3d63154737dc427b68a1446a26f5bfc1d54c20b86fcd59da0a4645",
+      "tune.py": "6bbd90145da6b82eed1d536b04feca152a034089223f6a820676f05db7fa189b"
+    }
+  }
+}

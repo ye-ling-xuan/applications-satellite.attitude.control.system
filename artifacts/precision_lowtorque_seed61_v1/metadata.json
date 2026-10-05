@@ -1,0 +1,104 @@
+{
+  "mode": "pure",
+  "seed": 61,
+  "requested_timesteps": 200000,
+  "contract": {
+    "config": {
+      "dt": 0.02,
+      "duration": 10.0,
+      "inertia": 1.0,
+      "max_torque": 2.0,
+      "residual_limit": 0.5,
+      "target_deg": 0.0,
+      "failure_angle_deg": 90.0,
+      "angle_tolerance_deg": 1.0,
+      "rate_tolerance_deg_s": 0.2,
+      "hold_seconds": 1.0,
+      "kp": 6.0,
+      "kd": 3.0,
+      "ki": 0.0,
+      "angle_scale_deg": 40.0,
+      "rate_scale_deg_s": 50.0,
+      "rate_weight": 0.1,
+      "torque_weight": 0.02,
+      "slew_weight": 0.005
+    },
+    "dynamics": "single-axis-zoh-exact-v1",
+    "observation": "error_pi-rate_scale-previous_torque-v1",
+    "reward": "normalized-quadratic-slew-times-dt-v1"
+  },
+  "hyperparameters": {
+    "learning_rate": 0.0001,
+    "n_steps": 256,
+    "batch_size": 256,
+    "n_epochs": 10,
+    "gamma": 0.98,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.01
+  },
+  "task": {
+    "profile": "precision_nominal",
+    "torque_penalty": 0.05,
+    "version": "explicit-ppo-task-v2"
+  },
+  "n_envs": 4,
+  "training_domain": {
+    "initial_error_deg": [
+      -40,
+      40
+    ],
+    "initial_rate_deg_s": [
+      0.0,
+      0.0
+    ],
+    "inertia": [
+      1.0,
+      1.0
+    ],
+    "bias_torque_nm": [
+      0.0,
+      0.0
+    ]
+  },
+  "hidden_parameters": [],
+  "note": "Hidden random parameters (if enabled) make the task partially observed; no online identification claim.",
+  "selection_rule": "validation success, failure, tail error, cost (lexicographic)",
+  "versions": {
+    "torch": "2.11.0+cpu",
+    "gymnasium": "1.2.3",
+    "stable_baselines3": "2.8.0"
+  },
+  "provenance": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "source_sha256": {
+      "__init__.py": "3edd659668e22b1c9163829a291747a577f622f4fafdb0934fac6a4e13b7e190",
+      "benchmark.py": "018e7d8624f8676d7b0e8313e5b307d90188e22a710bef16ff26c579a8578457",
+      "config.py": "4e1bf3e32b4e13cd9e27287079941db0f36302baceec6e1535dc7db06eb587db",
+      "controllers.py": "f7b11a951df65072b16fd89aa27eded0a93b735ac91084440c4b4b6155a486b0",
+      "core.py": "f38513330549810c479a91c43713e83cdb9fb1438ab753cd60ff7cb3a36df920",
+      "diagnose.py": "f9c759e028049751403cc03cbbd8bc0db46de082c7f9c5462dc6daebdda65938",
+      "env.py": "a02af7a9c9e1c5a7cb511c5d0a365a8209c0ef5df674911f33b8e1b139946c87",
+      "evaluate.py": "699c6d31ff2d60dede5f298c4be335aedf9ce44e839d963b5ce392496602e1c0",
+      "experiments.py": "5afae6b047fd8e0310bea6833c8876ee7fa8dd842e3dc47ac0da0f1b6153656e",
+      "metrics.py": "c5d74c29251a45d1f7ac1433d641d332ea650ddfac0f7a3fd5b27dabd726e29c",
+      "simulation.py": "746e507ed86e5f7cd10afb6bbd5161660e453447bf2ce2aa0c8790e4121a60dd",
+      "tasks.py": "de57fbb3b0d8d64abca4cd2c056b8e8844c451b3112bf7bc0d8d7bbf0535522d",
+      "train.py": "59fbcadeaa5566ab182ab0599a61d9d04ea69a2545c41e669f391294c51d95c8",
+      "tune.py": "6bbd90145da6b82eed1d536b04feca152a034089223f6a820676f05db7fa189b",
+      "validation.py": "81eb5b450c850a1e4bbf7a14260c8eb1bd9f58a6b495331ec841c2e90ce6224b"
+    }
+  },
+  "status": "complete",
+  "actual_timesteps": 200704,
+  "selected_checkpoint_timesteps": 200000,
+  "selected_validation_key": [
+    0.0,
+    0.0,
+    0.07360872184847633,
+    0.28547389930795575
+  ],
+  "model_sha256": "a837d7518a8528699fc8b57cefe7967b4526bd580917bf7ce6034b97c72e56ab",
+  "final_model_sha256": "d974db657afc15d4020aee96a3631f5d04e3b4da9e478a4dfb968e689c00018d"
+}

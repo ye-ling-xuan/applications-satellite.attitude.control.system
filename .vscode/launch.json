@@ -11,6 +11,24 @@
             "request": "launch",
             "program": "${file}",
             "console": "externalTerminal"
+        },
+        {
+            "name": "Debug attitude environment tests",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": ["tests/test_env.py", "-q"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Debug held-out evaluation",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "attitude_control.evaluate",
+            "args": ["--tuning", "artifacts/tuning_v1/tuning.json", "--output", "artifacts/debug_evaluation", "--plot"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
         }
     ]
 }

@@ -1,0 +1,62 @@
+[
+  {
+    "mode": "pure",
+    "angle_deg": -10,
+    "action": -0.026503730565309525,
+    "command_at_zero_rate_nm": -0.05300746113061905
+  },
+  {
+    "mode": "pure",
+    "angle_deg": -1,
+    "action": -0.33289575576782227,
+    "command_at_zero_rate_nm": -0.6657915115356445
+  },
+  {
+    "mode": "pure",
+    "angle_deg": 0,
+    "action": -0.3668525218963623,
+    "command_at_zero_rate_nm": -0.7337050437927246
+  },
+  {
+    "mode": "pure",
+    "angle_deg": 1,
+    "action": -0.40077537298202515,
+    "command_at_zero_rate_nm": -0.8015507459640503
+  },
+  {
+    "mode": "pure",
+    "angle_deg": 10,
+    "action": -0.7038205862045288,
+    "command_at_zero_rate_nm": -1.4076411724090576
+  },
+  {
+    "mode": "residual",
+    "angle_deg": -10,
+    "action": -1.0,
+    "command_at_zero_rate_nm": 0.5471975511965976
+  },
+  {
+    "mode": "residual",
+    "angle_deg": -1,
+    "action": -1.0,
+    "command_at_zero_rate_nm": -0.3952802448803402
+  },
+  {
+    "mode": "residual",
+    "angle_deg": 0,
+    "action": -1.0,
+    "command_at_zero_rate_nm": -0.5
+  },
+  {
+    "mode": "residual",
+    "angle_deg": 1,
+    "action": -1.0,
+    "command_at_zero_rate_nm": -0.6047197551196598
+  },
+  {
+    "mode": "residual",
+    "angle_deg": 10,
+    "action": -1.0,
+    "command_at_zero_rate_nm": -1.5471975511965976
+  }
+]

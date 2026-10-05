@@ -1,0 +1,69 @@
+{
+  "factor_checks": [
+    {
+      "seed": 7,
+      "left_torque_penalty": 0.5,
+      "right_torque_penalty": 0.05,
+      "left_selected_step": 160000,
+      "right_selected_step": 160000
+    },
+    {
+      "seed": 19,
+      "left_torque_penalty": 0.5,
+      "right_torque_penalty": 0.05,
+      "left_selected_step": 160000,
+      "right_selected_step": 200704
+    },
+    {
+      "seed": 42,
+      "left_torque_penalty": 0.5,
+      "right_torque_penalty": 0.05,
+      "left_selected_step": 200704,
+      "right_selected_step": 160000
+    },
+    {
+      "seed": 61,
+      "left_torque_penalty": 0.5,
+      "right_torque_penalty": 0.05,
+      "left_selected_step": 120000,
+      "right_selected_step": 200000
+    },
+    {
+      "seed": 83,
+      "left_torque_penalty": 0.5,
+      "right_torque_penalty": 0.05,
+      "left_selected_step": 100000,
+      "right_selected_step": 140000
+    }
+  ],
+  "paired_settling": [
+    {
+      "controller": "PPO_seed19",
+      "jointly_successful_cases": 33,
+      "right_minus_left_settling_s": -1.644848484848485
+    },
+    {
+      "controller": "PPO_seed42",
+      "jointly_successful_cases": 31,
+      "right_minus_left_settling_s": 0.5083870967741936
+    },
+    {
+      "controller": "PPO_seed61",
+      "jointly_successful_cases": 27,
+      "right_minus_left_settling_s": -2.3214814814814813
+    },
+    {
+      "controller": "PPO_seed7",
+      "jointly_successful_cases": 51,
+      "right_minus_left_settling_s": -1.927450980392157
+    },
+    {
+      "controller": "PPO_seed83",
+      "jointly_successful_cases": 33,
+      "right_minus_left_settling_s": -1.406060606060606
+    }
+  ],
+  "left": "C:\\Users\\admin\\OneDrive\\Desktop\\大一立项\\artifacts\\ablation_r050_test10405_v1",
+  "right": "C:\\Users\\admin\\OneDrive\\Desktop\\大一立项\\artifacts\\ablation_r005_test10405_v1",
+  "note": "Paired exploratory simulation study; SD is across trained models. Settling deltas only use cases where both policies succeeded."
+}

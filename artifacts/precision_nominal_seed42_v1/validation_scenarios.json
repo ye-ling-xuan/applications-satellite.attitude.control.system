@@ -1,0 +1,82 @@
+[
+  {
+    "name": "validation_0",
+    "angle_deg": -35,
+    "rate_deg_s": 0,
+    "inertia": 1.0,
+    "bias_torque": 0.0,
+    "pulse_torque": 0.0,
+    "noise_std": 0.0,
+    "seed": 901
+  },
+  {
+    "name": "validation_1",
+    "angle_deg": -15,
+    "rate_deg_s": 0,
+    "inertia": 1.0,
+    "bias_torque": 0.0,
+    "pulse_torque": 0.0,
+    "noise_std": 0.0,
+    "seed": 902
+  },
+  {
+    "name": "validation_2",
+    "angle_deg": 15,
+    "rate_deg_s": 0,
+    "inertia": 1.0,
+    "bias_torque": 0.0,
+    "pulse_torque": 0.0,
+    "noise_std": 0.0,
+    "seed": 903
+  },
+  {
+    "name": "validation_3",
+    "angle_deg": 35,
+    "rate_deg_s": 0,
+    "inertia": 1.0,
+    "bias_torque": 0.0,
+    "pulse_torque": 0.0,
+    "noise_std": 0.0,
+    "seed": 904
+  },
+  {
+    "name": "validation_4",
+    "angle_deg": -25,
+    "rate_deg_s": -5,
+    "inertia": 1.0,
+    "bias_torque": 0.0,
+    "pulse_torque": 0.0,
+    "noise_std": 0.0,
+    "seed": 905
+  },
+  {
+    "name": "validation_5",
+    "angle_deg": -25,
+    "rate_deg_s": 5,
+    "inertia": 1.0,
+    "bias_torque": 0.0,
+    "pulse_torque": 0.0,
+    "noise_std": 0.0,
+    "seed": 906
+  },
+  {
+    "name": "validation_6",
+    "angle_deg": 25,
+    "rate_deg_s": -5,
+    "inertia": 1.0,
+    "bias_torque": 0.0,
+    "pulse_torque": 0.0,
+    "noise_std": 0.0,
+    "seed": 907
+  },
+  {
+    "name": "validation_7",
+    "angle_deg": 25,
+    "rate_deg_s": 5,
+    "inertia": 1.0,
+    "bias_torque": 0.0,
+    "pulse_torque": 0.0,
+    "noise_std": 0.0,
+    "seed": 908
+  }
+]
