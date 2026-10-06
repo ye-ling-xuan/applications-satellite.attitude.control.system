@@ -25,7 +25,9 @@ def main(argv=None):
     torch.set_num_threads(1)
     out = create_output(args.output)
     root = Path(__file__).resolve().parents[1]
-    legacy = root / "yxy的学习笔记" / "gpt改良版"
+    legacy = root / "legacy" / "archived_ppo"
+    if not (legacy / "sat_env.py").is_file():
+        legacy = root / "yxy的学习笔记" / "gpt改良版"
     if not (legacy / "sat_env.py").is_file():
         legacy = root / "大一立项AI在卫星姿态调整中的应用" / "yxy的学习笔记" / "gpt改良版"
     spec = importlib.util.spec_from_file_location("archived_attitude_env", legacy / "sat_env.py")
