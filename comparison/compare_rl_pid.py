@@ -22,8 +22,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RL_DIR = os.path.join(HERE, "..", "rl")
 sys.path.insert(0, RL_DIR)
 
-from satellite_env3d import SatelliteEnv3D, _euler_to_quat  # noqa: E402
-from metrics import settling_time, steady_state_error  # noqa: E402
+from satellite_env3d import SatelliteEnv3D, _euler_to_quat  # noqa: E402  # type: ignore[import-not-found]
+from metrics import settling_time, steady_state_error  # noqa: E402  # type: ignore[import-not-found]
 
 OUT_DIR = os.path.join(HERE, "results")
 os.makedirs(OUT_DIR, exist_ok=True)
