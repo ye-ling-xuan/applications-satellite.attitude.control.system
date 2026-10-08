@@ -4,4 +4,5 @@ __pycache__/
 
 # 训练中间产物（可重新生成）
 rl/logs/
+rl/logs3d/
 rl/satellite_tensorboard*/

@@ -132,13 +132,10 @@ class SatelliteEnv3D(gym.Env):
             self.q = self.q / np.linalg.norm(self.q)
             self.omega = np.asarray(options.get('omega', np.zeros(3)), dtype=np.float64)
         else:
-            # 随机初始化：绕某单轴偏转 ±0.5 rad (~30度)，角速度 ±0.2 rad/s
-            axis = int(self.np_random.integers(0, 3))
-            angle = float(self.np_random.uniform(-0.5, 0.5))
-            q = np.array([1.0, 0.0, 0.0, 0.0])
-            q[0] = np.cos(angle / 2.0)
-            q[axis + 1] = np.sin(angle / 2.0)
-            self.q = q / np.linalg.norm(q)
+            # 随机初始化：三轴欧拉角各自随机偏转（真正的三轴机动，含轴间耦合），角速度 ±0.2 rad/s
+            euler = self.np_random.uniform(-0.6, 0.6, size=3)  # 每轴 ±0.6 rad ≈ ±34°
+            self.q = _euler_to_quat(euler[0], euler[1], euler[2])
+            self.q = self.q / np.linalg.norm(self.q)
             self.omega = self.np_random.uniform(-0.2, 0.2, size=3)
         self.step_count = 0
         return self._get_obs(), {}
@@ -155,6 +152,12 @@ class SatelliteEnv3D(gym.Env):
         I_omega = self.I @ self.omega
         omega_dot = self.I_inv @ (torque + disturbance - np.cross(self.omega, I_omega))
         self.omega = self.omega + omega_dot * self.dt
+
+        # 角速度限幅（卫星有最大转速，也避免观测/奖励发散）
+        max_omega = 10.0
+        omega_norm = float(np.linalg.norm(self.omega))
+        if omega_norm > max_omega:
+            self.omega = self.omega / omega_norm * max_omega
 
         # 四元数运动学：dq/dt = 0.5 · q ⊗ (0, ω)
         w, x, y, z = self.q
@@ -191,8 +194,10 @@ class SatelliteEnv3D(gym.Env):
         w_angle = 1.0
         w_omega = 0.1
         w_torque = 0.001
-        cost = (w_angle * float(np.dot(error_vec, error_vec)) +
-                w_omega * float(np.dot(omega, omega)) +
+        # 对误差/角速度代价限幅，避免大角度时奖励过大导致价值函数不稳定
+        angle_cost = min(float(np.dot(error_vec, error_vec)), 4.0)   # ≤ 4（≈2 rad 误差）
+        omega_cost = min(float(np.dot(omega, omega)), 25.0)          # ≤ 25（≈5 rad/s）
+        cost = (w_angle * angle_cost + w_omega * omega_cost +
                 w_torque * float(np.dot(torque, torque)))
         return -cost
 
