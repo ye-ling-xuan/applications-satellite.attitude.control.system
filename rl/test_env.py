@@ -1,4 +1,4 @@
-from satellite2AI.week6创建卫星Gym环境.satellite_env import SatelliteEnv
+from satellite_env import SatelliteEnv
 import numpy as np
 
 env = SatelliteEnv(max_steps=200)
