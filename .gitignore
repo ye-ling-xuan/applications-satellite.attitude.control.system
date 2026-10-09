@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 
 # 训练中间产物（可重新生成）
-rl/logs/
-rl/logs3d/
-rl/satellite_tensorboard*/
+单轴强化学习/logs/
+三轴强化学习/logs3d/
+单轴强化学习/satellite_tensorboard*/
+三轴强化学习/satellite_tensorboard*/

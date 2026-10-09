@@ -3,7 +3,7 @@
   A. 单轴参考（绕 roll / pitch / yaw 各自 0–90°）—— 验证三轴环境对每个轴都有效
   B. 三轴同时偏转（对称 (θ,θ,θ) 与非对称耦合姿态）—— 真正的三轴机动
 测总指向误差的纠正时间 / 平均误差，出图并导出 CSV。
-用法: cd rl && python evaluate_three_axis_multi.py
+用法: cd 三轴强化学习 && python evaluate_three_axis_multi.py
 """
 import os
 import csv
@@ -19,7 +19,7 @@ from metrics import settling_time, mean_error, steady_state_error
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(HERE, "ppo_satellite3d")
-OUT_DIR = os.path.join(HERE, "results")
+OUT_DIR = os.path.join(HERE, "成果图")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # 测试姿态（单位：度，ZYX 欧拉角 roll/pitch/yaw）

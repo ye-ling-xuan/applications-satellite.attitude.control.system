@@ -65,7 +65,7 @@ class SatelliteEnv3D(gym.Env):
     def __init__(self, max_steps=500, dt=0.01,
                  max_torque=2.0, inertia=None,
                  enable_disturbance=True, disturbance_scale=0.005,
-                 success_bonus=1.0):
+                 disturbance_func=None, success_bonus=1.0):
         super().__init__()
 
         # 物理参数
@@ -77,9 +77,10 @@ class SatelliteEnv3D(gym.Env):
         self.I = np.asarray(inertia, dtype=np.float64)
         self.I_inv = np.linalg.inv(self.I)
 
-        # 干扰（可配置，每轴独立均匀分布）
+        # 干扰（可配置：默认每轴独立均匀分布；传入 disturbance_func 则使用确定性自定义干扰）
         self.enable_disturbance = enable_disturbance
         self.disturbance_scale = disturbance_scale
+        self.disturbance_func = disturbance_func
 
         # 成功奖励
         self.success_bonus = success_bonus
@@ -143,9 +144,11 @@ class SatelliteEnv3D(gym.Env):
     def step(self, action):
         torque = np.clip(np.asarray(action, dtype=np.float64), -self.max_torque, self.max_torque)
 
-        # 微小干扰（每轴独立均匀分布）
+        # 干扰：优先使用确定性自定义干扰函数（鲁棒性对比用），否则用每轴独立均匀分布
         disturbance = np.zeros(3)
-        if self.enable_disturbance:
+        if self.disturbance_func is not None:
+            disturbance = np.asarray(self.disturbance_func(self.step_count * self.dt), dtype=np.float64)
+        elif self.enable_disturbance:
             disturbance = self.np_random.uniform(-self.disturbance_scale, self.disturbance_scale, size=3)
 
         # 欧拉动力学：ω̇ = I⁻¹ (τ − ω × Iω)

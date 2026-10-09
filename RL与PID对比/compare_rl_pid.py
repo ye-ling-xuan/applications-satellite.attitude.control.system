@@ -1,11 +1,11 @@
 """
 RL(PPO) vs PID 三轴姿态控制对比。
 
-统一用 rl/satellite_env3d.py 的动力学作为唯一仿真器，对同一组初始姿态
+统一用 三轴强化学习/satellite_env3d.py 的动力学作为唯一仿真器，对同一组初始姿态
 分别跑 RL 策略和 PID 控制器，比较纠正时间与稳态误差。
 本版为「无干扰 / 无噪声 / 无死区」的干净对比（两边物理条件完全一致）。
 
-用法: cd comparison && python compare_rl_pid.py
+用法: cd RL与PID对比 && python compare_rl_pid.py
 """
 import os
 import sys
@@ -19,13 +19,13 @@ import matplotlib.pyplot as plt
 from stable_baselines3 import PPO
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-RL_DIR = os.path.join(HERE, "..", "rl")
+RL_DIR = os.path.join(HERE, "..", "三轴强化学习")
 sys.path.insert(0, RL_DIR)
 
 from satellite_env3d import SatelliteEnv3D, _euler_to_quat  # noqa: E402  # type: ignore[import-not-found]
 from metrics import settling_time, steady_state_error  # noqa: E402  # type: ignore[import-not-found]
 
-OUT_DIR = os.path.join(HERE, "results")
+OUT_DIR = os.path.join(HERE, "成果图")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 MODEL_PATH = os.path.join(RL_DIR, "ppo_satellite3d")
@@ -169,29 +169,54 @@ def main():
     fig.savefig(os.path.join(OUT_DIR, "compare_correction_curves.png"), dpi=150)
     plt.close(fig)
 
-    # 图 2：纠正时间 vs 初始总误差
+    # 图 2 & 图 3：散点图（无折线），直观看出 RL 纠正快且稳定、PID 慢且随角度增长
+    cap = MAX_STEPS * DT  # 20 s，超过即视为未稳定
+
+    def split_settle(rows):
+        """拆出成功案例的 (x, y)；失败案例只记 x（用于顶部 × 标注）。"""
+        x_ok, y_ok, x_fail = [], [], []
+        for r in rows:
+            if r[3] is not None:
+                x_ok.append(r[2]); y_ok.append(r[3])
+            else:
+                x_fail.append(r[2])
+        return x_ok, y_ok, x_fail
+
+    # 图 2：纠正时间散点图
+    rl_x, rl_y, _ = split_settle(rl_rows)
+    pid_x, pid_y, pid_fx = split_settle(pid_rows)
     plt.figure(figsize=(8, 5))
-    xs = [r[2] for r in rl_rows]
-    plt.plot(xs, [r[3] if r[3] is not None else float('nan') for r in rl_rows], 'o-', label="RL(PPO)")
-    plt.plot(xs, [r[3] if r[3] is not None else float('nan') for r in pid_rows], 's-', label="PID")
+    plt.scatter(rl_x, rl_y, s=60, marker='o', color='#4C72B0', label='RL(PPO)')
+    plt.scatter(pid_x, pid_y, s=60, marker='s', color='#DD8452', label='PID')
+    if pid_fx:
+        plt.scatter(pid_fx, [cap] * len(pid_fx), s=90, marker='x', color='red',
+                    label=f'PID 未稳定({len(pid_fx)})')
+        plt.axhline(cap, color='red', linestyle=':', alpha=0.4)
     plt.xlabel("初始总指向误差 (°)")
     plt.ylabel("纠正时间 (s)")
-    plt.title("RL vs PID 纠正时间")
+    plt.title("RL vs PID 纠正时间散点图")
     plt.legend()
-    plt.grid(True)
+    plt.grid(True, alpha=0.4)
     plt.tight_layout()
     plt.savefig(os.path.join(OUT_DIR, "compare_settling_time.png"), dpi=150)
     plt.close()
 
-    # 图 3：稳态误差 vs 初始总误差
+    # 图 3：稳态误差散点图
+    rl_x = [r[2] for r in rl_rows]; rl_y = [r[4] for r in rl_rows]
+    pid_x = [r[2] for r in pid_rows if not np.isnan(r[4])]
+    pid_y = [r[4] for r in pid_rows if not np.isnan(r[4])]
+    pid_fail_n = sum(1 for r in pid_rows if np.isnan(r[4]))
     plt.figure(figsize=(8, 5))
-    plt.plot(xs, [r[4] if not np.isnan(r[4]) else float('nan') for r in rl_rows], 'o-', label="RL(PPO)")
-    plt.plot(xs, [r[4] if not np.isnan(r[4]) else float('nan') for r in pid_rows], 's-', label="PID")
+    plt.scatter(rl_x, rl_y, s=60, marker='o', color='#4C72B0', label='RL(PPO)')
+    plt.scatter(pid_x, pid_y, s=60, marker='s', color='#DD8452', label='PID')
     plt.xlabel("初始总指向误差 (°)")
     plt.ylabel("稳态平均误差 (°)")
-    plt.title("RL vs PID 稳态平均误差")
+    title = "RL vs PID 稳态误差散点图"
+    if pid_fail_n:
+        title += f"（PID 未稳定 {pid_fail_n} 例未显示）"
+    plt.title(title)
     plt.legend()
-    plt.grid(True)
+    plt.grid(True, alpha=0.4)
     plt.tight_layout()
     plt.savefig(os.path.join(OUT_DIR, "compare_steady_error.png"), dpi=150)
     plt.close()

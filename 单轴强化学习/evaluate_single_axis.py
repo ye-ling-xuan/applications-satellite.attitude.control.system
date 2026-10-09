@@ -1,6 +1,6 @@
 """
 单轴 RL 评测：对 0–90° 初始偏角扫描，测纠正时间、平均误差，出图并导出 CSV。
-用法: cd rl && python evaluate_single_axis.py
+用法: cd 单轴强化学习 && python evaluate_single_axis.py
 """
 import os
 import csv
@@ -16,7 +16,7 @@ from metrics import settling_time, mean_error, steady_state_error
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(HERE, "ppo_satellite_final")
-OUT_DIR = os.path.join(HERE, "results")
+OUT_DIR = os.path.join(HERE, "成果图")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 ANGLES_DEG = list(range(0, 91, 10))   # 0–90°，步长 10°
