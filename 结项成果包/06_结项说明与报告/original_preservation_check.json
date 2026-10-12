@@ -1,0 +1,12 @@
+{
+  "original_file_count": 123,
+  "changed_or_missing": [],
+  "preserved": true,
+  "excluded": [
+    ".conda",
+    ".git",
+    ".pytest_cache",
+    "__pycache__",
+    "结项成果包"
+  ]
+}

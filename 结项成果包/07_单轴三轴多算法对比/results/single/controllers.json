@@ -1,0 +1,281 @@
+[
+  {
+    "controller": "baseline_PID",
+    "model_seed": 0,
+    "source": "validation_pid_configs",
+    "pid_gains": {
+      "kp": 4.0,
+      "ki": 0.0,
+      "kd": 3.0,
+      "alpha": 1.0,
+      "integral_limit": 2.0
+    }
+  },
+  {
+    "controller": "tuned_PID",
+    "model_seed": 0,
+    "source": "validation_pid_configs",
+    "pid_gains": {
+      "kp": 2.0,
+      "ki": 0.0,
+      "kd": 5.0,
+      "alpha": 1.0,
+      "integral_limit": 2.0
+    }
+  },
+  {
+    "controller": "improved_PID",
+    "model_seed": 0,
+    "source": "validation_pid_configs",
+    "pid_gains": {
+      "kp": 2.0,
+      "ki": 0.0,
+      "kd": 5.0,
+      "alpha": 1.0,
+      "integral_limit": 2.0
+    }
+  },
+  {
+    "model_seed": 11,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\PPO\\seed_11\\best_model.zip",
+    "model_sha256": "a9034e0591ee845a4f01d7fba0529e762455850c61ceaf8bf1e65948f3427e76",
+    "checkpoint_steps": 900000,
+    "actual_training_steps": 1001472,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 4890,
+    "controller": "PPO",
+    "source": "fresh_matched_budget_training"
+  },
+  {
+    "model_seed": 11,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\PPO\\seed_11\\best_model.zip",
+    "model_sha256": "a9034e0591ee845a4f01d7fba0529e762455850c61ceaf8bf1e65948f3427e76",
+    "checkpoint_steps": 900000,
+    "actual_training_steps": 1001472,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 4890,
+    "controller": "PPO_calibrated",
+    "source": "same_checkpoint_zero_observation_action_calibration",
+    "raw_controller": "PPO",
+    "zero_action_normalized": [
+      0.09734794497489929
+    ],
+    "calibration_rule": "clip(predict(measured_observation)-predict(zero_observation), -1, 1)"
+  },
+  {
+    "model_seed": 22,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\PPO\\seed_22\\best_model.zip",
+    "model_sha256": "78867a0049291db93e1a3dcd9610b3d2913c2ae03fb611fa9caaaac33c8741dc",
+    "checkpoint_steps": 700000,
+    "actual_training_steps": 1001472,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 4890,
+    "controller": "PPO",
+    "source": "fresh_matched_budget_training"
+  },
+  {
+    "model_seed": 22,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\PPO\\seed_22\\best_model.zip",
+    "model_sha256": "78867a0049291db93e1a3dcd9610b3d2913c2ae03fb611fa9caaaac33c8741dc",
+    "checkpoint_steps": 700000,
+    "actual_training_steps": 1001472,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 4890,
+    "controller": "PPO_calibrated",
+    "source": "same_checkpoint_zero_observation_action_calibration",
+    "raw_controller": "PPO",
+    "zero_action_normalized": [
+      0.03822413086891174
+    ],
+    "calibration_rule": "clip(predict(measured_observation)-predict(zero_observation), -1, 1)"
+  },
+  {
+    "model_seed": 33,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\PPO\\seed_33\\best_model.zip",
+    "model_sha256": "1f9b295551f018ab6b58e914eb6bac91b3114ed88f743bfe842589fb81937a9d",
+    "checkpoint_steps": 700000,
+    "actual_training_steps": 1001472,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 4890,
+    "controller": "PPO",
+    "source": "fresh_matched_budget_training"
+  },
+  {
+    "model_seed": 33,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\PPO\\seed_33\\best_model.zip",
+    "model_sha256": "1f9b295551f018ab6b58e914eb6bac91b3114ed88f743bfe842589fb81937a9d",
+    "checkpoint_steps": 700000,
+    "actual_training_steps": 1001472,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 4890,
+    "controller": "PPO_calibrated",
+    "source": "same_checkpoint_zero_observation_action_calibration",
+    "raw_controller": "PPO",
+    "zero_action_normalized": [
+      -0.055554356426000595
+    ],
+    "calibration_rule": "clip(predict(measured_observation)-predict(zero_observation), -1, 1)"
+  },
+  {
+    "model_seed": 11,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\SAC\\seed_11\\best_model.zip",
+    "model_sha256": "bfe3c75f15e391d901cb4be4b91a215781fca0b07b1759a5db987176f5bc0dda",
+    "checkpoint_steps": 600000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "SAC",
+    "source": "fresh_matched_budget_training"
+  },
+  {
+    "model_seed": 11,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\SAC\\seed_11\\best_model.zip",
+    "model_sha256": "bfe3c75f15e391d901cb4be4b91a215781fca0b07b1759a5db987176f5bc0dda",
+    "checkpoint_steps": 600000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "SAC_calibrated",
+    "source": "same_checkpoint_zero_observation_action_calibration",
+    "raw_controller": "SAC",
+    "zero_action_normalized": [
+      0.43949127197265625
+    ],
+    "calibration_rule": "clip(predict(measured_observation)-predict(zero_observation), -1, 1)"
+  },
+  {
+    "model_seed": 22,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\SAC\\seed_22\\best_model.zip",
+    "model_sha256": "3cfc59c52542a91f0176f371fa43e4da24b5d8728bf092c61d11f759171bc45f",
+    "checkpoint_steps": 400000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "SAC",
+    "source": "fresh_matched_budget_training"
+  },
+  {
+    "model_seed": 22,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\SAC\\seed_22\\best_model.zip",
+    "model_sha256": "3cfc59c52542a91f0176f371fa43e4da24b5d8728bf092c61d11f759171bc45f",
+    "checkpoint_steps": 400000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "SAC_calibrated",
+    "source": "same_checkpoint_zero_observation_action_calibration",
+    "raw_controller": "SAC",
+    "zero_action_normalized": [
+      -0.03623604774475098
+    ],
+    "calibration_rule": "clip(predict(measured_observation)-predict(zero_observation), -1, 1)"
+  },
+  {
+    "model_seed": 33,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\SAC\\seed_33\\best_model.zip",
+    "model_sha256": "aa7301a7f357925d163d224d680f7877d55e129a489d718a4c8e511913dc182f",
+    "checkpoint_steps": 1000000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "SAC",
+    "source": "fresh_matched_budget_training"
+  },
+  {
+    "model_seed": 33,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\SAC\\seed_33\\best_model.zip",
+    "model_sha256": "aa7301a7f357925d163d224d680f7877d55e129a489d718a4c8e511913dc182f",
+    "checkpoint_steps": 1000000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "SAC_calibrated",
+    "source": "same_checkpoint_zero_observation_action_calibration",
+    "raw_controller": "SAC",
+    "zero_action_normalized": [
+      0.3089461326599121
+    ],
+    "calibration_rule": "clip(predict(measured_observation)-predict(zero_observation), -1, 1)"
+  },
+  {
+    "model_seed": 11,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\TD3\\seed_11\\best_model.zip",
+    "model_sha256": "008cb0cb0d1c8e70a323f1ee8029f6b624a221194b1099d00026f9dca965dfcc",
+    "checkpoint_steps": 400000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "TD3",
+    "source": "fresh_matched_budget_training"
+  },
+  {
+    "model_seed": 11,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\TD3\\seed_11\\best_model.zip",
+    "model_sha256": "008cb0cb0d1c8e70a323f1ee8029f6b624a221194b1099d00026f9dca965dfcc",
+    "checkpoint_steps": 400000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "TD3_calibrated",
+    "source": "same_checkpoint_zero_observation_action_calibration",
+    "raw_controller": "TD3",
+    "zero_action_normalized": [
+      0.12860357761383057
+    ],
+    "calibration_rule": "clip(predict(measured_observation)-predict(zero_observation), -1, 1)"
+  },
+  {
+    "model_seed": 22,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\TD3\\seed_22\\best_model.zip",
+    "model_sha256": "086dddee066d371387dcfe6fcce6acd96ab1c2ee6fc4299359dc2f50b188fd4d",
+    "checkpoint_steps": 800000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "TD3",
+    "source": "fresh_matched_budget_training"
+  },
+  {
+    "model_seed": 22,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\TD3\\seed_22\\best_model.zip",
+    "model_sha256": "086dddee066d371387dcfe6fcce6acd96ab1c2ee6fc4299359dc2f50b188fd4d",
+    "checkpoint_steps": 800000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "TD3_calibrated",
+    "source": "same_checkpoint_zero_observation_action_calibration",
+    "raw_controller": "TD3",
+    "zero_action_normalized": [
+      0.4179544448852539
+    ],
+    "calibration_rule": "clip(predict(measured_observation)-predict(zero_observation), -1, 1)"
+  },
+  {
+    "model_seed": 33,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\TD3\\seed_33\\best_model.zip",
+    "model_sha256": "ebaba3dd1f21185065d61c7edbc125b299c1fd7337c92be6f6724a08028ec267",
+    "checkpoint_steps": 1000000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "TD3",
+    "source": "fresh_matched_budget_training"
+  },
+  {
+    "model_seed": 33,
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\07_单轴三轴多算法对比\\models\\single\\TD3\\seed_33\\best_model.zip",
+    "model_sha256": "ebaba3dd1f21185065d61c7edbc125b299c1fd7337c92be6f6724a08028ec267",
+    "checkpoint_steps": 1000000,
+    "actual_training_steps": 1000000,
+    "requested_training_steps": 1000000,
+    "gradient_updates": 61250,
+    "controller": "TD3_calibrated",
+    "source": "same_checkpoint_zero_observation_action_calibration",
+    "raw_controller": "TD3",
+    "zero_action_normalized": [
+      0.7699582576751709
+    ],
+    "calibration_rule": "clip(predict(measured_observation)-predict(zero_observation), -1, 1)"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "timesteps": 140000,
+  "success_rate": 0.8,
+  "rms_error_deg": 10.884864254135161,
+  "control_cost": 0.33657471864362015,
+  "score": 69.04782080213612,
+  "selection_split": "validation",
+  "scenario_count": 10
+}

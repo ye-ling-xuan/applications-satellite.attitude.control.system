@@ -1,0 +1,3 @@
+Both multi-algorithm Gym interfaces: passed
+..................................                                       [100%]
+34 passed in 8.98s

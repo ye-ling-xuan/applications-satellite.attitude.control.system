@@ -1,0 +1,64 @@
+{
+  "config": {
+    "dt": 0.02,
+    "duration": 20.0,
+    "seed": 20261009,
+    "inertia_kg_m2": [
+      1.2,
+      1.0,
+      0.8
+    ],
+    "initial_euler_deg": [
+      30.0,
+      -20.0,
+      45.0
+    ],
+    "initial_omega_deg_s": [
+      2.0,
+      -1.0,
+      1.5
+    ],
+    "kp": [
+      1.8,
+      1.5,
+      1.2
+    ],
+    "ki": [
+      0.025,
+      0.02,
+      0.015
+    ],
+    "kd": [
+      3.1,
+      2.6,
+      2.1
+    ],
+    "torque_limit_Nm": 0.2,
+    "integral_limit_rad_s": 0.25,
+    "deadzone_Nm": 0.0005,
+    "attitude_noise_std_deg": 0.1,
+    "rate_noise_std_deg_s": 0.02,
+    "attitude_threshold_deg": 1.0,
+    "rate_threshold_deg_s": 0.5,
+    "hold_window_s": 5.0
+  },
+  "controller": "three_axis_geometric_PID",
+  "scope": "three-axis PID extension demonstration; not three-axis reinforcement learning",
+  "success_definition": "Every true state sample in the final 5 s has geodesic attitude error <= 1 degree and angular-rate norm <= 0.5 degree/s.",
+  "integration": "RK4 with per-step quaternion normalization; torque held during each interval",
+  "disturbance": "bias [0.002,-0.003,0.002] Nm + 0.006 Nm sinusoidal components; [0.060,-0.040,0.050] Nm pulse during 8-10 s",
+  "noise_enabled": true,
+  "all_states_and_controls_finite": true,
+  "success_last_5s": true,
+  "settling_time_s": 13.120000000000001,
+  "final_attitude_error_deg": 0.2316644381998132,
+  "max_attitude_error_last_5s_deg": 0.3212156417957772,
+  "final_rate_norm_deg_s": 0.08142561861931176,
+  "max_rate_norm_last_5s_deg_s": 0.20458318993916708,
+  "max_quaternion_norm_error": 2.220446049250313e-16,
+  "max_output_torque_Nm": 0.2,
+  "max_integral_abs_rad_s": 0.25,
+  "control_cost_N2m2_s": 0.19435178387154753,
+  "saturation_interval_fraction": 0.076,
+  "note": "One deterministic demonstration validates implementation only; it is not a statistical robustness claim."
+}

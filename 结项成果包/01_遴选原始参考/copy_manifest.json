@@ -1,0 +1,612 @@
+{
+  "schema_version": 1,
+  "file_count": 67,
+  "total_bytes": 5583982,
+  "source_files_modified": false,
+  "copies_identical": true,
+  "files": [
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "cms的代码批注/metrics.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/cms的代码批注/metrics.py",
+      "sha256": "1d9bce1d3a3bb070d776537183190a40f280f927481b682e52cc53375abbe131",
+      "copy_sha256": "1d9bce1d3a3bb070d776537183190a40f280f927481b682e52cc53375abbe131",
+      "size": 4735,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "cms的代码批注/pid.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/cms的代码批注/pid.py",
+      "sha256": "b4b38025aa40d8cd0db3747dcf065e8d11c0ce5d6f90a0b68bd80a640f0a1212",
+      "copy_sha256": "b4b38025aa40d8cd0db3747dcf065e8d11c0ce5d6f90a0b68bd80a640f0a1212",
+      "size": 2506,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "cms的代码批注/pid_tuning.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/cms的代码批注/pid_tuning.py",
+      "sha256": "5da2f6ff0e039aa552f136106fe81d15a449856f61ecbf831a07618918cde877",
+      "copy_sha256": "5da2f6ff0e039aa552f136106fe81d15a449856f61ecbf831a07618918cde877",
+      "size": 11449,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "cms的代码批注/satellite.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/cms的代码批注/satellite.py",
+      "sha256": "c7b3c7e5422922d1b69e0ec3897271cce834b70281c3d811c62bdc2d8e513ca9",
+      "copy_sha256": "c7b3c7e5422922d1b69e0ec3897271cce834b70281c3d811c62bdc2d8e513ca9",
+      "size": 1439,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "cms的代码批注/测试.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/cms的代码批注/测试.py",
+      "sha256": "17f257f38dbf4c03ff58ba3b42fe55443d687f7ce746ed8cbf3c52b10f5a9a73",
+      "copy_sha256": "17f257f38dbf4c03ff58ba3b42fe55443d687f7ce746ed8cbf3c52b10f5a9a73",
+      "size": 12,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week3搭建单轴卫星PID最小仿真系统/controller.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week3搭建单轴卫星PID最小仿真系统/controller.py",
+      "sha256": "0b4b0eba190a0dd5a232d19c8b1dc11583d9bf6fa94195ea51507bea2b414894",
+      "copy_sha256": "0b4b0eba190a0dd5a232d19c8b1dc11583d9bf6fa94195ea51507bea2b414894",
+      "size": 1543,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week3搭建单轴卫星PID最小仿真系统/main.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week3搭建单轴卫星PID最小仿真系统/main.py",
+      "sha256": "066be00497c2577763c8ff36e7224d6d0545ba6fd45bc5a583d6ee1cc2e1f73b",
+      "copy_sha256": "066be00497c2577763c8ff36e7224d6d0545ba6fd45bc5a583d6ee1cc2e1f73b",
+      "size": 895,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week3搭建单轴卫星PID最小仿真系统/plotter.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week3搭建单轴卫星PID最小仿真系统/plotter.py",
+      "sha256": "c2f55046fa823e753edc2b2c1eee6489da68973dbf1f15c0fe7f7a6b652d9128",
+      "copy_sha256": "c2f55046fa823e753edc2b2c1eee6489da68973dbf1f15c0fe7f7a6b652d9128",
+      "size": 718,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week3搭建单轴卫星PID最小仿真系统/satellite.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week3搭建单轴卫星PID最小仿真系统/satellite.py",
+      "sha256": "d46a06ccc208edaf835bbbeb456d4dd4807b29c1fc0a950d6299dbee68d9e170",
+      "copy_sha256": "d46a06ccc208edaf835bbbeb456d4dd4807b29c1fc0a950d6299dbee68d9e170",
+      "size": 1887,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week3搭建单轴卫星PID最小仿真系统/simulator.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week3搭建单轴卫星PID最小仿真系统/simulator.py",
+      "sha256": "de800b48fd7193edce0ed37a37282b65e286a800da8da1005036fdebb8f79c0f",
+      "copy_sha256": "de800b48fd7193edce0ed37a37282b65e286a800da8da1005036fdebb8f79c0f",
+      "size": 2976,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/controller.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/controller.py",
+      "sha256": "d7ee5613af0872d6f2b5aa4be94a2554f31a8ad52fa8d8576147840d8a086b13",
+      "copy_sha256": "d7ee5613af0872d6f2b5aa4be94a2554f31a8ad52fa8d8576147840d8a086b13",
+      "size": 2211,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/Figure_1.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/Figure_1.png",
+      "sha256": "8a7135187f197a17ce48ef8620c018d31e89453116272a4d42f832df2f3c8e57",
+      "copy_sha256": "8a7135187f197a17ce48ef8620c018d31e89453116272a4d42f832df2f3c8e57",
+      "size": 152658,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/main.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/main.py",
+      "sha256": "49612758b3057acc85d99c4bc814dc9ffc9a54909169145a096a96a717b4ec6d",
+      "copy_sha256": "49612758b3057acc85d99c4bc814dc9ffc9a54909169145a096a96a717b4ec6d",
+      "size": 1265,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/plotter.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/plotter.py",
+      "sha256": "a6b2009ae2578e84983f14894acc9160e5a5581f83980b123a90afe92c4c4ef3",
+      "copy_sha256": "a6b2009ae2578e84983f14894acc9160e5a5581f83980b123a90afe92c4c4ef3",
+      "size": 2620,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/satellite.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/satellite.py",
+      "sha256": "2ee2a10bd9d8b0a11751cd28238aaaffc16d790d910464d18e18f33555f3fb30",
+      "copy_sha256": "2ee2a10bd9d8b0a11751cd28238aaaffc16d790d910464d18e18f33555f3fb30",
+      "size": 2076,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/simulator.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/simulator.py",
+      "sha256": "fb4180916c6646d3f13e957bc70e0dd203bb3b69c9e0fdbf5c4b898db6196088",
+      "copy_sha256": "fb4180916c6646d3f13e957bc70e0dd203bb3b69c9e0fdbf5c4b898db6196088",
+      "size": 4394,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/本周内容笔记/系统扩展介绍.md",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/本周内容笔记/系统扩展介绍.md",
+      "sha256": "c870a9546bc38feabcbb3ce29578af88d0a7bba3d08c0083581446d4c3508051",
+      "copy_sha256": "c870a9546bc38feabcbb3ce29578af88d0a7bba3d08c0083581446d4c3508051",
+      "size": 2434,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week5：三轴卫星姿态控制/main_3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week5：三轴卫星姿态控制/main_3d.py",
+      "sha256": "5255f8346a66e4c8f1204b70b0daa818cfbd1be53e55f82cc06cd684e3dd4324",
+      "copy_sha256": "5255f8346a66e4c8f1204b70b0daa818cfbd1be53e55f82cc06cd684e3dd4324",
+      "size": 1620,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week5：三轴卫星姿态控制/pid3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week5：三轴卫星姿态控制/pid3d.py",
+      "sha256": "b138c2fddfe7051d6e2d1f2ce2fefa3ab768f9801a5b6ede007c119843a71165",
+      "copy_sha256": "b138c2fddfe7051d6e2d1f2ce2fefa3ab768f9801a5b6ede007c119843a71165",
+      "size": 3568,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week5：三轴卫星姿态控制/plotter3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week5：三轴卫星姿态控制/plotter3d.py",
+      "sha256": "b77c7759769ab6d8d2f99191c08a921265ed401c24ad4aa31c576b568dad96da",
+      "copy_sha256": "b77c7759769ab6d8d2f99191c08a921265ed401c24ad4aa31c576b568dad96da",
+      "size": 2439,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week5：三轴卫星姿态控制/quaternion_utils.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week5：三轴卫星姿态控制/quaternion_utils.py",
+      "sha256": "2ec405f8bfd7aace9cecb3a983be93147b7aab57cf4786426cf87072a5ad5c84",
+      "copy_sha256": "2ec405f8bfd7aace9cecb3a983be93147b7aab57cf4786426cf87072a5ad5c84",
+      "size": 2868,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week5：三轴卫星姿态控制/satellite3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week5：三轴卫星姿态控制/satellite3d.py",
+      "sha256": "be049d50fffde2f187c8db1ef3e2647e6abc5a369f75043b6c8e428ceee7933a",
+      "copy_sha256": "be049d50fffde2f187c8db1ef3e2647e6abc5a369f75043b6c8e428ceee7933a",
+      "size": 3810,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week5：三轴卫星姿态控制/simulator3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week5：三轴卫星姿态控制/simulator3d.py",
+      "sha256": "d8f91adb38518ec97f50c4c9f28e97c07334f7ba7ef19c0ca21032a29aaa7c75",
+      "copy_sha256": "d8f91adb38518ec97f50c4c9f28e97c07334f7ba7ef19c0ca21032a29aaa7c75",
+      "size": 5499,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week5：三轴卫星姿态控制/三轴卫星姿态控制模型_1.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week5：三轴卫星姿态控制/三轴卫星姿态控制模型_1.png",
+      "sha256": "575611e392a1bcf3c82657175ca84ff84f40afb6631c067376d665c76a9ad08f",
+      "copy_sha256": "575611e392a1bcf3c82657175ca84ff84f40afb6631c067376d665c76a9ad08f",
+      "size": 154200,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week5：三轴卫星姿态控制/三轴卫星姿态控制模型_2.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week5：三轴卫星姿态控制/三轴卫星姿态控制模型_2.png",
+      "sha256": "28e087e83b04055c280d338c8b38626bdbef2114812da4ad9717d6ad2136d04a",
+      "copy_sha256": "28e087e83b04055c280d338c8b38626bdbef2114812da4ad9717d6ad2136d04a",
+      "size": 259519,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week5：三轴卫星姿态控制/曲线解释和曲线成因.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week5：三轴卫星姿态控制/曲线解释和曲线成因.png",
+      "sha256": "7c94fef27cbdfd2693db7a93a091c77074dcb5d8a1ae2eb5a4a9bb1a5717bdea",
+      "copy_sha256": "7c94fef27cbdfd2693db7a93a091c77074dcb5d8a1ae2eb5a4a9bb1a5717bdea",
+      "size": 1566977,
+      "verified": true
+    },
+    {
+      "category": "01_PID建模与控制参考",
+      "source_relative": "satellite1PID/week5：三轴卫星姿态控制/本周内容介绍.markdown",
+      "copy_relative": "结项成果包/01_遴选原始参考/01_PID建模与控制参考/satellite1PID/week5：三轴卫星姿态控制/本周内容介绍.markdown",
+      "sha256": "3dd7c5fc0716c89accca6f3573f5e576f5342205fc73fc1a7c2cd5c40bc34530",
+      "copy_sha256": "3dd7c5fc0716c89accca6f3573f5e576f5342205fc73fc1a7c2cd5c40bc34530",
+      "size": 771,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "cms的代码批注/satellite_env.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/cms的代码批注/satellite_env.py",
+      "sha256": "14cb0721be9e115df1a51a25c5531b0579e361c991baca1d380e7ad0b16c7edf",
+      "copy_sha256": "14cb0721be9e115df1a51a25c5531b0579e361c991baca1d380e7ad0b16c7edf",
+      "size": 5702,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "cms的代码批注/test_env.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/cms的代码批注/test_env.py",
+      "sha256": "89acde73152c00c2382681c3f1ce3d7fbf524eccbf04169464b99e425c1cf30b",
+      "copy_sha256": "89acde73152c00c2382681c3f1ce3d7fbf524eccbf04169464b99e425c1cf30b",
+      "size": 493,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "cms的代码批注/train_ppo.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/cms的代码批注/train_ppo.py",
+      "sha256": "5e83011418a17f42fadbb4ee65a98f838147187b2f6f6656de0e186302433d70",
+      "copy_sha256": "5e83011418a17f42fadbb4ee65a98f838147187b2f6f6656de0e186302433d70",
+      "size": 1908,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "satellite2AI/week6创建卫星Gym环境/satellite_env.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/satellite2AI/week6创建卫星Gym环境/satellite_env.py",
+      "sha256": "1f163a51de5b40c73ea32c6ef61e9b092cdadcb21242695ed1d5254083b8125f",
+      "copy_sha256": "1f163a51de5b40c73ea32c6ef61e9b092cdadcb21242695ed1d5254083b8125f",
+      "size": 3767,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "satellite2AI/week6创建卫星Gym环境/test_env.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/satellite2AI/week6创建卫星Gym环境/test_env.py",
+      "sha256": "3502e2df1c6aa9ddb3b1a032764322a8b14c12c7507fd975c86e86ce700a7669",
+      "copy_sha256": "3502e2df1c6aa9ddb3b1a032764322a8b14c12c7507fd975c86e86ce700a7669",
+      "size": 528,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "satellite2AI/week6创建卫星Gym环境/test_satellite.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/satellite2AI/week6创建卫星Gym环境/test_satellite.py",
+      "sha256": "e6b50b02ca2ebbdd8961f04a3b2faa9c7a54bd0169b64a582d897e0cdb603bb2",
+      "copy_sha256": "e6b50b02ca2ebbdd8961f04a3b2faa9c7a54bd0169b64a582d897e0cdb603bb2",
+      "size": 1526,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "satellite2AI/week6创建卫星Gym环境/train_satellite.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/satellite2AI/week6创建卫星Gym环境/train_satellite.py",
+      "sha256": "cf2c416747a2174ddb2bbeeff67ab2414d0d970795c96bd9cc43279f8fc3eaaf",
+      "copy_sha256": "cf2c416747a2174ddb2bbeeff67ab2414d0d970795c96bd9cc43279f8fc3eaaf",
+      "size": 1201,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/gpt改良版/generalization_test.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/gpt改良版/generalization_test.py",
+      "sha256": "1ee93a508278b8086904113a9826ea229128a95baa79ab7c4b3e247ed031a383",
+      "copy_sha256": "1ee93a508278b8086904113a9826ea229128a95baa79ab7c4b3e247ed031a383",
+      "size": 1474,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/gpt改良版/multi_config_compare.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/gpt改良版/multi_config_compare.py",
+      "sha256": "b1a6b2ef84be677686ee114a7bb34e4998f18e91cce7946cc9a1800ef5a44bfd",
+      "copy_sha256": "b1a6b2ef84be677686ee114a7bb34e4998f18e91cce7946cc9a1800ef5a44bfd",
+      "size": 5257,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/gpt改良版/ppo_gui.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/gpt改良版/ppo_gui.py",
+      "sha256": "77fd78a729149b377d6d85a8f0c26abb92bdeb3150d15f0f6ee65f49fa4a75ef",
+      "copy_sha256": "77fd78a729149b377d6d85a8f0c26abb92bdeb3150d15f0f6ee65f49fa4a75ef",
+      "size": 4952,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/gpt改良版/ppo_gui_autonune.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/gpt改良版/ppo_gui_autonune.py",
+      "sha256": "aada00a199abe53bd0adec3396aa8897feb8493bddff5d627b08f6b71320de35",
+      "copy_sha256": "aada00a199abe53bd0adec3396aa8897feb8493bddff5d627b08f6b71320de35",
+      "size": 7102,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/gpt改良版/sat_env.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/gpt改良版/sat_env.py",
+      "sha256": "09b6f2ad16d55a62b52bfccf931c934d79062fa6f22391d21dc9a7d73f2e07d3",
+      "copy_sha256": "09b6f2ad16d55a62b52bfccf931c934d79062fa6f22391d21dc9a7d73f2e07d3",
+      "size": 3993,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/gpt改良版/train_ppo.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/gpt改良版/train_ppo.py",
+      "sha256": "4740ea9b790e4e26dbb0d98967de2fd0684e6afec4add5c38dbb4e33e6132af7",
+      "copy_sha256": "4740ea9b790e4e26dbb0d98967de2fd0684e6afec4add5c38dbb4e33e6132af7",
+      "size": 2706,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/RL基础学习.md",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/RL基础学习.md",
+      "sha256": "356ade1a074b3713cab32aaf93e90287ddc9987350af974b42e2b9af6fab3c71",
+      "copy_sha256": "356ade1a074b3713cab32aaf93e90287ddc9987350af974b42e2b9af6fab3c71",
+      "size": 8130,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/卫星姿态描述动力学运动学学习笔记.markdown",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/卫星姿态描述动力学运动学学习笔记.markdown",
+      "sha256": "3fd1fc861cd80534bd14fed720d79c3b76da020b7e258d0530f1d40895c78e71",
+      "copy_sha256": "3fd1fc861cd80534bd14fed720d79c3b76da020b7e258d0530f1d40895c78e71",
+      "size": 9540,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/卫星姿态描述和动力学模型搭建.markdown",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/卫星姿态描述和动力学模型搭建.markdown",
+      "sha256": "414ef8bec71c51bc823bfe458712bf68cd71b28e268eb1d2820bf85e09aca978",
+      "copy_sha256": "414ef8bec71c51bc823bfe458712bf68cd71b28e268eb1d2820bf85e09aca978",
+      "size": 9657,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/接入gym的RL训练/compare_PID_PPO.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/接入gym的RL训练/compare_PID_PPO.py",
+      "sha256": "5b278910d73105a7414df9f3d277de825a2a96e5a87e28cf0f3bb15d68e1b8af",
+      "copy_sha256": "5b278910d73105a7414df9f3d277de825a2a96e5a87e28cf0f3bb15d68e1b8af",
+      "size": 5791,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/接入gym的RL训练/sat_env.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/接入gym的RL训练/sat_env.py",
+      "sha256": "3c31264961b5b52a97226c374dbb05d9f77559492dee7a287b1895360710d76e",
+      "copy_sha256": "3c31264961b5b52a97226c374dbb05d9f77559492dee7a287b1895360710d76e",
+      "size": 2573,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/接入gym的RL训练/train.ddpg.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/接入gym的RL训练/train.ddpg.py",
+      "sha256": "5409d8ef9c3924873d6c2711e5e4d9effc17a630d55496ab72a9825b2a0cf996",
+      "copy_sha256": "5409d8ef9c3924873d6c2711e5e4d9effc17a630d55496ab72a9825b2a0cf996",
+      "size": 1681,
+      "verified": true
+    },
+    {
+      "category": "02_强化学习环境与实验参考",
+      "source_relative": "yxy的学习笔记/接入gym的RL训练/train_ppo.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/02_强化学习环境与实验参考/yxy的学习笔记/接入gym的RL训练/train_ppo.py",
+      "sha256": "ced7ae45a024ad373be7dd1afc76a63e549780054397eaa166b088289a749e3d",
+      "copy_sha256": "ced7ae45a024ad373be7dd1afc76a63e549780054397eaa166b088289a749e3d",
+      "size": 1874,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "attitude_response.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/attitude_response.png",
+      "sha256": "9236ef8bd414975d8cb2289bd716c4f400346e2fcd4f3cead15843b2418916f6",
+      "copy_sha256": "9236ef8bd414975d8cb2289bd716c4f400346e2fcd4f3cead15843b2418916f6",
+      "size": 149745,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "logs/best_model/best_model.zip",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/logs/best_model/best_model.zip",
+      "sha256": "fbf79d91e0033391b7cc84db122d78c7bbbd77d6be214f3084d9b6da3b734142",
+      "copy_sha256": "fbf79d91e0033391b7cc84db122d78c7bbbd77d6be214f3084d9b6da3b734142",
+      "size": 138248,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "logs/evaluations.npz",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/logs/evaluations.npz",
+      "sha256": "c060b5f96e8e60d746524b5efd17acd9e121e883233fd5e611da4fdfab7a3ab2",
+      "copy_sha256": "c060b5f96e8e60d746524b5efd17acd9e121e883233fd5e611da4fdfab7a3ab2",
+      "size": 2530,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "logs/results/evaluations.npz",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/logs/results/evaluations.npz",
+      "sha256": "d1bc4b2bb7de5a91689b9f26aa49b1209f73a510cf0d0c1a40d44b0774b11dec",
+      "copy_sha256": "d1bc4b2bb7de5a91689b9f26aa49b1209f73a510cf0d0c1a40d44b0774b11dec",
+      "size": 2530,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "ppo_sat_tensorboard/PPO_1/events.out.tfevents.1777694226.LAPTOP-GG3B128L.19896.0",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/ppo_sat_tensorboard/PPO_1/events.out.tfevents.1777694226.LAPTOP-GG3B128L.19896.0",
+      "sha256": "12e78b73525c87d75e7e8c2c4325b3fa75acce360bddc9c91b11cc9687927783",
+      "copy_sha256": "12e78b73525c87d75e7e8c2c4325b3fa75acce360bddc9c91b11cc9687927783",
+      "size": 71641,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "ppo_sat_tensorboard/PPO_2/events.out.tfevents.1777694912.LAPTOP-GG3B128L.58572.0",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/ppo_sat_tensorboard/PPO_2/events.out.tfevents.1777694912.LAPTOP-GG3B128L.58572.0",
+      "sha256": "99a4dfe6d1c610b182e3e7abb2cb7262922513fa45879a5889a1652e3d5343b2",
+      "copy_sha256": "99a4dfe6d1c610b182e3e7abb2cb7262922513fa45879a5889a1652e3d5343b2",
+      "size": 71759,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "ppo_sat_tensorboard/PPO_3/events.out.tfevents.1777896724.LAPTOP-GG3B128L.67416.0",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/ppo_sat_tensorboard/PPO_3/events.out.tfevents.1777896724.LAPTOP-GG3B128L.67416.0",
+      "sha256": "a66c344e4e16829c9bade645451453c03649926d354a610aa660f6b019537aba",
+      "copy_sha256": "a66c344e4e16829c9bade645451453c03649926d354a610aa660f6b019537aba",
+      "size": 215565,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "ppo_satellite.zip",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/ppo_satellite.zip",
+      "sha256": "544b84157bc2eb22b38b9faa4453e389b5288ec16829c5674a9428a2145b4518",
+      "copy_sha256": "544b84157bc2eb22b38b9faa4453e389b5288ec16829c5674a9428a2145b4518",
+      "size": 139629,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "ppo_satellite_final.zip",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/ppo_satellite_final.zip",
+      "sha256": "ba0c99c4315631ee3b57ddce7cb7077ab7ff73ec228e85984cd958f0e7603191",
+      "copy_sha256": "ba0c99c4315631ee3b57ddce7cb7077ab7ff73ec228e85984cd958f0e7603191",
+      "size": 138263,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "ppo_satellite_improved.zip",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/ppo_satellite_improved.zip",
+      "sha256": "648ccac8aae01af41b5c146d5b81b8046bbefb5ef68780f8f381f24b80bee74f",
+      "copy_sha256": "648ccac8aae01af41b5c146d5b81b8046bbefb5ef68780f8f381f24b80bee74f",
+      "size": 139612,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "satellite_response.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/satellite_response.png",
+      "sha256": "8c5105387ad59b3b63042e8dfa7367453b1f6664d5e3e12eb9691b1e07ad29f3",
+      "copy_sha256": "8c5105387ad59b3b63042e8dfa7367453b1f6664d5e3e12eb9691b1e07ad29f3",
+      "size": 118781,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "satellite_tensorboard/PPO_1/events.out.tfevents.1777743029.LAPTOP-H23GCFD7.26396.0",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/satellite_tensorboard/PPO_1/events.out.tfevents.1777743029.LAPTOP-H23GCFD7.26396.0",
+      "sha256": "39679fe4f156ca8ca0e09d7045b5f40e793ecb33d79a7f83c0d8eb4a386ae49f",
+      "copy_sha256": "39679fe4f156ca8ca0e09d7045b5f40e793ecb33d79a7f83c0d8eb4a386ae49f",
+      "size": 74057,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "satellite_tensorboard/PPO_2/events.out.tfevents.1777881898.LAPTOP-DP7Q6JSE.36080.0",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/satellite_tensorboard/PPO_2/events.out.tfevents.1777881898.LAPTOP-DP7Q6JSE.36080.0",
+      "sha256": "d622420fc169fce19e0aa750bfb01bbd53b91d08b1acb2b7713eaf460bb74444",
+      "copy_sha256": "d622420fc169fce19e0aa750bfb01bbd53b91d08b1acb2b7713eaf460bb74444",
+      "size": 74057,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "yxy的学习笔记/gpt改良版/Figure_1.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/yxy的学习笔记/gpt改良版/Figure_1.png",
+      "sha256": "99b14c4d079fa62f62fad354d8191d0727b8b4548d12aadced268682c2124378",
+      "copy_sha256": "99b14c4d079fa62f62fad354d8191d0727b8b4548d12aadced268682c2124378",
+      "size": 39708,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "yxy的学习笔记/gpt改良版/ppo_satellite_improved.zip",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/yxy的学习笔记/gpt改良版/ppo_satellite_improved.zip",
+      "sha256": "648ccac8aae01af41b5c146d5b81b8046bbefb5ef68780f8f381f24b80bee74f",
+      "copy_sha256": "648ccac8aae01af41b5c146d5b81b8046bbefb5ef68780f8f381f24b80bee74f",
+      "size": 139612,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "yxy的学习笔记/gpt改良版/多种参数可视化对比.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/yxy的学习笔记/gpt改良版/多种参数可视化对比.png",
+      "sha256": "371526265b18c9453fb2b964d37efd5afe4bfd7262f0b08b6acd985e81da7192",
+      "copy_sha256": "371526265b18c9453fb2b964d37efd5afe4bfd7262f0b08b6acd985e81da7192",
+      "size": 70046,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "yxy的学习笔记/接入gym的RL训练/Figure_1.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/yxy的学习笔记/接入gym的RL训练/Figure_1.png",
+      "sha256": "8c7ef0566862b32da6d6c0e51bf0edeebcbd4b14a75eec45adee8e004c72daf7",
+      "copy_sha256": "8c7ef0566862b32da6d6c0e51bf0edeebcbd4b14a75eec45adee8e004c72daf7",
+      "size": 76134,
+      "verified": true
+    },
+    {
+      "category": "03_历史模型日志与图表",
+      "source_relative": "yxy的学习笔记/接入gym的RL训练/ppo_satellite.zip",
+      "copy_relative": "结项成果包/01_遴选原始参考/03_历史模型日志与图表/yxy的学习笔记/接入gym的RL训练/ppo_satellite.zip",
+      "sha256": "544b84157bc2eb22b38b9faa4453e389b5288ec16829c5674a9428a2145b4518",
+      "copy_sha256": "544b84157bc2eb22b38b9faa4453e389b5288ec16829c5674a9428a2145b4518",
+      "size": 139629,
+      "verified": true
+    },
+    {
+      "category": "04_立项与中期报告参考",
+      "source_relative": "项目报告/《人工智能在卫星姿态控制系统中的应用》大一年度项目立项报告_20251026163255.pdf",
+      "copy_relative": "结项成果包/01_遴选原始参考/04_立项与中期报告参考/项目报告/《人工智能在卫星姿态控制系统中的应用》大一年度项目立项报告_20251026163255.pdf",
+      "sha256": "2685e0d735ca8480041e92fbb3d57d80d73defa9e3bd109c2d6f1a89976bb91d",
+      "copy_sha256": "2685e0d735ca8480041e92fbb3d57d80d73defa9e3bd109c2d6f1a89976bb91d",
+      "size": 573206,
+      "verified": true
+    },
+    {
+      "category": "04_立项与中期报告参考",
+      "source_relative": "项目报告/中期检查报告.docx",
+      "copy_relative": "结项成果包/01_遴选原始参考/04_立项与中期报告参考/项目报告/中期检查报告.docx",
+      "sha256": "428dbd49788dad99a5107b43eba9f25e3dc09b40532e49708e271665ad78d63b",
+      "copy_sha256": "428dbd49788dad99a5107b43eba9f25e3dc09b40532e49708e271665ad78d63b",
+      "size": 932286,
+      "verified": true
+    }
+  ]
+}

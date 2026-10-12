@@ -1,0 +1,12 @@
+{
+  "q_sign_equivalent": true,
+  "q_sign_max_opposite_state_difference": 0.0,
+  "q_sign_max_control_difference": 0.0,
+  "exact_180_degree_sign_equivalent": true,
+  "zero_error_stays_at_rest": true,
+  "controller_reset_clears_integral": true,
+  "zero_quaternion_rejected": true,
+  "quaternion_norm_preserved": true,
+  "bounded_finite_output": true,
+  "all_passed": true
+}

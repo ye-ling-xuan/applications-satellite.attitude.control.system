@@ -1,0 +1,29 @@
+[
+  {
+    "controller": "historical_PPO",
+    "model_seed": "unrecorded",
+    "source": "archived_model_deployment",
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\01_遴选原始参考\\05_中期前任务收尾新增材料\\原样工程\\大一立项AI在卫星姿态调整中的应用\\三轴强化学习\\ppo_satellite3d.zip",
+    "model_sha256": "ac4d21917a741b95b58653c0466231a0d343e779c5242a8a023c90f0cc4cd7fd",
+    "actual_training_steps": 800768,
+    "original_action_is_physical_torque": true
+  },
+  {
+    "controller": "historical_SAC",
+    "model_seed": "unrecorded",
+    "source": "archived_model_deployment",
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\01_遴选原始参考\\05_中期前任务收尾新增材料\\原样工程\\大一立项AI在卫星姿态调整中的应用\\三轴强化学习\\sac_satellite3d.zip",
+    "model_sha256": "d10e1e7310c797e6c5b624827036a032df156119e998336bfac3c682485da89c",
+    "actual_training_steps": 800000,
+    "original_action_is_physical_torque": true
+  },
+  {
+    "controller": "historical_TD3",
+    "model_seed": "unrecorded",
+    "source": "archived_model_deployment",
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\01_遴选原始参考\\05_中期前任务收尾新增材料\\原样工程\\大一立项AI在卫星姿态调整中的应用\\三轴强化学习\\td3_satellite3d.zip",
+    "model_sha256": "9bb5e193822436a96baf9c49c3f47f7e2849370a189850cc073a0f24b2a9a565",
+    "actual_training_steps": 800000,
+    "original_action_is_physical_torque": true
+  }
+]

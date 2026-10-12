@@ -1,0 +1,12 @@
+{
+  "figures": [
+    "01_response_single.png",
+    "01_response_three.png",
+    "02_success_by_condition.png",
+    "03_accuracy_control_cost.png",
+    "04_paired_pid_improvement.png",
+    "05_learning_seed_variation.png",
+    "06_historical_deployment.png",
+    "07_policy_calibration.png"
+  ]
+}

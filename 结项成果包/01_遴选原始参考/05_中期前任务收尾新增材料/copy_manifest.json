@@ -1,0 +1,561 @@
+{
+  "schema_version": 1,
+  "archive_date": "2026-10-11",
+  "file_count": 60,
+  "total_bytes": 10565175,
+  "category_counts": {
+    "00_项目入口与环境说明": 3,
+    "04_历史横向对比与结果说明": 16,
+    "01_PID单轴与三轴参考": 16,
+    "03_三轴PPO_SAC_TD3历史模型与评测": 14,
+    "02_单轴PPO历史模型与评测": 11
+  },
+  "excluded_file_counts": {
+    ".git": 763,
+    ".vscode": 2,
+    "__pycache__": 2
+  },
+  "copies_identical": true,
+  "files": [
+    {
+      "category": "00_项目入口与环境说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.gitignore",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/.gitignore",
+      "size": 213,
+      "sha256": "dfe07095727095dfc7670b79ad36f6b9378b4ef9b23a09354a47da0efb6d7da2",
+      "copy_sha256": "dfe07095727095dfc7670b79ad36f6b9378b4ef9b23a09354a47da0efb6d7da2",
+      "verified": true
+    },
+    {
+      "category": "00_项目入口与环境说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/README.md",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/README.md",
+      "size": 12774,
+      "sha256": "dbe6f9655e6e2c1c439bd1cdc85112cd30035737fc0c77ee4eb1fff847c81929",
+      "copy_sha256": "dbe6f9655e6e2c1c439bd1cdc85112cd30035737fc0c77ee4eb1fff847c81929",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/compare_rl_algorithms.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/compare_rl_algorithms.py",
+      "size": 8318,
+      "sha256": "7de6b3b0cbd9e97fdc8e5c8c608918ba354a8f7c0dca737773545799c27beb1e",
+      "copy_sha256": "7de6b3b0cbd9e97fdc8e5c8c608918ba354a8f7c0dca737773545799c27beb1e",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/compare_rl_pid.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/compare_rl_pid.py",
+      "size": 9228,
+      "sha256": "5ab65b5ab788f82a9dd44e2b2f2033806b74b5d5087ae4d8ea0180bdb6b12a9c",
+      "copy_sha256": "5ab65b5ab788f82a9dd44e2b2f2033806b74b5d5087ae4d8ea0180bdb6b12a9c",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/compare_robustness.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/compare_robustness.py",
+      "size": 10517,
+      "sha256": "e9d7df7c2f2eb899002b0e91d1756c1adf943b4b5160ba28f29a4d4f2eed3418",
+      "copy_sha256": "e9d7df7c2f2eb899002b0e91d1756c1adf943b4b5160ba28f29a4d4f2eed3418",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/三轴算法对比_结果与分析.md",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/三轴算法对比_结果与分析.md",
+      "size": 7303,
+      "sha256": "f14a1f97a639d69313d71fff3557b217ed2714159ccea2760975e745909cf401",
+      "copy_sha256": "f14a1f97a639d69313d71fff3557b217ed2714159ccea2760975e745909cf401",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_correction_curves.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_correction_curves.png",
+      "size": 116674,
+      "sha256": "5f35c6cc32f33ea902585fb9375cf96a1bf8331c49f386783adf3244ede3547f",
+      "copy_sha256": "5f35c6cc32f33ea902585fb9375cf96a1bf8331c49f386783adf3244ede3547f",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_rl_pid.csv",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_rl_pid.csv",
+      "size": 1591,
+      "sha256": "99c44740681b1e9fb014751b1af835db71410e0732b5c0abc83c3dbfbb541a7e",
+      "copy_sha256": "99c44740681b1e9fb014751b1af835db71410e0732b5c0abc83c3dbfbb541a7e",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_robustness.csv",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_robustness.csv",
+      "size": 6853,
+      "sha256": "03d6a033c462e0041178c38b90d9cc1c92a464219bc1e88454771e65b3b2e32d",
+      "copy_sha256": "03d6a033c462e0041178c38b90d9cc1c92a464219bc1e88454771e65b3b2e32d",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_settling_time.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_settling_time.png",
+      "size": 48665,
+      "sha256": "5c15f3e28cc01740dd7a167a7a02cae0dfc18f5309ac3ba3f3ff3a5163796c08",
+      "copy_sha256": "5c15f3e28cc01740dd7a167a7a02cae0dfc18f5309ac3ba3f3ff3a5163796c08",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_steady_error.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_steady_error.png",
+      "size": 51453,
+      "sha256": "377375b669edf986810f1fc0ad502dc1e4cd0c91d4253834e395a8734be98b27",
+      "copy_sha256": "377375b669edf986810f1fc0ad502dc1e4cd0c91d4253834e395a8734be98b27",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_comparison.csv",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_comparison.csv",
+      "size": 1797,
+      "sha256": "e1c5c94f2a6ca0c684c9860c021cedf5f9140f61cc7007fcd8200f40019e25c8",
+      "copy_sha256": "e1c5c94f2a6ca0c684c9860c021cedf5f9140f61cc7007fcd8200f40019e25c8",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_curves.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_curves.png",
+      "size": 103731,
+      "sha256": "8f5902ebf5f9c8ef6b5c402a4d852710299013dd7adbf176e67ac94efc67acd2",
+      "copy_sha256": "8f5902ebf5f9c8ef6b5c402a4d852710299013dd7adbf176e67ac94efc67acd2",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_settling_time.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_settling_time.png",
+      "size": 59388,
+      "sha256": "d4d9c687944052bf68274d1c79596c7748ae397a42afbbfbd612c0c86bd2e3cb",
+      "copy_sha256": "d4d9c687944052bf68274d1c79596c7748ae397a42afbbfbd612c0c86bd2e3cb",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_tail_error.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_tail_error.png",
+      "size": 51342,
+      "sha256": "ae98a758156bb9234ea262ebcab59b1f7599556cd3e1f73407841244187cd602",
+      "copy_sha256": "ae98a758156bb9234ea262ebcab59b1f7599556cd3e1f73407841244187cd602",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/robustness_correction_time.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/robustness_correction_time.png",
+      "size": 43620,
+      "sha256": "3c89d0959d9c44de834ec91b55526a981f8d2c69b61b8ba5d8faa3716bf150f9",
+      "copy_sha256": "3c89d0959d9c44de834ec91b55526a981f8d2c69b61b8ba5d8faa3716bf150f9",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/robustness_curves_A0.05.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/robustness_curves_A0.05.png",
+      "size": 123003,
+      "sha256": "6877380fb1bf4489564fe8b97470b0eb2b5196fad45cc33c0d5e2d9672c809ab",
+      "copy_sha256": "6877380fb1bf4489564fe8b97470b0eb2b5196fad45cc33c0d5e2d9672c809ab",
+      "verified": true
+    },
+    {
+      "category": "04_历史横向对比与结果说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/robustness_residual_error.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/robustness_residual_error.png",
+      "size": 59279,
+      "sha256": "9d939e621cfbb8863c72d42085347be7274e24bf3ae5e4f2348f0eba98f6dcf8",
+      "copy_sha256": "9d939e621cfbb8863c72d42085347be7274e24bf3ae5e4f2348f0eba98f6dcf8",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis/controller.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/single_axis/controller.py",
+      "size": 1543,
+      "sha256": "0b4b0eba190a0dd5a232d19c8b1dc11583d9bf6fa94195ea51507bea2b414894",
+      "copy_sha256": "0b4b0eba190a0dd5a232d19c8b1dc11583d9bf6fa94195ea51507bea2b414894",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis/main.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/single_axis/main.py",
+      "size": 895,
+      "sha256": "066be00497c2577763c8ff36e7224d6d0545ba6fd45bc5a583d6ee1cc2e1f73b",
+      "copy_sha256": "066be00497c2577763c8ff36e7224d6d0545ba6fd45bc5a583d6ee1cc2e1f73b",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis/plotter.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/single_axis/plotter.py",
+      "size": 718,
+      "sha256": "c2f55046fa823e753edc2b2c1eee6489da68973dbf1f15c0fe7f7a6b652d9128",
+      "copy_sha256": "c2f55046fa823e753edc2b2c1eee6489da68973dbf1f15c0fe7f7a6b652d9128",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis/satellite.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/single_axis/satellite.py",
+      "size": 1887,
+      "sha256": "d46a06ccc208edaf835bbbeb456d4dd4807b29c1fc0a950d6299dbee68d9e170",
+      "copy_sha256": "d46a06ccc208edaf835bbbeb456d4dd4807b29c1fc0a950d6299dbee68d9e170",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis/simulator.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/single_axis/simulator.py",
+      "size": 2976,
+      "sha256": "de800b48fd7193edce0ed37a37282b65e286a800da8da1005036fdebb8f79c0f",
+      "copy_sha256": "de800b48fd7193edce0ed37a37282b65e286a800da8da1005036fdebb8f79c0f",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/controller.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/controller.py",
+      "size": 2211,
+      "sha256": "d7ee5613af0872d6f2b5aa4be94a2554f31a8ad52fa8d8576147840d8a086b13",
+      "copy_sha256": "d7ee5613af0872d6f2b5aa4be94a2554f31a8ad52fa8d8576147840d8a086b13",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/main.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/main.py",
+      "size": 1265,
+      "sha256": "49612758b3057acc85d99c4bc814dc9ffc9a54909169145a096a96a717b4ec6d",
+      "copy_sha256": "49612758b3057acc85d99c4bc814dc9ffc9a54909169145a096a96a717b4ec6d",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/plotter.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/plotter.py",
+      "size": 2620,
+      "sha256": "a6b2009ae2578e84983f14894acc9160e5a5581f83980b123a90afe92c4c4ef3",
+      "copy_sha256": "a6b2009ae2578e84983f14894acc9160e5a5581f83980b123a90afe92c4c4ef3",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/satellite.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/satellite.py",
+      "size": 2076,
+      "sha256": "2ee2a10bd9d8b0a11751cd28238aaaffc16d790d910464d18e18f33555f3fb30",
+      "copy_sha256": "2ee2a10bd9d8b0a11751cd28238aaaffc16d790d910464d18e18f33555f3fb30",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/simulator.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/simulator.py",
+      "size": 4394,
+      "sha256": "fb4180916c6646d3f13e957bc70e0dd203bb3b69c9e0fdbf5c4b898db6196088",
+      "copy_sha256": "fb4180916c6646d3f13e957bc70e0dd203bb3b69c9e0fdbf5c4b898db6196088",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/main_3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/three_axis/main_3d.py",
+      "size": 1620,
+      "sha256": "5255f8346a66e4c8f1204b70b0daa818cfbd1be53e55f82cc06cd684e3dd4324",
+      "copy_sha256": "5255f8346a66e4c8f1204b70b0daa818cfbd1be53e55f82cc06cd684e3dd4324",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/pid3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/three_axis/pid3d.py",
+      "size": 3568,
+      "sha256": "b138c2fddfe7051d6e2d1f2ce2fefa3ab768f9801a5b6ede007c119843a71165",
+      "copy_sha256": "b138c2fddfe7051d6e2d1f2ce2fefa3ab768f9801a5b6ede007c119843a71165",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/plotter3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/three_axis/plotter3d.py",
+      "size": 2439,
+      "sha256": "b77c7759769ab6d8d2f99191c08a921265ed401c24ad4aa31c576b568dad96da",
+      "copy_sha256": "b77c7759769ab6d8d2f99191c08a921265ed401c24ad4aa31c576b568dad96da",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/quaternion_utils.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/three_axis/quaternion_utils.py",
+      "size": 2868,
+      "sha256": "2ec405f8bfd7aace9cecb3a983be93147b7aab57cf4786426cf87072a5ad5c84",
+      "copy_sha256": "2ec405f8bfd7aace9cecb3a983be93147b7aab57cf4786426cf87072a5ad5c84",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/satellite3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/three_axis/satellite3d.py",
+      "size": 3810,
+      "sha256": "be049d50fffde2f187c8db1ef3e2647e6abc5a369f75043b6c8e428ceee7933a",
+      "copy_sha256": "be049d50fffde2f187c8db1ef3e2647e6abc5a369f75043b6c8e428ceee7933a",
+      "verified": true
+    },
+    {
+      "category": "01_PID单轴与三轴参考",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/simulator3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/pid/three_axis/simulator3d.py",
+      "size": 5499,
+      "sha256": "d8f91adb38518ec97f50c4c9f28e97c07334f7ba7ef19c0ca21032a29aaa7c75",
+      "copy_sha256": "d8f91adb38518ec97f50c4c9f28e97c07334f7ba7ef19c0ca21032a29aaa7c75",
+      "verified": true
+    },
+    {
+      "category": "00_项目入口与环境说明",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/requirements.txt",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/requirements.txt",
+      "size": 45,
+      "sha256": "d347fe6a07c5f7a68a3c96edbd2f0e1d6c82765228ac90d2660d4fb7f301e11b",
+      "copy_sha256": "d347fe6a07c5f7a68a3c96edbd2f0e1d6c82765228ac90d2660d4fb7f301e11b",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/evaluate_three_axis_multi.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/evaluate_three_axis_multi.py",
+      "size": 6066,
+      "sha256": "51d554f3040f5150c6d06c4142bee0e09dad6b53b2f754087307933c43715549",
+      "copy_sha256": "51d554f3040f5150c6d06c4142bee0e09dad6b53b2f754087307933c43715549",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/metrics.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/metrics.py",
+      "size": 2276,
+      "sha256": "88991dcd12f690dc3cb580e89ad6c37b11aef0b4fe3670aae231fe816da3e508",
+      "copy_sha256": "88991dcd12f690dc3cb580e89ad6c37b11aef0b4fe3670aae231fe816da3e508",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/ppo_satellite3d.zip",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/ppo_satellite3d.zip",
+      "size": 147321,
+      "sha256": "ac4d21917a741b95b58653c0466231a0d343e779c5242a8a023c90f0cc4cd7fd",
+      "copy_sha256": "ac4d21917a741b95b58653c0466231a0d343e779c5242a8a023c90f0cc4cd7fd",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/sac_satellite3d.zip",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/sac_satellite3d.zip",
+      "size": 3072714,
+      "sha256": "d10e1e7310c797e6c5b624827036a032df156119e998336bfac3c682485da89c",
+      "copy_sha256": "d10e1e7310c797e6c5b624827036a032df156119e998336bfac3c682485da89c",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/satellite_env3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/satellite_env3d.py",
+      "size": 8511,
+      "sha256": "b45dbc0b258cee40e6bd4042203d8c550785d5fede43c498bf27b03f7abd4dcf",
+      "copy_sha256": "b45dbc0b258cee40e6bd4042203d8c550785d5fede43c498bf27b03f7abd4dcf",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/td3_satellite3d.zip",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/td3_satellite3d.zip",
+      "size": 6018031,
+      "sha256": "9bb5e193822436a96baf9c49c3f47f7e2849370a189850cc073a0f24b2a9a565",
+      "copy_sha256": "9bb5e193822436a96baf9c49c3f47f7e2849370a189850cc073a0f24b2a9a565",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/train_satellite3d.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/train_satellite3d.py",
+      "size": 1151,
+      "sha256": "9eb56c0fb7f25c5d56f6e1001449ee32c621fbc230d675b40b40180e5d3d5fc7",
+      "copy_sha256": "9eb56c0fb7f25c5d56f6e1001449ee32c621fbc230d675b40b40180e5d3d5fc7",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/train_satellite3d_sac.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/train_satellite3d_sac.py",
+      "size": 3216,
+      "sha256": "9d21bba7c516b57c77e7ede24cf9e320a6242c8d5a99f77d481835016b541957",
+      "copy_sha256": "9d21bba7c516b57c77e7ede24cf9e320a6242c8d5a99f77d481835016b541957",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/train_satellite3d_td3.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/train_satellite3d_td3.py",
+      "size": 2311,
+      "sha256": "0cabf9494bc7d67aa150ad204fb3b9c70e29c4d9d7980a48743eb6c26b73b3f1",
+      "copy_sha256": "0cabf9494bc7d67aa150ad204fb3b9c70e29c4d9d7980a48743eb6c26b73b3f1",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_correction_curves.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_correction_curves.png",
+      "size": 99960,
+      "sha256": "e78530d4d6702943f862c1560a7c67122839dfa6eaa4b18a460ab202b7079c22",
+      "copy_sha256": "e78530d4d6702943f862c1560a7c67122839dfa6eaa4b18a460ab202b7079c22",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_settling_time.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_settling_time.png",
+      "size": 48248,
+      "sha256": "a6528fbc64129a29bbfd0f901518e75eb46798ebaf4dbd51bc36b9ee652dc101",
+      "copy_sha256": "a6528fbc64129a29bbfd0f901518e75eb46798ebaf4dbd51bc36b9ee652dc101",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_steady_error.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_steady_error.png",
+      "size": 51346,
+      "sha256": "f5112539f32af438c3b2a4a8ed0d57145b96de24d4a3c1211d051b0dfafa5486",
+      "copy_sha256": "f5112539f32af438c3b2a4a8ed0d57145b96de24d4a3c1211d051b0dfafa5486",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_summary.csv",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_summary.csv",
+      "size": 1435,
+      "sha256": "97d32466a38b3a756e1edddc6be92745d18ec10c1ddeb672d8bbf067a0bf62c3",
+      "copy_sha256": "97d32466a38b3a756e1edddc6be92745d18ec10c1ddeb672d8bbf067a0bf62c3",
+      "verified": true
+    },
+    {
+      "category": "03_三轴PPO_SAC_TD3历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/训练收敛监控.txt",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/三轴强化学习/训练收敛监控.txt",
+      "size": 4569,
+      "sha256": "c111f1190e6a463b4622d604c376033919e0b3151ad063058b1eb76549bfc0e3",
+      "copy_sha256": "c111f1190e6a463b4622d604c376033919e0b3151ad063058b1eb76549bfc0e3",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/evaluate_single_axis.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/evaluate_single_axis.py",
+      "size": 4707,
+      "sha256": "2702b3e85382a25a0ef4ef264966a6044c6d483be32519c1fd188e8ca9da2b4f",
+      "copy_sha256": "2702b3e85382a25a0ef4ef264966a6044c6d483be32519c1fd188e8ca9da2b4f",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/metrics.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/metrics.py",
+      "size": 2276,
+      "sha256": "88991dcd12f690dc3cb580e89ad6c37b11aef0b4fe3670aae231fe816da3e508",
+      "copy_sha256": "88991dcd12f690dc3cb580e89ad6c37b11aef0b4fe3670aae231fe816da3e508",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/ppo_satellite_final.zip",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/ppo_satellite_final.zip",
+      "size": 139014,
+      "sha256": "7a36639e5af5fd4efd23a30b53a0dee00555a429b2e8c95515230deac27df952",
+      "copy_sha256": "7a36639e5af5fd4efd23a30b53a0dee00555a429b2e8c95515230deac27df952",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/satellite_env.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/satellite_env.py",
+      "size": 4521,
+      "sha256": "95fe0c2efac6126895cbf88722d0fd0263d2ad0e4373ecca62d34af70236608a",
+      "copy_sha256": "95fe0c2efac6126895cbf88722d0fd0263d2ad0e4373ecca62d34af70236608a",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/test_env.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/test_env.py",
+      "size": 488,
+      "sha256": "b603a12861e79af9e254d8b423544c35d9c587bbce77a40f38261e2224c471d9",
+      "copy_sha256": "b603a12861e79af9e254d8b423544c35d9c587bbce77a40f38261e2224c471d9",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/test_satellite.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/test_satellite.py",
+      "size": 1526,
+      "sha256": "e6b50b02ca2ebbdd8961f04a3b2faa9c7a54bd0169b64a582d897e0cdb603bb2",
+      "copy_sha256": "e6b50b02ca2ebbdd8961f04a3b2faa9c7a54bd0169b64a582d897e0cdb603bb2",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/train_satellite.py",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/train_satellite.py",
+      "size": 1201,
+      "sha256": "cf2c416747a2174ddb2bbeeff67ab2414d0d970795c96bd9cc43279f8fc3eaaf",
+      "copy_sha256": "cf2c416747a2174ddb2bbeeff67ab2414d0d970795c96bd9cc43279f8fc3eaaf",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_correction_curves.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_correction_curves.png",
+      "size": 82729,
+      "sha256": "9c9a869755ddd10d64a705648d66ef4b49fcea742ff118cdc7b03acb12e88437",
+      "copy_sha256": "9c9a869755ddd10d64a705648d66ef4b49fcea742ff118cdc7b03acb12e88437",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_mean_error.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_mean_error.png",
+      "size": 60480,
+      "sha256": "29ce075bb1fe98e05fab0b2e06c6ee9a417f0a19b05c62b64617ed0718f12939",
+      "copy_sha256": "29ce075bb1fe98e05fab0b2e06c6ee9a417f0a19b05c62b64617ed0718f12939",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_settling_time.png",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_settling_time.png",
+      "size": 44557,
+      "sha256": "46fdbb0b237e268bf63970f6a8fd71d4b2bfd06b1ab119b72c5a26bb77345df0",
+      "copy_sha256": "46fdbb0b237e268bf63970f6a8fd71d4b2bfd06b1ab119b72c5a26bb77345df0",
+      "verified": true
+    },
+    {
+      "category": "02_单轴PPO历史模型与评测",
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_summary.csv",
+      "copy_relative": "结项成果包/01_遴选原始参考/05_中期前任务收尾新增材料/原样工程/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_summary.csv",
+      "size": 338,
+      "sha256": "c3e79da447b909a89cb9d9c0b24b6ec7e9ce1e05f86e9faa277dddb6215e2f8c",
+      "copy_sha256": "c3e79da447b909a89cb9d9c0b24b6ec7e9ce1e05f86e9faa277dddb6215e2f8c",
+      "verified": true
+    }
+  ]
+}

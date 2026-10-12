@@ -1,0 +1,316 @@
+{
+  "purpose": "PID calibration on the fixed development scenario; not held-out testing",
+  "seed": 20261009,
+  "thresholds_unchanged": true,
+  "disturbance_and_noise_unchanged": true,
+  "candidates": [
+    {
+      "kp": [
+        1.8,
+        1.5,
+        1.2
+      ],
+      "ki": [
+        0.1,
+        0.08,
+        0.06
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": false,
+      "max_attitude_error_last_5s_deg": 1.1522793554646467,
+      "max_rate_norm_last_5s_deg_s": 0.22509885376033173,
+      "settling_time_s": null,
+      "control_cost_N2m2_s": 0.19536281762267482
+    },
+    {
+      "kp": [
+        1.8,
+        1.5,
+        1.2
+      ],
+      "ki": [
+        0.2,
+        0.16,
+        0.12
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": false,
+      "max_attitude_error_last_5s_deg": 1.67050780738907,
+      "max_rate_norm_last_5s_deg_s": 0.2921870149404881,
+      "settling_time_s": null,
+      "control_cost_N2m2_s": 0.19691681873703337
+    },
+    {
+      "kp": [
+        1.8,
+        1.5,
+        1.2
+      ],
+      "ki": [
+        0.30000000000000004,
+        0.24,
+        0.18
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": false,
+      "max_attitude_error_last_5s_deg": 1.6813603631608398,
+      "max_rate_norm_last_5s_deg_s": 0.35432763596857286,
+      "settling_time_s": null,
+      "control_cost_N2m2_s": 0.19886192323999521
+    },
+    {
+      "kp": [
+        1.8,
+        1.5,
+        1.2
+      ],
+      "ki": [
+        0.4,
+        0.32,
+        0.24
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": false,
+      "max_attitude_error_last_5s_deg": 1.4758484429776084,
+      "max_rate_norm_last_5s_deg_s": 0.393737544408923,
+      "settling_time_s": null,
+      "control_cost_N2m2_s": 0.2013263233986205
+    },
+    {
+      "kp": [
+        2.16,
+        1.7999999999999998,
+        1.44
+      ],
+      "ki": [
+        0.2,
+        0.16,
+        0.12
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": false,
+      "max_attitude_error_last_5s_deg": 1.4019803388599115,
+      "max_rate_norm_last_5s_deg_s": 0.2511189400534392,
+      "settling_time_s": null,
+      "control_cost_N2m2_s": 0.23134521709489883
+    },
+    {
+      "kp": [
+        2.16,
+        1.7999999999999998,
+        1.44
+      ],
+      "ki": [
+        0.30000000000000004,
+        0.24,
+        0.18
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": false,
+      "max_attitude_error_last_5s_deg": 1.465113590623674,
+      "max_rate_norm_last_5s_deg_s": 0.31694070838660265,
+      "settling_time_s": null,
+      "control_cost_N2m2_s": 0.23270410924504556
+    },
+    {
+      "kp": [
+        1.4400000000000002,
+        1.2000000000000002,
+        0.96
+      ],
+      "ki": [
+        0.2,
+        0.16,
+        0.12
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": false,
+      "max_attitude_error_last_5s_deg": 2.0810153762623043,
+      "max_rate_norm_last_5s_deg_s": 0.3577599824396614,
+      "settling_time_s": null,
+      "control_cost_N2m2_s": 0.16131015783912628
+    },
+    {
+      "kp": [
+        1.4400000000000002,
+        1.2000000000000002,
+        0.96
+      ],
+      "ki": [
+        0.30000000000000004,
+        0.24,
+        0.18
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": false,
+      "max_attitude_error_last_5s_deg": 2.0092889356266848,
+      "max_rate_norm_last_5s_deg_s": 0.44111041843606286,
+      "settling_time_s": null,
+      "control_cost_N2m2_s": 0.16348395212229622
+    },
+    {
+      "kp": [
+        1.8,
+        1.5,
+        1.2
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": true,
+      "max_attitude_error_last_5s_deg": 0.33391829968360526,
+      "max_rate_norm_last_5s_deg_s": 0.20256940244043495,
+      "settling_time_s": 13.120000000000001,
+      "control_cost_N2m2_s": 0.19407810292873684
+    },
+    {
+      "kp": [
+        1.8,
+        1.5,
+        1.2
+      ],
+      "ki": [
+        0.025,
+        0.02,
+        0.015
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": true,
+      "max_attitude_error_last_5s_deg": 0.3212156417957772,
+      "max_rate_norm_last_5s_deg_s": 0.20458318993916708,
+      "settling_time_s": 13.120000000000001,
+      "control_cost_N2m2_s": 0.19435178387154753
+    },
+    {
+      "kp": [
+        1.8,
+        1.5,
+        1.2
+      ],
+      "ki": [
+        0.05,
+        0.04,
+        0.03
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": true,
+      "max_attitude_error_last_5s_deg": 0.61612249962751,
+      "max_rate_norm_last_5s_deg_s": 0.20804949606834988,
+      "settling_time_s": 13.14,
+      "control_cost_N2m2_s": 0.19465415678238673
+    },
+    {
+      "kp": [
+        2.16,
+        1.7999999999999998,
+        1.44
+      ],
+      "ki": [
+        0.05,
+        0.04,
+        0.03
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": true,
+      "max_attitude_error_last_5s_deg": 0.5546286220045036,
+      "max_rate_norm_last_5s_deg_s": 0.19807718713147823,
+      "settling_time_s": 12.8,
+      "control_cost_N2m2_s": 0.22992900921661974
+    },
+    {
+      "kp": [
+        2.7,
+        2.25,
+        1.7999999999999998
+      ],
+      "ki": [
+        0.05,
+        0.04,
+        0.03
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": true,
+      "max_attitude_error_last_5s_deg": 0.4615225752236248,
+      "max_rate_norm_last_5s_deg_s": 0.18118445205452738,
+      "settling_time_s": 12.4,
+      "control_cost_N2m2_s": 0.2821830626423661
+    },
+    {
+      "kp": [
+        2.7,
+        2.25,
+        1.7999999999999998
+      ],
+      "ki": [
+        0.1,
+        0.08,
+        0.06
+      ],
+      "kd": [
+        3.1,
+        2.6,
+        2.1
+      ],
+      "success_last_5s": true,
+      "max_attitude_error_last_5s_deg": 0.7819270223828307,
+      "max_rate_norm_last_5s_deg_s": 0.1890871086000566,
+      "settling_time_s": 12.42,
+      "control_cost_N2m2_s": 0.28205148048214346
+    }
+  ]
+}

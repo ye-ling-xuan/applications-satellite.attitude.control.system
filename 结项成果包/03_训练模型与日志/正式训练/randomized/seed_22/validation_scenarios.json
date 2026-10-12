@@ -1,0 +1,582 @@
+[
+  {
+    "scenario_id": "validation_00_000",
+    "split": "validation",
+    "case_id": "nominal_0",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 0,
+    "seed": 20260901,
+    "theta_deg": -37.0,
+    "omega_deg_s": -2.5,
+    "outside_training_range": false,
+    "env_config": {
+      "dt": 0.05,
+      "duration": 20.0,
+      "max_torque": 0.5,
+      "inertia": 1.0,
+      "deadzone": 0.0,
+      "disturbance_bias": 0.0,
+      "disturbance_amplitude": 0.0,
+      "disturbance_frequency": 0.2,
+      "noise_theta_deg": 0.0,
+      "noise_omega_deg": 0.0,
+      "pulse_torque": 0.0,
+      "pulse_start": 8.0,
+      "pulse_duration": 0.5,
+      "target_deg": 0.0,
+      "init_theta_range_deg": [
+        -60.0,
+        60.0
+      ],
+      "init_omega_range_deg_s": [
+        -5.0,
+        5.0
+      ],
+      "inertia_range": [
+        1.0,
+        1.0
+      ],
+      "disturbance_range": [
+        0.0,
+        0.0
+      ],
+      "noise_range_deg": [
+        0.0,
+        0.0
+      ],
+      "randomized": false,
+      "theta_tol_deg": 1.0,
+      "omega_tol_deg_s": 0.5,
+      "hold_seconds": 5.0,
+      "reward_angle_weight": 6.0,
+      "reward_omega_weight": 0.6,
+      "reward_torque_weight": 0.03,
+      "divergence_angle_deg": 170.0,
+      "divergence_omega_deg_s": 300.0,
+      "divergence_penalty": 1000.0
+    }
+  },
+  {
+    "scenario_id": "validation_00_001",
+    "split": "validation",
+    "case_id": "nominal_0",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 1,
+    "seed": 20261002,
+    "theta_deg": 53.0,
+    "omega_deg_s": 4.5,
+    "outside_training_range": false,
+    "env_config": {
+      "dt": 0.05,
+      "duration": 20.0,
+      "max_torque": 0.5,
+      "inertia": 1.0,
+      "deadzone": 0.0,
+      "disturbance_bias": 0.0,
+      "disturbance_amplitude": 0.0,
+      "disturbance_frequency": 0.2,
+      "noise_theta_deg": 0.0,
+      "noise_omega_deg": 0.0,
+      "pulse_torque": 0.0,
+      "pulse_start": 8.0,
+      "pulse_duration": 0.5,
+      "target_deg": 0.0,
+      "init_theta_range_deg": [
+        -60.0,
+        60.0
+      ],
+      "init_omega_range_deg_s": [
+        -5.0,
+        5.0
+      ],
+      "inertia_range": [
+        1.0,
+        1.0
+      ],
+      "disturbance_range": [
+        0.0,
+        0.0
+      ],
+      "noise_range_deg": [
+        0.0,
+        0.0
+      ],
+      "randomized": false,
+      "theta_tol_deg": 1.0,
+      "omega_tol_deg_s": 0.5,
+      "hold_seconds": 5.0,
+      "reward_angle_weight": 6.0,
+      "reward_omega_weight": 0.6,
+      "reward_torque_weight": 0.03,
+      "divergence_angle_deg": 170.0,
+      "divergence_omega_deg_s": 300.0,
+      "divergence_penalty": 1000.0
+    }
+  },
+  {
+    "scenario_id": "validation_02_000",
+    "split": "validation",
+    "case_id": "inertia_0.8",
+    "family": "inertia",
+    "level": 0.8,
+    "sample_id": 0,
+    "seed": 20260901,
+    "theta_deg": -37.0,
+    "omega_deg_s": -2.5,
+    "outside_training_range": false,
+    "env_config": {
+      "dt": 0.05,
+      "duration": 20.0,
+      "max_torque": 0.5,
+      "inertia": 0.8,
+      "deadzone": 0.0,
+      "disturbance_bias": 0.0,
+      "disturbance_amplitude": 0.0,
+      "disturbance_frequency": 0.2,
+      "noise_theta_deg": 0.0,
+      "noise_omega_deg": 0.0,
+      "pulse_torque": 0.0,
+      "pulse_start": 8.0,
+      "pulse_duration": 0.5,
+      "target_deg": 0.0,
+      "init_theta_range_deg": [
+        -60.0,
+        60.0
+      ],
+      "init_omega_range_deg_s": [
+        -5.0,
+        5.0
+      ],
+      "inertia_range": [
+        1.0,
+        1.0
+      ],
+      "disturbance_range": [
+        0.0,
+        0.0
+      ],
+      "noise_range_deg": [
+        0.0,
+        0.0
+      ],
+      "randomized": false,
+      "theta_tol_deg": 1.0,
+      "omega_tol_deg_s": 0.5,
+      "hold_seconds": 5.0,
+      "reward_angle_weight": 6.0,
+      "reward_omega_weight": 0.6,
+      "reward_torque_weight": 0.03,
+      "divergence_angle_deg": 170.0,
+      "divergence_omega_deg_s": 300.0,
+      "divergence_penalty": 1000.0
+    }
+  },
+  {
+    "scenario_id": "validation_04_001",
+    "split": "validation",
+    "case_id": "inertia_1.2",
+    "family": "inertia",
+    "level": 1.2,
+    "sample_id": 1,
+    "seed": 20261002,
+    "theta_deg": 53.0,
+    "omega_deg_s": 4.5,
+    "outside_training_range": false,
+    "env_config": {
+      "dt": 0.05,
+      "duration": 20.0,
+      "max_torque": 0.5,
+      "inertia": 1.2,
+      "deadzone": 0.0,
+      "disturbance_bias": 0.0,
+      "disturbance_amplitude": 0.0,
+      "disturbance_frequency": 0.2,
+      "noise_theta_deg": 0.0,
+      "noise_omega_deg": 0.0,
+      "pulse_torque": 0.0,
+      "pulse_start": 8.0,
+      "pulse_duration": 0.5,
+      "target_deg": 0.0,
+      "init_theta_range_deg": [
+        -60.0,
+        60.0
+      ],
+      "init_omega_range_deg_s": [
+        -5.0,
+        5.0
+      ],
+      "inertia_range": [
+        1.0,
+        1.0
+      ],
+      "disturbance_range": [
+        0.0,
+        0.0
+      ],
+      "noise_range_deg": [
+        0.0,
+        0.0
+      ],
+      "randomized": false,
+      "theta_tol_deg": 1.0,
+      "omega_tol_deg_s": 0.5,
+      "hold_seconds": 5.0,
+      "reward_angle_weight": 6.0,
+      "reward_omega_weight": 0.6,
+      "reward_torque_weight": 0.03,
+      "divergence_angle_deg": 170.0,
+      "divergence_omega_deg_s": 300.0,
+      "divergence_penalty": 1000.0
+    }
+  },
+  {
+    "scenario_id": "validation_06_000",
+    "split": "validation",
+    "case_id": "disturbance_0.01",
+    "family": "disturbance",
+    "level": 0.01,
+    "sample_id": 0,
+    "seed": 20260901,
+    "theta_deg": -37.0,
+    "omega_deg_s": -2.5,
+    "outside_training_range": false,
+    "env_config": {
+      "dt": 0.05,
+      "duration": 20.0,
+      "max_torque": 0.5,
+      "inertia": 1.0,
+      "deadzone": 0.0,
+      "disturbance_bias": 0.01,
+      "disturbance_amplitude": 0.01,
+      "disturbance_frequency": 0.2,
+      "noise_theta_deg": 0.0,
+      "noise_omega_deg": 0.0,
+      "pulse_torque": 0.0,
+      "pulse_start": 8.0,
+      "pulse_duration": 0.5,
+      "target_deg": 0.0,
+      "init_theta_range_deg": [
+        -60.0,
+        60.0
+      ],
+      "init_omega_range_deg_s": [
+        -5.0,
+        5.0
+      ],
+      "inertia_range": [
+        1.0,
+        1.0
+      ],
+      "disturbance_range": [
+        0.0,
+        0.0
+      ],
+      "noise_range_deg": [
+        0.0,
+        0.0
+      ],
+      "randomized": false,
+      "theta_tol_deg": 1.0,
+      "omega_tol_deg_s": 0.5,
+      "hold_seconds": 5.0,
+      "reward_angle_weight": 6.0,
+      "reward_omega_weight": 0.6,
+      "reward_torque_weight": 0.03,
+      "divergence_angle_deg": 170.0,
+      "divergence_omega_deg_s": 300.0,
+      "divergence_penalty": 1000.0
+    }
+  },
+  {
+    "scenario_id": "validation_07_001",
+    "split": "validation",
+    "case_id": "disturbance_0.03",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 1,
+    "seed": 20261002,
+    "theta_deg": 53.0,
+    "omega_deg_s": 4.5,
+    "outside_training_range": true,
+    "env_config": {
+      "dt": 0.05,
+      "duration": 20.0,
+      "max_torque": 0.5,
+      "inertia": 1.0,
+      "deadzone": 0.0,
+      "disturbance_bias": 0.03,
+      "disturbance_amplitude": 0.03,
+      "disturbance_frequency": 0.2,
+      "noise_theta_deg": 0.0,
+      "noise_omega_deg": 0.0,
+      "pulse_torque": 0.0,
+      "pulse_start": 8.0,
+      "pulse_duration": 0.5,
+      "target_deg": 0.0,
+      "init_theta_range_deg": [
+        -60.0,
+        60.0
+      ],
+      "init_omega_range_deg_s": [
+        -5.0,
+        5.0
+      ],
+      "inertia_range": [
+        1.0,
+        1.0
+      ],
+      "disturbance_range": [
+        0.0,
+        0.0
+      ],
+      "noise_range_deg": [
+        0.0,
+        0.0
+      ],
+      "randomized": false,
+      "theta_tol_deg": 1.0,
+      "omega_tol_deg_s": 0.5,
+      "hold_seconds": 5.0,
+      "reward_angle_weight": 6.0,
+      "reward_omega_weight": 0.6,
+      "reward_torque_weight": 0.03,
+      "divergence_angle_deg": 170.0,
+      "divergence_omega_deg_s": 300.0,
+      "divergence_penalty": 1000.0
+    }
+  },
+  {
+    "scenario_id": "validation_09_000",
+    "split": "validation",
+    "case_id": "noise_0.1",
+    "family": "noise",
+    "level": 0.1,
+    "sample_id": 0,
+    "seed": 20260901,
+    "theta_deg": -37.0,
+    "omega_deg_s": -2.5,
+    "outside_training_range": false,
+    "env_config": {
+      "dt": 0.05,
+      "duration": 20.0,
+      "max_torque": 0.5,
+      "inertia": 1.0,
+      "deadzone": 0.0,
+      "disturbance_bias": 0.0,
+      "disturbance_amplitude": 0.0,
+      "disturbance_frequency": 0.2,
+      "noise_theta_deg": 0.1,
+      "noise_omega_deg": 0.1,
+      "pulse_torque": 0.0,
+      "pulse_start": 8.0,
+      "pulse_duration": 0.5,
+      "target_deg": 0.0,
+      "init_theta_range_deg": [
+        -60.0,
+        60.0
+      ],
+      "init_omega_range_deg_s": [
+        -5.0,
+        5.0
+      ],
+      "inertia_range": [
+        1.0,
+        1.0
+      ],
+      "disturbance_range": [
+        0.0,
+        0.0
+      ],
+      "noise_range_deg": [
+        0.0,
+        0.0
+      ],
+      "randomized": false,
+      "theta_tol_deg": 1.0,
+      "omega_tol_deg_s": 0.5,
+      "hold_seconds": 5.0,
+      "reward_angle_weight": 6.0,
+      "reward_omega_weight": 0.6,
+      "reward_torque_weight": 0.03,
+      "divergence_angle_deg": 170.0,
+      "divergence_omega_deg_s": 300.0,
+      "divergence_penalty": 1000.0
+    }
+  },
+  {
+    "scenario_id": "validation_10_001",
+    "split": "validation",
+    "case_id": "noise_0.3",
+    "family": "noise",
+    "level": 0.3,
+    "sample_id": 1,
+    "seed": 20261002,
+    "theta_deg": 53.0,
+    "omega_deg_s": 4.5,
+    "outside_training_range": true,
+    "env_config": {
+      "dt": 0.05,
+      "duration": 20.0,
+      "max_torque": 0.5,
+      "inertia": 1.0,
+      "deadzone": 0.0,
+      "disturbance_bias": 0.0,
+      "disturbance_amplitude": 0.0,
+      "disturbance_frequency": 0.2,
+      "noise_theta_deg": 0.3,
+      "noise_omega_deg": 0.3,
+      "pulse_torque": 0.0,
+      "pulse_start": 8.0,
+      "pulse_duration": 0.5,
+      "target_deg": 0.0,
+      "init_theta_range_deg": [
+        -60.0,
+        60.0
+      ],
+      "init_omega_range_deg_s": [
+        -5.0,
+        5.0
+      ],
+      "inertia_range": [
+        1.0,
+        1.0
+      ],
+      "disturbance_range": [
+        0.0,
+        0.0
+      ],
+      "noise_range_deg": [
+        0.0,
+        0.0
+      ],
+      "randomized": false,
+      "theta_tol_deg": 1.0,
+      "omega_tol_deg_s": 0.5,
+      "hold_seconds": 5.0,
+      "reward_angle_weight": 6.0,
+      "reward_omega_weight": 0.6,
+      "reward_torque_weight": 0.03,
+      "divergence_angle_deg": 170.0,
+      "divergence_omega_deg_s": 300.0,
+      "divergence_penalty": 1000.0
+    }
+  },
+  {
+    "scenario_id": "validation_12_000",
+    "split": "validation",
+    "case_id": "pulse_0.1",
+    "family": "pulse",
+    "level": 0.1,
+    "sample_id": 0,
+    "seed": 20260901,
+    "theta_deg": -37.0,
+    "omega_deg_s": -2.5,
+    "outside_training_range": true,
+    "env_config": {
+      "dt": 0.05,
+      "duration": 20.0,
+      "max_torque": 0.5,
+      "inertia": 1.0,
+      "deadzone": 0.0,
+      "disturbance_bias": 0.0,
+      "disturbance_amplitude": 0.0,
+      "disturbance_frequency": 0.2,
+      "noise_theta_deg": 0.0,
+      "noise_omega_deg": 0.0,
+      "pulse_torque": 0.1,
+      "pulse_start": 8.0,
+      "pulse_duration": 0.5,
+      "target_deg": 0.0,
+      "init_theta_range_deg": [
+        -60.0,
+        60.0
+      ],
+      "init_omega_range_deg_s": [
+        -5.0,
+        5.0
+      ],
+      "inertia_range": [
+        1.0,
+        1.0
+      ],
+      "disturbance_range": [
+        0.0,
+        0.0
+      ],
+      "noise_range_deg": [
+        0.0,
+        0.0
+      ],
+      "randomized": false,
+      "theta_tol_deg": 1.0,
+      "omega_tol_deg_s": 0.5,
+      "hold_seconds": 5.0,
+      "reward_angle_weight": 6.0,
+      "reward_omega_weight": 0.6,
+      "reward_torque_weight": 0.03,
+      "divergence_angle_deg": 170.0,
+      "divergence_omega_deg_s": 300.0,
+      "divergence_penalty": 1000.0
+    }
+  },
+  {
+    "scenario_id": "validation_14_001",
+    "split": "validation",
+    "case_id": "combined_1",
+    "family": "combined",
+    "level": 1.0,
+    "sample_id": 1,
+    "seed": 20261002,
+    "theta_deg": 53.0,
+    "omega_deg_s": 4.5,
+    "outside_training_range": true,
+    "env_config": {
+      "dt": 0.05,
+      "duration": 20.0,
+      "max_torque": 0.5,
+      "inertia": 0.6,
+      "deadzone": 0.0,
+      "disturbance_bias": 0.03,
+      "disturbance_amplitude": 0.03,
+      "disturbance_frequency": 0.2,
+      "noise_theta_deg": 0.3,
+      "noise_omega_deg": 0.3,
+      "pulse_torque": 0.1,
+      "pulse_start": 8.0,
+      "pulse_duration": 0.5,
+      "target_deg": 0.0,
+      "init_theta_range_deg": [
+        -60.0,
+        60.0
+      ],
+      "init_omega_range_deg_s": [
+        -5.0,
+        5.0
+      ],
+      "inertia_range": [
+        1.0,
+        1.0
+      ],
+      "disturbance_range": [
+        0.0,
+        0.0
+      ],
+      "noise_range_deg": [
+        0.0,
+        0.0
+      ],
+      "randomized": false,
+      "theta_tol_deg": 1.0,
+      "omega_tol_deg_s": 0.5,
+      "hold_seconds": 5.0,
+      "reward_angle_weight": 6.0,
+      "reward_omega_weight": 0.6,
+      "reward_torque_weight": 0.03,
+      "divergence_angle_deg": 170.0,
+      "divergence_omega_deg_s": 300.0,
+      "divergence_penalty": 1000.0
+    }
+  }
+]

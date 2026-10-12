@@ -1,0 +1,14 @@
+{
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "D:\\Anaconda2024.06-1\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "1.26.4",
+    "matplotlib": "3.8.4",
+    "torch": "2.10.0",
+    "gymnasium": "1.2.3",
+    "stable-baselines3": "2.7.1",
+    "pytest": "7.4.4"
+  },
+  "device": "cpu"
+}

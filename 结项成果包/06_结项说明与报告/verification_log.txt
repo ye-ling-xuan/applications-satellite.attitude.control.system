@@ -1,0 +1,3 @@
+Stable-Baselines3 check_env: passed
+..................................                                       [100%]
+34 passed in 7.30s

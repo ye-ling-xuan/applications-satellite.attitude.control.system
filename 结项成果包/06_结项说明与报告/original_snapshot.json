@@ -1,0 +1,494 @@
+{
+  ".vscode/launch.json": {
+    "sha256": "55a976feaae8188bf7d8ea98ad2c0acc722640cea73924a1a0853f598967bb9b",
+    "size": 476
+  },
+  ".vscode/settings.json": {
+    "sha256": "b48be4a0808834c155006634c1f3e4c32f577ce9e52b30ee608372c4d89850cb",
+    "size": 135
+  },
+  "attitude_response.png": {
+    "sha256": "9236ef8bd414975d8cb2289bd716c4f400346e2fcd4f3cead15843b2418916f6",
+    "size": 149745
+  },
+  "cms的代码批注/metrics.py": {
+    "sha256": "1d9bce1d3a3bb070d776537183190a40f280f927481b682e52cc53375abbe131",
+    "size": 4735
+  },
+  "cms的代码批注/pid.py": {
+    "sha256": "b4b38025aa40d8cd0db3747dcf065e8d11c0ce5d6f90a0b68bd80a640f0a1212",
+    "size": 2506
+  },
+  "cms的代码批注/pid_tuning.py": {
+    "sha256": "5da2f6ff0e039aa552f136106fe81d15a449856f61ecbf831a07618918cde877",
+    "size": 11449
+  },
+  "cms的代码批注/satellite.py": {
+    "sha256": "c7b3c7e5422922d1b69e0ec3897271cce834b70281c3d811c62bdc2d8e513ca9",
+    "size": 1439
+  },
+  "cms的代码批注/satellite_env.py": {
+    "sha256": "14cb0721be9e115df1a51a25c5531b0579e361c991baca1d380e7ad0b16c7edf",
+    "size": 5702
+  },
+  "cms的代码批注/test_env.py": {
+    "sha256": "89acde73152c00c2382681c3f1ce3d7fbf524eccbf04169464b99e425c1cf30b",
+    "size": 493
+  },
+  "cms的代码批注/train_ppo.py": {
+    "sha256": "5e83011418a17f42fadbb4ee65a98f838147187b2f6f6656de0e186302433d70",
+    "size": 1908
+  },
+  "cms的代码批注/测试.py": {
+    "sha256": "17f257f38dbf4c03ff58ba3b42fe55443d687f7ce746ed8cbf3c52b10f5a9a73",
+    "size": 12
+  },
+  "logs/best_model/best_model.zip": {
+    "sha256": "fbf79d91e0033391b7cc84db122d78c7bbbd77d6be214f3084d9b6da3b734142",
+    "size": 138248
+  },
+  "logs/evaluations.npz": {
+    "sha256": "c060b5f96e8e60d746524b5efd17acd9e121e883233fd5e611da4fdfab7a3ab2",
+    "size": 2530
+  },
+  "logs/results/evaluations.npz": {
+    "sha256": "d1bc4b2bb7de5a91689b9f26aa49b1209f73a510cf0d0c1a40d44b0774b11dec",
+    "size": 2530
+  },
+  "lsx学习笔记与代码实验/代码类/1类属性与实例属性.py": {
+    "sha256": "98253e3aca3032840b1f54e7fcc699fd107f10d6dfdd8973712409b212950a24",
+    "size": 882
+  },
+  "lsx学习笔记与代码实验/代码类/2类，封装.py": {
+    "sha256": "02ef21321ba19a268d4db7e26e886ea13b8e0aa48e66eb023aafa2590457f9de",
+    "size": 1477
+  },
+  "lsx学习笔记与代码实验/代码类/3D试验（陈茂崧）.py": {
+    "sha256": "5fb541fce17ee9abf76714a6193cee0d9c60960e7f3d26d15e76caa8fbba04da",
+    "size": 1029
+  },
+  "lsx学习笔记与代码实验/代码类/3继承：复用已有类的代码.py": {
+    "sha256": "5b71062eb7fdcb459ef7831fc657355f024ae18575bd8eb1c7d4033004984245",
+    "size": 1703
+  },
+  "lsx学习笔记与代码实验/代码类/类，属性，方法.py": {
+    "sha256": "89aac11462a86be5c6922a3105fa0a8981f19035396d0c665a0bb2cdf8f17e3b",
+    "size": 2200
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/Blackjack-v1.py": {
+    "sha256": "17ea45926a38ce30bc52e060b8740079fa26563cab0b7e177829f90afdbb5f7b",
+    "size": 607
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/Blackjack-v2.py": {
+    "sha256": "13feefea897bacfb1918a733b02d4e027f4a4c30b66b7727490d208490ab7575",
+    "size": 568
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/CartPole-v1.py": {
+    "sha256": "403bc365cab7cefbcfc49c5352539360dffa3c4ac1e0b7c2b6ab11e06ce94f82",
+    "size": 346
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/CartPole-v2.py": {
+    "sha256": "cc2e429ce6e42d0c9a24b508926a69c4678e2747f61d62f90cc0c24a4f40a8da",
+    "size": 1050
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/CartPole-v3.py": {
+    "sha256": "c4a606c37c1b1aa8a1d78919ef134434db37537984393ff7b6230a736f9e0ce6",
+    "size": 533
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/image-1.png": {
+    "sha256": "d7d0f3a91cfcc47a0b8c6b153f24d6c1f5d43c58d5847067c38f547f670a62e0",
+    "size": 128743
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/image-2.png": {
+    "sha256": "5f03f049bb8e69691084ae8e0da84ac665d19ebcb7db6fdcb8eb13240b2e9d07",
+    "size": 98487
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/image-3.png": {
+    "sha256": "0d470b639b4aa0dc1116b97c1714d4013506009be4cb958cde0148ac17d8e254",
+    "size": 41734
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/image-4.png": {
+    "sha256": "020b31aa2face5640c73e1cf5977202029fd5839fc95a664078235fc059dce2c",
+    "size": 260530
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/image.png": {
+    "sha256": "bc8029493dfb3d9a457d293e39aaf8f372065e8f31aa5a22477062fa626c6df1",
+    "size": 226846
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/学习笔记.md": {
+    "sha256": "a223897bb561e953cf0b3f067a6895cf127550111b4f86411c99c44641918c64",
+    "size": 18857
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week5/调用v3的PPO模型.py": {
+    "sha256": "1194dd3b4757a495e6534cb16412e4798b34961caf69374e8fa75eef51b67f8e",
+    "size": 450
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week6+7（单轴模型封装gym）/image.png": {
+    "sha256": "8a6242faf5bde0f93c13abe565204b5cd7f3bf438b3f2b4aef4355b8857b822b",
+    "size": 56666
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week6+7（单轴模型封装gym）/satellite.py": {
+    "sha256": "2ee2a10bd9d8b0a11751cd28238aaaffc16d790d910464d18e18f33555f3fb30",
+    "size": 2076
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week6+7（单轴模型封装gym）/satellite_env.py": {
+    "sha256": "161234f125bf7f32f34441e11bdd42316bf805a8feca87defa2cabf7a1040f75",
+    "size": 5881
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week6+7（单轴模型封装gym）/test_env.py": {
+    "sha256": "1ae031f7402e7947f51835f51f6e30e5a7345e6908d83d11d3d2ac27a80d28cb",
+    "size": 456
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week6+7（单轴模型封装gym）/test_trained.py": {
+    "sha256": "cd8b120ae069348c286d905e1a54ae37d6ddd3ac0cd78050ef03592f69eebafd",
+    "size": 944
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week6+7（单轴模型封装gym）/train_satellite.py": {
+    "sha256": "0ccc7ea6b54f6c7ceab7efda9813394f87c953133df5cb1b53320ac3f0cfed15",
+    "size": 1183
+  },
+  "lsx学习笔记与代码实验/强化学习类/第二阶段week6+7（单轴模型封装gym）/学习笔记.md": {
+    "sha256": "1886544c60338c2c196337d06552c458d88689e733b324e44f137d1703f2b035",
+    "size": 4562
+  },
+  "ppo_cartpole.zip": {
+    "sha256": "172307ee4994c9d91a4ce920f302e115eb27135c5b2c6e293f05418263e5da29",
+    "size": 140817
+  },
+  "ppo_sat_tensorboard/PPO_1/events.out.tfevents.1777694226.LAPTOP-GG3B128L.19896.0": {
+    "sha256": "12e78b73525c87d75e7e8c2c4325b3fa75acce360bddc9c91b11cc9687927783",
+    "size": 71641
+  },
+  "ppo_sat_tensorboard/PPO_2/events.out.tfevents.1777694912.LAPTOP-GG3B128L.58572.0": {
+    "sha256": "99a4dfe6d1c610b182e3e7abb2cb7262922513fa45879a5889a1652e3d5343b2",
+    "size": 71759
+  },
+  "ppo_sat_tensorboard/PPO_3/events.out.tfevents.1777896724.LAPTOP-GG3B128L.67416.0": {
+    "sha256": "a66c344e4e16829c9bade645451453c03649926d354a610aa660f6b019537aba",
+    "size": 215565
+  },
+  "ppo_satellite.zip": {
+    "sha256": "544b84157bc2eb22b38b9faa4453e389b5288ec16829c5674a9428a2145b4518",
+    "size": 139629
+  },
+  "ppo_satellite_final.zip": {
+    "sha256": "ba0c99c4315631ee3b57ddce7cb7077ab7ff73ec228e85984cd958f0e7603191",
+    "size": 138263
+  },
+  "ppo_satellite_improved.zip": {
+    "sha256": "648ccac8aae01af41b5c146d5b81b8046bbefb5ef68780f8f381f24b80bee74f",
+    "size": 139612
+  },
+  "satellite1PID/week2卫星姿态控制理论基础/Day 1-2：姿态表示方法.ipynb": {
+    "sha256": "a73b8066256bd653ccec6f9a0e535d21e00ffa8cb72481ee4ca7f6f888cb46d1",
+    "size": 56495
+  },
+  "satellite1PID/week2卫星姿态控制理论基础/Day 3-4：卫星姿态动力学.ipynb": {
+    "sha256": "f055fab53e7499fcf767b43fec4b9aae66b510f4cf0afcfd0274376498146db8",
+    "size": 243
+  },
+  "satellite1PID/week2卫星姿态控制理论基础/Day 5-7：PID控制器原理与实现.ipynb": {
+    "sha256": "1360181d6acd2b24397363b710caa2aed109a99dd4a0df19788debadc5a41f96",
+    "size": 1183
+  },
+  "satellite1PID/week3搭建单轴卫星PID最小仿真系统/controller.py": {
+    "sha256": "0b4b0eba190a0dd5a232d19c8b1dc11583d9bf6fa94195ea51507bea2b414894",
+    "size": 1543
+  },
+  "satellite1PID/week3搭建单轴卫星PID最小仿真系统/main.py": {
+    "sha256": "066be00497c2577763c8ff36e7224d6d0545ba6fd45bc5a583d6ee1cc2e1f73b",
+    "size": 895
+  },
+  "satellite1PID/week3搭建单轴卫星PID最小仿真系统/plotter.py": {
+    "sha256": "c2f55046fa823e753edc2b2c1eee6489da68973dbf1f15c0fe7f7a6b652d9128",
+    "size": 718
+  },
+  "satellite1PID/week3搭建单轴卫星PID最小仿真系统/satellite.py": {
+    "sha256": "d46a06ccc208edaf835bbbeb456d4dd4807b29c1fc0a950d6299dbee68d9e170",
+    "size": 1887
+  },
+  "satellite1PID/week3搭建单轴卫星PID最小仿真系统/simulator.py": {
+    "sha256": "de800b48fd7193edce0ed37a37282b65e286a800da8da1005036fdebb8f79c0f",
+    "size": 2976
+  },
+  "satellite1PID/week3搭建单轴卫星PID最小仿真系统/tempCodeRunnerFile.py": {
+    "sha256": "e5067bd07706b2d7f2dd01403faf1ddbdaaafe741af8a8750ba43388ff152c61",
+    "size": 420
+  },
+  "satellite1PID/week3搭建单轴卫星PID最小仿真系统/week3.ipynb": {
+    "sha256": "ed04bc0762a837353615e1350047ff79947c6cddb1a0131fbabef1f7a8dc29d8",
+    "size": 1345
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/controller.py": {
+    "sha256": "d7ee5613af0872d6f2b5aa4be94a2554f31a8ad52fa8d8576147840d8a086b13",
+    "size": 2211
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/Figure_1.png": {
+    "sha256": "8a7135187f197a17ce48ef8620c018d31e89453116272a4d42f832df2f3c8e57",
+    "size": 152658
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/main.py": {
+    "sha256": "49612758b3057acc85d99c4bc814dc9ffc9a54909169145a096a96a717b4ec6d",
+    "size": 1265
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/plotter.py": {
+    "sha256": "a6b2009ae2578e84983f14894acc9160e5a5581f83980b123a90afe92c4c4ef3",
+    "size": 2620
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/satellite.py": {
+    "sha256": "2ee2a10bd9d8b0a11751cd28238aaaffc16d790d910464d18e18f33555f3fb30",
+    "size": 2076
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/simulator.py": {
+    "sha256": "fb4180916c6646d3f13e957bc70e0dd203bb3b69c9e0fdbf5c4b898db6196088",
+    "size": 4394
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/week3.ipynb": {
+    "sha256": "dfdde7676335454c9f002b108938e2ded5343d1d0f16fc1b37d46b641fc52fa6",
+    "size": 1403
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/本周内容笔记/d02fe027-dd8b-4bc2-a2fc-2250b3465ae4.png": {
+    "sha256": "22d37ce108ca6f8807e7b1babf9b0d08cf8bdb913490b9e9574e83bb0e0e4eb9",
+    "size": 92984
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/本周内容笔记/image-1.png": {
+    "sha256": "bd21da66716f78b1ca78b3b382ea9b50b3affd9ba0789ada93661c153939a492",
+    "size": 100326
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/本周内容笔记/image-2.png": {
+    "sha256": "3026229813d4d906b03f845861d4672c3efd750a9800f50125e09eb79abc0b5a",
+    "size": 17486
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/本周内容笔记/image-3.png": {
+    "sha256": "3026229813d4d906b03f845861d4672c3efd750a9800f50125e09eb79abc0b5a",
+    "size": 17486
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/本周内容笔记/image-4.png": {
+    "sha256": "ce6e40607b91bc79ec448d456aa61a878c9449ba40738a356206658f5e3f983f",
+    "size": 12010
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/本周内容笔记/image.png": {
+    "sha256": "fe4282ef8f488762a340fe425c65fe192513b541de204c4f4a37bfc6bfd0fb82",
+    "size": 13649
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/本周内容笔记/本周任务概览.png": {
+    "sha256": "10955c8d4cf522305d2391e423c9f018cbfc44ab6607e1591c0205383510e5b5",
+    "size": 181080
+  },
+  "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/本周内容笔记/系统扩展介绍.md": {
+    "sha256": "c870a9546bc38feabcbb3ce29578af88d0a7bba3d08c0083581446d4c3508051",
+    "size": 2434
+  },
+  "satellite1PID/week5：三轴卫星姿态控制/main_3d.py": {
+    "sha256": "5255f8346a66e4c8f1204b70b0daa818cfbd1be53e55f82cc06cd684e3dd4324",
+    "size": 1620
+  },
+  "satellite1PID/week5：三轴卫星姿态控制/pid3d.py": {
+    "sha256": "b138c2fddfe7051d6e2d1f2ce2fefa3ab768f9801a5b6ede007c119843a71165",
+    "size": 3568
+  },
+  "satellite1PID/week5：三轴卫星姿态控制/plotter3d.py": {
+    "sha256": "b77c7759769ab6d8d2f99191c08a921265ed401c24ad4aa31c576b568dad96da",
+    "size": 2439
+  },
+  "satellite1PID/week5：三轴卫星姿态控制/quaternion_utils.py": {
+    "sha256": "2ec405f8bfd7aace9cecb3a983be93147b7aab57cf4786426cf87072a5ad5c84",
+    "size": 2868
+  },
+  "satellite1PID/week5：三轴卫星姿态控制/satellite3d.py": {
+    "sha256": "be049d50fffde2f187c8db1ef3e2647e6abc5a369f75043b6c8e428ceee7933a",
+    "size": 3810
+  },
+  "satellite1PID/week5：三轴卫星姿态控制/simulator3d.py": {
+    "sha256": "d8f91adb38518ec97f50c4c9f28e97c07334f7ba7ef19c0ca21032a29aaa7c75",
+    "size": 5499
+  },
+  "satellite1PID/week5：三轴卫星姿态控制/三轴卫星姿态控制模型_1.png": {
+    "sha256": "575611e392a1bcf3c82657175ca84ff84f40afb6631c067376d665c76a9ad08f",
+    "size": 154200
+  },
+  "satellite1PID/week5：三轴卫星姿态控制/三轴卫星姿态控制模型_2.png": {
+    "sha256": "28e087e83b04055c280d338c8b38626bdbef2114812da4ad9717d6ad2136d04a",
+    "size": 259519
+  },
+  "satellite1PID/week5：三轴卫星姿态控制/曲线解释和曲线成因.png": {
+    "sha256": "7c94fef27cbdfd2693db7a93a091c77074dcb5d8a1ae2eb5a4a9bb1a5717bdea",
+    "size": 1566977
+  },
+  "satellite1PID/week5：三轴卫星姿态控制/本周内容介绍.markdown": {
+    "sha256": "3dd7c5fc0716c89accca6f3573f5e576f5342205fc73fc1a7c2cd5c40bc34530",
+    "size": 771
+  },
+  "satellite2AI/week5强化学习基础/体验第一个Gym环境：CartPole.ipynb": {
+    "sha256": "3dbfb0b0a68c03977879308185759c445244d1c449941e09daed9b7bfdf079fa",
+    "size": 10872
+  },
+  "satellite2AI/week6创建卫星Gym环境/satellite_env.py": {
+    "sha256": "1f163a51de5b40c73ea32c6ef61e9b092cdadcb21242695ed1d5254083b8125f",
+    "size": 3767
+  },
+  "satellite2AI/week6创建卫星Gym环境/test_env.py": {
+    "sha256": "3502e2df1c6aa9ddb3b1a032764322a8b14c12c7507fd975c86e86ce700a7669",
+    "size": 528
+  },
+  "satellite2AI/week6创建卫星Gym环境/test_satellite.py": {
+    "sha256": "e6b50b02ca2ebbdd8961f04a3b2faa9c7a54bd0169b64a582d897e0cdb603bb2",
+    "size": 1526
+  },
+  "satellite2AI/week6创建卫星Gym环境/text": {
+    "sha256": "a3a8c5f28a4a20d2d17fefe9df65bff59014b02e00f7f8f247e66d1379ea8080",
+    "size": 752
+  },
+  "satellite2AI/week6创建卫星Gym环境/train_satellite.py": {
+    "sha256": "cf2c416747a2174ddb2bbeeff67ab2414d0d970795c96bd9cc43279f8fc3eaaf",
+    "size": 1201
+  },
+  "satellite2AI/week7强化学习算法入门/PPO.py": {
+    "sha256": "898035bb8997421ca271b72c79381378ab250520e8ea85a3b896419920c4220b",
+    "size": 892
+  },
+  "satellite2AI/week7强化学习算法入门/text": {
+    "sha256": "5c23b0af49a5cbb0f7465dc6e3545da8d463e3ae956830e632cd0c315d4a36df",
+    "size": 677
+  },
+  "satellite_response.png": {
+    "sha256": "8c5105387ad59b3b63042e8dfa7367453b1f6664d5e3e12eb9691b1e07ad29f3",
+    "size": 118781
+  },
+  "satellite_tensorboard/PPO_1/events.out.tfevents.1777743029.LAPTOP-H23GCFD7.26396.0": {
+    "sha256": "39679fe4f156ca8ca0e09d7045b5f40e793ecb33d79a7f83c0d8eb4a386ae49f",
+    "size": 74057
+  },
+  "satellite_tensorboard/PPO_2/events.out.tfevents.1777881898.LAPTOP-DP7Q6JSE.36080.0": {
+    "sha256": "d622420fc169fce19e0aa750bfb01bbd53b91d08b1acb2b7713eaf460bb74444",
+    "size": 74057
+  },
+  "sssiiieee的文件夹/ai训练效果曲线.png": {
+    "sha256": "7840d53580a59f9eb083b980f4b0a1f7b06df106ed3c227fce11a38737cf149a",
+    "size": 109794
+  },
+  "yxy的学习笔记/demo.py": {
+    "sha256": "e50994ad8b2beab90f1f9a34ba49c4acd4ca61f56980759bbf8966e8cae82678",
+    "size": 5288
+  },
+  "yxy的学习笔记/Figure_1.png": {
+    "sha256": "9bd7bd893a46d976399082b70c9256dcd92efa9f95e52aa8555b5b3c7febfc47",
+    "size": 63494
+  },
+  "yxy的学习笔记/gpt改良版/Figure_1.png": {
+    "sha256": "99b14c4d079fa62f62fad354d8191d0727b8b4548d12aadced268682c2124378",
+    "size": 39708
+  },
+  "yxy的学习笔记/gpt改良版/generalization_test.py": {
+    "sha256": "1ee93a508278b8086904113a9826ea229128a95baa79ab7c4b3e247ed031a383",
+    "size": 1474
+  },
+  "yxy的学习笔记/gpt改良版/multi_config_compare.py": {
+    "sha256": "b1a6b2ef84be677686ee114a7bb34e4998f18e91cce7946cc9a1800ef5a44bfd",
+    "size": 5257
+  },
+  "yxy的学习笔记/gpt改良版/ppo_gui.py": {
+    "sha256": "77fd78a729149b377d6d85a8f0c26abb92bdeb3150d15f0f6ee65f49fa4a75ef",
+    "size": 4952
+  },
+  "yxy的学习笔记/gpt改良版/ppo_gui_autonune.py": {
+    "sha256": "aada00a199abe53bd0adec3396aa8897feb8493bddff5d627b08f6b71320de35",
+    "size": 7102
+  },
+  "yxy的学习笔记/gpt改良版/ppo_satellite_improved.zip": {
+    "sha256": "648ccac8aae01af41b5c146d5b81b8046bbefb5ef68780f8f381f24b80bee74f",
+    "size": 139612
+  },
+  "yxy的学习笔记/gpt改良版/sat_env.py": {
+    "sha256": "09b6f2ad16d55a62b52bfccf931c934d79062fa6f22391d21dc9a7d73f2e07d3",
+    "size": 3993
+  },
+  "yxy的学习笔记/gpt改良版/train_ppo.py": {
+    "sha256": "4740ea9b790e4e26dbb0d98967de2fd0684e6afec4add5c38dbb4e33e6132af7",
+    "size": 2706
+  },
+  "yxy的学习笔记/gpt改良版/多种参数可视化对比.png": {
+    "sha256": "371526265b18c9453fb2b964d37efd5afe4bfd7262f0b08b6acd985e81da7192",
+    "size": 70046
+  },
+  "yxy的学习笔记/PPO加扰动测试.py": {
+    "sha256": "b246f857f5f1360405c35fee9499610d70adf3e9fe38fd239949c9195e8294c3",
+    "size": 7585
+  },
+  "yxy的学习笔记/RL基础学习.md": {
+    "sha256": "356ade1a074b3713cab32aaf93e90287ddc9987350af974b42e2b9af6fab3c71",
+    "size": 8130
+  },
+  "yxy的学习笔记/satellite_rotation.gif": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  "yxy的学习笔记/代码实现demo.py": {
+    "sha256": "5cb9da4dfa616eaf9f4c9a006d6bd9cb97ce4056599ee1cd2977c9e3f5dae6d2",
+    "size": 10732
+  },
+  "yxy的学习笔记/卫星姿态描述动力学运动学学习笔记.markdown": {
+    "sha256": "3fd1fc861cd80534bd14fed720d79c3b76da020b7e258d0530f1d40895c78e71",
+    "size": 9540
+  },
+  "yxy的学习笔记/卫星姿态描述和动力学模型搭建.markdown": {
+    "sha256": "414ef8bec71c51bc823bfe458712bf68cd71b28e268eb1d2820bf85e09aca978",
+    "size": 9657
+  },
+  "yxy的学习笔记/接入gym的RL训练/compare_PID_PPO.py": {
+    "sha256": "5b278910d73105a7414df9f3d277de825a2a96e5a87e28cf0f3bb15d68e1b8af",
+    "size": 5791
+  },
+  "yxy的学习笔记/接入gym的RL训练/Figure_1.png": {
+    "sha256": "8c7ef0566862b32da6d6c0e51bf0edeebcbd4b14a75eec45adee8e004c72daf7",
+    "size": 76134
+  },
+  "yxy的学习笔记/接入gym的RL训练/ppo_satellite.zip": {
+    "sha256": "544b84157bc2eb22b38b9faa4453e389b5288ec16829c5674a9428a2145b4518",
+    "size": 139629
+  },
+  "yxy的学习笔记/接入gym的RL训练/sat_env.py": {
+    "sha256": "3c31264961b5b52a97226c374dbb05d9f77559492dee7a287b1895360710d76e",
+    "size": 2573
+  },
+  "yxy的学习笔记/接入gym的RL训练/train.ddpg.py": {
+    "sha256": "5409d8ef9c3924873d6c2711e5e4d9effc17a630d55496ab72a9825b2a0cf996",
+    "size": 1681
+  },
+  "yxy的学习笔记/接入gym的RL训练/train_ppo.py": {
+    "sha256": "ced7ae45a024ad373be7dd1afc76a63e549780054397eaa166b088289a749e3d",
+    "size": 1874
+  },
+  "yxy的学习笔记/简单RL脚本(DDPG).py": {
+    "sha256": "2610af730a03bc767191dda90ef8cc6d5052f2fc41b6dc6bc079128f8a6f4b93",
+    "size": 12462
+  },
+  "yxy的学习笔记/简单RL脚本（PPO）.py": {
+    "sha256": "39ea16acf247660981df90a1b8cd737e631da677c6f6071702002752fa0722eb",
+    "size": 5223
+  },
+  "大创报名材料/人工智能在卫星姿态控制系统中的应用-项目计划书.docx": {
+    "sha256": "b5d9fcf138d4d1494cff825b023c77c097d1f899bd770c8250187d4528a84af0",
+    "size": 50420
+  },
+  "大创报名材料/项目logo.jpg": {
+    "sha256": "c79a677fde1d74ced03ec6bdf0d2318d8b89b8a0fe7c9cda9bdfb571b80a4a59",
+    "size": 674738
+  },
+  "大创报名材料/项目logo.png": {
+    "sha256": "5b5e7243aae067f203cde3e3c705fd5d35a76a4503cdaa8a067a6f716aaf285b",
+    "size": 2360091
+  },
+  "安装库.ipynb": {
+    "sha256": "c07a9e6ff0def1e7abbca5d56c13bfb29dfd84940ff74efd64d3ad8ae1f21d16",
+    "size": 19074
+  },
+  "项目报告/《人工智能在卫星姿态控制系统中的应用》大一年度项目立项报告_20251026163255.pdf": {
+    "sha256": "2685e0d735ca8480041e92fbb3d57d80d73defa9e3bd109c2d6f1a89976bb91d",
+    "size": 573206
+  },
+  "项目报告/中期检查报告.docx": {
+    "sha256": "428dbd49788dad99a5107b43eba9f25e3dc09b40532e49708e271665ad78d63b",
+    "size": 932286
+  }
+}

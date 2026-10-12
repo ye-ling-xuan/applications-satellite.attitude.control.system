@@ -1,0 +1,16 @@
+{
+  "check_date": "2026-10-11",
+  "source_root": "中期前任务收尾",
+  "snapshot_file_count": 827,
+  "snapshot_total_bytes": 42912074,
+  "copied_file_count": 60,
+  "copied_total_bytes": 10565175,
+  "source_files_unchanged": true,
+  "source_tree_identical": true,
+  "copies_identical": true,
+  "missing": [],
+  "changed": [],
+  "added": [],
+  "copy_mismatches": [],
+  "passed": true
+}

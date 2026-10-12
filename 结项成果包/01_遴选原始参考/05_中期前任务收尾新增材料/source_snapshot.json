@@ -1,0 +1,4145 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-11",
+  "source_root": "中期前任务收尾",
+  "scope": "all files, including nested Git metadata, editor settings and Python caches",
+  "file_count": 827,
+  "total_bytes": 42912074,
+  "files": [
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/COMMIT_EDITMSG",
+      "size": 1584,
+      "sha256": "3048ffddddbc9e49ca711b5697c7935735a36ea79965e3944f505be107cb4ce5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/FETCH_HEAD",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/HEAD",
+      "size": 20,
+      "sha256": "6c6faf84a93adb194c01b5c2b24cfeebc00768e70aea687027484fe9545a0d4c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/ORIG_HEAD",
+      "size": 41,
+      "sha256": "b320194b5163355bfb092257678a86d9242ac105d6c0c1c9b012664d52a161a4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/config",
+      "size": 568,
+      "sha256": "a02f46a2eebe978cc2bdd94ceb98b813c62f084adb1b8848011c5509c689fd75"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/description",
+      "size": 73,
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/applypatch-msg.sample",
+      "size": 478,
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/commit-msg.sample",
+      "size": 896,
+      "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/fsmonitor-watchman.sample",
+      "size": 4726,
+      "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/post-update.sample",
+      "size": 189,
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/pre-applypatch.sample",
+      "size": 424,
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/pre-commit.sample",
+      "size": 1649,
+      "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/pre-merge-commit.sample",
+      "size": 416,
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/pre-push.sample",
+      "size": 1374,
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/pre-rebase.sample",
+      "size": 4898,
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/pre-receive.sample",
+      "size": 544,
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/prepare-commit-msg.sample",
+      "size": 1492,
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/push-to-checkout.sample",
+      "size": 2783,
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/sendemail-validate.sample",
+      "size": 2308,
+      "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/hooks/update.sample",
+      "size": 3650,
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/index",
+      "size": 7069,
+      "sha256": "6735dcfa66f7bf51edc6a262b19f53dca4507941ac044a36629793fa6ffcc4fe"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/info/exclude",
+      "size": 240,
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/HEAD",
+      "size": 9722,
+      "sha256": "901585adcc1b49baf4e4ddb42042703a24a70681c6d4824a31c6c9d0e1e27d23"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/heads/main",
+      "size": 772,
+      "sha256": "8c3738f92f99477d5dec19e5caf6582936b0f57a6c396c16f44de3202daaac58"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/heads/xingyu-part",
+      "size": 2323,
+      "sha256": "8360c9c6fe10e7e08da3c4118db9a800079a5916cfb252eaff3424390bc3b847"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/heads/yxy",
+      "size": 2160,
+      "sha256": "31196b4fcded27671af0f6fdcb726d506ca254aa2026468441f357e9772321ec"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/remotes/origin/HEAD",
+      "size": 239,
+      "sha256": "b21244afccb3d15c373885dee34b3462070935e3e8f7dc87639b3914b0dd695a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/remotes/origin/LiuShaoxuan1",
+      "size": 340,
+      "sha256": "2fc0e2aa4ddb07a9ac35fb8fba11b486cf3b0f6815bf6856fb896e43fe349244"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/remotes/origin/Vatican4",
+      "size": 340,
+      "sha256": "8b05beec5b1ae55dfa379a9786b8c0bef52fa060671802fe13265b8f872da37e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/remotes/origin/main",
+      "size": 1349,
+      "sha256": "8bbea294cdc394faae4b616dec388d6ce0a3dba2e8572152c3d4d21ee92f9d8d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/remotes/origin/sie/satellite-ai",
+      "size": 170,
+      "sha256": "cdb84816f52295f518f33147515d038a274ad3688f14fdd5fc92cf0d27cff553"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/remotes/origin/sssiiieee",
+      "size": 170,
+      "sha256": "cb3b77627b26ed07a8c07409859398aebb63bee489380492ad4c3a3861913466"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/remotes/origin/xingyu-part",
+      "size": 1431,
+      "sha256": "8290d59009446e15084b287c07019335cf6a74f09e4c726fa073a011b93b81c6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/logs/refs/remotes/origin/yxy",
+      "size": 318,
+      "sha256": "fb4b43a93c74ded7beb37e27813f326aba31e46c58eaaa9cace0fa48cbd91d4e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/00/3ca24c75bf741ad84987dacc7fc08b2450b99c",
+      "size": 2678,
+      "sha256": "71e340947a42c7671c230122cb5e81717ff9879bdea4280d3e9b7801cde2591c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/00/4f3b1e1142dbfdecbba04f44dd09121ce98f89",
+      "size": 133,
+      "sha256": "011fd9ad5a5367ac2f5031c641b03fa46c5bd6c00aadabd3eb13ae07bcc9ac9f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/01/1ce69ea4aad8884ee742774fccd06110f6bd04",
+      "size": 1242,
+      "sha256": "b607db152624eaf220c9fd936d6a15a402d47e79b8e5b222df27026ea522c650"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/01/cd1bd37827896ceae9774897927883ad1a1ced",
+      "size": 1408,
+      "sha256": "e09625cd1befae3b90d366c55bb79c7d13bfd06eaf36a6981829c7956b78d753"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/01/e36e889b59f5119de15de9f886e0b303220756",
+      "size": 1141,
+      "sha256": "473c1272b013d55f2dbaba302a08d61454f33ee0663ed6b76a91e4af747c4986"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/02/52f554023e34bdcfec3283b72e387e27dee06d",
+      "size": 724,
+      "sha256": "78b68427523856d6a9cc5eb23d6a2ddcb43337a0d948d90176d01772d18f852b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/02/6d166fafdd5e59826f581d3047037b2968fe67",
+      "size": 3058,
+      "sha256": "e8decda87f26100abfe758bec435ab305cc8e60c7ea71dd0b151bc00c86c78d3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/03/739b741350ce9a84181434be59112e0cf54553",
+      "size": 3304,
+      "sha256": "e1a4c93e0029a29e85c04e226bf82d5b42b525b24e59ee25ed60dc12e0116dc7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/03/8fbbb949660a8f3e3cf52c11a0dbf45b1d1f9d",
+      "size": 3155,
+      "sha256": "61d184a71394dd7181ebf34394f19e14985bdd06b054c7f3ec954209a68097d9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/03/938a718aefd3dc0707c13ca9392f64a27d514d",
+      "size": 775,
+      "sha256": "f46f6bd85a0ce159eaa5ad0d1141f67ba277bb0fe67578f38d500c9862323c19"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/04/1ecdc8a01c54e34d787bf52a9f1a5c14afbf34",
+      "size": 1462,
+      "sha256": "05de554120146eb57f67751e758b1bdc60f420677e784dc24bbc380037afe1a9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/04/50ac475214035f09ea5c580f148983cc607e2a",
+      "size": 2038,
+      "sha256": "ae3e04d36aecbb47d62eaeffed0978aaee8cd5c56ff42b813eddd01994fc8766"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/04/51af18cd2981db6829c4ca45ca10eedf67a493",
+      "size": 4131,
+      "sha256": "0659ea154cbefc513f9b9142f48a8022586188de3d4ec2b323798310bf8cb6b0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/04/791624f09d5e92330650fcd231f0a426fab988",
+      "size": 2575,
+      "sha256": "2ee73d7394ef0c9baef004a68f1f81245746b43b4fa1be3952c50b1b65e75772"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/04/8ca0f007a85b0c98cdef8ddfd14f0960258dd1",
+      "size": 419,
+      "sha256": "1c959798be57691266143bfaee96931372b569374b607142c7c4993322995cca"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/04/b2666be463c728d300193d7a0be2c1b11d1b40",
+      "size": 164,
+      "sha256": "7c09fd38b99711b280af7ffd826b2fe8bc4073957e41de949b42fcb5796833b5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/04/d83c5fa00b9c1fd720559dc0b6e22fff72d59c",
+      "size": 362,
+      "sha256": "ea225bbdf1f656e863812eedb7a4f9969dca3165b06a2c3e664cd12a47e0b90c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/04/e594d88accb80f1fcd6b17464dfb9392c2609d",
+      "size": 186,
+      "sha256": "ff43a03c8b331c9f07cdd458c3786d403f2c68df297aff9876b3a9015c741825"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/05/4901b431bdce078f64908ad3e7ae241cb2eec6",
+      "size": 73,
+      "sha256": "6282cea5eac06721b582d629fd7046e48c330d09b175fa095bbd1b029221d5a2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/05/c1d7210a200bb94d1fa12946576313130356e5",
+      "size": 311,
+      "sha256": "5dd6f3e22a3dc7829c8c1f09517efd3f0293f099f5f0436489a0d943eb4592a3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/05/e509425c18a71db103db5a20d4cf6d18ebafa8",
+      "size": 114515,
+      "sha256": "f5cf2a4fc283c331b4197e0b443cb3db91791ce87606da5d26ac452d9f239d8d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/06/42e52136873596ccde86e9a4840a5e0ed8fb5a",
+      "size": 338,
+      "sha256": "3b8c76557eb1488b185e7adfc1ff9981e2c07208f0491f29d1b7c2e86338cda9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/06/d66310333f8e1ecce507310e8c2973c8d620ba",
+      "size": 183,
+      "sha256": "764eac81cae5188d82e35555242bd6f2b849c3bb118b40c70f2386d022de84b9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/06/dd964f703d236d16ac9e07d17dcaea3da1fde4",
+      "size": 114096,
+      "sha256": "6c6534e6cbe2ab4a78d0922f65f07c0b47dd4331448ad6ec385ac0f9be5c0ae4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/07/00d36cc1164545fbd5ca3a79b196c892bfcfc8",
+      "size": 168,
+      "sha256": "4ff5939ce218e7cb14f793fb1174989255a0d3f49cbef082820ea216cc337113"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/07/eed4bd51c2be38a863ec6c960d335002e2e42d",
+      "size": 644,
+      "sha256": "fe8245cc3caf7202a55a15d6ed7c706fa1cf85ddcca1a209b193ccfe6b1e7f49"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/08/1a43b73b6f1ed16ac558a1a81f8ab1df1c6eb2",
+      "size": 625,
+      "sha256": "eb3fbf02b234a8e31057d1a78cb2fa4378e27e30c17d2fb695e5e9bf5c57f793"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/08/1bf5f66e86d276ab52ed2afea485ab2056dae6",
+      "size": 1685,
+      "sha256": "c3fc04c59acde00157812b623dc014b5cb89800873e41bbabdde6333f9d06ad6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/08/983bdbf77b523058a0f08ae5cf99321635761b",
+      "size": 1628,
+      "sha256": "af5f4b5a6f6f78e512d95d0bb3e17d6fae612f510230adca9ad81adb9bd6ef41"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/08/b2621dfadbca85ec610067255eb064e75c7a7b",
+      "size": 1089,
+      "sha256": "9c1bd2be06ae36b01c18d9cc65502ef1cd3415cdd88e498629af8a4b3daab453"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/09/6d3e345d3b7be135304a8f4259ef9d07c03a38",
+      "size": 74935,
+      "sha256": "7d46e1cbc726332930e6ce96a37dfd90b6b321bb0da3b845bb9e25c3927460fa"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/09/8a1dc0b48df3b30ffe6f6ada903acd6cc29052",
+      "size": 21328,
+      "sha256": "514c9050591b460a519b4afe1e21896d474b2dd221c56987044eba68ebc918c9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/09/e29d8d17573a7c5f4c1ff759f4fad814e92c0d",
+      "size": 502,
+      "sha256": "40e519631cc185058e8876119f7bb950296eaa25affaeda0c51a1646a1290d21"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/0a/429bf0f5894574154daac6c7dc836355e72ba6",
+      "size": 970,
+      "sha256": "ab2b997c2dba711bec85361c9c013693ee6f5004cfad2da1a421829052e7f1fe"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/0a/e60e11692b6e7ca06874990f1236928d5307e7",
+      "size": 1327,
+      "sha256": "6c1d4bd38508ba231d364debd2e14b9a6d6d99154c2dbf5366bb87266904c403"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/0b/7f7ec598849ec3ee621afcaa285434cca799c7",
+      "size": 59,
+      "sha256": "e138092175c0e002ea8570b29a48cbf4d0a8669a65f41deab84186150bb1eace"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/0b/91a555cb901872ffece3984babde72d76baf7b",
+      "size": 38571,
+      "sha256": "b8b32e06ad5cb1cff385ff0cc79a2976727699bad99dbd0aca7c2f6fa19b8a16"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/0b/bd1e85384a7b2569ba965ddf15aff323caa013",
+      "size": 133,
+      "sha256": "4a5d8a056fbe77256a1557164d179320938a930fa243a90901ba2d7f673124fa"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/0c/35c66841ea3939eddf9a717b027cefa0fc0aae",
+      "size": 319,
+      "sha256": "5f6909c40221ddb129c97bb2920d40be1fea5eeeab650b20916de9bc0b7a46d7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/0e/a2d73d73759877a2ef7200b55e2c3cf58e4ea7",
+      "size": 1082,
+      "sha256": "e3369146e7c16bac045767ec64c64cd2174eda39c8b957d138e0022971da112c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/0e/bf3d4153f0139d42b7970de3f5fda27cfce190",
+      "size": 1008,
+      "sha256": "e8474b73200aa161e3e6c772b6d3539873f17f45efdb346edf4cb2f8a1c19ff3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/0f/9eb35add6b349b5aead68df27e719673f73040",
+      "size": 191,
+      "sha256": "d82f16a4ff2c64a5282bf4de66bf53dc3af58c316cce4062c90c6e2c20bfe796"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/0f/b4b2251f89bb3fa2f044516fbabcd7b7d02dde",
+      "size": 48132,
+      "sha256": "3725492762faca3d60c3f6e7c1f816ac0c3684dc31200915183909544b722d56"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/11/457dd668c7b006f4a5855898498de1f621d255",
+      "size": 130289,
+      "sha256": "a0470d59b1fa7e3484e42a2a5c64164cdb36e6936b56c2beb200f3c096880d46"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/11/62e6298e72f6c693cf303a729d643bbf275092",
+      "size": 1349,
+      "sha256": "ff5f70727cc3cdd84626b55cca3a7702eb2240bd9a28531c50fd1a1388079065"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/12/3741633f9714bafbc48c0ab1428e6bc89a30d8",
+      "size": 7645,
+      "sha256": "2e01c9e64a1356a5e58b65dd7e4d3d1514de024c7581d628332a414191a426c6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/13/193c19d7703cccf4ec573e7612f237e257181d",
+      "size": 2056,
+      "sha256": "a56f172d4219bf014844d035e17859d9fb0e58be0148de2d0362dc1e4efdbce0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/13/2b8d1f68894f18fbf15b29b089ee1ffa148cfb",
+      "size": 862,
+      "sha256": "79efb81423f3048dfb66da00d22521e689945356f1a8ef518ab7b98138d14e87"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/13/679cec0f874defd8df1c39a31031e5ccc84d44",
+      "size": 1347,
+      "sha256": "eeb81c5b2eaf384498c0876294d6199d903e1d4c7a0f8224c8e9ff02262a518d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/13/80c48cd5445971d2c4a92650515569516d54ee",
+      "size": 88,
+      "sha256": "eea5859b9ba194adecf2f17c6ed78ff452443f8bed37fb7db417e458d2bfecfa"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/14/3da2c50c182d2c9b9b98fa79399ed08338be05",
+      "size": 429,
+      "sha256": "ed0f3106d74f2f62e49649d5ee1a617583354591b1cbb1a0ae9e8b6aa36e56d4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/14/ff2ac94536fa4056f9a4cf8c883e8c4b6a9a23",
+      "size": 1751,
+      "sha256": "496c0690a9965eff7b8a81ebb2bfe8994f4b587d3ef219847ce82243e58eda9a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/15/2712f0f0b44cb4b8315f2ff2d48771daeebfc9",
+      "size": 41577,
+      "sha256": "be124f6f01b27abea3bd66f6625918d29081991d8eb64455579dd6d6395cdf57"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/15/2dda05d89e9ccd6c0d6864b928d7afe4925d1c",
+      "size": 3046,
+      "sha256": "30db180962f42a1641b9ae8158b60f74e99dcb80affd76803b5c3b4c8e74ff7f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/15/ac7d448b2095ccf0d7088fb515b72c331294fa",
+      "size": 897,
+      "sha256": "eaef88253d726d1a29673645091c62f9df391f0ad41e97a9888cb260345b11a6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/15/d07540157a956da1c2102d26e52e683e341145",
+      "size": 3682,
+      "sha256": "41937cd96b14b6e27a865bb45c13c5fe9215949b35dca778b06831b6896dd02c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/15/f8bedbf0bad176631fb5cb047c01aea5df6295",
+      "size": 239,
+      "sha256": "38d12c6f6dd8fa8224ca3d02f14d3f86dbc9c35f6f5166369d412d7e32c5f135"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/16/61f298ee43b8b03e19ad7203fd9b4f4e03024b",
+      "size": 120508,
+      "sha256": "4b7bb52c98f1fe6c8344bac07efd5f13142e27bcb1e1c9ac0e52287a60c60409"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/17/2cb7819015fad0cba8b72cf4c74e626e4f044c",
+      "size": 91,
+      "sha256": "f92832a6feee5bf21363b737a2bee39323b0b9f50b16b265b18426af7ad83a35"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/17/3a04df92b580be76b8c93192c51fd592720fdd",
+      "size": 104,
+      "sha256": "384ffb6d0a5851793ee52e3672056ee5d28ba931c4c387a50339e25ccfd4231c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/18/7c9eca9c616937c962442b4f78f56e21fd7b91",
+      "size": 497,
+      "sha256": "102c278380aabf0ed7c37ef867ec0ec8c2cdc6bfe515ae01bbacd24b3ae2cb73"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/18/b61cf89c93c4637e618448c4e1d7db46d51cdb",
+      "size": 1168,
+      "sha256": "b3c3c07d375b2ce3aa3de8206792f1c24cee2c0b747f9538d66d84c2e90a9a39"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/19/0a74863cf4fdd1a8c0ed13f9596fda402045ab",
+      "size": 188,
+      "sha256": "5be75935357807051de2573defce25ea3df03a60f92462b7cb924ed75f5475b3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/19/0c3a9adcf5dc7438239f16160fd99f8bbbfd6f",
+      "size": 356,
+      "sha256": "7a773121e19b3083ae2c19ebd78315d8fd39f5086272677fe049d26a6ed80e47"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/19/0eeb360b477554cbb20fcd371fb2da860c3b1a",
+      "size": 319,
+      "sha256": "aecccf5d988b023eaecca162aac008ce4d363e43d625384d9e053c2b7786fb51"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/19/8323acc3eef86f7cd95b5dec3a5232806f0daf",
+      "size": 3283,
+      "sha256": "a256f77c8736a2543acd61352e7c3fa8a341f091ac317d896d6c1264306fdf1f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/19/b84a428a5a52ff45333cca60f9c5d40279b2aa",
+      "size": 1189,
+      "sha256": "f7309feca713f5b606761ce5b65cf5cdb07d218f4416584cc351c167ec49b803"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/1a/690f69c35f0d2d637cc959b84ffdd25f9e90df",
+      "size": 300,
+      "sha256": "2920bcf870c31cf21f8596d24a75ec58f635bfcb660b82850f38a860fe8f4c2b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/1a/bf048cffe307b0c59f45c01c4501b532a3f169",
+      "size": 3188,
+      "sha256": "747acb71280c64eab89261deb3f993f53ae1341029d9d680ac37a761954bed29"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/1b/847da7ce3610e8072cac6c4a2205a09733c71f",
+      "size": 516,
+      "sha256": "3d1aefda7fbb87fc9e092174aee23c673c45ee3867cf56d194609e37515d26bb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/1c/54c7985fea917bc3f1fcdff9dc83194988025c",
+      "size": 745,
+      "sha256": "08c43d6c0efc47f0ee18273496e92fb2cca81b45370646c5b9bd08f67e805ceb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/1d/4000544d2e97c8f124a48637fe65dd356429b6",
+      "size": 165,
+      "sha256": "c013263d154cbbc0372860abf4c533e0b1dce0c98e2311862beccf216613be9c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/1e/3853df4f81418392125c8a386d6948665a6085",
+      "size": 245,
+      "sha256": "0c875ec526e31972ac2fc5df56d48260b97281b8a4cef1cd14e01611b3af1c3d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/1e/876afa97302afb86f6bca9724083c77b90ca09",
+      "size": 327,
+      "sha256": "b268d0c9a637d35e29c29c3b5562ea2af4867c05395a30693ccaa80988b2f4df"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/1f/26f3fcb5e21192c45be68cc845387c94583de0",
+      "size": 1363,
+      "sha256": "e9d4de838602ca2434e93e4eecec1ac25ddd00c7799f4b24ed9636565b609c8f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/1f/e84207e262c8a0b1ae622481f8cec759276b7b",
+      "size": 114959,
+      "sha256": "2e94f23374cadb9e7a2d5aa8f6671bc690d8a37b760b5268d6c6c6a3949b719f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/20/2e760027656019f137cd7120cbde9d34863eaf",
+      "size": 2074,
+      "sha256": "84996268139e169805b4955c07cff4023afbc97bfa23d9b7b4fdaf62c5f81459"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/20/4f74d09e1c8180077644d7ba818ae33b91e264",
+      "size": 1211,
+      "sha256": "0cb44e15e5331c24258c83e22bde51698dfe170c99ec57bf2834eea738311340"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/20/52a8d1e434091be2d87df952e0baa8944b3ed7",
+      "size": 2596,
+      "sha256": "b54030dbe2827c6e932c4785ae85b74b8d777f80ee7e648b3fc4d7326067c171"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/20/a5d25e24be702692c07caf0ddca451fcae2402",
+      "size": 145203,
+      "sha256": "b7175e751f48610f713968ac2bd72741bad0ed69987904079335c81f6d03aee4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/20/c3d4bfa4ff1306b42c64f0533a2f4d7f7c1dd2",
+      "size": 1377,
+      "sha256": "56a9342da467935cffae2f7571497ecdbea7613d99cbeb1b3c3b36e1780d4fc6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/21/3150d920da2be5c76ee388bb09000a6a4c8515",
+      "size": 1154,
+      "sha256": "a24c2ceb6a76ffe04af4b74cab89e5ed958c7459304cbf56f44e525b1824234d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/21/5b640ac5b1ab6c4165b1d90cb4680348b6ec27",
+      "size": 1604,
+      "sha256": "2f937d13fbb1bde8171ab22b0c00e2b2bd62b24225cdd7de7c8ad79567cb76ec"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/21/69911f7f63f93d40f2f595d0d2e9e1cca6ea7d",
+      "size": 1501,
+      "sha256": "8d11a829716a93308e893c4092d3b7d3bdce05ae2e827e2284549e92c4c2852f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/21/6dbe82cfe89450ce3fff2a4762de67b7319d98",
+      "size": 154,
+      "sha256": "9ad9dc5d0a8ae1ba0e15c17a01f47178f9d750c9b2c26d067406b401df366177"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/21/c5e634eb2ef9b93d19c1d1ce918bc49e114666",
+      "size": 301,
+      "sha256": "5c464ebcccbc96915b428bc2aa7e75ae1a25ecc7ab7b1872032f660f39913bb6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/21/e4c54f19c6df4f52d735decc39f3c8531027fc",
+      "size": 114217,
+      "sha256": "5041ec15f1b45fba92f79e2b4a651317167e00fc364bac403e41456740806d18"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/21/fccf094544a222e7d370a0254f307356fddd5a",
+      "size": 169,
+      "sha256": "df43cbfb23f1cf691db73c716b1c98452532b27c7fb952055e1aaea48f303dc3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/23/963f536d59c344d92101b9404cf52eb3fd3483",
+      "size": 670,
+      "sha256": "d36ba25f4b60a3bc0e5c062de854476710b4ce99e5502436ea35d5036dc8c520"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/23/b2172d6c738cd941e0f409a3e9167d4ba9c714",
+      "size": 631,
+      "sha256": "992b24a82a4309234deef4f3b0fdb8059cf03ba1ab1b2c9bc9860e3633d0338a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/23/cd07c353c7c575da76728612571e6029bc6551",
+      "size": 43408,
+      "sha256": "5ebb7850b1f3aa0fa3bb4a6ffbedb90a476c938dd53281d53bbe7f63c8243c97"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/24/10638a3dd85b8da64813fdde4e0da581adef62",
+      "size": 1696,
+      "sha256": "f48a4fb6c79a7a4d1c3899fa22f7693e6e41c264edfaf335f54459851c370f05"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/24/d226e02aab89bef4ec5c7b36b3af527aafd404",
+      "size": 3424,
+      "sha256": "f3facfe03bb9f1d99e8edd5a04c464b28f6f3061080fec48753848a3d7fafdca"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/25/2b3a578fa989b0414acf8828c118b585aac15a",
+      "size": 1083,
+      "sha256": "b526f305b9562a1f0925d2e9fcdeb3a4ea589e96ad717ab4b7b5a270312ef414"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/25/54c0f13b07c83eeb0e35191d85052dbabe32c8",
+      "size": 167069,
+      "sha256": "ebd353c06d1ce48f744025d9e1f28a387a2b4257e82dae23d69e890449dd7f4d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/25/75cb99f9b12ec45d6422ed9c394b2a8a2f6070",
+      "size": 359,
+      "sha256": "448c8ecfe18798e8cb9ce6508b4f74089d73efdeb1da5ff950f3614c2bc9e9df"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/25/84599b5a0849dbaafe719130dffaf0f73c2c4e",
+      "size": 1347,
+      "sha256": "647e62ad5fa365cf2ef982c1ec36d9b1e86acd0a27152fcb2adbe8b4a4406b2d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/25/c061a293a9f3d69174c61c4a13da7346b281af",
+      "size": 318,
+      "sha256": "c64ba75a2aa1ceecefcd0ad159e46a229b6a41cbab9a755ce3dc61de9cf6511f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/25/e5c5f5d0a27043f746ce8b99d4b96cdeac10a6",
+      "size": 90,
+      "sha256": "b103bce6480f3e2c21dcc56711c803d50ea6402cc020a4271c821704d2397d1b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/26/acee7acd04e0bce9e139c14355a28ca1457e66",
+      "size": 1760,
+      "sha256": "78e90843c16f36acf325beca8d7fca78b9777f63ff401ca98344d461145f08ab"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/27/374fed98820e38d4f2e40e099f4d4d3333c2d7",
+      "size": 2144,
+      "sha256": "82433267b8143c31c02650a820917d47a9a11727a240637700ceb17c2a1cbaf7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/27/403258cabff15529a6b78894107634a36f9d20",
+      "size": 270,
+      "sha256": "1ea9db2e2c9949e37a49101afb904c9ba6f896b2876acf58c22be02ab11612da"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/27/77a1220e320ef3958a73e0e5b539040ff5720f",
+      "size": 1388,
+      "sha256": "10f62a62a86e8db796bada4c4c6f9552ecf6caf3544d1e086a80411b8128e03d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/27/8a94cfe67f8f5476b546c6ed09b8ebe0a6baa1",
+      "size": 95,
+      "sha256": "0300ccbbc858111d3eda75bc094f4c6f3d51dc0c47d1be61f0b66f4a23449b59"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/27/9649d31be849bd1e8bae81d5c6df1e804a3776",
+      "size": 1329,
+      "sha256": "17a25c24645902356b17bb0fe42160ce0c5a3fc2eee6e8551a5a27d2004078f3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/27/de27bf9a86d132fbb7b2d8cff5de3398c67f7c",
+      "size": 923,
+      "sha256": "e6eb9c9a94080d560f6f2a81f6677eca48b1750a7eddbfbfe5b3e2c37b3b6419"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/27/fc4a649bb0941fe8d5e414ee090428d5d8f4b5",
+      "size": 1238,
+      "sha256": "001edc1243cb1643773c03639c844b6c135bb831678e4af097d2c9d7c9bd2e59"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/28/422e59f436d31427632b611db40bab0b8df2c3",
+      "size": 309,
+      "sha256": "51ae644975a52d50de6a9e9bbfed0365557c9286fb6e9bbc20fa7eec7d2c3ab7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/28/8333b660eb9374edfbd957d3185d0fc74d0212",
+      "size": 291,
+      "sha256": "56b5801cea082aac847b3d145a62c56e48515b7216e6a4737466237908198185"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/28/f43eda24d7929dc2364adb108885b03671a14f",
+      "size": 2024,
+      "sha256": "bcb9791df4475cc6ac49e795061658b4759b0d1d67c9b85a48d4bd4309976527"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/29/f061dba82e175de6e60f667aaae610515527c2",
+      "size": 356,
+      "sha256": "9c51dbc559ccaa23e4877178a09db6630675dfb4eb8e4a48728f423148c46379"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2a/1279515eadd59a273ac958fb5c18591dd2212c",
+      "size": 1453,
+      "sha256": "0beaaa5f5bb9a2cd7a1f3a69c8693d3651882a5a266688e292d5336a3e1f617d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2a/2822e944dd7e1cde1bad5189805428a828ba12",
+      "size": 598,
+      "sha256": "db1e107b1c9c9deb58348f8934d5d269dea4ed5508790b0386de9c61310fb2b1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2b/0fd5e20fc65f3aaae887ded439c4a5428d62be",
+      "size": 398,
+      "sha256": "ec8e1375b90cc5ca20f62a4c948d0bf48578977d7f8d44e57cf3bfaa86f58887"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2b/5939d40ab73a748623aaf6425f38397a123401",
+      "size": 2684,
+      "sha256": "39dbe8435e226eb984701f0462fa6d3702494e1909f09400e6a31f11c90b1eaf"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2c/aef868da1e6e03435c99f41fe159df6a7b1689",
+      "size": 1758,
+      "sha256": "93434747bfd3d25bd5b87aa2ff582372e0ad408dd6be3638172cd406c352faa0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2c/db1cb36bd33d871c849768e4a302f01242f0d5",
+      "size": 4165,
+      "sha256": "3424121476c1a6dfb031cb9d94c74ae084b55c156b96fb2738fa1f8aab740e65"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2c/e1d9220bbd4cbe7870b8e4a565adf46329c990",
+      "size": 1513,
+      "sha256": "d16e5c4c3b369d00aad678e8521506d569f3795886ef0210d81dbc0fc536b4f9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2d/602c7ef4ae78e81b2502f9d906abf3075b9403",
+      "size": 1372,
+      "sha256": "b82637310b298a36a520c8a2276f264b2d953f0d689ec210fc92a4f51d587b70"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2d/a804a63a31996be07129305ceebfc16c212d27",
+      "size": 746,
+      "sha256": "6d720821661d56ada2fdcc017e504c9d35145d856c59db18221f84c3878254a8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2d/d101f46a51ad5f874c228ddd364689f602782b",
+      "size": 144479,
+      "sha256": "06332b5a8aa2908cd931eef338555a17326575a70a329061dad35e01c7eeb510"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2f/16cbfe4c33cc1446db7a6ffe1d541e01d262bd",
+      "size": 105147,
+      "sha256": "303313ab2f12b1891014506092224f9265fe1cefb89b3a72e2d264d77e903c0c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2f/281ea446e8b9701faea0e86ac6a5d3065e9398",
+      "size": 2095,
+      "sha256": "8ae3107b8cc7340c52eedfb9884be34b372d1f74c0bbb60a7d7312c5b7c204b7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2f/435bd69d4ac136ac8d300bc026ee41239e8897",
+      "size": 129,
+      "sha256": "3e53492a07b391cd74b40694d7c4c014cd1740f86bc306e286f57e69e7edbe14"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2f/b21db2ac069783c72e05c770bf4e5651f03ad4",
+      "size": 55528,
+      "sha256": "128187593f9f42452b26cf28dccc6c2a7af4fed6811882417fd695abdab9c2af"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/2f/f00bd6d72a70a063d343f4414db59903457dec",
+      "size": 214,
+      "sha256": "40919b6531ec9c955412a98068aca1b6541f8c033457719642806ddc6d5af1e1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/30/25bc7e703f8e562669c2a055c082ada61fa6b1",
+      "size": 113334,
+      "sha256": "d193199ae58dc510bd8da4936bcc7fc702f2974815c009c6ec4a36e660a80674"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/30/33f52bd80689a8e1f4c1e9581f2b97998cc16f",
+      "size": 48,
+      "sha256": "8c913a4fb03f72079cd1a46497a9ecfae52a9bc399e4ee5357d6495be966c659"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/30/7a94ad1777188596ff07e3aba32d30e87c473c",
+      "size": 350,
+      "sha256": "5323f5067a90c530bc8843281f664ad2c8c470c8ce4fb9d5819cd6256e9a2024"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/30/ac8a47269a208508d93d2d5c84eebd1d070e3e",
+      "size": 51095,
+      "sha256": "44c5ee38805d41bae56ad391360b98f9cc8f495d806a111a92053f5bbed20e2c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/30/e60e072a21ba31d6fd172b90c486972c60cf72",
+      "size": 3609,
+      "sha256": "54496b718aab059eb227397f6844630cbf152a7e048247c1bf4cc08a4af246ea"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/31/56efffe86416ded47161de99de73b3d99f413a",
+      "size": 5723,
+      "sha256": "b6cb81e8930bba13ecc4b5d9d81d669d2ee63b673e2a91d385eab401ab294134"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/31/88550699cd5c06367cc8fa1d990e9d78330328",
+      "size": 319,
+      "sha256": "a7f438e65c4de119ed4c7e3b0afc5527568d096f27008ad1c7cee5fd989f0320"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/32/7ee593c02a16a1533f878e79a396a4c08fb618",
+      "size": 202527,
+      "sha256": "7faa778642bf6f8213034fa0f28021b758c67fbc8c3fafa576e93cb054fe85d1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/33/35b49389bd8a8baa55973b66eb0517bcb25cbf",
+      "size": 113050,
+      "sha256": "347d7a76bab0d25588ddb1766a813abcf9487968d9b8c0a1faee4f948f1eee6b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/33/f20b5b69024144596e235a21135b642e70b943",
+      "size": 2287,
+      "sha256": "1909fc72f6546c52385e4e391c75737b5bf279cc9da779ddc7f6d0c4d8298a91"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/33/ff459f4c29b806be512ff49add7977ce75fb71",
+      "size": 86102,
+      "sha256": "9fc667e689976a6dbbc42e91055fe9d2a1ee51da297f2ae3cb7a19decdf59247"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/34/484287431bc9775a7e1071ed117d485f105a51",
+      "size": 49824,
+      "sha256": "78158371f8a6a0af726c0f82a544a7c20228bf110c7d9875d30e06fc451d9ce5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/34/ac2ff6c66a5b128082594b04e97e728fb9ca28",
+      "size": 4119,
+      "sha256": "ec57867e60d3852ffe7554b97bf148c3bdc341684e26fe68a131b7207418a280"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/35/61248af272a85adf3f58cf7be4190a3acdcba9",
+      "size": 2469,
+      "sha256": "804dc80f36432edfab543cd3d46d282fba3d3efe62d2294792ec8a41c798c737"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/35/9948e0f3f826a6bca0e135decc9acc36d4ac81",
+      "size": 1503,
+      "sha256": "69f3b978dbb8ef8b3d37ba283c1110b4837f62f01206ed4beb177dd953b37aea"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/35/c811f317b3c7c4d42e6f06aa36efd4dbdb1fed",
+      "size": 96,
+      "sha256": "15aca63b14262454a27447af43b370a51fe3a2c83d9baad1e954722cc919b091"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/36/4cb34816a5c5cf937bc0749e8f6336f05f20a6",
+      "size": 284,
+      "sha256": "d2619fde923a5415571dcfd81bb01977b4894e1af96a5478bdfcb56b4e2ea8f2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/37/1e2e52683406f4e113ae85ee6019de0c6357b6",
+      "size": 316,
+      "sha256": "c7991da42414e6ebc3e1fb044be55669972822ce8569e69f586690d9474ac6c7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/37/b00066578ace11087ecc87d04f0f1fbfd35b99",
+      "size": 113260,
+      "sha256": "04ce9195f432a958cb228e9ee55ad57a03402ac5167881ad4ff0c359864db50d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/38/39ff6e83224cb36bed7f27bad1ea46108618d3",
+      "size": 1144,
+      "sha256": "0ff57c5e0f8c3f98390b5a749e0d5ba6e5235e71d453fbc09454c319bd166fa5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/38/4dea412fa1e6dbebb4b649f6cd909aa2bff653",
+      "size": 216,
+      "sha256": "b8c2334b285c796c62f80968244e28f00cf6c69f14cebf4b62f40af4c3e9f70c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/38/63eaf8f4277089946c8262bfd41b25783d8939",
+      "size": 1392,
+      "sha256": "eb977e337d5917de3b9aff81f0e16b5cc8cfe2774631226afc0512599b1204ed"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/38/8ae1ee76aac0c8bf97c488e109679046c1124c",
+      "size": 1377,
+      "sha256": "8f5c869931a414cdbf5fb148e29302488f06d7e33e7f879dc2af2a20159088e0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/38/e8ddc87d1ce9731a85b885fb5c28b22f4466e8",
+      "size": 4100,
+      "sha256": "44aea6cd1583ea574fe76c89defe19a9e54798990f8f7caa3f473aa8df2d5d5d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/39/58ce3537899a32add4e0a38fd3876c628e675f",
+      "size": 896,
+      "sha256": "840b5786eaa689b472ca43172b1354545adea192e0c7a69192a954aa7551f803"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/39/5a9bb8bec0d01a2e0e83fa156c5f366cd61143",
+      "size": 71,
+      "sha256": "2345a2f0b8b1f145b8961ec0ed4e634b41bcc92d949dc122e1a53c674c1fc543"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/39/6e763a3ccf920e6f43b0913bdf392bd6c2b9aa",
+      "size": 1593,
+      "sha256": "aa99921128e22d7f35b57864745a580ade75fea4cf523139249844fcc935d91f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3a/180ec70e369e0e89d5932d8439fa3068152d20",
+      "size": 1048,
+      "sha256": "379b9a90c1b90960f5f8f3f3b1d8b4f79ed078d9c8c2dd06ca82146b48413942"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3a/23567f2b28089534c9b6177a2be19f12f57a5a",
+      "size": 2550,
+      "sha256": "0386f0bd5e067399753eb94ae101767b4ea2c6a62a09b395cd812db47a989ab8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3a/82fec7d5830a055ef2479ab1bea958b7f0cc59",
+      "size": 697,
+      "sha256": "4839c5d4913942a931fa59ea7b088f44a2e6afe97518b168b4a9ca0f3a0b449b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3a/d99217f36b45a49fabf7d4867e09493a593db3",
+      "size": 164,
+      "sha256": "fb2cb0077d78a4e4bfb3f32c3462f0ed9806cd58af357286a2749b8613348e1c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3a/ed8b339dcc3da8978bb9cef1608be54ebc3d4d",
+      "size": 135,
+      "sha256": "8d99648cacf6c0e6b8a9df0e57ad64f2c9eae20cb568cdd393f0aa03326d9ea4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3a/fe027e2f8b387f812bfa44b58a6e5e8caeb7d4",
+      "size": 363,
+      "sha256": "1ee881928b5eb121f2c9f6d7a1bb2d6b11c9a19a63e4b22ea1f370990de731bc"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3b/0ff741c1acf39ad7a78cb71c64400d8738e0f0",
+      "size": 1868,
+      "sha256": "b2820e17de342ad4ac09cefdd3fde26be1699f23c0cbb1fff85a20f3732ba3fe"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3b/1d75c94274bc8d891c9f51d7833c5486838732",
+      "size": 300,
+      "sha256": "ed0cf9a508d05250567bd91586e99563e6cf57eaef25d6b247154189eea596cc"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3b/4f35178d939b2cf9a6e80c399e1ae479ad2eff",
+      "size": 1542,
+      "sha256": "b3203125dee70390f90db8e2795cd5a8b2877793e59cbf7f46d406c8e70140e6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3b/775e172a150a07e6a70f63837f5f3be9bc6b78",
+      "size": 205,
+      "sha256": "960be16b611dbe8cd8a23f3a9934ebc448954d5070c7354bb407507558a68c2e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3c/0b50e477f651bff20a702bcacb3f5a64bcb45d",
+      "size": 261,
+      "sha256": "d55561e8ff9d938452971f7a94483830850a60474ead6515c2ae97b87d2da7cc"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3c/323649548261563a2f85da95bfc1acd0431621",
+      "size": 163,
+      "sha256": "a292e272dc4dd2cad8d281bd70e304f489c0c8d49798058aa146207d9248c4de"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3c/c69224a1bfdf177e7e2d6b2062eff265303e9f",
+      "size": 231,
+      "sha256": "fc3a565a91252ecb99e5f00c12fc2cf2d5f5b582d7f1bf210982b089f681d163"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3c/db4ac81aa64f22b88133940d8a4d5f05aada78",
+      "size": 1351,
+      "sha256": "1a3b938f83825d31a4554e8478e68dcd346721a164919b19243d43cce14eaca7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3d/bb27cf4d9dfa4457ceb5fc69e5aa68a22d568e",
+      "size": 63,
+      "sha256": "0b4d1fe08fd9bd4974997e6ef6a47f3683159922904dbaef3ac20be0e45bbc53"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3e/400985d537d8c817a33b7fce2b11f16ad4dbc4",
+      "size": 3221,
+      "sha256": "5c97bf2e2664af76c06d9f9ab74d5ca890b207b224c69938635498ab75a864a6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3e/a16e0d9cb2a6ddbeebb48007d907fba1ad4da4",
+      "size": 52,
+      "sha256": "272564f24975a67a683c4272b6bd18d5b113ad954987a190f37d5fd929b52b02"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3e/aead28d6128948438d9d5779f22619fb5f22a9",
+      "size": 4286,
+      "sha256": "f297a3a2d391a73616a4c892da233e115169023644f6a623bd78b35d3f73d7f5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3e/b92fc46d196a336c5086a27829d40c0ad0810e",
+      "size": 60,
+      "sha256": "68a4d6a70638dfb9125a37de412e12eccef384f1e0bdc83ae64bc551ac9e1902"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3e/ce28e73c8b2621e3e510ca684627e790305208",
+      "size": 2589,
+      "sha256": "e0d960c0f29a281ebb73332344e0bb36a9ff03ce75ddf1f1d225b876bf4c1506"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3f/32d9d484f76f64ced1356ffeab607158828672",
+      "size": 2145,
+      "sha256": "72d780225807a572906db51475da8c19a21252dc0c2301387330f4a70e6b1e9d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/3f/ad9914311090e5e2da131b951bfec340d5da82",
+      "size": 943,
+      "sha256": "6eca5c8be3c0dc6ae60373cd54ce1a22f0cfba199af51eb2cfb7ba97cf43d90e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/40/2e730c275c5feaf7762632228e6cd2954cca54",
+      "size": 440,
+      "sha256": "0ca55bf17f56edddc151e4bd2db9e56191236dd99373e1de2708a82fee59cb15"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/40/cfca018a72992b786b486bbcf5e984a2bcedec",
+      "size": 418,
+      "sha256": "a253dea529b708bd4a6bc0ad3721794d46d6a1c010d42f695a423bc4bcc503bc"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/41/28b91e2ccabcb9aaad9cc672d04d4971e45136",
+      "size": 476,
+      "sha256": "f4f15c76dfe288c54818e092ca18ae3a003b5c49b4d6f6dc0a9f3fbeadd4210a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/43/41e6f6d2a965d666816a52cb279ce43dffdf4b",
+      "size": 1366,
+      "sha256": "c04b72d8413e1cdf406c48e2fcd43b6c38441bf5f47a595dd341bc9171b7a46a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/43/9244bf3b0fa5e69d53f778e5ca2f6a7d1fe5a1",
+      "size": 1365,
+      "sha256": "eba1fb8002a89e490c9bfc9fd61d76e7c968a9080ddba6a9ed8e29b8bb494fa8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/43/ad5be360cccb880f1eaaa8c9f42f0a81692d7e",
+      "size": 4259,
+      "sha256": "582dbb3373f715c07efb9abe563c5f9fd71ee9616f0a2e0ef005971650117c94"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/44/2b6371ff26b3d40928ca0db685592a4007da94",
+      "size": 1639,
+      "sha256": "b77e2c997f05fa79cef72d3a84f1b6a5583154018d691817888666737bb7bedc"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/44/311ff635a90e46955de5d46b55a2d94d30310a",
+      "size": 114036,
+      "sha256": "4a58e1db0cfe87847b20f1f19f20011c08eb48c575ad838c67e9d23470ed36f7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/44/7156911911ad2800cd7d1f77d684489f87aeb3",
+      "size": 1338,
+      "sha256": "138705637bb79d99452632ec30554fc6cbeef8e28f062be03d94b701bf10bb78"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/44/8508921ea7be0046539231cd7337ba951bec07",
+      "size": 911,
+      "sha256": "03ce618d7d10ca2ad56887eba6acc9a89eb032d3fd8efc1fc499944c1685b37a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/45/66d72cf75d2442ad55ba20db6d7d2080d27630",
+      "size": 1747,
+      "sha256": "ac975d5ae03849b5866cabab776fb9e9b25000ed79e246b932a85b8267cf4eb9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/45/afd2049b1d7219adbcff2449873a244d30dc07",
+      "size": 359,
+      "sha256": "4762f1f9cd6ad62ff360eeb26fcf07fa2cc078b6d48b0698026535e07308b94c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/45/b7749b36d17a819cbb60df999d4ff7be2f2c2d",
+      "size": 1974,
+      "sha256": "55bbe8552a8555338f22f85b1b53b467270008cccbf4bbcbf96d7ac8badd62d7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/45/dc56fd989989d0502ee8694b02d8002f0b1708",
+      "size": 2899,
+      "sha256": "5d4d219a64906b871018a5bbfebb1e35fe32f9508290b2aedd1ffc1163bbca80"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/45/eca3df6e48b735bac27a375a9323fb1ab78912",
+      "size": 414,
+      "sha256": "f3dc84191862524a71af4030ca072db3868b686a7d028d1a9eeca14b84ab5853"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/46/1f816b7725bf00c03f1772f462da69b6412c6c",
+      "size": 96,
+      "sha256": "c8250799cd4942414566dabafc3bc8827ef97654ad3561bf52a08bdb4e35a758"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/46/2a6d91965b16fbc3d6491277a05cee84dec0cc",
+      "size": 19555,
+      "sha256": "489f1031d5ec25eaa445155f8b609fc028bb48f457a43bee1785971d6383e598"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/46/418017ceff0b24f02632d233a40cd1153938cc",
+      "size": 448,
+      "sha256": "3a84f513d7381ad14f127e3cc198359bf3ed5e72e940b7ef2c22131961ed37e5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/46/72024544dd3a0b1b1686faebf4df55ccf719f1",
+      "size": 1379,
+      "sha256": "f2a02d97ad069e6982647ea5d3c862532063914ec2d63d5bbcc5b051c3e0b21d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/46/b72db1f2b531878ea3eb523f40afca55146f95",
+      "size": 88,
+      "sha256": "bc7944c85cc4b14f5110ac1a7db0c5a0c85eb06c8ab903ee5ffc3adbfa132d2f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/47/0cc5676451612b24ccbd1c473c6cf5e8b7dc47",
+      "size": 350,
+      "sha256": "96370659f43fad4720a76a790536ec3f1c5844699f68b095165ad087ad6bad23"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/47/2fd98ce2ac5446f061038228302f4de592e63a",
+      "size": 1123,
+      "sha256": "34ed7be297d48557e185180feb56384b731fe8ab94fc1ad01820744c618ea0c5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/47/37ac9ca99bb732654b7b715e28a4cb26f29c3e",
+      "size": 11652,
+      "sha256": "6a572a8236e5360019b1dc7c909ce1865106183fa1c05d564390a89ac90f77c8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/47/3b4785e41d0a7fd71ade6fa561b26effb0b345",
+      "size": 78,
+      "sha256": "5ed7cb861025ac7cc8cb4fbb301d361a4865bc17dceab8503b29c2344e7ec66d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/47/749fab158ee791ce4a5e87dd708418cd52abd9",
+      "size": 101823,
+      "sha256": "79cca622cf626c12436c089e0bda6bf7087462daeef5f81ded6799a7c2b0ceb8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/47/d0b5b018c1586f09f5800991d17b791aecd2c2",
+      "size": 3022,
+      "sha256": "e080c0ac244c487302267b40930495e20f1ad111f6566b8ef175b4669726da55"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/47/dac4e65810029c24836bdf79d5d6243e3edde5",
+      "size": 471,
+      "sha256": "9491fbd8ede07ad9e6bd10541c16a35b0b1615b95dc80908295d05f2f20e0702"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/48/089ce39a0b01f7853ef48efbe62aede83df32d",
+      "size": 68293,
+      "sha256": "26cc5c23c352cd4cbe13ab51308e153da56c1b561ced0954d216730ec78306f9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/48/0c0854639f97d1d555eadcd5463b9948b1c7dd",
+      "size": 68,
+      "sha256": "fb8fb5795665555aff4aada417d65822e2bbb9038c189298e20c71cb8adc3890"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/48/33ff360e3a57555b8d03bd3b08f4e44fd4d31a",
+      "size": 266,
+      "sha256": "00af649d748d681ee7b4e9eb7dd509e32109aac73db9a088a919558bcbdf7a0c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/48/74f38cc29a02d44ba4d26ce1d9c8b0b4262467",
+      "size": 1547,
+      "sha256": "4c3a96427d7c565ebf9cbac31e07a8e1de101035dbc93759b3cbe2981fde8a5a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/48/a8563364a254470cea98d7ba461d1c323a6dff",
+      "size": 154,
+      "sha256": "986cc4d4108d7986b6bd35d446741aca1927af6a08b70da345a619ca970a2119"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/49/9f64ced646f453c82ba9e397b1fa9c51b89c87",
+      "size": 321,
+      "sha256": "3fea7a686cf573609b2f86625ba433006bca99bda39b0b80d20e604c5b53d1a3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/49/c8dbc863ba5573573f3aaffe96eb13445b54c3",
+      "size": 1367,
+      "sha256": "b5b43ca0d01e5aab8496e231496b711bc4364fcec1ae37dc966c3df684253031"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/49/cce55bd342ea31cc65a2367b0ace6ea4b70e22",
+      "size": 298,
+      "sha256": "1c6954c293f878406463cee4dfdc29fd3854e5e7ba8da8177ef916a7f7d1a7ea"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4a/03b0bad5104b3accbc26883972b84a151350c1",
+      "size": 555,
+      "sha256": "77affa27bcf68ed13e76469c116d66d771dd34f886affc6c399aa31a38d07b0e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4a/703d124a0cddeb7f0cea7bd1aa76785e6782d3",
+      "size": 38270,
+      "sha256": "10d62af923786d529cfcf59e326cd44ca86e64caf5f6cf18403655725ee97737"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4a/826768f410cc21843e613ff83215731b889f98",
+      "size": 266,
+      "sha256": "0719fe9c02b031033fc39954a324f3434df903e79263c90f6b345f39314c0f44"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4b/6c0e7d0ae05323191697e2ab60f241ac71cad8",
+      "size": 1111,
+      "sha256": "9e7e7ce3a02d0d36754fa8251d2cd18a4bf0e7dad14a6ca22b02126fa3f15b33"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4b/8fe9e82a9da8fadd48d8ec4661b3fbca734be3",
+      "size": 350,
+      "sha256": "ef2f9a6fb3013cf4f364c7421ef8e999c95dbd88033fdd80d465a65199ba74ac"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4d/53ade5e437c45ad314b63672a95b6863708c25",
+      "size": 1578,
+      "sha256": "d5b0ea4cfdf641ad68f03f31cac464c99eac53594b4e5574eec7004bf75cee67"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4d/580e8996f795f208a0fac92716afe16e569dc2",
+      "size": 1459,
+      "sha256": "f8fe8ec377792ba9d6da3cda7b3025b86d839568b1a1503e5a0ba8f6a1a9668d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4d/b502ade00d011d6c80ad0873489f243bd49717",
+      "size": 767,
+      "sha256": "40e43779dee7d9ef0edcd5012be39d11f7450ce1514c22cd3065db97e2b22fcc"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4d/ecfc806438c1c2af1293ede352c776a1d4d10c",
+      "size": 2180,
+      "sha256": "1bbbd49fdbd15474430df2bcac3e049618c13c85db0b494e052028db6a0fc984"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4e/6fbc67d41cb7cc6a02b6480a29a9984a2b810f",
+      "size": 360,
+      "sha256": "42b9812d7f07dc3874063f1b28f83493064fa0da8fae39a5be02fa4ba2666007"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4e/c4ec255b599104cc7017da382d24cdfd3c2dfa",
+      "size": 2361,
+      "sha256": "2f7231250b233b551cfb8e5cea908cd79405dab2edab30329c5ca8a36bd8c4ab"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4e/e75323c87d7971c0a7c2a1424d7af80803ecf2",
+      "size": 1099,
+      "sha256": "36c5a084bd49a665cec138ca6c4dbc410647bb106f355cecea7c592806d3eb9a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4f/1080d7b98d9849ffe1982781741f954cb1bff9",
+      "size": 183,
+      "sha256": "fe08fb8fc365ffc2e0217be9020d5aff323e17fa2fe42bce991b9e3e25733cc9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4f/1132e30d03a6f1645855af7d2e3d9ca5f1ebf5",
+      "size": 1594,
+      "sha256": "221da043f177a1d56e7b1099795842e3f3177ff830ae7d7d9ffa309c12fd0035"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4f/23d6052e47df4916f092e3a3c8cc4f7311736a",
+      "size": 1654,
+      "sha256": "393119f4de5ab5eed2a0f5c2aa0e2b50b4407baa01adbbb0faf08b91489a12dd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4f/5ba5bbc6369ea732b2532c85b74aeeadbdf19a",
+      "size": 135,
+      "sha256": "db0f08da79d81a7c049c5631aa26b71ddaeb2e2cc16e289c93a11d4df54a3bea"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/4f/7a40f1e993248892299f8e60d28300f827edbd",
+      "size": 2368,
+      "sha256": "b8c972c51eca653ec5c78f897934938084d29c6bdb41623e6eb61e37cb84c04b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/50/01960b986836be59df4c34216997937a8298ad",
+      "size": 1760,
+      "sha256": "2f01fa60fe8c2564bf65d919342db0a4ee603b677b4584e75aa9a0e28c6a7783"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/50/24c644fdd79b3ce9db6e2dcfa8acda6e8b2e58",
+      "size": 300,
+      "sha256": "3a30ada7ace55a87bb28fe3ed3b54ae5eb3dd820d9fa3baf9744d56235e6a67d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/50/73ce020754d32252b3052d8e96bee8e6fd46b6",
+      "size": 1758,
+      "sha256": "5c296ae3e6b90da0765f506d06b7b454bf6304a68684ec055b2ccff5fa1c4cfb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/50/7d9920d9a3d4f81116f9baee5e0baba4f26472",
+      "size": 1749,
+      "sha256": "1e394c6638f602fda9c93aaf5676a465b9f6b68ca5ca0306fed0fc5521a0b92e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/50/801916b1bb5ad2a4c4a0de99c8fe542f60952e",
+      "size": 319,
+      "sha256": "a4b6074d6e614e38cbf7e6cb9de00a4e819fa3ef8ad5bd6a8a142a14c0bde432"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/50/99d144b5f8394469b734d03fe11724749e9b0b",
+      "size": 91,
+      "sha256": "77a1f9f18a487c121bdcf62b981a867c8fd103c87c7fb4d2106d443e7cb2c918"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/50/a356879890334c2b608c70eeafe3987fe0de52",
+      "size": 1176,
+      "sha256": "1e5ee02a6e609657c0068d7a4ff1eb87b1610a97daac4e7f404e12f5efeeda75"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/50/a6450512e7cb05c17e7b2c06e5156aed2a834f",
+      "size": 286,
+      "sha256": "31b3aa80d3fabd9a827306c43da979b0cd07bc63b948a61ee8eef2c28907677d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/50/e625933023f6a5952a3e8f6b116fc3d73bab17",
+      "size": 92544,
+      "sha256": "0262139fd9f4df11ab026f790538aaa690c1794e960ea539b473b781dd2c74c7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/51/4cbaa6bfea7ae2a675096d16defb3bb55eb4c9",
+      "size": 1896,
+      "sha256": "6b780e5f85acc69c287dba58e8cfdd6d9cf667edee6ee3a6b37b9f2443e92967"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/52/084bbc7bb18c04b68904154d876249bad5345c",
+      "size": 277,
+      "sha256": "d034293386bd230a3d2a044f76766c7dbef22bf35633ddec2ac3cc23c4131508"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/52/f59e40304e374a01c1aabfad9aa6fd8283257b",
+      "size": 184,
+      "sha256": "7f71b6220cc101db0c422e93433afefe26a6249ecc6b65ec72d15dc13e8d03ad"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/53/55c250eb15570c956232b4afc15c5074d98bdb",
+      "size": 1607,
+      "sha256": "05206780d161987fa483102c6aac1c2e4b67e3c2a2735903b245bc1ce7e20ffe"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/53/737ec866cf9273a3e1141890beb8fa6a4d61e6",
+      "size": 551,
+      "sha256": "072e587ffb232fd0a8ce800b508b8d5f31a75559eb3a9ced96ef64683ca5f34c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/55/2f997447d0107554c6ece44cb301f80baf1050",
+      "size": 160,
+      "sha256": "264564f6484bef69b09e0ac5219655106aa0b229f8f6683820ff6a78c9915734"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/55/821bc54d8f04457571162e1e588506b8a2f779",
+      "size": 113684,
+      "sha256": "902546c47e4764c9759d0dc146e27bb3e482988405435caab91d2e82d408de2a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/56/13d3b44883903b9e2c67862015dce1633bd598",
+      "size": 1510,
+      "sha256": "a92dc4a21f55ffc22397d4974b0e0a18d3de859ff925831299298e632e842265"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/56/bc281eea419c64a513cdc3f0a02233700a600c",
+      "size": 319099,
+      "sha256": "c0f4629b60d085b75d8d466993dae162d399447422cf31c06d13c7da84bc3384"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/56/f909df1a851b8320755c83e42c2b7534ea2e59",
+      "size": 448,
+      "sha256": "fdf78c3d6c0c1a02bc429342c6515469ea3d4ab16c29a4fea694abf338b6354a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/57/219bb91da118fc570efb3a763345cb8da63f27",
+      "size": 257465,
+      "sha256": "9a01ba64aeaceed7db4fcabfe1e79e6642214bcb8c8eb598e6ba87b64aee3a47"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/57/6cc928a321916f52f6e349513e4ebfbd3d6ab4",
+      "size": 51950,
+      "sha256": "5785336d83589deb207816c731c8aa9371a151166389856c722c38936eb15457"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/57/ae549a7b917578f6cd7c2f4de493ed4e7eb446",
+      "size": 1140,
+      "sha256": "496bea3cd933acbdaacc44350425ca74c632d742c90ea48fcfbbe299a0d62a09"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/57/d41b2d88c1c7ed290ff1444597f914528e1402",
+      "size": 418,
+      "sha256": "d02bd9326dee9d35e79887315bb29377fc06a8ad253c7b20bb09e545da62c575"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/58/b8404b9237672ca86b73b8c18465b0bd65f13b",
+      "size": 1635,
+      "sha256": "ff0c0ef16ef0c67d120c7113f4842ddaa600beaaa6376c5f360645ed17b6d4e0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/59/1d579d0b12d8ed0aeb4cdbddb863d489ff9b4c",
+      "size": 135891,
+      "sha256": "b51db90b9420a8ea2db5f6c58894af6854f29a972042c5560129bb9608d63e2e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/59/31a5bfe83491c43ccb93c49193725032075055",
+      "size": 998,
+      "sha256": "b85737e178c483327b05cfce1412b3429a5877a5aeeec28b734f24fe1294eea2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/59/3ed7f42a589a7a5311b992c91dbd80b4af1d6f",
+      "size": 78772,
+      "sha256": "e75f13a2ef248c4e5895e68a5729766ac1ffff0f9645d00df1538d3e3a8a75c5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/59/513601486dc78c2b828a7c2fbac47023a44700",
+      "size": 119,
+      "sha256": "1feae35dbcf49cc50b8ab06e3dd0ce2d3d8fbd08a8b00acd9fe6439da6f22011"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/59/9c9933c1fc7a3d960a617e41ed33aaddbcdb40",
+      "size": 113918,
+      "sha256": "ce418313f9f121584776878321448858f6b9af2be3d5d2e76500e5aea8c15113"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/59/ac5b91560f2d0ed01473dc8678a0e2d396ce4b",
+      "size": 84803,
+      "sha256": "24da967ad44f803c6f619e80b4c930726db542f7ed4b51d11de9744f8c27f42c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/59/c4147f662b83ecd6c96d5422a8671857c672f0",
+      "size": 319,
+      "sha256": "86f079dbeab40a9c562686ddb9107d37edda31f3f2666d892cf271a3b4a5294d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/59/c6213660ce948575101f594c71560f410aa270",
+      "size": 3015,
+      "sha256": "4766c731bc54fddf55d969a1391227b9da4a15099a2130a5b3c6f3267cff1e54"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/59/d5effad7f988287b51e7fef96bde006037073e",
+      "size": 164,
+      "sha256": "1fcd8f80038fed3937f188c8fc0b616fb587428b0f1253ea9cf6f8e0ede7b18c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5a/307802c09d6b5ebdbd49c9f646aadc1a3ca353",
+      "size": 1205,
+      "sha256": "2062b0cba204ef85b0618a3c1c9bb5500b3b771c2c58e49e44e6d1bc4b52d4d0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5b/fc061e34293c8b3198ee459307831fefa4e1ca",
+      "size": 945,
+      "sha256": "23f5f20fa9a290ce1677358a08d35570f4c14d0179c76be808b30e6c0a6614a8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5c/411853d5601e5d21ef2f20d46a88490102f85c",
+      "size": 499,
+      "sha256": "fbca77e643d60fca3ae1d192e37030712f8afc57acb2863b48babb4fa961c6c3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5c/6bd45336388c42fa551528c0ae82ab308b3cf0",
+      "size": 412,
+      "sha256": "1501fdb95c8b7316d254fb949a5ca36c69a1e27d0e7dca1a2d1bbcb16d2bd164"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5c/75e4e8d373cf00152e5ec4c4595cea2711efe3",
+      "size": 542,
+      "sha256": "471edc446943d6445a3b37b3b1905d81fa25b6a23aaa12289f399f749dd656d4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5d/31a415f417d7d008303bbd099f919d0f320e07",
+      "size": 6983,
+      "sha256": "586c498b76d8c7e76ee68ff3b231ba34fccc2a2b89f214419ee4dc97093c99ab"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5d/36af28c3bc8e35b0e4da21d909ecbfc6a384e3",
+      "size": 830,
+      "sha256": "b006f73e9c7b2d110b0f48d15cbaced49d4610db3741c9aae680f68e8e4cd211"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5d/45605895e75e5b58f1d14eca34a94fa3fae8c9",
+      "size": 83614,
+      "sha256": "6db950026c851ac518e359c64b786f88e1e79ee787d144203980ed1b1886cce3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5d/a4bbed54cea4909b134fb58788bd40749474cc",
+      "size": 60,
+      "sha256": "03f0f2e7346eaaa7722c65900954b8e88d3e74e32e9feb1355f3b86e53d81dac"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5d/ee2d738640e0c83d8bbc7bd356cbba88615b62",
+      "size": 87,
+      "sha256": "8f64c9a2becc22cf572201d64ed5ef5ed0299c6acbe72f3beef99b7cb97c2270"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5e/52f467518cd93cab05ef5a535420f15b39c3da",
+      "size": 221,
+      "sha256": "303f7c361f371015533ea59fcf658ba8d31299eaff7f3ca3742ff85fc1977ad3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5e/c9ef82a93ec65df29b2c23fb923bbcc32609a8",
+      "size": 521,
+      "sha256": "896a2fda7f4154ac64bb655ff87fb802412314af250cbdd7ec9d89b41ba08c4b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5e/e8eba10ae3421ce84c83b7d8d514915adb0301",
+      "size": 113648,
+      "sha256": "10aecc6924b231d69966edc5b51f5731356abd6740a829095c36dfb1591dce18"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5e/ed79ef0d280c064b7a6be5a9cdc3df96e5cea2",
+      "size": 516,
+      "sha256": "fc35947b65a4cd0ed4940af6a5e66c42b138be20f97c5898242125f54239fb23"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5f/1c21b6c1c074f4d5d8daa82579ee2098c87ec5",
+      "size": 113980,
+      "sha256": "fa012e5e61eda41ef923a90d9121be2f5346ad2bbc9182c169f7ed3db70fb628"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5f/4ec0a81e409ec0896bcfd60dbb665ada78838f",
+      "size": 471,
+      "sha256": "10f139272480654fcf20a02d1467e21d61963c788f3fa4382283c63c03159d36"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/5f/5f4b5fa71c81cbcc2365285c154f87dc00c3e2",
+      "size": 2224,
+      "sha256": "ec8cbf8ec4a11b45710e863fee059a2e98563315d6d12c736de076c69bda0bb9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/60/cbb93a1ffc6dd936b9edf1392a9fe5fe436538",
+      "size": 93,
+      "sha256": "7f78bc735b07dc902e700d6ecf43c93d9008e8ca4059751c2bbbd70e1543ae2e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/61/1273a3307740177e1b858b4863872a14fd00bf",
+      "size": 645,
+      "sha256": "fa6f1364d8bb63b68d248db2dd4c2427199de70e78fb7691aa7b31be6a01ab97"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/61/2892331dc92ba8ffbd752115c014f190c5f0ce",
+      "size": 122,
+      "sha256": "df596301b52bfc8fc14fbf7bc39aa6c07d82d4a5b3bfdd81e22802c4a26a0580"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/61/5857fb9e79b7b37dea94eff43516addabe2cae",
+      "size": 746,
+      "sha256": "22e20b3a1f0cb9160dcf2159deee81af86dafeb4b827b83cab8b1c7942de9d0c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/62/855701389a20d531f68dac1c7f75b8a5e843ff",
+      "size": 4849,
+      "sha256": "48895fec248c25dbc18c87c2213f40cebec75af2b42bd04637b8a409933df5c9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/62/cfcf9ecab5409d18fc3fafbe79ffdaea030b78",
+      "size": 795,
+      "sha256": "3bd8be9ff936a66e51fba0ca48dd07e4189fe68abdca1a51afbdb3a193d534ea"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/63/187a67bb705595c68f2b343c916f2f75e746bf",
+      "size": 271,
+      "sha256": "ccc06fba17895e2f09c5b07c60585ceba6428ba756192ff31de3afbc69b41378"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/63/39a82120939fb8d86543e420d2acbc57edb583",
+      "size": 164,
+      "sha256": "692e36b9a48f8015279fca69449c8e533ca3883b67f23b30da26aa08d9ac0e97"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/63/574f478b37f05bf259ca0b6ff8b950effe7df0",
+      "size": 193,
+      "sha256": "306f6371c94c930bd814fef0d9c18a2bee87d286111f4a852e3a838d2c402a19"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/63/8d043380aeffc929be39a8e80d3c9565e5107f",
+      "size": 114120,
+      "sha256": "f82080c6539354cf5eb6a8f7b18784d20d02b14b61daea0d7f4467eeff8eddd7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/64/13b16086ded0fa73baf51050edd909e865e039",
+      "size": 114735,
+      "sha256": "7a2279a500eb847065062142b28b08746218cc8d74eed7e81ef737983e17fa94"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/64/25c4f6bb710e906bb56074ecfc56cab9425335",
+      "size": 1606,
+      "sha256": "c43357ada00e2ba566895de2229be8ae56d112943a726ba1bcf3a92ee113c71f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/64/801a2e8f0036ab6973bd3a68a2bed49f4542e0",
+      "size": 19374,
+      "sha256": "75def5fc4ec6b5fbd8857e1ceb6648ea8cb077f90a602f53f43508068243dfad"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/64/cbd35c08c7796d3a13c048b379067951e05558",
+      "size": 948,
+      "sha256": "25bc5bf3464ccb9f7efdb431b1f1a2b1adc99f97656262e062ad88291a812a27"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/65/3db58178fdbc3ccdab1e70f7860039214b1c0c",
+      "size": 915,
+      "sha256": "617390a256493142c1edd46fb1080479a02ff22c4003860e58b9cc50be756bf3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/65/45685b4abe1711ded25545b9df9ded4b83687a",
+      "size": 359,
+      "sha256": "ca0d3a2619e280a4ac418e987a8261ebaefd8c7b4ce071ae512b855c01ca79e4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/65/aa6cec5b1ea9aecd59861e3ddc81f69ace74e2",
+      "size": 81453,
+      "sha256": "750771e0b2007372c023d8565356835bd88072a3dc34039c8736b89c2cebdd69"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/66/76a8691dda681086ee931f2ff3537a72a81ab3",
+      "size": 326,
+      "sha256": "cf992284227bbf78d85b475db3c7d4bcea5f89baaca8060951f14e113b531b18"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/66/c01626be7bc7dcece0d86a99ad7debf15888de",
+      "size": 631,
+      "sha256": "f342a911a6713aa8963696bc1ca65d225c29c2d4d01f0f154dd4d147c18dfa08"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/66/fb11eb63a1fbef264f3ad033bd95f744c28df7",
+      "size": 5704,
+      "sha256": "ea2a64b1f6bc54f61072bb22007c284861f056c1bef54d612c58a3fa1ad79734"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/68/db0bde218e7013b0fe3733c3f58c42dd85e582",
+      "size": 900,
+      "sha256": "930fde61b8b031fa69c35db9a8ec1d52c308d22a2947aa1c0c947d776acceeaa"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6a/1a27baff446ae19b4b58c618663161654b8d9a",
+      "size": 1736,
+      "sha256": "33b55d0676bf036854614447493af197145f042daea8e1a6cedae8f7612fb851"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6b/34518c866d5c367328a8df75aec92f66516807",
+      "size": 201,
+      "sha256": "9ed7da6071d275b1a48100832170225a8290f0ad65310f34b3209aa6c9213aca"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6b/4dd2669080f55243d6e5a4da5776a442dcb2bf",
+      "size": 849,
+      "sha256": "4bc7f19f005b4680732d2bbe38d3462e8f75bde9be33fc6880f2dd5c8b5e86cb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6b/9225c72b1db0a15e09fcff6dc244de0aa05156",
+      "size": 114212,
+      "sha256": "329a8b59bd75b6f059764a45f91223981c3f26b0806eabd47422e3aebdcb1767"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6c/4995d832aedc766a5b9d6f304fdf3a35a32dd8",
+      "size": 218,
+      "sha256": "9d44c3006533a5c3ff6e1e2d6d3bfbbaa6a60b3d3bd53a79c7b21fda8789e920"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6c/8a267e7528b98b4d275d9009d9683d45bdb340",
+      "size": 1010,
+      "sha256": "c3088b460bba2110ca136091cb2e768c40e4ae757c9540bf8ac6f8d7bcd7ea17"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6d/1f92e674ac7f568a25d8829d85f2d131ad2d08",
+      "size": 102690,
+      "sha256": "a8fe39c30265ca2d444b95115435845591628efbf3758bf5c37ddf37bdb9ca03"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6d/598beadd77e87db18eada45cd39bf418ccbee8",
+      "size": 118,
+      "sha256": "4628a171976fe9705157fbf20f41a6eaa961ebf3effe5802c699776905c81801"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6d/a010798ef86d524c9af2e764cd3ba51d1b30f6",
+      "size": 7955,
+      "sha256": "66c6904e1e0e5598fc875d241064bb58bebf8ec9ec63f5f7acbd3180e07ccec7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6e/9d1f42eebd5cf1015e15e529b6e2b601128441",
+      "size": 149,
+      "sha256": "9adcd6b23fdcde5bdcb5e426f269247dbe93fc2a8835b77fb55f58430cce3269"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6e/dd5ecac1b25778d21071d126184fdcddb6bbdb",
+      "size": 1040,
+      "sha256": "fc519dff753b2a05b90a7be684400b60f5bf3ea2726885e96c0089e564c6c269"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6f/065ed71695e5bdfb3949973c5843431c1bb004",
+      "size": 1177,
+      "sha256": "230bc1aad301c594f00d974a257c2d7025815408c83e8ffd24d6ed8d451148f5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6f/510803fb341545586ce4e5b0bf52a0ecc2720a",
+      "size": 333,
+      "sha256": "0328619bee81b4e7f72486cb98803b8f05a56baf72e18437419fd6d570b7451a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6f/ab8459cbf856d62ed23b2b3259f44b6a01ceac",
+      "size": 40949,
+      "sha256": "bbd8cc24957a14b6eba3b1ef3d265eff6c0288e53aaef1123076e7f8f1b4c22a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/6f/c6da970798f0d5252c1dae43f1cafcacf98450",
+      "size": 1200,
+      "sha256": "ea1fbec4d4d46bf34660ea2efc052d0d3d03b5c7bdb96748a1a76890443160d0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/70/c804825cd44c9e70ac8f78eee086a69c42b60f",
+      "size": 2037,
+      "sha256": "61668e52e70c41b7a0fa560ffb6261f93615dd7f0db2fc3b48b0f3bb4032f9da"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/70/d8bfccc0c4f0c9ae18a76da94b24d3112a3117",
+      "size": 318,
+      "sha256": "be0402670130d68325c019b7fcb72d08194ab4dbf52929b276765050a6c75663"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/71/69604e83307fe195e796bae4baa1ae7b6f53ac",
+      "size": 3509,
+      "sha256": "706697a60f53de9af78e9db1a7c06152b571acc3f0eff26f6a56bdfa02873c62"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/71/f6a059c2c1a6a5066cedc7ff4ad98a393abb33",
+      "size": 56,
+      "sha256": "98693786741b594aeeb5e50c03aab30f258e938db63d173032255a143f0a750e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/72/ae59aae55d19e3521883c898e3f7295e0a7881",
+      "size": 2678,
+      "sha256": "f0f0ee556652ad64fb03e71a64a42453a562e5cac05dba4c4fdac88edbf976f3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/73/368f28d3d71093ba31a24a3d507e4bcffaacf7",
+      "size": 2606,
+      "sha256": "54e34d31d774d5fc633a6f050cf1da622e3f17ec57587842e1b12e0f33d8db8f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/73/5a7160cc7b23ec6ca60336c9748056baa3c4bd",
+      "size": 60951,
+      "sha256": "85e683a4bce475c25266cd4246df94ba570c73959df4059ca90bcb6509f665c9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/73/7c9e009a20bba7542b76a8d589fd0b652a6ed1",
+      "size": 3921,
+      "sha256": "80103d8fec141a57af061f7581e3face1f8afbb270a96481286d6b246353050c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/73/d2331408afe8fdb23addbaa31636f6f5918c51",
+      "size": 2254382,
+      "sha256": "4facdc13aa16938af3a7a0c68c59a7baf32f4f34f93d7e50f9d26cce1a1aea50"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/74/28b85fc1bacb1515449177c99850eaa82f7b1f",
+      "size": 2348393,
+      "sha256": "79cf6058dd153ba07bcfcc9e1b37fe5f2319fac07e694859dd3fae9047eb5b10"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/74/2b741e9763267344c3e02280e37301d1fda40a",
+      "size": 761,
+      "sha256": "a6cbdeaf5bf00dbb9921680f8cfbdd08d7e90be047df6635e7841cf0168e9bdc"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/74/2c047633748e6c254bbd75f1c327651c1362ee",
+      "size": 217,
+      "sha256": "7ed0c4f46390f96f8cdc0b3a90e17ca458c1572042bc61fc0edc16e258fd41e7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/74/b69f8adec85919457272827fc4618c65d649d1",
+      "size": 4414,
+      "sha256": "5e858cc9008e12556225af08afe3ec330a62066f19ca51ff8b1649eda6e9db7e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/76/6bdf6b9615a3e20ed9530259b344d6b2c0c5b4",
+      "size": 92,
+      "sha256": "7d630e914180787cc9c12667908de0d03d383d47a27283c421cda8b3bfe3d61b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/76/87ba07375c84bd753e66a88b99f2b30d5d66fe",
+      "size": 2321,
+      "sha256": "e57f05802a94aa93f69ac7644e6c0bdf00ae0d6d2acd173c317493e355de9a8c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/77/16beae7ce076188808fd4636f16bf4cebc1db3",
+      "size": 164,
+      "sha256": "5126b632582509cb25d66f8e143cc08111e65180aa2fcfbe3512401e999a626d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/77/778fbadb90612ceb407195a4b6cfed45500c95",
+      "size": 167,
+      "sha256": "9abe3f9504b2a8e6a52857b7d522cfe836bddc2c10ca215a42937cb0ff569260"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/77/7c9f43a8a2bf30e520adfe84514d9a93305658",
+      "size": 1909,
+      "sha256": "2f4c5276a147d5b20abeb000d331028b73fc561ef498604720c13a2fe485d4ac"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/77/91089ce48ac731d8706fcb2ec40c8bc8924672",
+      "size": 408,
+      "sha256": "5af587b43af825fc14a92010936b4e437aa9dfe5030ec98ecb69c5df2eaeb8ae"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/77/d5b44f706975292e00ce81305279a3352637d3",
+      "size": 1112,
+      "sha256": "66f93ce4e59c0cbb92c47e51edeaf72fcca7cd23ba0672e17b8f76e8410478a9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/78/70c2a54b288874bb47f155fae1a7cc21088127",
+      "size": 1049,
+      "sha256": "fd486ae4900e3794171193dba020613b4d67e79c732010bec0e0c254df296a23"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/78/e3ac72e98c36eaa8f20e8b3ae45243f0bb4b8c",
+      "size": 83417,
+      "sha256": "325febf8f2a646c6de7168d650c7c1718b588df737e2dcfe61ac79fa8890477e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7a/64c7c8c9d66f7817dbe3998b7fb7f7c2bda8eb",
+      "size": 732,
+      "sha256": "c3d5b47a3f9ce731beaddd72b4947f121126a267846a70b5fea3d0d019ef162c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7b/17bda599eac5a88fcdee543cbfc17107c04364",
+      "size": 114154,
+      "sha256": "60baa6dee60685ddaa5d228e07e92ab1677cb6b8a34d251c9bb904cb3209aa66"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7b/1f864480e022549bfd024655c4f4661ad567b2",
+      "size": 2088,
+      "sha256": "15f30d480305660029bc1c036bfe97e3c95352be9b8e54a04915482b38e4cc98"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7c/0cb5ea73aca51b8bc683a4033cbbdc5db9030f",
+      "size": 2472,
+      "sha256": "c8b2653849c6c0bcf2eb6e71685ba092e7ebe753baa853e0ecad17773bdf81aa"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7c/ad7306a4936b9c6fdd3fc943993017e7c8adc6",
+      "size": 131,
+      "sha256": "3b51fc836c956f1aae2d3df67b6791c51610775821274b8145a2bc55b9cefdac"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7d/3c27dd2e88f048c99a7a79268b830a8f1d32f5",
+      "size": 599,
+      "sha256": "e952c9ccaa8b87f3890dc114b8878ac1fad4e700af463c5c1fa17c22e3e0de75"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7d/47dce46d9c8a5730e83bc9e90bc8afce0ca3d5",
+      "size": 860,
+      "sha256": "7395271c8d87ed562f1421dda71ccb964dd16f2349cd62bd33077941f3f10c09"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7e/21bad119296b90ce5fb36992c6e028e5bae681",
+      "size": 1902,
+      "sha256": "658456248f882303f6d7b7187858e7ab6f101b630548f8e14d9550c983360960"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7e/606dbba6f54c961921d30328b7f04d0b4f94cf",
+      "size": 461,
+      "sha256": "6b27741fe1c1dbb8884343322d35b89885ab98fbfdcd3f1a7b047058685a05ce"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7e/8a553f13a82ce367698f8115d1884ca849a15a",
+      "size": 2348837,
+      "sha256": "d547df712c6f0864b8e694b0f8d3c0e0f16e92f25921b70c9a78fcfdc0a2f957"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/7f/e3d281d7de9f6c765fcebb81e271dfed9ff17d",
+      "size": 3281,
+      "sha256": "263880fcb34a10223c80cb09e3e789f0f6cd9f92839e386e9a7a2923d5888a92"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/80/454d3653668eab11741d8cfc280d33cf19def7",
+      "size": 114034,
+      "sha256": "ea6d2b9714b4cc20327d592cfcbaffbd3cd0736a8990c32c31de278b3b00aca7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/80/a1d8b2e81b3323414f647c381aa8e01f58b8b8",
+      "size": 3967,
+      "sha256": "cf4741a6fcfc1d0f2dc05b2231c5ba5e085aa05b239a97ce88ef30bb07118163"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/81/bb71a0f088871319f181d35e595669434e8219",
+      "size": 12841,
+      "sha256": "88e3310cf47201e4c895f52fc44587d02eea944b8c5b0c4a1aea7eb8cd8f6a14"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/81/dbd5d7955d038d525ca08131499a67a989e327",
+      "size": 52,
+      "sha256": "12e17c8d2de2c1e1e9dc045d3e8a2e81560699eb84cb6b25f1e1237c4a295394"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/81/ef1f25744d66a47698664a15f435590dffe544",
+      "size": 273,
+      "sha256": "43ca92dafdc0a17758d1c242603d9197884e5a6699baa5371d36d33afcf521af"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/82/00f634e92c04b5f02609d2e7b4180668475bda",
+      "size": 222,
+      "sha256": "38b1b44df0c0218eaf0d51b9a37dfd50e2aa9456861bbd3c62131ad4730e9a2d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/82/2cfe3c9d760229d22732e8227c93c66a2a4aad",
+      "size": 612,
+      "sha256": "ee7a4ed21eefa9f7b4372ca56729c4ee0306e504583924aa315374b4ade1b86b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/82/9c219941f77cd1dc12fb578e6624fe8ae8bf33",
+      "size": 802,
+      "sha256": "234c16745b0c3fb86419a1be1bbc3123eceb15b7b7f4d72a5ad3194b83b96ddc"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/83/8346e3ade9801f18b31456a02d5e6d5d99efa2",
+      "size": 185,
+      "sha256": "7bad19637bebbca18c410ddbe0960220a1d9f0a1f89fc6d47f7564d25b915717"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/83/8a8cd81e86bbdfb3b6110df64fd34b87b9f76e",
+      "size": 40084,
+      "sha256": "a50905925093915e629bc08b46929133931478cfbda922b2d165959dcc81a417"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/84/6d840d5ec48779f140400b76dca9091429f8f4",
+      "size": 214,
+      "sha256": "79d7a31737154b2b40733e3d01a9aa475653f12113a5a0755116dccec525b1ad"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/84/ad64ae1e36b321cc1b2ab4ff1c7365a041a695",
+      "size": 1373,
+      "sha256": "5d13f72e82696a11518f101b7e10c493efd7abc266fa756f15ecb9a3f0da7d56"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/84/d74e7fdf4527a1901f4082599737416d3492d7",
+      "size": 1624,
+      "sha256": "bc61b6c4cc697475fc7a5bbf182e581ab83b53f46fbf251b5d9717dfa68faef7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/85/1cc4c0bdd6cbb28f41f9a1da3a416fe9acfde9",
+      "size": 72,
+      "sha256": "4cb24e3e897c73afa0ae2f2d0c7e85d3d637fce2135170a9eb130e2254448072"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/85/1e800d5a7ae8bafa69d1ec5367c6ae1736f657",
+      "size": 1184,
+      "sha256": "495d40da621e74d776d5eda7fe4478bd8ee4d8e08a063963a784466567b4c847"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/85/3ee7d4e8b5d3ca06f7e28a79265415df519b3f",
+      "size": 1352,
+      "sha256": "37753dab30364c18971d357f0da53f633664a979e01988d1a814698544705d55"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/85/ab1e5686f7f4d3096b78fa7bcf9a9ffe6782a4",
+      "size": 2202,
+      "sha256": "e5bb8a508319b6454b1c5f9d6da6ab533a7e644a2170cb4e787556a9d155d191"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/86/5690a05110897766362dc71086515f6a0f4e01",
+      "size": 170,
+      "sha256": "1bbe9ccb75ac6ea645a790023a0b152209a9a7c66a61f87c65a3ac7c65e152e6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/86/9f328a18a1dcf1942f2a4740da4281c79460f8",
+      "size": 263,
+      "sha256": "40e5f1e0c2e39ef7a1fd821a4eb696cfc1cfb5ba66155c33b812730a6c3da2c5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/86/c4cd92dfea93190b6792ac7bfb0a4d3d54dfe8",
+      "size": 189,
+      "sha256": "266d31d649486c84d856f5829f30e9a8977d31fb6dc11cc353da3af14a4b401d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/87/0db1dbf78a047f15f8cc941c05ee656ae1a398",
+      "size": 244,
+      "sha256": "d43a3646fe08c95572f5ca1e9d44721f18de376b510bf8f8db17e750ccf8e7a2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/87/3ec34aed51864f9d9c73a9024b3cbf109a2466",
+      "size": 776,
+      "sha256": "9fbd2afbafcc8cb346d3ee6c354de3ccf0d454ec915052924a614697abdd2d5a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/87/5c913ffc8fe00f2053e4a90a6d920079215daf",
+      "size": 61567,
+      "sha256": "f3530b0dacf6a1345b391b3e90c622fe676d47ee6fd0039acae25594f0a43012"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/87/84d175e9e14a1b471594ab22de8c21aed6902e",
+      "size": 157,
+      "sha256": "9eb9d7fdcbdb064231d34447862fe3a65124d704382c3d8ca971fa663ec8a53a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/88/1dc389bf37a2a714f2a821600d3117815982de",
+      "size": 561,
+      "sha256": "2663b9af1fd692aabdd5aa04de206a6d476d7fded593577d40c4c7ae92c1fafd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/88/2153ece2240c33b45798e0d9be194e08f745ba",
+      "size": 2037,
+      "sha256": "1246226a4b121c23772a6835fdded48a452032d1bd3842b7bdcedb10f0075e11"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/88/24e7a2fcc86e8d12f6630086e8528c5bc38fe8",
+      "size": 993,
+      "sha256": "302c7a6708fee626997fa419b382af2c869651a5f072252292c115c0497888ed"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/88/5af64bfba10aafd92b3793fb3fec9671a75d80",
+      "size": 163,
+      "sha256": "12b3452a8b98b469dded4024946063c5e8699863be98aa0ac711f2a4556dfc9a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/88/99da07a5a5bca5556c9ab985c278e989edb49c",
+      "size": 447,
+      "sha256": "9096fb7dfb9a0980435c94f9a9f8b15795dffa0117f4b9133281cea0cb90ec75"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/89/5347c89a5a7e320cbd2fb74717723f89b5fa28",
+      "size": 113431,
+      "sha256": "977399ea6902db7823057c3aa16c77cac1416d1efe182438b84463e51112550c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/89/581c66d68457609214dd6aa8308afa60db72d6",
+      "size": 39450,
+      "sha256": "8553988af30782038a6e90d8da2c748821be8a31cc514235c67846f955a100cc"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/89/d6741a451e84c702e96a2fcde3df42358a2a55",
+      "size": 73,
+      "sha256": "efbf71a6eefbeffde81598b18f0e8222e17fef233741e3f01555bf2959144348"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8a/0cebc7b81913f1c8c097ffcc90b637d8b0723b",
+      "size": 298,
+      "sha256": "3bbd7142b0cc4b66cbea39062dd7a97e84858c475235d9dbeffde09c5042d25d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8a/a2a2918faaed82afb869f0ce31d6095cb61fe2",
+      "size": 1425,
+      "sha256": "d0ec9d315007a61489aaf3e54d70216b93eeb941a37a2d370cb698043568267a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8a/de22da4b952835a85eba12f5a1bae5c3cd149a",
+      "size": 593,
+      "sha256": "6b6ca949f00ff5e816ae7210b00e2e35586732c48d701546023817e60c5d58db"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8b/0fcf650bb053e0062bd7e4b65192248b55e6b6",
+      "size": 324,
+      "sha256": "f6a481f2b26f7d9275d66e8490506d3106032f7f825391c993b641663d51654d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8b/d915ecd2c55ebb3550fd022e38605612063dd2",
+      "size": 577,
+      "sha256": "f54102a1e0cf775ecd3351b5169e1df5d12998d99cff41a2b2563ce45c26e7c6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8b/eae2c5cfe921daf6ec5820e3293039b85ea345",
+      "size": 248,
+      "sha256": "f7a678db4dde4b88842b200ead7d4687cbb82737761aba70e59e0ec7643fd4c8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8c/726410cfcf70be70ab8abaa0b65ce3b27b5863",
+      "size": 51210,
+      "sha256": "e939bff66049b2010ea5767af14401c47467c60e8460c0e4cf9a05b4d0021c81"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8c/a3ebeea82d1daead87df3c6018dc812e332d45",
+      "size": 3651,
+      "sha256": "28292576437d4d706ae2beaeba563c8b7119dc4909b682bb3d5e9c027dd112b5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8d/06196f5b0d1b065f651ab6fef10b23ac9ff7eb",
+      "size": 361,
+      "sha256": "13977b3b701215a28b83a5791bee1cf716d82423ff4885f34cb996fe0a9dc6b2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8d/157a78a92b77ac5c74a3be7d2d54b9471ae0af",
+      "size": 356,
+      "sha256": "08fc682ffc24c7621017412b1a6c0b4a85623960cd6d9df73c42db3ad46d5fbd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8d/1ad920d5d34efe5dff35017da528f72d6f6623",
+      "size": 200,
+      "sha256": "682f44f85c9607d841844ae1571ec2046c1568bbb8087e6ffbcd5e29077e862f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8d/f3564646c83b0d5f809b9ff36f3c6f1723f3c8",
+      "size": 89,
+      "sha256": "7b75aad6fb1f8caeaa8cfc72de5e43bfa83519895c2b42a1f4cdbf155a76974d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8e/8e9ffcbe100a17538f2965cb8edab112c35aa7",
+      "size": 17009,
+      "sha256": "198fb9c270274444ff5e6de9492602abb141988c2932a81d3490fb16f278da1d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8f/0bd889335938c097b57d3132988849fb2fd5d1",
+      "size": 238,
+      "sha256": "ea6187f0fe773e1a22d98c6a7490b8f3975a060f11df7fe901186f54a2aed552"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8f/4b878a64779b5302d10f30d5964d560070be73",
+      "size": 317,
+      "sha256": "7d937f17cb878a15eeff87f286fcf7339041ba994da645d98263c1a4f1795c53"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8f/9ece6db352b53e7c82f5ad418578c222a15169",
+      "size": 1381,
+      "sha256": "f2130d68a1c4fce5c434a00f22ba524fe82badd61a56c95fef58e82f6e1f0c0c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8f/b785432cc743790288347ddff88033286d3fd3",
+      "size": 7814,
+      "sha256": "1c42310b361683643155e029ac13930c4c9ec6f4b351b2c5b05b63c08ffb0c0d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/8f/c4cfc7f8af769f0c2f2eaeeeb1861a6d04d506",
+      "size": 998,
+      "sha256": "ccc69bb724d5967bd4688dd59a6ad92205750b54db1140e45676f57ed62de38b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/90/051f626c2bc34fc4dfbe6bbc9ebc20b03e13f1",
+      "size": 341,
+      "sha256": "048396da794d0842e20cd80e499adfdae3e4d2607c147ce2776630718dfddad1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/90/25ab6db948f637eb625d37463c2ef7ca061b4b",
+      "size": 4181,
+      "sha256": "d2d540b68971b05607868a9043853dfc9c0d593e4fe40aae3fad0bd14080e77a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/90/871fb7ebed046723af13fc2e6d95878498426e",
+      "size": 250,
+      "sha256": "5b89cf5a0a431feea1be5a6fb2817e83609725cbfa48e353e6140ad77541aa6b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/91/4a592d2957d358333e82898f6999f1c568b9ec",
+      "size": 185,
+      "sha256": "c1424f2b1ed8895cc0a04fc2acf146c3436b03ebd00d764f64e51c80cb9c4adf"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/91/7086744d058990f1bc68bd17ece869e556a135",
+      "size": 311,
+      "sha256": "750f554ba45874ef64a27f9c65592c61878fe66bf670153b9ee969f34259cb10"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/91/f8e0c14480a759002c833b19d9b21f305772a5",
+      "size": 1695,
+      "sha256": "906db833bc96c043debdd35422c398c524c6ea33869fdfc4a5ece64fdd3ba357"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/92/280ace456096b877a56632928e33a8fb176fba",
+      "size": 9949,
+      "sha256": "77ff48f361d7cb84a919f1b11b0de4b859cfb2f3de97d6feed7aa5bb27401630"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/92/55622db82435b23e0779311c4f655d85853b82",
+      "size": 1471,
+      "sha256": "9ae962498b02d059525f8c5e5f645929e33c57e47a403da4bc2ab01482ee683e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/92/8a21940ea52945d311c9bc4256e6d034be9420",
+      "size": 150815,
+      "sha256": "b1deccddc097d10afdefa024ac7203825b3697c4470c638db4b703fc0009d53d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/92/9f70055cdd4a9d31758dd464b3122330c0a61e",
+      "size": 157,
+      "sha256": "86fcb928c966a71ffbded3ce14c6629532dcfef44dfbf37abde9ce3421ad7240"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/93/438d79c3cff37f3bf2a0ebd245ea0226ca6853",
+      "size": 1750,
+      "sha256": "b816f2c6a84560d99c2b0e6f5bc93e3cd5db33ea28952444ebde100c9bcdf512"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/93/bcf347990059270ff7df95e958ed6fca136a43",
+      "size": 94,
+      "sha256": "87ceeca49bc5c58ce67e85acfaf2c4bc222af76996cab3db79e11b055d3c72cd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/93/c14c812b125b10cad6fd375db4ef79ac0ae0c2",
+      "size": 2011414,
+      "sha256": "2880c1d97ac2e16ac03cf06022f06f70cffe3b224b66232f21a9d6f227bf182e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/93/dd2b246ca451c92a6c7bf8138e9351048a5537",
+      "size": 186,
+      "sha256": "7587ba1cdc62029f401f6acc1d1f7597b2344eaa9ed0ad7ac9e9bd3f38fe3c2f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/93/e683ebb5e640e5d8af39984545e1bdf9e4f681",
+      "size": 1390,
+      "sha256": "3f5a71fe732411050f166dfb4301dfcb59bebdc7090be13f7bbd2a420879ad4f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/94/458cdbb3cc26b969fa6518b403e9260c3eda66",
+      "size": 224,
+      "sha256": "67b121b91652c48b99172d7ad7ee87af4da92e00c19da4f8d0f366279edd8e34"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/95/1ffef0066dbf5fbb231fc3d6335f9b9a7d05d5",
+      "size": 1362,
+      "sha256": "5d964c86e025a19359bf6d670536fa725475036b5b1dd33325b3757891fde2ca"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/95/60df5a8f42662f55545245932e3fb9326b288d",
+      "size": 165,
+      "sha256": "79cba9a7df71fcecad6aadbe74b92d961fc524795201e0c4118b128b6ea7ea06"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/95/92d786e63b1e009c1a557479577a9b9f618246",
+      "size": 631,
+      "sha256": "47f5584332cf0ed98f913f968159c21885cd6fcd828c794bc1eb9b7a5f2de6aa"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/95/b28f3ef287ee1bc503a2b6aa6dcb04d88d454e",
+      "size": 158,
+      "sha256": "ad5e7b9fd98011f4a1f9e1c08d064f7d974e2968241fb06ac746fd11dc73bffb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/95/e7e901ead6ce8162cd2176ef4becb5db8f5c10",
+      "size": 3922,
+      "sha256": "8b58c9344b9928f6a7315ade2333d9211faaaa5025e87c453a0cd1a19e705b1c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/96/239c7dab20f0ed83e544b6b65e2ff09a47dcef",
+      "size": 840,
+      "sha256": "dda28ef1c098852331f94ea48ab54905fa6d5bc4d02ab86833ca1a55fda16650"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/97/2409e08fe91748bfa01426645e07ff4dce4b6c",
+      "size": 319,
+      "sha256": "21e4475d4a4ab05b5b25fb83e970ef2d522c4e87cbfc2726fcefe375ea61c37b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/97/293558c4288c923e8b7afc75c07192384ca6db",
+      "size": 4348,
+      "sha256": "fad8c8ab34758845a92532d5812096cfe20088053aeeaae28906899756e363a9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/97/39d10380ccc0c59a28022642bdb4b280296aa5",
+      "size": 273,
+      "sha256": "acc0621142ca0b07aa1fab0f5a802846c61d4459b40eeadaae68c493fb8ed0bd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/97/54dda0a4ec20097d2713bf7ec131b9ba85a989",
+      "size": 316,
+      "sha256": "272b9f059c0852b49ad4782f9d9482306a0897d3436145351594baa08d2727cb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/97/839ee8920d1799cb7baaa534f839f4ed975731",
+      "size": 470,
+      "sha256": "432ae185e22a914c64b8401005b90b08dc93100fb40f7a7fe4fa598b0d046134"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/97/8a1e232ed18280eb5e19e776a50ab528b87224",
+      "size": 617,
+      "sha256": "ec7abe550a301b7ccbef6fe70a1a8f4f73bef2b224f9f46d40e6afe0449be0dd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/98/0332d5766ec5f097865febe9df60fec0f8b56d",
+      "size": 516,
+      "sha256": "b71b0abbcc76ea90182e73bee38bdaa30a5aa588cf5c803280646593f182dbf8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/98/12a0d600635a0e08e78be4a3e9102d2674b33a",
+      "size": 215,
+      "sha256": "048e709f829260c4bd04d358919ec33390f4bd9dbea647c55d02fd7bc2683f34"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/98/85d6e6187a26690af68ec11d3ff90f7aa398b7",
+      "size": 4202,
+      "sha256": "6ec8b614dcd22c6ea5b1d3323b496352fe66cbcbf05fae67a9e7189592539a36"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/99/5af704cee5aebc360f33ff874b4daeff2e4430",
+      "size": 442,
+      "sha256": "f1984221cc37d5c166c2af5170a47aead31569c8c8eb06fb3e425445dcde5265"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/99/66f205180aba43788c2b229d6eb1bec4405c3b",
+      "size": 743,
+      "sha256": "ba207bf5612f9470accc20466e7e9c023d347930af293ea4de486c246994e066"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/99/c339460426c447082ca9cc81a61a30e26a9553",
+      "size": 369,
+      "sha256": "fa72b7ecb92a43db4b7ba110ac1debab1a07ba84aeb27663f1d6aa6c0eb73ea9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9a/5428d16920eab200025c29dabdeaa620f1502b",
+      "size": 1679,
+      "sha256": "d2a14c31428fb2f346ac0106f10f99ee579a0d93e4e421ec0c6a3b2a817c22c1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9a/88a3c6a8edd106197d4ae27fd1496b97355a5f",
+      "size": 94,
+      "sha256": "e8ec64708fa7fa1a89ff404189769f2b93b958956cd6eec0ba8609058b41ea78"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9b/1fd8ca8ddaa228af2ca36d4fc40433abee8a30",
+      "size": 250,
+      "sha256": "513d887bdb74d86a1c6bc05ce9af2c84d6a318e7c60d2dd6932cbfde16ad5f1c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9b/d0dd91b22657d82a780dfa8d94350de3dd8a3a",
+      "size": 498,
+      "sha256": "9dca353f4e805acdbc77f4bd9d975fbb3058a46e11e02121e8b226248eb30689"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9c/024470268922afaa40f4deb83124c274be3ab6",
+      "size": 1349,
+      "sha256": "98b69663c2db4bb0a91e3a08f07454bfb425792b086ae1b3d0cca33e3783a311"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9c/922256692a58e31819da962c92aa3b35958510",
+      "size": 216,
+      "sha256": "67fd195a1337e3b95fa1c2501c3399eb3cff2a7a6f89b4c995d5c32737ce2414"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9c/9e1605cd5d38d70e85e88896f36e374c13a8e7",
+      "size": 1651,
+      "sha256": "8569c7f3b5e20b78f1fa58492a346d13dfce9508f07ef1164b7163a4ee541ff3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9c/bb291fd9031d32ec22525861486338c23d2b30",
+      "size": 57372,
+      "sha256": "9f3c71a48b91f7ca3d41c330e81688a82da2f3fa1bfde34c5a35d8b67c859fd8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9c/cfdf3ba07e3f176486adc829fd6fe63cf7fc8f",
+      "size": 269,
+      "sha256": "e12c7fce2cf31edc3d728800ce98af17b2ec570878e232264d09921b967b027f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9d/27e13bf7fcd2522e2e5b41438d8ab72f65be1c",
+      "size": 61,
+      "sha256": "0656c6a71efc897260da7c0df76ff5d715dfe68025ff637e544950fda4e1e789"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9d/b7b7d969d3e12275f7f51d6ba4791261711fa1",
+      "size": 231489,
+      "sha256": "c85b40c8e12027a0a50b9f6fcc67f8a91e8fe226b262d6d4a4a4b31a93d4468a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9d/f63d76cd65daade1f88ec463b41ba068a4039e",
+      "size": 161,
+      "sha256": "b0b03ebe9dc9c229d64a13ad85d6da3165c9223ab085803ec3fceea646ddfaeb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9e/4e8b3c8b55410c4a8c9e5e75eac95ea049183c",
+      "size": 287,
+      "sha256": "a732fde7d246125d90cacc0a980ff8ea448201a39b9fd655efa2bdf7191aca63"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9f/2762c636b37108e7d32ae1e8619fca3fcc1f49",
+      "size": 1159,
+      "sha256": "bd04bd041f6ee4e10797459d3394ef7149d00715610529db4688ae4e2cf3bd56"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/9f/bb262bb87e7df527ca115f6e692656df2a0cae",
+      "size": 594,
+      "sha256": "837c05b98e60aa9df462316a13776e7b2a8d4af87555b5f7f4ac2338cf918144"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a0/110be25e68e04085b397878adfc8a83fe6e361",
+      "size": 139,
+      "sha256": "45b52d6b9d16dd7676034dbb9b3107c67209259dd2d1fc380b57bea73402fa72"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a0/45627cb6ef2d89b87344f0d9d08aec9fc5f455",
+      "size": 192,
+      "sha256": "ef03350fdec581981dd51c8d21ce279dc9b838958337b2c4cff51df5dc46963d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a0/98bfc6bd089feadcf1d6d9d0443cf2eded5587",
+      "size": 461,
+      "sha256": "80da2f377401956c6d2ca5d5413af8521a90cae6c08153f5ed277b62fc0a3466"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a0/cfed4c88a119cb0583f18620d4d1e1fd67d618",
+      "size": 2463,
+      "sha256": "f1b26de84ea1ab264131e6269e00fd3883f25b4f1515b76bfde5086ffe63800b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a1/25067c0f3f8de775cc65f77cacd3d2aa6b584c",
+      "size": 219,
+      "sha256": "639c0ef901dabb646075bffc23261b6ed6b9d7d0108f39d3ef1cca3aede982c3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a1/d62bbcf443678c0ccc1439ce6b28f9b1c444c5",
+      "size": 178,
+      "sha256": "ecacae70b5998e7011fda920843932ba073e5f71f0a0b516460d47b354dddea5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a2/6694601eb62938f2a6d281bb93e9f416323750",
+      "size": 3688,
+      "sha256": "b1e2ff0a7188a61eeeea45ec7c8544136405e1da4fa5568fe084b77d1b87f489"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a2/a41d8e8342745027a962ba92d5f34bd83599a5",
+      "size": 3193,
+      "sha256": "aaad2a47572b9498180f56eb5761cb268c8a200e384540626bc1e3e311dc1bf2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a3/eaafbe7589ad6035712415320a2b4a5b759312",
+      "size": 1343,
+      "sha256": "c8d11f8257795d5747366c0be95f806bb07f04faa6d29e4c1d020b94c3481de3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a4/1f4b6d73b62f238a8c6dc8db3757baac1107b9",
+      "size": 92056,
+      "sha256": "dd6d3b6186711319c42ee1e4735168ec594e012288bad87bd4b0f5e7f69a73d2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a4/1f82a5ba3175643065a3e1b36e1562223a2020",
+      "size": 579,
+      "sha256": "03e472870a92244ec749c19c937b3b7fffe8940a1a571b74a09c7bd4cdf5dba0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a4/91303c8e377c3ff4b731e9d3e6b566d674baec",
+      "size": 35246,
+      "sha256": "82c84ea8ad35ce581b69710633d334a14fcdf8be934799d62cd9591f266b3416"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a5/5dd34c569034ca305ba6ec854a14403d51c379",
+      "size": 285,
+      "sha256": "ef5a8a3524c6151fa7a80c5ff95cf6c9fbfd0282c1f476e1cd588c99c37b6b40"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a5/e5c357ce0db35a45c8fc20df6ed89360452d39",
+      "size": 531323,
+      "sha256": "6fe3aff0be3bb6bed32e051ea70acd7367ef4258261c1dc084d8da5ff113c6ba"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a5/e7c0c6c134736c38cd68485b5374b1fd4c2a72",
+      "size": 968,
+      "sha256": "568664442e1d156f39ad9fe3feb872fd3823f67f6a56fca489e483220b463405"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a6/ea1a9b5f1d5712a7a03c1493dc16fbb24cd14a",
+      "size": 1746,
+      "sha256": "4b9127f68b9a93016d50adcf7929aea671c62e14dfa0323dece8098e5ccf0746"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a7/25959d7d3b4ad91ea9d36fd0ac0df2d17a14f3",
+      "size": 206,
+      "sha256": "d62dc1fce525e298dc5daa536c58112d8a09955d2150d64f32b8c64c09967bca"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a7/27cb0a403fd18a889e8d36202b8369d8399584",
+      "size": 114423,
+      "sha256": "783a7bea7456bdd325136e541bfedc0cf15c333ef0b5c2d12278d73f4ddc05a0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a7/48ae06aa0acfe16cf4c43ae1c0685c5db1b49d",
+      "size": 333,
+      "sha256": "36cc4ee4d78538a476f1971720c5288e145cd202a32f8e05d43764576cf74a4f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a7/76e9292ba432fca6139d61ef7b1e0378573bcb",
+      "size": 1184,
+      "sha256": "40df6aa34ee3d09eadbf125c64afb45b2b74181a9560899b14ac5fe665a59aef"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a7/9479325fa252136e4e5b673fe29331333baf23",
+      "size": 1343,
+      "sha256": "dccbeb7146b9b4f56f007af8d96377c1656168127777e3eaf4c0cd0e47a65565"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a7/9f0ad34ca137ebc35b56ce9b5f6a08511a4f81",
+      "size": 2590,
+      "sha256": "c477ce2b2e39af0adb0c2498936e6a01193a490d69dfc2b6952e2d2f6296f159"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a8/1f5fb4a09b75f09808b153e99550dd6a6de31f",
+      "size": 2706,
+      "sha256": "cc2cac2ce5ebe1b0f50011a0072c64c9a29d8179b92a9e58251aeea9c4bd0543"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a8/47dd60b45faf6855648240060a0b0636e24c4b",
+      "size": 2337,
+      "sha256": "52ba17b63b1a0191ab0067a273f60690066e2aff937e110c89df4ab0f8b5b683"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a8/5c6bbb34a3813b729860f66146b859306cf60f",
+      "size": 1207,
+      "sha256": "42da8fd437767f8043513afe18facfb56382b842ebd4c6ab8f3701758f6ff022"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a8/78f401f9695eb976826e1ffa6b1f17738c4301",
+      "size": 12863,
+      "sha256": "7ed36c5a5a8730e753abc402b451b58cae3353765461c35cb0c807d8a6022856"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a8/a79ad73d9a05e13d52a8eccc287ab4c24c6727",
+      "size": 770,
+      "sha256": "5d3dfd4deed6d2b749a52bed5c6ac9fe8fc4a83c024d3e0d83624c4cea931af7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a9/2820ec651bc76aacca9d87b8f08b29695058ff",
+      "size": 2246751,
+      "sha256": "74180dd60f36e786b41facf427f2e7b775c10f2fe0a1865d06d9e44f0c53eb1c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a9/5524c99e5dfd694ce4abcbae774b4698759254",
+      "size": 4230,
+      "sha256": "8955993db805ffff148942d773c6bfb8142976153ab00669adb6682d50a10515"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a9/742e8b24f378abf985580614511600f59762ee",
+      "size": 109741,
+      "sha256": "23a71a7547ae38d46e05fa933fa3c87a95cfb83b473476058f7e1a3d989d9a10"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a9/a54f86d9f2ec3debfcd3df96314ad4d76c2727",
+      "size": 538,
+      "sha256": "1fb9b08cd8cc5771b06da785e2c415e7c638559ab09d45eb53bb2034f07a3de5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a9/ab2e552f2204fd4db7a9bafd156527ae00ef6a",
+      "size": 421,
+      "sha256": "edc02f3f244b5685d33b303c8e11346bb6273bdee753fd9066f8038208e216a6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/a9/db5efd214effa1eb06f03a9aa522a0c70defe4",
+      "size": 63112,
+      "sha256": "524b45742ee7e795aaf22d7560ab754ddae1912f036cb382f15f21a889a6b6a0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/aa/6f46737384fc8066f1f556e57f45756a52d4c9",
+      "size": 883,
+      "sha256": "1d33c7a09fe14e080a5d5eca79fe13fc9c81dbf4086ba104f16b9d9dc0c51738"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/aa/8d8d3caad6ce092d29586b94663aba3090ae56",
+      "size": 315,
+      "sha256": "355c913c845afd82bec3d16929db7f853d622cb92d10c436df9f53bdbd7f9299"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/aa/db2b26e0af36ae31364c9a1c1be1fb0d3c4e1e",
+      "size": 1608,
+      "sha256": "35a8c60527fc18ceb200c3416bf610a358b94a8d257eeba1fe33842b5755e71e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ab/1f4d39b2f8cc37f059f11050d1338d5285f17c",
+      "size": 887,
+      "sha256": "f7f4ae8be669ec0a63b32f6e5158496c82730f300945d2a946e094c2d593b646"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ab/21658538aef57c737a801c92d78ca1ef21645f",
+      "size": 592,
+      "sha256": "e104fac69af236e1c7bf5fa996e8310932b2f47122eb3460e07a3a7f19710c36"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ab/bbaa967452c0377ce9e6361e818fcf9366f5d0",
+      "size": 120358,
+      "sha256": "67eb433f67836cfc6004aa93269010f37921b564647af45ec535cbe5f21a8b9d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ac/4524299f549eafbc8793902db023d30821f760",
+      "size": 4401,
+      "sha256": "a52021b77c6229d3d4a4d3e295dbae46796f6795f82f4d9a1000a037c55a94ed"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ac/95a6f8b57b1e2a0aa74c03b837be5376afe750",
+      "size": 77,
+      "sha256": "2106c1ff9422b95d078bdd1de76539672a5c2a5ac9516dd7fffb1df81eb5ad7d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ac/aea606e262e894bfbca4987d13e5f030873dfa",
+      "size": 983,
+      "sha256": "2c777b94910e142979d1a6354d4fcb81d456387d9d4a2dccc10bd7bd1228813e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ac/e91cf1293a935ef328366b7497ea270dad81e7",
+      "size": 4038,
+      "sha256": "73dd2fdd2509251414e8df60f0337b3d8825560d589492c4163da21ef5e574a0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ad/0f568e656f9670daf552054cebc0cc5e5b2d42",
+      "size": 636,
+      "sha256": "4ad22d01e934603c2735918353ad8217e57a7edb83057bfb1efa24357564050b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ad/2ced03d136d30db35d43a36eaac0698e458599",
+      "size": 214,
+      "sha256": "8e86379c5b91b647a170568c45bbce8c75f90d02ddf8ee25e925ae64d7a166c1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ad/2f3dabfa94139946dce0dadbed7457ad01ba67",
+      "size": 90,
+      "sha256": "51a53d7d9bec35310ab7f604b40a797c96e6778299355504ae63b5486f16715d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ad/41a4812b60b4d68d3490e459978216e9de75cc",
+      "size": 113782,
+      "sha256": "8347cf35b877056e041b548db47e5e7bd93778a1722e3bcf4d29a5190bb17dba"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ad/76c8b3d8ea45134e2fb66cbf2e069d85c36b4e",
+      "size": 209,
+      "sha256": "60dd2e644000d47afe5f9a388ba835d73935986f4946926df69376ea4ecb85f4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ad/7f5b89ae0aa9606b225166ad004676032bdfbf",
+      "size": 932,
+      "sha256": "6ead9b186d99e3098e9dc052cd1cadcf7bc71f15cbdeba3b43a2382d7b6649d1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ad/831c30cf506a56a30a78dd99c445ee96bbcf3d",
+      "size": 608,
+      "sha256": "969b4a4b3d904eeb0812410261742224ceed8e86bb2c721eb6ebb43053dfe431"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ae/11a0383c619ce03b5a0d26a2a5293b8a70c25c",
+      "size": 1991751,
+      "sha256": "216e3baa28725674578b1a7b404965db0719b74f85611dba44b9dc5a6afc2539"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ae/1245556a8e6d3b578646d1968e485fc4bae182",
+      "size": 1696,
+      "sha256": "b4a9558ff79e0ea3a182bebaea519deb323ecc3e99b9a3c3f9363706c85daa6c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ae/9a22c52d96e03520dd47f6621d7d7d24a6265c",
+      "size": 480,
+      "sha256": "201987ea4756322aff1058dfe628e59e196e1b6e9c664922f29b3827500f14aa"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/af/b92e660c078980c4dda2fab6190fef9a7882d9",
+      "size": 350,
+      "sha256": "29585914b347e725d441604bf87907bf645be75997c60debe8eb352e9847e935"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b0/6d6d474b0f6d06cc7ae583ce936f091cdc3051",
+      "size": 1657,
+      "sha256": "d143b4bdbd541f88ea40d33690cc3937ed53030b75f4316d2f9bbe5d3006ecc0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b1/21dd6c2da7af81543e1a3bf1db5407f77b6d6b",
+      "size": 291,
+      "sha256": "09db409d2bf91caf0e5726e16d79b6bc3ace71aeb137ab8fff9b8a6c53b44a53"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b1/c182440a292a98b8ba85be104731c11ada2ce6",
+      "size": 669,
+      "sha256": "60265d4bbac473709e5f33451cfca1210bd3fc972e07b5a0b69ac25200854eb4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b2/14e01ebb5405781859189360253fbf0238a9a8",
+      "size": 250,
+      "sha256": "1eb06d4ffd011582d7fc856fdc82af6f134c6d714419ecc8f46bdcf889812110"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b2/1abf5a3b679b5111f63663022c7c25d3af29ab",
+      "size": 521,
+      "sha256": "76d1850ffcdab41fb36874ed551f0c6b11e684eb699ff1fa83b0a94d5e1863eb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b2/d5df97da83eba1419476958e4d6fe3a1644365",
+      "size": 1654,
+      "sha256": "4456c4249e6a058228e5b80b4498f079e78a0328fd565979be3875f9d9516b8d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b3/2e37230417bbe2099f60c4df118a63668c97da",
+      "size": 76608,
+      "sha256": "668458d2c20d11a9662e9fc8a3c2ba1a5f4ca9b067caf1bcd5a0bd6ec01cd33c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b3/40de9b45df1c5c488d338b02946995c86b9e69",
+      "size": 1236,
+      "sha256": "8ba90ab38fa7bebd83d7803dab58efbf2ae9064b334c28a6248ab9149c6c2cef"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b3/4ec05e6518e0156b12c200945930931c03fbbe",
+      "size": 678,
+      "sha256": "04e55cfa168286a6a2b581448611e7dafd335488752caa14f4344945dcfea485"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b3/9b7632adf0be23378ba7e3f685e19b3e705aa1",
+      "size": 68381,
+      "sha256": "f1d6647d2f609fa41415c384b7bd234fc1b9bae38b6f7175350ab0e62cd107d9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b3/ddf966cabcb5c6014c9d4bd9c6cf57f2e2993c",
+      "size": 231,
+      "sha256": "4c38fa6acca2993ed9fefcc31b258d46ef226d874fdeb2e391cd98b546c8c15d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b4/cdbfe2efbc8995067f4de402773112a418ce12",
+      "size": 267,
+      "sha256": "19c1a4201e15b68d00135012048b5386cd6f5ccaf7722a5fddb96ce36b1006ec"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b4/ce6fe687330bc1f90df8dea8d713f54f3493df",
+      "size": 7813,
+      "sha256": "169e0b0e7c80ba3c55728e13abd70f40499749c9d8308b1753c25c809ded6da2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b4/f5d31e6cff6e1c294cb00b4b16659f689b839c",
+      "size": 4120,
+      "sha256": "b1dab43032c6613a35668338ca1767631631d1c88dc6171fd79316176348f5be"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b5/deea27d396b6baaa7fb76201845f2effd8310e",
+      "size": 165,
+      "sha256": "df0c77c5f7cdffe3e468505a27e2df88ad93efe05863c07150bb05e0e438d406"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b6/eb53c56120b5c1fbcd87aff500819ad844484d",
+      "size": 745,
+      "sha256": "cec01dc5595320a0459d650a3cd74f662504f1e748c219f891efbf7d84745e1b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b7/abc04ac31a1ec89c73d9785146f795dbae9c78",
+      "size": 96003,
+      "sha256": "41f20ab51ed575d714ee369468247a56010d9300d6bd2419b2ac2aa4c0b59ab1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b8/479f4425c42581bb41c7fed199dbe53e0f6207",
+      "size": 216,
+      "sha256": "91eb2cff258375bb5321041d79f56f24ea37d744712709545fd4c7d23a8a0143"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b9/48cbd7fd0832ce26e5e95bd3f765bf65cfbda8",
+      "size": 696,
+      "sha256": "9455c583095277e49aef0690a21bf894cd6c2bfd9d646e304a8df8da2de0b594"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/b9/e00b713a84d361424b60cd11518cf9047f71e5",
+      "size": 124668,
+      "sha256": "f17795670cdf77500729c806bc65c267be770ae1ddd789a91c0763148b56e349"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ba/50bd0de6908879126c6ce366e125aefbd620dd",
+      "size": 301,
+      "sha256": "692b7b15e9ccda3decb94f0f6c355cd46526ad6762ee6c4a68248cbb0958d936"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bb/65dac01b2eadbb516d36e3e01817d64a5286a3",
+      "size": 357,
+      "sha256": "c4e602936face6e698c414937b7844b5fcfcd1a3d580995c56dfab5adf850d02"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bb/c14791dcc6d766a19b6ce74110b4be61277182",
+      "size": 2916,
+      "sha256": "da52c4c0ed0adc7e34aebce2d327f499912fd6fe6b34f91d17d85d667126a7c3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bb/fc982e90a6e7b8e42f906fab5c47480e72ac4b",
+      "size": 2823,
+      "sha256": "4b8cca169a0f8d975015817e569edc238d1f4694768605e392d53b30a1652de8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bc/02db3107fa67031a6567568892ff160a9b2ebe",
+      "size": 1397,
+      "sha256": "2e149d2476ec77b2523d2d24e8771de97e8128e9c940691078e5cffa4ed9f902"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bc/0e1a01969d87dfd41935737f39bdb1b53272ea",
+      "size": 56,
+      "sha256": "422114a22d82b9b7d299a62036f59d66fc502caeac08af1aece6d26e0a817a19"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bc/20620d0de73c0fcb3254dff24e48acdfcd2451",
+      "size": 113888,
+      "sha256": "10de0bbb06123e72408b12cdc594f1f9b3631695a64249952b00cdea01517a2b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bc/285e41ffff1a029bf29d093bc28150393b489b",
+      "size": 114393,
+      "sha256": "36c21f37e97f7ae79bc49654563795dbf6117d8b764d84a8f988dd201f7d97a7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bc/70e3be77c62103ecdb73464fdaa799c6349910",
+      "size": 367,
+      "sha256": "b0e0448ebbd0d9ad417c98a9c06336f7fcd69a0055890e64802ac965d309fc2a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bd/69b85c958bfcac35521bd891daf25d4ce4f534",
+      "size": 431,
+      "sha256": "fc87079795ef5f77898bb050be53dfe283edfe227f6204ec3bd889e6cfb763b1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bd/bde01dad2f77c93d97ecb40417c9de80382b1f",
+      "size": 1693,
+      "sha256": "e524ed5f55a7e3844437d1ff0464f456ac264a9ad6c5e67dcc7468982a977b87"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/be/1172d154fb558861bf622a61d4d3a13aa5309e",
+      "size": 114188,
+      "sha256": "6c237f1038b6dba84d11fcc4650ffcb7915b880ed9885a3013b61f7f5218daf7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/be/275161ab0a8bf809ce80628d7abbf1822b143f",
+      "size": 172,
+      "sha256": "223eac656d7258020b20560133cdf360f6d0ad41fb7e1d5643263f1b2c18ba39"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/be/7a3f9218580030a2f81e724ee21c7ad5240fa3",
+      "size": 90624,
+      "sha256": "15be67f6a0d73d0c9b5b9d4d09daf2beb6eab4786d1f809e9e5c70fa774f27ab"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/be/b755172e90910d4c5abc4538836858685b4957",
+      "size": 113042,
+      "sha256": "3c37bb5dd4d020877e8eff10ca4370167566781453a4ba71f96de0177be118f3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/be/e78cc1c7e6aaa3c89cf8028f071a3402755bd7",
+      "size": 103,
+      "sha256": "fce16261f213ae76d8c2b94d790ed5a313d2b1e6c6e7f9929dc768cfd84f8afd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bf/2f21aa562ddfab9356487945800b442cab487f",
+      "size": 8217,
+      "sha256": "8baca392e352c8dc3d32b2b34557585cd6a9fc6368641abd11dfba66ef318e46"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bf/5122a0a78bc328eaa61a7b3b6b3b7f944b49ae",
+      "size": 61171,
+      "sha256": "584c6e5e32b55b994527333aae07204262b0fab2ed414dac60893c8c029ce942"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/bf/ca6782f4772f9e0c1b54a41d177333a3ad44cd",
+      "size": 216,
+      "sha256": "a8953e665e7aa752bc9a9aa82651eac4807630344e59234da2d2600bd348b05e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c0/cf6e96ee767cb274c0669a54d554ba19d534f9",
+      "size": 1398,
+      "sha256": "378fdc662268430958649877b1a9b9d407ac43f2487ee412d2c5614d8710c333"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c1/36951ca9ec0d3c1562b3021f2ad32e42a52042",
+      "size": 2502,
+      "sha256": "3561161888434ea06594134ffa881721518330772fb8e565496de4f7fce57ac9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c1/5b9db91a29165e3483dc2155ee910a51baa408",
+      "size": 98,
+      "sha256": "52499bf08254ee77543c1f7f9bad1a84d992c122068376e7d384ec5f21222926"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c1/67583b5a98e5311613808f9f7ad3eed39220d2",
+      "size": 89,
+      "sha256": "ef080e78eb8a8cc060e25dcad7c07e61c54196d56606393e3c3abad073a81a41"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c1/cd81b63561736e4d54870f0fb95aac70b6c7db",
+      "size": 1645,
+      "sha256": "6f9e54631c0141090ab279ad210dbae8dd17588b286ac968985d2c8ca174479f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c2/13a3fe046795fa6df21c9d020d293b4956dad5",
+      "size": 439,
+      "sha256": "0433e24487afbb714b5960d7006da7c0ea97d9bf99290a71d6e66b4666d4a72e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c2/77d702f9fd9308fa6ae6ab4f00ac9a1fcb7be5",
+      "size": 84,
+      "sha256": "0e3de7494754f1903b43405615000829d18317e0dcf6a980b742369be7586712"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c3/96ef5214c1c197428ebb3138cce2f5bbf2c0ba",
+      "size": 1648,
+      "sha256": "542d203e971cbd33ea191b9496430e805b0273f071895d6f65f9f008b59c09ee"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c4/3f3557a3624f78ad4793ac22de11bd709e76a2",
+      "size": 265,
+      "sha256": "7b48c2c750ca742eed45450ab53f7919b335b8b1fc602e70c8484bbed159c911"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c4/6684a5fefb348bf6408b57e2caa3c27d8cd46c",
+      "size": 146,
+      "sha256": "fd92ee948ceb7ce4953ce96fd88b68ae63c427ea687843107335a158f39db9fc"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c4/f8fb3d96ac9641e4b992ef017ae51cc8547971",
+      "size": 5883,
+      "sha256": "1c0a0e08baa77b69f45dc031290072d9b4abcd752a78bb9623610e5b62274690"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c6/e5f34c068d3b0e4b9203340127f851cf7f489b",
+      "size": 1354749,
+      "sha256": "ff9b602383c268c68b66cb9492c1a98e54c9f4bfee840f420b0fd7c37734cf7e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c6/f45574e72c24d04745148e6172328ce4d51cb7",
+      "size": 1116,
+      "sha256": "1bfdd27da966d21b0fc832ce16211d1c6a707e71698c7fe8167fe4def6ba0b72"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c7/969a65fabd5251e567f839af82b886f32e920c",
+      "size": 1649,
+      "sha256": "421ad61cbc78a86a51c20ae01f4023fa054235938c11f4aae40740973c7deb2c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c7/c82517dbc46e7ea8d1101b4a02caaa6b3470a9",
+      "size": 40082,
+      "sha256": "ba5a30701d48d58e4a0021c82478ed0640d484963af89abeb2e1845e40dd445a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c8/2edff32fe8af91d7aaba9a0aaa080f1a9d57d5",
+      "size": 59,
+      "sha256": "736084d255f98c3af6eee9e028444dfac1147a8df83764c1fe29a00a6105e874"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c8/d5767b2f116429c71726c318c68d1ce1431a38",
+      "size": 410,
+      "sha256": "ebff6f12fec104c40901f897ce94e06e3eb031fdbda40662074145897b53ece1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c8/fd3f27fa6ae5d8e87c05e6c1f98f85237918e2",
+      "size": 90,
+      "sha256": "63a08707a985093b2e8d488dceedc943f51ab862eb9b43bc06e342e13357733c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c9/62d86529184b97346eaa1b657119907e850247",
+      "size": 171,
+      "sha256": "6e8008adbca89edcbd3baa3b687ff31e648b70d891b7f611138857619e1836ff"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c9/da92d690bf2f363d527269496670fb2be63fea",
+      "size": 158,
+      "sha256": "8c8c32a4062d9f11ffe5d0966b2b1d5ab2cda64165cdb12e21fdc91f82b39c2d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/c9/e9bb662cef680d2bf1271111dfdf279e0f3c97",
+      "size": 3559655,
+      "sha256": "69d2dd38f997affa2f8c122b528e100431fb0c64541a3328cb0333e00308919a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ca/140992fbc069031aacc286f26df5b61f148077",
+      "size": 1398,
+      "sha256": "a35373930f71290c9f424aa9aeffe8e4bc9a718d44dd38820af35da2bf6d3c1e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ca/d739cc5fd011387e648bf92a72ad015bbd0047",
+      "size": 573,
+      "sha256": "5719b823b200be473677b3d7a60bae9a2f1e00031dc93d1c89795bb27d1b3772"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cb/18472ec56df0862a9dece1b789c1eaeb878b96",
+      "size": 5639,
+      "sha256": "a22f339dc9e78fa6837e30c156490103a28de496d058e6e197361e0268ee9d6c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cb/4e843ba8a951732af2da291ed900ff67bd6a85",
+      "size": 439,
+      "sha256": "aa6b452e39fb59bef539be1a30df86848acea82297af86d872269387b2b86c91"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cb/7528ac57082791468d02f0034ca3b6846e87a6",
+      "size": 1402,
+      "sha256": "0053b96f3270d652b70bd0562e8d1f1521a633342540450023175ccf19d06d4d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cb/906eab753a266b995d34c50e2f420c817d5274",
+      "size": 2257,
+      "sha256": "0cbb250c0f0390e0da999f4b6f7d5bf6321f9b1d5c4a81d7db7448a32648ced2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cb/d4708360f9f1e6121e724a60fcde8f595586e2",
+      "size": 2541,
+      "sha256": "a552ed8da740c056c009fd9004f3afea0099d02bf6b7b098b9f840cc31cba2b8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cc/57661e269f5993a87d36147fa36d6b9432e3fb",
+      "size": 2115,
+      "sha256": "9611106b818cad0e904b21a762347497f5d592ee91847e0a76efdb2f60b40bab"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cc/8524f92ece0a318418a76d48941e68ece903f7",
+      "size": 1556,
+      "sha256": "ba2dd1b434c94682d20b837f4dc1c50bb7d0c77c8b1710be285a0f0ad25f3e03"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cc/9203dd6494ba3705fc01aa95dedf80ed6caef9",
+      "size": 653,
+      "sha256": "d5094eedd1d188de4a178d7d0537559285ea60245f17e12e9baf3d36a40a1465"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cc/ab7b8c464b7c50c1cca6219ee36c428900245d",
+      "size": 3269,
+      "sha256": "d8ff6e3d1cc56b6f4be57e7304ebd557914078673b4ea57fe0c796def8a29548"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cc/c4fd07e52a7e1ea8091c6f1a099b35d71facf7",
+      "size": 1851,
+      "sha256": "834a24cce7e97497b388d716f0445ca11906dd86343023523a8c4a865ea291eb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cc/f264a45278d00c41e70ae30feafe023c1c97c3",
+      "size": 2272,
+      "sha256": "3e9d604a445d6f141675512ea7ea07f5dca17acc4fa768bf7d2e6c741fce61bd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cc/f51a58dc47a07557a905890b52c360bdac29a1",
+      "size": 113987,
+      "sha256": "5f6237fad7bec4e4d09031020738c8ad18612cb4c218607ffcf9bfeac850f754"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cd/169ccc66ccbad994bf9af4d9467f0700e5dd9a",
+      "size": 313824,
+      "sha256": "84b7ca416b41bf5be0408301bb21de96aaf84219dcef2cb75ad1285c70a4543a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cd/8d41b890465b17de6789ca4356e506e93e8d41",
+      "size": 167,
+      "sha256": "015f7f0bdb454ee8936edb4becc6ff4ca64560b0915b134dfc6ea384106a0098"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cd/fb9114a539496be978e9e0e8bf65ba137e3d7f",
+      "size": 129,
+      "sha256": "593e303936a31c14f6f35946aa215ca41bf78de53e56aa82a8a6e29ba7c1ae87"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ce/19cfe2331e34cd58b723376ea8862e3c3f72dd",
+      "size": 50912,
+      "sha256": "8dc0447af625c9e7c15684147f057d80e53955b58bd42009049ffee34207ffb7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cf/2d9bac08aa027c7b872f474d0b5c33c1c6861b",
+      "size": 497,
+      "sha256": "4a1c7f5986e14b70bc82f8a2546d5ffec0e7e49f5840a143342ace4777c362d2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cf/2f9a7af80e8b77cb7a564d186092757a1d8753",
+      "size": 3870,
+      "sha256": "edf4cb584aaa0486d656351f79bae6a3175465edfd9d7f65286ab9ba664e62c9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cf/8f40a7ca4f378e5c0e8d331cd8f7b050ff9a75",
+      "size": 212,
+      "sha256": "19eed20c56b2eba3cc56a0fee0bc3dbe127d8d531427d7e2344d2b8aa2337c4e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/cf/af21aa95bfab813f5166d142b25e0b86d4204e",
+      "size": 217,
+      "sha256": "a0636ae673fdc205e74249b14b9dea1f060667fbe39dd0fa276302954761098f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d0/09907d1cda63822a9fdba035b2cd5ca9052a90",
+      "size": 620,
+      "sha256": "06ac08167a9b2d1c9cfc0b60519beec3dfb4b93df3f711630b98b36ac7757bd7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d0/5fa2e25321aedc43abc742fdb9672c3a493ba8",
+      "size": 364,
+      "sha256": "458a51466c8a9ef5f36b2ed2b2a30a637736c7d18cf4a57bd0b5dca043035696"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d0/ac76121c180321829b7dc53c7bf17eac744eee",
+      "size": 620,
+      "sha256": "b7ed90758994063a8979488ae6bf062ba76c623f10b56e8ed963debee10b26c2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d1/28a85fba8b96fadd005e5c90af5481723858e8",
+      "size": 236,
+      "sha256": "11448e7f7ea452b7355ba0ef141c30efd61ab043531a33386c1045614d7ae433"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d1/b96dec818b3ce3bda4cdebbd323b77de500ed0",
+      "size": 120,
+      "sha256": "24321e677ec42e399583bdd9611b1b7c39e96a6e47b1862913a87fce08af9913"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d1/d4624e6648b4c3962666d774949654ccc045f2",
+      "size": 674,
+      "sha256": "16c436ae231f8a0fdce026c539e58b67c407d9e093873939842d598dab84cb2f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d1/faf2d37850e5dd5b23654b63812fb14ed9f08f",
+      "size": 799,
+      "sha256": "f85ed210a3264c8b7a39f418b404704b64701d2f2522b60555f9e8319ea73f1b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d2/3b81182a9e4e9062cc91c9882f8e5e0fc946de",
+      "size": 231,
+      "sha256": "22ec531382f4bcc8918ee69ca2f0aa188ebd904b7de25f2e03142e81b456cc5b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d3/3808d4023d70930f2e9d8c61fa7d796b9d0b5a",
+      "size": 181,
+      "sha256": "540b9f4d583205190d126aec17ba52d333a2a569fc0cc3fbdbb3b695965a6233"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d3/6bd0f2823040a7d8ff17f900cf500289c8d722",
+      "size": 2220,
+      "sha256": "9d7305233c6a3b87d4e2bf6c5d4d34605e574b8fd7d09a63e43b1ee3c5f2b4f7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d3/999c03a3e298cd89dbf8b39a1a97b8b9300868",
+      "size": 347,
+      "sha256": "d69a28f7a9036e96cbac13b236403b9b3957782be25a2bfe90292dfbe2ea075c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d3/a35adf36be7c51cb0da2d2833b27ebbd42b2e8",
+      "size": 14256,
+      "sha256": "44e81218532d6f336465bf692304cef695c8b5e123de9e1f117299541af37070"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d4/4362e146199e2cfec4079c636e4ecf5f1dffce",
+      "size": 93,
+      "sha256": "e7d32281bf7f62218740da3747d560a80609b884979b98f0a143d58350873c2a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d4/6937971ac7ef33e782b04cdee858c2d2857f89",
+      "size": 62,
+      "sha256": "40bc4358e11eb0b9322228e3574307131c65b3f764a70d8cf93ed28ae2581eb8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d4/c37ad79399dc90feed34f57d43421fabaf6b7d",
+      "size": 161,
+      "sha256": "86d37e6cfeb67f0a63aad6c94005fd1c47c62e5f44a7deb38908173121a5c600"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d4/e2c210b16d5ffc08eeea0fb95133678476ff62",
+      "size": 171,
+      "sha256": "a5d1c2b7424e7e955a9d6b32bce1a8cda36d0d4b4b1a8e221c38b03863128a6f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d5/0e7fb456e3da0922cdefd0cf69fa8be9ca53c8",
+      "size": 2707,
+      "sha256": "d3be212107af87af60a67718239943d7146a74ff85de9473ce9838336a16fce1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d5/551fb9b82bde98c7fc23ddd1f0c02f8f1076d6",
+      "size": 4297,
+      "sha256": "c771b27eb511e556d7c49c6268abbcb6ccb10277efee7a30551500ee13f744ac"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d6/8c0bd359353d8668efc2d5fcc56bc7414e2d56",
+      "size": 1853,
+      "sha256": "4c96071d69a160bd39d2aedf77b3901633528c769441f75bbb7f26f51e57846a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d7/0685482b4d1b497b6895794a4daaadca690ddd",
+      "size": 1261,
+      "sha256": "e39302a3adab811498e3d392001498842050431874dca6db3ed9f729d2a14e41"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d7/50aec510fc14fcd697fc9b9d62a768df78bf55",
+      "size": 1088,
+      "sha256": "67290c3612c32d18eca9b20b90bbac7e5d68ce4a4447fd48ca806021b2617534"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d8/39f989202a98b765273ae347fdf22d300efca7",
+      "size": 300,
+      "sha256": "7e13e2c2d799a91c44481fe32358edcb08680c82e6ec37637dfd141ebb2813c8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d8/896808392285b6dc9b1577c9b82dc71261d32f",
+      "size": 356,
+      "sha256": "fd36319671c848edf3d79a71ca60445a992b443f842ce2e23b110050f86234b3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d9/5611e57df1421f89e7c1484601dc2230b5867f",
+      "size": 1627,
+      "sha256": "10f4e0072289d72bb7ad13f35b8d5a2c7269efcbf2f85b03a76fd06a2014ab92"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/d9/f3c0731eca459eb8cbdb32fb52d801adf797bc",
+      "size": 60,
+      "sha256": "1fefdb317f6884f680b47acbad4d1aae85aedd58cf435997a7386d76cc4d95d4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/da/8bb71b0cf7ee02b010bacdbf66c3a93b71f838",
+      "size": 127,
+      "sha256": "df2af42ededcad95dbd2b2abbd02d48413748ad146da7789f9a2d20dbee86e5d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/db/cc185fd425862f1a4e07d1b5c26f51849e5650",
+      "size": 1197,
+      "sha256": "bdab460c8dfc7c6efd0e334f2fff395d12f6fe31390f23742587fade991fc3c3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/dc/2e8b63b9c8f719e1eae93888340feca68f214b",
+      "size": 2366,
+      "sha256": "01e85b48e392dcda5a3b59c729d1d881cd03cab056211f86d5395f4d7ad2d85a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/dc/c6abeb7bf2f59caf6ff65f1a8f648b2a18fd9d",
+      "size": 562,
+      "sha256": "4002e555aa47f5d7e5ab7d45df94337f01ba945eb4c2d28de91fe5cadac09ff5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/dc/da92d703e15f1d7f44634745a4d58a69f13143",
+      "size": 164,
+      "sha256": "8bd25acbebb5cff3d2ded77fdd5ca663867dbc4724d751d47ad200920d11cc83"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/dd/ad2da474999e512eb2379c06fc8cc73b2ec0f8",
+      "size": 1717,
+      "sha256": "b71e761af06e77f4c62e7044e31fe443b025357900fdfbc1b9e076e20c8045f1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/de/19a466dfa2af50976bf6550e408f5bd1f72f9b",
+      "size": 1799,
+      "sha256": "fb4a755025951dccd7d9bf03d8e3fdd57b1d59a0ba20084e2826e084b719682f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/de/a9d57d9ddf07f2e6f13ffaf0c40942319176af",
+      "size": 1351,
+      "sha256": "cce5468a934f69e3879310cefcbcd2a8a6b6f8627e4b24642298dc6764f49842"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/de/cc760c6b0dd2e70f68ff899e890f55c515837a",
+      "size": 248,
+      "sha256": "e7ddea800324c9055a55c934ca93ace95def8f669645a894e75e9cab09839f9d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/de/eb7692a1de6a84ed99da84a524cba341e6fddd",
+      "size": 870,
+      "sha256": "80a9be167b10260b801ddf56c5d8ec4485d54b7e09431cda2a8fc9eedd8e5007"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/df/160951aae46fecc6f65a95e6d86d6ebd08e002",
+      "size": 970,
+      "sha256": "31350d06d7d89e15daa7f7c9ac51bf3917f25bafee82398a2e96df1d9fda804c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/df/d8e30f3586c48f4c50d124bb7be7b91c14099a",
+      "size": 804,
+      "sha256": "cd8fce88e0f11573b489b533dd0c6e71b8e0a27c988125b664baf99d3ca2d75a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e0/1d09c5da1148da90d4226067570ee421befa3a",
+      "size": 311,
+      "sha256": "5880fa010a75d4ad17cc0db0582302505b44cf29106e28548a9eb237206c2a24"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e0/4ee1337b4ceae23880bcfbfed082954f690052",
+      "size": 429,
+      "sha256": "ddfef00a3f67640aaf2f4f4e871d857d9daf6a96bd077b6d238733d906eb023e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e0/54847868f55a251a4483ce63748fcfc356669d",
+      "size": 3830,
+      "sha256": "a1512702094522a4ed13ec8042c55eb0431c928703a60d2304e60fd81e680fb9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e0/689e0424c67803fdc55440e39220424c1d801d",
+      "size": 2902,
+      "sha256": "b90ad9ee088a8b58c073cdd67889609f5b077cb4676f1b4e759b1cda184eb8fd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e1/747e75c3560c9f4a52731dfa82e76b5bfb5d76",
+      "size": 4229,
+      "sha256": "ccca73f9bce1513c9a410c3e29890cca5d39ee9ed616d0ea10d22aa7b5310aa9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e2/382e4b5550627a65bb3b044f944a839e2d34b5",
+      "size": 35587,
+      "sha256": "74066bcc6863d30675b05634674ef8a3e528aeecf0b4b567a2c05b4eae6b4a04"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e2/bd0aacc3de1f6afba734854f67eb9c7f9bffdd",
+      "size": 437,
+      "sha256": "e54858a84fb498a7720657e79ff789a493ba7731ff20942a722849c3c1543584"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e2/e45dd94468e10c7be9812f7c5d9f5f17fc34db",
+      "size": 114135,
+      "sha256": "67d512ef74b7ce0917ab13ddb11971d198d5bbfcc75797aae84c3275c2ec9e6d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e2/ece5d027babcf90851c9746cb551bfa76b9009",
+      "size": 175,
+      "sha256": "798f5324c3f3c82cd6734cb3ffb40e323ca8efd327e6012293148db5d2a368f6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e3/90fb0eddc22d70513441efcfd16a05324ffc9a",
+      "size": 114085,
+      "sha256": "0a51b5848d8488b681a6df0e2f17e82dde6dea5430cc5888b07b05fe1061bbcd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e4/162d4ed171442089ca13dea0da06eb23dc7ec3",
+      "size": 124,
+      "sha256": "fd9625211776c2e71af8df6255149f5b170b8473bec70b51c2f5d93eb06382a9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e4/1b1b1564dc36e3058c02d656d6d151417283f6",
+      "size": 1243,
+      "sha256": "b47bdc332a29d676996792360be7bfeb9022a03a1dd5aa526e8f0dbbec37e0b7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e4/682d2a7cb0fd78b8bf8dbdd1bb3262b9c206f7",
+      "size": 302,
+      "sha256": "e1486b6090114d5ed077abe64c65d618b66956db9c31e8b682bd4bc084695b1d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e4/7aab518202489ade162836646c29443ccad697",
+      "size": 1006,
+      "sha256": "683796a467e22e1115a1b39b879b4d1cc1c14258acd520438f53e4f39189e342"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e4/fb73807cfb5cbd93f219cb66d972fcf67ce23a",
+      "size": 508,
+      "sha256": "63f10dcbe630e883703c590ff46511c02231d0e7d451fdfb2586db7f3278e253"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e5/199c0c97a324fffe95aadee89a746f5ace8a2c",
+      "size": 2122,
+      "sha256": "b5a28bbbf119d48cccdc49c0eb9464322f3abeed763bd5f9daa341fb21f11ea8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e6/09f568fef01fc66c0ab5444ff710d00ae83b73",
+      "size": 2450,
+      "sha256": "941a40fa019c7a52044ddb510c95927699cba3d71f8eeb3d568ee4e2184e26eb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e6/2379d1f3df16d49d0abf92923dedda1ae2df65",
+      "size": 359,
+      "sha256": "12dd34af144fbe3576a472458a2626999bc2a49ecddfa74758719e5bbf969afa"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e6/3ab07d6afb29f5e46e6c68968eaee46dc77dfe",
+      "size": 97,
+      "sha256": "834f4929f9c30856843b004830a9de082050fcccb79bf085c1dcebc65a73f5eb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e6/573dd3d8b141378d7022f3dcbf4e2deab31e27",
+      "size": 277,
+      "sha256": "ddef4caa75212d53c1143ae528ecb986c923ef75576ff4373f291b870d43d465"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 15,
+      "sha256": "164c5fa8067facf1a43f09ce3d0e35ebf53a7f5723ecbf15a8667cfc53c26f6c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e6/b89e66dd119d01c9bfe27b8ffa0d0fa763325c",
+      "size": 369,
+      "sha256": "fdb60a636f9fc3453fbd85241c437d70f79766f602d66abb6f398ae61a1da55f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e6/db1023a2df7ba5fc2aa2bef0ea0a05c98acb37",
+      "size": 1450,
+      "sha256": "5ba0dc795bc10dd445cbe5e3a1eb2508d51dedd8a7e3d9f93236d625e22bd4b6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e7/232b4e0f79006a9e486549a9186b5ab8e0e2b2",
+      "size": 1761,
+      "sha256": "b7269805facd28dda8cd25dda1df9fa10c5b3e34e2f5e8fe72d4e9514f9288e9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e7/c5995d216bc68d2bdbde266b29c647e30a61a9",
+      "size": 286,
+      "sha256": "d6aa0a2b4fcef1e21d684d67895815f982e8f02dfa5210fc3583034d601d4be5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e7/fab986b9759e2edb30b4ff9fdf8a40b32bf957",
+      "size": 209,
+      "sha256": "96286faae621919c8470a4a02c944795ffc271d682ef23d1313027d353ed8752"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e8/289ae296cfedc4ca9a0e4471900868d1f3083b",
+      "size": 548,
+      "sha256": "44b984125ccca7b1a37711610e8dbcf73d7f0384024efc78a81a00b66922ffbe"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e9/3e8b6b00a64dc8d178dc83bd68f61c1f86b459",
+      "size": 4657,
+      "sha256": "90a50f4b295a1ed16f685453f3112b4717d87592e150621abb3e05f7ffa4ca5f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e9/6540a8c3ad13c200d9898b5fc2111c8fabc9f4",
+      "size": 178,
+      "sha256": "7170eea07eb23acdb2e27a604484ab55934fa99d8307800d57d89e54a3d2144b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e9/75bd3b8df9454bf94b3ac6d680e342d135671b",
+      "size": 300,
+      "sha256": "b3a9438b92cfa4e0ce45e7af2fbdde8b4cb490187b59e5cf0e9ab9a999e3cd8d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e9/8ef99e0d54109275a86e1efdc192e9cfc7ab62",
+      "size": 2450,
+      "sha256": "0af04695f022f84383be3cad0b80ef3890bb1f739b4aac4e2d38ace047bb10ce"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e9/965fca1981b9bc3c97267a591b67b8fc8e6493",
+      "size": 5708,
+      "sha256": "fbffc2a1e2a05b514161ed8569f23b2344b0f53f8c4486afb9742c868979aa52"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e9/d70c30c7f0048b84b98966a10354a5e7cf41c1",
+      "size": 1366,
+      "sha256": "5da48eafca652379904c178b9010cd9d2600f10de730550429b8fecdcedc97c8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/e9/da20b99e2b1e0a5a9bf243beade589d4d8c93a",
+      "size": 19258,
+      "sha256": "78ce2cb396196a3aaf93933dbfa2ac615f15740dd4cba0bf92b1a6b19a24a57f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ea/6235f14d73adfeec004eb15c85c8283281b6d7",
+      "size": 59,
+      "sha256": "a7807b8373b9c9533cc559ac05987ebb7b708443b9bcfa05609ec9f1fece302f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ea/6c4ae0165127a15075eb5b05e2e153a4916ad3",
+      "size": 167987,
+      "sha256": "0c6b847ab941dde522afc3091d64f755ae792c2d3c371fcc28b681d55476b1ee"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ea/772c102c05f2d2a564c55a520f32c0d2223f49",
+      "size": 75871,
+      "sha256": "1b7b9664b6dde189fffc4860982502185d28522b87229d57dd3198c8687083c8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ea/8a4f0f9a78f86aba0c3ab8e74d2e5f34197e3f",
+      "size": 594,
+      "sha256": "238bd5a8473f88ba39985cdb372fcafc6714fe326b2b9522c3a6f29cee1d4959"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/eb/695469b291634dc6ccb20f489953c1eb2c445c",
+      "size": 88686,
+      "sha256": "f54007e68d4c9ebf9df9cefe9aa26c8155817dbbb381cca18a8174cd100d14c6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/eb/b043e1d4dd9111207f10be68805bc449e289b2",
+      "size": 1432,
+      "sha256": "148db8447b6eda31912158abe6057e4292deefcd2eda47084829f7ba666ae1d8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ec/1ff2bc3dabf042a933f73cc7f8b1f5def762c5",
+      "size": 2080,
+      "sha256": "187d77e46c159ad20d429f36da5562cd7b76683094bf4395209142b44c52e8dd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ec/4e2fab6c7b7afd946df2306e1f8c8e22f916d7",
+      "size": 405,
+      "sha256": "5c20f91b7edd7600a3e061cbb4b140ff1814a1cb03c4ccd2b6dd8a3837b05756"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ec/ffaf087c36bbd18d7d37c130d22a8f6ed11fec",
+      "size": 546,
+      "sha256": "35f82db6173d8c011c93a19b158acc7803be9409fca3a1846df33cface353447"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ed/7e33eb959cc39f84d1663b991ab15818564755",
+      "size": 129739,
+      "sha256": "575fc01f1f82e5d6039777831b2b9c8c47350db8036a72c0898cd401323dae13"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ed/7f9ac33307da59f9a7f34c409ca98e99a3b500",
+      "size": 1709,
+      "sha256": "ed54b5539773fa76b92eacbe578b05f401f1b2579a01758675e21444a9f8acb1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ed/b682b17ee465f6038b94617ed271a7848671b2",
+      "size": 168,
+      "sha256": "1a85e7778e3ddf656bf14bf396dd576ef529360ec574a11d67e34165087222a5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ed/c75e2530b4c195f1df49d707fe7277bc4f12c7",
+      "size": 1087,
+      "sha256": "ae486dbd0561156422a7ce87934ae42cb727106d6072bb3aa9ce74b8d246cecb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ee/4285a7170a7c7011dfe9497573e0f761def599",
+      "size": 2373,
+      "sha256": "1bd5f61c3e284c5542e1c3eff041f4506dd6761533b34112ba5156c92d2ae86b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ee/4dbd0793b9dc64a05a06d7b1812c33eaefdd32",
+      "size": 159,
+      "sha256": "a0355f47d4b49852493e3b5f0da9d9c512368f45e188551dc7fb799e55f38c3c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ef/0f4408eeebefa2e1ec133b73aa8c828c94a4ae",
+      "size": 100,
+      "sha256": "96bcba7295f161ca1b9ed168640241ca6711ef53257d5e689966686c7c73ccaf"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ef/bb4e1e03be2f11b1da9e07a69b2729570285f3",
+      "size": 2372,
+      "sha256": "d1c9ce28a860030c00da94e0829944bd4d42295fa33c3c1e42b21a60aa77d091"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ef/dfcde22becb8b7f64ab8c910dec943865915fc",
+      "size": 571,
+      "sha256": "bd8172bd727b3130c9b95ce6383092cb4cd55436a1131074458c6075a4d7a87d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ef/f910eaa57f02ab925f08aa8efa026c20dec1fc",
+      "size": 3902,
+      "sha256": "edc16e79080342a15bbebee25ca79fd7b44526d8313ef02a148ee49404049173"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f0/6352ac573f8d2f506a0ba23e86bd6a5845c147",
+      "size": 318,
+      "sha256": "d5c836d690ea5ab64607b606bf316d3c4d3eef1f6620f4f8e6d58382b6e52546"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f0/b7e6be62f162bb9f43087f678190474a33599c",
+      "size": 258,
+      "sha256": "2968b8e45d884a8db33a8d8e6368166661a69e951a6ff7a88b254012e0fc2d30"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f1/9b1628841a68f2190f55583fa0d328e32a5690",
+      "size": 933,
+      "sha256": "636adb4b066187e62cd5ad8c9243ce10eeaa96097d08ebd399f61c90944f01eb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f1/adb547a2042ed90b100b11fbd33e74f27de81c",
+      "size": 2902,
+      "sha256": "e17a8ba9bb7d52861916ef050833ef01d8579ab4adefde1a8523870c337bfbe9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f2/7319662f1bbb0f0cdaa5d44b154cf1c7ee2e35",
+      "size": 1169,
+      "sha256": "8ba99d1d2f66015cb7c353958e9f72a95aaa28c85ce384c90c099f0cd00d5cd3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f2/8083d79a68e19e7c3fb23b4dd5810fdc79e6fa",
+      "size": 184,
+      "sha256": "ae04b8780fe495400e19d994ffd674791a8f43d137cd339947097869ccb36aef"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f2/81a66e83b535777af894823df4333632ac4447",
+      "size": 328,
+      "sha256": "749810a822ec90ec16927183c751b3fd4c021b9ce7fe67c8cc2b23d4b793d047"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f2/9512e299ac185498ccbe4be65fb2057332d893",
+      "size": 28,
+      "sha256": "f96e9442a077f33e014e4a0a35b6bc714f837013af5917388bc1e863830f7c77"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f2/e788b5d5802157b1aa0a767db75cbb5fd585bf",
+      "size": 235,
+      "sha256": "0d1a9d64246607d89ccd5f411761be49d086f407909359da83e4a39586e19395"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f3/4e5a8a8f29e23b52a5e79e8afda4ad61a0e54e",
+      "size": 579,
+      "sha256": "01ee7a87ad168925172ada22054ac300a635fa742a2c3cdf41f4bb6667d6f5dd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f4/47ae5d9f820ab78b1293260e839bfbfb1ab489",
+      "size": 2470421,
+      "sha256": "cfe279604c559c12225f95c29601c1f4f81c4031339495c3578e8b4c4849a764"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f4/d312ade56bb3462e2d9c639583b98d2317293c",
+      "size": 57314,
+      "sha256": "dfc42a9793856d5cb15df65f158685a939b4053c4014d8a8a31b4ae91d5ecc17"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f5/5e277f187179f520e48aedc738afbf6f37c762",
+      "size": 60,
+      "sha256": "4c08939447859aea3e281d83ce87be370ff1a53f9dc502387debd077d6601a16"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f5/88f8986b760da384e43c58ec9fcf5afc9948e9",
+      "size": 89,
+      "sha256": "370f1372405992c620309c027ef5949174a7ab313ed8dc70dd590c583382a343"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f5/8cb86d90b7bdfb06ae2cdfdb3f9c63d75379b8",
+      "size": 612558,
+      "sha256": "eb354a6a74c1abcd9b560e2576edc65ddbe8d41a96472d56e3f716e92e8a99a6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f5/8cfd2162099afb88f7fc3bcea12f1bc183b35b",
+      "size": 112664,
+      "sha256": "5ba3a73f01f4d7da2775b628edd4c413fbbe676030ac4c2432f259c20c859c24"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f6/16ae05d9b77a89e684e76441782875e0e71de2",
+      "size": 699,
+      "sha256": "8cd4aaecc494ba7fdb8abdb958a1b7aa95a165dcb3b8cd47c272467f5cc04723"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f6/85951acc9f08ff78e66eb3a82cbfd4519b6e6b",
+      "size": 1446,
+      "sha256": "48ea477dff085301df23d83286006c2d7764c2e26865743ef2d5fff33ceb049f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f6/e78466a6496a20bfa89984363f6e0cdb3863d2",
+      "size": 3756,
+      "sha256": "8f0f2aa297d45cf9629d8a094209ad39e08c10c2e11ae0b7a984435fcd29837e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f6/ed05c7b62093207ebea8d75ddb3fe63dcc310d",
+      "size": 830,
+      "sha256": "78002718651e086557232ce6a85d7a7304be314fa79a1aa0fa458a5fcbe14620"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f7/1c0143a9d285e82df9bb18581907a5b7710e61",
+      "size": 1052,
+      "sha256": "c2724cf97c39c90cb4d6e8ab555f65c8816433698173b70c8d4c0be3be015eaa"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f7/296f378de19911589cd0972314cd103cfd8d82",
+      "size": 666,
+      "sha256": "745a5cb9166f4b423aa1c2a8fcca2436789aaa74c19f7edda9d548d2ec78d724"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f7/2f89e5f16b5c631e99317d741510ab27dd2ac4",
+      "size": 113988,
+      "sha256": "3fc74296235d5a153d5f785a16c6e1c1624e6a06abeea48d2b539d2e4911dac7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f7/a2fe493ce8efc4a87c2c8a217fdec8741f08f2",
+      "size": 538,
+      "sha256": "4d745f282189939cd829b801592cd24fb8c71d072202584b4e1c6389414a996c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f8/5179983dfb0d6ad9b2010a1b6b523331a25122",
+      "size": 911,
+      "sha256": "2657d13fe4a1967533eac1a4f01995f857b9075021ff7d486dea8a70dd75a43f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f9/3cf2950b962001a5fa2258877da5c60d5dd07e",
+      "size": 187,
+      "sha256": "d000f0111fc49196aaacd902ecfd71bab9c23e2fa84fe50a4ef257d8e8da8206"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/f9/44c9c6800433eeb83c08d8a6b0ca3b9b4c483d",
+      "size": 1014,
+      "sha256": "42fc25467135c0d4e6c8001d2fa44749bf548dbbe3a81792f83d98b2c51e0ceb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fa/09606024215a86d288daecc4bc6992c96674a3",
+      "size": 164,
+      "sha256": "334420c7e639d23ddb1d2e140b07fa11dbf2d9c1ed1ef9c799e8f3c16cedc0cb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fa/acb79e72474666e03cf10f4ab5853e1b04087c",
+      "size": 56063,
+      "sha256": "83425fdf13050bee2fd6dea86d17a40fc7e0e35017e962a0a6b877c197f7fa40"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fa/ccf97fff071cca068a1133d4cb5a1d99ebc139",
+      "size": 363,
+      "sha256": "d765bed670e445540d8583c5062a33ce9edcecbca9b093d8838191cd488f160f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fa/eb4f14910fe84c3022917b06180ab6923d5534",
+      "size": 412,
+      "sha256": "a41dcdc75c2f4ecf41db8e6c4bd8a87031b5cbca9e1363b1d07a398f2b8310e7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fb/d62228ac3daa50d7dd88a3e45610359168d1c2",
+      "size": 137,
+      "sha256": "edc9a898cfc4c19c6566ebe4ca0fbdf89a09855f4590e830eeef2431edd762a1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fc/139cd4a9a35eec6bcf059a6893b65fb3f75e63",
+      "size": 41361,
+      "sha256": "fa8487558306dfd63f5a4f176e82403047d9c7163971a10bc62f56e97927e2b1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fc/38b742552e2992b3da5d4500d533b08fbfb4d3",
+      "size": 111,
+      "sha256": "afa3ad4451e98ec47b794de1a2024aec2b041bbdaadd630f90f027dc7aa25aff"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fd/85143ee82414aaf6aa7c2304a6457e75a98032",
+      "size": 306,
+      "sha256": "5cda3ce150ae4cdaa595c0883578b2334851c4a94ddd8de0246984e078a946a5"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fd/908b95707ed4c09fe8dffe50e179f4cd3efff0",
+      "size": 89726,
+      "sha256": "88a84dca143509e03409e4fcb4e6fa5c00ad1f11f3f3f501ee983153905ae48b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fd/cc9d5410ee754a075661aecdef3dd7694e3888",
+      "size": 249,
+      "sha256": "5f1c25e72e31eada6228aa9732c5baed2c6e3a90569a1dc5faac63ece2aa92b2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fd/cf0acd359b7f9d11c4be0c9b59aa9241339b85",
+      "size": 598,
+      "sha256": "ca00b8013861a36d51f1e4dcbafbe5892a4840e7fea24f1c8b2fd1f63e09dd83"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fe/19c071422aa761e025347795a1b00c2c3c4d1c",
+      "size": 517,
+      "sha256": "57e4a240d0295318528ea5f77528ecf9fa6434c4eb26d56d605ad89c794ddd23"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fe/20222c76d4505fe9c8bcd2a38050fd3b9290e8",
+      "size": 916,
+      "sha256": "b9918289f4bf2f6e9355f5f90534906ca546aa6562d5822c1457b0cb125003ca"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fe/549ec9f79b24342088d67137a38d029f0a2491",
+      "size": 3814,
+      "sha256": "31ceaf0f02de8b99737e17c8fd148ab9d4da696d92e291877545639074c157b7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/fe/f023f8eb3a0d632b84f946bde3792548add6af",
+      "size": 753,
+      "sha256": "aac295f86bf59020414523ec32f8bac7d78a8a8d9ec2542b5a0a572e2120e177"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/ff/2c397205e589d8050deb38834031f3a2243d0e",
+      "size": 210943,
+      "sha256": "5155d4169a9a804597b3a5614e9836f1b8197be6d5c487cd85be405ce9166795"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/pack/pack-03673f03b1c57b961fda28672d64786f65272ce0.idx",
+      "size": 2472,
+      "sha256": "49415e29a711114befd1b2750009647e9559baaa76dadf64678f37869d47b006"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/pack/pack-03673f03b1c57b961fda28672d64786f65272ce0.pack",
+      "size": 280108,
+      "sha256": "0d612fb9a6bf54f2dc7095a3211d15173afaa4c58c52da0bd7195344187b97e4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/objects/pack/pack-03673f03b1c57b961fda28672d64786f65272ce0.rev",
+      "size": 252,
+      "sha256": "b5320d3fb3ab85da6de45e1af4b0d451af39db5e55be9e828793126510d1d3a6"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/packed-refs",
+      "size": 112,
+      "sha256": "b87bfd1e74b247c5f490dbe6ca0d9a47840eabd2c20fffed83b7ad732ffa8ce3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/heads/main",
+      "size": 41,
+      "sha256": "b53670e1070a35c348623560e0e11e72aede6964390d8e93fd4f4e42d6db24f9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/heads/xingyu-part",
+      "size": 41,
+      "sha256": "d62e73b6d477b38f2fb649d05fca7f46415d74f4a4c6048f967d955eac2629e4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/heads/yxy",
+      "size": 41,
+      "sha256": "141309e9f175dc410143cf2acab8a0c2d4cfae1b0c49a22ac183af296b6bcc06"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/remotes/origin/HEAD",
+      "size": 30,
+      "sha256": "2bb6a24aa0fc6c484100f5d51a29bbad841cd2c755f5d93faa204e5dbb4eb2b4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/remotes/origin/LiuShaoxuan1",
+      "size": 41,
+      "sha256": "25873f1c002ea01abe0fe59f8c345b829c38b7b906b375bb373e02951313eec2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/remotes/origin/Vatican4",
+      "size": 41,
+      "sha256": "fb9f7583f5ddd6e1f3b92c419daa1f6057e1f2f24a642c2227dcb7446b450e4d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/remotes/origin/main",
+      "size": 41,
+      "sha256": "34ae036b70ca829ddfe8a2e62a4fcd05358a85d779a19367ea48ec26930c2ecb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/remotes/origin/sie/satellite-ai",
+      "size": 41,
+      "sha256": "28aa7ac2b6d5de72f74aa8189ff25c8818ceaeb74d63556a91800b93b51913fb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/remotes/origin/sssiiieee",
+      "size": 41,
+      "sha256": "30ea00493cb1ce09ccf28aa52a8d007313cb4a5b54741d8bc54d6a01d8465bdb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/remotes/origin/xingyu-part",
+      "size": 41,
+      "sha256": "b320194b5163355bfb092257678a86d9242ac105d6c0c1c9b012664d52a161a4"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/refs/remotes/origin/yxy",
+      "size": 41,
+      "sha256": "a565ee0f5db232209bf7c6825734e257ce4aff97567a46a8b14b003df6100bfe"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.gitignore",
+      "size": 213,
+      "sha256": "dfe07095727095dfc7670b79ad36f6b9378b4ef9b23a09354a47da0efb6d7da2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.vscode/launch.json",
+      "size": 476,
+      "sha256": "55a976feaae8188bf7d8ea98ad2c0acc722640cea73924a1a0853f598967bb9b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.vscode/settings.json",
+      "size": 216,
+      "sha256": "0c795e6b29d70a7b4741971c2c9567e7469f2cd65194052a3abb4cf893599abb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/README.md",
+      "size": 12774,
+      "sha256": "dbe6f9655e6e2c1c439bd1cdc85112cd30035737fc0c77ee4eb1fff847c81929"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/compare_rl_algorithms.py",
+      "size": 8318,
+      "sha256": "7de6b3b0cbd9e97fdc8e5c8c608918ba354a8f7c0dca737773545799c27beb1e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/compare_rl_pid.py",
+      "size": 9228,
+      "sha256": "5ab65b5ab788f82a9dd44e2b2f2033806b74b5d5087ae4d8ea0180bdb6b12a9c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/compare_robustness.py",
+      "size": 10517,
+      "sha256": "e9d7df7c2f2eb899002b0e91d1756c1adf943b4b5160ba28f29a4d4f2eed3418"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/三轴算法对比_结果与分析.md",
+      "size": 7303,
+      "sha256": "f14a1f97a639d69313d71fff3557b217ed2714159ccea2760975e745909cf401"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_correction_curves.png",
+      "size": 116674,
+      "sha256": "5f35c6cc32f33ea902585fb9375cf96a1bf8331c49f386783adf3244ede3547f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_rl_pid.csv",
+      "size": 1591,
+      "sha256": "99c44740681b1e9fb014751b1af835db71410e0732b5c0abc83c3dbfbb541a7e"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_robustness.csv",
+      "size": 6853,
+      "sha256": "03d6a033c462e0041178c38b90d9cc1c92a464219bc1e88454771e65b3b2e32d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_settling_time.png",
+      "size": 48665,
+      "sha256": "5c15f3e28cc01740dd7a167a7a02cae0dfc18f5309ac3ba3f3ff3a5163796c08"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/compare_steady_error.png",
+      "size": 51453,
+      "sha256": "377375b669edf986810f1fc0ad502dc1e4cd0c91d4253834e395a8734be98b27"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_comparison.csv",
+      "size": 1797,
+      "sha256": "e1c5c94f2a6ca0c684c9860c021cedf5f9140f61cc7007fcd8200f40019e25c8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_curves.png",
+      "size": 103731,
+      "sha256": "8f5902ebf5f9c8ef6b5c402a4d852710299013dd7adbf176e67ac94efc67acd2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_settling_time.png",
+      "size": 59388,
+      "sha256": "d4d9c687944052bf68274d1c79596c7748ae397a42afbbfbd612c0c86bd2e3cb"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/rl_algorithms_tail_error.png",
+      "size": 51342,
+      "sha256": "ae98a758156bb9234ea262ebcab59b1f7599556cd3e1f73407841244187cd602"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/robustness_correction_time.png",
+      "size": 43620,
+      "sha256": "3c89d0959d9c44de834ec91b55526a981f8d2c69b61b8ba5d8faa3716bf150f9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/robustness_curves_A0.05.png",
+      "size": 123003,
+      "sha256": "6877380fb1bf4489564fe8b97470b0eb2b5196fad45cc33c0d5e2d9672c809ab"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/RL与PID对比/成果图/robustness_residual_error.png",
+      "size": 59279,
+      "sha256": "9d939e621cfbb8863c72d42085347be7274e24bf3ae5e4f2348f0eba98f6dcf8"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis/controller.py",
+      "size": 1543,
+      "sha256": "0b4b0eba190a0dd5a232d19c8b1dc11583d9bf6fa94195ea51507bea2b414894"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis/main.py",
+      "size": 895,
+      "sha256": "066be00497c2577763c8ff36e7224d6d0545ba6fd45bc5a583d6ee1cc2e1f73b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis/plotter.py",
+      "size": 718,
+      "sha256": "c2f55046fa823e753edc2b2c1eee6489da68973dbf1f15c0fe7f7a6b652d9128"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis/satellite.py",
+      "size": 1887,
+      "sha256": "d46a06ccc208edaf835bbbeb456d4dd4807b29c1fc0a950d6299dbee68d9e170"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis/simulator.py",
+      "size": 2976,
+      "sha256": "de800b48fd7193edce0ed37a37282b65e286a800da8da1005036fdebb8f79c0f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/controller.py",
+      "size": 2211,
+      "sha256": "d7ee5613af0872d6f2b5aa4be94a2554f31a8ad52fa8d8576147840d8a086b13"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/main.py",
+      "size": 1265,
+      "sha256": "49612758b3057acc85d99c4bc814dc9ffc9a54909169145a096a96a717b4ec6d"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/plotter.py",
+      "size": 2620,
+      "sha256": "a6b2009ae2578e84983f14894acc9160e5a5581f83980b123a90afe92c4c4ef3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/satellite.py",
+      "size": 2076,
+      "sha256": "2ee2a10bd9d8b0a11751cd28238aaaffc16d790d910464d18e18f33555f3fb30"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/single_axis_disturbance/simulator.py",
+      "size": 4394,
+      "sha256": "fb4180916c6646d3f13e957bc70e0dd203bb3b69c9e0fdbf5c4b898db6196088"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/main_3d.py",
+      "size": 1620,
+      "sha256": "5255f8346a66e4c8f1204b70b0daa818cfbd1be53e55f82cc06cd684e3dd4324"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/pid3d.py",
+      "size": 3568,
+      "sha256": "b138c2fddfe7051d6e2d1f2ce2fefa3ab768f9801a5b6ede007c119843a71165"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/plotter3d.py",
+      "size": 2439,
+      "sha256": "b77c7759769ab6d8d2f99191c08a921265ed401c24ad4aa31c576b568dad96da"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/quaternion_utils.py",
+      "size": 2868,
+      "sha256": "2ec405f8bfd7aace9cecb3a983be93147b7aab57cf4786426cf87072a5ad5c84"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/satellite3d.py",
+      "size": 3810,
+      "sha256": "be049d50fffde2f187c8db1ef3e2647e6abc5a369f75043b6c8e428ceee7933a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/pid/three_axis/simulator3d.py",
+      "size": 5499,
+      "sha256": "d8f91adb38518ec97f50c4c9f28e97c07334f7ba7ef19c0ca21032a29aaa7c75"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/requirements.txt",
+      "size": 45,
+      "sha256": "d347fe6a07c5f7a68a3c96edbd2f0e1d6c82765228ac90d2660d4fb7f301e11b"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/__pycache__/metrics.cpython-313.pyc",
+      "size": 3415,
+      "sha256": "5e5eae36dd3a6d14d0e7da24f7688870b8127fbb0297fe44ae3539133ac7d977"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/__pycache__/satellite_env3d.cpython-313.pyc",
+      "size": 12676,
+      "sha256": "d770007560f8234f3635218eee112a78853290049003a091e600e2df1a1a3f75"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/evaluate_three_axis_multi.py",
+      "size": 6066,
+      "sha256": "51d554f3040f5150c6d06c4142bee0e09dad6b53b2f754087307933c43715549"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/metrics.py",
+      "size": 2276,
+      "sha256": "88991dcd12f690dc3cb580e89ad6c37b11aef0b4fe3670aae231fe816da3e508"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/ppo_satellite3d.zip",
+      "size": 147321,
+      "sha256": "ac4d21917a741b95b58653c0466231a0d343e779c5242a8a023c90f0cc4cd7fd"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/sac_satellite3d.zip",
+      "size": 3072714,
+      "sha256": "d10e1e7310c797e6c5b624827036a032df156119e998336bfac3c682485da89c"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/satellite_env3d.py",
+      "size": 8511,
+      "sha256": "b45dbc0b258cee40e6bd4042203d8c550785d5fede43c498bf27b03f7abd4dcf"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/td3_satellite3d.zip",
+      "size": 6018031,
+      "sha256": "9bb5e193822436a96baf9c49c3f47f7e2849370a189850cc073a0f24b2a9a565"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/train_satellite3d.py",
+      "size": 1151,
+      "sha256": "9eb56c0fb7f25c5d56f6e1001449ee32c621fbc230d675b40b40180e5d3d5fc7"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/train_satellite3d_sac.py",
+      "size": 3216,
+      "sha256": "9d21bba7c516b57c77e7ede24cf9e320a6242c8d5a99f77d481835016b541957"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/train_satellite3d_td3.py",
+      "size": 2311,
+      "sha256": "0cabf9494bc7d67aa150ad204fb3b9c70e29c4d9d7980a48743eb6c26b73b3f1"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_correction_curves.png",
+      "size": 99960,
+      "sha256": "e78530d4d6702943f862c1560a7c67122839dfa6eaa4b18a460ab202b7079c22"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_settling_time.png",
+      "size": 48248,
+      "sha256": "a6528fbc64129a29bbfd0f901518e75eb46798ebaf4dbd51bc36b9ee652dc101"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_steady_error.png",
+      "size": 51346,
+      "sha256": "f5112539f32af438c3b2a4a8ed0d57145b96de24d4a3c1211d051b0dfafa5486"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/成果图/three_axis_multi_summary.csv",
+      "size": 1435,
+      "sha256": "97d32466a38b3a756e1edddc6be92745d18ec10c1ddeb672d8bbf067a0bf62c3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/三轴强化学习/训练收敛监控.txt",
+      "size": 4569,
+      "sha256": "c111f1190e6a463b4622d604c376033919e0b3151ad063058b1eb76549bfc0e3"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/evaluate_single_axis.py",
+      "size": 4707,
+      "sha256": "2702b3e85382a25a0ef4ef264966a6044c6d483be32519c1fd188e8ca9da2b4f"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/metrics.py",
+      "size": 2276,
+      "sha256": "88991dcd12f690dc3cb580e89ad6c37b11aef0b4fe3670aae231fe816da3e508"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/ppo_satellite_final.zip",
+      "size": 139014,
+      "sha256": "7a36639e5af5fd4efd23a30b53a0dee00555a429b2e8c95515230deac27df952"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/satellite_env.py",
+      "size": 4521,
+      "sha256": "95fe0c2efac6126895cbf88722d0fd0263d2ad0e4373ecca62d34af70236608a"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/test_env.py",
+      "size": 488,
+      "sha256": "b603a12861e79af9e254d8b423544c35d9c587bbce77a40f38261e2224c471d9"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/test_satellite.py",
+      "size": 1526,
+      "sha256": "e6b50b02ca2ebbdd8961f04a3b2faa9c7a54bd0169b64a582d897e0cdb603bb2"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/train_satellite.py",
+      "size": 1201,
+      "sha256": "cf2c416747a2174ddb2bbeeff67ab2414d0d970795c96bd9cc43279f8fc3eaaf"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_correction_curves.png",
+      "size": 82729,
+      "sha256": "9c9a869755ddd10d64a705648d66ef4b49fcea742ff118cdc7b03acb12e88437"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_mean_error.png",
+      "size": 60480,
+      "sha256": "29ce075bb1fe98e05fab0b2e06c6ee9a417f0a19b05c62b64617ed0718f12939"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_settling_time.png",
+      "size": 44557,
+      "sha256": "46fdbb0b237e268bf63970f6a8fd71d4b2bfd06b1ab119b72c5a26bb77345df0"
+    },
+    {
+      "source_relative": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/单轴强化学习/成果图/single_axis_summary.csv",
+      "size": 338,
+      "sha256": "c3e79da447b909a89cb9d9c0b24b6ec7e9ce1e05f86e9faa277dddb6215e2f8c"
+    }
+  ]
+}

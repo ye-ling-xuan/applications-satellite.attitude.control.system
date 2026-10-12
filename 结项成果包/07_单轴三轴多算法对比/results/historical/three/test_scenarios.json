@@ -1,0 +1,4162 @@
+[
+  {
+    "scenario_id": "test_three_nominal_000",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 0,
+    "split": "test",
+    "sample": 0,
+    "noise_seed": 1828277124,
+    "euler_deg": [
+      51.0,
+      -27.0,
+      38.0
+    ],
+    "omega_deg_s": [
+      3.0,
+      -2.0,
+      1.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_001",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 1,
+    "split": "test",
+    "sample": 1,
+    "noise_seed": 322931278,
+    "euler_deg": [
+      -39.0,
+      22.0,
+      -49.0
+    ],
+    "omega_deg_s": [
+      -2.0,
+      1.0,
+      -3.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_002",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 2,
+    "split": "test",
+    "sample": 2,
+    "noise_seed": 748919362,
+    "euler_deg": [
+      45.38306021398236,
+      32.60252171156915,
+      -7.898323477399167
+    ],
+    "omega_deg_s": [
+      2.2069991718209856,
+      1.5628714282402498,
+      2.863159344637541
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_003",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 3,
+    "split": "test",
+    "sample": 3,
+    "noise_seed": 1462952809,
+    "euler_deg": [
+      -28.211394678461545,
+      -35.344852387149984,
+      25.813881759848314
+    ],
+    "omega_deg_s": [
+      1.7545378420845203,
+      -3.592605412301734,
+      4.249291450944137
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_004",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 4,
+    "split": "test",
+    "sample": 4,
+    "noise_seed": 365803761,
+    "euler_deg": [
+      -45.90109563753143,
+      -2.0893635432067654,
+      -6.619874332625152
+    ],
+    "omega_deg_s": [
+      4.581463004620684,
+      2.0866175795268003,
+      -1.2171490327797008
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_005",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 5,
+    "split": "test",
+    "sample": 5,
+    "noise_seed": 2034950761,
+    "euler_deg": [
+      18.942106024585,
+      -39.71332935849709,
+      56.260432402444465
+    ],
+    "omega_deg_s": [
+      1.01477538089902,
+      0.9587023586870469,
+      4.620944616649911
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_006",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 6,
+    "split": "test",
+    "sample": 6,
+    "noise_seed": 1268080162,
+    "euler_deg": [
+      9.17695673904474,
+      33.448556534246364,
+      19.541550300533316
+    ],
+    "omega_deg_s": [
+      -0.7168338853972696,
+      -0.23087675275283548,
+      3.8399747685707535
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_007",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 7,
+    "split": "test",
+    "sample": 7,
+    "noise_seed": 313436848,
+    "euler_deg": [
+      24.465647163158465,
+      39.93242152728499,
+      -27.229028721708175
+    ],
+    "omega_deg_s": [
+      -4.806213393088223,
+      3.289176522148905,
+      1.8708607825235548
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_008",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 8,
+    "split": "test",
+    "sample": 8,
+    "noise_seed": 1205652410,
+    "euler_deg": [
+      35.24446649187499,
+      -59.455765020600765,
+      -25.903957905434794
+    ],
+    "omega_deg_s": [
+      1.8610634788544536,
+      2.4365580238880016,
+      1.2291404381966906
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_009",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 9,
+    "split": "test",
+    "sample": 9,
+    "noise_seed": 203349022,
+    "euler_deg": [
+      34.87439069305147,
+      21.131703449279684,
+      0.01875140252312235
+    ],
+    "omega_deg_s": [
+      3.7460451266916053,
+      -3.6762871500258987,
+      -2.276297031141654
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_010",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 10,
+    "split": "test",
+    "sample": 10,
+    "noise_seed": 1133278555,
+    "euler_deg": [
+      -22.526966375719937,
+      45.42587109379801,
+      -11.209562187340104
+    ],
+    "omega_deg_s": [
+      0.36654442195028647,
+      -4.346503235769044,
+      -0.035514658258658294
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_011",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 11,
+    "split": "test",
+    "sample": 11,
+    "noise_seed": 2013101223,
+    "euler_deg": [
+      14.928139354850302,
+      35.2425029937294,
+      -48.49709488165382
+    ],
+    "omega_deg_s": [
+      0.9904943664183321,
+      -4.820071274330914,
+      4.41320805491624
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_012",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 12,
+    "split": "test",
+    "sample": 12,
+    "noise_seed": 305597330,
+    "euler_deg": [
+      34.41522386960675,
+      32.53156137754473,
+      -43.1348075754818
+    ],
+    "omega_deg_s": [
+      -2.9345690261733592,
+      -3.236415591467905,
+      -3.1902477955188813
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_013",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 13,
+    "split": "test",
+    "sample": 13,
+    "noise_seed": 367484521,
+    "euler_deg": [
+      -38.13227309355683,
+      -58.518594761396486,
+      -29.484879444207927
+    ],
+    "omega_deg_s": [
+      4.721797689467259,
+      -3.6377941167888315,
+      -1.0843178869430083
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_014",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 14,
+    "split": "test",
+    "sample": 14,
+    "noise_seed": 1645259918,
+    "euler_deg": [
+      15.084522515964167,
+      40.645383989250135,
+      18.00797159079916
+    ],
+    "omega_deg_s": [
+      -0.5547644568154899,
+      1.9408405930851158,
+      1.0210495387450162
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_015",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 15,
+    "split": "test",
+    "sample": 15,
+    "noise_seed": 694781900,
+    "euler_deg": [
+      29.45328808703971,
+      18.839797868181634,
+      43.32615217739246
+    ],
+    "omega_deg_s": [
+      2.8348314069259395,
+      -1.3935471550995837,
+      -1.7868366482492046
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_016",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 16,
+    "split": "test",
+    "sample": 16,
+    "noise_seed": 1566193629,
+    "euler_deg": [
+      -4.106368379843353,
+      -49.745925973810245,
+      -6.545021034028416
+    ],
+    "omega_deg_s": [
+      -4.262364913284751,
+      2.5626696018157666,
+      -0.7827852814445624
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_017",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 17,
+    "split": "test",
+    "sample": 17,
+    "noise_seed": 350530896,
+    "euler_deg": [
+      40.800949196121636,
+      5.05144414862977,
+      7.661188012336083
+    ],
+    "omega_deg_s": [
+      1.0725749813843821,
+      -3.674471357231167,
+      2.448486826477194
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_018",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 18,
+    "split": "test",
+    "sample": 18,
+    "noise_seed": 199737913,
+    "euler_deg": [
+      44.547711207860985,
+      -32.2957848094061,
+      -16.996183543186746
+    ],
+    "omega_deg_s": [
+      0.9716312793709267,
+      1.2433459142934176,
+      3.891504913029838
+    ]
+  },
+  {
+    "scenario_id": "test_three_nominal_019",
+    "case": "nominal",
+    "case_id": "nominal",
+    "family": "nominal",
+    "level": 0.0,
+    "sample_id": 19,
+    "split": "test",
+    "sample": 19,
+    "noise_seed": 2120174446,
+    "euler_deg": [
+      -19.77319702084116,
+      -17.654391643792664,
+      -31.26506566319259
+    ],
+    "omega_deg_s": [
+      2.9450425269098535,
+      -0.7738242248780551,
+      1.3433018475419765
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_000",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 0,
+    "split": "test",
+    "sample": 0,
+    "noise_seed": 2134486595,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      51.0,
+      -27.0,
+      38.0
+    ],
+    "omega_deg_s": [
+      3.0,
+      -2.0,
+      1.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_001",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 1,
+    "split": "test",
+    "sample": 1,
+    "noise_seed": 958006128,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      -39.0,
+      22.0,
+      -49.0
+    ],
+    "omega_deg_s": [
+      -2.0,
+      1.0,
+      -3.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_002",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 2,
+    "split": "test",
+    "sample": 2,
+    "noise_seed": 1173443510,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      45.38306021398236,
+      32.60252171156915,
+      -7.898323477399167
+    ],
+    "omega_deg_s": [
+      2.2069991718209856,
+      1.5628714282402498,
+      2.863159344637541
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_003",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 3,
+    "split": "test",
+    "sample": 3,
+    "noise_seed": 1814347273,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      -28.211394678461545,
+      -35.344852387149984,
+      25.813881759848314
+    ],
+    "omega_deg_s": [
+      1.7545378420845203,
+      -3.592605412301734,
+      4.249291450944137
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_004",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 4,
+    "split": "test",
+    "sample": 4,
+    "noise_seed": 1111195553,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      -45.90109563753143,
+      -2.0893635432067654,
+      -6.619874332625152
+    ],
+    "omega_deg_s": [
+      4.581463004620684,
+      2.0866175795268003,
+      -1.2171490327797008
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_005",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 5,
+    "split": "test",
+    "sample": 5,
+    "noise_seed": 197364292,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      18.942106024585,
+      -39.71332935849709,
+      56.260432402444465
+    ],
+    "omega_deg_s": [
+      1.01477538089902,
+      0.9587023586870469,
+      4.620944616649911
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_006",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 6,
+    "split": "test",
+    "sample": 6,
+    "noise_seed": 1564536855,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      9.17695673904474,
+      33.448556534246364,
+      19.541550300533316
+    ],
+    "omega_deg_s": [
+      -0.7168338853972696,
+      -0.23087675275283548,
+      3.8399747685707535
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_007",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 7,
+    "split": "test",
+    "sample": 7,
+    "noise_seed": 896863921,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      24.465647163158465,
+      39.93242152728499,
+      -27.229028721708175
+    ],
+    "omega_deg_s": [
+      -4.806213393088223,
+      3.289176522148905,
+      1.8708607825235548
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_008",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 8,
+    "split": "test",
+    "sample": 8,
+    "noise_seed": 2138224907,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      35.24446649187499,
+      -59.455765020600765,
+      -25.903957905434794
+    ],
+    "omega_deg_s": [
+      1.8610634788544536,
+      2.4365580238880016,
+      1.2291404381966906
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_009",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 9,
+    "split": "test",
+    "sample": 9,
+    "noise_seed": 612527583,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      34.87439069305147,
+      21.131703449279684,
+      0.01875140252312235
+    ],
+    "omega_deg_s": [
+      3.7460451266916053,
+      -3.6762871500258987,
+      -2.276297031141654
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_010",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 10,
+    "split": "test",
+    "sample": 10,
+    "noise_seed": 496465140,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      -22.526966375719937,
+      45.42587109379801,
+      -11.209562187340104
+    ],
+    "omega_deg_s": [
+      0.36654442195028647,
+      -4.346503235769044,
+      -0.035514658258658294
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_011",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 11,
+    "split": "test",
+    "sample": 11,
+    "noise_seed": 112661100,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      14.928139354850302,
+      35.2425029937294,
+      -48.49709488165382
+    ],
+    "omega_deg_s": [
+      0.9904943664183321,
+      -4.820071274330914,
+      4.41320805491624
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_012",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 12,
+    "split": "test",
+    "sample": 12,
+    "noise_seed": 1336705466,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      34.41522386960675,
+      32.53156137754473,
+      -43.1348075754818
+    ],
+    "omega_deg_s": [
+      -2.9345690261733592,
+      -3.236415591467905,
+      -3.1902477955188813
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_013",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 13,
+    "split": "test",
+    "sample": 13,
+    "noise_seed": 1880560477,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      -38.13227309355683,
+      -58.518594761396486,
+      -29.484879444207927
+    ],
+    "omega_deg_s": [
+      4.721797689467259,
+      -3.6377941167888315,
+      -1.0843178869430083
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_014",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 14,
+    "split": "test",
+    "sample": 14,
+    "noise_seed": 1504038583,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      15.084522515964167,
+      40.645383989250135,
+      18.00797159079916
+    ],
+    "omega_deg_s": [
+      -0.5547644568154899,
+      1.9408405930851158,
+      1.0210495387450162
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_015",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 15,
+    "split": "test",
+    "sample": 15,
+    "noise_seed": 1189012761,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      29.45328808703971,
+      18.839797868181634,
+      43.32615217739246
+    ],
+    "omega_deg_s": [
+      2.8348314069259395,
+      -1.3935471550995837,
+      -1.7868366482492046
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_016",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 16,
+    "split": "test",
+    "sample": 16,
+    "noise_seed": 121761316,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      -4.106368379843353,
+      -49.745925973810245,
+      -6.545021034028416
+    ],
+    "omega_deg_s": [
+      -4.262364913284751,
+      2.5626696018157666,
+      -0.7827852814445624
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_017",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 17,
+    "split": "test",
+    "sample": 17,
+    "noise_seed": 213608101,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      40.800949196121636,
+      5.05144414862977,
+      7.661188012336083
+    ],
+    "omega_deg_s": [
+      1.0725749813843821,
+      -3.674471357231167,
+      2.448486826477194
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_018",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 18,
+    "split": "test",
+    "sample": 18,
+    "noise_seed": 1291777957,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      44.547711207860985,
+      -32.2957848094061,
+      -16.996183543186746
+    ],
+    "omega_deg_s": [
+      0.9716312793709267,
+      1.2433459142934176,
+      3.891504913029838
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_low_019",
+    "case": "inertia_low",
+    "case_id": "inertia_low",
+    "family": "inertia",
+    "level": 0.7,
+    "sample_id": 19,
+    "split": "test",
+    "sample": 19,
+    "noise_seed": 1937139025,
+    "inertia_scale": 0.7,
+    "euler_deg": [
+      -19.77319702084116,
+      -17.654391643792664,
+      -31.26506566319259
+    ],
+    "omega_deg_s": [
+      2.9450425269098535,
+      -0.7738242248780551,
+      1.3433018475419765
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_000",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 0,
+    "split": "test",
+    "sample": 0,
+    "noise_seed": 1544309564,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      51.0,
+      -27.0,
+      38.0
+    ],
+    "omega_deg_s": [
+      3.0,
+      -2.0,
+      1.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_001",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 1,
+    "split": "test",
+    "sample": 1,
+    "noise_seed": 1033005480,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      -39.0,
+      22.0,
+      -49.0
+    ],
+    "omega_deg_s": [
+      -2.0,
+      1.0,
+      -3.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_002",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 2,
+    "split": "test",
+    "sample": 2,
+    "noise_seed": 1619259361,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      45.38306021398236,
+      32.60252171156915,
+      -7.898323477399167
+    ],
+    "omega_deg_s": [
+      2.2069991718209856,
+      1.5628714282402498,
+      2.863159344637541
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_003",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 3,
+    "split": "test",
+    "sample": 3,
+    "noise_seed": 1427113568,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      -28.211394678461545,
+      -35.344852387149984,
+      25.813881759848314
+    ],
+    "omega_deg_s": [
+      1.7545378420845203,
+      -3.592605412301734,
+      4.249291450944137
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_004",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 4,
+    "split": "test",
+    "sample": 4,
+    "noise_seed": 1408797696,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      -45.90109563753143,
+      -2.0893635432067654,
+      -6.619874332625152
+    ],
+    "omega_deg_s": [
+      4.581463004620684,
+      2.0866175795268003,
+      -1.2171490327797008
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_005",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 5,
+    "split": "test",
+    "sample": 5,
+    "noise_seed": 1890494350,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      18.942106024585,
+      -39.71332935849709,
+      56.260432402444465
+    ],
+    "omega_deg_s": [
+      1.01477538089902,
+      0.9587023586870469,
+      4.620944616649911
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_006",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 6,
+    "split": "test",
+    "sample": 6,
+    "noise_seed": 766987964,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      9.17695673904474,
+      33.448556534246364,
+      19.541550300533316
+    ],
+    "omega_deg_s": [
+      -0.7168338853972696,
+      -0.23087675275283548,
+      3.8399747685707535
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_007",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 7,
+    "split": "test",
+    "sample": 7,
+    "noise_seed": 1227475098,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      24.465647163158465,
+      39.93242152728499,
+      -27.229028721708175
+    ],
+    "omega_deg_s": [
+      -4.806213393088223,
+      3.289176522148905,
+      1.8708607825235548
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_008",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 8,
+    "split": "test",
+    "sample": 8,
+    "noise_seed": 1122583864,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      35.24446649187499,
+      -59.455765020600765,
+      -25.903957905434794
+    ],
+    "omega_deg_s": [
+      1.8610634788544536,
+      2.4365580238880016,
+      1.2291404381966906
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_009",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 9,
+    "split": "test",
+    "sample": 9,
+    "noise_seed": 949704192,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      34.87439069305147,
+      21.131703449279684,
+      0.01875140252312235
+    ],
+    "omega_deg_s": [
+      3.7460451266916053,
+      -3.6762871500258987,
+      -2.276297031141654
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_010",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 10,
+    "split": "test",
+    "sample": 10,
+    "noise_seed": 1581506484,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      -22.526966375719937,
+      45.42587109379801,
+      -11.209562187340104
+    ],
+    "omega_deg_s": [
+      0.36654442195028647,
+      -4.346503235769044,
+      -0.035514658258658294
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_011",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 11,
+    "split": "test",
+    "sample": 11,
+    "noise_seed": 893785788,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      14.928139354850302,
+      35.2425029937294,
+      -48.49709488165382
+    ],
+    "omega_deg_s": [
+      0.9904943664183321,
+      -4.820071274330914,
+      4.41320805491624
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_012",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 12,
+    "split": "test",
+    "sample": 12,
+    "noise_seed": 1316765830,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      34.41522386960675,
+      32.53156137754473,
+      -43.1348075754818
+    ],
+    "omega_deg_s": [
+      -2.9345690261733592,
+      -3.236415591467905,
+      -3.1902477955188813
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_013",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 13,
+    "split": "test",
+    "sample": 13,
+    "noise_seed": 1089225993,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      -38.13227309355683,
+      -58.518594761396486,
+      -29.484879444207927
+    ],
+    "omega_deg_s": [
+      4.721797689467259,
+      -3.6377941167888315,
+      -1.0843178869430083
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_014",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 14,
+    "split": "test",
+    "sample": 14,
+    "noise_seed": 964787978,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      15.084522515964167,
+      40.645383989250135,
+      18.00797159079916
+    ],
+    "omega_deg_s": [
+      -0.5547644568154899,
+      1.9408405930851158,
+      1.0210495387450162
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_015",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 15,
+    "split": "test",
+    "sample": 15,
+    "noise_seed": 1592647411,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      29.45328808703971,
+      18.839797868181634,
+      43.32615217739246
+    ],
+    "omega_deg_s": [
+      2.8348314069259395,
+      -1.3935471550995837,
+      -1.7868366482492046
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_016",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 16,
+    "split": "test",
+    "sample": 16,
+    "noise_seed": 1850863923,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      -4.106368379843353,
+      -49.745925973810245,
+      -6.545021034028416
+    ],
+    "omega_deg_s": [
+      -4.262364913284751,
+      2.5626696018157666,
+      -0.7827852814445624
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_017",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 17,
+    "split": "test",
+    "sample": 17,
+    "noise_seed": 1287762836,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      40.800949196121636,
+      5.05144414862977,
+      7.661188012336083
+    ],
+    "omega_deg_s": [
+      1.0725749813843821,
+      -3.674471357231167,
+      2.448486826477194
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_018",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 18,
+    "split": "test",
+    "sample": 18,
+    "noise_seed": 1146272582,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      44.547711207860985,
+      -32.2957848094061,
+      -16.996183543186746
+    ],
+    "omega_deg_s": [
+      0.9716312793709267,
+      1.2433459142934176,
+      3.891504913029838
+    ]
+  },
+  {
+    "scenario_id": "test_three_inertia_high_019",
+    "case": "inertia_high",
+    "case_id": "inertia_high",
+    "family": "inertia",
+    "level": 1.3,
+    "sample_id": 19,
+    "split": "test",
+    "sample": 19,
+    "noise_seed": 1375268220,
+    "inertia_scale": 1.3,
+    "euler_deg": [
+      -19.77319702084116,
+      -17.654391643792664,
+      -31.26506566319259
+    ],
+    "omega_deg_s": [
+      2.9450425269098535,
+      -0.7738242248780551,
+      1.3433018475419765
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_000",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 0,
+    "split": "test",
+    "sample": 0,
+    "noise_seed": 1339219545,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      51.0,
+      -27.0,
+      38.0
+    ],
+    "omega_deg_s": [
+      3.0,
+      -2.0,
+      1.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_001",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 1,
+    "split": "test",
+    "sample": 1,
+    "noise_seed": 767460748,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      -39.0,
+      22.0,
+      -49.0
+    ],
+    "omega_deg_s": [
+      -2.0,
+      1.0,
+      -3.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_002",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 2,
+    "split": "test",
+    "sample": 2,
+    "noise_seed": 1722146427,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      45.38306021398236,
+      32.60252171156915,
+      -7.898323477399167
+    ],
+    "omega_deg_s": [
+      2.2069991718209856,
+      1.5628714282402498,
+      2.863159344637541
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_003",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 3,
+    "split": "test",
+    "sample": 3,
+    "noise_seed": 239149681,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      -28.211394678461545,
+      -35.344852387149984,
+      25.813881759848314
+    ],
+    "omega_deg_s": [
+      1.7545378420845203,
+      -3.592605412301734,
+      4.249291450944137
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_004",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 4,
+    "split": "test",
+    "sample": 4,
+    "noise_seed": 1080085792,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      -45.90109563753143,
+      -2.0893635432067654,
+      -6.619874332625152
+    ],
+    "omega_deg_s": [
+      4.581463004620684,
+      2.0866175795268003,
+      -1.2171490327797008
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_005",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 5,
+    "split": "test",
+    "sample": 5,
+    "noise_seed": 1409125219,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      18.942106024585,
+      -39.71332935849709,
+      56.260432402444465
+    ],
+    "omega_deg_s": [
+      1.01477538089902,
+      0.9587023586870469,
+      4.620944616649911
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_006",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 6,
+    "split": "test",
+    "sample": 6,
+    "noise_seed": 1704260228,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      9.17695673904474,
+      33.448556534246364,
+      19.541550300533316
+    ],
+    "omega_deg_s": [
+      -0.7168338853972696,
+      -0.23087675275283548,
+      3.8399747685707535
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_007",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 7,
+    "split": "test",
+    "sample": 7,
+    "noise_seed": 544557881,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      24.465647163158465,
+      39.93242152728499,
+      -27.229028721708175
+    ],
+    "omega_deg_s": [
+      -4.806213393088223,
+      3.289176522148905,
+      1.8708607825235548
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_008",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 8,
+    "split": "test",
+    "sample": 8,
+    "noise_seed": 63494331,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      35.24446649187499,
+      -59.455765020600765,
+      -25.903957905434794
+    ],
+    "omega_deg_s": [
+      1.8610634788544536,
+      2.4365580238880016,
+      1.2291404381966906
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_009",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 9,
+    "split": "test",
+    "sample": 9,
+    "noise_seed": 1486025739,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      34.87439069305147,
+      21.131703449279684,
+      0.01875140252312235
+    ],
+    "omega_deg_s": [
+      3.7460451266916053,
+      -3.6762871500258987,
+      -2.276297031141654
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_010",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 10,
+    "split": "test",
+    "sample": 10,
+    "noise_seed": 1244771437,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      -22.526966375719937,
+      45.42587109379801,
+      -11.209562187340104
+    ],
+    "omega_deg_s": [
+      0.36654442195028647,
+      -4.346503235769044,
+      -0.035514658258658294
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_011",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 11,
+    "split": "test",
+    "sample": 11,
+    "noise_seed": 97474653,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      14.928139354850302,
+      35.2425029937294,
+      -48.49709488165382
+    ],
+    "omega_deg_s": [
+      0.9904943664183321,
+      -4.820071274330914,
+      4.41320805491624
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_012",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 12,
+    "split": "test",
+    "sample": 12,
+    "noise_seed": 1882494153,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      34.41522386960675,
+      32.53156137754473,
+      -43.1348075754818
+    ],
+    "omega_deg_s": [
+      -2.9345690261733592,
+      -3.236415591467905,
+      -3.1902477955188813
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_013",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 13,
+    "split": "test",
+    "sample": 13,
+    "noise_seed": 1974944328,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      -38.13227309355683,
+      -58.518594761396486,
+      -29.484879444207927
+    ],
+    "omega_deg_s": [
+      4.721797689467259,
+      -3.6377941167888315,
+      -1.0843178869430083
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_014",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 14,
+    "split": "test",
+    "sample": 14,
+    "noise_seed": 296481191,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      15.084522515964167,
+      40.645383989250135,
+      18.00797159079916
+    ],
+    "omega_deg_s": [
+      -0.5547644568154899,
+      1.9408405930851158,
+      1.0210495387450162
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_015",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 15,
+    "split": "test",
+    "sample": 15,
+    "noise_seed": 920265563,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      29.45328808703971,
+      18.839797868181634,
+      43.32615217739246
+    ],
+    "omega_deg_s": [
+      2.8348314069259395,
+      -1.3935471550995837,
+      -1.7868366482492046
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_016",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 16,
+    "split": "test",
+    "sample": 16,
+    "noise_seed": 1929891724,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      -4.106368379843353,
+      -49.745925973810245,
+      -6.545021034028416
+    ],
+    "omega_deg_s": [
+      -4.262364913284751,
+      2.5626696018157666,
+      -0.7827852814445624
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_017",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 17,
+    "split": "test",
+    "sample": 17,
+    "noise_seed": 1308080383,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      40.800949196121636,
+      5.05144414862977,
+      7.661188012336083
+    ],
+    "omega_deg_s": [
+      1.0725749813843821,
+      -3.674471357231167,
+      2.448486826477194
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_018",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 18,
+    "split": "test",
+    "sample": 18,
+    "noise_seed": 1969263895,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      44.547711207860985,
+      -32.2957848094061,
+      -16.996183543186746
+    ],
+    "omega_deg_s": [
+      0.9716312793709267,
+      1.2433459142934176,
+      3.891504913029838
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_003_019",
+    "case": "disturbance_003",
+    "case_id": "disturbance_003",
+    "family": "disturbance",
+    "level": 0.03,
+    "sample_id": 19,
+    "split": "test",
+    "sample": 19,
+    "noise_seed": 139860988,
+    "disturbance_bias": 0.01,
+    "disturbance_amplitude": 0.03,
+    "euler_deg": [
+      -19.77319702084116,
+      -17.654391643792664,
+      -31.26506566319259
+    ],
+    "omega_deg_s": [
+      2.9450425269098535,
+      -0.7738242248780551,
+      1.3433018475419765
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_000",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 0,
+    "split": "test",
+    "sample": 0,
+    "noise_seed": 770226387,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      51.0,
+      -27.0,
+      38.0
+    ],
+    "omega_deg_s": [
+      3.0,
+      -2.0,
+      1.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_001",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 1,
+    "split": "test",
+    "sample": 1,
+    "noise_seed": 306107330,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      -39.0,
+      22.0,
+      -49.0
+    ],
+    "omega_deg_s": [
+      -2.0,
+      1.0,
+      -3.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_002",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 2,
+    "split": "test",
+    "sample": 2,
+    "noise_seed": 915283719,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      45.38306021398236,
+      32.60252171156915,
+      -7.898323477399167
+    ],
+    "omega_deg_s": [
+      2.2069991718209856,
+      1.5628714282402498,
+      2.863159344637541
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_003",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 3,
+    "split": "test",
+    "sample": 3,
+    "noise_seed": 1796044238,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      -28.211394678461545,
+      -35.344852387149984,
+      25.813881759848314
+    ],
+    "omega_deg_s": [
+      1.7545378420845203,
+      -3.592605412301734,
+      4.249291450944137
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_004",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 4,
+    "split": "test",
+    "sample": 4,
+    "noise_seed": 1564632119,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      -45.90109563753143,
+      -2.0893635432067654,
+      -6.619874332625152
+    ],
+    "omega_deg_s": [
+      4.581463004620684,
+      2.0866175795268003,
+      -1.2171490327797008
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_005",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 5,
+    "split": "test",
+    "sample": 5,
+    "noise_seed": 2038051091,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      18.942106024585,
+      -39.71332935849709,
+      56.260432402444465
+    ],
+    "omega_deg_s": [
+      1.01477538089902,
+      0.9587023586870469,
+      4.620944616649911
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_006",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 6,
+    "split": "test",
+    "sample": 6,
+    "noise_seed": 609786767,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      9.17695673904474,
+      33.448556534246364,
+      19.541550300533316
+    ],
+    "omega_deg_s": [
+      -0.7168338853972696,
+      -0.23087675275283548,
+      3.8399747685707535
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_007",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 7,
+    "split": "test",
+    "sample": 7,
+    "noise_seed": 825205231,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      24.465647163158465,
+      39.93242152728499,
+      -27.229028721708175
+    ],
+    "omega_deg_s": [
+      -4.806213393088223,
+      3.289176522148905,
+      1.8708607825235548
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_008",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 8,
+    "split": "test",
+    "sample": 8,
+    "noise_seed": 2095211928,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      35.24446649187499,
+      -59.455765020600765,
+      -25.903957905434794
+    ],
+    "omega_deg_s": [
+      1.8610634788544536,
+      2.4365580238880016,
+      1.2291404381966906
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_009",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 9,
+    "split": "test",
+    "sample": 9,
+    "noise_seed": 73716860,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      34.87439069305147,
+      21.131703449279684,
+      0.01875140252312235
+    ],
+    "omega_deg_s": [
+      3.7460451266916053,
+      -3.6762871500258987,
+      -2.276297031141654
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_010",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 10,
+    "split": "test",
+    "sample": 10,
+    "noise_seed": 164428281,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      -22.526966375719937,
+      45.42587109379801,
+      -11.209562187340104
+    ],
+    "omega_deg_s": [
+      0.36654442195028647,
+      -4.346503235769044,
+      -0.035514658258658294
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_011",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 11,
+    "split": "test",
+    "sample": 11,
+    "noise_seed": 163578650,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      14.928139354850302,
+      35.2425029937294,
+      -48.49709488165382
+    ],
+    "omega_deg_s": [
+      0.9904943664183321,
+      -4.820071274330914,
+      4.41320805491624
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_012",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 12,
+    "split": "test",
+    "sample": 12,
+    "noise_seed": 1176269921,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      34.41522386960675,
+      32.53156137754473,
+      -43.1348075754818
+    ],
+    "omega_deg_s": [
+      -2.9345690261733592,
+      -3.236415591467905,
+      -3.1902477955188813
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_013",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 13,
+    "split": "test",
+    "sample": 13,
+    "noise_seed": 322090766,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      -38.13227309355683,
+      -58.518594761396486,
+      -29.484879444207927
+    ],
+    "omega_deg_s": [
+      4.721797689467259,
+      -3.6377941167888315,
+      -1.0843178869430083
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_014",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 14,
+    "split": "test",
+    "sample": 14,
+    "noise_seed": 608209559,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      15.084522515964167,
+      40.645383989250135,
+      18.00797159079916
+    ],
+    "omega_deg_s": [
+      -0.5547644568154899,
+      1.9408405930851158,
+      1.0210495387450162
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_015",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 15,
+    "split": "test",
+    "sample": 15,
+    "noise_seed": 968631255,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      29.45328808703971,
+      18.839797868181634,
+      43.32615217739246
+    ],
+    "omega_deg_s": [
+      2.8348314069259395,
+      -1.3935471550995837,
+      -1.7868366482492046
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_016",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 16,
+    "split": "test",
+    "sample": 16,
+    "noise_seed": 2133173570,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      -4.106368379843353,
+      -49.745925973810245,
+      -6.545021034028416
+    ],
+    "omega_deg_s": [
+      -4.262364913284751,
+      2.5626696018157666,
+      -0.7827852814445624
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_017",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 17,
+    "split": "test",
+    "sample": 17,
+    "noise_seed": 1301237378,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      40.800949196121636,
+      5.05144414862977,
+      7.661188012336083
+    ],
+    "omega_deg_s": [
+      1.0725749813843821,
+      -3.674471357231167,
+      2.448486826477194
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_018",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 18,
+    "split": "test",
+    "sample": 18,
+    "noise_seed": 1835766816,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      44.547711207860985,
+      -32.2957848094061,
+      -16.996183543186746
+    ],
+    "omega_deg_s": [
+      0.9716312793709267,
+      1.2433459142934176,
+      3.891504913029838
+    ]
+  },
+  {
+    "scenario_id": "test_three_disturbance_006_019",
+    "case": "disturbance_006",
+    "case_id": "disturbance_006",
+    "family": "disturbance",
+    "level": 0.06,
+    "sample_id": 19,
+    "split": "test",
+    "sample": 19,
+    "noise_seed": 1132329604,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.06,
+    "euler_deg": [
+      -19.77319702084116,
+      -17.654391643792664,
+      -31.26506566319259
+    ],
+    "omega_deg_s": [
+      2.9450425269098535,
+      -0.7738242248780551,
+      1.3433018475419765
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_000",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 0,
+    "split": "test",
+    "sample": 0,
+    "noise_seed": 383896705,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      51.0,
+      -27.0,
+      38.0
+    ],
+    "omega_deg_s": [
+      3.0,
+      -2.0,
+      1.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_001",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 1,
+    "split": "test",
+    "sample": 1,
+    "noise_seed": 1908748025,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      -39.0,
+      22.0,
+      -49.0
+    ],
+    "omega_deg_s": [
+      -2.0,
+      1.0,
+      -3.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_002",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 2,
+    "split": "test",
+    "sample": 2,
+    "noise_seed": 1516658193,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      45.38306021398236,
+      32.60252171156915,
+      -7.898323477399167
+    ],
+    "omega_deg_s": [
+      2.2069991718209856,
+      1.5628714282402498,
+      2.863159344637541
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_003",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 3,
+    "split": "test",
+    "sample": 3,
+    "noise_seed": 1632331228,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      -28.211394678461545,
+      -35.344852387149984,
+      25.813881759848314
+    ],
+    "omega_deg_s": [
+      1.7545378420845203,
+      -3.592605412301734,
+      4.249291450944137
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_004",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 4,
+    "split": "test",
+    "sample": 4,
+    "noise_seed": 782130113,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      -45.90109563753143,
+      -2.0893635432067654,
+      -6.619874332625152
+    ],
+    "omega_deg_s": [
+      4.581463004620684,
+      2.0866175795268003,
+      -1.2171490327797008
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_005",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 5,
+    "split": "test",
+    "sample": 5,
+    "noise_seed": 1509148044,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      18.942106024585,
+      -39.71332935849709,
+      56.260432402444465
+    ],
+    "omega_deg_s": [
+      1.01477538089902,
+      0.9587023586870469,
+      4.620944616649911
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_006",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 6,
+    "split": "test",
+    "sample": 6,
+    "noise_seed": 1021510249,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      9.17695673904474,
+      33.448556534246364,
+      19.541550300533316
+    ],
+    "omega_deg_s": [
+      -0.7168338853972696,
+      -0.23087675275283548,
+      3.8399747685707535
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_007",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 7,
+    "split": "test",
+    "sample": 7,
+    "noise_seed": 1419895896,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      24.465647163158465,
+      39.93242152728499,
+      -27.229028721708175
+    ],
+    "omega_deg_s": [
+      -4.806213393088223,
+      3.289176522148905,
+      1.8708607825235548
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_008",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 8,
+    "split": "test",
+    "sample": 8,
+    "noise_seed": 1966126880,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      35.24446649187499,
+      -59.455765020600765,
+      -25.903957905434794
+    ],
+    "omega_deg_s": [
+      1.8610634788544536,
+      2.4365580238880016,
+      1.2291404381966906
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_009",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 9,
+    "split": "test",
+    "sample": 9,
+    "noise_seed": 1946581414,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      34.87439069305147,
+      21.131703449279684,
+      0.01875140252312235
+    ],
+    "omega_deg_s": [
+      3.7460451266916053,
+      -3.6762871500258987,
+      -2.276297031141654
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_010",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 10,
+    "split": "test",
+    "sample": 10,
+    "noise_seed": 393974854,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      -22.526966375719937,
+      45.42587109379801,
+      -11.209562187340104
+    ],
+    "omega_deg_s": [
+      0.36654442195028647,
+      -4.346503235769044,
+      -0.035514658258658294
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_011",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 11,
+    "split": "test",
+    "sample": 11,
+    "noise_seed": 164747826,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      14.928139354850302,
+      35.2425029937294,
+      -48.49709488165382
+    ],
+    "omega_deg_s": [
+      0.9904943664183321,
+      -4.820071274330914,
+      4.41320805491624
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_012",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 12,
+    "split": "test",
+    "sample": 12,
+    "noise_seed": 348301688,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      34.41522386960675,
+      32.53156137754473,
+      -43.1348075754818
+    ],
+    "omega_deg_s": [
+      -2.9345690261733592,
+      -3.236415591467905,
+      -3.1902477955188813
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_013",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 13,
+    "split": "test",
+    "sample": 13,
+    "noise_seed": 1044701235,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      -38.13227309355683,
+      -58.518594761396486,
+      -29.484879444207927
+    ],
+    "omega_deg_s": [
+      4.721797689467259,
+      -3.6377941167888315,
+      -1.0843178869430083
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_014",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 14,
+    "split": "test",
+    "sample": 14,
+    "noise_seed": 1720709602,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      15.084522515964167,
+      40.645383989250135,
+      18.00797159079916
+    ],
+    "omega_deg_s": [
+      -0.5547644568154899,
+      1.9408405930851158,
+      1.0210495387450162
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_015",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 15,
+    "split": "test",
+    "sample": 15,
+    "noise_seed": 410327767,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      29.45328808703971,
+      18.839797868181634,
+      43.32615217739246
+    ],
+    "omega_deg_s": [
+      2.8348314069259395,
+      -1.3935471550995837,
+      -1.7868366482492046
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_016",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 16,
+    "split": "test",
+    "sample": 16,
+    "noise_seed": 673777560,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      -4.106368379843353,
+      -49.745925973810245,
+      -6.545021034028416
+    ],
+    "omega_deg_s": [
+      -4.262364913284751,
+      2.5626696018157666,
+      -0.7827852814445624
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_017",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 17,
+    "split": "test",
+    "sample": 17,
+    "noise_seed": 372643780,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      40.800949196121636,
+      5.05144414862977,
+      7.661188012336083
+    ],
+    "omega_deg_s": [
+      1.0725749813843821,
+      -3.674471357231167,
+      2.448486826477194
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_018",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 18,
+    "split": "test",
+    "sample": 18,
+    "noise_seed": 660488410,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      44.547711207860985,
+      -32.2957848094061,
+      -16.996183543186746
+    ],
+    "omega_deg_s": [
+      0.9716312793709267,
+      1.2433459142934176,
+      3.891504913029838
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_03_019",
+    "case": "sensor_03",
+    "case_id": "sensor_03",
+    "family": "sensor",
+    "level": 0.3,
+    "sample_id": 19,
+    "split": "test",
+    "sample": 19,
+    "noise_seed": 1581258564,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "euler_deg": [
+      -19.77319702084116,
+      -17.654391643792664,
+      -31.26506566319259
+    ],
+    "omega_deg_s": [
+      2.9450425269098535,
+      -0.7738242248780551,
+      1.3433018475419765
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_000",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 0,
+    "split": "test",
+    "sample": 0,
+    "noise_seed": 388355189,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      51.0,
+      -27.0,
+      38.0
+    ],
+    "omega_deg_s": [
+      3.0,
+      -2.0,
+      1.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_001",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 1,
+    "split": "test",
+    "sample": 1,
+    "noise_seed": 834502423,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      -39.0,
+      22.0,
+      -49.0
+    ],
+    "omega_deg_s": [
+      -2.0,
+      1.0,
+      -3.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_002",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 2,
+    "split": "test",
+    "sample": 2,
+    "noise_seed": 974292809,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      45.38306021398236,
+      32.60252171156915,
+      -7.898323477399167
+    ],
+    "omega_deg_s": [
+      2.2069991718209856,
+      1.5628714282402498,
+      2.863159344637541
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_003",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 3,
+    "split": "test",
+    "sample": 3,
+    "noise_seed": 718445609,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      -28.211394678461545,
+      -35.344852387149984,
+      25.813881759848314
+    ],
+    "omega_deg_s": [
+      1.7545378420845203,
+      -3.592605412301734,
+      4.249291450944137
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_004",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 4,
+    "split": "test",
+    "sample": 4,
+    "noise_seed": 397330944,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      -45.90109563753143,
+      -2.0893635432067654,
+      -6.619874332625152
+    ],
+    "omega_deg_s": [
+      4.581463004620684,
+      2.0866175795268003,
+      -1.2171490327797008
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_005",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 5,
+    "split": "test",
+    "sample": 5,
+    "noise_seed": 85057376,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      18.942106024585,
+      -39.71332935849709,
+      56.260432402444465
+    ],
+    "omega_deg_s": [
+      1.01477538089902,
+      0.9587023586870469,
+      4.620944616649911
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_006",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 6,
+    "split": "test",
+    "sample": 6,
+    "noise_seed": 1933519783,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      9.17695673904474,
+      33.448556534246364,
+      19.541550300533316
+    ],
+    "omega_deg_s": [
+      -0.7168338853972696,
+      -0.23087675275283548,
+      3.8399747685707535
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_007",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 7,
+    "split": "test",
+    "sample": 7,
+    "noise_seed": 1647413402,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      24.465647163158465,
+      39.93242152728499,
+      -27.229028721708175
+    ],
+    "omega_deg_s": [
+      -4.806213393088223,
+      3.289176522148905,
+      1.8708607825235548
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_008",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 8,
+    "split": "test",
+    "sample": 8,
+    "noise_seed": 2006039450,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      35.24446649187499,
+      -59.455765020600765,
+      -25.903957905434794
+    ],
+    "omega_deg_s": [
+      1.8610634788544536,
+      2.4365580238880016,
+      1.2291404381966906
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_009",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 9,
+    "split": "test",
+    "sample": 9,
+    "noise_seed": 2038588957,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      34.87439069305147,
+      21.131703449279684,
+      0.01875140252312235
+    ],
+    "omega_deg_s": [
+      3.7460451266916053,
+      -3.6762871500258987,
+      -2.276297031141654
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_010",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 10,
+    "split": "test",
+    "sample": 10,
+    "noise_seed": 1604136698,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      -22.526966375719937,
+      45.42587109379801,
+      -11.209562187340104
+    ],
+    "omega_deg_s": [
+      0.36654442195028647,
+      -4.346503235769044,
+      -0.035514658258658294
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_011",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 11,
+    "split": "test",
+    "sample": 11,
+    "noise_seed": 771688402,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      14.928139354850302,
+      35.2425029937294,
+      -48.49709488165382
+    ],
+    "omega_deg_s": [
+      0.9904943664183321,
+      -4.820071274330914,
+      4.41320805491624
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_012",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 12,
+    "split": "test",
+    "sample": 12,
+    "noise_seed": 487623348,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      34.41522386960675,
+      32.53156137754473,
+      -43.1348075754818
+    ],
+    "omega_deg_s": [
+      -2.9345690261733592,
+      -3.236415591467905,
+      -3.1902477955188813
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_013",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 13,
+    "split": "test",
+    "sample": 13,
+    "noise_seed": 1078982399,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      -38.13227309355683,
+      -58.518594761396486,
+      -29.484879444207927
+    ],
+    "omega_deg_s": [
+      4.721797689467259,
+      -3.6377941167888315,
+      -1.0843178869430083
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_014",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 14,
+    "split": "test",
+    "sample": 14,
+    "noise_seed": 1707793034,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      15.084522515964167,
+      40.645383989250135,
+      18.00797159079916
+    ],
+    "omega_deg_s": [
+      -0.5547644568154899,
+      1.9408405930851158,
+      1.0210495387450162
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_015",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 15,
+    "split": "test",
+    "sample": 15,
+    "noise_seed": 825320716,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      29.45328808703971,
+      18.839797868181634,
+      43.32615217739246
+    ],
+    "omega_deg_s": [
+      2.8348314069259395,
+      -1.3935471550995837,
+      -1.7868366482492046
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_016",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 16,
+    "split": "test",
+    "sample": 16,
+    "noise_seed": 1411112835,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      -4.106368379843353,
+      -49.745925973810245,
+      -6.545021034028416
+    ],
+    "omega_deg_s": [
+      -4.262364913284751,
+      2.5626696018157666,
+      -0.7827852814445624
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_017",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 17,
+    "split": "test",
+    "sample": 17,
+    "noise_seed": 1036897305,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      40.800949196121636,
+      5.05144414862977,
+      7.661188012336083
+    ],
+    "omega_deg_s": [
+      1.0725749813843821,
+      -3.674471357231167,
+      2.448486826477194
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_018",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 18,
+    "split": "test",
+    "sample": 18,
+    "noise_seed": 1106918433,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      44.547711207860985,
+      -32.2957848094061,
+      -16.996183543186746
+    ],
+    "omega_deg_s": [
+      0.9716312793709267,
+      1.2433459142934176,
+      3.891504913029838
+    ]
+  },
+  {
+    "scenario_id": "test_three_sensor_06_019",
+    "case": "sensor_06",
+    "case_id": "sensor_06",
+    "family": "sensor",
+    "level": 0.6,
+    "sample_id": 19,
+    "split": "test",
+    "sample": 19,
+    "noise_seed": 1580721307,
+    "noise_theta_deg": 0.6,
+    "noise_omega_deg": 0.6,
+    "euler_deg": [
+      -19.77319702084116,
+      -17.654391643792664,
+      -31.26506566319259
+    ],
+    "omega_deg_s": [
+      2.9450425269098535,
+      -0.7738242248780551,
+      1.3433018475419765
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_000",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 0,
+    "split": "test",
+    "sample": 0,
+    "noise_seed": 1544038565,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      51.0,
+      -27.0,
+      38.0
+    ],
+    "omega_deg_s": [
+      3.0,
+      -2.0,
+      1.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_001",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 1,
+    "split": "test",
+    "sample": 1,
+    "noise_seed": 1840220051,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      -39.0,
+      22.0,
+      -49.0
+    ],
+    "omega_deg_s": [
+      -2.0,
+      1.0,
+      -3.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_002",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 2,
+    "split": "test",
+    "sample": 2,
+    "noise_seed": 1214405759,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      45.38306021398236,
+      32.60252171156915,
+      -7.898323477399167
+    ],
+    "omega_deg_s": [
+      2.2069991718209856,
+      1.5628714282402498,
+      2.863159344637541
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_003",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 3,
+    "split": "test",
+    "sample": 3,
+    "noise_seed": 2044342759,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      -28.211394678461545,
+      -35.344852387149984,
+      25.813881759848314
+    ],
+    "omega_deg_s": [
+      1.7545378420845203,
+      -3.592605412301734,
+      4.249291450944137
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_004",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 4,
+    "split": "test",
+    "sample": 4,
+    "noise_seed": 96427825,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      -45.90109563753143,
+      -2.0893635432067654,
+      -6.619874332625152
+    ],
+    "omega_deg_s": [
+      4.581463004620684,
+      2.0866175795268003,
+      -1.2171490327797008
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_005",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 5,
+    "split": "test",
+    "sample": 5,
+    "noise_seed": 843476047,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      18.942106024585,
+      -39.71332935849709,
+      56.260432402444465
+    ],
+    "omega_deg_s": [
+      1.01477538089902,
+      0.9587023586870469,
+      4.620944616649911
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_006",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 6,
+    "split": "test",
+    "sample": 6,
+    "noise_seed": 6720795,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      9.17695673904474,
+      33.448556534246364,
+      19.541550300533316
+    ],
+    "omega_deg_s": [
+      -0.7168338853972696,
+      -0.23087675275283548,
+      3.8399747685707535
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_007",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 7,
+    "split": "test",
+    "sample": 7,
+    "noise_seed": 1901871708,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      24.465647163158465,
+      39.93242152728499,
+      -27.229028721708175
+    ],
+    "omega_deg_s": [
+      -4.806213393088223,
+      3.289176522148905,
+      1.8708607825235548
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_008",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 8,
+    "split": "test",
+    "sample": 8,
+    "noise_seed": 1467538847,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      35.24446649187499,
+      -59.455765020600765,
+      -25.903957905434794
+    ],
+    "omega_deg_s": [
+      1.8610634788544536,
+      2.4365580238880016,
+      1.2291404381966906
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_009",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 9,
+    "split": "test",
+    "sample": 9,
+    "noise_seed": 1947007623,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      34.87439069305147,
+      21.131703449279684,
+      0.01875140252312235
+    ],
+    "omega_deg_s": [
+      3.7460451266916053,
+      -3.6762871500258987,
+      -2.276297031141654
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_010",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 10,
+    "split": "test",
+    "sample": 10,
+    "noise_seed": 546249421,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      -22.526966375719937,
+      45.42587109379801,
+      -11.209562187340104
+    ],
+    "omega_deg_s": [
+      0.36654442195028647,
+      -4.346503235769044,
+      -0.035514658258658294
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_011",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 11,
+    "split": "test",
+    "sample": 11,
+    "noise_seed": 1539658481,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      14.928139354850302,
+      35.2425029937294,
+      -48.49709488165382
+    ],
+    "omega_deg_s": [
+      0.9904943664183321,
+      -4.820071274330914,
+      4.41320805491624
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_012",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 12,
+    "split": "test",
+    "sample": 12,
+    "noise_seed": 1515791853,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      34.41522386960675,
+      32.53156137754473,
+      -43.1348075754818
+    ],
+    "omega_deg_s": [
+      -2.9345690261733592,
+      -3.236415591467905,
+      -3.1902477955188813
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_013",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 13,
+    "split": "test",
+    "sample": 13,
+    "noise_seed": 1356319733,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      -38.13227309355683,
+      -58.518594761396486,
+      -29.484879444207927
+    ],
+    "omega_deg_s": [
+      4.721797689467259,
+      -3.6377941167888315,
+      -1.0843178869430083
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_014",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 14,
+    "split": "test",
+    "sample": 14,
+    "noise_seed": 1455252041,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      15.084522515964167,
+      40.645383989250135,
+      18.00797159079916
+    ],
+    "omega_deg_s": [
+      -0.5547644568154899,
+      1.9408405930851158,
+      1.0210495387450162
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_015",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 15,
+    "split": "test",
+    "sample": 15,
+    "noise_seed": 489803363,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      29.45328808703971,
+      18.839797868181634,
+      43.32615217739246
+    ],
+    "omega_deg_s": [
+      2.8348314069259395,
+      -1.3935471550995837,
+      -1.7868366482492046
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_016",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 16,
+    "split": "test",
+    "sample": 16,
+    "noise_seed": 1579815536,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      -4.106368379843353,
+      -49.745925973810245,
+      -6.545021034028416
+    ],
+    "omega_deg_s": [
+      -4.262364913284751,
+      2.5626696018157666,
+      -0.7827852814445624
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_017",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 17,
+    "split": "test",
+    "sample": 17,
+    "noise_seed": 447590803,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      40.800949196121636,
+      5.05144414862977,
+      7.661188012336083
+    ],
+    "omega_deg_s": [
+      1.0725749813843821,
+      -3.674471357231167,
+      2.448486826477194
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_018",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 18,
+    "split": "test",
+    "sample": 18,
+    "noise_seed": 2111009245,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      44.547711207860985,
+      -32.2957848094061,
+      -16.996183543186746
+    ],
+    "omega_deg_s": [
+      0.9716312793709267,
+      1.2433459142934176,
+      3.891504913029838
+    ]
+  },
+  {
+    "scenario_id": "test_three_pulse_019",
+    "case": "pulse",
+    "case_id": "pulse",
+    "family": "pulse",
+    "level": 0.15,
+    "sample_id": 19,
+    "split": "test",
+    "sample": 19,
+    "noise_seed": 1760542561,
+    "pulse_torque": 0.15,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "euler_deg": [
+      -19.77319702084116,
+      -17.654391643792664,
+      -31.26506566319259
+    ],
+    "omega_deg_s": [
+      2.9450425269098535,
+      -0.7738242248780551,
+      1.3433018475419765
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_000",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 0,
+    "split": "test",
+    "sample": 0,
+    "noise_seed": 1400577184,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      51.0,
+      -27.0,
+      38.0
+    ],
+    "omega_deg_s": [
+      3.0,
+      -2.0,
+      1.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_001",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 1,
+    "split": "test",
+    "sample": 1,
+    "noise_seed": 461069288,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      -39.0,
+      22.0,
+      -49.0
+    ],
+    "omega_deg_s": [
+      -2.0,
+      1.0,
+      -3.0
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_002",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 2,
+    "split": "test",
+    "sample": 2,
+    "noise_seed": 2032967394,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      45.38306021398236,
+      32.60252171156915,
+      -7.898323477399167
+    ],
+    "omega_deg_s": [
+      2.2069991718209856,
+      1.5628714282402498,
+      2.863159344637541
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_003",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 3,
+    "split": "test",
+    "sample": 3,
+    "noise_seed": 549758795,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      -28.211394678461545,
+      -35.344852387149984,
+      25.813881759848314
+    ],
+    "omega_deg_s": [
+      1.7545378420845203,
+      -3.592605412301734,
+      4.249291450944137
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_004",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 4,
+    "split": "test",
+    "sample": 4,
+    "noise_seed": 253634717,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      -45.90109563753143,
+      -2.0893635432067654,
+      -6.619874332625152
+    ],
+    "omega_deg_s": [
+      4.581463004620684,
+      2.0866175795268003,
+      -1.2171490327797008
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_005",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 5,
+    "split": "test",
+    "sample": 5,
+    "noise_seed": 1088736478,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      18.942106024585,
+      -39.71332935849709,
+      56.260432402444465
+    ],
+    "omega_deg_s": [
+      1.01477538089902,
+      0.9587023586870469,
+      4.620944616649911
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_006",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 6,
+    "split": "test",
+    "sample": 6,
+    "noise_seed": 435148391,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      9.17695673904474,
+      33.448556534246364,
+      19.541550300533316
+    ],
+    "omega_deg_s": [
+      -0.7168338853972696,
+      -0.23087675275283548,
+      3.8399747685707535
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_007",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 7,
+    "split": "test",
+    "sample": 7,
+    "noise_seed": 469026029,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      24.465647163158465,
+      39.93242152728499,
+      -27.229028721708175
+    ],
+    "omega_deg_s": [
+      -4.806213393088223,
+      3.289176522148905,
+      1.8708607825235548
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_008",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 8,
+    "split": "test",
+    "sample": 8,
+    "noise_seed": 850074288,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      35.24446649187499,
+      -59.455765020600765,
+      -25.903957905434794
+    ],
+    "omega_deg_s": [
+      1.8610634788544536,
+      2.4365580238880016,
+      1.2291404381966906
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_009",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 9,
+    "split": "test",
+    "sample": 9,
+    "noise_seed": 1579052846,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      34.87439069305147,
+      21.131703449279684,
+      0.01875140252312235
+    ],
+    "omega_deg_s": [
+      3.7460451266916053,
+      -3.6762871500258987,
+      -2.276297031141654
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_010",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 10,
+    "split": "test",
+    "sample": 10,
+    "noise_seed": 225502239,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      -22.526966375719937,
+      45.42587109379801,
+      -11.209562187340104
+    ],
+    "omega_deg_s": [
+      0.36654442195028647,
+      -4.346503235769044,
+      -0.035514658258658294
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_011",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 11,
+    "split": "test",
+    "sample": 11,
+    "noise_seed": 194597454,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      14.928139354850302,
+      35.2425029937294,
+      -48.49709488165382
+    ],
+    "omega_deg_s": [
+      0.9904943664183321,
+      -4.820071274330914,
+      4.41320805491624
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_012",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 12,
+    "split": "test",
+    "sample": 12,
+    "noise_seed": 7090963,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      34.41522386960675,
+      32.53156137754473,
+      -43.1348075754818
+    ],
+    "omega_deg_s": [
+      -2.9345690261733592,
+      -3.236415591467905,
+      -3.1902477955188813
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_013",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 13,
+    "split": "test",
+    "sample": 13,
+    "noise_seed": 1169557682,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      -38.13227309355683,
+      -58.518594761396486,
+      -29.484879444207927
+    ],
+    "omega_deg_s": [
+      4.721797689467259,
+      -3.6377941167888315,
+      -1.0843178869430083
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_014",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 14,
+    "split": "test",
+    "sample": 14,
+    "noise_seed": 1454010460,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      15.084522515964167,
+      40.645383989250135,
+      18.00797159079916
+    ],
+    "omega_deg_s": [
+      -0.5547644568154899,
+      1.9408405930851158,
+      1.0210495387450162
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_015",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 15,
+    "split": "test",
+    "sample": 15,
+    "noise_seed": 407780471,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      29.45328808703971,
+      18.839797868181634,
+      43.32615217739246
+    ],
+    "omega_deg_s": [
+      2.8348314069259395,
+      -1.3935471550995837,
+      -1.7868366482492046
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_016",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 16,
+    "split": "test",
+    "sample": 16,
+    "noise_seed": 1465167209,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      -4.106368379843353,
+      -49.745925973810245,
+      -6.545021034028416
+    ],
+    "omega_deg_s": [
+      -4.262364913284751,
+      2.5626696018157666,
+      -0.7827852814445624
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_017",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 17,
+    "split": "test",
+    "sample": 17,
+    "noise_seed": 592258281,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      40.800949196121636,
+      5.05144414862977,
+      7.661188012336083
+    ],
+    "omega_deg_s": [
+      1.0725749813843821,
+      -3.674471357231167,
+      2.448486826477194
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_018",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 18,
+    "split": "test",
+    "sample": 18,
+    "noise_seed": 1176775080,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      44.547711207860985,
+      -32.2957848094061,
+      -16.996183543186746
+    ],
+    "omega_deg_s": [
+      0.9716312793709267,
+      1.2433459142934176,
+      3.891504913029838
+    ]
+  },
+  {
+    "scenario_id": "test_three_combined_019",
+    "case": "combined",
+    "case_id": "combined",
+    "family": "combined",
+    "level": 1.3,
+    "sample_id": 19,
+    "split": "test",
+    "sample": 19,
+    "noise_seed": 587476474,
+    "inertia_scale": 1.3,
+    "disturbance_bias": 0.02,
+    "disturbance_amplitude": 0.03,
+    "noise_theta_deg": 0.3,
+    "noise_omega_deg": 0.3,
+    "pulse_torque": 0.1,
+    "euler_deg": [
+      -19.77319702084116,
+      -17.654391643792664,
+      -31.26506566319259
+    ],
+    "omega_deg_s": [
+      2.9450425269098535,
+      -0.7738242248780551,
+      1.3433018475419765
+    ]
+  }
+]

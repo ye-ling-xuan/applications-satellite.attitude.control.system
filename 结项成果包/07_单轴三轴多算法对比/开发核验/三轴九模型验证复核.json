@@ -1,0 +1,695 @@
+{
+  "verification_date": "2026-10-12",
+  "scope": "Independent reloading of nine best three-axis models on the existing sixteen validation scenes only",
+  "formal_test_results_read": false,
+  "models_modified": false,
+  "physics_modified": false,
+  "training_modified": false,
+  "tolerance": {
+    "relative": 1e-10,
+    "absolute": 1e-09
+  },
+  "critical_current_source_sha256": {
+    "envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "controllers.py": "a971deb369c45401320fa0075585f690b7bd7aa029d4a5b45a1c6f2b718f90d1",
+    "metrics.py": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5",
+    "scenarios.py": "4e72e09cf814ef1af880a91f3982bed361ec43ff208489e2144dfbf4a5c8c4f5",
+    "vector_training.py": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+  },
+  "checks": {
+    "nine_runs_present": true,
+    "same_env_config_all_runs": true,
+    "same_requested_interaction_budget_all_runs": true,
+    "all_model_validation_recomputations_match": true,
+    "all_frozen_physics_controller_scenario_engine_source_matches": true,
+    "metrics_change_exactly_explained_by_export_only_lines": true
+  },
+  "all_passed": true,
+  "records": [
+    {
+      "algorithm": "PPO",
+      "seed": 11,
+      "best_checkpoint_steps": 1001472,
+      "actual_training_steps": 1001472,
+      "requested_steps": 1000000,
+      "n_envs": 8,
+      "validation_scene_count": 16,
+      "selected_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 9.406413518521703,
+        "control_cost": 4.570770606857832,
+        "score": -10.32056763989327
+      },
+      "recomputed_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 9.406413518521703,
+        "control_cost": 4.570770606857832,
+        "score": -10.32056763989327
+      },
+      "recomputed_minus_recorded": {
+        "success_rate": 0.0,
+        "rms_error_deg": 0.0,
+        "control_cost": 0.0,
+        "score": 0.0
+      },
+      "checks": {
+        "model_sha256_matches_completed_metadata": true,
+        "loaded_checkpoint_steps_match_selected_metadata": true,
+        "scenes_match_existing_fixed_validation": true,
+        "recomputed_statistics_match_selected_checkpoint": true,
+        "recomputed_score_matches_completed_metadata": true,
+        "selected_row_matches_validation_history": true,
+        "selected_score_is_history_maximum": true,
+        "critical_source_matches_training_hashes": false,
+        "axis_algorithm_seed_match_path": true,
+        "validation_only_selection_recorded": true,
+        "frozen_physics_controller_scenario_engine_source_matches": true,
+        "metrics_export_only_change_exactly_explained": true
+      },
+      "all_passed": true,
+      "best_model_sha256": "163d4eb32c04be30ffd2ef14b112b1403c8274702bd551e810cf477f4bfcf40d",
+      "validation_scenarios_sha256": "5dff2dc34c3d6c569bdea3494606d1fb830caedcfb77b8ea56a9fef00a550b38",
+      "env_config": {
+        "axis": "three",
+        "dt": 0.02,
+        "duration": 20.0,
+        "max_torque": 2.0,
+        "inertia": [
+          1.2,
+          1.0,
+          0.8
+        ],
+        "randomized": true,
+        "integrator": "RK4",
+        "reward_angle_weight": 6.0,
+        "reward_omega_weight": 0.6,
+        "reward_torque_weight": 0.03,
+        "divergence_penalty": 1000.0,
+        "target_quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "vector_engine": "FastThreeVecEnv batch RK4",
+      "wall_time_s": 1.5853079999997135,
+      "metrics_training_sha256": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "all_validation_statistics_passed": true
+    },
+    {
+      "algorithm": "PPO",
+      "seed": 22,
+      "best_checkpoint_steps": 800000,
+      "actual_training_steps": 1001472,
+      "requested_steps": 1000000,
+      "n_envs": 8,
+      "validation_scene_count": 16,
+      "selected_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 9.541519756402929,
+        "control_cost": 5.823654469577541,
+        "score": -10.706250650318436
+      },
+      "recomputed_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 9.541519756402929,
+        "control_cost": 5.823654469577541,
+        "score": -10.706250650318436
+      },
+      "recomputed_minus_recorded": {
+        "success_rate": 0.0,
+        "rms_error_deg": 0.0,
+        "control_cost": 0.0,
+        "score": 0.0
+      },
+      "checks": {
+        "model_sha256_matches_completed_metadata": true,
+        "loaded_checkpoint_steps_match_selected_metadata": true,
+        "scenes_match_existing_fixed_validation": true,
+        "recomputed_statistics_match_selected_checkpoint": true,
+        "recomputed_score_matches_completed_metadata": true,
+        "selected_row_matches_validation_history": true,
+        "selected_score_is_history_maximum": true,
+        "critical_source_matches_training_hashes": false,
+        "axis_algorithm_seed_match_path": true,
+        "validation_only_selection_recorded": true,
+        "frozen_physics_controller_scenario_engine_source_matches": true,
+        "metrics_export_only_change_exactly_explained": true
+      },
+      "all_passed": true,
+      "best_model_sha256": "7f5e4992a10958c3cef63134732f5c56e6a6ee20222488e0f08f53057e20b1e4",
+      "validation_scenarios_sha256": "5dff2dc34c3d6c569bdea3494606d1fb830caedcfb77b8ea56a9fef00a550b38",
+      "env_config": {
+        "axis": "three",
+        "dt": 0.02,
+        "duration": 20.0,
+        "max_torque": 2.0,
+        "inertia": [
+          1.2,
+          1.0,
+          0.8
+        ],
+        "randomized": true,
+        "integrator": "RK4",
+        "reward_angle_weight": 6.0,
+        "reward_omega_weight": 0.6,
+        "reward_torque_weight": 0.03,
+        "divergence_penalty": 1000.0,
+        "target_quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "vector_engine": "FastThreeVecEnv batch RK4",
+      "wall_time_s": 1.5723195999999007,
+      "metrics_training_sha256": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "all_validation_statistics_passed": true
+    },
+    {
+      "algorithm": "PPO",
+      "seed": 33,
+      "best_checkpoint_steps": 700000,
+      "actual_training_steps": 1001472,
+      "requested_steps": 1000000,
+      "n_envs": 8,
+      "validation_scene_count": 16,
+      "selected_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 9.658951910703895,
+        "control_cost": 3.7852720491288023,
+        "score": -10.416006320529656
+      },
+      "recomputed_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 9.658951910703895,
+        "control_cost": 3.7852720491288023,
+        "score": -10.416006320529656
+      },
+      "recomputed_minus_recorded": {
+        "success_rate": 0.0,
+        "rms_error_deg": 0.0,
+        "control_cost": 0.0,
+        "score": 0.0
+      },
+      "checks": {
+        "model_sha256_matches_completed_metadata": true,
+        "loaded_checkpoint_steps_match_selected_metadata": true,
+        "scenes_match_existing_fixed_validation": true,
+        "recomputed_statistics_match_selected_checkpoint": true,
+        "recomputed_score_matches_completed_metadata": true,
+        "selected_row_matches_validation_history": true,
+        "selected_score_is_history_maximum": true,
+        "critical_source_matches_training_hashes": false,
+        "axis_algorithm_seed_match_path": true,
+        "validation_only_selection_recorded": true,
+        "frozen_physics_controller_scenario_engine_source_matches": true,
+        "metrics_export_only_change_exactly_explained": true
+      },
+      "all_passed": true,
+      "best_model_sha256": "b7febdf9202c63db3c3a476b63f1f8c7d88413232a79b105417461804b8b9a29",
+      "validation_scenarios_sha256": "5dff2dc34c3d6c569bdea3494606d1fb830caedcfb77b8ea56a9fef00a550b38",
+      "env_config": {
+        "axis": "three",
+        "dt": 0.02,
+        "duration": 20.0,
+        "max_torque": 2.0,
+        "inertia": [
+          1.2,
+          1.0,
+          0.8
+        ],
+        "randomized": true,
+        "integrator": "RK4",
+        "reward_angle_weight": 6.0,
+        "reward_omega_weight": 0.6,
+        "reward_torque_weight": 0.03,
+        "divergence_penalty": 1000.0,
+        "target_quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "vector_engine": "FastThreeVecEnv batch RK4",
+      "wall_time_s": 1.5526682999989134,
+      "metrics_training_sha256": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "all_validation_statistics_passed": true
+    },
+    {
+      "algorithm": "SAC",
+      "seed": 11,
+      "best_checkpoint_steps": 1000000,
+      "actual_training_steps": 1000000,
+      "requested_steps": 1000000,
+      "n_envs": 8,
+      "validation_scene_count": 16,
+      "selected_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 11.038095239173556,
+        "control_cost": 3.7783799470761457,
+        "score": -11.793771228588785
+      },
+      "recomputed_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 11.038095239173556,
+        "control_cost": 3.7783799470761457,
+        "score": -11.793771228588785
+      },
+      "recomputed_minus_recorded": {
+        "success_rate": 0.0,
+        "rms_error_deg": 0.0,
+        "control_cost": 0.0,
+        "score": 0.0
+      },
+      "checks": {
+        "model_sha256_matches_completed_metadata": true,
+        "loaded_checkpoint_steps_match_selected_metadata": true,
+        "scenes_match_existing_fixed_validation": true,
+        "recomputed_statistics_match_selected_checkpoint": true,
+        "recomputed_score_matches_completed_metadata": true,
+        "selected_row_matches_validation_history": true,
+        "selected_score_is_history_maximum": true,
+        "critical_source_matches_training_hashes": false,
+        "axis_algorithm_seed_match_path": true,
+        "validation_only_selection_recorded": true,
+        "frozen_physics_controller_scenario_engine_source_matches": true,
+        "metrics_export_only_change_exactly_explained": true
+      },
+      "all_passed": true,
+      "best_model_sha256": "3ba34d404ddb834f9c1f41758232c09ed3b013823dd2dc85b566fdefac09f5e7",
+      "validation_scenarios_sha256": "5dff2dc34c3d6c569bdea3494606d1fb830caedcfb77b8ea56a9fef00a550b38",
+      "env_config": {
+        "axis": "three",
+        "dt": 0.02,
+        "duration": 20.0,
+        "max_torque": 2.0,
+        "inertia": [
+          1.2,
+          1.0,
+          0.8
+        ],
+        "randomized": true,
+        "integrator": "RK4",
+        "reward_angle_weight": 6.0,
+        "reward_omega_weight": 0.6,
+        "reward_torque_weight": 0.03,
+        "divergence_penalty": 1000.0,
+        "target_quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "vector_engine": "FastThreeVecEnv batch RK4",
+      "wall_time_s": 1.6193167999990692,
+      "metrics_training_sha256": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "all_validation_statistics_passed": true
+    },
+    {
+      "algorithm": "SAC",
+      "seed": 22,
+      "best_checkpoint_steps": 800000,
+      "actual_training_steps": 1000000,
+      "requested_steps": 1000000,
+      "n_envs": 8,
+      "validation_scene_count": 16,
+      "selected_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 10.330469771301926,
+        "control_cost": 5.010240952152146,
+        "score": -11.332517961732355
+      },
+      "recomputed_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 10.330469771301926,
+        "control_cost": 5.010240952152146,
+        "score": -11.332517961732355
+      },
+      "recomputed_minus_recorded": {
+        "success_rate": 0.0,
+        "rms_error_deg": 0.0,
+        "control_cost": 0.0,
+        "score": 0.0
+      },
+      "checks": {
+        "model_sha256_matches_completed_metadata": true,
+        "loaded_checkpoint_steps_match_selected_metadata": true,
+        "scenes_match_existing_fixed_validation": true,
+        "recomputed_statistics_match_selected_checkpoint": true,
+        "recomputed_score_matches_completed_metadata": true,
+        "selected_row_matches_validation_history": true,
+        "selected_score_is_history_maximum": true,
+        "critical_source_matches_training_hashes": false,
+        "axis_algorithm_seed_match_path": true,
+        "validation_only_selection_recorded": true,
+        "frozen_physics_controller_scenario_engine_source_matches": true,
+        "metrics_export_only_change_exactly_explained": true
+      },
+      "all_passed": true,
+      "best_model_sha256": "6ef08f3900321e96aa2f16ea39ee2c8e2bb41a213080894921df677dcd41f490",
+      "validation_scenarios_sha256": "5dff2dc34c3d6c569bdea3494606d1fb830caedcfb77b8ea56a9fef00a550b38",
+      "env_config": {
+        "axis": "three",
+        "dt": 0.02,
+        "duration": 20.0,
+        "max_torque": 2.0,
+        "inertia": [
+          1.2,
+          1.0,
+          0.8
+        ],
+        "randomized": true,
+        "integrator": "RK4",
+        "reward_angle_weight": 6.0,
+        "reward_omega_weight": 0.6,
+        "reward_torque_weight": 0.03,
+        "divergence_penalty": 1000.0,
+        "target_quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "vector_engine": "FastThreeVecEnv batch RK4",
+      "wall_time_s": 1.5969929000002594,
+      "metrics_training_sha256": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "all_validation_statistics_passed": true
+    },
+    {
+      "algorithm": "SAC",
+      "seed": 33,
+      "best_checkpoint_steps": 800000,
+      "actual_training_steps": 1000000,
+      "requested_steps": 1000000,
+      "n_envs": 8,
+      "validation_scene_count": 16,
+      "selected_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 11.180178924280511,
+        "control_cost": 3.6736812711246647,
+        "score": -11.914915178505444
+      },
+      "recomputed_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 11.180178924280511,
+        "control_cost": 3.6736812711246647,
+        "score": -11.914915178505444
+      },
+      "recomputed_minus_recorded": {
+        "success_rate": 0.0,
+        "rms_error_deg": 0.0,
+        "control_cost": 0.0,
+        "score": 0.0
+      },
+      "checks": {
+        "model_sha256_matches_completed_metadata": true,
+        "loaded_checkpoint_steps_match_selected_metadata": true,
+        "scenes_match_existing_fixed_validation": true,
+        "recomputed_statistics_match_selected_checkpoint": true,
+        "recomputed_score_matches_completed_metadata": true,
+        "selected_row_matches_validation_history": true,
+        "selected_score_is_history_maximum": true,
+        "critical_source_matches_training_hashes": false,
+        "axis_algorithm_seed_match_path": true,
+        "validation_only_selection_recorded": true,
+        "frozen_physics_controller_scenario_engine_source_matches": true,
+        "metrics_export_only_change_exactly_explained": true
+      },
+      "all_passed": true,
+      "best_model_sha256": "4a4fcf482785584d9c5c2a38cb80370e2a3e1dff0c1aa023f2657ed3208d4964",
+      "validation_scenarios_sha256": "5dff2dc34c3d6c569bdea3494606d1fb830caedcfb77b8ea56a9fef00a550b38",
+      "env_config": {
+        "axis": "three",
+        "dt": 0.02,
+        "duration": 20.0,
+        "max_torque": 2.0,
+        "inertia": [
+          1.2,
+          1.0,
+          0.8
+        ],
+        "randomized": true,
+        "integrator": "RK4",
+        "reward_angle_weight": 6.0,
+        "reward_omega_weight": 0.6,
+        "reward_torque_weight": 0.03,
+        "divergence_penalty": 1000.0,
+        "target_quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "vector_engine": "FastThreeVecEnv batch RK4",
+      "wall_time_s": 1.6275694000014482,
+      "metrics_training_sha256": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "all_validation_statistics_passed": true
+    },
+    {
+      "algorithm": "TD3",
+      "seed": 11,
+      "best_checkpoint_steps": 400000,
+      "actual_training_steps": 1000000,
+      "requested_steps": 1000000,
+      "n_envs": 8,
+      "validation_scene_count": 16,
+      "selected_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 13.829748359271981,
+        "control_cost": 3.73914373348372,
+        "score": -14.577577105968725
+      },
+      "recomputed_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 13.829748359271981,
+        "control_cost": 3.73914373348372,
+        "score": -14.577577105968725
+      },
+      "recomputed_minus_recorded": {
+        "success_rate": 0.0,
+        "rms_error_deg": 0.0,
+        "control_cost": 0.0,
+        "score": 0.0
+      },
+      "checks": {
+        "model_sha256_matches_completed_metadata": true,
+        "loaded_checkpoint_steps_match_selected_metadata": true,
+        "scenes_match_existing_fixed_validation": true,
+        "recomputed_statistics_match_selected_checkpoint": true,
+        "recomputed_score_matches_completed_metadata": true,
+        "selected_row_matches_validation_history": true,
+        "selected_score_is_history_maximum": true,
+        "critical_source_matches_training_hashes": true,
+        "axis_algorithm_seed_match_path": true,
+        "validation_only_selection_recorded": true,
+        "frozen_physics_controller_scenario_engine_source_matches": true,
+        "metrics_export_only_change_exactly_explained": true
+      },
+      "all_passed": true,
+      "best_model_sha256": "77c379dccf6b6f5df531dd741b54609f5963a951ddd547b847ebadf90d236dff",
+      "validation_scenarios_sha256": "5dff2dc34c3d6c569bdea3494606d1fb830caedcfb77b8ea56a9fef00a550b38",
+      "env_config": {
+        "axis": "three",
+        "dt": 0.02,
+        "duration": 20.0,
+        "max_torque": 2.0,
+        "inertia": [
+          1.2,
+          1.0,
+          0.8
+        ],
+        "randomized": true,
+        "integrator": "RK4",
+        "reward_angle_weight": 6.0,
+        "reward_omega_weight": 0.6,
+        "reward_torque_weight": 0.03,
+        "divergence_penalty": 1000.0,
+        "target_quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "vector_engine": "FastThreeVecEnv batch RK4",
+      "wall_time_s": 1.5604234999991604,
+      "metrics_training_sha256": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5",
+      "all_validation_statistics_passed": true
+    },
+    {
+      "algorithm": "TD3",
+      "seed": 22,
+      "best_checkpoint_steps": 600000,
+      "actual_training_steps": 1000000,
+      "requested_steps": 1000000,
+      "n_envs": 8,
+      "validation_scene_count": 16,
+      "selected_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 12.793864753405552,
+        "control_cost": 4.059269227343339,
+        "score": -13.60571859887422
+      },
+      "recomputed_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 12.793864753405552,
+        "control_cost": 4.059269227343339,
+        "score": -13.60571859887422
+      },
+      "recomputed_minus_recorded": {
+        "success_rate": 0.0,
+        "rms_error_deg": 0.0,
+        "control_cost": 0.0,
+        "score": 0.0
+      },
+      "checks": {
+        "model_sha256_matches_completed_metadata": true,
+        "loaded_checkpoint_steps_match_selected_metadata": true,
+        "scenes_match_existing_fixed_validation": true,
+        "recomputed_statistics_match_selected_checkpoint": true,
+        "recomputed_score_matches_completed_metadata": true,
+        "selected_row_matches_validation_history": true,
+        "selected_score_is_history_maximum": true,
+        "critical_source_matches_training_hashes": true,
+        "axis_algorithm_seed_match_path": true,
+        "validation_only_selection_recorded": true,
+        "frozen_physics_controller_scenario_engine_source_matches": true,
+        "metrics_export_only_change_exactly_explained": true
+      },
+      "all_passed": true,
+      "best_model_sha256": "b513bf68c33aeab997def5e50517f70fc8b68c79abe5c6752089ac0aa90c63da",
+      "validation_scenarios_sha256": "5dff2dc34c3d6c569bdea3494606d1fb830caedcfb77b8ea56a9fef00a550b38",
+      "env_config": {
+        "axis": "three",
+        "dt": 0.02,
+        "duration": 20.0,
+        "max_torque": 2.0,
+        "inertia": [
+          1.2,
+          1.0,
+          0.8
+        ],
+        "randomized": true,
+        "integrator": "RK4",
+        "reward_angle_weight": 6.0,
+        "reward_omega_weight": 0.6,
+        "reward_torque_weight": 0.03,
+        "divergence_penalty": 1000.0,
+        "target_quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "vector_engine": "FastThreeVecEnv batch RK4",
+      "wall_time_s": 1.5416578999993362,
+      "metrics_training_sha256": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5",
+      "all_validation_statistics_passed": true
+    },
+    {
+      "algorithm": "TD3",
+      "seed": 33,
+      "best_checkpoint_steps": 900000,
+      "actual_training_steps": 1000000,
+      "requested_steps": 1000000,
+      "n_envs": 8,
+      "validation_scene_count": 16,
+      "selected_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 11.852667328908193,
+        "control_cost": 7.669185109450037,
+        "score": -13.386504350798202
+      },
+      "recomputed_statistics": {
+        "success_rate": 0.0,
+        "rms_error_deg": 11.852667328908193,
+        "control_cost": 7.669185109450037,
+        "score": -13.386504350798202
+      },
+      "recomputed_minus_recorded": {
+        "success_rate": 0.0,
+        "rms_error_deg": 0.0,
+        "control_cost": 0.0,
+        "score": 0.0
+      },
+      "checks": {
+        "model_sha256_matches_completed_metadata": true,
+        "loaded_checkpoint_steps_match_selected_metadata": true,
+        "scenes_match_existing_fixed_validation": true,
+        "recomputed_statistics_match_selected_checkpoint": true,
+        "recomputed_score_matches_completed_metadata": true,
+        "selected_row_matches_validation_history": true,
+        "selected_score_is_history_maximum": true,
+        "critical_source_matches_training_hashes": true,
+        "axis_algorithm_seed_match_path": true,
+        "validation_only_selection_recorded": true,
+        "frozen_physics_controller_scenario_engine_source_matches": true,
+        "metrics_export_only_change_exactly_explained": true
+      },
+      "all_passed": true,
+      "best_model_sha256": "b30035391a72c4ea5a9016159d04afa7d31725334dd46f44af6ae9b47085a523",
+      "validation_scenarios_sha256": "5dff2dc34c3d6c569bdea3494606d1fb830caedcfb77b8ea56a9fef00a550b38",
+      "env_config": {
+        "axis": "three",
+        "dt": 0.02,
+        "duration": 20.0,
+        "max_torque": 2.0,
+        "inertia": [
+          1.2,
+          1.0,
+          0.8
+        ],
+        "randomized": true,
+        "integrator": "RK4",
+        "reward_angle_weight": 6.0,
+        "reward_omega_weight": 0.6,
+        "reward_torque_weight": 0.03,
+        "divergence_penalty": 1000.0,
+        "target_quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "vector_engine": "FastThreeVecEnv batch RK4",
+      "wall_time_s": 1.5057168999992427,
+      "metrics_training_sha256": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5",
+      "all_validation_statistics_passed": true
+    }
+  ],
+  "source_change_assessment": {
+    "file": "metrics.py",
+    "current_sha256": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5",
+    "reconstructed_pre_export_sha256": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+    "recorded_training_hashes": {
+      "PPO_seed_11": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "PPO_seed_22": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "PPO_seed_33": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "SAC_seed_11": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "SAC_seed_22": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "SAC_seed_33": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+      "TD3_seed_11": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5",
+      "TD3_seed_22": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5",
+      "TD3_seed_33": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5"
+    },
+    "only_added_lines": [
+      "allocation of observation and attitude trace arrays",
+      "copy of current observation and attitude into trace arrays",
+      "export of observation and quaternion/theta fields"
+    ],
+    "method": "Remove only the five export-evidence lines from current bytes, preserving every other byte and line ending; reconstructed hash matches early model training manifests",
+    "physics_reward_metric_formula_or_validation_score_changed": false,
+    "source_text_exact_all_models": false,
+    "validation_result_difference_all_nine_models": 0.0
+  },
+  "all_source_bytes_match_training_for_every_model": false
+}

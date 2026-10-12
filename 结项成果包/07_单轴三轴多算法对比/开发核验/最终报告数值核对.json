@@ -1,0 +1,190 @@
+{
+  "verification_date": "2026-10-12",
+  "formal_results_review_authorized_after_completion": true,
+  "models_or_control_methods_changed": false,
+  "fresh_raw_episodes": 4320,
+  "fresh_calibrated_episodes": 3240,
+  "historical_episodes": 720,
+  "controller_summary_groups_checked": 22,
+  "calibration_pairs_checked": 3240,
+  "maximum_numeric_difference": 0.0,
+  "all_passed": true,
+  "controller_checks": [
+    {
+      "section": "fresh_results",
+      "axis": "single",
+      "controller": "baseline_PID",
+      "n_episodes": 180,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "single",
+      "controller": "tuned_PID",
+      "n_episodes": 180,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "single",
+      "controller": "improved_PID",
+      "n_episodes": 180,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "single",
+      "controller": "PPO",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "single",
+      "controller": "SAC",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "single",
+      "controller": "TD3",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "three",
+      "controller": "baseline_PID",
+      "n_episodes": 180,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "three",
+      "controller": "tuned_PID",
+      "n_episodes": 180,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "three",
+      "controller": "improved_PID",
+      "n_episodes": 180,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "three",
+      "controller": "PPO",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "three",
+      "controller": "SAC",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "fresh_results",
+      "axis": "three",
+      "controller": "TD3",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "calibrated_results",
+      "axis": "single",
+      "controller": "PPO_calibrated",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "calibrated_results",
+      "axis": "single",
+      "controller": "SAC_calibrated",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "calibrated_results",
+      "axis": "single",
+      "controller": "TD3_calibrated",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "calibrated_results",
+      "axis": "three",
+      "controller": "PPO_calibrated",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "calibrated_results",
+      "axis": "three",
+      "controller": "SAC_calibrated",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "calibrated_results",
+      "axis": "three",
+      "controller": "TD3_calibrated",
+      "n_episodes": 540,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "historical_deployment",
+      "axis": "single",
+      "controller": "historical_PPO",
+      "n_episodes": 180,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "historical_deployment",
+      "axis": "three",
+      "controller": "historical_PPO",
+      "n_episodes": 180,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "historical_deployment",
+      "axis": "three",
+      "controller": "historical_SAC",
+      "n_episodes": 180,
+      "max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "section": "historical_deployment",
+      "axis": "three",
+      "controller": "historical_TD3",
+      "n_episodes": 180,
+      "max_difference": 0.0,
+      "passed": true
+    }
+  ]
+}

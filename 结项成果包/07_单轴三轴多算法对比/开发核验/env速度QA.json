@@ -1,0 +1,72 @@
+{
+  "verification_date": "2026-10-12",
+  "scope": "Independent developer physics, VecEnv equivalence and speed verification; no formal test results read",
+  "formal_test_results_read": false,
+  "frozen_environment_training_or_models_modified": false,
+  "python_executable": "D:/Anaconda2024.06-1/python.exe",
+  "physics": {
+    "quaternion_sign_max_error": 0.0,
+    "positive_0_1_rad_x_attitude_body_correction_rad": [-0.1, 0.0, 0.0],
+    "three_batch_vs_prior_rk4": {
+      "random_initial_conditions": 10,
+      "random_steps_per_initial_condition": 30,
+      "max_state_absolute_difference": 5.551115123125783e-16
+    },
+    "torque_free_reference_rk4_10s": {
+      "kinetic_energy_relative_drift": 3.182167904976563e-14,
+      "angular_momentum_norm_relative_drift": 1.7553152621801533e-14
+    },
+    "single_gym_batch_with_identical_noise_stream": {
+      "steps": 100,
+      "state_max_absolute_difference": 2.220446049250313e-16,
+      "observation_max_absolute_difference": 0.0,
+      "reward_max_absolute_difference": 3.1086244689504383e-15,
+      "includes": ["inertia_shift", "bias", "sinusoid", "pulse", "sensor_noise"]
+    }
+  },
+  "vector_training_equivalence": {
+    "n_envs": 8,
+    "vector_steps": 120,
+    "duration_s": 0.095,
+    "terminal_rows_auto_reset": 192,
+    "reference": "DummyVecEnv wrapping ThreeAxisEnv(randomized=True)",
+    "matching": ["reset_observation", "step_observation", "reward_float32", "done", "terminal_observation"],
+    "comparison": "elementwise exact; q and omega absolute tolerance 1e-14",
+    "rng_seed": 110,
+    "actions_seed": 701,
+    "actions_range_normalized": [-1.4, 1.4]
+  },
+  "speed": {
+    "n_envs": 8,
+    "vector_steps": 1200,
+    "environment_interactions": 9600,
+    "action": "zero normalized torque",
+    "randomized": true,
+    "fast_wall_s": 0.4635926999999356,
+    "dummy_wall_s": 5.450188299999354,
+    "environment_step_speedup": 11.756415275736895,
+    "replicates": 1,
+    "limits": "Developer environment-only timing on the same machine; excludes gradient updates, validation, model loading/saving and parallel training contention"
+  },
+  "synthetic_statistics_check": {
+    "input_success_by_seed": [false, true, true],
+    "success_rate": 0.6666666666666666,
+    "seed_sample_std_ddof_1": 0.5773502691896258,
+    "scene_pair_count": 3,
+    "improved_minus_tuned_tail_error_deg": -0.5,
+    "uses_formal_test_data": false
+  },
+  "verification": {
+    "vector_training_pytest_command": "python -m pytest tests/test_vector_training.py -q",
+    "vector_training_tests_passed": 10,
+    "vector_training_pytest_elapsed_s": 5.58,
+    "full_check_command": "python run_multi.py check",
+    "full_tests_passed": 33,
+    "full_pytest_elapsed_s": 8.95,
+    "single_gym_sb3_checker": "passed",
+    "three_gym_sb3_checker": "passed",
+    "algorithm_developer_smokes": ["PPO", "SAC", "TD3"],
+    "smoke_interactions_per_algorithm": 32,
+    "smoke_models_enter_formal_results": false
+  }
+}

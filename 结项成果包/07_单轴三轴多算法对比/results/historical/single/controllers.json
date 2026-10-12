@@ -1,0 +1,11 @@
+[
+  {
+    "controller": "historical_PPO",
+    "model_seed": "unrecorded",
+    "source": "archived_model_deployment",
+    "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\01_遴选原始参考\\05_中期前任务收尾新增材料\\原样工程\\大一立项AI在卫星姿态调整中的应用\\单轴强化学习\\ppo_satellite_final.zip",
+    "model_sha256": "7a36639e5af5fd4efd23a30b53a0dee00555a429b2e8c95515230deac27df952",
+    "actual_training_steps": 200704,
+    "original_action_is_physical_torque": true
+  }
+]

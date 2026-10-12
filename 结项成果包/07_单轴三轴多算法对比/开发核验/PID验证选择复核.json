@@ -1,0 +1,131 @@
+{
+  "selection_split": "validation",
+  "test_read": false,
+  "source_sha256": {
+    "controllers.py": "a971deb369c45401320fa0075585f690b7bd7aa029d4a5b45a1c6f2b718f90d1",
+    "envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "evaluation.py": "de8cd3a3b05b78e3b1584b63ffdeecea1e35c09628489932961703dc99b05053",
+    "metrics.py": "c49c9d1d3912256063b63415628766a023167ab0fa9a330f2813001baf6d94ed",
+    "plotting.py": "68a25a86141e734695ff627347409cab958695650d329237e7b0106fe65349bf",
+    "scenarios.py": "4e72e09cf814ef1af880a91f3982bed361ec43ff208489e2144dfbf4a5c8c4f5",
+    "training.py": "8fe22685e8ee3935fa54bd2ad12040185a8a5378a1b37d04bd87c9e52c41f997",
+    "__init__.py": "e15c925763c9f57f5b8e7abee3cae04039ae4389cba4a025e0aacc287f163117"
+  },
+  "source_change": "Only failed-row padding was changed: after a failure actuator torque and disturbance are zero, state remains frozen. First failure interval still incurs torque cost. Dynamics and every no-failure trajectory are identical.",
+  "axes": {
+    "single": {
+      "candidate_count": 192,
+      "validation_scene_count": 16,
+      "failure_count_across_candidate_scenes": 0,
+      "max_score_difference_after_padding_fix": 0.0,
+      "chosen_gains_unchanged": true,
+      "selected": {
+        "legacy": {
+          "gains": {
+            "kp": 4.0,
+            "ki": 0.0,
+            "kd": 3.0,
+            "alpha": 1.0,
+            "integral_limit": 2.0
+          },
+          "stats": {
+            "success_rate": 0.75,
+            "rms_error_deg": 9.026981770100843,
+            "control_cost": 0.4969444004762096,
+            "score": 65.8736293498039
+          },
+          "failure_count": 0
+        },
+        "tuned": {
+          "gains": {
+            "kp": 2.0,
+            "ki": 0.0,
+            "kd": 5.0,
+            "alpha": 1.0,
+            "integral_limit": 2.0
+          },
+          "stats": {
+            "success_rate": 0.875,
+            "rms_error_deg": 11.118124786316491,
+            "control_cost": 0.16054801838484783,
+            "score": 76.34976561000654
+          },
+          "failure_count": 0
+        },
+        "improved": {
+          "gains": {
+            "kp": 2.0,
+            "ki": 0.0,
+            "kd": 5.0,
+            "alpha": 1.0,
+            "integral_limit": 2.0
+          },
+          "stats": {
+            "success_rate": 0.875,
+            "rms_error_deg": 11.118124786316491,
+            "control_cost": 0.16054801838484783,
+            "score": 76.34976561000654
+          },
+          "failure_count": 0
+        }
+      }
+    },
+    "three": {
+      "candidate_count": 192,
+      "validation_scene_count": 16,
+      "failure_count_across_candidate_scenes": 0,
+      "max_score_difference_after_padding_fix": 0.0,
+      "chosen_gains_unchanged": true,
+      "selected": {
+        "legacy": {
+          "gains": {
+            "kp": 3.0,
+            "ki": 0.5,
+            "kd": 1.0,
+            "alpha": 1.0,
+            "integral_limit": 5.0
+          },
+          "stats": {
+            "success_rate": 0.25,
+            "rms_error_deg": 11.638174920332963,
+            "control_cost": 8.237956983347983,
+            "score": 11.71423368299744
+          },
+          "failure_count": 0
+        },
+        "tuned": {
+          "gains": {
+            "kp": 4.0,
+            "ki": 0.0,
+            "kd": 6.0,
+            "alpha": 1.0,
+            "integral_limit": 5.0
+          },
+          "stats": {
+            "success_rate": 0.875,
+            "rms_error_deg": 11.554029290756333,
+            "control_cost": 1.48952549580684,
+            "score": 75.6480656100823
+          },
+          "failure_count": 0
+        },
+        "improved": {
+          "gains": {
+            "kp": 4.0,
+            "ki": 0.0,
+            "kd": 6.0,
+            "alpha": 0.2,
+            "integral_limit": 5.0
+          },
+          "stats": {
+            "success_rate": 0.875,
+            "rms_error_deg": 11.339495879006186,
+            "control_cost": 2.0253784820804315,
+            "score": 75.75542842457772
+          },
+          "failure_count": 0
+        }
+      }
+    }
+  }
+}
