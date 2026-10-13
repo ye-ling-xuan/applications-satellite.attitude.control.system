@@ -1,0 +1,1096 @@
+                                                Distributed Adaptive Attitude Synchronization of Multiple
+                                                                      Spacecraft ∗
+
+                                                                            Zhongkui Li and Zhisheng Duan
+
+
+                                        Abstract: This paper addresses the distributed attitude synchronization problem of multiple spacecraft
+                                        with unknown inertia matrices. Two distributed adaptive controllers are proposed for the cases with
+                                        and without a virtual leader to which a time-varying reference attitude is assigned. The first controller
+                                        achieves attitude synchronization for a group of spacecraft with a leaderless communication topology
+arXiv:1102.5603v2 [cs.SY] 10 Jun 2011
+
+
+
+
+                                        having a directed spanning tree. The second controller guarantees that all spacecraft track the reference
+                                        attitude if the virtual leader has a directed path to all other spacecraft. Simulation examples are presented
+                                        to illustrate the effectiveness of the results.
+
+                                        Keywords: attitude synchronization, distributed control, adaptive control, multi-agent system.
+
+
+                                        1       Introduction
+                                        In recent years, consensus and cooperative control of multi-vehicle systems have attracted com-
+                                        pelling attention from various scientific communities. A large body of theoretical advances has
+                                        been reported, see [9, 8, 11, 13, 14, 10] and references therein. In the aforementioned works, the
+                                        agent dynamics are restricted to be a single, double integrators or linear systems. The results
+                                        proposed in these papers become quite limited when dealing with the attitude synchronization
+                                        problem of multiple spacecraft, which is more challenging than the consensus of vehicles with
+                                        integrator dynamics, due to the nonlinearity of the attitude dynamics.
+                                           Attitude control of a single rigid body has been extensively studied, e.g., in [22, 20, 2, 23]. A
+                                        leader-follower strategy is proposed in [21] for attitude synchronization of multiple spacecraft.
+                                        Decentralized control laws using the behavioral approach are presented for attitude synchro-
+                                        nization in [15, 7], where the communication topology among spacecraft is assumed to be a
+                                        bidirectional ring. Adaptive consensus protocols are proposed in [3] for multiple manipulators
+                                        with uncertain dynamics. Cooperative attitude control of multiple rigid bodies with a leader-
+                                        follower communication topology is considered in [5]. In [4], contraction analysis theory is used
+                                        to derive attitude synchronization strategies with global exponential convergence for a group
+                                        of spacecraft with a bidirectional communication topology. Distributed control laws without
+                                        velocity measurements are studied for attitude synchronization of multiple spacecraft in [1] by
+                                        use of quaternion representation while in [17] by use of Modified Rodriguez Parameters (MRPs)
+                                        for attitude representation. The results in [1, 17] are applicable to general undirected communi-
+                                        cation topologies. The distributed attitude tracking problem is addressed in [16] for spacecraft
+                                        whose information exchange graph can be simplified to a graph with only one node.
+                                           Motivated by [17, 4, 3], this paper concerns the distributed adaptive attitude synchronization
+                                           Zhongkui Li is with the School of Automation, Beijing Institute of Technology, Beijing 100081, P. R.
+                                            ∗
+
+
+                                        China (E-mail: zhongkli@gmail.com). Zhisheng Duan is with with State Key Lab for Turbulence and
+                                        Complex Systems, Department of Mechanics and Aerospace Engineering, College of Engineering, Peking
+                                        University, Beijing 100871, P. R. China (E-mail: duanzs@pku.edu.cn)
+
+
+                                                                                             1
+problem of a group of spacecraft with unknown inertia matrices. The attitude dynamics are
+represented here by MRPs. Two distributed adaptive controllers are proposed for the cases
+with and without a virtual leader to which a time-varying reference attitude is assigned. The
+first controller achieves attitude synchronization for a group of spacecraft with a leaderless
+communication topology having a directed spanning tree. The second controller guarantees that
+all spacecraft track the reference attitude which is available to only a subset of the spacecraft,
+if the virtual leader has a directed path to all other spacecraft. Differing from the results
+given in [4] which applies only to a bidirectional ring communication topology, and those in [3]
+which requires the communication graph to be undirected, the communication topology among
+the spacecraft is relaxed to a general directed graph in this paper. The results obtained here
+generalize Theorem 4.1 in [17] to the case where the attitude dynamics are uncertain and the
+communication topology is either leaderless or leader-follower. It should be mentioned that all
+the results in this paper are applicable to robotic manipulators with dynamics represented by
+the Euler-Lagrange equation.
+   The rest of this paper is organized as follows. The attitude dynamics and some useful results of
+the graph theory are introduced in Section 2. The distributed adaptive attitude synchronization
+problem for the cases without and with a reference attitude are studied in Sections 3 and 4,
+respectively. Simulation examples are presented to illustrate the theoretical results in Section
+5. Section 6 concludes the paper.
+   The following notation will be used throughout the paper. Rn×n denotes the set of all n × n
+real matrices. IN represents the identity matrix of dimension N . 1 ∈ Rp denotes the vector
+with all entries equal to one. Matrices, if not explicitly stated, are assumed to have compat-
+ible dimensions. kM k represents the induced 2-norm of matrix M ∈ Rn×m . For a vector
+                                                                                               
+                                                                                0    −x3 x2
+                                                                                               
+x = [x1 , x2 , x3 ]T ∈ R3 , the cross-product operator is denoted by S(x) =  x3       0    −x1 .
+                                                                                    −x2 x1            0
+diag(A1 , · · · , An ) represents a block-diagonal matrix with matrices Ai , i = 1, · · · , n, on its diag-
+onal. A ⊗ B denotes the Kronecker product of matrices A and B.
+
+
+2    Preliminaries and Problem Formulation
+This paper considers the attitude synchronization problem of a network of N spacecraft. Mod-
+ified Rodriguez Parameters (MRPs) are used here to represent the attitude of the spacecraft
+with respect to the inertial frame. The MRP vector σi ∈ R3 for the i-th spacecraft is defined by
+σi = êi tan( φ4i ), where êi is the Euler axis and φi is the Euler angle [18]. The attitude dynamics
+of the i-th spacecraft are given by [20]
+
+                                  Ji ω̇i = −S(ωi )Ji ωi + ui ,
+                                                                                                       (1)
+                                     σ̇i = G(σi )ωi ,       i = 1, 2, · · · , N,
+
+
+
+
+                                                        2
+where ωi ∈ R3 denotes the angular velocity in the body-fixed frame, Ji ∈ R3×3 is the inertia
+matrix, ui ∈ R3 is the control torque, and
+                                                                    
+                                    1 1 − σiT σi                   T
+                          G(σi ) =               I3 − S(σi ) + σi σi .
+                                    2      2
+  Following [19, 23], (1) can be rewritten as
+
+                      Hi∗ (σi )σ̈i + Ci∗ (σi , σ̇i )σ̇i = G−T (σi )ui ,          i = 1, 2, · · · , N,      (2)
+
+where
+           Hi∗ (σi ) , G−T (σi )Ji G−1 (σi ),
+        Ci∗ (σi , σ̇i ) , G−T (σi )Ji G−1 (σi )Ġ(σi )G−1 (σi ) − G−T (σi )S(Ji G−1 (σi )σ̇i )G−1 (σi ).
+
+  It is assumed that the inertia matrices Ji , i = 1, 2, · · · , N , are unknown constant positive-
+definite matrices. Under this assumption, the attitude dynamics (2) has the following properties:
+  Property 1. Matrix Hi∗ (σi ) is symmetric and positive definite.
+  Property 2. Matrix Ḣi∗ (σi ) − 2Ci∗ (σi , σ̇i ) is skew symmetric, i.e.,
+
+                               xT (Ḣi∗ (σi ) − 2Ci∗ (σi , σ̇i ))x = 0,         ∀ x ∈ R3 .
+
+  Property 3. The attitude dynamics (2) satisfies the following linear parameterization condi-
+tion:
+                        Hi∗ (σi )ÿ + Ci∗ (σi , σ̇i )ẏ = Y (σi , σ̇i , ẏ, ÿ) θi ,   ∀ y ∈ R3 ,
+where Y ∈ R3×6 is called the regression matrix and
+                                 h                           iT
+                           θi = J11i    i
+                                       J12   i
+                                            J13    i
+                                                 J22  i
+                                                     J23  i
+                                                         J33                                               (3)
+
+is the unknown parameter vector with Jjk         i being the (j, k)-th entry of the inertia matrix J in
+                                                                                                    i
+(1).
+    The communication topology among spacecraft is represented by a directed graph G consisting
+of a node set V = {1, 2, · · · , N } and an edge set E ⊂ V ×V. The node i denotes the i-th spacecraft.
+An edge (i, j) means that spacecraft j can obtain the attitude information of spacecraft i, but
+not conversely. For an edge (i, j) in the directed graph, i is the parent node, j is the child node,
+and j is neighboring to i. A graph with the property that (i, j) ∈ E implies (j, i) ∈ E is said to
+be undirected. A path on G from node i1 to node il is a sequence of ordered edges of the form
+(ik , ik+1 ), k = 1, · · · , l − 1. A directed graph contains a directed spanning tree if there exists a
+node called the root, which has no parent, such that there exists a directed path from this node
+to every other node.
+    The adjacency matrix A ∈ RN ×N of graph G is defined as aii = 0, and aij > 0 if (j, i) ∈ E
+                                                                               P
+but 0 otherwise. The Laplacian matrix L ∈ RN ×N is defined as Lii = j6=i aij , Lij = −aij for
+i 6= j. Given a matrix R = (rij )p×p , the graph of R is the directed graph with p nodes such that
+there is an edge in the graph from node j to node i if and only if rij 6= 0 [6].
+    Lemma 1 [13]. Zero is an eigenvalue of L with 1 as the corresponding right eigenvector and
+all the nonzero eigenvalues have positive real parts. Furthermore, zero is a simple eigenvalue of
+L if and only if the graph has a directed spanning tree.
+
+                                                             3
+3     Distributed Adaptive Attitude Synchronization
+This section considers the distributed adaptive attitude synchronization problem of (1) whose
+communication topology is represented by a leaderless directed graph G. A graph is leader-
+less, if each node in this graph has at least one parent. Before moving forward, the attitude
+synchronization problem is first defined.
+    Definition 1. The distributed adaptive attitude synchronization problem is said to be solved,
+if the control laws ui , i = 1, 2, · · · , N , are designed by using only local information of neighboring
+spacecraft such that the attitudes of (1) satisfy limt→∞ kσi − σj k = 0, limt→∞ kσ̇i − σ̇j k = 0,
+i, j = 1, 2, · · · , N .
+    At each time instant, the attitude information of other spacecraft available to spacecraft i is
+given by                                    PN
+                                       d        j=1 aij σj
+                                    σi , PN                , i = 1, 2, · · · , N,                      (4)
+                                                 j=1 aij
+
+where A = (aij )N ×N is the adjacency matrix of the communication graph G.
+    To quantify whether the attitude synchronization is achieved or not, a synchronization error
+ei (t) is defined as follows:
+                                 ei , σi − σid , i = 1, 2, · · · , N.                        (5)
+
+In addition, further define a filtered synchronization error si (t) as
+
+                                          si , ėi + Λi ei ,        i = 1, 2, · · · , N,                                     (6)
+
+where Λi ∈ R3×3 , i = 1, 2, · · · , N, are constant positive-definite matrices.
+   In light of (2), (4), (5), and (6), it can be obtained that vector si evolves according to the
+following dynamics:
+
+Hi∗ (σi )ṡi + Ci∗ (σi , σ̇i )si = G−T (σi )ui − Hi∗ (σi )(σ̈id − Λi ėi ) − Ci∗ (σi , σ̇i )(σ̇id − Λi ei ), i = 1, 2, · · · , N.
+                                                                                                                              (7)
+By Property 3, the right side of the above equation can be written into a linear combination of
+the inertia vector θi , which is defined in (3). To the end, introduce a linear operator L(a) for
+vector a = [a1 , a2 , a3 ]T as
+                                                                                  
+                                                 a1 a2 a3 0 0 0
+                                                                                  
+                                       L(a) =  0 a1 0 a2 a3 0  ,
+                                                     0     0     a1      0    a2 a3
+
+and a linear operator F (x, v) for vectors x = [x1 , x2 , x2 ]T , v = [v1 , v2 , v3 ]T as
+                                                                                     
+                       0        x 1 v3        −x1 v2     x2 v3 −x2 v2 + x3 v3 −x3 v2
+                                                                                     
+         F (x, v) = −x1 v3    −x2 v3      x1 v1 − x3 v3   0       x2 v1       x 3 v1  .
+                      x1 v2 −x1 v1 + x2 v2     x 3 v2    −x2 v1   −x3 v1         0
+
+It can be verified that operators L(s) and F (x, v) satisfy
+
+                                       Ji a = L(a)θi ,         S(Ji x)v = F (x, v)θi .                                       (8)
+
+
+                                                                4
+Therefore, by using (8), (7) can be written as
+
+ Hi∗ (σi )ṡi + Ci∗ (σi , σ̇i )si = G−T (σi )ui − Yi (σi , σ̇i , σ̇id − Λi ei , σ̈id − Λi ėi ) θi ,    i = 1, 2, · · · , N, (9)
+
+where
+                                                           
+  Yi (σi , σ̇i , σ̇id − Λi ei , σ̈id − Λi ėi ) = G−T (σi ) L(G−1 (σi )(σ̈id − Λi ėi )) + L(G−1 (σi )(σ̇id − Λi ei ))
+                                                                                                                     
+                                                                       + F (G−1 (σi )σ̇i , G−1 (σi )(σ̇id − Λi ei ))
+
+  Since the inertia parameter θi is unknown, its estimate θ̂i is used instead to construct the
+controller ui to spacecraft i as follows:
+                                                                                  
+            ui = GT (σi ) Yi (σi , σ̇i , σ̇id − Λi ei , σ̈id − Λi ėi ) θ̂i − Ki si , i = 1, 2, · · · , N, (10)
+
+where Ki ∈ R3×3 , i = 1, 2, · · · , N, are positive definite. The parameter estimate vector θ̂i is
+generated by the following adaptive updating law:
+                        ˙
+                       θ̂i = −Γi YiT (σi , σ̇i , σ̇id − Λi ei , σ̈id − Λi ėi )si ,   i = 1, 2, · · · , N,                  (11)
+
+where Γi ∈ R6×6 , i = 1, 2, · · · , N, are positive-definite diagonal matrices.
+  Define the estimation errors θ̃i = θi − θ̂i , i = 1, 2, · · · , N . Then, substituting (10), (11) into
+(9) gives
+
+   Hi∗ (σi )ṡi + Ci∗ (σi , σ̇i )si = −Yi (σi , σ̇i , σ̇id − Λi ei , σ̈id − Λi ėi ) θ̃i − Ki si ,   i = 1, 2, · · · , N.   (12)
+
+  Theorem 1. If the leaderless communication graph G has a directed spanning tree, then
+distributed controllers (10) and adaptive updating laws (11) solves the attitude synchronization
+problem for (1).
+                                                                      T ]T . Then, (5) can be written as
+   Proof. Let e(t) = [eT1 , · · · , eTN ]T and σ(t) = [σ1T , · · · , σN
+
+                                                          e = M Lσ,                                                         (13)
+                                                                           P                   PN
+where L is the Laplacian matrix associated with graph G, and M = diag( N     j=1 a1j , · · · ,  j=1 aN j ).
+Since graph G is leaderless and has a directed spanning tree, one obtains 1) there exists at least
+one nonzero entry for each row of the adjacency matrix A, thus matrix M is positive definite;
+2) the Laplacian matrix L has a simple eigenvalue 0 with 1 as the corresponding eigenvector,
+and the other eigenvalues have positive real parts. Then, it follows from (13) that e = 0 if and
+only if σ1 = σ2 = · · · = σN . That is, the attitude synchronization problem is solved if and only
+if e(t) → 0, ė(t) → 0, as t → ∞.
+   Consider the following Lyapunov function candidate
+                                         N                  N
+                                                                        !
+                                     1 X T ∗                X
+                                                                T −1
+                             V (t) =        si Hi (σi )si +   θ̃i Γi θ̃i .                         (14)
+                                     2
+                                                   i=1                      i=1
+
+
+
+
+                                                                 5
+By (12), (11), and Property 2, the time derivative of V (t) is
+                 N
+                 X                                                 N
+                                                                     X  ˙
+      V̇ (t) =         sTi       Ḣi∗ (σi )si + Hi∗ (σi )ṡi       +   θ̃iT Γ−1
+                                                                             i θ̃i
+                 i=1                                                 i=1
+                 XN                                                                                                   
+            =          sTi Ḣi∗ (σi )si − Ci∗ (σi , σ̇i ) − Yi (σi , σ̇i , σ̇id − Λi ei , σ̈id − Λi ėi )θ̃i − Ki si
+                 i=1
+                   XN
+                            ˙
+                 −         θ̂iT Γ−1
+                                 i θ̃i                                                                                     (15)
+                     i=1
+                     XN                                                                                      
+                                                                                      ˙
+            =−                sTi Yi (σi , σ̇i , σ̇id − Λi ei , σ̈id − Λi ėi )θ̃i + θ̂iT Γ−1       T
+                                                                                           i θ̃i + si Ki si
+                     i=1
+                     N
+                     X
+            =−               sTi Ki si ≤ 0.
+                     i=1
+
+   Let S = {(σi , si , θ̃i )|V̇ = 0}. Note that V̇ = 0 implies that si = 0, i = 1, 2, · · · , N . By
+LaSalle’s invariance principle [19], it follows from that si → 0, i = 1, 2, · · · , N , as t → ∞, which
+by (6) in turn shows that e(t) → 0, ė(t) → 0, as t → ∞, i.e, attitude synchronization is achieved.
+
+   Remark 1. It should be noted that the controller (10) to spacecraft i depends only on
+its own attitude vectors σi , σ̇i , σ̈i , and the attitudes of its neighboring spacecraft, therefore
+is distributed. Theorem 1 gives a sufficient condition for achieving attitude synchronization.
+However, it is generally quite hard to expressly derive the final synchronized attitude value,
+which depends on the initial attitudes of the N spacecraft, matrices Λi , Ki , i = 1, 2, · · · , N , and
+the communication topology G.
+
+
+4    Distributed Adaptive Attitude Tracking
+Different from the leaderless communication graph discussed as in the above section, the space-
+craft’ attitudes may be desired to follow a given time-varying reference attitude σ r in certain
+circumstance. It is supposed that σ r is available to only a subgroup of the spacecraft, other-
+wise cooperation between neighboring spacecraft by exchanging attitude information become
+not so necessary. Assume that σ r , σ̇ r , and σ̇ r are all bounded. For this case, the attitude
+synchronization problem is called attitude tracking problem in [4, 17], which is formulated as
+follows.
+   Definition 2. The distributed adaptive attitude tracking problem is said to be solved, if the
+local control laws ui , i = 1, 2, · · · , N , are designed for (1) such that limt→∞ kσi − σ r k = 0,
+limt→∞ kσ̇i − σ̇ r k = 0, i = 1, 2, · · · , N .
+   Take the reference attitude σ r as the attitude of a virtual leader, labeled as spacecraft N + 1.
+Since the virtual leader does not obtain any information from the N spacecraft, the communi-
+cation topology among these N + 1 spacecraft (the N spacecraft and the virtual leader) is in
+the leader-follower form.
+
+
+
+                                                                      6
+  Assume that the communication topology among the N spacecraft is still denoted by G. The
+attitude information of other spacecraft available to spacecraft i is given by
+                              PN                        r
+                         d      j=1 aij σj + ai(N +1) σ
+                       σf i , PN                          , i = 1, 2, · · · , N,       (16)
+                                  j=1 aij + ai(N +1)
+
+where A = (aij )N ×N is the adjacent matrix of G, ai(N +1) > 0, i = 1, · · · , N , if spacecraft i
+has access to the virtual leader and ai(N +1) = 0 otherwise. Similar to the above section, a
+synchronization error ef i (t) is defined as follows:
+
+                                            ėf i = σf i − σfdi ,        i = 1, 2, · · · , N.                          (17)
+
+Correspondingly, the filtered synchronization errors sf i is defined as
+
+                                                          b i ef i ,
+                                           sf i , ėf i + Λ               i = 1, 2, · · · , N,                         (18)
+
+where matrices Λ  b i ∈ R3×3 , i = 1, 2, · · · , N, are positive definite. By (2), (16), (17), and Property
+3, vector sf i satisfies the following dynamics:
+
+                                                                                              b i ėf i ) θi ,
+                                                                            b i ef i , σ̈ d − Λ
+Hi∗ (σi )ṡf i + Ci∗ (σi , σ̇i )sf i = G−T (σi )ui − Yi (σi , σ̇i , σ̇fdi − Λ                           i = 1, 2, · · · , N.
+                                                                                         fi
+                                                                                                                        (19)
+   The distributed controllers ui , i = 1, 2, · · · , N, to the N spacecraft are proposed as
+                                                                                       
+                                                            b i ėf i ) θ̂f i − K
+                                          b i ef i , σ̈ d − Λ
+           ui = GT Yi (σi , σ̇i , σ̇fdi − Λ                                     b i sf i , i = 1, 2, · · · , N,         (20)
+                                                       fi
+
+
+where Kb i ∈ R3×3 , i = 1, 2, · · · , N, are positive definite and θ̂f i is the estimate of θi , generated
+by the following adaptive updating law:
+                      ˙                                  b i ef i , σ̈ d − Λ
+                              b i Y T (σi , σ̇i , σ̇ d − Λ                 b i ėf i )sf i ,
+                     θ̂f i = −Γ    i                fi                fi                        i = 1, 2, · · · , N,   (21)
+
+where Γb i ∈ R6×6 , i = 1, 2, · · · , N, are positive-definite diagonal matrices.
+                                                                                   "       #
+                                                                                     A   b
+   Theorem 2. Denote by GbN +1 the directed graph of matrix AN +1 =                         , where b =
+                                                                                     0 0
+[a1(N +1) , · · · , aN (N +1) ]T . If graph GbN +1 has a spanning tree with node N + 1 as the root, then
+distributed controllers (20) and adaptive updating laws (21) solve the attitude tracking problem
+for the N spacecraft in (1).
+                                                    T , σT
+   Proof. Let σN +1 , σ r , σ̂(t) = [σ1T , · · · , σN          T                  T             T       T
+                                                         N +1 ] , and ef (t) = [ef 1 , · · · , ef N , 0] . Then,
+(17) can be written as
+                                                ef = M    b
+                                                       cLσ̂,                                                (22)
+
+where Mc = diag(PN a1j , · · · , PN aN j , 1), and Lb = (Lbij )(N +1)×(N +1) is the Laplacian matrix
+                       j=1           j=1
+          b defined as Lbii = PN +1 aij , Lbij = −aij (j 6= i), ∀ i ∈ {1, 2, · · · , N }, and Lb(N +1)j = 0,
+of graph G,                      j=1
+∀ j ∈ {1, 2, · · · , N + 1}. Under the assumption of the theorem, matrix M           c is positive definite
+and 0 is a simple eigenvalue of matrix Lb with 1 as the corresponding eigenvector, implying that
+ef = 0 if and only if σ1 = σ2 = · · · = σN = σ r . That is, the distributed attitude tracking
+problem is solved if and only if ef (t) → 0, ėf (t) → 0, as t → ∞.
+
+
+                                                                     7
+    Consider the following Lyapunov function candidate
+                                   N                             N
+                                                                                                 !
+                             1     X                             X
+                    Vb (t) =              sTfi Hi∗ (σi )sf i +                  T b −1
+                                                                   (θi − θ̂f i ) Γi (θi − θ̂f i ) .     (23)
+                             2
+                                    i=1                          i=1
+
+The time derivative of Vb (t) can be obtained as
+                               N
+                               X                                       XN
+                                                                             ˙ b −1
+                   Vḃ (t) =       sTfi Ḣi∗ (σi )sf i + Hi∗ (σi )ṡf i −   θ̂fTi Γ i (θi − θ̂f i )
+                               i=1                                            i=1
+                                                                                                        (24)
+                                 XN
+                         =−                 b i sf i .
+                                       sTfi K
+                                 i=1
+
+
+    Since Vb (t) ≥ 0, Vḃ (t) ≤ 0, Vb (t) remains bounded, which by (23) implies that sf i , θ̃f i , i =
+1, 2, · · · , N , are bounded. By using standard signal chasing arguments, it is easy to show that
+                                                                  P
+ṡf i , i = 1, 2, · · · , N , are bounded. Therefore, Vb̈ (t) = −2 N      T b
+                                                                    i=1 ṡf i Ki sf i is bounded. In light of
+Barbalat’s lemma [19], Vḃ (t) → 0, as t → ∞. Thus, si → 0, i = 1, 2, · · · , N , as t → ∞, which by
+(17) shows that ef (t) → 0, ėf (t) → 0, as t → ∞, i.e, the distributed attitude tracking problem
+is solved.                                                                                      
+   Remark 2. Theorems 1 and 2 present sufficient conditions for the adaptive attitude syn-
+chronization of multiple spacecraft having general directed communications in the presence of
+unknown inertia matrices, for both the cases with and without a reference attitude. By contrast,
+the results given in [4] are applicable only to a bidirectional ring communication topology, and
+the result in [3] requires the communication graph to be undirected. Theorems 1 and 2 gen-
+eralize Theorem 4.1 in [17] to the case where the attitude dynamics (1) are uncertain and the
+communication topology is either leaderless or leader-follower. It should be noted that different
+from Theorem 1, Barbalat’s lemma is utilized to derive Theorem 2, due to the fact that the
+time-varying reference attitude σ r may render the closed-loop system nonautonomous.
+
+
+5     Numerical Examples
+In this section, the effectiveness of the proposed control laws is illustrated through numerical
+simulations.
+
+                                                         1             6
+
+
+
+
+                                              2                               5
+
+
+
+
+                                                         3             4
+
+
+
+
+                                 Figure 1: The communication topology.
+
+
+
+                                                             8
+   Consider a group of six spacecraft, whose inertia matrices are shown in Table 1 [15]. The
+initial attitude states σi (0), ωi (0), i = 1, 2, · · · , 6, are chosen randomly. The communication
+topology is given by Fig. 1, so the corresponding adjacency matrix is
+                                                                  
+                                            0 0 0 1 1 1
+                                                                  
+                                           1 0 0 0 0 0
+                                                                  
+                                           1 1 0 0 0 0
+                                                                  
+                                       A=                         .
+                                           1 0 0 0 0 0
+                                                                  
+                                           0 0 0 1 0 0
+                                                                  
+                                            0 0 0 0 1 0
+
+For (10) and (20), take matrices Λi = Λ  b i = I3 , Ki = Kb i = 3I3 , Γi = Γ b i = 3I6 , i = 1, 2, · · · , 6. The
+parameter estimates θ̂i and θ̂f i are initialized to be zero, i.e., θ̂i (0) = 0, θ̂f i (0) = 0, i = 1, 2, · · · , 6,
+in (11), (21). For simplicity, let the reference attitude σ r = [0.1, 0.3, 0.5]T . Suppose that σ r is
+available only to spacecraft 1. In this case, a17 = 1, ai7 = 0, i = 2, · · · , 6.
+
+                        J1         [1, 0.1, 0.1; 0.1, 0.1, 0.1; 0.1, 0.1, 0.9] kgm2
+                        J2         [1.5, 0.2, 0.3; 0.2, 0.9, 0.4; 0.3, 0.4, 2.0] kgm2
+                        J3         [0.8, 0.1, 0.2; 0.1, 0.7, 0.3; 0.2, 0.3, 1.1] kgm2
+                        J4         [1.2, 0.3, 0.7; 0.3, 0.9, 0.2; 0.7, 0.2, 1.4] kgm2
+                        J5         [0.9, 0.15, 0.3; 0.15, 1.2, 0.4; 0.3, 0.4, 1.2] kgm2
+                        J6         [1.1, 0.35, 0.45; 0.35, 1.0, 0.5; 0.45, 0.5, 1.3] kgm2
+
+                                     Table 1: Spacecraft specifications.
+
+  Figs. 2(a), 2(b), and 2(c) depict, respectively, the attitudes, angular velocities, and control
+torques of the six spacecraft with (10) and (11), from which it can be observed that attitude
+synchronization is indeed achieved. The parameter estimates θ̂i , i = 1, 2, · · · , 6, are shown in
+Fig. 3. Figs. 4(a), 4(b), 4(c), and 5 depict, respectively, the attitudes, angular velocities, control
+torques, and the parameter estimates θ̂f i , i = 1, 2, · · · , 6, of the six spacecraft with (20) and
+(21).
+
+
+6     Conclusions
+This paper has addressed the distributed adaptive attitude synchronization problem of a group
+of spacecraft with unknown inertia matrices. Two distributed adaptive controllers have been
+proposed for the cases with and without a virtual leader to which a time-varying reference atti-
+tude is assigned. The first controller achieves attitude synchronization for a group of spacecraft
+with a leaderless communication topology having a directed spanning tree. The second controller
+guarantees that all spacecraft track the reference attitude if the virtual leader has a directed
+path to all other spacecraft. This paper has extended some existing results in the literature.
+An interesting topic for future research is the distributed adaptive attitude synchronization of
+multiple spacecraft without velocity measurements.
+
+
+
+                                                         9
+         2                                                                       0.5
+
+
+
+
+                                                                  (1)
+  (1)
+
+
+         0                                                                        0
+
+
+
+
+                                                                  j
+  j
+
+
+
+
+                                                                  ω
+  σ
+
+
+
+
+        −2                                                                 −0.5
+              0   10         20           30     40     50                             0   10          20           30    40   50
+                                  t (s)                                                                     t (s)
+        0.5                                                                       1
+
+
+
+
+                                                                       (rad/s)
+ (2)
+
+
+
+
+         0                                                                        0
+ j
+ σ
+
+
+
+
+                                                                   (2)
+                                                                   j
+                                                                   ω
+       −0.5                                                                      −1
+              0   10         20           30     40     50                             0   10          20           30    40   50
+                                  t (s)                                                                     t (s)
+         2                                                                       0.5
+
+
+
+
+                                                                  (3)
+  (3)
+
+
+
+
+         0                                                                        0
+
+
+
+
+                                                                  j
+  j
+
+
+
+
+                                                                  ω
+  σ
+
+
+
+
+        −2                                                                 −0.5
+              0   10         20           30     40     50                             0   10          20           30    40   50
+                                  t (s)                                                                     t (s)
+
+
+
+
+                          (a) Attitudes                                                         (b) Angular velocities
+
+
+        0.5
+ (1)
+
+
+
+
+         0
+ j
+ τ
+
+
+
+
+       −0.5
+              0   10         20           30     40     50
+                                  t (s)
+         1
+  (2)
+
+
+
+
+         0
+  j
+  τ
+
+
+
+
+        −1
+              0   10         20           30     40     50
+                                  t (s)
+        0.5
+ (3)
+
+
+
+
+         0
+ j
+ τ
+
+
+
+
+       −0.5
+              0   10         20           30     40     50
+                                  t (s)
+
+
+
+
+                       (c) Control torques
+
+
+Figure 2: Attitudes, angular velocities, and control torques of (1) with controller (10) and
+adaptive law (11).
+
+
+         1                                                                        1
+  (1)
+
+
+
+
+                                                                   (4)
+
+
+
+
+         0                                                                       0.5
+  j
+
+
+
+
+                                                                   j
+  θ
+
+
+
+
+                                                                   θ
+
+
+
+
+        −1                                                                        0
+              0   10         20           30     40     50                             0   10          20           30    40   50
+                                   t                                                                        t (s)
+        0.5                                                                      0.5
+ (2)
+
+
+
+
+                                                                  (5)
+
+
+
+
+         0                                                                        0
+ j
+
+
+
+
+                                                                  j
+ θ
+
+
+
+
+                                                                  θ
+
+
+
+
+       −0.5                                                                −0.5
+              0   10         20           30     40     50                             0   10          20           30    40   50
+                                  t (s)                                                                     t (s)
+        0.5                                                                       1
+ (3)
+
+
+
+
+                                                                   (6)
+
+
+
+
+         0                                                                       0.5
+ j
+
+
+
+
+                                                                   j
+ θ
+
+
+
+
+                                                                   θ
+
+
+
+
+       −0.5                                                                       0
+              0   10         20           30     40     50                             0   10          20           30    40   50
+                                  t (s)                                                                     t (s)
+
+
+
+
+                        (a) θ̂i , i = 1, 2, 3                                                     (b) θ̂i , i = 4, 5, 6
+
+                                          Figure 3: Parameter estimates of (11).
+
+
+                                                             10
+        0.5                                                                   0.5
+
+
+
+
+                                                               (1)
+ (1)
+
+
+
+         0                                                                     0
+
+
+
+
+                                                               j
+ j
+
+
+
+
+                                                               ω
+  σ
+
+
+
+
+       −0.5                                                                  −0.5
+              0   50          100            150    200                             0   50              100            150   200
+                              t (s)                                                                     t (s)
+         1                                                                    0.5
+
+
+
+
+                                                                   (rad/s)
+  (2)
+
+
+
+
+         0                                                                     0
+  j
+   σ
+
+
+
+
+                                                               (2)
+                                                               j
+                                                               ω
+        −1                                                                   −0.5
+              0   50          100            150    200                             0   50              100            150   200
+                              t (s)                                                                     t (s)
+         1                                                                     1
+
+
+
+
+                                                                    (3)
+  (3)
+
+
+
+
+         0                                                                     0
+
+
+
+
+                                                                    j
+  j
+
+
+
+
+                                                                    ω
+   σ
+
+
+
+
+        −1                                                                    −1
+              0   50          100            150    200                             0   50              100            150   200
+                              t (s)                                                                     t (s)
+
+
+
+
+                       (a) Attitudes                                                    (b) Angular velocities
+
+
+        0.5
+ (1)
+
+
+
+
+         0
+ j
+  τ
+
+
+
+
+       −0.5
+              0   50          100            150    200
+                              t (s)
+        0.5
+ (2)
+
+
+
+
+         0
+ j
+  τ
+
+
+
+
+       −0.5
+              0   50          100            150    200
+                              t (s)
+        0.5
+ (3)
+
+
+
+
+         0
+ j
+  τ
+
+
+
+
+       −0.5
+              0   50          100            150    200
+                              t (s)
+
+
+
+
+                  (c) Control torques
+
+
+Figure 4: Attitudes, angular velocity, and control torques of (1) with controller (20) and adaptive
+law (21).
+
+
+         1                                                                     1
+  (1)
+
+
+
+
+                                                                    (4)
+
+
+
+
+         0                                                                     0
+  j
+
+
+
+
+                                                                    j
+   θ
+
+
+
+
+                                                                    θ
+
+
+
+
+        −1                                                                    −1
+              0   50          100            150    200                             0   50              100            150   200
+                               t                                                                        t (s)
+         1                                                                     1
+  (2)
+
+
+
+
+                                                                    (5)
+
+
+
+
+         0                                                                     0
+  j
+
+
+
+
+                                                                    j
+   θ
+
+
+
+
+                                                                    θ
+
+
+
+
+        −1                                                                    −1
+              0   50          100            150    200                             0   50              100            150   200
+                              t (s)                                                                     t (s)
+         1                                                                     1
+  (3)
+
+
+
+
+                                                                    (6)
+
+
+
+
+         0                                                                     0
+  j
+
+
+
+
+                                                                    j
+   θ
+
+
+
+
+                                                                    θ
+
+
+
+
+        −1                                                                    −1
+              0   50          100            150    200                             0   50              100            150   200
+                              t (s)                                                                     t (s)
+
+
+
+
+                   (a) θ̂f i , i = 1, 2, 3                                                   (b) θ̂f i , i = 4, 5, 6
+
+                                      Figure 5: Parameter estimates of (21).
+
+
+                                                          11
+References
+ [1] A. Abdessameud and A. Tayebi, “Attitude synchronization of a group of spacecraft without
+     velocity measurements,” IEEE Transactions on Automatic Control, vol. 54, no. 11, pp.
+     2642-2648, 2009.
+
+ [2] M. R. Akella, “Rigid body attitude tracking without angular velocity feedback,” Systems
+     and Control Letters, vol. 42, no. 4, pp. 321-326, 2001.
+
+ [3] L. Cheng, Z. G. Hou, and M. Tan, “Decentralized adaptive consensus control for multi-
+     manipulator system with uncertain dynamics,” in Proceedings of IEEE International Con-
+     ference on Systems, Man, and Cybernetics 2008, pp. 2712-2717.
+
+ [4] S. J. Chung, U. Ahsun, and J.-J. E. Slotine, “Application of synchronization to formation
+     flying spacecraft: Lagrangian approach,” Journal of Guidance, Control, and Dynamics, vol.
+     32, no. 2, pp. 512-526, 2009.
+
+ [5] D. V. Dimarogonas, P. Tsiotras, and K. J. Kyriakopoulos, “Leader-follower cooperative
+     attitude control of multiple rigid bodies,” Systems and Control Letters, vol. 58, no. 6, pp.
+     429-435, 2009.
+
+ [6] R. A. Horn and C. R. Johnson, Matrix Analysis. Cambridge, UK: Cambridge University
+     Press, 1985.
+
+ [7] J. R. Lawton and R. W. Beard, “Synchronize multiple spacecraft rotations,” Automatica,
+     vol. 38, no. 8, pp. 1359-1364, 2002.
+
+ [8] Z. K. Li, Z. S. Duan, and L. Huang, “H∞ control of networked multi-agent systems,”
+     Journal of Systems Science and Complexity, vol. 22, no. 1, pp. 35-48, 2009.
+
+ [9] Z. K. Li, Z. S. Duan, G. R. Chen, and L. Huang, “Consensus of multiagent systems and
+     synchronization of complex networks: A unified viewpoint,” IEEE Transactions on Circuits
+     and Systems I: Regular Papers, vol. 57, no. 1, pp. 213-224, 2010.
+
+[10] P. Lin and Y. Jia, “Distributed robust H∞ consensus control in directed networks of agents
+     with time-delay,” Systems and Control Letters, vol. 57, no. 8, pp. 643–653, 2008.
+
+[11] R. Olfati-Saber and R. M. Murray, “Consensus problems in networks of agents with switch-
+     ing topology and time-delays,” IEEE Transactions on Automatic Control, vol. 49, no. 9,
+     pp. 1520–1533, 2004.
+
+[12] W. Ren and R. W. Beard, “Decentralized scheme for spacecraft formation flying via the
+     virtual structure approach,” Journal of Guidance, Control, and Dynamics, vol. 27, no. 1,
+     pp. 73-82, 2004.
+
+[13] W. Ren and R. W. Beard, “Consensus seeking in multiagent systems under dynamically
+     changing interaction topologies,” IEEE Transactions on Automatic Control, vol. 50, no. 5,
+     pp. 655-661, 2005.
+
+                                               12
+[14] W. Ren, R. W. Beard, and E. M. Atkins. “Information consensus in multivehicle cooperative
+     control,” IEEE Control Systems Magazine, vol. 27, no. 2, pp. 71-82, 2007.
+
+[15] W. Ren, “Distributed attitude alignment in spacecraft formation flying,” International
+     Journal of Adaptive Control and Signal Processing, vol. 21, no. 2-3, pp. 95-113, 2007.
+
+[16] W. Ren, “Formation keeping and attitude alignment for multiple spacecraft through local
+     interactions, Journal of Guidance, Control, and Dynamics, vol. 30, no. 2, pp. 633-638, 2007.
+
+[17] W. Ren, “Distributed cooperative attitude synchronization and tracking for multiple rigid
+     bodies,” IEEE Transactions on Control Systems Technology, vol. 18, no. 2, pp. 383-392,
+     2010.
+
+[18] M. D. Shuster, “A survey of attitude representation,” Journal of Astronautical Sciences,
+     vol. 41, no. 4, pp. 439-517, 1993.
+
+[19] J.-J. E. Slotine and W. Li, Applied Nonlinear Control. Englewood Cliffs, New Jersey: Pren-
+     tice Hall, 1991.
+
+[20] P. Tsiotras, “Further passivity results for the attitude control problem,” IEEE Transactions
+     on Automatic Control, vol. 43, no. 11, pp. 1597-1600, 1998.
+
+[21] P. Wang, F. Y. Hadaegh, and K. Lau, “Synchronized formation rotation and attitude control
+     of multiple free-flying spacecraft,” Journal of Guidance, Control, and Dynamics, vol. 22,
+     no. 1, pp. 1582-1589, 1999.
+
+[22] J. T.-Y. Wen and K. Kreutz-Delgado, “The attitude control problem,” IEEE Transactions
+     on Automatic Control, vol. 36, no. 10, pp. 1148-1162, 1991.
+
+[23] H. Wong, M. S. de Queiroz, and V. Kapila, “Adaptive tracking control using synthesized
+     velocity from attitude measurements,” Automatica, vol. 37, no. 6, pp. 947-953, 2001.
+
+
+
+
+                                               13
+

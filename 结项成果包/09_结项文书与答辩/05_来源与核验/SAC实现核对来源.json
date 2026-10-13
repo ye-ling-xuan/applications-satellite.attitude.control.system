@@ -1,0 +1,8 @@
+{
+  "url": "https://raw.githubusercontent.com/DLR-RM/stable-baselines3/v2.7.1/stable_baselines3/sac/sac.py",
+  "version": "2.7.1",
+  "retrieved_date": "2026-10-13",
+  "sha256": "a8606c1c55404f3aa16a4346b2bf0b69321d59818f0018cc73426710de19e236",
+  "claim": "SB3 SAC two critics target Q and alpha log optimization; no separate V network",
+  "used_to_audit_not_edit_review": true
+}

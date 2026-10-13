@@ -1,0 +1,27 @@
+{
+  "timesteps": 1000000,
+  "raw": {
+    "timesteps": 1000000,
+    "zero_action_normalized": "[-0.5223150253295898, 0.7816259860992432, 0.35741281509399414]",
+    "validation_scene_count": 20,
+    "success_rate": 0.0,
+    "rms_error_deg": 11.333429658957218,
+    "control_cost": 3.410611430554153,
+    "score": -12.015551945068049
+  },
+  "calibrated": {
+    "timesteps": 1000000,
+    "zero_action_normalized": "[-0.5223150253295898, 0.7816259860992432, 0.35741281509399414]",
+    "validation_scene_count": 20,
+    "success_rate": 0.0,
+    "rms_error_deg": 18.922005464214596,
+    "control_cost": 2.995441895486904,
+    "score": -19.521093843311977
+  },
+  "zero_action_normalized": [
+    -0.5223150253295898,
+    0.7816259860992432,
+    0.35741281509399414
+  ],
+  "model_sha256": "d6342848e3256b054108be5763a166067891a84d07d32094931b4dd987b76de4"
+}

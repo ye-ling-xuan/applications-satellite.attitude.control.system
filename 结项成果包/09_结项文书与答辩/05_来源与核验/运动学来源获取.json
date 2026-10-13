@@ -1,0 +1,13 @@
+{
+  "id": "R04",
+  "label": "Basilisk rigid body kinematics official API",
+  "requested_url": "https://hanspeterschaub.info/basilisk/Documentation/utilities/RigidBodyKinematics.html",
+  "retrieved_date": "2026-10-13",
+  "status": 200,
+  "resolved_url": "https://hanspeterschaub.info/basilisk/Documentation/utilities/RigidBodyKinematics.html",
+  "content_type": "text/html",
+  "cache_file": "文献缓存\\R04.html",
+  "sha256": "f9528009cf39053859ae7f5ae65f18c5a98d392d8fbbf1ff247b88e2f94b8f34",
+  "bytes": 247234,
+  "verified": true
+}

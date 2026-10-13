@@ -1,0 +1,56 @@
+{
+  "path": "09_结项文书与答辩\\07_演示视频\\卫星姿态控制结项演示.mp4",
+  "bytes": 712764,
+  "sha256": "efa41ac494a1b95ab913a166639a3d50ebdf66cf08c78f4ca1e0499a4e183229",
+  "fps": 10,
+  "frames": 900,
+  "duration_s": 90.0,
+  "resolution": [
+    1280,
+    720
+  ],
+  "audio": false,
+  "captions_burned_in": true,
+  "fixed_representative": {
+    "rho": 1.4,
+    "sample_id": 0,
+    "seed": 11,
+    "axes": [
+      "single",
+      "three"
+    ]
+  },
+  "visual_review": "passed",
+  "visual_review_evidence": "09_结项文书与答辩/07_演示视频/视频核验记录.json",
+  "decode_validation": {
+    "status": "passed",
+    "exit_code": 0,
+    "frames": 900,
+    "decoded_time_s": 90.0,
+    "duration_s": 90.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "fps": 10.0,
+    "audio_stream_present": false,
+    "strict_decode_flags": [
+      "-xerror",
+      "-err_detect",
+      "explode"
+    ],
+    "elapsed_s": 0.256,
+    "stdout": "tmp/artifacts/video_review/full_decode_stdout.txt",
+    "stderr": "tmp/artifacts/video_review/full_decode_stderr.txt"
+  },
+  "representative_frames_reviewed": [
+    1,
+    100,
+    300,
+    500,
+    700,
+    850
+  ],
+  "actual_mp4_frames_reviewed": true,
+  "video_sha256_rechecked": true
+}

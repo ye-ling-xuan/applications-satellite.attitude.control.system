@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ScIc+sS4DRuM8uNcDv7mOz4+n0Y</id>
+  <title>arXiv Query: search_query=&amp;id_list=1102.5603&amp;start=0&amp;max_results=10</title>
+  <updated>2026-10-12T18:20:50Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=1102.5603" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1102.5603v2</id>
+    <title>Distributed Adaptive Attitude Synchronization of Multiple Spacecraft</title>
+    <updated>2011-06-10T05:24:52Z</updated>
+    <link href="https://arxiv.org/abs/1102.5603v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1102.5603v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper addresses the distributed attitude synchronization problem of multiple spacecraft with unknown inertia matrices. Two distributed adaptive controllers are proposed for the cases with and without a virtual leader to which a time-varying reference attitude is assigned. The first controller achieves attitude synchronization for a group of spacecraft with a leaderless communication topology having a directed spanning tree. The second controller guarantees that all spacecraft track the reference attitude if the virtual leader has a directed path to all other spacecraft. Simulation examples are presented to illustrate the effectiveness of the results.</summary>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2011-02-28T05:59:32Z</published>
+    <arxiv:comment>13 pages, 11 figures. To appear in SCIENCE CHINA Technological Sciences</arxiv:comment>
+    <arxiv:primary_category term="eess.SY"/>
+    <arxiv:journal_ref>Science China Technological Sciences 54 (2011) 1992-1998</arxiv:journal_ref>
+    <author>
+      <name>Zhongkui Li</name>
+    </author>
+    <author>
+      <name>Zhisheng Duan</name>
+    </author>
+    <arxiv:doi>10.1007/s11431-011-4475-0</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s11431-011-4475-0" title="doi"/>
+  </entry>
+</feed>

@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "pages": [
+    {
+      "page": "09_结项文书与答辩\\04_答辩演示\\答辩演示.html",
+      "sha256": "71fa7b35b077e722f2f691cfe01d95a18d8cbadbc55c32d5ee58f565980f0ac9",
+      "links": [
+        {
+          "tag": "a",
+          "href": "../../08_惯量域随机化与泛化边界研究/05_研究分析与核验/研究分析.md",
+          "exists": true
+        },
+        {
+          "tag": "a",
+          "href": "../../08_惯量域随机化与泛化边界研究/05_研究分析与核验/独立核验记录.json",
+          "exists": true
+        },
+        {
+          "tag": "a",
+          "href": "../../08_惯量域随机化与泛化边界研究/04_图表与结果页面/结果总览.html",
+          "exists": true
+        },
+        {
+          "tag": "script",
+          "href": "defense_results.js",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "page": "08_惯量域随机化与泛化边界研究\\04_图表与结果页面\\结果总览.html",
+      "sha256": "182a495115d6360cf1ca3a850767b29b5ee8924664bbeec1208c3301dcf03180",
+      "links": [
+        {
+          "tag": "a",
+          "href": "../../README.md",
+          "exists": true
+        },
+        {
+          "tag": "a",
+          "href": "../05_研究分析与核验/研究分析.md",
+          "exists": true
+        },
+        {
+          "tag": "img",
+          "href": "../04_图表与结果页面/01_成功率与惯量倍率.png",
+          "exists": true
+        },
+        {
+          "tag": "img",
+          "href": "../04_图表与结果页面/02_经验可用范围.png",
+          "exists": true
+        },
+        {
+          "tag": "img",
+          "href": "../04_图表与结果页面/03_精度速度与控制代价.png",
+          "exists": true
+        },
+        {
+          "tag": "img",
+          "href": "../04_图表与结果页面/04_非等比例惯量迁移.png",
+          "exists": true
+        },
+        {
+          "tag": "img",
+          "href": "../04_图表与结果页面/05_校准消融与固定代表轨迹.png",
+          "exists": true
+        },
+        {
+          "tag": "a",
+          "href": "../03_测试数据与配对结果/episode_metrics.csv",
+          "exists": true
+        },
+        {
+          "tag": "a",
+          "href": "../03_测试数据与配对结果/boundary_points.csv",
+          "exists": true
+        },
+        {
+          "tag": "a",
+          "href": "../03_测试数据与配对结果/empirical_boundaries.csv",
+          "exists": true
+        },
+        {
+          "tag": "a",
+          "href": "../03_测试数据与配对结果/deployment_freeze.json",
+          "exists": true
+        },
+        {
+          "tag": "a",
+          "href": "../03_测试数据与配对结果/evaluation_manifest.json",
+          "exists": true
+        }
+      ]
+    }
+  ],
+  "figure_count": 5,
+  "training": {
+    "models": 12,
+    "steps": 12000000,
+    "episodes": 10920
+  },
+  "defense_results_json_file_sha256": "36e93fbe0dec1bc28910108fc7ff89ff6dbd9f9fcd45d680a0a57f12849bd9aa",
+  "defense_results_js_sha256": "c969f99ac360b7be14babd17dca71cbff971fb6854f5e76edd4b120109014e77",
+  "defense_results_js_matches_json_payload": true,
+  "final_audit_passed": true,
+  "problems": []
+}

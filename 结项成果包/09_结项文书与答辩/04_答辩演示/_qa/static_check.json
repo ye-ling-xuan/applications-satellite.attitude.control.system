@@ -1,0 +1,17 @@
+{
+  "slides": 12,
+  "notes": 12,
+  "total_seconds": 480,
+  "print_css": true,
+  "safe_fallback_without_results": true,
+  "actual_results_verified": true,
+  "actual_training_scale": {
+    "models": 12,
+    "steps": 12000000,
+    "episodes": 10920
+  },
+  "javascript_syntax_checked": true,
+  "javascript_syntax_valid": true,
+  "syntax_error": "",
+  "qa_scope": "static HTML and script syntax; visual inspection recorded separately"
+}

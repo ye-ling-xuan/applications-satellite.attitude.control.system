@@ -1,6 +1,7 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>卫星姿态控制结项结果总览</title><style>body{margin:0;background:#f6f8fa;color:#142534;font:16px/1.65 'Microsoft YaHei',sans-serif}main{max-width:1150px;margin:auto;padding:32px 24px}h1{font-size:30px}h2{font-size:21px}section{background:white;padding:22px;margin:24px 0;border-radius:8px}img{display:block;width:100%;height:auto}table{width:100%;border-collapse:collapse;font-size:14px}td,th{text-align:left;padding:10px;border-bottom:1px solid #dce3e8}select{padding:8px;margin:8px}a{color:#126c9d}.scroll{overflow:auto}.note{color:#4b6070}</style><main>
 <h1>卫星姿态控制结项结果总览</h1><p>PID、普通PPO与随机化PPO的同条件仿真比较。800个场景，5600个回合，6份独立训练模型。</p>
+<section><h2>最后一轮研究与结项材料</h2><p><a href="08_惯量域随机化与泛化边界研究/04_图表与结果页面/结果总览.html">惯量域随机化与泛化边界实测</a> · <a href="09_结项文书与答辩/04_答辩演示/答辩演示.html">离线答辩演示</a> · <a href="09_结项文书与答辩/07_演示视频/卫星姿态控制结项演示.mp4">90秒数据演示视频</a> · <a href="最终交付总说明.md">最终交付总说明</a></p><p>08：12份SAC模型、10,920正式回合，已通过全量独立核验。未观察到惯量随机化扩大可用范围，强PID保持稳健；SAC的控制代价与响应速度存在取舍。下方完整保留V1结果，各版本分别解释。</p></section>
 <section><h2>新增：单轴与三轴多算法融合</h2><p><a href="07_单轴三轴多算法对比/结果总览.html">查看PID / PPO / SAC / TD3及改进的最新对比</a> · <a href="07_单轴三轴多算法对比/新融合分析.md">阐释与实际改进</a></p><p>下方保留前一版单轴随机化实验。新增算法和三轴结果在07单独保存。</p></section>
 <p class="note">成功：20秒仿真末5秒持续满足误差≤1°、角速度≤0.5°/s。所有数据来自保存结果，失败回合保留。学校评审及实际在轨性能不由本页面保证。</p>
 <p><a href="工作总说明.md">工作总说明</a> · <a href="README.md">运行说明</a> · <a href="06_结项说明与报告/结项技术报告.md">技术报告</a> · <a href="04_实验数据与图表/episode_metrics.csv">逐回合数据</a></p>

@@ -1,0 +1,62 @@
+{
+  "review_date": "2026-10-13",
+  "review_sources_modified": true,
+  "status": "resolved_with_final_V3_integration",
+  "findings": [
+    {
+      "severity": "method_definition_correction",
+      "document": "01_两篇学习综述/卫星姿态系统搭建学习综述.md",
+      "line_at_review": 140,
+      "issue": "RMS目前写为等权样本平方均值，实际V1和V2均采用时间梯形积分除以轨迹时长再开方",
+      "code_evidence": [
+        "satellite_benchmark/metrics.py compute_metrics rms_error",
+        "multi_algorithm_benchmark/metrics.py compute_metrics np.trapz"
+      ],
+      "suggested_text": "RMS按时间平均定义为sqrt((1/T) integral ||e(t)||^2 dt)，实现采用相邻采样平方均值乘时间间隔的梯形积分。V2发散后冻结填充至20秒，其填充状态参与RMS，控制力矩随后置零。",
+      "applied": true
+    },
+    {
+      "severity": "citation_precision_correction",
+      "document": "01_两篇学习综述/卫星智能姿态控制系统学习综述.md",
+      "line_at_review": 80,
+      "issue": "后续的双Q目标形式容易误导为原始SAC论文没有双Q；原文第5页已明确two Q-functions",
+      "evidence": [
+        "文献缓存/A02F.txt original paper section 4.2",
+        "文献缓存/SAC271.py stable-baselines3 tag v2.7.1",
+        "文献缓存/D04.txt official SAC documentation"
+      ],
+      "suggested_text": "本项目使用SB3 2.7.1的SAC，采用双Q目标和自动熵系数；相对最早论文，该实现不再单独拟合状态价值V网络，并优化熵系数的对数。双Q本身在最早SAC论文中已经使用。",
+      "applied": true
+    },
+    {
+      "severity": "optional_clarification",
+      "document": "01_两篇学习综述/卫星智能姿态控制系统学习综述.md",
+      "line_at_review": 44,
+      "issue": "奖励式正确，但可以明确由动作后的真实误差和角速度及本步实际力矩计算；控制器仍只接收带噪观测",
+      "code_evidence": [
+        "satellite_benchmark/env.py step",
+        "multi_algorithm_benchmark/envs.py BatchSatelliteEnv.step",
+        "multi_algorithm_benchmark/vector_training.py FastThreeVecEnv.step_wait"
+      ],
+      "applied": true
+    }
+  ],
+  "confirmed": [
+    "SAC熵目标为正号，带gamma的折扣形式与SB3学习目标一致；alpha是熵系数，项目使用自动调整",
+    "三轴I=diag(1.2,1.0,0.8)及-omega叉乘Iomega的动力学符号与实现一致",
+    "标量在前、本体到惯性系四元数及q_inverse乘target的目标修正方向与代码一致",
+    "主惯量正值与三角不等式的物理表述正确，整体正比例缩放保持条件",
+    "共同奖励6/0.6/0.03与首次发散扣1000与实现一致",
+    "PID积分保护、角速度阻尼、alpha=1无滤波与Ki=0的PD特例表述一致",
+    "成功为末5秒每个采样点姿态/角速度均达标，稳定时间只在成功回合统计，与代码一致",
+    "力矩平方代价不是实际电能；校准不是新增训练、自适应或扰动估计",
+    "Retagne论文使用历史观测和反作用轮，与本项目瞬时观测及直接力矩区别写明",
+    "PPO裁剪目标和TD3双Q/延迟/目标平滑描述未发现方法错误"
+  ],
+  "changed_cache_files": [
+    "文献缓存/SAC271.py",
+    "SAC实现核对来源.json"
+  ],
+  "next_action": "最终Markdown与JSON已同步；由主任务重新渲染四份PDF并核对页面和公式。",
+  "resolved_date": "2026-10-13"
+}

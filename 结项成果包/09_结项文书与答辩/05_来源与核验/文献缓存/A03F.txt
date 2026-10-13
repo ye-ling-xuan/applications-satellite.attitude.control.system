@@ -1,0 +1,998 @@
+                                                    Addressing Function Approximation Error in Actor-Critic Methods
+
+
+                                                                              Scott Fujimoto 1 Herke van Hoof 2 David Meger 1
+
+
+                                                                   Abstract                               means using an imprecise estimate within each update will
+                                                                                                          lead to an accumulation of error. Due to overestimation bias,
+                                                In value-based reinforcement learning methods
+                                                                                                          this accumulated error can cause arbitrarily bad states to
+                                                such as deep Q-learning, function approximation
+                                                                                                          be estimated as high value, resulting in suboptimal policy
+arXiv:1802.09477v3 [cs.AI] 22 Oct 2018
+
+
+
+
+                                                errors are known to lead to overestimated value
+                                                                                                          updates and divergent behavior.
+                                                estimates and suboptimal policies. We show that
+                                                this problem persists in an actor-critic setting and      This paper begins by establishing this overestimation prop-
+                                                propose novel mechanisms to minimize its effects          erty is also present for deterministic policy gradients (Silver
+                                                on both the actor and the critic. Our algorithm           et al., 2014), in the continuous control setting. Furthermore,
+                                                builds on Double Q-learning, by taking the mini-          we find the ubiquitous solution in the discrete action setting,
+                                                mum value between a pair of critics to limit over-        Double DQN (Van Hasselt et al., 2016), to be ineffective
+                                                estimation. We draw the connection between tar-           in an actor-critic setting. During training, Double DQN
+                                                get networks and overestimation bias, and suggest         estimates the value of the current policy with a separate tar-
+                                                delaying policy updates to reduce per-update error        get value function, allowing actions to be evaluated without
+                                                and further improve performance. We evaluate              maximization bias. Unfortunately, due to the slow-changing
+                                                our method on the suite of OpenAI gym tasks,              policy in an actor-critic setting, the current and target value
+                                                outperforming the state of the art in every envi-         estimates remain too similar to avoid maximization bias.
+                                                ronment tested.                                           This can be dealt with by adapting an older variant, Double
+                                                                                                          Q-learning (Van Hasselt, 2010), to an actor-critic format
+                                                                                                          by using a pair of independently trained critics. While this
+                                         1. Introduction                                                  allows for a less biased value estimation, even an unbiased
+                                                                                                          estimate with high variance can still lead to future overes-
+                                         In reinforcement learning problems with discrete action          timations in local regions of state space, which in turn can
+                                         spaces, the issue of value overestimation as a result of func-   negatively affect the global policy. To address this concern,
+                                         tion approximation errors is well-studied. However, similar      we propose a clipped Double Q-learning variant which lever-
+                                         issues with actor-critic methods in continuous control do-       ages the notion that a value estimate suffering from overes-
+                                         mains have been largely left untouched. In this paper, we        timation bias can be used as an approximate upper-bound to
+                                         show overestimation bias and the accumulation of error in        the true value estimate. This favors underestimations, which
+                                         temporal difference methods are present in an actor-critic       do not tend to be propagated during learning, as actions with
+                                         setting. Our proposed method addresses these issues, and         low value estimates are avoided by the policy.
+                                         greatly outperforms the current state of the art.
+                                                                                                          Given the connection of noise to overestimation bias, this
+                                         Overestimation bias is a property of Q-learning in which the     paper contains a number of components that address vari-
+                                         maximization of a noisy value estimate induces a consistent      ance reduction. First, we show that target networks, a com-
+                                         overestimation (Thrun & Schwartz, 1993). In a function           mon approach in deep Q-learning methods, are critical for
+                                         approximation setting, this noise is unavoidable given the       variance reduction by reducing the accumulation of errors.
+                                         imprecision of the estimator. This inaccuracy is further         Second, to address the coupling of value and policy, we
+                                         exaggerated by the nature of temporal difference learning        propose delaying policy updates until the value estimate
+                                         (Sutton, 1988), in which an estimate of the value function       has converged. Finally, we introduce a novel regularization
+                                         is updated using the estimate of a subsequent state. This        strategy, where a SARSA-style update bootstraps similar
+                                            1
+                                            McGill University, Montreal, Canada 2 University of Amster-   action estimates to further reduce variance.
+                                         dam, Amsterdam, Netherlands. Correspondence to: Scott Fujimoto   Our modifications are applied to the state of the art actor-
+                                         <scott.fujimoto@mail.mcgill.ca>.
+                                                                                                          critic method for continuous control, Deep Deterministic
+                                         Proceedings of the 35 th International Conference on Machine     Policy Gradient algorithm (DDPG) (Lillicrap et al., 2015), to
+                                         Learning, Stockholm, Sweden, PMLR 80, 2018. Copyright 2018       form the Twin Delayed Deep Deterministic policy gradient
+                                         by the author(s).
+                             Addressing Function Approximation Error in Actor-Critic Methods
+
+algorithm (TD3), an actor-critic algorithm which consid-         horizon. Another approach is a reduction in the discount
+ers the interplay between function approximation error in        factor (Petrik & Scherrer, 2009), reducing the contribution
+both policy and value updates. We evaluate our algorithm         of each error.
+on seven continuous control domains from OpenAI gym
+                                                                 Our method builds on the Deterministic Policy Gradient
+(Brockman et al., 2016), where we outperform the state of
+                                                                 algorithm (DPG) (Silver et al., 2014), an actor-critic method
+the art by a wide margin.
+                                                                 which uses a learned value estimate to train a deterministic
+Given the recent concerns in reproducibility (Henderson          policy. An extension of DPG to deep reinforcement learn-
+et al., 2017), we run our experiments across a large num-        ing, DDPG (Lillicrap et al., 2015), has shown to produce
+ber of seeds with fair evaluation metrics, perform abla-         state of the art results with an efficient number of iterations.
+tion studies across each contribution, and open source both      Orthogonal to our approach, recent improvements to DDPG
+our code and learning curves (https://github.com/                include distributed methods (Popov et al., 2017), along with
+sfujim/TD3).                                                     multi-step returns and prioritized experience replay (Schaul
+                                                                 et al., 2016; Horgan et al., 2018), and distributional methods
+2. Related Work                                                  (Bellemare et al., 2017; Barth-Maron et al., 2018).
+
+Function approximation error and its effect on bias and          3. Background
+variance in reinforcement learning algorithms have been
+studied in prior works (Pendrith et al., 1997; Mannor et al.,    Reinforcement learning considers the paradigm of an agent
+2007). Our work focuses on two outcomes that occur as the        interacting with its environment with the aim of learning
+result of estimation error, namely overestimation bias and a     reward-maximizing behavior. At each discrete time step
+high variance build-up.                                          t, with a given state s ∈ S, the agent selects actions
+                                                                 a ∈ A with respect to its policy π : S → A, receiv-
+Several approaches exist to reduce the effects of overestima-
+                                                                 ing a reward r and the new state of the environment s0 .
+tion bias due to function approximation and policy optimiza-
+                                                                       PT is defined as the discounted sum of rewards
+                                                                 The return
+tion in Q-learning. Double Q-learning uses two independent
+                                                                 Rt = i=t γ i−t r(si , ai ), where γ is a discount factor de-
+estimators to make unbiased value estimates (Van Hasselt,
+                                                                 termining the priority of short-term rewards.
+2010; Van Hasselt et al., 2016). Other approaches have
+focused directly on reducing the variance (Anschel et al.,       In reinforcement learning, the objective is to find the op-
+2017), minimizing over-fitting to early high variance esti-      timal policy πφ , with parameters φ, which maximizes the
+mates (Fox et al., 2016), or through corrective terms (Lee       expected return J(φ) = Esi ∼pπ ,ai ∼π [R0 ]. For continuous
+et al., 2013). Further, the variance of the value estimate       control, parametrized policies πφ can be updated by taking
+has been considered directly for risk-aversion (Mannor &         the gradient of the expected return ∇φ J(φ). In actor-critic
+Tsitsiklis, 2011) and exploration (O’Donoghue et al., 2017),     methods, the policy, known as the actor, can be updated
+but without connection to overestimation bias.                   through the deterministic policy gradient algorithm (Silver
+                                                                 et al., 2014):
+The concern of variance due to the accumulation of error in
+                                                                    ∇φ J(φ) = Es∼pπ ∇a Qπ (s, a)|a=π(s) ∇φ πφ (s) . (1)
+                                                                                                                    
+temporal difference learning has been largely dealt with by
+either minimizing the size of errors at each time step or mix-
+ing off-policy and Monte-Carlo returns. Our work shows           Qπ (s, a) = Esi ∼pπ ,ai ∼π [Rt |s, a], the expected return
+the importance of a standard technique, target networks, for     when performing action a in state s and following π af-
+the reduction of per-update error, and develops a regulariza-    ter, is known as the critic or the value function.
+tion technique for the variance reduction by averaging over      In Q-learning, the value function can be learned using tem-
+value estimates. Concurrently, Nachum et al. (2018) showed       poral difference learning (Sutton, 1988; Watkins, 1989), an
+smoothed value functions could be used to train stochastic       update rule based on the Bellman equation (Bellman, 1957).
+policies with reduced variance and improved performance.         The Bellman equation is a fundamental relationship between
+Methods with multi-step returns offer a trade-off between        the value of a state-action pair (s, a) and the value of the
+accumulated estimation bias and variance induced by the          subsequent state-action pair (s0 , a0 ):
+policy and the environment. These methods have been
+shown to be an effective approach, through importance sam-         Qπ (s, a) = r + γEs0 ,a0 [Qπ (s0 , a0 )] ,   a0 ∼ π(s0 ). (2)
+pling (Precup et al., 2001; Munos et al., 2016), distributed
+methods (Mnih et al., 2016; Espeholt et al., 2018), and ap-      For a large state space, the value can be estimated with a
+proximate bounds (He et al., 2016). However, rather than         differentiable function approximator Qθ (s, a), with param-
+provide a direct solution to the accumulation of error, these    eters θ. In deep Q-learning (Mnih et al., 2015), the network
+methods circumvent the problem by considering a longer           is updated by using temporal difference learning with a sec-
+                                                                 ondary frozen target network Qθ0 (s, a) to maintain a fixed
+                              Addressing Function Approximation Error in Actor-Critic Methods
+
+                                                                                  400
+objective y over multiple updates:                                                                                                 500
+
+                                                                                  300                                              400
+
+
+
+
+                                                                  Average Value
+           y = r + γQθ0 (s0 , a0 ),   a0 ∼ πφ0 (s0 ),      (3)                                                                     300
+                                                                                  200
+                                                                                                                                   200
+where the actions are selected from a target actor network                        100                    CDQ       True CDQ  100
+πφ0 . The weights of a target network are either updated                                                 DDPG      True DDPG
+                                                                                    0                                                0
+periodically to exactly match the weights of the current                                0.0     0.2      0.4    0.6    0.8   1.0         0.0   0.2      0.4    0.6    0.8   1.0
+                                                                                                      Time steps (1e6)                               Time steps (1e6)
+network, or by some proportion τ at each time step θ0 ←                                          (a) Hopper-v1                                  (b) Walker2d-v1
+τ θ + (1 − τ )θ0 . This update can be applied in an off-policy
+fashion, sampling random mini-batches of transitions from         Figure 1. Measuring overestimation bias in the value estimates
+an experience replay buffer (Lin, 1992).                          of DDPG and our proposed method, Clipped Double Q-learning
+                                                                  (CDQ), on MuJoCo environments over 1 million time steps.
+4. Overestimation Bias
+In Q-learning with discrete actions, the value estimate is        occur with slightly stricter conditions. We examine this case
+updated with a greedy target y = r + γ maxa0 Q(s0 , a0 ),         further in the supplementary material. We denote πapprox
+however, if the target is susceptible to error , then the max-   and πtrue as the policy with parameters φapprox and φtrue re-
+imum over the value along with its error will generally be        spectively.
+greater than the true maximum, E [maxa0 (Q(s0 , a0 ) + )] ≥     As the gradient direction is a local maximizer, there exists 1
+maxa0 Q(s0 , a0 ) (Thrun & Schwartz, 1993). As a result,          sufficiently small such that if α ≤ 1 then the approximate
+even initially zero-mean error can cause value updates to         value of πapprox will be bounded below by the approximate
+result in a consistent overestimation bias, which is then prop-   value of πtrue :
+agated through the Bellman equation. This is problematic as
+errors induced by function approximation are unavoidable.                                      E [Qθ (s, πapprox (s))] ≥ E [Qθ (s, πtrue (s))] .                            (5)
+While in the discrete action setting overestimation bias is       Conversely, there exists 2 sufficiently small such that if
+an obvious artifact from the analytical maximization, the         α ≤ 2 then the true value of πapprox will be bounded above
+presence and effects of overestimation bias is less clear in an   by the true value of πtrue :
+actor-critic setting where the policy is updated via gradient
+descent. We begin by proving that the value estimate in de-                                    E [Qπ (s, πtrue (s))] ≥ E [Qπ (s, πapprox (s))] .                            (6)
+terministic policy gradients will be an overestimation under
+some basic assumptions in Section 4.1 and then propose            If in expectation the value estimate is at least as large as
+a clipped variant of Double Q-learning in an actor-critic         the true value with respect to φtrue , E [Qθ (s, πtrue (s))] ≥
+setting to reduce overestimation bias in Section 4.2.             E [Qπ (s, πtrue (s))], then Equations (5) and (6) imply that if
+                                                                  α < min(1 , 2 ), then the value estimate will be overesti-
+                                                                  mated:
+4.1. Overestimation Bias in Actor-Critic
+In actor-critic methods the policy is updated with respect                                    E [Qθ (s, πapprox (s))] ≥ E [Qπ (s, πapprox (s))] .                           (7)
+to the value estimates of an approximate critic. In this
+section we assume the policy is updated using the deter-          Although this overestimation may be minimal with each
+ministic policy gradient, and show that the update induces        update, the presence of error raises two concerns. Firstly, the
+overestimation in the value estimate. Given current policy        overestimation may develop into a more significant bias over
+parameters φ, let φapprox define the parameters from the ac-      many updates if left unchecked. Secondly, an inaccurate
+tor update induced by the maximization of the approximate         value estimate may lead to poor policy updates. This is
+critic Qθ (s, a) and φtrue the parameters from the hypothet-      particularly problematic because a feedback loop is created,
+ical actor update with respect to the true underlying value       in which suboptimal actions might be highly rated by the
+function Qπ (s, a) (which is not known during learning):          suboptimal critic, reinforcing the suboptimal action in the
+                                                                  next policy update.
+                  α                                     
+φapprox = φ +       Es∼pπ ∇φ πφ (s)∇a Qθ (s, a)|a=πφ (s)          Does this theoretical overestimation occur in practice
+                 Z1
+                  α                                               for state-of-the-art methods? We answer this question by
+                    Es∼pπ ∇φ πφ (s)∇a Qπ (s, a)|a=πφ (s) ,
+                                                         
+   φtrue = φ +                                                    plotting the value estimate of DDPG (Lillicrap et al., 2015)
+                 Z2
+                                                         (4)      over time while it learns on the OpenAI gym environments
+where we assume Z1 and Z2 are chosen to normalize the             Hopper-v1 and Walker2d-v1 (Brockman et al., 2016). In
+gradient, i.e., such that Z −1 ||E[·]|| = 1. Without normal-      Figure 1, we graph the average value estimate over 10000
+ized gradients, overestimation bias is still guaranteed to        states and compare it to an estimate of the true value. The
+                                                         Addressing Function Approximation Error in Actor-Critic Methods
+
+                400
+                                                               400
+                                                                                                              demonstrates that the actor-critic Double DQN suffers from
+                300                                                                                           a similar overestimation as DDPG (as shown in Figure 1).
+Average Value
+
+
+
+
+                                                               300
+
+                200
+                                                                                                              While Double Q-learning is more effective, it does not en-
+                                                               200
+                                                                                                              tirely eliminate the overestimation. We further show this
+                100
+                             DQ-AC           True DQ-AC   100                                                 reduction is not sufficient experimentally in Section 6.1.
+                             DDQN-AC         True DDQN-AC
+                  0                                              0
+                      0.0   0.2      0.4    0.6    0.8   1.0         0.0   0.2      0.4    0.6    0.8   1.0   As πφ1 optimizes with respect to Qθ1 , using an indepen-
+                                  Time steps (1e6)                               Time steps (1e6)
+                                                                                                              dent estimate in the target update of Qθ1 would avoid the
+                             (a) Hopper-v1                                  (b) Walker2d-v1                   bias introduced by the policy update. However the critics
+                                                                                                              are not entirely independent, due to the use of the oppo-
+Figure 2. Measuring overestimation bias in the value estimates of
+actor critic variants of Double DQN (DDQN-AC) and Double Q-
+                                                                                                              site critic in the learning targets, as well as the same re-
+learning (DQ-AC) on MuJoCo environments over 1 million time                                                   play buffer. As a result, for some states s we will have
+steps.                                                                                                        Qθ2 (s, πφ1 (s)) > Qθ1 (s, πφ1 (s)). This is problematic be-
+                                                                                                              cause Qθ1 (s, πφ1 (s)) will generally overestimate the true
+                                                                                                              value, and in certain areas of the state space the overestima-
+true value is estimated using the average discounted return                                                   tion will be further exaggerated. To address this problem,
+over 1000 episodes following the current policy, starting                                                     we propose to simply upper-bound the less biased value
+from states sampled from the replay buffer. A very clear                                                      estimate Qθ2 by the biased estimate Qθ1 . This results in
+overestimation bias occurs from the learning procedure,                                                       taking the minimum between the two estimates, to give the
+which contrasts with the novel method that we describe in                                                     target update of our Clipped Double Q-learning algorithm:
+the following section, Clipped Double Q-learning, which
+greatly reduces overestimation by the critic.                                                                              y1 = r + γ min Qθi0 (s0 , πφ1 (s0 )).       (10)
+                                                                                                                                       i=1,2
+
+4.2. Clipped Double Q-Learning for Actor-Critic                                                               With Clipped Double Q-learning, the value target cannot
+                                                                                                              introduce any additional overestimation over using the stan-
+While several approaches to reducing overestimation bias
+                                                                                                              dard Q-learning target. While this update rule may induce
+have been proposed, we find them ineffective in an actor-
+                                                                                                              an underestimation bias, this is far preferable to overesti-
+critic setting. This section introduces a novel clipped variant
+                                                                                                              mation bias, as unlike overestimated actions, the value of
+of Double Q-learning (Van Hasselt, 2010), which can re-
+                                                                                                              underestimated actions will not be explicitly propagated
+place the critic in any actor-critic method.
+                                                                                                              through the policy update.
+In Double Q-learning, the greedy update is disentangled
+                                                                                                              In implementation, computational costs can be reduced by
+from the value function by maintaining two separate value
+                                                                                                              using a single actor optimized with respect to Qθ1 . We then
+estimates, each of which is used to update the other. If the
+                                                                                                              use the same target y2 = y1 for Qθ2 . If Qθ2 > Qθ1 then
+value estimates are independent, they can be used to make
+                                                                                                              the update is identical to the standard update and induces no
+unbiased estimates of the actions selected using the opposite
+                                                                                                              additional bias. If Qθ2 < Qθ1 , this suggests overestimation
+value estimate. In Double DQN (Van Hasselt et al., 2016),
+                                                                                                              has occurred and the value is reduced similar to Double Q-
+the authors propose using the target network as one of the
+                                                                                                              learning. A proof of convergence in the finite MDP setting
+value estimates, and obtain a policy by greedy maximization
+                                                                                                              follows from this intuition. We provide formal details and
+of the current value network rather than the target network.
+                                                                                                              justification in the supplementary material.
+In an actor-critic setting, an analogous update uses the cur-
+rent policy rather than the target policy in the learning target:                                             A secondary benefit is that by treating the function approxi-
+                                                                                                              mation error as a random variable we can see that the min-
+                                        y = r + γQθ0 (s0 , πφ (s0 )).                                   (8)   imum operator should provide higher value to states with
+In practice however, we found that with the slow-changing                                                     lower variance estimation error, as the expected minimum
+policy in actor-critic, the current and target networks were                                                  of a set of random variables decreases as the variance of
+too similar to make an independent estimation, and offered                                                    the random variables increases. This effect means that the
+little improvement. Instead, the original Double Q-learning                                                   minimization in Equation (10) will lead to a preference for
+formulation can be used, with a pair of actors (πφ1 , πφ2 )                                                   states with low-variance value estimates, leading to safer
+and critics (Qθ1 , Qθ2 ), where πφ1 is optimized with respect                                                 policy updates with stable learning targets.
+to Qθ1 and πφ2 with respect to Qθ2 :
+                                                                                                              5. Addressing Variance
+                                      y1 = r + γQθ20 (s0 , πφ1 (s0 ))
+                                                                                                        (9)   While Section 4 deals with the contribution of variance to
+                                      y2 = r + γQθ10 (s0 , πφ2 (s0 )).
+                                                                                                              overestimation bias, we also argue that variance itself should
+We measure the overestimation bias in Figure 2, which                                                         be directly addressed. Besides the impact on overestimation
+                             Addressing Function Approximation Error in Actor-Critic Methods
+
+bias, high variance estimates provide a noisy gradient for the
+                                                                                                                                104
+policy update. This is known to reduce learning speed (Sut-                      350
+
+
+
+
+                                                                 Average Value
+ton & Barto, 1998) as well as hurt performance in practice.                      300
+                                                                                                                                103
+In this section we emphasize the importance of minimizing                        250
+
+error at each update, build the connection between target                        200
+                                                                                                      τ =1       τ = 0.01
+                                                                                                      τ = 0.1    True Value     102
+networks and estimation error and propose modifications to                       150
+                                                                                       0.0   0.2      0.4    0.6    0.8   1.0         0.0   0.2      0.4    0.6    0.8   1.0
+the learning procedure of actor-critic for variance reduction.                                     Time steps (1e5)                               Time steps (1e5)
+
+                                                                                             (a) Fixed Policy                               (b) Learned Policy
+5.1. Accumulating Error
+                                                                 Figure 3. Average estimated value of a randomly selected state
+Due to the temporal difference update, where an estimate of      on Hopper-v1 without target networks, (τ = 1), and with slow-
+the value function is built from an estimate of a subsequent     updating target networks, (τ = 0.1, 0.01), with a fixed and a
+state, there is a build up of error. While it is reasonable to   learned policy.
+expect small error for an individual update, these estimation
+errors can accumulate, resulting in the potential for large
+overestimation bias and suboptimal policy updates. This is
+exacerbated in a function approximation setting where the        procedure, and allow a greater coverage of the training data.
+Bellman equation is never exactly satisfied, and each update     Without a fixed target, each update may leave residual error
+leaves some amount of residual TD-error δ(s, a):                 which will begin to accumulate. While the accumulation of
+                                                                 error can be detrimental in itself, when paired with a policy
+         Qθ (s, a) = r + γE[Qθ (s0 , a0 )] − δ(s, a).    (11)    maximizing over the value estimate, it can result in wildly
+                                                                 divergent values.
+It can then be shown that rather than learning an estimate
+                                                                 To provide some intuition, we examine the learning behavior
+of the expected return, the value estimate approximates the
+                                                                 with and without target networks on both the critic and actor
+expected return minus the expected discounted sum of future
+                                                                 in Figure 3, where we graph the value, in a similar manner to
+TD-errors:
+                                                                 Figure 1, in the Hopper-v1 environment. In (a) we compare
+  Qθ (st , at ) = rt + γE[Qθ (st+1 , at+1 )] − δt                the behavior with a fixed policy and in (b) we examine the
+                                                                 value estimates with a policy that continues to learn, trained
+   = rt + γE [rt+1 + γE [Qθ (st+2 , at+2 ) − δt+1 ]] − δt        with the current value estimate. The target networks use a
+                    " T              #
+                     X                                           slow-moving update rate, parametrized by τ .
+                         i−t
+   = Esi ∼pπ ,ai ∼π     γ (ri − δi ) .                 (12)
+                     i=t                                         While updating the value estimate without target networks
+                                                                 (τ = 1) increases the volatility, all update rates result in sim-
+If the value estimate is a function of future reward and es-     ilar convergent behaviors when considering a fixed policy.
+timation error, it follows that the variance of the estimate     However, when the policy is trained with the current value
+will be proportional to the variance of future reward and es-    estimate, the use of fast-updating target networks results in
+timation error. Given a large discount factor γ, the variance    highly divergent behavior.
+can grow rapidly with each update if the error from each
+update is not tamed. Furthermore each gradient update only       When do actor-critic methods fail to learn? These results
+reduces error with respect to a small mini-batch which gives     suggest that the divergence that occurs without target net-
+no guarantees about the size of errors in value estimates        works is the result of policy updates with a high variance
+outside the mini-batch.                                          value estimate. Figure 3, as well as Section 4, suggest failure
+                                                                 can occur due to the interplay between the actor and critic
+                                                                 updates. Value estimates diverge through overestimation
+5.2. Target Networks and Delayed Policy Updates
+                                                                 when the policy is poor, and the policy will become poor if
+In this section we examine the relationship between target       the value estimate itself is inaccurate.
+networks and function approximation error, and show the
+                                                                 If target networks can be used to reduce the error over mul-
+use of a stable target reduces the growth of error. This
+                                                                 tiple updates, and policy updates on high-error states cause
+insight allows us to consider the interplay between high
+                                                                 divergent behavior, then the policy network should be up-
+variance estimates and policy performance, when designing
+                                                                 dated at a lower frequency than the value network, to first
+reinforcement learning algorithms.
+                                                                 minimize error before introducing a policy update. We pro-
+Target networks are a well-known tool to achieve stabil-         pose delaying policy updates until the value error is as small
+ity in deep reinforcement learning. As deep function ap-         as possible. The modification is to only update the policy
+proximators require multiple gradient updates to converge,       and target networks after a fixed number of updates d to the
+target networks provide a stable objective in the learning       critic. To ensure the TD-error remains small, we update the
+                               Addressing Function Approximation Error in Actor-Critic Methods
+
+target networks slowly θ0 ← τ θ + (1 − τ )θ0 .                     Algorithm 1 TD3
+By sufficiently delaying the policy updates we limit the like-       Initialize critic networks Qθ1 , Qθ2 , and actor network πφ
+lihood of repeating updates with respect to an unchanged             with random parameters θ1 , θ2 , φ
+critic. The less frequent policy updates that do occur will          Initialize target networks θ10 ← θ1 , θ20 ← θ2 , φ0 ← φ
+use a value estimate with lower variance, and in principle,          Initialize replay buffer B
+should result in higher quality policy updates. This creates a       for t = 1 to T do
+two-timescale algorithm, as often required for convergence              Select action with exploration noise a ∼ πφ (s) + ,
+in the linear setting (Konda & Tsitsiklis, 2003). The effec-             ∼ N (0, σ) and observe reward r and new state s0
+tiveness of this strategy is captured by our empirical results          Store transition tuple (s, a, r, s0 ) in B
+presented in Section 6.1, which show an improvement in
+performance while using fewer policy updates.                          Sample mini-batch of N transitions (s, a, r, s0 ) from B
+                                                                       ã ← πφ0 (s0 ) + ,  ∼ clip(N (0, σ̃), −c, c)
+5.3. Target Policy Smoothing Regularization                            y ← r + γ mini=1,2 Qθi0 (s0 , ã)
+                                                                       Update critics θi ← argminθi N −1 (y−Qθi (s, a))2
+                                                                                                           P
+A concern with deterministic policies is they can overfit              if t mod d then
+to narrow peaks in the value estimate. When updating the                  Update φ by the deterministic  policy gradient:
+critic, a learning target using a deterministic policy is highly          ∇φ J(φ) = N −1 ∇a Qθ1 (s, a)|a=πφ (s) ∇φ πφ (s)
+                                                                                           P
+susceptible to inaccuracies induced by function approxima-                Update target networks:
+tion error, increasing the variance of the target. This induced           θi0 ← τ θi + (1 − τ )θi0
+variance can be reduced through regularization. We intro-                 φ0 ← τ φ + (1 − τ )φ0
+duce a regularization strategy for deep value learning, target         end if
+policy smoothing, which mimics the learning update from              end for
+SARSA (Sutton & Barto, 1998). Our approach enforces
+the notion that similar actions should have similar value.
+While the function approximation does this implicitly, the
+relationship between similar actions can be forced explicitly
+by modifying the training procedure. We propose that fitting
+the value of a small area around the target action
+             y = r + E [Qθ0 (s0 , πφ0 (s0 ) + )] ,       (13)
+                                                                         (a)             (b)             (c)              (d)
+would have the benefit of smoothing the value estimate by
+bootstrapping off of similar state-action value estimates. In      Figure 4. Example MuJoCo environments (a) HalfCheetah-v1, (b)
+practice, we can approximate this expectation over actions         Hopper-v1, (c) Walker2d-v1, (d) Ant-v1.
+by adding a small amount of random noise to the target
+policy and averaging over mini-batches. This makes our
+modified target update:                                            6. Experiments
+                                 0       0
+               y = r + γQθ0 (s , πφ0 (s ) + ),                    We present the Twin Delayed Deep Deterministic policy
+                                                           (14)
+                 ∼ clip(N (0, σ), −c, c),                         gradient algorithm (TD3), which builds on the Deep Deter-
+                                                                   ministic Policy Gradient algorithm (DDPG) (Lillicrap et al.,
+where the added noise is clipped to keep the target close to       2015) by applying the modifications described in Sections
+the original action. The outcome is an algorithm reminiscent       4.2, 5.2 and 5.3 to increase the stability and performance
+of Expected SARSA (Van Seijen et al., 2009), where the             with consideration of function approximation error. TD3
+value estimate is instead learned off-policy and the noise         maintains a pair of critics along with a single actor. For each
+added to the target policy is chosen independently of the ex-      time step, we update the pair of critics towards the minimum
+ploration policy. The value estimate learned is with respect       target value of actions selected by the target policy:
+to a noisy policy defined by the parameter σ.
+Intuitively, it is known that policies derived from SARSA                      y = r + γ min Qθi0 (s0 , πφ0 (s0 ) + ),
+                                                                                          i=1,2
+value estimates tend to be safer, as they provide higher value                                                                  (15)
+to actions resistant to perturbations. Thus, this style of                       ∼ clip(N (0, σ), −c, c).
+update can additionally lead to improvement in stochastic
+domains with failure cases. A similar idea was introduced          Every d iterations, the policy is updated with respect to Qθ1
+concurrently by Nachum et al. (2018), smoothing over Qθ ,          following the deterministic policy gradient algorithm (Silver
+rather than Qθ0 .                                                  et al., 2014). TD3 is summarized in Algorithm 1.
+                                                                              Addressing Function Approximation Error in Actor-Critic Methods
+
+                                                                       TD3              DDPG                   our DDPG                   PPO                TRPO                 ACKTR                      SAC
+                 10000                                                                                                                    5000
+                                                                                      3500
+                                                                                      3000                                                                                                      4000
+                  8000                                                                                                                    4000
+Average Return
+
+
+
+
+                                                                                      2500                                                                                                      3000
+                  6000                                                                                                                    3000
+                                                                                      2000
+                                                                                                                                                                                                2000
+                  4000                                                                1500                                                2000
+                                                                                                                                                                                                1000
+                  2000                                                                1000
+                                                                                                                                          1000
+                                                                                       500                                                                                                         0
+                     0
+                                                                                         0                                                   0
+                                                                                                                                                                                               −1000
+                         0.0     0.2      0.4    0.6    0.8                     1.0          0.0   0.2      0.4    0.6    0.8       1.0          0.0   0.2      0.4    0.6    0.8        1.0           0.0    0.2       0.4    0.6    0.8   1.0
+                                       Time steps (1e6)                                                  Time steps (1e6)                                    Time steps (1e6)                                        Time steps (1e6)
+
+                               (a) HalfCheetah-v1                                                    (b) Hopper-v1                                     (c) Walker2d-v1                                              (d) Ant-v1
+                                                                                                                                                                   10000
+                                                           −4                                                  1000
+                                                                                                                900                                                 8000
+                                          Average Return
+
+
+
+
+                                                           −6
+                                                                                                                800                                                 6000
+                                                                                                                700
+                                                           −8                                                                                                       4000
+                                                                                                                600
+                                                           −10                                                  500                                                 2000
+                                                                                                                400                                                    0
+                                                           −12
+                                                                 0.0    0.2      0.4    0.6    0.8       1.0          0.0   0.2      0.4    0.6    0.8       1.0           0.0   0.2      0.4    0.6    0.8          1.0
+                                                                              Time steps (1e6)                                    Time steps (1e6)                                     Time steps (1e6)
+
+                                                                       (e) Reacher-v1                                   (f) InvertedPendulum-v1                      (g) InvertedDoublePendulum-v1
+
+Figure 5. Learning curves for the OpenAI gym continuous control tasks. The shaded region represents half a standard deviation of the
+average evaluation over 10 trials. Curves are smoothed uniformly for visual clarity.
+
+
+Table 1. Max Average Return over 10 trials of 1 million time steps. Maximum value for each task is bolded. ± corresponds to a single
+standard deviation over trials.
+                               Environment                                                   TD3                      DDPG            Our DDPG                     PPO           TRPO              ACKTR                    SAC
+                               HalfCheetah                                      9636.95 ± 859.065                     3305.60             8577.29             1795.43             -15.57               1450.46             2347.19
+                               Hopper                                            3564.07 ± 114.74                     2020.46             1860.02             2164.70            2471.30               2428.39             2996.66
+                               Walker2d                                          4682.82 ± 539.64                     1843.85             3098.11             3317.69            2321.47               1216.70             1283.67
+                               Ant                                              4372.44 ± 1000.33                     1005.30              888.77             1083.20             -75.85               1821.94              655.35
+                               Reacher                                             -3.60 ± 0.56                        -6.51                -4.01              -6.18             -111.43                -4.26                -4.44
+                               InvPendulum                                        1000.00 ± 0.00                      1000.00             1000.00             1000.00             985.40               1000.00             1000.00
+                               InvDoublePendulum                                 9337.47 ± 14.96                      9355.52             8369.95             8977.94             205.85               9081.92             8487.15
+
+
+6.1. Evaluation                                                                                                                           N (0, 0.2) to the actions chosen by the target actor network,
+                                                                                                                                          clipped to (−0.5, 0.5), delayed policy updates consists of
+To evaluate our algorithm, we measure its performance on
+                                                                                                                                          only updating the actor and target critic network every d
+the suite of MuJoCo continuous control tasks (Todorov et al.,
+                                                                                                                                          iterations, with d = 2. While a larger d would result in a
+2012), interfaced through OpenAI Gym (Brockman et al.,
+                                                                                                                                          larger benefit with respect to accumulating errors, for fair
+2016) (Figure 4). To allow for reproducible comparison, we
+                                                                                                                                          comparison, the critics are only trained once per time step,
+use the original set of tasks from Brockman et al. (2016)
+                                                                                                                                          and training the actor for too few iterations would cripple
+with no modifications to the environment or reward.
+                                                                                                                                          learning. Both target networks are updated with τ = 0.005.
+For our implementation of DDPG (Lillicrap et al., 2015), we
+                                                                                                                                          To remove the dependency on the initial parameters of the
+use a two layer feedforward neural network of 400 and 300
+                                                                                                                                          policy we use a purely exploratory policy for the first 10000
+hidden nodes respectively, with rectified linear units (ReLU)
+                                                                                                                                          time steps of stable length environments (HalfCheetah-v1
+between each layer for both the actor and critic, and a final
+                                                                                                                                          and Ant-v1) and the first 1000 time steps for the remaining
+tanh unit following the output of the actor. Unlike the orig-
+                                                                                                                                          environments. Afterwards, we use an off-policy exploration
+inal DDPG, the critic receives both the state and action as
+                                                                                                                                          strategy, adding Gaussian noise N (0, 0.1) to each action.
+input to the first layer. Both network parameters are updated
+                                                                                                                                          Unlike the original implementation of DDPG, we used un-
+using Adam (Kingma & Ba, 2014) with a learning rate of
+                                                                                                                                          correlated noise for exploration as we found noise drawn
+10−3 . After each time step, the networks are trained with a
+                                                                                                                                          from the Ornstein-Uhlenbeck (Uhlenbeck & Ornstein, 1930)
+mini-batch of a 100 transitions, sampled uniformly from a
+                                                                                                                                          process offered no performance benefits.
+replay buffer containing the entire history of the agent.
+                                                                                                                                          Each task is run for 1 million time steps with evaluations
+The target policy smoothing is implemented by adding  ∼
+                                                                                                                                          every 5000 time steps, where each evaluation reports the
+                              Addressing Function Approximation Error in Actor-Critic Methods
+
+average reward over 10 episodes with no exploration noise.
+                                                                  Table 2. Average return over the last 10 evaluations over 10 trials
+Our results are reported over 10 random seeds of the Gym
+                                                                  of 1 million time steps, comparing ablation over delayed policy
+simulator and the network initialization.                         updates (DP), target policy smoothing (TPS), Clipped Double
+We compare our algorithm against DDPG (Lillicrap et al.,          Q-learning (CDQ) and our architecture, hyper-parameters and
+2015) as well as the state of art policy gradient algorithms:     exploration (AHE). Maximum value for each task is bolded.
+PPO (Schulman et al., 2017), ACKTR (Wu et al., 2017)
+and TRPO (Schulman et al., 2015), as implemented by                Method           HCheetah       Hopper     Walker2d         Ant
+OpenAI’s baselines repository (Dhariwal et al., 2017), and         TD3                9532.99      3304.75      4565.24      4185.06
+SAC (Haarnoja et al., 2018), as implemented by the author’s        DDPG               3162.50      1731.94      1520.90      816.35
+GitHub1 . Additionally, we compare our method with our             AHE                8401.02      1061.77      2362.13      564.07
+re-tuned version of DDPG, which includes all architecture          AHE + DP           7588.64      1465.11      2459.53       896.13
+and hyper-parameter modifications to DDPG without any              AHE + TPS          9023.40       907.56      2961.36       872.17
+of our proposed adjustments. A full comparison between             AHE + CDQ          6470.20      1134.14      3979.21      3818.71
+our re-tuned version and the baselines DDPG is provided in         TD3 - DP           9590.65      2407.42      4695.50      3754.26
+the supplementary material.                                        TD3 - TPS          8987.69      2392.59      4033.67      4155.24
+                                                                   TD3 - CDQ          9792.80      1837.32      2579.39      849.75
+Our results are presented in Table 1 and learning curves in
+                                                                   DQ-AC              9433.87      1773.71      3100.45      2445.97
+Figure 5. TD3 matches or outperforms all other algorithms          DDQN-AC           10306.90      2155.75      3116.81      1092.18
+in both final performance and learning speed across all tasks.
+
+6.2. Ablation Studies                                             outperforms both prior methods, this suggests that subdu-
+We perform ablation studies to understand the contribution        ing the overestimations from the unbiased estimator is an
+of each individual component: Clipped Double Q-learning           effective measure to improve performance.
+(Section 4.2), delayed policy updates (Section 5.2) and target
+policy smoothing (Section 5.3). We present our results in         7. Conclusion
+Table 2 in which we compare the performance of removing
+each component from TD3 along with our modifications to           Overestimation has been identified as a key problem in
+the architecture and hyper-parameters. Additional learning        value-based methods. In this paper, we establish overesti-
+curves can be found in the supplementary material.                mation bias is also problematic in actor-critic methods. We
+                                                                  find the common solutions for reducing overestimation bias
+The significance of each component varies task to task.           in deep Q-learning with discrete actions are ineffective in an
+While the addition of only a single component causes in-          actor-critic setting, and develop a novel variant of Double
+significant improvement in most cases, the addition of com-       Q-learning which limits possible overestimation. Our re-
+binations performs at a much higher level. The full algo-         sults demonstrate that mitigating overestimation can greatly
+rithm outperforms every other combination in most tasks.          improve the performance of modern algorithms.
+Although the actor is trained for only half the number of
+iterations, the inclusion of delayed policy update generally      Due to the connection between noise and overestimation,
+improves performance, while reducing training time.               we examine the accumulation of errors from temporal dif-
+                                                                  ference learning. Our work investigates the importance of
+We additionally compare the effectiveness of the actor-critic     a standard technique in deep reinforcement learning, target
+variants of Double Q-learning (Van Hasselt, 2010) and Dou-        networks, and examines their role in limiting errors from
+ble DQN (Van Hasselt et al., 2016), denoted DQ-AC and             imprecise function approximation and stochastic optimiza-
+DDQN-AC respectively, in Table 2. For fairness in com-            tion. Finally, we introduce a SARSA-style regularization
+parison, these methods also benefited from delayed policy         technique which modifies the temporal difference target to
+updates, target policy smoothing and use our architecture         bootstrap off similar state-action pairs.
+and hyper-parameters. Both methods were shown to reduce
+overestimation bias less than Clipped Double Q-learning in        Taken together, these improvements define our proposed
+Section 4. This is reflected empirically, as both methods         approach, the Twin Delayed Deep Deterministic policy gra-
+result in insignificant improvements over TD3 - CDQ, with         dient algorithm (TD3), which greatly improves both the
+an exception in the Ant-v1 environment, which appears to          learning speed and performance of DDPG in a number of
+benefit greatly from any overestimation reduction. As the         challenging tasks in the continuous control setting. Our
+inclusion of Clipped Double Q-learning into our full method       algorithm exceeds the performance of numerous state of
+                                                                  the art algorithms. As our modifications are simple to im-
+    1
+      See the supplementary material for hyper-parameters and a   plement, they can be easily added to any other actor-critic
+discussion on the discrepancy in the reported results of SAC.     algorithm.
+                             Addressing Function Approximation Error in Actor-Critic Methods
+
+References                                                      Kingma, D. and Ba, J. Adam: A method for stochastic
+                                                                  optimization. arXiv preprint arXiv:1412.6980, 2014.
+Anschel, O., Baram, N., and Shimkin, N. Averaged-dqn:
+ Variance reduction and stabilization for deep reinforce-       Konda, V. R. and Tsitsiklis, J. N. On actor-critic algorithms.
+  ment learning. In International Conference on Machine           SIAM journal on Control and Optimization, 42(4):1143–
+ Learning, pp. 176–185, 2017.                                     1166, 2003.
+Barth-Maron, G., Hoffman, M. W., Budden, D., Dabney,            Lee, D., Defourny, B., and Powell, W. B. Bias-corrected
+  W., Horgan, D., TB, D., Muldal, A., Heess, N., and Lil-         q-learning to control max-operator bias in q-learning.
+  licrap, T. Distributional policy gradients. International       In Adaptive Dynamic Programming And Reinforcement
+  Conference on Learning Representations, 2018.                   Learning (ADPRL), 2013 IEEE Symposium on, pp. 93–99.
+Bellemare, M. G., Dabney, W., and Munos, R. A distribu-           IEEE, 2013.
+  tional perspective on reinforcement learning. In Interna-     Lillicrap, T. P., Hunt, J. J., Pritzel, A., Heess, N., Erez,
+  tional Conference on Machine Learning, pp. 449–458,             T., Tassa, Y., Silver, D., and Wierstra, D. Continuous
+  2017.                                                           control with deep reinforcement learning. arXiv preprint
+Bellman, R. Dynamic Programming. Princeton University             arXiv:1509.02971, 2015.
+  Press, 1957.                                                  Lin, L.-J. Self-improving reactive agents based on reinforce-
+Bertsekas, D. P. Dynamic programming and optimal control,         ment learning, planning and teaching. Machine learning,
+  volume 1. Athena scientific Belmont, MA, 1995.                  8(3-4):293–321, 1992.
+
+Brockman, G., Cheung, V., Pettersson, L., Schneider, J.,        Mannor, S. and Tsitsiklis, J. N. Mean-variance optimization
+  Schulman, J., Tang, J., and Zaremba, W. Openai gym,            in markov decision processes. In International Confer-
+  2016.                                                          ence on Machine Learning, pp. 177–184, 2011.
+
+Dhariwal, P., Hesse, C., Plappert, M., Radford, A., Schul-      Mannor, S., Simester, D., Sun, P., and Tsitsiklis, J. N. Bias
+  man, J., Sidor, S., and Wu, Y. Openai baselines. https:        and variance approximation in value function estimates.
+ //github.com/openai/baselines, 2017.                            Management Science, 53(2):308–322, 2007.
+
+Espeholt, L., Soyer, H., Munos, R., Simonyan, K., Mnih,         Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness,
+  V., Ward, T., Doron, Y., Firoiu, V., Harley, T., Dunning,      J., Bellemare, M. G., Graves, A., Riedmiller, M., Fidje-
+  I., et al. Impala: Scalable distributed deep-rl with impor-    land, A. K., Ostrovski, G., et al. Human-level control
+  tance weighted actor-learner architectures. arXiv preprint     through deep reinforcement learning. Nature, 518(7540):
+  arXiv:1802.01561, 2018.                                        529–533, 2015.
+
+Fox, R., Pakman, A., and Tishby, N. Taming the noise in         Mnih, V., Badia, A. P., Mirza, M., Graves, A., Lillicrap,
+  reinforcement learning via soft updates. In Proceedings of     T., Harley, T., Silver, D., and Kavukcuoglu, K. Asyn-
+  the Thirty-Second Conference on Uncertainty in Artificial      chronous methods for deep reinforcement learning. In
+  Intelligence, pp. 202–211. AUAI Press, 2016.                   International Conference on Machine Learning, pp. 1928–
+                                                                 1937, 2016.
+Haarnoja, T., Zhou, A., Abbeel, P., and Levine, S. Soft
+  actor-critic: Off-policy maximum entropy deep reinforce-      Munos, R., Stepleton, T., Harutyunyan, A., and Bellemare,
+  ment learning with a stochastic actor. arXiv preprint          M. Safe and efficient off-policy reinforcement learning.
+  arXiv:1801.01290, 2018.                                        In Advances in Neural Information Processing Systems,
+                                                                 pp. 1054–1062, 2016.
+He, F. S., Liu, Y., Schwing, A. G., and Peng, J. Learning
+  to play in a day: Faster deep reinforcement learning by       Nachum, O., Norouzi, M., Tucker, G., and Schuurmans, D.
+  optimality tightening. arXiv preprint arXiv:1611.01606,         Smoothed action value functions for learning gaussian
+  2016.                                                           policies. arXiv preprint arXiv:1803.02348, 2018.
+Henderson, P., Islam, R., Bachman, P., Pineau, J., Precup,      O’Donoghue, B., Osband, I., Munos, R., and Mnih, V. The
+  D., and Meger, D. Deep Reinforcement Learning that              uncertainty bellman equation and exploration. arXiv
+  Matters. arXiv preprint arXiv:1709.06560, 2017.                 preprint arXiv:1709.05380, 2017.
+Horgan, D., Quan, J., Budden, D., Barth-Maron, G., Hessel,      Pendrith, M. D., Ryan, M. R., et al. Estimator variance in
+  M., van Hasselt, H., and Silver, D. Distributed prioritized     reinforcement learning: Theoretical problems and practi-
+  experience replay. International Conference on Learning         cal solutions. University of New South Wales, School of
+  Representations, 2018.                                          Computer Science and Engineering, 1997.
+                              Addressing Function Approximation Error in Actor-Critic Methods
+
+Petrik, M. and Scherrer, B. Biasing approximate dynamic           Van Hasselt, H., Guez, A., and Silver, D. Deep reinforce-
+  programming with a lower discount factor. In Advances in          ment learning with double q-learning. In AAAI, pp. 2094–
+  Neural Information Processing Systems, pp. 1265–1272,             2100, 2016.
+  2009.
+                                                                  Van Seijen, H., Van Hasselt, H., Whiteson, S., and Wiering,
+Popov, I., Heess, N., Lillicrap, T., Hafner, R., Barth-             M. A theoretical and empirical analysis of expected sarsa.
+  Maron, G., Vecerik, M., Lampe, T., Tassa, Y., Erez,               In Adaptive Dynamic Programming and Reinforcement
+  T., and Riedmiller, M. Data-efficient deep reinforce-             Learning, 2009. ADPRL’09. IEEE Symposium on, pp.
+  ment learning for dexterous manipulation. arXiv preprint          177–184. IEEE, 2009.
+  arXiv:1704.03073, 2017.
+                                                                  Watkins, C. J. C. H. Learning from delayed rewards. PhD
+Precup, D., Sutton, R. S., and Dasgupta, S. Off-policy             thesis, King’s College, Cambridge, 1989.
+  temporal-difference learning with function approxima-
+  tion. In International Conference on Machine Learning,          Wu, Y., Mansimov, E., Grosse, R. B., Liao, S., and Ba,
+  pp. 417–424, 2001.                                               J. Scalable trust-region method for deep reinforcement
+                                                                   learning using kronecker-factored approximation. In Ad-
+Schaul, T., Quan, J., Antonoglou, I., and Silver, D. Priori-       vances in Neural Information Processing Systems, pp.
+  tized experience replay. In International Conference on          5285–5294, 2017.
+  Learning Representations, Puerto Rico, 2016.
+Schulman, J., Levine, S., Abbeel, P., Jordan, M., and Moritz,
+  P. Trust region policy optimization. In International
+  Conference on Machine Learning, pp. 1889–1897, 2015.
+Schulman, J., Wolski, F., Dhariwal, P., Radford, A., and
+  Klimov, O. Proximal policy optimization algorithms.
+  arXiv preprint arXiv:1707.06347, 2017.
+Silver, D., Lever, G., Heess, N., Degris, T., Wierstra, D., and
+   Riedmiller, M. Deterministic policy gradient algorithms.
+   In International Conference on Machine Learning, pp.
+   387–395, 2014.
+Singh, S., Jaakkola, T., Littman, M. L., and Szepesvári,
+  C.    Convergence results for single-step on-policy
+  reinforcement-learning algorithms. Machine learning,
+  38(3):287–308, 2000.
+Sutton, R. S. Learning to predict by the methods of temporal
+  differences. Machine learning, 3(1):9–44, 1988.
+Sutton, R. S. and Barto, A. G. Reinforcement learning: An
+  introduction, volume 1. MIT press Cambridge, 1998.
+Thrun, S. and Schwartz, A. Issues in using function approx-
+  imation for reinforcement learning. In Proceedings of the
+  1993 Connectionist Models Summer School Hillsdale, NJ.
+  Lawrence Erlbaum, 1993.
+Todorov, E., Erez, T., and Tassa, Y. Mujoco: A physics
+  engine for model-based control. In Intelligent Robots
+  and Systems (IROS), 2012 IEEE/RSJ International Con-
+  ference on, pp. 5026–5033. IEEE, 2012.
+Uhlenbeck, G. E. and Ornstein, L. S. On the theory of the
+  brownian motion. Physical review, 36(5):823, 1930.
+Van Hasselt, H. Double q-learning. In Advances in Neural
+  Information Processing Systems, pp. 2613–2621, 2010.
+                                           Supplementary Material
+
+
+A. Proof of Convergence of Clipped Double Q-Learning
+In a version of Clipped Double Q-learning for a finite MDP setting, we maintain two tabular value estimates QA , QB . At
+each time step we select actions a∗ = argmaxa QA (s, a) and then perform an update by setting target y:
+
+                                         a∗ = argmax QA (s0 , a)
+                                                   a                                                                  (16)
+                                           y = r + γ min(QA (s0 , a∗ ), QB (s0 , a∗ )),
+
+and update the value estimates with respect to the target and learning rate αt (s, a):
+
+                                      QA (s, a) = QA (s, a) + αt (s, a)(y − QA (s, a))
+                                                                                                                      (17)
+                                      QB (s, a) = QB (s, a) + αt (s, a)(y − QB (s, a)).
+
+In a finite MDP setting, Double Q-learning is often used to deal with noise induced by random rewards or state transitions,
+and so either QA or QB is updated randomly. However, in a function approximation setting, the interest may be more
+towards the approximation error and thus we can update both QA and QB at each iteration. The proof extends naturally to
+updating either randomly.
+The proof borrows heavily from the proof of convergence of SARSA (Singh et al., 2000) as well as Double Q-learning
+(Van Hasselt, 2010). The proof of lemma 1 can be found in Singh et al. (2000), building on a proposition from Bertsekas
+(1995).
+Lemma 1. Consider a stochastic process (ζt , ∆t , Ft ), t ≥ 0 where ζt , ∆t , Ft : X → R satisfy the equation:
+
+                                     ∆t+1 (xt ) = (1 − ζt (xt ))∆t (xt ) + ζt (xt )Ft (xt ),                          (18)
+
+where xt ∈ X and t = 0, 1, 2, .... Let Pt be a sequence of increasing σ-fields such that ζ0 and ∆0 are P0 -measurable and
+ζt , ∆t and Ft−1 are Pt -measurable, t = 1, 2, .... Assume that the following hold:
+ 1. The set X is finite.
+ 2. ζt (xt ) ∈ [0, 1], t ζt (xt ) = ∞, t (ζt (xt ))2 < ∞ with probability 1 and ∀x 6= xt : ζ(x) = 0.
+                      P               P
+
+ 3. ||E [Ft |Pt ] || ≤ κ||∆t || + ct where κ ∈ [0, 1) and ct converges to 0 with probability 1.
+ 4. Var[Ft (xt )|Pt ] ≤ K(1 + κ||∆t ||)2 , where K is some constant
+Where || · || denotes the maximum norm. Then ∆t converges to 0 with probability 1.
+Theorem 1. Given the following conditions:
+ 1. Each state action pair is sampled an infinite number of times.
+ 2. The MDP is finite.
+ 3. γ ∈ [0, 1).
+ 4. Q values are stored in a lookup table.
+ 5. Both QA and QB receive an infinite number of updates.
+ 6. The learning rates satisfy αt (s, a) ∈ [0, 1], t αt (s, a) = ∞, t (αt (s, a))2 < ∞ with probability 1 and αt (s, a) =
+                                                  P                P
+    0, ∀(s, a) 6= (st , at ).
+                              Addressing Function Approximation Error in Actor-Critic Methods
+
+  7. Var[r(s, a)] < ∞, ∀s, a.
+Then Clipped Double Q-learning will converge to the optimal value function Q∗ , as defined by the Bellman optimality
+equation, with probability 1.
+Proof of Theorem 1. We apply Lemma 1 with Pt = {QA    B                                                             A
+                                                 0 , Q0 , s0 , a0 , α0 , r1 , s1 , ..., st , at }, X = S × A, ∆t = Qt −
+ ∗
+Q , ζt = αt .
+First note that condition 1 and 4 of the lemma holds by the conditions 2 and 7 of the theorem respectively. Lemma condition
+2 holds by the theorem condition 6 along with our selection of ζt = αt .
+Defining a∗ = argmaxa QA (st+1 , a) we have
+                                                                         ∗
+                  ∆t+1 (st , at ) = (1 − αt (st , at ))(QA
+                                                         t (st , at ) − Q (st , at ))
+                                                                              ∗               ∗      ∗
+                                       + αt (st , at )(rt + γ min(QA               B
+                                                                   t (st+1 , a ), Qt (st+1 , a )) − Q (st , at ))              (19)
+                                 = (1 − αt (st , at ))∆t (st , at ) + αt (st , at )Ft (st , at )),
+
+where we have defined Ft (st , at ) as:
+                                                ∗               ∗      ∗
+         Ft (st , at ) = rt + γ min(QA               B
+                                     t (st+1 , a ), Qt (st+1 , a )) − Qt (st , at )
+                                             ∗               ∗      ∗                           ∗                 ∗
+                    = rt + γ min(QA               B                                  A                 A
+                                  t (st+1 , a ), Qt (st+1 , a )) − Qt (st , at ) + γQt (st+1 , a ) − γQt (st+1 , a )           (20)
+                    = FtQ (st , at ) + ct ,
+
+where FtQ = rt + γQA          ∗     ∗
+                   t (st+1 , a ) − Qt (st , at ) denotesh the value
+                                                                i of Ft under standard Q-learning and ct =
+                   ∗               ∗                  ∗          Q
+γ min(QA                B                   A
+        t (st+1 , a ), Qt (st+1 , a )) − γQt (st+1 , a ). As E Ft |Pt ≤ γ||∆t || is a well-known result, then condition 3
+of lemma 1 holds if it can be shown that ct converges to 0 with probability 1.
+                                    ∗              ∗
+Let y = rt + γ min(QB                    A                     BA                 B               A
+                       t (st+1 , a ), Qt (st+1 , a )) and ∆t (st , at ) = Qt (st , at ) − Qt (st , at ), where ct converges to 0
+     BA
+if ∆                                        BA
+        converges to 0. The update of ∆t at time t is the sum of updates of Q and QB :   A
+
+
+                     ∆BA                   BA                                 B                       A
+                                                                                                               
+                        t+1 (st , at ) = ∆t (st , at ) + αt (st , at ) y − Qt (st , at ) − (y − Qt (st , at ))
+
+                                       = ∆BA                             A               B
+                                                                                                     
+                                           t (st , at ) + αt (st , at ) Qt (st , at ) − Qt (st , at )                       (21)
+                                      = (1 − αt (st , at ))∆BA
+                                                            t (st , at ).
+
+Clearly ∆BA
+          t  will converge to 0, which then shows we have satisfied condition 3 of lemma 1, implying that QA (st , at )
+converges to Q∗t (st , at ). Similarly, we get convergence of QB (st , at ) to the optimal vale function by choosing ∆t =
+        ∗
+QBt − Q and repeating the same arguments, thus proving theorem 1.
+
+
+B. Overestimation Bias in Deterministic Policy Gradients
+If the gradients from the deterministic policy gradient update are unnormalized, this overestimation is still guaranteed to
+occur under a slightly stronger condition on the expectation of the value estimate. Assume the approximate value function is
+equal to the true value function, in expectation over the steady-state distribution, with respect to policy parameters between
+the original policy and in the direction of the true policy update:
+
+                                          Es∼π [Qθ (s, πnew (s))] = Es∼π [Qπ (s, πnew (s))]
+                                                                                                                               (22)
+                                          ∀φnew ∈ [φ, φ + β(φtrue − φ)] such that β > 0.
+
+Noting that φtrue maximizes the rate of change of the true value ∆πtrue = Qπ (s, πtrue (s)) − Qπ (s, πφ (s)), ∆πtrue ≥ ∆πapprox . By
+the given condition 22 the maximal rate of change of the approximate value must be at least as great ∆θapprox ≥ ∆πtrue . Given
+Qθ (s, πφ ) = Qπ (s, πφ ) this implies Qθ (s, πapprox (s)) ≥ Qπ (s, πtrue (s)) ≥ Qπ (s, πapprox (s)), showing an overestimation of
+the value function.
+                            Addressing Function Approximation Error in Actor-Critic Methods
+
+
+Table 3. A complete comparison of hyper-parameter choices between our DDPG and the OpenAI baselines implementation (Dhariwal
+et al., 2017).
+
+                            Hyper-parameter              Ours                 DDPG
+                            Critic Learning Rate         10−3                  10−3
+                            Critic Regularization        None               10−2 · ||θ||2
+                            Actor Learning Rate          10−3                  10−4
+                            Actor Regularization         None                  None
+                            Optimizer                   Adam                   Adam
+                            Target Update Rate (τ )    5 · 10−3                10−3
+                            Batch Size                    100                   64
+                            Iterations per time step       1                     1
+                            Discount Factor              0.99                  0.99
+                            Reward Scaling                1.0                   1.0
+                            Normalized Observations      False                 True
+                            Gradient Clipping            False                 False
+                            Exploration Policy         N (0, 0.1)   OU, θ = 0.15, µ = 0, σ = 0.2
+
+
+
+
+C. DDPG Network and Hyper-parameter Comparison
+DDPG Critic Architecture
+
+(state dim, 400)
+ReLU
+(action dim + 400, 300)
+ReLU
+(300, 1)
+
+DDPG Actor Architecture
+
+(state dim, 400)
+ReLU
+(400, 300)
+ReLU
+(300, 1)
+tanh
+
+Our Critic Architecture
+
+(state dim + action dim, 400)
+ReLU
+(action dim + 400, 300)
+RelU
+(300, 1)
+
+Our Actor Architecture
+
+(state dim, 400)
+ReLU
+(400, 300)
+RelU
+(300, 1)
+tanh
+                              Addressing Function Approximation Error in Actor-Critic Methods
+
+D. Additional Implementation Details
+For clarity in presentation, certain implementation details were omitted, which we describe here. For the most complete
+possible description of the algorithm, code can be found on our GitHub (https://github.com/sfujim/TD3).
+Our implementation of both DDPG and TD3 follows a standard practice in deep Q-learning, in which the update differs for
+terminal transitions. For transitions where the episode terminates by reaching some failure state, and not due to the episode
+running until the max horizon, the value of Q(s, ·) is set to 0 in the target y:
+                                   (
+                                     r                         if terminal s0 and t < max horizon
+                              y=
+                                     r + γQθ0 (s0 , πφ0 (s0 )) else
+
+For target policy smoothing (Section 5.3), the added noise is clipped to the range of possible actions, to avoid error introduced
+by using values of impossible actions:
+
+                                y = r + γQθ0 (s0 , clip(πφ0 (s0 ) + , min action, max action)),
+                                  ∼ clip(N (0, σ), −c, c).
+
+E. Soft Actor-Critic Implementation Details
+For our implementation of Soft Actor-Critic (Haarnoja et al., 2018) we use the code provided by the author (https:
+//github.com/haarnoja/sac), using the hyper-parameters described by the paper. We use a Gaussian mixture
+policy with 4 Gaussian distributions, except for the Reacher-v1 task, where we use a single Gaussian distribution due to
+numerical instability issues in the provided implementation. We use the environment-dependent reward scaling as described
+by the authors, multiplying the rewards by 3 for Walker2d-v1 and Ant-v1, and 1 for all remaining environments.
+For fair comparison with our method, we train for only 1 iteration per time step, rather than the 4 iterations used by the
+results reported by the authors. This along with fewer total time steps should explain for the discrepancy in results on some
+of the environments. Additionally, we note this comparison is against a prior version of Soft Actor-Critic, while the most
+recent variant includes our Clipped Double Q-learning in the value update and produces competitive results to TD3 on most
+tasks.
+                                                               Addressing Function Approximation Error in Actor-Critic Methods
+
+F. Additional Learning Curves
+
+                                                         TD3                 DDPG                AHE               AHE + TPS                   AHE + DP                 AHE + CDQ
+                 10000                                                                                                  5000
+                                                                      3500
+                                                                      3000                                                                                               4000
+                  8000                                                                                                  4000
+Average Return
+
+
+
+
+                                                                      2500                                                                                               3000
+                  6000                                                                                                  3000
+                                                                      2000
+                                                                                                                                                                         2000
+                  4000                                                1500                                              2000
+                                                                                                                                                                         1000
+                                                                      1000
+                  2000                                                                                                  1000
+                                                                       500                                                                                                  0
+                     0                                                   0                                                 0                                            −1000
+                         0.0     0.2      0.4    0.6    0.8     1.0          0.0   0.2      0.4    0.6    0.8     1.0          0.0   0.2      0.4    0.6    0.8   1.0           0.0   0.2       0.4    0.6    0.8   1.0
+                                       Time steps (1e6)                                  Time steps (1e6)                                  Time steps (1e6)                                  Time steps (1e6)
+
+                               (a) HalfCheetah-v1                                    (b) Hopper-v1                                   (c) Walker2d-v1                                        (d) Ant-v1
+
+Figure 6. Ablation over the varying modifications to our DDPG (AHE), comparing the subtraction of delayed policy updates (TD3 - DP),
+target policy smoothing (TD3 - TPS) and Clipped Double Q-learning (TD3 - CDQ).
+
+
+                                                              TD3              DDPG                AHE              TD3 - TPS                  TD3 - DP                 TD3 - CDQ
+                                                                      3500                                              5000
+                 10000
+                                                                      3000                                                                                               4000
+                  8000                                                                                                  4000
+Average Return
+
+
+
+
+                                                                      2500                                                                                               3000
+                  6000                                                                                                  3000
+                                                                      2000                                                                                               2000
+                  4000                                                1500                                              2000
+                                                                                                                                                                         1000
+                                                                      1000
+                  2000                                                                                                  1000
+                                                                       500                                                                                                  0
+                     0                                                   0                                                 0                                            −1000
+                         0.0     0.2      0.4    0.6    0.8     1.0          0.0   0.2      0.4    0.6    0.8     1.0          0.0   0.2      0.4    0.6    0.8   1.0           0.0   0.2       0.4    0.6    0.8   1.0
+                                       Time steps (1e6)                                  Time steps (1e6)                                  Time steps (1e6)                                  Time steps (1e6)
+
+                               (a) HalfCheetah-v1                                    (b) Hopper-v1                                   (c) Walker2d-v1                                        (d) Ant-v1
+
+Figure 7. Ablation over the varying modifications to our DDPG (AHE), comparing the addition of delayed policy updates (AHE + DP),
+target policy smoothing (AHE + TPS) and Clipped Double Q-learning (AHE + CDQ).
+
+
+                                                                         TD3                AHE                 TD3 - CDQ                  DQ-AC              DDQN-AC
+                                                                                                                        5000
+                 10000                                                3500
+                                                                      3000                                                                                               4000
+                                                                                                                        4000
+Average Return
+
+
+
+
+                  8000
+                                                                      2500                                                                                               3000
+                                                                                                                        3000
+                  6000                                                2000                                                                                               2000
+                  4000                                                1500                                              2000
+                                                                                                                                                                         1000
+                                                                      1000
+                  2000                                                                                                  1000
+                                                                       500                                                                                                  0
+                     0                                                   0                                                 0                                            −1000
+                         0.0     0.2      0.4    0.6    0.8     1.0          0.0   0.2      0.4    0.6    0.8     1.0          0.0   0.2      0.4    0.6    0.8   1.0           0.0   0.2       0.4    0.6    0.8   1.0
+                                       Time steps (1e6)                                  Time steps (1e6)                                  Time steps (1e6)                                  Time steps (1e6)
+
+                               (a) HalfCheetah-v1                                    (b) Hopper-v1                                   (c) Walker2d-v1                                        (d) Ant-v1
+
+Figure 8. Comparison of TD3 and the Double Q-learning (DQ-AC) and Double DQN (DDQN-AC) actor-critic variants, which also
+leverage delayed policy updates and target policy smoothing.
+

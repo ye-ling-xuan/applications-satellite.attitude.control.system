@@ -1,0 +1,1958 @@
+
+
+  RigidBodyKinematics — Basilisk 2.4.0
+ documentation
+
+            Basilisk
+
+                version 2.4.0
+
+Basilisk:
+
+Install
+
+Learning Basilisk
+
+Support
+
+Documentation
+
+architecture
+
+fswAlgorithms
+
+moduleTemplates
+
+simulation
+
+utilities
+
+RigidBodyKinematics
+
+BdotmatMRP()
+
+BinvEP()
+
+BinvEuler121()
+
+BinvEuler123()
+
+BinvEuler131()
+
+BinvEuler132()
+
+BinvEuler212()
+
+BinvEuler213()
+
+BinvEuler231()
+
+BinvEuler232()
+
+BinvEuler312()
+
+BinvEuler313()
+
+BinvEuler321()
+
+BinvEuler323()
+
+BinvGibbs()
+
+BinvMRP()
+
+BinvPRV()
+
+BmatEP()
+
+BmatEuler121()
+
+BmatEuler123()
+
+BmatEuler131()
+
+BmatEuler132()
+
+BmatEuler212()
+
+BmatEuler213()
+
+BmatEuler231()
+
+BmatEuler232()
+
+BmatEuler312()
+
+BmatEuler313()
+
+BmatEuler321()
+
+BmatEuler323()
+
+BmatGibbs()
+
+BmatMRP()
+
+BmatPRV()
+
+C2EP()
+
+C2Euler121()
+
+C2Euler123()
+
+C2Euler131()
+
+C2Euler132()
+
+C2Euler212()
+
+C2Euler213()
+
+C2Euler231()
+
+C2Euler232()
+
+C2Euler312()
+
+C2Euler313()
+
+C2Euler321()
+
+C2Euler323()
+
+C2Gibbs()
+
+C2MRP()
+
+C2PRV()
+
+EP2C()
+
+EP2Euler121()
+
+EP2Euler123()
+
+EP2Euler131()
+
+EP2Euler132()
+
+EP2Euler212()
+
+EP2Euler213()
+
+EP2Euler231()
+
+EP2Euler232()
+
+EP2Euler312()
+
+EP2Euler313()
+
+EP2Euler321()
+
+EP2Euler323()
+
+EP2Gibbs()
+
+EP2MRP()
+
+EP2PRV()
+
+MRP2C()
+
+MRP2EP()
+
+MRP2Euler121()
+
+MRP2Euler123()
+
+MRP2Euler131()
+
+MRP2Euler132()
+
+MRP2Euler212()
+
+MRP2Euler213()
+
+MRP2Euler231()
+
+MRP2Euler232()
+
+MRP2Euler312()
+
+MRP2Euler313()
+
+MRP2Euler321()
+
+MRP2Euler323()
+
+MRP2Gibbs()
+
+MRP2PRV()
+
+MRPswitch()
+
+PRV2C()
+
+PRV2EP()
+
+PRV2Euler121()
+
+PRV2Euler123()
+
+PRV2Euler131()
+
+PRV2Euler132()
+
+PRV2Euler212()
+
+PRV2Euler213()
+
+PRV2Euler231()
+
+PRV2Euler232()
+
+PRV2Euler312()
+
+PRV2Euler313()
+
+PRV2Euler321()
+
+PRV2Euler323()
+
+PRV2Gibbs()
+
+PRV2MRP()
+
+PRV2elem()
+
+Picheck()
+
+addEP()
+
+addEuler121()
+
+addEuler123()
+
+addEuler131()
+
+addEuler132()
+
+addEuler212()
+
+addEuler213()
+
+addEuler231()
+
+addEuler232()
+
+addEuler312()
+
+addEuler313()
+
+addEuler321()
+
+addEuler323()
+
+addGibbs()
+
+addMRP()
+
+addPRV()
+
+dEP()
+
+dEuler121()
+
+dEuler123()
+
+dEuler131()
+
+dEuler132()
+
+dEuler212()
+
+dEuler213()
+
+dEuler231()
+
+dEuler232()
+
+dEuler312()
+
+dEuler313()
+
+dEuler321()
+
+dEuler323()
+
+dGibbs()
+
+dMRP()
+
+dMRP2Omega()
+
+dPRV()
+
+ddMRP()
+
+ddMRP2dOmega()
+
+elem2PRV()
+
+euler1()
+
+euler1212C()
+
+euler1212EP()
+
+euler1212Gibbs()
+
+euler1212MRP()
+
+euler1212PRV()
+
+euler1232C()
+
+euler1232EP()
+
+euler1232Gibbs()
+
+euler1232MRP()
+
+euler1232PRV()
+
+euler1312C()
+
+euler1312EP()
+
+euler1312Gibbs()
+
+euler1312MRP()
+
+euler1312PRV()
+
+euler1322C()
+
+euler1322EP()
+
+euler1322Gibbs()
+
+euler1322MRP()
+
+euler1322PRV()
+
+euler2()
+
+euler2122C()
+
+euler2122EP()
+
+euler2122Gibbs()
+
+euler2122MRP()
+
+euler2122PRV()
+
+euler2132C()
+
+euler2132EP()
+
+euler2132Gibbs()
+
+euler2132MRP()
+
+euler2132PRV()
+
+euler2312C()
+
+euler2312EP()
+
+euler2312Gibbs()
+
+euler2312MRP()
+
+euler2312PRV()
+
+euler2322C()
+
+euler2322EP()
+
+euler2322Gibbs()
+
+euler2322MRP()
+
+euler2322PRV()
+
+euler3()
+
+euler3122C()
+
+euler3122EP()
+
+euler3122Gibbs()
+
+euler3122MRP()
+
+euler3122PRV()
+
+euler3132C()
+
+euler3132EP()
+
+euler3132Gibbs()
+
+euler3132MRP()
+
+euler3132PRV()
+
+euler3212C()
+
+euler3212EP()
+
+euler3212Gibbs()
+
+euler3212MRP()
+
+euler3212PRV()
+
+euler3232C()
+
+euler3232EP()
+
+euler3232Gibbs()
+
+euler3232MRP()
+
+euler3232PRV()
+
+gibbs2C()
+
+gibbs2EP()
+
+gibbs2Euler121()
+
+gibbs2Euler123()
+
+gibbs2Euler131()
+
+gibbs2Euler132()
+
+gibbs2Euler212()
+
+gibbs2Euler213()
+
+gibbs2Euler231()
+
+gibbs2Euler232()
+
+gibbs2Euler312()
+
+gibbs2Euler313()
+
+gibbs2Euler321()
+
+gibbs2Euler323()
+
+gibbs2MRP()
+
+gibbs2PRV()
+
+subEP()
+
+subEuler121()
+
+subEuler123()
+
+subEuler131()
+
+subEuler132()
+
+subEuler212()
+
+subEuler213()
+
+subEuler231()
+
+subEuler232()
+
+subEuler312()
+
+subEuler313()
+
+subEuler321()
+
+subEuler323()
+
+subGibbs()
+
+subMRP()
+
+subPRV()
+
+SimulationBaseClass
+
+SpherePlot
+
+astroFunctions
+
+datasheet_RW
+
+deprecated
+
+fswSetupRW
+
+fswSetupThrusters
+
+macros
+
+makeDraftModule
+
+orbitalMotion
+
+overwriteSwig
+
+planetStates
+
+pyswice_ck_utilities
+
+pyswice_spk_utilities
+
+pythonVariableLogger
+
+readAtmTable
+
+simIncludeGravBody
+
+simIncludeRW
+
+simIncludeThruster
+
+simSetPlanetEnvironment
+
+simulationArchTypes
+
+simulationProgessBar
+
+tabulate
+
+unitTestSupport
+
+vizSupport
+
+MonteCarlo
+
+vizProtobuffer
+
+External Sites
+
+Vizard:
+
+About Vizard
+
+Download
+
+Release Notes
+
+User Guide
+
+Advanced Features
+
+Video Gallery
+
+          Basilisk
+
+Documentation
+          
+utilities
+      
+RigidBodyKinematics
+
+             View page source
+
+RigidBodyKinematics
+
+RigidBodyKinematics.BdotmatMRP(Q, dQ)[source]
+
+B = BdotmatMRP(Q, dQ) returns the derivative of the 3x3 BmatMRP
+matrix, which is used to calculate the second order derivative
+of the MRP vector Q.
+
+(d^2Q)/(dt^2) = 1/4 ( [B(Q)] dw + [Bdot(Q,dQ)] w )
+
+RigidBodyKinematics.BinvEP(Q)[source]
+
+B = BinvEP(Q) returns the 3x4 matrix which relates
+the derivative of euler parameter vector Q to the
+body angular velocity vector w.
+
+w = 2 [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler121(Q)[source]
+
+B = BinvEuler121(Q) returns the 3x3 matrix which relates
+the derivative of the (1-2-1) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler123(Q)[source]
+
+B = BinvEuler123(Q) returns the 3x3 matrix which relates
+the derivative of the (1-2-3) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler131(Q)[source]
+
+B = BinvEuler131(Q) returns the 3x3 matrix which relates
+the derivative of the (1-3-1) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler132(Q)[source]
+
+B = BinvEuler132(Q) returns the 3x3 matrix which relates
+the derivative of the (1-3-2) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler212(Q)[source]
+
+B = BinvEuler212(Q) returns the 3x3 matrix which relates
+the derivative of the (2-1-2) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler213(Q)[source]
+
+B = BinvEuler213(Q) returns the 3x3 matrix which relates
+the derivative of the (2-1-3) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler231(Q)[source]
+
+B = BinvEuler231(Q) returns the 3x3 matrix which relates
+the derivative of the (2-3-1) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler232(Q)[source]
+
+B = BinvEuler232(Q) returns the 3x3 matrix which relates
+the derivative of the (2-3-2) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler312(Q)[source]
+
+B = BinvEuler312(Q) returns the 3x3 matrix which relates
+the derivative of the (3-1-2) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler313(Q)[source]
+
+B = BinvEuler313(Q) returns the 3x3 matrix which relates
+the derivative of the (3-1-3) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler321(Q)[source]
+
+B = BinvEuler321(Q) returns the 3x3 matrix which relates
+the derivative of the (3-2-1) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvEuler323(Q)[source]
+
+B = BinvEuler323(Q) returns the 3x3 matrix which relates
+the derivative of the (3-2-3) euler angle vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvGibbs(Q)[source]
+
+B = BinvGibbs(Q) returns the 3x3 matrix which relates
+the derivative of gibbs vector Q to the
+body angular velocity vector w.
+
+w = 2 [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvMRP(Q)[source]
+
+B = BinvMRP(Q) returns the 3x3 matrix which relates
+the derivative of MRP vector Q to the
+body angular velocity vector w.
+
+w = 4 [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BinvPRV(Q)[source]
+
+B = BinvPRV(Q) returns the 3x3 matrix which relates
+the derivative of principal rotation vector Q to the
+body angular velocity vector w.
+
+w = [B(Q)]^(-1) dQ/dt
+
+RigidBodyKinematics.BmatEP(Q)[source]
+
+B = BmatEP(Q) returns the 4x3 matrix which relates the
+body angular velocity vector w to the derivative of
+Euler parameter vector Q.
+
+dQ/dt = 1/2 [B(Q)] w
+
+RigidBodyKinematics.BmatEuler121(Q)[source]
+
+B = BmatEuler121(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(1-2-1) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler123(Q)[source]
+
+B = BmatEuler123(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(1-2-3) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler131(Q)[source]
+
+B = BmatEuler131(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(1-3-1) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler132(Q)[source]
+
+B = BmatEuler132(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(1-3-2) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler212(Q)[source]
+
+B = BmatEuler212(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(2-1-2) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler213(Q)[source]
+
+B = BmatEuler213(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(2-1-3) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler231(Q)[source]
+
+B = BmatEuler231(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(2-3-1) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler232(Q)[source]
+
+B = BmatEuler232(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(2-3-2) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler312(Q)[source]
+
+B = BmatEuler312(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(3-1-2) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler313(Q)[source]
+
+B = BmatEuler313(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(3-1-3) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler321(Q)[source]
+
+B = BmatEuler321(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(3-2-1) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatEuler323(Q)[source]
+
+B = BmatEuler323(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+(3-2-3) euler angle vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.BmatGibbs(Q)[source]
+
+B = BmatGibbs(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+Gibbs vector Q.
+
+dQ/dt = 1/2 [B(Q)] w
+
+RigidBodyKinematics.BmatMRP(Q)[source]
+
+B = BmatMRP(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+MRP vector Q.
+
+dQ/dt = 1/4 [B(Q)] w
+
+RigidBodyKinematics.BmatPRV(Q)[source]
+
+B = BmatPRV(Q) returns the 3x3 matrix which relates the
+body angular velocity vector w to the derivative of
+principal rotation vector Q.
+
+dQ/dt = [B(Q)] w
+
+RigidBodyKinematics.C2EP(C)[source]
+
+Q = C2EP(C) translates the 3x3 direction cosine matrix
+C into the corresponding 4x1 euler parameter vector Q,
+where the first component of Q is the non-dimensional
+Euler parameter Beta_0 >= 0. Transformation is done
+using the Stanley method.
+
+RigidBodyKinematics.C2Euler121(C)[source]
+
+Q = C2Euler121(C) translates the 3x3 direction cosine matrix
+C into the corresponding (1-2-1) euler angle set.
+
+RigidBodyKinematics.C2Euler123(C)[source]
+
+Q = C2Euler123(C) translates the 3x3 direction cosine matrix
+C into the corresponding (1-2-3) euler angle set.
+
+RigidBodyKinematics.C2Euler131(C)[source]
+
+Q = C2Euler131(C) translates the 3x3 direction cosine matrix
+C into the corresponding (1-3-1) euler angle set.
+
+RigidBodyKinematics.C2Euler132(C)[source]
+
+Q = C2Euler132(C) translates the 3x3 direction cosine matrix
+C into the corresponding (1-3-2) euler angle set.
+
+RigidBodyKinematics.C2Euler212(C)[source]
+
+Q = C2Euler212(C) translates the 3x3 direction cosine matrix
+C into the corresponding (2-1-2) euler angle set.
+
+RigidBodyKinematics.C2Euler213(C)[source]
+
+Q = C2Euler213(C) translates the 3x3 direction cosine matrix
+C into the corresponding (2-1-3) euler angle set.
+
+RigidBodyKinematics.C2Euler231(C)[source]
+
+Q = C2Euler231(C) translates the 3x3 direction cosine matrix
+C into the corresponding (2-3-1) euler angle set.
+
+RigidBodyKinematics.C2Euler232(C)[source]
+
+Q = C2Euler232(C) translates the 3x3 direction cosine matrix
+C into the corresponding (2-3-2) euler angle set.
+
+RigidBodyKinematics.C2Euler312(C)[source]
+
+Q = C2Euler312(C) translates the 3x3 direction cosine matrix
+C into the corresponding (3-1-2) euler angle set.
+
+RigidBodyKinematics.C2Euler313(C)[source]
+
+Q = C2Euler313(C) translates the 3x3 direction cosine matrix
+C into the corresponding (3-1-3) euler angle set.
+
+RigidBodyKinematics.C2Euler321(C)[source]
+
+Q = C2Euler321(C) translates the 3x3 direction cosine matrix
+C into the corresponding (3-2-1) euler angle set.
+
+RigidBodyKinematics.C2Euler323(C)[source]
+
+Q = C2Euler323(C) translates the 3x3 direction cosine matrix
+C into the corresponding (3-2-3) euler angle set.
+
+RigidBodyKinematics.C2Gibbs(C)[source]
+
+Q = C2Gibbs(C) translates the 3x3 direction cosine matrix
+C into the corresponding 3x1 gibbs vector Q.
+
+RigidBodyKinematics.C2MRP(C)[source]
+
+Q = C2MRP(C) translates the 3x3 direction cosine matrix
+C into the corresponding 3x1 MRP vector Q where the
+MRP vector is chosen such that \(|Q| <= 1\).
+
+RigidBodyKinematics.C2PRV(C)[source]
+
+Q = C2PRV(C) translates the 3x3 direction cosine matrix
+C into the corresponding 3x1 principal rotation vector Q,
+where the first component of Q is the principal rotation angle
+phi (0<= phi <= Pi)
+
+RigidBodyKinematics.EP2C(q)[source]
+
+C = EP2C(Q) returns the direction math.cosine
+matrix in terms of the 4x1 euler parameter vector
+Q.  The first element is the non-dimensional euler
+parameter, while the remain three elements form
+the eulerparameter vector.
+
+RigidBodyKinematics.EP2Euler121(Q)[source]
+
+E = EP2Euler121(Q) translates the euler parameter
+vector Q into the corresponding (1-2-1) euler angle
+vector E.
+
+RigidBodyKinematics.EP2Euler123(q)[source]
+
+Q = EP2Euler123(Q) translates the euler parameter vector
+Q into the corresponding (1-2-3) euler angle set.
+
+RigidBodyKinematics.EP2Euler131(Q)[source]
+
+E = EP2Euler131(Q) translates the euler parameter
+vector Q into the corresponding (1-3-1) euler angle
+vector E.
+
+RigidBodyKinematics.EP2Euler132(q)[source]
+
+E = EP2Euler132(Q) translates the euler parameter vector
+Q into the corresponding (1-3-2) euler angle set.
+
+RigidBodyKinematics.EP2Euler212(Q)[source]
+
+E = EP2Euler212(Q) translates the euler parameter
+vector Q into the corresponding (2-1-2) euler angle
+vector E.
+
+RigidBodyKinematics.EP2Euler213(q)[source]
+
+Q = EP2Euler213(Q) translates the euler parameter vector
+Q into the corresponding (2-1-3) euler angle set.
+
+RigidBodyKinematics.EP2Euler231(q)[source]
+
+E = EP2Euler231(Q) translates the euler parameter vector
+Q into the corresponding (2-3-1) euler angle set.
+
+RigidBodyKinematics.EP2Euler232(Q)[source]
+
+E = EP2Euler232(Q) translates the euler parameter
+vector Q into the corresponding (2-3-2) euler angle
+vector E.
+
+RigidBodyKinematics.EP2Euler312(q)[source]
+
+E = EP2Euler312(Q) translates the euler parameter vector
+Q into the corresponding (3-1-2) euler angle set.
+
+RigidBodyKinematics.EP2Euler313(Q)[source]
+
+E = EP2Euler313(Q) translates the euler parameter
+vector Q into the corresponding (3-1-3) euler angle
+vector E.
+
+RigidBodyKinematics.EP2Euler321(q)[source]
+
+E = EP2Euler321(Q) translates the euler parameter vector
+Q into the corresponding (3-2-1) euler angle set.
+
+RigidBodyKinematics.EP2Euler323(Q)[source]
+
+E = EP2Euler323(Q) translates the euler parameter
+vector Q into the corresponding (3-2-3) euler angle
+vector E.
+
+RigidBodyKinematics.EP2Gibbs(Q1)[source]
+
+Q = EP2Gibbs(Q1) translates the euler parameter vector Q1
+into the gibbs vector Q.
+
+RigidBodyKinematics.EP2MRP(Q1)[source]
+
+Q = EP2MRP(Q1) translates the euler parameter vector Q1
+into the MRP vector Q.
+
+RigidBodyKinematics.EP2PRV(Q1)[source]
+
+Q = EP2PRV(Q1) translates the euler parameter vector Q1
+into the principal rotation vector Q.
+
+RigidBodyKinematics.MRP2C(q)[source]
+
+C = MRP2C(Q) returns the direction cosine
+matrix in terms of the 3x1 MRP vector Q.
+
+RigidBodyKinematics.MRP2EP(Q1)[source]
+
+Q = MRP2EP(Q1) translates the MRP vector Q1
+into the euler parameter vector Q.
+
+RigidBodyKinematics.MRP2Euler121(Q)[source]
+
+E = MRP2Euler121(Q) translates the MRP
+vector Q into the (1-2-1) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler123(Q)[source]
+
+E = MRP2Euler123(Q) translates the MRP
+vector Q into the (1-2-3) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler131(Q)[source]
+
+E = MRP2Euler131(Q) translates the MRP
+vector Q into the (1-3-1) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler132(Q)[source]
+
+E = MRP2Euler132(Q) translates the MRP
+vector Q into the (1-3-2) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler212(Q)[source]
+
+E = MRP2Euler212(Q) translates the MRP
+vector Q into the (2-1-2) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler213(Q)[source]
+
+E = MRP2Euler213(Q) translates the MRP
+vector Q into the (2-1-3) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler231(Q)[source]
+
+E = MRP2Euler231(Q) translates the MRP
+vector Q into the (2-3-1) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler232(Q)[source]
+
+E = MRP2Euler232(Q) translates the MRP
+vector Q into the (2-3-2) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler312(Q)[source]
+
+E = MRP2Euler312(Q) translates the MRP
+vector Q into the (3-1-2) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler313(Q)[source]
+
+E = MRP2Euler313(Q) translates the MRP
+vector Q into the (3-1-3) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler321(Q)[source]
+
+E = MRP2Euler321(Q) translates the MRP
+vector Q into the (3-2-1) euler angle vector E.
+
+RigidBodyKinematics.MRP2Euler323(Q)[source]
+
+E = MRP2Euler323(Q) translates the MRP
+vector Q into the (3-2-3) euler angle vector E.
+
+RigidBodyKinematics.MRP2Gibbs(Q1)[source]
+
+Q = MRP2Gibbs(Q1) translates the MRP vector Q1
+into the gibbs vector Q.
+
+RigidBodyKinematics.MRP2PRV(Q1)[source]
+
+Q = MRP2PRV(Q1) translates the MRP vector Q1
+into the principal rotation vector Q.
+
+RigidBodyKinematics.MRPswitch(q, s2)[source]
+
+S = MRPswitch(Q,s2) checks to see if norm(Q) is larger than s2.
+If yes, then the MRP vector Q is mapped to its shadow set.
+
+RigidBodyKinematics.PRV2C(q)[source]
+
+C = PRV2C(Q) returns the direction cosine
+matrix in terms of the 3x1 principal rotation vector
+Q.
+
+RigidBodyKinematics.PRV2EP(qq1)[source]
+
+”
+PRV2EP(Q1)
+
+Q = PRV2EP(Q1) translates the principal rotation vector Q1
+into the euler parameter vector Q.
+
+RigidBodyKinematics.PRV2Euler121(Q)[source]
+
+E = PRV2Euler121(Q) translates the principal rotation
+vector Q into the (1-2-1) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler123(Q)[source]
+
+E = PRV2Euler123(Q) translates the principal rotation
+vector Q into the (1-2-3) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler131(Q)[source]
+
+E = PRV2Euler131(Q) translates the principal rotation
+vector Q into the (1-3-1) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler132(Q)[source]
+
+E = PRV2Euler132(Q) translates the principal rotation
+vector Q into the (1-3-2) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler212(Q)[source]
+
+E = PRV2Euler212(Q) translates the principal rotation
+vector Q into the (2-1-2) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler213(Q)[source]
+
+E = PRV2Euler213(Q) translates the principal rotation
+vector Q into the (2-1-3) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler231(Q)[source]
+
+E = PRV2Euler231(Q) translates the principal rotation
+vector Q into the (2-3-1) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler232(Q)[source]
+
+E = PRV2Euler232(Q) translates the principal rotation
+vector Q into the (2-3-2) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler312(Q)[source]
+
+E = PRV2Euler312(Q) translates the principal rotation
+vector Q into the (3-1-2) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler313(Q)[source]
+
+E = PRV2Euler313(Q) translates the principal rotation
+vector Q into the (3-1-3) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler321(Q)[source]
+
+E = PRV2Euler321(Q) translates the principal rotation
+vector Q into the (3-2-1) euler angle vector E.
+
+RigidBodyKinematics.PRV2Euler323(Q)[source]
+
+E = PRV2Euler323(Q) translates the principal rotation
+vector Q into the (3-2-3) euler angle vector E.
+
+RigidBodyKinematics.PRV2Gibbs(Q1)[source]
+
+Q = PRV2Gibbs(Q1) translates the principal rotation vector Q1
+into the gibbs vector Q.
+
+RigidBodyKinematics.PRV2MRP(Q1)[source]
+
+Q = PRV2MRP(Q1) translates the principal rotation vector Q1
+into the MRP vector Q.
+
+RigidBodyKinematics.PRV2elem(R)[source]
+
+Q = PRV2elem(R) translates a prinicpal rotation vector R
+into the corresponding principal rotation element set Q.
+
+RigidBodyKinematics.Picheck(x)[source]
+
+Makes sure that the angle x lies within +/- Pi.
+
+RigidBodyKinematics.addEP(B1, B2)[source]
+
+Q = addEP(B1,B2) provides the euler parameter vector
+which corresponds to performing to successive
+rotations B1 and B2.
+
+RigidBodyKinematics.addEuler121(E1, E2)[source]
+
+Q = addEuler121(E1,E2) computes the overall (1-2-1) euler
+angle vector corresponding to two successive
+(1-2-1) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler123(E1, E2)[source]
+
+Q = addEuler123(E1,E2) computes the overall (1-2-3) euler
+angle vector corresponding to two successive
+(1-2-3) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler131(E1, E2)[source]
+
+Q = addEuler131(E1,E2) computes the overall (1-3-1) euler
+angle vector corresponding to two successive
+(1-3-1) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler132(E1, E2)[source]
+
+Q = addEuler132(E1,E2) computes the overall (1-3-2) euler
+angle vector corresponding to two successive
+(1-3-2) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler212(E1, E2)[source]
+
+Q = addEuler212(E1,E2) computes the overall (2-1-2) euler
+angle vector corresponding to two successive
+(2-1-2) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler213(E1, E2)[source]
+
+Q = addEuler213(E1,E2) computes the overall (2-1-3) euler
+angle vector corresponding to two successive
+(2-1-3) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler231(E1, E2)[source]
+
+Q = addEuler231(E1,E2) computes the overall (2-3-1) euler
+angle vector corresponding to two successive
+(2-3-1) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler232(E1, E2)[source]
+
+Q = addEuler232(E1,E2) computes the overall (2-3-2) euler
+angle vector corresponding to two successive
+(2-3-2) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler312(E1, E2)[source]
+
+Q = addEuler312(E1,E2) computes the overall (3-1-2) euler
+angle vector corresponding to two successive
+(3-1-2) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler313(E1, E2)[source]
+
+Q = addEuler313(E1,E2) computes the overall (3-1-3) euler
+angle vector corresponding to two successive
+(3-1-3) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler321(E1, E2)[source]
+
+Q = addEuler321(E1,E2) computes the overall (3-2-1) euler
+angle vector corresponding to two successive
+(3-2-1) rotations E1 and E2.
+
+RigidBodyKinematics.addEuler323(E1, E2)[source]
+
+Q = addEuler323(E1,E2) computes the overall (3-2-3) euler
+angle vector corresponding to two successive
+(3-2-3) rotations E1 and E2.
+
+RigidBodyKinematics.addGibbs(Q1, Q2)[source]
+
+Q = addGibbs(Q1,Q2) provides the gibbs vector
+which corresponds to performing to successive
+rotations Q1 and Q2.
+
+RigidBodyKinematics.addMRP(Q1, Q2)[source]
+
+Q = addMRP(Q1,Q2) provides the MRP vector
+which corresponds to performing to successive
+rotations Q1 and Q2.
+
+RigidBodyKinematics.addPRV(Q1, Q2)[source]
+
+Q = addPRV(Q1,Q2) provides the principal rotation vector
+which corresponds to performing to successive
+prinicipal rotations Q1 and Q2.
+
+RigidBodyKinematics.dEP(Q, W)[source]
+
+dq = dEP(Q,W) returns the euler parameter derivative
+for a given euler parameter vector Q and body
+angular velocity vector w.
+
+dQ/dt = 1/2 [B(Q)] w
+
+RigidBodyKinematics.dEuler121(Q, W)[source]
+
+dq = dEuler121(Q,W) returns the (1-2-1) euler angle derivative
+vector for a given (1-2-1) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler123(Q, W)[source]
+
+dq = dEuler123(Q,W) returns the (1-2-3) euler angle derivative
+vector for a given (1-2-3) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler131(Q, W)[source]
+
+dq = dEuler131(Q,W) returns the (1-3-1) euler angle derivative
+vector for a given (1-3-1) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler132(Q, W)[source]
+
+dq = dEuler132(Q,W) returns the (1-3-2) euler angle derivative
+vector for a given (1-3-2) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler212(Q, W)[source]
+
+dq = dEuler212(Q,W) returns the (2-1-2) euler angle derivative
+vector for a given (2-1-2) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler213(Q, W)[source]
+
+dq = dEuler213(Q,W) returns the (2-1-3) euler angle derivative
+vector for a given (2-1-3) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler231(Q, W)[source]
+
+dq = dEuler231(Q,W) returns the (2-3-1) euler angle derivative
+vector for a given (2-3-1) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler232(Q, W)[source]
+
+dq = dEuler232(Q,W) returns the (2-3-2) euler angle derivative
+vector for a given (2-3-2) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler312(Q, W)[source]
+
+dq = dEuler312(Q,W) returns the (3-1-2) euler angle derivative
+vector for a given (3-1-2) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler313(Q, W)[source]
+
+dq = dEuler313(Q,W) returns the (3-1-3) euler angle derivative
+vector for a given (3-1-3) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler321(Q, W)[source]
+
+dq = dEuler321(Q,W) returns the (3-2-1) euler angle derivative
+vector for a given (3-2-1) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dEuler323(Q, W)[source]
+
+dq = dEuler323(Q,W) returns the (3-2-3) euler angle derivative
+vector for a given (3-2-3) euler angle vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.dGibbs(Q, W)[source]
+
+dq = dGibbs(Q,W) returns the gibbs derivative
+for a given gibbs vector Q and body
+angular velocity vector w.
+
+dQ/dt = 1/2 [B(Q)] w
+
+RigidBodyKinematics.dMRP(Q, W)[source]
+
+dq = dMRP(Q,W) returns the MRP derivative
+for a given MRP vector Q and body
+angular velocity vector w.
+
+dQ/dt = 1/4 [B(Q)] w
+
+RigidBodyKinematics.dMRP2Omega(q, dq)[source]
+
+dMRP(Q,dQ)
+
+W = dMRP(Q,dQ) returns the angular rate
+for a given MRP set q MRP derivative dq.
+
+W = 4 [B(Q)]^(-1) dQ
+
+RigidBodyKinematics.dPRV(Q, W)[source]
+
+dq = dPRV(Q,W) returns the PRV derivative
+for a given PRV vector Q and body
+angular velocity vector w.
+
+dQ/dt =  [B(Q)] w
+
+RigidBodyKinematics.ddMRP(q, dq, w, dw)[source]
+
+dMRP(Q,dQ,W,dW)
+
+ddQ = ddMRP(Q,dQ,W,dW) returns the MRP second derivative
+for a given MRP vector q, MRP derivative dq, body
+angular velocity vector w and body angulat acceleration
+vector dw.
+
+(d^2Q)/(dt^2) = 1/4 ( [B(Q)] dw + [Bdot(Q,dQ)] w )
+
+RigidBodyKinematics.ddMRP2dOmega(Q, dQ, ddQ)[source]
+
+dW = ddMRP2dOmega(Q,dQ,ddQ) returns the body angular acceleration
+dW given the MRP vector Q, the MRP derivative dQ and the MRP
+second order derivative ddQ.
+
+dW/dt = 4 [B(Q)]^(-1) ( ddQ - [Bdot(Q,dQ)] [B(Q)]^(-1) dQ )
+
+RigidBodyKinematics.elem2PRV(R)[source]
+
+Q = elem2PRV(R) translates a prinicpal rotation
+element set R into the corresponding principal
+rotation vector Q.
+
+RigidBodyKinematics.euler1(x)[source]
+
+EULER1  Elementary rotation matrix
+Returns the elementary rotation matrix about the first body axis.
+
+RigidBodyKinematics.euler1212C(q)[source]
+
+Euler1212C
+
+C = euler1212C(Q) returns the direction cosine
+matrix in terms of the 1-2-1 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler1212EP(e)[source]
+
+Euler1212EP(E)
+
+Q = euler1212EP(E) translates the 121 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler1212Gibbs(e)[source]
+
+Euler1212Gibbs(E)
+
+Q = euler1212Gibbs(E) translates the (1-2-1) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler1212MRP(E)[source]
+
+Q = euler1212MRP(E) translates the (1-2-1) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler1212PRV(E)[source]
+
+Q = euler1212PRV(E) translates the (1-2-1) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler1232C(q)[source]
+
+C = euler1232C(Q) returns the direction cosine
+matrix in terms of the 1-2-3 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler1232EP(E)[source]
+
+Q = euler1232EP(E) translates the 123 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler1232Gibbs(E)[source]
+
+Q = euler1232Gibbs(E) translates the (1-2-3) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler1232MRP(E)[source]
+
+Q = euler1232MRP(E) translates the (1-2-3) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler1232PRV(E)[source]
+
+Q = euler1232PRV(E) translates the (1-2-3) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler1312C(q)[source]
+
+C = euler1312C(Q) returns the direction cosine
+matrix in terms of the 1-3-1 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler1312EP(E)[source]
+
+Q = euler1312EP(E) translates the 131 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler1312Gibbs(E)[source]
+
+Q = euler1312Gibbs(E) translates the (1-3-1) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler1312MRP(E)[source]
+
+Q = euler1312MRP(E) translates the (1-3-1) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler1312PRV(E)[source]
+
+Q = euler1312PRV(E) translates the (1-3-1) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler1322C(q)[source]
+
+C = euler1322C(Q) returns the direction cosine
+matrix in terms of the 1-3-2 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler1322EP(E)[source]
+
+Q = euler1322EP(E) translates the 132 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler1322Gibbs(E)[source]
+
+Q = euler1322Gibbs(E) translates the (1-3-2) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler1322MRP(E)[source]
+
+Q = euler1322MRP(E) translates the (1-3-2) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler1322PRV(E)[source]
+
+Q = euler1322PRV(E) translates the (1-3-2) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler2(x)[source]
+
+EULER2  Elementary rotation matrix
+Returns the elementary rotation matrix about the
+second body axis.
+
+RigidBodyKinematics.euler2122C(q)[source]
+
+C = euler2122C(Q) returns the direction cosine
+matrix in terms of the 2-1-2 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler2122EP(E)[source]
+
+Q = euler2122EP(E) translates the 212 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler2122Gibbs(E)[source]
+
+Q = euler2122Gibbs(E) translates the (2-1-2) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler2122MRP(E)[source]
+
+Q = euler2122MRP(E) translates the (2-1-2) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler2122PRV(E)[source]
+
+Q = euler2122PRV(E) translates the (2-1-2) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler2132C(q)[source]
+
+C = euler2132C(Q) returns the direction cosine
+matrix in terms of the 2-1-3 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler2132EP(E)[source]
+
+Q = euler2132EP(E) translates the 213 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler2132Gibbs(E)[source]
+
+Q = euler2132Gibbs(E) translates the (2-1-3) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler2132MRP(E)[source]
+
+Q = euler2132MRP(E) translates the (2-1-3) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler2132PRV(E)[source]
+
+Q = euler2132PRV(E) translates the (2-1-3) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler2312C(q)[source]
+
+C = euler2312C(Q) returns the direction cosine
+matrix in terms of the 2-3-1 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler2312EP(E)[source]
+
+Q = euler2312EP(E) translates the 231 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler2312Gibbs(E)[source]
+
+Q = euler2312Gibbs(E) translates the (2-3-1) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler2312MRP(E)[source]
+
+Q = euler2312MRP(E) translates the (2-3-1) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler2312PRV(E)[source]
+
+Q = euler2312PRV(E) translates the (2-3-1) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler2322C(q)[source]
+
+C = euler2322C(Q) returns the direction cosine
+matrix in terms of the 2-3-2 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler2322EP(E)[source]
+
+Q = euler2322EP(E) translates the 232 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler2322Gibbs(E)[source]
+
+Q = euler2322Gibbs(E) translates the (2-3-2) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler2322MRP(E)[source]
+
+Q = euler2322MRP(E) translates the (2-3-2) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler2322PRV(E)[source]
+
+Q = euler2322PRV(E) translates the (2-3-2) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler3(x)[source]
+
+EULER3  Elementary rotation matrix
+Returns the elementary rotation matrix about the
+third body axis.
+
+RigidBodyKinematics.euler3122C(q)[source]
+
+C = euler3122C(Q) returns the direction cosine
+matrix in terms of the 1-2-3 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler3122EP(E)[source]
+
+Q = euler3122EP(E) translates the 312 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler3122Gibbs(E)[source]
+
+Q = euler3122Gibbs(E) translates the (3-1-2) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler3122MRP(E)[source]
+
+Q = euler3122MRP(E) translates the (3-1-2) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler3122PRV(E)[source]
+
+Q = euler3122PRV(E) translates the (3-1-2) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler3132C(q)[source]
+
+C = euler3132C(Q) returns the direction cosine
+matrix in terms of the 3-1-3 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler3132EP(E)[source]
+
+Q = euler3132EP(E) translates the 313 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler3132Gibbs(E)[source]
+
+Q = euler3132Gibbs(E) translates the (3-1-3) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler3132MRP(E)[source]
+
+Q = euler3132MRP(E) translates the (3-1-3) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler3132PRV(E)[source]
+
+Q = euler3132PRV(E) translates the (3-1-3) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler3212C(q)[source]
+
+C = euler3212C(Q) returns the direction cosine
+matrix in terms of the 3-2-1 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler3212EP(E)[source]
+
+Q = euler3212EP(E) translates the 321 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler3212Gibbs(E)[source]
+
+Q = euler3212Gibbs(E) translates the (3-2-1) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler3212MRP(E)[source]
+
+Q = euler3212MRP(E) translates the (3-2-1) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler3212PRV(E)[source]
+
+Q = euler3212PRV(E) translates the (3-2-1) euler
+angle vector E into the principal rotation vector Q.
+
+RigidBodyKinematics.euler3232C(q)[source]
+
+C = euler3232C(Q) returns the direction cosine
+matrix in terms of the 3-2-3 euler angles.
+Input Q must be a 3x1 vector of euler angles.
+
+RigidBodyKinematics.euler3232EP(E)[source]
+
+Q = euler3232EP(E) translates the 323 euler angle
+vector E into the euler parameter vector Q.
+
+RigidBodyKinematics.euler3232Gibbs(E)[source]
+
+Q = euler3232Gibbs(E) translates the (3-2-3) euler
+angle vector E into the gibbs vector Q.
+
+RigidBodyKinematics.euler3232MRP(E)[source]
+
+Q = euler3232MRP(E) translates the (3-2-3) euler
+angle vector E into the MRP vector Q.
+
+RigidBodyKinematics.euler3232PRV(E)[source]
+
+Q = euler3232PRV(E) translates the (3-2-3) euler
+angle vector Q1 into the principal rotation vector Q.
+
+RigidBodyKinematics.gibbs2C(q)[source]
+
+C = gibbs2C(Q) returns the direction cosine
+matrix in terms of the 3x1 gibbs vector Q.
+
+RigidBodyKinematics.gibbs2EP(Q1)[source]
+
+Q = gibbs2EP(Q1) translates the gibbs vector Q1
+into the euler parameter vector Q.
+
+RigidBodyKinematics.gibbs2Euler121(Q)[source]
+
+E = gibbs2Euler121(Q) translates the gibbs
+vector Q into the (1-2-1) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler123(Q)[source]
+
+E = gibbs2Euler123(Q) translates the gibbs
+vector Q into the (1-2-3) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler131(Q)[source]
+
+E = gibbs2Euler131(Q) translates the gibbs
+vector Q into the (1-3-1) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler132(Q)[source]
+
+E = gibbs2Euler132(Q) translates the gibbs
+vector Q into the (1-3-2) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler212(Q)[source]
+
+E = gibbs2Euler212(Q) translates the gibbs
+vector Q into the (2-1-2) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler213(Q)[source]
+
+E = gibbs2Euler213(Q) translates the gibbs
+vector Q into the (2-1-3) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler231(Q)[source]
+
+E = gibbs2Euler231(Q) translates the gibbs
+vector Q into the (2-3-1) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler232(Q)[source]
+
+E = gibbs2Euler232(Q) translates the gibbs
+vector Q into the (2-3-2) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler312(Q)[source]
+
+E = gibbs2Euler312(Q) translates the gibbs
+vector Q into the (3-1-2) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler313(Q)[source]
+
+E = gibbs2Euler313(Q) translates the gibbs
+vector Q into the (3-1-3) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler321(Q)[source]
+
+E = gibbs2Euler321(Q) translates the gibbs
+vector Q into the (3-2-1) euler angle vector E.
+
+RigidBodyKinematics.gibbs2Euler323(Q)[source]
+
+E = gibbs2Euler323(Q) translates the gibbs
+vector Q into the (3-2-3) euler angle vector E.
+
+RigidBodyKinematics.gibbs2MRP(Q1)[source]
+
+Q = gibbs2MRP(Q1) translates the gibbs vector Q1
+into the MRP vector Q.
+
+RigidBodyKinematics.gibbs2PRV(Q)[source]
+
+Q = gibbs2PRV(Q1) translates the gibbs vector Q1
+into the principal rotation vector Q.
+
+RigidBodyKinematics.subEP(B1, B2)[source]
+
+Q = subEP(B1,B2) provides the euler parameter vector
+which corresponds to relative rotation from B2
+to B1.
+
+RigidBodyKinematics.subEuler121(E, E1)[source]
+
+E2 = subEuler121(E,E1) computes the relative
+(1-2-1) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler123(E, E1)[source]
+
+E2 = subEuler123(E,E1) computes the relative
+(1-2-3) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler131(E, E1)[source]
+
+E2 = subEuler131(E,E1) computes the relative
+(1-3-1) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler132(E, E1)[source]
+
+E2 = subEuler132(E,E1) computes the relative
+(1-3-2) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler212(E, E1)[source]
+
+E2 = subEuler212(E,E1) computes the relative
+(2-1-2) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler213(E, E1)[source]
+
+E2 = subEuler213(E,E1) computes the relative
+(2-1-3) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler231(E, E1)[source]
+
+E2 = subEuler231(E,E1) computes the relative
+(2-3-1) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler232(E, E1)[source]
+
+E2 = subEuler232(E,E1) computes the relative
+(2-3-2) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler312(E, E1)[source]
+
+E2 = subEuler312(E,E1) computes the relative
+(3-1-2) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler313(E, E1)[source]
+
+E2 = subEuler313(E,E1) computes the relative
+(3-1-3) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler321(E, E1)[source]
+
+E2 = subEuler321(E,E1) computes the relative
+(3-2-1) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subEuler323(E, E1)[source]
+
+E2 = subEuler323(E,E1) computes the relative
+(3-2-3) euler angle vector from E1 to E.
+
+RigidBodyKinematics.subGibbs(Q1, Q2)[source]
+
+Q = subGibbs(Q1,Q2) provides the gibbs vector
+which corresponds to relative rotation from Q2
+to Q1.
+
+RigidBodyKinematics.subMRP(Q1, Q2)[source]
+
+Q = subMRP(Q1,Q2) provides the MRP vector
+which corresponds to relative rotation from Q2
+to Q1.
+
+RigidBodyKinematics.subPRV(Q1, Q2)[source]
+
+Q = subPRV(Q1,Q2) provides the prinipal rotation vector
+which corresponds to relative principal rotation from Q2
+to Q1.
+
+         Previous
+        Next 
+
+© Copyright 2024, Autonomous Vehicle Systems (AVS) Laboratory.
+
+  Built with Sphinx using a
+    theme
+    provided by Read the Docs.
+

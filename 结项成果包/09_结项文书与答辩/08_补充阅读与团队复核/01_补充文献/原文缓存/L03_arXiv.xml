@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/2JBNveavtLYR4mYFYTnp9wveC6k</id>
+  <title>arXiv Query: search_query=&amp;id_list=2205.02065&amp;start=0&amp;max_results=10</title>
+  <updated>2026-10-12T18:22:32Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2205.02065" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2205.02065v1</id>
+    <title>Mobile-URSONet: an Embeddable Neural Network for Onboard Spacecraft Pose Estimation</title>
+    <updated>2022-05-04T13:54:34Z</updated>
+    <link href="https://arxiv.org/abs/2205.02065v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.02065v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Spacecraft pose estimation is an essential computer vision application that can improve the autonomy of in-orbit operations. An ESA/Stanford competition brought out solutions that seem hardly compatible with the constraints imposed on spacecraft onboard computers. URSONet is among the best in the competition for its generalization capabilities but at the cost of a tremendous number of parameters and high computational complexity. In this paper, we propose Mobile-URSONet: a spacecraft pose estimation convolutional neural network with 178 times fewer parameters while degrading accuracy by no more than four times compared to URSONet.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-04T13:54:34Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Julien Posso</name>
+    </author>
+    <author>
+      <name>Guy Bois</name>
+    </author>
+    <author>
+      <name>Yvon Savaria</name>
+    </author>
+    <arxiv:doi>10.1109/ISCAS48785.2022.9937721</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ISCAS48785.2022.9937721" title="doi"/>
+  </entry>
+</feed>

@@ -1,0 +1,1155 @@
+
+<!DOCTYPE HTML>
+<html lang="en" data-aem-fallback-locale="en">
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="content-page-ref" content="zmze_9BCaTsrP5wHBvwFTid6kMttT9Idoj9p8wy9H2to_CpgOiRc5bawxpOTnelULizCnxw-cDcnDr-2_L7uWNMKpSUHSC29pU0w0gp7y6M"/>
+<script defer="defer" type="text/javascript" src="/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js"></script>
+<script>digitalData={"page":{"pageInfo":{"template":"whitepaper"}},"product":[{"productInfo":{"productID":"121176"}},{"productInfo":{"productID":"121185"}},{"productInfo":{"productID":"118688"}},{"productInfo":{"productID":"118756"}},{"productInfo":{"productID":"118702"}}]};</script>
+    <meta name="Keywords" content="pid controller"/>
+    <meta name="description" content="PID control is a common algorithm used in industry. Closed loop systems, classical PID theory &amp; the PID toolset in LabVIEW are discussed in this paper.
+"/>
+    
+    <meta name="Language" scheme="rfc3066" content="en"/>
+    <meta name="Section" content="products"/>
+    <meta name="ContentType" content="white-paper"/>
+    <meta name="PageType" content="leaf"/>
+
+
+    
+    	<meta name="ProductCategories" content="121176,121185,118688,118756,118702"/> 
+    
+    
+    
+    
+    	<meta name="LegacyURLID" content="dztut-3782"/>
+    	<meta name="nigen1" content="dztut-3782"/>
+    
+    <meta name="GlobalScope" content="global"/>
+
+    
+        <meta name="DocumentID" content="dztut-3782"/> 
+    
+    <link rel="shortcut icon" type="image/x-icon" href="//www.ni.com/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="//www.ni.com/favicon.ico"/>
+
+    
+  		<meta name="Robots" content="index, follow">
+  	
+    
+    <meta name="DeliveredBy" content="CMS"/>    
+	<meta name="Date" scheme="iso8601" content="2006-08-31T05:00:00"/> <!-- Thu, 31-Aug-2006 12:00AM --> 
+    
+	
+		<meta name="UpdateDate" scheme="iso8601" content="2025-03-07T17:39:45"/> <!-- Fri, 07-Mar-2025 11:39AM --> 
+    
+	
+	<link rel="canonical" href="https://www.ni.com/en/shop/labview/pid-theory-explained.html"/>
+
+    <meta name="docstatus" content="current"/>
+    <meta name="cms_countrysite_s" content="en"/>
+
+    
+
+    
+	    
+	
+
+    
+    
+    <meta name="Template_s" content="white-papers"/>
+
+    
+
+	
+	<meta property="og:title" content="The PID Controller &amp; Theory Explained"/>
+    <meta property="og:description" content="PID control is a common algorithm used in industry. Closed loop systems, classical PID theory &amp; the PID toolset in LabVIEW are discussed in this paper.
+"/>
+	<meta property="og:image" content="https://ni.scene7.com/is/image/ni/logo_2026?wid=450"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image" content="https://ni.scene7.com/is/image/ni/logo_2026?wid=450"/>
+	<meta name="twitter:site" content="@NIglobal"/>
+	<meta name="twitter:title" content="The PID Controller &amp; Theory Explained"/>
+	<meta name="twitter:description" content="PID control is a common algorithm used in industry. Closed loop systems, classical PID theory &amp; the PID toolset in LabVIEW are discussed in this paper.
+"/>
+
+	<link rel="alternate" hreflang="es" href="https://www.ni.com/es/shop/labview/pid-theory-explained.html" data-redir="es"/>
+<link rel="alternate" hreflang="zh" href="https://www.ni.com/zh-cn/shop/labview/pid-theory-explained.html" data-redir="zh-CN"/>
+<link rel="alternate" hreflang="en" href="https://www.ni.com/en/shop/labview/pid-theory-explained.html" data-redir="en" data-nr/>
+<link rel="alternate" hreflang="zh-TW" href="https://www.ni.com/zh-tw/shop/labview/pid-theory-explained.html" data-redir="zh-TW"/>
+<link rel="alternate" hreflang="ja" href="https://www.ni.com/ja/shop/labview/pid-theory-explained.html" data-redir="ja"/>
+
+
+
+
+    
+<script src="/etc.clientlibs/ni-commons/components/page/master-page/clientlibs/locale-redirect.lc-ce2d1d9c1dd0902a19edce45449dd2a6-lc.min.js"></script>
+
+
+
+
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.lc-7c56a1defba003257bf2f4de9f0bf4c0-lc.min.css" type="text/css">
+<script src="/etc.clientlibs/clientlibs/granite/jquery.lc-7842899024219bcbdb5e72c946870b79-lc.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.lc-e7bf340a353e643d198b25d0c8ccce47-lc.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.lc-543d214c88dfa6f4a3233b630c82d875-lc.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.lc-dd9b395c741ce2784096e26619e14910-lc.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.lc-41f79c8a45bb1766981ec4ca82d7e0e6-lc.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/main.lc-690ba627a9a2eeef0733ede272cf726b-lc.min.js"></script>
+
+
+
+    
+    
+ 
+    
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    <title>The PID Controller &amp; Theory Explained - NI</title><meta name="CF-search-bot" content="false"/><meta name="cf:country" content="CN"/>
+    <meta name="ShortTitle" content="The PID Controller &amp; Theory Explained"/>
+    <meta name="EnglishShortTitle" content="The PID Controller &amp; Theory Explained"/>
+
+     
+	 
+    
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="Wrapper" content="yes"/><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="wrapperid" content="aem-full"/><link rel="apple-touch-icon" sizes="180x180" href="https://www.ni.com/apple-touch-icon.png"><link rel="icon" href="https://www.ni.com/favicon.ico?v=1"><link rel="icon" type="image/png" sizes="32x32" href="https://www.ni.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://www.ni.com/favicon-16x16.png"><link rel="manifest" href="https://www.ni.com/site.webmanifest"><link rel="mask-icon" href="https://www.ni.com/safari-pinned-tab.svg" color="#03b585"><meta name="msapplication-TileColor" content="#f4f4f4"><meta name="theme-color" content="#f4f4f4"><script type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/188d956ec0f/bf91471sxa/33571669799f8a14_complete.js" crossorigin="anonymous"></script><script type="text/javascript" src="/niassets/jquery/js/jquery.min.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K585V5H');</script><script src="/niassets/js/niua.min.js"></script><script src="https://www.ni.com/__maintenance-banner/loader.min.js"></script><script>
+var DXA_CompanyName = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.name || "";
+var DXA_Region = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.region || "";
+var DXA_Country = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.country || "";
+var DXA_State = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.state || "";
+var DXA_City = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.city || "";
+var DXA_Industry = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.industry || "";
+var DXA_CountryCode = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.country_iso_code || "";
+var DXA_EmployeeRange = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.employee_range || "";
+var DXA_RevenueRange = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.revenue_range || "";
+var DXA_StateCode = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.state_code || "";
+var DXA_GeoIPCountry = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.geoIP_country || "";
+var DXA_GeoIPState = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.geoIP_state || "";
+var DXA_GeoIPCity = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.geoIP_city || "";
+var DXA_CompanyMatch = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.company_match || "";
+var DXA_AdditionalComment = JSON.parse(localStorage.getItem("_6senseCompanyDetails")||'{}')?.company?.additional_comment || "";
+var DXA_ProfileId = (document.cookie.indexOf('profile_id=') > -1) ? document.cookie.match(RegExp('(?:^|;\\s*)profile_id=([^;]*)'))[1] : "";
+
+if(typeof QSI === "undefined") {
+    QSI = {};
+    QSI.config = {
+        externalReference: DXA_ProfileId
+    };
+}
+
+</script><script>
+document.cookie = "survey_country="+(document.querySelector('meta[name="cf:country"]')?.content || '') +";path=/;domain=.ni.com;";
+</script><script src="https://www.ni.com/niassets/js/survey.js"></script><script>
+window.addEventListener("qsi_js_loaded",
+    ()=> {
+        if (document.cookie.indexOf("ta_script=")===-1) {
+            if ( !/C0004:1/.test(decodeURIComponent(document.cookie.match(RegExp("(?:^|;\\s*)OptanonConsent=([^;]*)"))[1]))) {
+                window.QSI.API.SessionRecording.start();
+            }
+
+            else {
+                let DXA_iterations=0;
+
+                let DXA_Interval=setInterval(function () {
+                        DXA_iterations++;
+
+                        if (DXA_iterations > 10 || localStorage.hasOwnProperty("_6senseCompanyDetails")) {
+                            clearInterval(DXA_Interval);
+                            window.QSI.API.SessionRecording.start();
+                            return;
+                        }
+                    }, 
+                300);
+            }
+        }
+    },
+false);
+</script><script type="text/javascript" src="/niassets/jquery/js/jquery-migrate-1.2.1.min.js"></script><script type="text/javascript" src="/niassets/bootstrap/js/bootstrap.min.js"></script><script type="text/javascript" src="/niassets/jquery/jqueryui/js/jquery-ui.min.js"></script><link rel="stylesheet" href="/niassets/bootstrap/css/bootstrap.min.css"><script type="text/javascript" src="/niassets/ni.min.js"></script><script async="true" type="text/javascript" src="//ni500z.btttag.com/btt.js"></script><link rel="stylesheet" type="text/css" href="/niassets/jquery/jqueryui/css/jquery-ui.min.css"><link rel="stylesheet" type="text/css" href="/niassets/ni.min.css"><script src="/niassets/styleguide/assets/ni-rebrand.min.js"></script><link rel="stylesheet" href="/niassets/styleguide/assets/ni-rebrand.min.css"><script src="https://www.ni.com/oneTrust_production/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="bb75c949-0c8b-4ead-bf3c-a3c65f899e7a"></script><script type="text/javascript">
+function OptanonWrapper() { }
+</script><meta name="google-site-verification" content="BulRIQRfCaZ0EXCMZl0gO9uBpVTsKp_zlBi9ikqMKuk"/>
+
+    
+
+
+
+
+<!-- FlexSlider -->
+<script defer src="/niassets/flexslider/2.6/jquery.flexslider.js"></script>
+
+<!-- Optional FlexSlider Additions -->
+<script src="/niassets/jquery/js/jquery.easing.1.3.js"></script>
+<script src="/niassets/jquery/js/jquery.mousewheel.js"></script>
+<link rel="stylesheet" href="/niassets/flexslider/2.6/flexslider.css" type="text/css" media="screen"/>
+
+    
+<link rel="stylesheet" href="/etc.clientlibs/ni-commons/clientlibs/core-components.lc-6d46f8e70a775b75f653596dc2df4a62-lc.min.css" type="text/css">
+<script src="/etc.clientlibs/ni-commons/clientlibs/core-components.lc-d74916db4bdd3098a6d25c4faafafa0c-lc.min.js"></script>
+
+
+
+
+
+<script>
+    var NI = NI || {};
+    NI.utils = NI.utils || {};
+    NI.utils.browserSize = function() {
+
+        var envs = ['xs', 'sm', 'md', 'lg'];
+
+        var $el = $('<div>');
+
+        $el.appendTo($('body'));
+
+        for (var i = envs.length - 1; i >= 0; i--) {
+            var env = envs[i];
+
+            $el.addClass('hidden-'+env);
+            if ($el.is(':hidden')) {
+                $el.remove();
+                return env;
+            }
+        }
+
+    }
+</script>
+
+
+
+
+
+
+    
+<script src="/etc.clientlibs/ni-commons/components/children/startingAtPrice/clientlibs-auth0.lc-16f9982064ff6344f537cad5ec5e7a2c-lc.min.js"></script>
+
+
+
+
+
+
+    
+<script src="/etc.clientlibs/ni-commons/components/specialty/add-to-cart-link/clientlibs-auth0.lc-4552733c0da52acaf0a0af70711c2967-lc.min.js"></script>
+
+
+
+
+
+
+	
+
+
+
+</head>
+    <body>
+
+  <div class="ni-page-wrap">
+
+    
+
+<div id='ZN_0wWxj0NUZX5UFeZ'></div><nav class="ni-wrapper-header noindex hidden-print" lang="en"><ul class="flex-container"><li class="ni-logo"><a class="analytics-headerlogo-link" href="https://www.ni.com/en.html"><span class="ni-wrapper-sr-only">Return to Home Page</span></a></li><li class="toggle"><a href="javascript:void(0)" aria-label="Toggle navigation"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a></li><li class="mobile-spacer"></li><li class="header-menu-container"><ni-wrapper-header-menu><ul class="header-menu" role="menubar"><li class="solutions nia-menu-item mega-dropdown" role="menuitem"><a class="analytics-headersolutions-link" href="//www.ni.com/en/solutions.html" aria-haspopup="true" aria-expanded="false">Solutions</a><div class="mega-dropdown-menu"><div class="ni-megamenu-desktop ni-megamenu-solutions ni-wrapper-multi-column"><div><div class="h3">Industries</div><ul><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/academic-research.html">Academic and Research</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/aerospace-defense.html">Aerospace, Defense, and Government</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/electronics.html">Electronics</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/energy.html">Energy</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/industrial-machinery.html">Industrial Machinery</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/appliance-test.html">Appliances</a></li><li><a class="analytics-mmsolutions-link" href="https://www.ni.com/en/solutions/life-sciences.html">Life Sciences</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/semiconductor.html">Semiconductor</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/transportation.html">Transportation</a></li></ul></div><div><div class="h3">Product Life Cycles</div><ul><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/design-prototype.html">Design and Prototype</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/validation.html">Validation</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/production.html">Production</a></li></ul></div><div><div class="h3">Focus Areas</div><ul><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/5g-6g.html">5G and 6G Technology</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/transportation/adas-and-autonomous-driving-testing.html">ADAS and Autonomous Driving Testing</a></li><li><a class="analytics-mmsolutions-link" href="https://www.ni.com/en/solutions/ai-test-measurement.html">Artificial Intelligence</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/transportation/electric-vehicle-test.html">Electric Vehicle Test</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/lifecycle-analytics.html">Lifecycle Analytics</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/aerospace-defense/radar-electronic-warfare-sigint.html">Radar and Electronic Warfare</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/aerospace-defense/space-launch-exploration.html">Space Launch and Exploration</a></li><li><a class="analytics-mmsolutions-link" href="https://www.ni.com/en/solutions/semiconductor/validation-lab-innovations.html">Validation Lab Innovations</a></li></ul></div><div><a class="analytics-mmsolutions-link link-with-arrow" href="//www.ni.com/en/solutions.html">See our approach to solutions</a><div class="solutions-menu-component"><img class="solutions-menu-component-image" src="https://ni.scene7.com/is/image/ni/02_patrick_robinson_0043_255x95"><div class="solutions-menu-component-title">Get a Helping Hand</div><div class="solutions-menu-component-body">From troubleshooting technical issues and product recommendations, to quotes and orders, we’re here to help.</div><a class="analytics-mmsolutions-image learn-more-link" href="//www.ni.com/en/contact-us.html">Contact Us</a></div></div></div></div></li><li class="products nia-menu-item mega-dropdown" role="menuitem"><a class="analytics-headerproducts-link" href="//www.ni.com/en/shop.html" aria-haspopup="true" aria-expanded="false">Products</a><div class="mega-dropdown-menu"><div class="ni-megamenu-desktop ni-megamenu-products ni-wrapper-multi-column"><div><div class="h3">Software</div><a class="view-all-link view-all-link-products" href="//www.ni.com/en/shop/software-portfolio.html">View All Software</a><div class="h4">Test Automation</div><ul><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/labview.html">LabVIEW</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/labview/labview-plus-suite.html">LabVIEW+ Suite</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-teststand.html">TestStand (Test Execution)</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/data-acquisition-and-control/application-software-for-data-acquisition-and-control-category/what-is-veristand.html">VeriStand (HIL Test Development)</a></li></ul><div class="h4">Free Interactive Test Software</div><ul><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/data-acquisition-and-control/flexlogger.html">FlexLogger (for DAQ hardware)</a></li><li><a class="analytics-mmproducts-link" href="https://www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/instrumentstudio.html">InstrumentStudio (for PXI hardware)</a></li></ul><div class="h4">Test Analytics and Operations</div><ul><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/data-acquisition-and-control/application-software-for-data-acquisition-and-control-category/what-is-diadem.html">DIAdem (for Analysis and Visualization)</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/systemlink.html">SystemLink (Test Operations)</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-optimalplus.html">OptimalPlus (Manufacturing Analytics)</a></li></ul><div class="h3">SERVICES</div><a class="view-all-link view-all-link-products" href="//www.ni.com/en/shop/services.html">View All Services</a><ul><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/services/hardware/repair-replacement-services.html">Repair Services</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/services/hardware/calibration-services.html">Calibration</a></li><li><a class="analytics-mmproducts-link" href="https://www.ni.com/en/shop/services/education-services.html">Training Courses</a></li></ul></div><div><div class="h3">HARDWARE</div><ul><li><a class="view-all-link view-all-link-products" href="https://www.ni.com/en/shop/hardware/catalog">Shop & Browse NI Hardware</a></li><li><a class="view-all-link view-all-link-products" href="https://www.ni.com/en/shop.html#pinned-nav-section1">Learn More About NI Hardware</a></li></ul><div class="h4">Data Acquisition and Sensor I/O</div><ul><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/data-acquisition.html">Learn About DAQ</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/multifunction-i-o.html">Multifunction I/O</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/voltage.html">Voltage</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/digital-i-o.html">Digital I/O</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/sound-vibration.html">Sound and Vibration</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/temperature.html">Temperature</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/current.html">Current</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/strain-pressure-force.html">Strain, Pressure, and Force</a></li></ul><div class="h4">Communication Interfaces and Instrument Control</div><ul><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/protocols-interfaces/gpib-serial-ethernet.html">GPIB, Serial, and Ethernet</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/protocols-interfaces/vehicle-buses.html">Vehicle Communication Buses</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/protocols-interfaces/industrial-buses.html">Industrial Communication Buses</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/protocols-interfaces/avionics-buses.html">Avionics Communication Buses</a></li></ul></div><div><div class="h4">Instruments</div><ul><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/oscilloscopes-digitizers.html">Oscilloscopes</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/switches.html">Switches</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/source-measure-units/what-are-source-measure-units.html">SMUs</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/source-measure-units/what-are-pxi-lcr-meters.html">LCR Meters</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/digital-multimeters.html">Digital Multimeters</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/electronic-loads.html">Electronic Loads</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/power-supplies.html">Power Supplies</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/waveform-generators.html">Waveform Generators</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/flexrio/what-is-flexrio.html">FlexRIO Instruments</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/switch-load-signal-conditioning.html">Switch Load Signal Conditioning</a></li></ul><div class="h4">RF & Wireless</div><ul><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/rf-wireless/software-defined-radios.html">Software Defined Radios</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/rf-wireless/rf-analog-signal-generators.html">RF Analog Signal Generators</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/wireless-design-test/network-analyzers/what-is-pxi-vector-network-analyzer.html">Vector Network Analyzers</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/rf-wireless/vector-signal-generators-analyzers-transceivers.html">Vector Signal Generators, Analyzers, and Transceivers</a></li></ul><div class="h3">Accessories</div><ul><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/accessories.html">Browse Accessories</a></li></ul><div class="h3">RESOURCES</div><ul><li><a class="analytics-mmproducts-link" href="https://www.ni.com/en/shop/resources.html">Ordering Resources</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/partners/distributors.html">Distributors</a></li><li><a class="analytics-mmproducts-link" href="https://www.ni.com/en/shop/advisors.html">System Advisors</a></li></ul></div><div><a class="analytics-mmproducts-link link-with-arrow" href="//www.ni.com/en/shop.html">See all products</a><div class="ni-live-image"><a class="analytics-mmproducts-image" href="https://www.ni.com/en/shop/compactdaq.html"><div class="ni-live-text"><div class="h4">CompactDAQ</div><p>Modular Data Acquisition</p></div></a></div><div class="ni-live-image"><a class="analytics-mmproducts-image" href="https://www.ni.com/en/shop/compactrio.html"><div class="ni-live-text"><div class="h4">CompactRIO</div><p>Distributed Measurement and Control</p></div></a></div><div class="ni-live-image"><a class="analytics-mmproducts-image" href="https://www.ni.com/en/shop/pxi.html"><div class="ni-live-text"><div class="h4">PXI</div><p>High-Performance Test</p></div></a></div><div class="ni-live-image"><a class="analytics-mmproducts-image" href="https://www.ni.com/en/shop/labview/labview-plus-suite.html"><div class="ni-live-text"><div class="h4">LabVIEW+ Suite</div><p>Automated Test System Development Software</p></div></a></div></div></div></div></li><li class="perspectives nia-menu-item mega-dropdown" role="menuitem"><a class="analytics-headerperspectives-link" href="//www.ni.com/en/perspectives.html" aria-haspopup="true" aria-expanded="false">Perspectives</a><div class="mega-dropdown-menu"><div class="ni-megamenu-desktop ni-megamenu-perspectives"><div class="perspectives-menu-description"><div class="h3">Perspectives</div><p class="perspectives-short-text">Perspectives showcases how NI sees what’s next in the world of test and technology.</p><a href="https://www.ni.com/en/perspectives.html" class="ni-btn view-all-link-perspectives">View all articles</a></div><div class="perspectives-menu-component"><img class="perspectives-menu-component-image" src="https://ni.scene7.com/is/image/ni/AdobeStock_538838391_249x112" loading="lazy"><div class="perspectives-menu-component-title">Charting the Course for Test Development with LabVIEW</div><div class="perspectives-menu-component-body">LabVIEW remains key in test, promising speed, efficiency, and new features with NI’s investment in core tech, community, and integration.</div><a class="analytics-mmperspectives-image learn-more-link" href="https://www.ni.com/en/perspectives/charting-course-test-development-labview.html">Read our featured article</a></div></div></div></li><li class="support nia-menu-item mega-dropdown" role="menuitem"><a class="analytics-headersupport-link" href="//www.ni.com/en/support.html" aria-haspopup="true" aria-expanded="false">Support</a><div class="mega-dropdown-menu"><div class="ni-megamenu-desktop ni-megamenu-support ni-wrapper-multi-column"><div><div class="h3">Resources</div><a class="view-all-link view-all-link-support" href="https://www.ni.com/en/support.html">View All Support Resources</a><ul><li><a class="analytics-mmsupport-link" href="//www.ni.com/en/support/downloads.html">Software Downloads</a></li><li><a class="analytics-mmsupport-link" href="//www.ni.com/myni/products/en/">Register and Activate</a></li><li><a class="analytics-mmsupport-link" href="https://www.ni.com/docs/">Product Documentation</a></li><li><a class="analytics-mmsupport-link" href="//www.ni.com/en/support/documentation/release-notes.html">Release Notes</a></li><li><a class="analytics-mmsupport-link" href="https://www.ni.com/en/shop/services/education-services.html">Training Courses</a></li><li><a class="analytics-mmsupport-link" href="//learn.ni.com">On-Demand Learning</a></li><li><a class="analytics-mmsupport-link" href="https://www.ni.com/en/search.html?pg=1&ps=10&sn=catnav:sup.kbs">KnowledgeBase</a></li><li><a class="analytics-mmsupport-link" href="//forums.ni.com/t5/Example-Programs/ct-p/code-documents">Code Examples</a></li></ul><div class="h3">Request Support</div><p>You can request repair, RMA, schedule calibration, or get technical support. A valid service agreement may be required.</p><a class="analytics-mmsupport-link link-with-arrow" href="https://www.ni.com/my-support/s/service-requests">Open a service request</a></div><div><div class="h3">Popular Software Downloads</div><a class="view-all-link view-all-link-support" href="//www.ni.com/en/search.html?pg=1&ps=10&sn=catnav:sup.dwl.pdl">See all Software Product Downloads</a><div class="ni-software-download-image"><a class="analytics-mmsupport-image" href="https://www.ni.com/en/support/downloads/software-products/download.labview.html"><img src="https://ni.scene7.com/is/image/ni/LabVIEW?$ni-icon-pm$" loading="lazy" alt="icon of LabVIEW logo"><div class="h3">LabVIEW</div></a></div><div class="ni-software-download-image"><a class="analytics-mmsupport-image" href="https://www.ni.com/en/support/downloads/software-products/download.multisim.html"><img src="https://ni.scene7.com/is/image/ni/Multisim_BG?$ni-icon-pm$" loading="lazy" alt="icon of Multisim logo"><div class="h3">Multisim</div></a></div><div class="ni-software-download-image"><a class="analytics-mmsupport-image" href="https://www.ni.com/en/support/downloads/software-products/download.academic-volume-license.html"><img src="https://ni.scene7.com/is/image/ni/sw_suites_bundles?$ni-icon-pm$" loading="lazy" alt="icon of Academic Volume License logo"><div class="h3">Academic Volume License</div></a></div></div><div><div class="h3">Popular Driver Downloads</div><a class="view-all-link view-all-link-support" href="https://www.ni.com/en/search.html?pg=1&ps=10&sb=%2Brelevancy&sn=catnav:sup.dwl.ndr">See all Driver Software Downloads</a><ul><li><a class="analytics-mmsupport-link" href="https://www.ni.com/en/support/downloads/drivers/download.ni-daq-mx.html">NI-DAQmx</a><p>Provides support for NI data acquisition and signal conditioning devices. </p></li><li><a class="analytics-mmsupport-link" href="//www.ni.com/en/support/downloads/drivers/download.ni-visa.html">NI-VISA</a><p>Provides support for Ethernet, GPIB, serial, USB, and other types of instruments. </p></li><li><a class="analytics-mmsupport-link" href="//www.ni.com/en/support/downloads/drivers/download.ni-488-2.html">NI-488.2</a><p>Provides support for NI GPIB controllers and NI embedded controllers with GPIB ports. </p></li></ul></div></div></div></li><li class="community nia-menu-item" role="menuitem"><a class="analytics-headercommunity-link" href="//forums.ni.com/">Community</a></li><li class="partners nia-menu-item" role="menuitem"><a class="analytics-headerpartners-link" href="https://www.ni.com/en/partners.html">Partners</a></li><li class="nia-menu-item spacer" role="none"></li><li class="contact nia-menu-item nia-utils" role="menuitem"><a class="analytics-header-link" href="//www.ni.com/en/contact-us.html">Contact Us</a><ni-wrapper-global-gateway><a class="global-gateway analytics-header-link" href="" aria-label="Country or language selection"><img src="" alt="Flag" width="21" height="12"></a></ni-wrapper-global-gateway></li><li class="nia-menu-item nia-utils header-icon account" role="menuitem"><ni-wrapper-desktop-account-menu><a class="account-link" href="#" data-logged-in-link="//identity.ni.com/myni/profile"><svg viewbox="0 0 27.8 27.8"><path d="M18.16,6.15a5,5,0,1,1-5-5A5,5,0,0,1,18.16,6.15Zm-1,8h-8a8,8,0,0,0-8,8v4h24v-4A8,8,0,0,0,17.14,14.16Zm-4-.49V26.13"></path></svg><span class="ni-wrapper-sr-only">My Account</span></a><div class="account-content"></div><template id="ni-wrapper-my-account-logged-out-desktop"><a class="analytics-headerlogin-link" href="https://www.ni.com/auth/login?returnTo=$HREF$">Log in</a><br><a class="analytics-header-createaccount-link" href="https://www.ni.com/auth/login?screen_hint=signup&returnTo=$HREF$">Create an Account</a></template><template id="ni-wrapper-my-account-logged-in-desktop"><a class="analytics-headeraccount-link my-account-link" href="https://identity.ni.com/myni/profile">My Account</a><a class="analytics-headerorders-link" href="https://www.ni.com/my/s/orders/">Orders</a><br><a class="analytics-headerquotes-link" href="https://www.ni.com/my/s/quotes">Quotes</a><br><a class="analytics-headermyproducts-link" href="https://www.ni.com/myni/products">My Products</a><br><a class="analytics-headermysubscriptions-link" href="https://www.ni.com/my/s/subscriptions">Manage Software</a><br><a class="analytics-headerservice-link" href="https://www.ni.com/my-support/s/service-requests">Service requests</a><br><a class="analytics-headerlearnerdashboard-link" href="https://learn.ni.com/learn">Learner Dashboard</a><br><a class="" href="https://www.ni.com/en/help-center">Customer Service Help</a><hr><a class="analytics-headerlogout-link logout-link" href="https://www.ni.com/auth/logout">Log Out</a></template><template id="ni-wrapper-my-account-logged-out-mobile"><ul class="ni-wrapper-flatten"><li><hr><a class="analytics-headerlogin-link" href="https://www.ni.com/auth/login?returnTo=$HREF$">Log in</a></li><li><a class="analytics-header-createaccount-link" href="https://www.ni.com/auth/login?screen_hint=signup&returnTo=$HREF$">Create an Account</a></li></ul></template><template id="ni-wrapper-my-account-logged-in-mobile"><ul class="ni-wrapper-flatten"><li><a class="open-list analytics-headeraccount-link ni-wrapper-account-name" href="javascript:void(0);" data-target="1"></a><ul data-depth="1" style="display: none;"><li class="ni-wrapper-mobile-account-back"><a class="open-list analytics-headeraccount-link back-mega-menu-link" href="javascript:void(0);" data-target="0">Back</a></li><li><a class="analytics-headeraccount-link" href="https://identity.ni.com/myni/profile">My Account</a></li><li><a class="analytics-headerorders-link" href="https://www.ni.com/my/s/orders/">Orders</a></li><li><a class="analytics-headerquotes-link" href="https://www.ni.com/my/s/quotes">Quotes</a></li><li><a class="analytics-headermyproducts-link" href="https://www.ni.com/myni/products">My Products</a></li><li><a class="analytics-headermysubscriptions-link" href="https://www.ni.com/my/s/subscriptions">Manage Software</a></li><li><a class="analytics-headerservice-link" href="https://www.ni.com/my-support/s/service-requests">Service requests</a></li><li><a class="analytics-headerlearnerdashboard-link" href="https://learn.ni.com/learn">Learner Dashboard</a></li><li><a class="" href="https://www.ni.com/en/help-center">Customer Service Help</a></li><li class="logout-mobile"><hr><a class="analytics-headerlogout-link" href="https://www.ni.com/auth/logout">Log Out</a></li></ul></li><li class="logout-mobile"><hr><a class="analytics-headerlogout-link" href="https://www.ni.com/auth/logout">Log Out</a></li></ul></template></ni-wrapper-desktop-account-menu></li><li class="nia-menu-item nia-utils header-icon wrapper-search" role="menuitem"><a href="#" id="wrapperSearchId"><svg viewbox="0 0 26.33 26.84"><circle cx="11.15" cy="11.15" r="10"/><path d="M21.76,23.09l7.07,7.07" transform="translate(-3.64 -4.47)"/></svg><span class="ni-wrapper-sr-only">Search</span></a></li><li role="none"><ni-wrapper-search-form class="wrapper-search-form"><form id="wrapper-search-form" name="autoComplete-global" type="GET" action="//www.ni.com/en-us/search.html" role="search"><div class="autoCompleteItem-global"><input type="text" name="q" placeholder="Search for things like download LabVIEW" class="niAutocompleteInput" data-search-type="globalSearch" role="searchbox" aria-label="Search terms"><button type="submit" class="search-submit" aria-label="Search the site"><svg viewbox="0 0 26.33 26.84"><circle cx="11.15" cy="11.15" r="10"/><path d="M21.76,23.09l7.07,7.07" transform="translate(-3.64 -4.47)"/></svg></button><button type="reset" class="close" aria-label="Close search"></button></div></form></ni-wrapper-search-form></li></ul></ni-wrapper-header-menu></li><li class="nia-menu-item nia-utils header-icon cart-badge" data-badge="0"><ni-wrapper-cart-icon><a class="analytics-headercart-link" href="https://www.ni.com/en/cart"><svg viewbox="0 0 27.82 27.82"><path class="header-icon" d="M4.71,21.73H20.52A9.72,9.72,0,0,0,30.24,12V8.24H4.71V21.73Z" transform="translate(-3.56 -3.71)"></path><path class="header-icon" d="M9.06,21.47v2.11a2.44,2.44,0,0,0,2.4,2.47H25.67M4.48,4.86H6.65A2.44,2.44,0,0,1,9.06,7.33V8.47" transform="translate(-3.56 -3.71)"></path><path class="header-icon" d="M21.58,29.18A1.2,1.2,0,1,0,22.78,28,1.2,1.2,0,0,0,21.58,29.18Zm-10.51,0A1.21,1.21,0,1,0,12.27,28,1.2,1.2,0,0,0,11.07,29.18Z" transform="translate(-3.56 -3.71)"></path></svg><span class="ni-wrapper-sr-only">Cart</span></a></ni-wrapper-cart-icon></li><li class="mobile-nav ni-megamenu-mobile" data-depth="0"><input type="hidden" id="mobileNavPos"><ul data-depth="0" style="display: block; left: 0px;"><li><a href="javascript:void(0);" class="open-list analytics-headersolutions-link" data-target="1">Solutions</a><ul class="alt-menu-ul" data-depth="1" style="display: none;"><li><a class="analytics-mmsolutions-link back-mega-menu-link">Back</a></li><li><div class="h3">Industries</div></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/academic-research.html">Academic and Research</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/aerospace-defense.html">Aerospace, Defense, and Government</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/electronics.html">Electronics</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/energy.html">Energy</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/industrial-machinery.html">Industrial Machinery</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/appliance-test.html">Appliances</a></li><li><a class="analytics-mmsolutions-link" href="https://www.ni.com/en/solutions/life-sciences.html">Life Sciences</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/semiconductor.html">Semiconductor</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/transportation.html">Transportation</a></li><li><div class="h3">Product Life Cycles</div></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/design-prototype.html">Design and Prototype</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/validation.html">Validation</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/production.html">Production</a></li><li><div class="h3">Focus Areas</div></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/5g-6g.html">5G and 6G Technology</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/transportation/adas-and-autonomous-driving-testing.html">ADAS and Autonomous Driving Testing</a></li><li><a class="analytics-mmsolutions-link" href="https://www.ni.com/en/solutions/ai-test-measurement.html">Artificial Intelligence</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/transportation/electric-vehicle-test.html">Electric Vehicle Test</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/lifecycle-analytics.html">Lifecycle Analytics</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/aerospace-defense/radar-electronic-warfare-sigint.html">Radar and Electronic Warfare</a></li><li><a class="analytics-mmsolutions-link" href="//www.ni.com/en/solutions/aerospace-defense/space-launch-exploration.html">Space Launch and Exploration</a></li><li><a class="analytics-mmsolutions-link" href="https://www.ni.com/en/solutions/semiconductor/validation-lab-innovations.html">Validation Lab Innovations</a></li><li><a class="analytics-mmsolutions-link link-with-arrow" href="//www.ni.com/en/solutions.html">See our approach to solutions</a></li></ul></li><li><a href="javascript:void(0);" class="open-list analytics-headerproducts-link" data-target="1">Products</a><ul class="alt-menu-ul" data-depth="1" style="display: none;"><li><a class="analytics-mmproducts-link back-mega-menu-link">Back</a></li><li><div class="h3">Software</div></li><li><a class="view-all-link view-all-link-products" href="//www.ni.com/en/shop/software-portfolio.html">View All Software</a></li><li><div class="h4">Test Automation</div></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/labview.html">LabVIEW</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/labview/labview-plus-suite.html">LabVIEW+ Suite</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-teststand.html">TestStand (Test Execution)</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/data-acquisition-and-control/application-software-for-data-acquisition-and-control-category/what-is-veristand.html">VeriStand (HIL Test Development)</a></li><li><div class="h4">Free Interactive Test Software</div></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/data-acquisition-and-control/flexlogger.html">FlexLogger (for DAQ hardware)</a></li><li><a class="analytics-mmproducts-link" href="https://www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/instrumentstudio.html">InstrumentStudio (for PXI hardware)</a></li><li><div class="h4">Test Analytics and Operations</div></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/data-acquisition-and-control/application-software-for-data-acquisition-and-control-category/what-is-diadem.html">DIAdem (for Analysis and Visualization)</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/systemlink.html">SystemLink (Test Operations)</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-optimalplus.html">OptimalPlus (Manufacturing Analytics)</a></li><li><div class="h3">SERVICES</div></li><li><a class="view-all-link view-all-link-products" href="//www.ni.com/en/shop/services.html">View All Services</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/services/hardware/repair-replacement-services.html">Repair Services</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/services/hardware/calibration-services.html">Calibration</a></li><li><a class="analytics-mmproducts-link" href="https://www.ni.com/en/shop/services/education-services.html">Training Courses</a></li><li><div class="h3">HARDWARE</div></li><li><a class="view-all-link view-all-link-products" href="https://www.ni.com/en/shop.html#pinned-nav-section1">Learn More About NI Hardware</a></li><li><div class="h4">Data Acquisition and Sensor I/O</div></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/data-acquisition.html">Learn About DAQ</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/multifunction-i-o.html">Multifunction I/O</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/voltage.html">Voltage</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/digital-i-o.html">Digital I/O</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/sound-vibration.html">Sound and Vibration</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/temperature.html">Temperature</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/current.html">Current</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/daq-sensor-io/strain-pressure-force.html">Strain, Pressure, and Force</a></li><li><div class="h4">Communication Interfaces and Instrument Control</div></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/protocols-interfaces/gpib-serial-ethernet.html">GPIB, Serial, and Ethernet</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/protocols-interfaces/vehicle-buses.html">Vehicle Communication Buses</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/protocols-interfaces/industrial-buses.html">Industrial Communication Buses</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/protocols-interfaces/avionics-buses.html">Avionics Communication Buses</a></li><li><div class="h4">Instruments</div></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/oscilloscopes-digitizers.html">Oscilloscopes</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/switches.html">Switches</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/source-measure-units/what-are-source-measure-units.html">SMUs</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/source-measure-units/what-are-pxi-lcr-meters.html">LCR Meters</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/digital-multimeters.html">Digital Multimeters</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/electronic-loads.html">Electronic Loads</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/power-supplies.html">Power Supplies</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/waveform-generators.html">Waveform Generators</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/electronic-test-instrumentation/flexrio/what-is-flexrio.html">FlexRIO Instruments</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/instruments/switch-load-signal-conditioning.html">Switch Load Signal Conditioning</a></li><li><div class="h3">Accessories</div></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/shop/hardware-portfolio/accessories.html">Browse Accessories</a></li><li><div class="h3">RESOURCES</div></li><li><a class="analytics-mmproducts-link" href="https://www.ni.com/en/shop/resources.html">Ordering Resources</a></li><li><a class="analytics-mmproducts-link" href="//www.ni.com/en/partners/distributors.html">Distributors</a></li><li><a class="analytics-mmproducts-link" href="https://www.ni.com/en/shop/advisors.html">System Advisors</a></li><li><a class="analytics-mmproducts-link link-with-arrow" href="//www.ni.com/en/shop.html">See all products</a></li></ul></li><li><a href="//www.ni.com/en/perspectives.html" class="closed-list analytics-headerperspectives-link">Perspectives</a></li><li><a href="javascript:void(0);" class="open-list analytics-headersupport-link" data-target="1">Support</a><ul class="alt-menu-ul" data-depth="1" style="display: none;"><li><a class="analytics-mmsupport-link back-mega-menu-link">Back</a></li><li><div class="h3">Resources</div></li><li><a class="view-all-link view-all-link-support" href="https://www.ni.com/en/support.html">View All Support Resources</a></li><li><a class="analytics-mmsupport-link closed-list" href="//www.ni.com/en/support/downloads.html">Software Downloads</a></li><li><a class="analytics-mmsupport-link closed-list" href="//www.ni.com/myni/products/en/">Register and Activate</a></li><li><a class="analytics-mmsupport-link closed-list" href="https://www.ni.com/docs/">Product Documentation</a></li><li><a class="analytics-mmsupport-link closed-list" href="//www.ni.com/en/support/documentation/release-notes.html">Release Notes</a></li><li><a class="analytics-mmsupport-link closed-list" href="https://www.ni.com/en/shop/services/education-services.html">Training Courses</a></li><li><a class="analytics-mmsupport-link closed-list" href="//learn.ni.com">On-Demand Learning</a></li><li><a class="analytics-mmsupport-link closed-list" href="https://www.ni.com/en/search.html?pg=1&ps=10&sn=catnav:sup.kbs">KnowledgeBase</a></li><li><a class="analytics-mmsupport-link closed-list" href="//forums.ni.com/t5/Example-Programs/ct-p/code-documents">Code Examples</a></li><li><div class="h3">Popular Software Downloads</div></li><li><a class="view-all-link view-all-link-support" href="//www.ni.com/en/search.html?pg=1&ps=10&sn=catnav:sup.dwl.pdl">See all Software Product Downloads</a></li><li><a href="https://www.ni.com/en/support/downloads/software-products/download.labview.html" class="analytics-mmsupport-link closed-list">icon of LabVIEW logo</a></li><li><a href="https://www.ni.com/en/support/downloads/software-products/download.multisim.html" class="analytics-mmsupport-link closed-list">icon of Multisim logo</a></li><li><a href="https://www.ni.com/en/support/downloads/software-products/download.academic-volume-license.html" class="analytics-mmsupport-link closed-list">icon of Academic Volume License logo</a></li><li><div class="h3">Popular Driver Downloads</div></li><li><a class="view-all-link view-all-link-support" href="https://www.ni.com/en/search.html?pg=1&ps=10&sb=%2Brelevancy&sn=catnav:sup.dwl.ndr">See all Driver Software Downloads</a></li><li><a href="https://www.ni.com/en/support/downloads/drivers/download.ni-daq-mx.html" class="analytics-mmsupport-link closed-list">NI-DAQmx</a></li><li><a href="//www.ni.com/en/support/downloads/drivers/download.ni-visa.html" class="analytics-mmsupport-link closed-list">NI-VISA</a></li><li><a href="//www.ni.com/en/support/downloads/drivers/download.ni-488-2.html" class="analytics-mmsupport-link closed-list">NI-488.2</a></li><li><div class="h3">Request Support</div></li><li><span class="note">You can request repair, RMA, schedule calibration, or get technical support. A valid service agreement may be required.</span><a class="analytics-mmsupport-link link-with-arrow" href="https://www.ni.com/my-support/s/service-requests">Open a service request</a></li></ul></li><li><a href="//forums.ni.com/" class="closed-list analytics-headercommunity-link">Community</a></li><li><a href="https://www.ni.com/en/partners.html" class="closed-list analytics-headerpartners-link">Partners</a></li><li><a href="//www.ni.com/en/contact-us.html" class="analytics-header-link closed-list">Contact Us</a></li><li id="ni-wrapper-mobile-account-holder"><ni-wrapper-mobile-account-menu><a href="//identity.ni.com/myni/profile" class="analytics-headeraccount-link closed-list">Account</a></ni-wrapper-mobile-account-menu></li></ul></li></ul></nav><div class="container global-header-breadcrumb"></div><div id="tempDowntime"></div>
+
+
+    <div class="container-fluid ni-aem-body">
+        <div class="clearfix" align="center"></div>
+        
+
+
+
+<script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Breadcrumblist","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.ni.com/en.html"},{"@type":"ListItem","position":2,"name":"Shop","item":"https://www.ni.com/en/shop.html"},{"@type":"ListItem","position":3,"name":"What Is LabVIEW?","item":"https://www.ni.com/en/shop/labview.html"},{"@type":"ListItem","position":4,"name":"The PID Controller & Theory Explained"}]}
+</script>
+
+
+<div class="breadcrumb container">
+    
+    <a tabindex="0" role="link" class="left" href="/en.html">Home</a>
+
+    <span class="delimiter"></span>
+    <a tabindex="0" role="link" class="left" href="/en/shop.html">Shop</a>
+
+    <span class="delimiter"></span>
+    <a tabindex="0" role="link" class="left" href="/en/shop/labview.html">What Is LabVIEW?</a>
+
+    <span class="delimiter"></span>
+    <span tabindex="0" role="link" class="left breadcrumb-last">The PID Controller &amp; Theory Explained</span>
+</div>
+
+        <div class="clearfix"><div class="ni-home">
+    <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="shading-container parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+	<div class="row clearfix">
+    	<div class="container ni-white ">
+        	<div>
+            	<div class="row">
+                	<div class="shading-container  ni-padding-top-1x col-xs-12   ">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="title aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+    <div>
+        <div class="ni-notransform ni-text-align-left">
+            <h1 class=" NI_DEFAULT" lang="en">The PID Controller &amp; Theory Explained</h1>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+</div>
+          	 	</div>
+        	</div>
+   	 	</div>
+	</div>
+</div>
+<div class="shading-container parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+	<div class=" clearfix">
+    	<div class="row  ">
+        	<div class="container">
+            	<div class="row">
+                	<div class="shading-container   col-xs-12   ">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="metadata-subtitle aem-GridColumn aem-GridColumn--default--12">
+
+
+	<div class="subtitle-description lead">
+        <span class="lastModifiedDate">
+            Updated Mar 7, 2025
+        </span>
+    </div>
+
+
+<div class="subtitle-icons">
+	<ul class="list-unstyled">
+        <li onclick="location='mailto:?subject='+encodeURIComponent(document.title)+'&amp;body='+encodeURIComponent(location);" id="metadata-subtitle-mailto"></li>
+        <li onclick="window.print();" id="metadata-subtitle-print"></li>
+    </ul>
+</div>
+</div>
+
+    
+</div>
+</div>
+          	 	</div>
+        	</div>
+   	 	</div>
+	</div>
+</div>
+<div class="shading-container parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+	<div class="row clearfix">
+    	<div class="container ni-white ">
+        	<div>
+            	<div class="row">
+                	<div class="shading-container   col-xs-12   ">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="document-archived-notification-bar notification-bar parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+<div>
+
+</div></div>
+
+    
+</div>
+</div>
+          	 	</div>
+        	</div>
+   	 	</div>
+	</div>
+</div>
+<div class="shading-container parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+	<div class=" clearfix">
+    	<div class="row  ">
+        	<div class="container">
+            	<div class="row">
+                	<div class="shading-container ni-padding-bottom-x ni-padding-top-x col-xs-12   ">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="overview aem-GridColumn aem-GridColumn--default--12">
+
+<div class="ni-padding-bottom-1x">
+
+	<div class="ni-padding-bottom-x">
+		<h2>Overview</h2>
+	</div>
+	<div>
+		
+
+
+
+
+
+
+
+
+
+	<div class="     " lang="en">
+    	Proportional-Integral-Derivative (PID) control is the most common control algorithm used in industry and has been universally accepted in industrial control. The popularity of PID controllers can be attributed partly to their robust performance in a wide range of operating conditions and partly to their functional simplicity, which allows engineers to operate them in a simple, straightforward manner. <br /> <br />
+As the name suggests, PID algorithm consists of three basic coefficients; proportional, integral and derivative which are varied to get optimal response. Closed loop systems, the theory of classical PID and the effects of tuning a closed loop control system are discussed in this paper. The PID toolset in LabVIEW and the ease of use of these VIs is also discussed. <br /> <br />
+	</div>
+
+
+	</div>
+
+	
+</div></div>
+<div class="rich-text-section parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+<div>
+
+	
+		<h2 class="toc-header">Contents</h2>
+		<ul class="rich-text-section-toc">
+			<li>
+				<a href="#section--2054068861">PID Control System</a>
+			</li>
+		
+			<li>
+				<a href="#section--2054068860">PID Theory
+</a>
+			</li>
+		
+			<li>
+				<a href="#section--2054068859">Tuning
+</a>
+			</li>
+		
+			<li>
+				<a href="#section--2054068858">NI LabVIEW and PID
+</a>
+			</li>
+		
+			<li>
+				<a href="#section--2054068857">Summary
+</a>
+			</li>
+		
+			<li>
+				<a href="#section--2054068856">References
+</a>
+			</li>
+		</ul>
+	
+
+    <div>
+
+
+
+
+    
+    
+    <div class="rich-text-section-entry">
+
+<div class="clearfix">
+
+  <h2 class="rts-header" id="section--2054068861">
+    <span class="rts-header-content">PID Control System</span>
+  </h2>
+
+  <div>
+
+
+
+
+
+
+
+
+
+	<div class="     " lang="en">
+    	<p>A PID controller is an instrument that receives input data from sensors, calculates the difference between the actual value and the desired setpoint, and adjusts outputs to control variables such as temperature, flow rate, speed, pressure, and voltage. It does this through three mechanisms: proportional control, which reacts to current error; integral control, which addresses accumulated past errors; and derivative control, which predicts future errors. The PID controller sums those three components to compute the output. This architecture allows PID controllers to efficiently maintain process control and system stability. Before we start to define the parameters of a PID controller, let&#39;s discuss what a closed loop system is and some of the terminologies associated with it.</p>
+<h3>Closed Loop System<br />
+</h3>
+<p>PID control operates within a closed loop system, or PID loop, which is a control mechanism that reads sensors to provide constant feedback, calculating the desired actuator output at a regular interval known as the fixed loop rate.</p>
+<p>In a typical PID control system, the <i>process variable</i> is the system parameter that needs to be controlled, such as temperature (ºC), pressure (psi), or flow rate (liters/minute). A sensor is used to measure the process variable and provide feedback to the control system. The <i>set point</i> is the desired or command value for the process variable, such as 100 degrees Celsius in the case of a temperature control system. At any given moment, the difference between the process variable and the set point is used by the control system algorithm <i>(compensator)</i>, to determine the desired actuator output to drive the system (plant). For instance, if the measured temperature process variable is 100 ºC and the desired temperature set point is 120 ºC, then the <i>actuator output</i> specified by the control algorithm might be to drive a heater. Driving an actuator to turn on a heater causes the system to become warmer, and results in an increase in the temperature process variable. The PID loop is illustrated in figure 1.<br />
+<br />
+In many cases, the actuator output is not the only signal that has an effect on the system. For instance, in a temperature chamber there might be a source of cool air that sometimes blows into the chamber and disturbs the temperature.Such a term is referred to as <i>disturbance</i>. We usually try to design the control system to minimize the effect of disturbances on the process variable.</p>
+<div style="	text-align: center;
+"><img src="https://www.ni.com/is/image/ni/12fbdcae1635?scl&#61;1" alt="block diagram of a typical closed loop system" width="575" height="217" /><br />
+<sup><b>Figure 1: </b>Block diagram of a typical closed loop system.</sup></div>
+<h3><br />
+Defintion of Terminlogies</h3>
+<p>The control design process begins by defining the performance requirements. Control system performance is often measured by applying a step function as the set point command variable, and then measuring the response of the process variable. Commonly, the response is quantified by measuring defined waveform characteristics. Rise Time is the amount of time the system takes to go from 10% to 90% of the steady-state, or final, value. Percent Overshoot is the amount that the process variable overshoots the final value, expressed as a percentage of the final value. Settling time is the time required for the process variable to settle to within a certain percentage (commonly 5%) of the final value. Steady-State Error is the final difference between the process variable and set point. Note that the exact definition of these quantities will vary in industry and academia.<br />
+</p>
+<div style="	text-align: center;
+"><img src="https://www.ni.com/is/image/ni/12fbdcae1636?scl&#61;1" alt="response of a typical pid closed loop system" width="575" height="280" /></div>
+<div style="	text-align: center;
+"> </div>
+<div style="	text-align: center;
+"><sup><b>Figure 2: </b>Response of a typical PID closed loop system.</sup></div>
+<div style="	text-align: left;
+"> </div>
+<div style="	text-align: left;
+"><span style="	text-align: left;
+">After using one or all of these quantities to define the performance requirements for a control system, it is useful to define the worst case conditions in which the control system will be expected to meet these design requirements. Often times, there is a disturbance in the system that affects the process variable or the measurement of the process variable. It is important to design a control system that performs satisfactorily during worst case conditions. The measure of how well the control system is able to overcome the effects of disturbances is referred to as the </span><i style="	text-align: left;
+">disturbance rejection</i><span style="	text-align: left;
+"> of the control system.</span></div>
+<div style="	text-align: left;
+"> </div>
+<div style="	text-align: left;
+">In some cases, the response of the system to a given control output may change over time or in relation to some variable. A <i>nonlinear system</i> is a system in which the control parameters that produce a desired response at one operating point might not produce a satisfactory response at another operating point. For instance, a chamber partially filled with fluid will exhibit a much faster response to heater output when nearly empty than it will when nearly full of fluid. The measure of how well the control system will tolerate disturbances and nonlinearities is referred to as the <i>robustness</i> of the control system.</div>
+<div style="	text-align: left;
+"> </div>
+<div style="	text-align: left;
+">Some systems exhibit an undesirable behavior called <i>deadtime</i>. Deadtime is a delay between when a process variable changes, and when that change can be observed. For instance, if a temperature sensor is placed far away from a cold water fluid inlet valve, it will not measure a change in temperature immediately if the valve is opened or closed. Deadtime can also be caused by a system or output actuator that is slow to respond to the control command, for instance, a valve that is slow to open or close. A common source of deadtime in chemical plants is the delay caused by the flow of fluid through pipes.</div>
+<div style="	text-align: left;
+"> </div>
+<div style="	text-align: left;
+"><i>Loop cycle</i> is also an important parameter of a closed loop system. The interval of time between calls to a control algorithm is the loop cycle time. Systems that change quickly or have complex behavior require faster control loop rates.</div>
+<div style="	text-align: left;
+"> </div>
+<div style="	text-align: center;
+"><img src="https://www.ni.com/is/image/ni/12fbdcae1637?scl&#61;1" alt="response of a closed loop system with deadtime" width="575" height="274" /></div>
+<div style="	text-align: center;
+"> </div>
+<div style="	text-align: center;
+"><sup><b>Figure 3: </b>Response of a closed loop system with deadtime.</sup></div>
+<p><br />
+Once the performance requirements have been specified, it is time to examine the system and select an appropriate control scheme. In the vast majority of applications, a PID control will provide the required results</p>
+
+	</div>
+
+</div>
+
+</div>
+
+<div class="clearfix">
+    <a class="right hidden-print pointer-cursor" onclick="javascript:window.scroll(0,0);">Back to top</a>
+</div>
+</div>
+
+
+    
+    
+    <div class="rich-text-section-entry">
+
+<div class="clearfix">
+
+  <h2 class="rts-header" id="section--2054068860">
+    <span class="rts-header-content">PID Theory
+</span>
+  </h2>
+
+  <div>
+
+
+
+
+
+
+
+
+
+	<div class="     " lang="en">
+    	<h3>Proportional Response</h3>
+<p>The proportional component depends only on the difference between the set point and the process variable. This difference is referred to as the Error term. The <i>proportional gain</i> <i>(K<sub>c</sub>)</i> determines the ratio of output response to the error signal. For instance, if the error term has a magnitude of 10, a proportional gain of 5 would produce a proportional response of 50. In general, increasing the proportional gain will increase the speed of the control system response. However, if the proportional gain is too large, the process variable will begin to oscillate. If K<sub>c</sub> is increased further, the oscillations will become larger and the system will become unstable and may even oscillate out of control.<br />
+</p>
+<div style="	text-align: center;
+"><img src="https://www.ni.com/is/image/ni/12fbdcae1638?scl&#61;1" alt="block diagram of a basic pid control algorithm" width="575" height="229" /></div>
+<div style="	text-align: center;
+"> </div>
+<div style="	text-align: center;
+"><sup><b>Figure 4: </b>Block diagram of a basic PID control algorithm.</sup></div>
+<h3><br />
+Integral Response<br />
+</h3>
+<p>The integral component sums the error term over time. The result is that even a small error term will cause the integral component to increase slowly. The integral response will continually increase over time unless the error is zero, so the effect is to drive the Steady-State error to zero. Steady-State error is the final difference between the process variable and set point. A phenomenon called integral windup results when integral action saturates a controller without the controller driving the error signal toward zero.</p>
+<h3>Derivative Response</h3>
+<p>The derivative component causes the output to decrease if the process variable is increasing rapidly. The derivative response is proportional to the rate of change of the process variable. Increasing the <i>derivative time (T<sub>d</sub>)</i> parameter will cause the control system to react more strongly to changes in the error term and will increase the speed of the overall control system response. Most practical control systems use very small derivative time (T<sub>d</sub>), because the Derivative Response is highly sensitive to noise in the process variable signal. If the sensor feedback signal is noisy or if the control loop rate is too slow, the derivative response can make the control system unstable</p>
+
+	</div>
+
+</div>
+
+</div>
+
+<div class="clearfix">
+    <a class="right hidden-print pointer-cursor" onclick="javascript:window.scroll(0,0);">Back to top</a>
+</div>
+</div>
+
+
+    
+    
+    <div class="rich-text-section-entry">
+
+<div class="clearfix">
+
+  <h2 class="rts-header" id="section--2054068859">
+    <span class="rts-header-content">Tuning
+</span>
+  </h2>
+
+  <div>
+
+
+
+
+
+
+
+
+
+	<div class="     " lang="en">
+    	<p>The process of setting the optimal gains for P, I and D to get an ideal response from a control system is called <i>tuning</i>. There are different methods of PID tuning of which the “guess and check” method and the Ziegler Nichols method will be discussed.<br />
+<br />
+The gains of a PID controller can be obtained by trial and error method. Once an engineer understands the significance of each gain parameter, this method becomes relatively easy. In this method, the I and D terms are set to zero first and the proportional gain is increased until the output of the loop oscillates. As one increases the proportional gain, the system becomes faster, but care must be taken not make the system unstable. Once P has been set to obtain a desired fast response, the integral term is increased to stop the oscillations. The integral term reduces the steady state error, but increases overshoot. Some amount of overshoot is always necessary for a fast system so that it could respond to changes immediately. The integral term is tweaked to achieve a minimal steady state error. Once the P and I have been set to get the desired fast control system with minimal steady state error, the derivative term is increased until the loop is acceptably quick to its set point. Increasing derivative term decreases overshoot and yields higher gain with stability but would cause the system to be highly sensitive to noise. Often times, engineers need to tradeoff one characteristic of a control system for another to better meet their requirements.<br />
+<br />
+The Ziegler-Nichols method is another popular method of tuning a PID controller. It is very similar to the trial and error method wherein I and D are set to zero and P is increased until the loop starts to oscillate. Once oscillation starts, the critical gain K<sub>c</sub> and the period of oscillations P<sub>c</sub> are noted. The P, I and D are then adjusted as per the tabular column shown below.<br />
+</p>
+<div style="	text-align: center;
+"><table border="1"><tbody><tr valign="top"><td width="64"><div style="	text-align: center;
+"><b>Control</b></div>
+</td><td width="64"><div style="	text-align: center;
+"><b>P</b></div>
+</td><td width="64"><div style="	text-align: center;
+"><b>Ti</b></div>
+</td><td width="64"><div style="	text-align: center;
+"><b>Td</b></div>
+</td></tr><tr valign="top"><td width="64"><div style="	text-align: center;
+"><b>P</b></div>
+</td><td width="64"><div style="	text-align: center;
+">0.5Kc</div>
+</td><td width="64"><div style="	text-align: center;
+">-</div>
+</td><td width="64"><div style="	text-align: center;
+">-</div>
+</td></tr><tr valign="top"><td width="64"><div style="	text-align: center;
+"><b>PI</b></div>
+</td><td width="64"><div style="	text-align: center;
+">0.45Kc</div>
+</td><td width="64"><div style="	text-align: center;
+">Pc/1.2</div>
+</td><td width="64"><div style="	text-align: center;
+">-</div>
+</td></tr><tr valign="top"><td width="64"><div style="	text-align: center;
+"><b>PID</b></div>
+</td><td width="64"><div style="	text-align: center;
+">0.60Kc</div>
+</td><td width="64"><div style="	text-align: center;
+">0.5Pc</div>
+</td><td width="64"><div style="	text-align: center;
+">Pc/8</div>
+</td></tr></tbody></table>
+</div>
+<div style="	text-align: center;
+"> </div>
+<div style="	text-align: center;
+"><sup><b>Table 1: </b>Ziegler-Nichols tuning, using the oscillation method.</sup></div>
+
+	</div>
+
+</div>
+
+</div>
+
+<div class="clearfix">
+    <a class="right hidden-print pointer-cursor" onclick="javascript:window.scroll(0,0);">Back to top</a>
+</div>
+</div>
+
+
+    
+    
+    <div class="rich-text-section-entry">
+
+<div class="clearfix">
+
+  <h2 class="rts-header" id="section--2054068858">
+    <span class="rts-header-content">NI LabVIEW and PID
+</span>
+  </h2>
+
+  <div>
+
+
+
+
+
+
+
+
+
+	<div class="     " lang="en">
+    	<p>LabVIEW PID toolset features a wide array of VIs that greatly help in the design of a PID based control system. Control output range limiting, integrator anti-windup and bumpless controller output for PID gain changes are some of the salient features of the PID VI. The PID Advanced VI includes all the features of the PID VI along with non-linear integral action, two degree of freedom control and error-squared control.<br />
+</p>
+<div style="	text-align: center;
+"><img src="https://www.ni.com/is/image/ni/12fbdcae1639?scl&#61;1" alt="VIs from the pid controls palette in LabVIEW" width="542" height="174" /><br />
+<sup><b>Figure 5: </b>VIs from the PID controls palette of LabVIEW</sup></div>
+<p><br />
+PID palette also features some advanced VIs like the PID Autotuning VI and the PID Gain Schedule VI. The PID Autotuning VI helps in refining the PID parameters of a control system. Once an educated guess about the values of P, I and D have been made, the PID Autotuning VI helps in refining the PID parameters to obtain better response from the control system.<br />
+</p>
+<div style="	text-align: center;
+"><img src="https://www.ni.com/is/image/ni/12fbdcae1640?scl&#61;1" alt="advanced VIs from the pid controls palette of LabVIEW" width="608" height="137" /></div>
+<div style="	text-align: center;
+"> </div>
+<div style="	text-align: center;
+"><sup><b>Figure 6: </b>Advanced VIs from the PID controls palette of LabVIEW</sup></div>
+<p><br />
+The reliability of the controls system is greatly improved by using the LabVIEW Real Time module running on a real time target. NI provides <a href="/en/shop/data-acquisition.html">data acquisition</a> devices that provide higher accuracy and better performance than an average control system<br />
+</p>
+<div style="	text-align: center;
+"><img src="https://www.ni.com/is/image/ni/12fbdcae1641?scl&#61;1" alt="a typical LabVIEW vi showing pid control with a plug-in ni data acquisition device" width="979" height="351" /><br />
+<br />
+<sup><b>Figure 7: </b>A typical LabVIEW VI showing PID control with a plug-in NI data acquisition device</sup></div>
+<p><br />
+The tight integration of these data acquisition devices with LabVIEW minimizes the development time involved and greatly increases the productivity of any engineer. Figure 7 shows a typical VI in LabVIEW showing PID control using the NI-DAQmx driver API, which is included with NI data acquisition hardware.</p>
+
+	</div>
+
+</div>
+
+</div>
+
+<div class="clearfix">
+    <a class="right hidden-print pointer-cursor" onclick="javascript:window.scroll(0,0);">Back to top</a>
+</div>
+</div>
+
+
+    
+    
+    <div class="rich-text-section-entry">
+
+<div class="clearfix">
+
+  <h2 class="rts-header" id="section--2054068857">
+    <span class="rts-header-content">Summary
+</span>
+  </h2>
+
+  <div>
+
+
+
+
+
+
+
+
+
+	<div class="     " lang="en">
+    	<p>The PID control algorithm is a robust and simple algorithm that is widely used in the industry. The algorithm has sufficient flexibility to yield excellent results in a wide variety of applications and has been one of the main reasons for the continued use over the years. NI LabVIEW and NI plug-in data acquisition devices offer higher accuracy and better performance to make an excellent PID control system.</p>
+
+	</div>
+
+</div>
+
+</div>
+
+<div class="clearfix">
+    <a class="right hidden-print pointer-cursor" onclick="javascript:window.scroll(0,0);">Back to top</a>
+</div>
+</div>
+
+
+    
+    
+    <div class="rich-text-section-entry">
+
+<div class="clearfix">
+
+  <h2 class="rts-header" id="section--2054068856">
+    <span class="rts-header-content">References
+</span>
+  </h2>
+
+  <div>
+
+
+
+
+
+
+
+
+
+	<div class="     " lang="en">
+    	<p>1. <b>Classical PID Control</b><br />
+by Graham C. Goodwin, Stefan F. Graebe, Mario E. Salgado<br />
+Control System Design, Prentice Hall PTR</p>
+<p>2. <b>PID Control of Continuous Processes</b><br />
+by John W. Webb Ronald A. Reis<br />
+Programmable Logic Controllers, Fourth Edition, Prentice Hall PTR</p>
+
+	</div>
+
+</div>
+
+</div>
+
+<div class="clearfix">
+    <a class="right hidden-print pointer-cursor" onclick="javascript:window.scroll(0,0);">Back to top</a>
+</div>
+</div>
+
+
+    
+    
+    <div class="video-child parbase">
+
+<div class="cq-placeholder" data-emptytext="Video Player"></div>
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+    
+</div>
+</div>
+          	 	</div>
+        	</div>
+   	 	</div>
+	</div>
+</div>
+<div class="shading-container parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+	<div class="row clearfix">
+    	<div class="container  ">
+        	<div>
+            	<div class="row">
+                	<div class="shading-container   col-xs-12   ">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="video-child parbase aem-GridColumn aem-GridColumn--default--12">
+
+<div class="cq-placeholder" data-emptytext="Video Player"></div>
+
+</div>
+
+    
+</div>
+</div>
+          	 	</div>
+        	</div>
+   	 	</div>
+	</div>
+</div>
+<div class="shading-container parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+	<div class="row clearfix">
+    	<div class="container  ">
+        	<div>
+            	<div class="row">
+                	<div class="shading-container ni-padding-bottom-1x  col-xs-12   ">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="link-list parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+<div>
+	<div class="ni-margin-3x link-list-title">
+		
+
+
+
+
+
+
+
+    <div>
+        <div class="ni-notransform  ">
+            <h3 class=" NI_DEFAULT" lang="en">Next Steps</h3>
+        </div>
+    </div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12">
+			<ul class="ni-linklist  ">
+				<li value="/content/ni/langs/en/shop/labview/pid-theory-explained/jcr:content/root/shading_container_752916605/shading-container/link_list/url0">
+	    			
+
+
+
+
+
+
+    
+    
+    
+        
+            <a href="/en/support/downloads/software-products/download.labview.html" class=" ni-link-component ni-default-link ">
+                
+                Download LabVIEW
+            </a>
+        
+        
+    
+
+    
+    
+
+				</li>
+			
+				<li value="/content/ni/langs/en/shop/labview/pid-theory-explained/jcr:content/root/shading_container_752916605/shading-container/link_list/url1">
+	    			
+
+
+
+
+
+
+    
+    
+    
+        
+            <a href="/en/solutions/academic-research/academic-teaching.html" class=" ni-link-component ni-default-link ">
+                
+                Learn More About Academic Teaching Solutions
+            </a>
+        
+        
+    
+
+    
+    
+
+				</li>
+			
+				<li value="/content/ni/langs/en/shop/labview/pid-theory-explained/jcr:content/root/shading_container_752916605/shading-container/link_list/url2">
+	    			
+
+
+
+
+
+
+    
+    
+    
+        
+            <a href="/en/shop/data-acquisition.html" class=" ni-link-component ni-default-link ">
+                
+                Learn more about the NI approach to data acquisition
+            </a>
+        
+        
+    
+
+    
+    
+
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div></div>
+
+    
+</div>
+</div>
+          	 	</div>
+        	</div>
+   	 	</div>
+	</div>
+</div>
+<div class="shading-container parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+	<div class="row clearfix">
+    	<div class="container  ">
+        	<div>
+            	<div class="row">
+                	<div class="shading-container   col-xs-12   ">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="link-list parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+<div>
+	
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12">
+			
+		</div>
+	</div>
+
+</div></div>
+
+    
+</div>
+</div>
+          	 	</div>
+        	</div>
+   	 	</div>
+	</div>
+</div>
+<div class="shading-container parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+	<div class="row clearfix">
+    	<div class="container  ">
+        	<div>
+            	<div class="row">
+                	<div class="shading-container ni-padding-bottom-1x ni-padding-top-1x col-xs-12   ">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="video-child parbase aem-GridColumn aem-GridColumn--default--12">
+
+<div class="cq-placeholder" data-emptytext="Video Player"></div>
+
+</div>
+
+    
+</div>
+</div>
+          	 	</div>
+        	</div>
+   	 	</div>
+	</div>
+</div>
+
+    
+</div>
+</div>
+</div></div>
+    </div>
+
+    
+
+<footer class="ni-wrapper-footer footer noindex" lang="en"><div class="flex-container footer-body"><div class="ni-wrapper-footer-nav"><div class="logo-container"><img src="https://ni.scene7.com/is/image/ni/emerson_footer_white?fmt=png-alpha" alt="" width="154" height="64" loading="lazy"></div><div><div class="section-title">Solutions</div><ul class="section-links"><li><a class="analytics-footersolutions-link " href="//www.ni.com/en/solutions/academic-research.html">Academic & Research</a></li><li><a class="analytics-footersolutions-link " href="//www.ni.com/en/solutions/aerospace-defense.html">Aerospace, Defense, & Government</a></li><li><a class="analytics-footersolutions-link electronics" href="//www.ni.com/en/solutions/electronics.html">Electronics</a></li><li><a class="analytics-footersolutions-link energy" href="//www.ni.com/en/solutions/energy.html">Energy</a></li><li><a class="analytics-footersolutions-link " href="//www.ni.com/en/solutions/industrial-machinery.html">Industrial Machinery</a></li><li><a class="analytics-footersolutions-link " href="https://www.ni.com/en/solutions/life-sciences.html">Life Sciences</a></li><li><a class="analytics-footersolutions-link semiconductor" href="//www.ni.com/en/solutions/semiconductor.html">Semiconductor</a></li><li><a class="analytics-footersolutions-link automotive" href="//www.ni.com/en/solutions/transportation.html">Transportation</a></li></ul></div><div><div class="section-title">Orders</div><ul class="section-links"><li><a class="analytics-footerorders-link " href="https://www.ni.com/en/partners/distributors.html">NI Distribution Partners</a></li><li><a class="analytics-footerorders-link " href="//www.ni.com/my/s/orders">Order Status and History</a></li><li><a class="analytics-footerorders-link " href="https://www.ni.com/my/s/quotes">Retrieve a Quote</a></li><li><a class="analytics-footerorders-link " href="https://www.ni.com/en/about-ni/legal/service-terms.html">Terms of Service</a></li><li><a class="analytics-footerorders-link " href="https://www.ni.com/en/cart">Order by Part Number or Request a Quote</a></li></ul></div><div><div class="section-title">Company</div><ul class="section-links"><li><a class="analytics-footercompany-link " href="https://www.emerson.com/en/corporate/news/2023/emerson-completes-ni-acquisition">NI is now part of Emerson</a></li><li><a class="analytics-footercompany-link " href="//www.ni.com/en/about-ni.html">About</a></li><li><a class="analytics-footercompany-link careers" href="https://www.emerson.com/en/corporate/careers">Emerson Careers</a></li><li><a class="analytics-footercompany-link newsroom" href="//www.ni.com/en/about-ni/newsroom.html">Newsroom</a></li><li><a class="analytics-footercompany-link " href="//www.ni.com/en/about-ni/corporate-quality.html">Supply Chain & Quality</a></li><li><a class="analytics-footercompany-link " href="//www.ni.com/en/events.html">Events</a></li></ul></div><div><div class="section-title">Support</div><ul class="section-links"><li><a class="analytics-footersupport-link" id="downloads" href="//www.ni.com/en/support/downloads.html">Downloads</a></li><li><a class="analytics-footersupport-link" id="manuals" href="https://www.ni.com/docs/en-US/">Product Documentation</a></li><li><a class="analytics-footersupport-link" href="//forums.ni.com/t5/Discussion-Forums/ct-p/discussion-forums">Discussion Forums</a></li><li><a class="analytics-footersupport-link" href="//www.ni.com/en/support/downloads/activate.html">Activate a Product</a></li><li><a class="analytics-footersupport-link" href="https://www.ni.com/my-support/s/service-requests">Submit a Service Request</a></li><li id="site-feedback" class="analytics-footersupport-link"><a class="site-feedback-fallback-content" href="https://survey.ni.com/jfe/form/SV_daMuCfO1or7M5HD?Q_Language=EN" target="_blank">Site Feedback</a></li></ul><div class="socialIcons"><div class="bg-line"></div><div><a class="analytics-footer-link ni-wrapper-social-fa-facebook" href="//www.facebook.com/NationalInstruments/"><span class="ni-wrapper-sr-only">Facebook</span></a><a class="analytics-footer-link ni-wrapper-social-fa-twitter" href="//twitter.com/NIglobal"><span class="ni-wrapper-sr-only">Twitter</span></a><a class="analytics-footer-link ni-wrapper-social-fa-linkedin" href="//www.linkedin.com/company/niglobal/"><span class="ni-wrapper-sr-only">LinkedIn</span></a><a class="analytics-footer-link ni-wrapper-social-fa-youtube" href="//www.youtube.com/@NIApps/featured"><span class="ni-wrapper-sr-only">YouTube</span></a><a class="analytics-footer-link ni-wrapper-social-fa-instagram-square" href="//www.instagram.com/niglobal/?hl=en "><span class="ni-wrapper-sr-only">Instagram</span></a></div></div></div></div><div class="footer-bottomLinks"><div><ni-wrapper-global-gateway><a class="global-gateway analytics-footer-link" href="https://www.ni.com/global-gateway/"><img src="" alt="" width="21" height="12" loading="lazy"/><span></span></a></ni-wrapper-global-gateway></div><div class="legal"><a class="analytics-footer-link" href="//www.ni.com/en/about-ni/legal.html">LEGAL</a>&nbsp;|&nbsp;<a class="analytics-footer-link" href="https://www.ni.com/en/about-ni/legal/imprint.html">IMPRINT</a>&nbsp;|&nbsp;<a class="analytics-footer-link" href="https://www.emerson.com/en/corporate/privacy-notice">PRIVACY</a>&nbsp;|&nbsp;<a id="preferences" class="ot-sdk-show-settings" href="javascript:void(0)">Cookie Settings</a></div><div class="allRights">&copy;&#32;<ni-wrapper-copyright-year class="copyright"></ni-wrapper-copyright-year>&#32;NATIONAL INSTRUMENTS CORP. ALL RIGHTS RESERVED.</div><div class="ni-contact-number-container"><ni-wrapper-contact-number></ni-wrapper-contact-number></div></div></div></footer><ni-wrapper-reset-detector></ni-wrapper-reset-detector>
+
+    
+    
+
+ 
+
+
+  </div>  
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+{
+  "status": "passed",
+  "documents": 4,
+  "pages": 28,
+  "review_date": "2026-10-13",
+  "renderer": "Poppler 25.02.0, 110dpi",
+  "reviewers": {
+    "review_pdfs": "month_scope_review: all 14 pages re-reviewed",
+    "research_and_report": "root: all 14 final pages reviewed"
+  },
+  "resolved_findings": [
+    "Inline missing mathematical glyphs now use embedded DejaVuSans; all affected pages re-reviewed",
+    "Research figure headings and images grouped; no isolated figure headings"
+  ],
+  "records": [
+    {
+      "pdf": "09_结项文书与答辩\\06_可打印PDF\\卫星姿态系统搭建学习综述.pdf",
+      "pages": 6,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "page_images": [
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_1\\page-1.png",
+          "sha256": "4355d9ed01335dd8fad55412e0ee97e4bfb254155628096e45d608e1495c1fae"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_1\\page-2.png",
+          "sha256": "1414ae9307c49e847122e29cbd6791625c60f6bb7401736fa2b9750e254ff382"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_1\\page-3.png",
+          "sha256": "bb7311d0ac32e97d980f3f3364c7b4e4a719f0c65e4212a84cda058c3c3c20c5"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_1\\page-4.png",
+          "sha256": "d327dcc1f4b7abcb0566db274602fec098ac73cb845752feda8ab5e28abf229b"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_1\\page-5.png",
+          "sha256": "c3ee96f6cde0b949994c7f43366518d8233fdb3104cb66f396d948b5ad26cba3"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_1\\page-6.png",
+          "sha256": "1841d0d4bbe945c506eb7ef46dd54014d467898a0568052537c889b4f9eec041"
+        }
+      ]
+    },
+    {
+      "pdf": "09_结项文书与答辩\\06_可打印PDF\\卫星智能姿态控制系统学习综述.pdf",
+      "pages": 8,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "page_images": [
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_2\\page-1.png",
+          "sha256": "cf3558318954acc69e4461450d7d4daea2fa7ad1c623e47c3c42a349af5232bc"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_2\\page-2.png",
+          "sha256": "af3ea0eae0e993e3dcc0b98dd0a7b0468766824593863b9ebb740f85a02bf52a"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_2\\page-3.png",
+          "sha256": "dca3d09ebc27c4ac6538d3531baadc7faaa3a9e09ff9dc1c67f7b466a8409ec9"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_2\\page-4.png",
+          "sha256": "e921fbf632c53d2c842ebea41e7889745fb55987993b84174e2864a8239278ae"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_2\\page-5.png",
+          "sha256": "5bf3dde622ad302d0f463312012d1fa7e3c60e3950a02bd76d3047104023eade"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_2\\page-6.png",
+          "sha256": "50ab5d17cc00e9e951131b460cf6b4cbde574f21476c67984c3cb80d9d410ba2"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_2\\page-7.png",
+          "sha256": "b0e6b75faf81bc0e024398f4c8375338ba04c4161cdcc40e9d51bc5e6f47bc43"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_2\\page-8.png",
+          "sha256": "e5b39b5d9379cd39e9f9c6bfdb9f86bae8501adc75bac6af502dfa312dfeb554"
+        }
+      ]
+    },
+    {
+      "pdf": "09_结项文书与答辩\\06_可打印PDF\\研究分析.pdf",
+      "pages": 7,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "page_images": [
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_3\\page-1.png",
+          "sha256": "eb39d570b884caa75afcd2647b516a6c7a11335ef968728f0a80fd2737777a14"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_3\\page-2.png",
+          "sha256": "25d76a4c9a59174427dbc63191c2e6fad41712cf87f2703f0f4f4c436e64eca8"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_3\\page-3.png",
+          "sha256": "850ccb4b6aaa3864472998d50e2f29aa660432f3724419dd1bf4089ee7c661d7"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_3\\page-4.png",
+          "sha256": "c876445f6e19265a509e1bf0a667e6df23d7639e5c610779bb6d9f421f3677db"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_3\\page-5.png",
+          "sha256": "8dedb84ff3ba5c4918d66565bb05b2adfaffb81bbbdc533090bea72990d78be7"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_3\\page-6.png",
+          "sha256": "4aab51d18e775ff59a7cfba22a5778af7320b5a9c4477e3c490ab2e1b8213616"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_3\\page-7.png",
+          "sha256": "c043b93c6ac27ccc04cfb46b0b375a7b5831b57fe404560c3c226271f5608df7"
+        }
+      ]
+    },
+    {
+      "pdf": "09_结项文书与答辩\\06_可打印PDF\\项目结项报告内容稿.pdf",
+      "pages": 7,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "page_images": [
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_4\\page-1.png",
+          "sha256": "f8e5e7d8d705536036457024c0371c81c4a6a27d64b32f97c785647e75e88aef"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_4\\page-2.png",
+          "sha256": "bd68483f6c1581807d04ad7ae1f6d61cadeca455969d859715b80d744ac1148d"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_4\\page-3.png",
+          "sha256": "9e9aa6c1d93f8e7a0af4e48d034ace9e5b42f28ffef09db6ccd77715af3b63ba"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_4\\page-4.png",
+          "sha256": "322bf4850c211e18fe1c485c97acff74e37480de644db27e93baea122b5c138d"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_4\\page-5.png",
+          "sha256": "6289dc20dcfaa5fd1584a14be0dedc60d266152c99958bb4cd0a52d36b731b72"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_4\\page-6.png",
+          "sha256": "8ed4695ae6ce85ac5304dbcd5fd6b3d8a66a1493d3907d8e8d5af07f9d6a00a7"
+        },
+        {
+          "relative": "tmp\\artifacts\\pdf_review\\document_4\\page-7.png",
+          "sha256": "24a8479f8e1e7feb7b9035efd16da95089f63d2c48211fdcb31d6111c4dc9be9"
+        }
+      ]
+    }
+  ]
+}

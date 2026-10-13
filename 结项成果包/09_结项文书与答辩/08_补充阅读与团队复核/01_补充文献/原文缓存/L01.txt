@@ -1,0 +1,851 @@
+Article
+
+Actor-Critic Neural-Network-Based Fractional-Order Sliding
+Mode Control for A itude Tracking of Spacecraft with
+Uncertainties and Actuator Faults
+Chenghu Jing *, Xiaole Ma, Kun Zhang, Yanfeng Wang, Bingsheng Yan and Yanbo Hui
+
+                                           School of Mechanical and Electronic Engineering, Henan University of Technology, Zhengzhou 450001, China;
+                                           ma19513316208@outlook.com (X.M.); kungzhang@haut.edu.cn (K.Z.); yanfengwang@haut.edu.cn (Y.W.);
+                                           yanbingsheng@haut.edu.cn (B.Y.); yanbohui@hotmail.com (Y.H.)
+                                           * Correspondence: chhjing@haut.edu.cn
+
+
+                                           Abstract: This paper investigates the a itude control of rigid spacecraft in the presence of uncer-
+                                           tainties, disturbances, and actuator faults. In order to eﬀectively address these challenges and im-
+                                           prove the performance of the system, a novel actor-critic neural-network-based fractional-order
+                                           sliding mode control (ACNNFOSMC) has been developed for spacecraft. The integration of actor-
+                                           critic neural network, fractional-order theory, and sliding mode control enables dual functionality:
+                                           the actor-critic neural network serves to approximate the aggregate of uncertain parameters, dis-
+                                           turbances, and actuator faults, thereby facilitating their compensation, while the fractional-order
+                                           sliding mode control mechanism signiﬁcantly improves the system’s tracking precision and overall
+                                           robustness against uncertainties. Theoretical analyses are presented to analyze the stability of the
+                                           proposed control framework. Thorough examination via simulation experiments aﬃrms the eﬀec-
+                                           tiveness and control precision of a itude of our proposed control strategy, even in complex opera-
+                                           tional scenarios.
+
+                                           Keywords: spacecraft; a itude tracking; neural network; sliding mode control; fractional-order
+
+Citation: Jing, C.; Ma, X.; Zhang, K.;
+Wang, Y.; Yan, B.; Hui, Y.
+Actor-Critic Neural-Network-Based
+Fractional-Order Sliding Mode              1. Introduction
+Control for A itude Tracking of                  In the pursuit of advanced space missions, spacecraft systems serve as crucial com-
+Spacecraft with Uncertainties and          ponents, requiring exceptional performance a ributes like high-precision tracking, ro-
+Actuator Faults. Fractal Fract. 2024, 8,   bustness, rapid responsiveness, and operational eﬃciency, all while enduring diverse and
+385. h ps://doi.org/10.3390/               challenging environmental conditions [1–3]. It is a widely accepted fact that spacecraft
+fractalfract8070385
+                                           confront inherent uncertainties and experience extrinsic disturbances, compounded by
+Academic Editor: António Lopes             potential actuator malfunctions, which pose signiﬁcant hurdles to optimal control [4].
+                                           Considering the intricacies involved, the a itude control of spacecraft has emerged as a
+Received: 1 June 2024
+                                           critical research focus due to its centrality in ensuring accurate navigation and maneuver-
+Revised: 25 June 2024
+Accepted: 26 June 2024
+                                           ability [5].
+Published: 28 June 2024
+                                                 Over the past years, concerted eﬀorts have been dedicated to the development of
+                                           sophisticated a itude tracking control methodologies, such as RISE control [6], adaptive
+                                           control [7], backstepping control [8], iterative learning control [9], robust H∞ control [10]
+                                           and so on. Nonetheless, these approaches fundamentally guarantee either asymptotic er-
+Copyright: © 2024 by the authors.
+                                           ror convergence or uniform ultimate bounding of the a itude tracking error. In response,
+Licensee MDPI, Basel, Swi erland.
+This article is an open access article
+                                           ﬁnite-time controllers have been vigorously explored [11–16], underscoring the quest for
+distributed under the terms and
+                                           enhanced performance in practical scenarios. Among these methods, terminal sliding
+conditions of the Creative Commons         mode control has emerged as a potent tool, representing an advancement over conven-
+A ribution      (CC     BY)     license    tional sliding mode control (SMC) [17]. It boasts robust characteristics and enables ﬁnite-
+(h ps://creativecommons.org/license        time convergence, albeit its implementation is hampered by issues of singularity and chat-
+s/by/4.0/).                                tering [18,19]. Pukdeboon designed a second-order SMC approach for the a itude control
+
+
+
+Fractal Fract. 2024, 8, 385. https://doi.org/10.3390/fractalfract8070385                                          www.mdpi.com/journal/fractalfract
+Fractal Fract. 2024, 8, 385                                                                                          2 of 16
+
+
+
+
+                              of spacecraft [20], while Lu and Xia introduced an adaptive super-twisting algorithm ad-
+                              dressing the uncertainties and external disturbances in spacecraft a itude control [21].
+                              High-order sliding mode eﬀectively overcomes the cha ering of classical sliding mode
+                              control, and has good robustness and fast response.
+                                    The integration of fractional-order calculus with sliding mode control methodologies
+                              has provided new means to advance controller performance [22]. By transcending tradi-
+                              tional integer-order derivatives, fractional-order diﬀerentiation transforms the control sig-
+                              nal’s sharp transitions into smoother fractional derivatives, eﬀectively suppressing the
+                              cha ering induced by discontinuous control actions [23]. This innovation has fostered the
+                              application of fractional-order methodologies in a multitude of nonlinear control systems,
+                              including tailored solutions for spacecraft a itude control. Alipour et al.’s [24] work in-
+                              troduced an adaptive fractional-order nonsingular terminal SMC, ingeniously designed
+                              to stabilize spacecraft a itude while concurrently minimizing reaction wheel momentum
+                              errors. Zhang et al. [25] introduced a novel fault-tolerant control scheme, integrating frac-
+                              tional-order nonsingular terminal sliding mode control with backstepping techniques, tai-
+                              lored to tackle spacecraft a itude control amidst faults. This strategy ensures the ﬁnite-
+                              time stability of the tracking error in a faulty closed-loop a itude control system. Qian et
+                              al. [26] employed an adaptive sliding mode observer for fault estimation and combined
+                              fractional-order SMC with adaptive fuzzy approximation techniques, which ensured en-
+                              hanced robustness and fault tolerance of the system. Fractional-order control, as eluci-
+                              dated in various seminal works, augments the parameter tuning range, thereby enhancing
+                              the ﬂexibility in controller design and reﬁning system response precision [27]. These stud-
+                              ies have devised fractional-order SMC for spacecraft applications, demonstrating the eﬃ-
+                              cacy of this approach.
+                                    All the previously mentioned methods have demonstrated their eﬀectiveness. How-
+                              ever, they all necessitate prior knowledge of system dynamics, thereby precluding their
+                              application in realizing optimal tracking control. Due to this limitation, the interest in re-
+                              inforcement learning (RL) as a means to achieve control optimization has been rejuve-
+                              nated. Among the prominent and eﬃcacious RL methodologies, the actor-critic RL stands
+                              out [28,29]. The integration of neural networks (NNs) with the actor-critic RL framework
+                              has spurred signiﬁcant advancements in intelligent control techniques and shed light on
+                              the approaches to address tracking control challenges [30–34]. Wang et al. [35] proposed
+                              an RL-oriented optimal control method that eﬀectively reduces vibration and improves
+                              the operational eﬃciency of unmanned ground vehicles operating in complex and uncer-
+                              tain environments. Similarly, Zheng et al. [36] integrated the actor-critic RL framework
+                              into an SMC strategy for precise trajectory tracking in spacecraft, emphasizing the adapt-
+                              ability of RL to intricate aerospace engineering applications.
+                                    However, a comprehensive method that combines SMC, fractional-order control, and
+                              an actor-critic NN (ACNN) has not been investigated. Therefore, this paper proposes AC-
+                              NNFOSMC for the a itude control of spacecraft amidst uncertainties and actuator faults.
+                              The core novelties and advancements of this study can be encapsulated as follows:
+                                    (1) The developed framework includes an ACNN framework to approximate the ag-
+                              gregate of uncertain parameters, disturbances, and actuator faults of spacecraft, thereby
+                              facilitating their compensation. Unlike traditional neural network (NN) approximation
+                              [37,38], an ACNN-based control scheme enables the derivation of an optimized control
+                              policy in real-time, utilizing state information. By leveraging neural networks to learn and
+                              compensate for system uncertainties, our method reduces the reliance on computationally
+                              intensive model development and ﬁne tuning. The ability to adaptively estimate and re-
+                              spond to uncertainties in real time through neural-network-based learning fosters greater
+                              robustness in the control system.
+                                    (2) A fractional-order super-twisting control based on a fractional-order sliding mode
+                              surface is proposed for spacecraft. Compared with SMC, the proposed fractional-order
+                              SMC converts the sharp transformation of control signals into smoother fractional deriv-
+                              atives, eﬀectively suppressing the cha ering caused by discontinuous control actions.
+Fractal Fract. 2024, 8, 385                                                                                                                         3 of 16
+
+
+
+
+                              Compared with super-twisting control, it augments the parameter tuning range, thereby
+                              enhancing the ﬂexibility in controller design and improving system response precision.
+                                   (3) By merging ACNN with a fractional-order super-twisting SMC, we signiﬁcantly
+                              expedite the system’s convergence process while concurrently boosting steady-state accu-
+                              racy. This fusion represents a pivotal advancement in control system dynamics and re-
+                              sponsiveness.
+
+                              2. Model Description and Preliminaries
+                              2.1. Spacecraft Dynamics
+                                     Consider the following notation: Let q   q1 , q2 , q3  and ω  1 ,  2 , 3   R 3 de-
+                                                                           T                                                                    T
+
+
+                                                                                                                                            T
+                              note a itude and the angular velocity vector, respectively; let q u   q 0 , q T   R 4 with
+                              qT q  q02  1 denote the unit quaternion, I3  R33 denote the identity matrix; let
+                                                                with qd   qd 1 , qd 2 , qd 3  and ωd   d 1 ,  d 2 ,  d 3   R 3 denote the
+                                                   T                  T                                                              T
+                              q ud   q d 0 , q dT   R 4
+                                                                                                                                    and ω denote the at-
+                                                                                                                               T
+                              desired a itude and angular velocity, respectively; let q u   q 0 , q T 
+                              titude tracking error and velocity tracking error, respectively. Throughout this document,
+                              the index i spans the set i  i :1,2,3 ; any vector x  R 3 means x   x1 , x 2 , x3  , and
+                                                                                                                        T
+
+
+
+                              x   0,  x3 , x2 ; x3 ,0,  x1 ;  x2 , x1 ,0 means its skew-symmetric matrix.
+                                     The dynamics of spacecraft are formally described by [39]
+                                                                                        1 T         1
+                                                                                q 0   q ω , q =  q 0 I 3  q  ω ,
+                                                                                                                  
+
+                                                                                        2           2                                                  (1)
+                                                                                Jω   ω  Jω  u  Eu  Eu  d  t 
+                                                                               
+
+                              where       J  JT R33 denotes the inertia matrix, d  t    d1 , d 2 , d 3 T  R 3 denotes the dis-
+                                                       3
+                              turbance, uR                denotes the control torque,                      uR3         denotes bounded fault, and
+                                                                        denotes a failure indicator matrix, where its element 0  Ei  1
+                                                                  33
+                              E  diag  E1 , E2 , E3   R
+                              signiﬁes the failure indicator for each respective actuator.
+                                   Due to the inherent uncertainty of the inertia matrix, it can be represented as the sum
+                              of a nominal inertia matrix J0 and an uncertain component J , expressed as
+                              J  J0 J . The dynamics (1) are given by
+                                                                                     J01ωJ0ω  J01u  f N ,
+                                                                                   ω                                                                    (2)
+
+                              where                                                                  J 1  d  t   Eu  Eu 
+                                                                           Jω  J 1ω   Jω   Ju
+                                                                 f N   Jω                                                                               ,
+                                                                                    0
+
+                               J   J 01  J  I 3  J 01  J  J 01 .
+                                     From Equation (1), it follows that
+                                                                                       q  q0 d q  qd q  q0 qd
+                                                                                       q 0  qdT q  q0 q0 d        ,                                  (3)
+                                                                                       ω  ω  Cωd
+                                                1 2 T
+                              where C 
+                                                2
+                                                   q0  q q  I3  2qT q  2q0q .
+                                  By employing Equations (1)–(3), the description of the tracking error’s dynamic be-
+                              havior is thereby established as
+                                                                               1 T           1
+                                                                      q0   q ω , q =  q0 I 3  q  ω
+                                                                                                           
+
+                                                                               2             2                                 ,                       (4)
+                                                                     ω   J 01ω J 0 ω  ω  Cωd  Cω d  J 01 u  f N
+Fractal Fract. 2024, 8, 385                                                                                                             4 of 16
+
+
+
+
+                              Assumption 1 ([20,21]). The overall perturbation f N exhibits continuous diﬀerentiability in
+                              relation to time.
+
+                              2.2. Preliminaries
+                                   Within this section, the fundamental concepts pertinent to fractional-order calculus
+                              are outlined.
+
+                              Deﬁnition 1 ([22]). The Riemann–Liouville                      -order fractional derivative and integral are ex-
+                              pressed as
+
+
+                                                                          d  f t             1      d r t f  
+                                                           t f  t                                                           d ,
+                                                                                              r    dt r a  t    r 1
+                                                       a                                                                                   (5)
+                                                                              dt
+
+                                                                                                      1      t    f  
+                                                                 t  f  t   a  t f  t                          d ,
+                                                                                                         t    
+                                                             a                                               a         1                   (6)
+
+                              where f  t  denotes any function,   denotes the fractional derivative,   repre-
+                              sents the fractional integral, r 1   r ,   is Euler’s gamma function, which is given
+                              by
+                                                                                                
+                                                                                         et t  1dt ,                               (7)
+                                                                                                a
+
+                                   Shifting focus to the realm of engineering and control, the prevalent Caputo interpre-
+                              tation for    -order fractional calculus is encapsulated by:
+                                                                                     1       t          r   1
+                                                             a   t f  t                  t             f  r    d ,          (8)
+                                                                                  r    a
+
+                                   Notably, it is important to recognize a t f  t   a t1  f  t  in this context. Nonethe-
+                              less, the versatility of operator (8) resides in its broad applicability to an extensive set of
+                              continuous functions, which may not be restricted to exhibiting solely integer-order de-
+                              rivatives.
+
+                              3. Controller Design
+                                    The control scheme framework proposed in this paper is shown in Figure 1. The in-
+                              tegration of an ACNN with a super-twisting SMC with fractional-order theory enables
+                              dual functionality: the ACNN serves to approximate the aggregate of uncertain parame-
+                              ters, disturbances, and actuator faults, thereby facilitating their compensation, while the
+                              fractional-order super-twisting SMC signiﬁcantly improves the system’s tracking preci-
+                              sion and overall robustness against uncertainties.
+Fractal Fract. 2024, 8, 385                                                                                                                            5 of 16
+
+
+
+
+                              Figure 1. The framework of the proposed control scheme.
+
+                              3.1. Uncertainty Estimation Using Actor-Critic NN
+                                     The unknown and time-varying nature of f N has an impact on control eﬃcacy. To
+                              address this, f N can be approximated using an ACNN.
+
+                              3.1.1. Critic NN
+                                     The unknown and time-varying nature of f N , has an impact on control eﬃcacy. To
+                              address this, f N can be approximated using an ACNN.
+                                  Regarding the critic NN, a long-term cost function can be formulated as [28]
+                                                                                                       t
+                                                                                                   
+                                                                                      t    e      
+                                                                                                             d ,                                      (9)
+                                                                                                 t
+
+                              where  serves as a constant factor for discounting the future cost, and  t  denotes
+                              an instant cost function given by
+                                                                                        t   qT Mq  uT Gu ,                                         (10)
+
+                              where M and G denote the designed positive deﬁnite matrices. The pinnacle of con-
+                              trol performance is a ained upon achieving the minimal accumulated cost, referred to as
+                              the cost-to-go function.
+                                    Based on the approximation property of NNs,   t  can be represented as
+                                t   ωc*T σc  q    c , where ω c*   c*1 ,  c*2 ,  ,  ch*  T signiﬁes the vector of optimal weights,
+                                                                                                                                                T
+                              h indicates the quantity of nodes comprising the hidden layer, q   q1 , q 2 , q 3                              character-
+                              izes the input vector,  c is referred to as the least approximation error, and σ c  q  uti-
+                              lizes a Gaussian function structured as
+                                                                                                    T
+                                                                 σ c  q   exp    q   cj   q   cj  bcj2  , j  1, 2, , h ,             (11)
+                                                                                                                        
+                                                                           T
+                              where  cj    cj1 ,  cj 2 ,  cj 3        signiﬁes the receptive ﬁeld’s centroid, and bcj denotes the
+                              breadth of the Gaussian function.
+                                  The approximation for   t  is formalized by
+Fractal Fract. 2024, 8, 385                                                                                                                              6 of 16
+
+
+
+
+                                                                                        ˆ  t   ωˆ cT σ c  q  ,                                      (12)
+
+                                  With respect to Equations (10) and (12), the approximate error of the cost function is
+                              expressed as
+                                                                                                      1ˆ          
+                                                                                t    t           t   ˆ  t  ,                                (13)
+                                                                                                     
+                                                                                             2
+                                   To outline the update rule for the critic NN, Ec  1 2  is deﬁned. Based on the
+                              principle of gradient descent, the adjustment rule for the critic network’s weights is de-
+                              vised as
+                                                                                                        E
+                                                                                             ωˆ c  c c ,                                               (14)
+                                                                                                         ˆc
+                                                                                                        ω
+                                   Upon integrating Equation (13) into Equation (14), the resultant expression becomes
+                                                                                      E
+                                                                        ωˆ c   c  c
+                                                                                      ωˆ c
+                                                                                                                      
+                                                                                         t   1   ˆ  t   ˆ  t  
+                                                                                                                            
+                                                                               c                                             ,                         (15)
+                                                                                                     ωˆ c
+                                                                                       1 ˆ       ˆ   
+                                                                               c                  q 
+                                                                                        ωˆ c ωˆ c  q  
+
+                              where c signiﬁes the learning rate of the critic NN.
+                                              ˆ c , q, q    t   ω
+                                   Deﬁning ζc ω                                       
+                                                                        ˆ cT Λ Λ with Λ    σ c    σ c q , Equation (15) is
+                              further wri en as
+                                                                                     ˆ   ζ ωˆ c , q, q ,
+                                                                                     ω c    c c                                                          (16)
+                                                                                                                   T
+                                   A constant vector ωc max  c max1 , c max 2 , , c max h                            is selected to adhere to the condi-
+                              tion ˆ cj   c max j , j  1, 2,  , h . To ensure that the critic NN’s weights are bounded, an
+                              update rule grounded in the projection methodology for the critic NN is formulated as
+                              follows:
+                                                          
+                                                            ζ ,                      ωˆ c  ω c max or ωˆ c  ω c max , ω cT ζ c  0
+                                                  ωˆ c   c c                                                                        ,                   (17)
+                                                            c ζ c   c ξ c ,       ωˆ c  ω c max , ω cT ζ c  0
+
+                              where ξc  ω   
+                                         ˆ cT ζ c ωˆ c
+                                                             2
+                                                                  ωˆ . Provided that ωˆ  0   ω
+                                                                    c                                 c                     c max
+                                                                                                                                    holds true, the implementa-
+                              tion of the projection-based update law in Equation (17) consistently upholds the con-
+                              straint ω ˆ c  ωc max .
+
+                              3.1.2. Actor NN
+                                   The output vector fˆ N of radial basis function NN, which serves to approximate
+                              modeling uncertainties f N , is formulated as
+                                                                                              ωˆ aT1σ a1  z1  
+                                                                                                                  
+                                                                                       fˆN  ωˆ aT2 σ a 2  z2   ,                                      (18)
+                                                                                              ωˆ aT3 σ a 3  z3  
+                                                                                                                  
+                                                                         T                                              T
+                              where ωai   ai1 ,  ai 2 , ,  aim  , σai  zi  and zi   q1i , 1i  represent the weight vector, the
+                              Gaussian function, and the input vector, respectively.
+                                  The approximate error of the actor NN is expressed as
+Fractal Fract. 2024, 8, 385                                                                                                                                         7 of 16
+
+
+
+
+                                                                                                fNi  ω aiT σ ai  zi  ,                                            (19)
+
+                                     ai  ωai  ω
+                              where ω
+                                                 *
+                                                 ˆ ai . Considering Equations (9) and (12), let  d  t   0 represent the ex-
+                              pected cost function for future states; the error associated with actor NN is given by
+
+                                                                                      ea  fNi  k ˆ  t   d  t  ,
+                                                                                                                                                                     (20)
+
+                              where k  0 is a coeﬃcient. Upon deﬁning E a  ln  cosh  ea   , the updating rule of the
+                              actor NN’s weights is devised as
+                                                                                               E
+                                                                                  ωˆ ai   a a
+                                                                                               ωˆ a
+                                                                                                      dEa ea fNi                                                    (21)
+                                                                                           a                                          ,
+                                                                                                      dea fNi ωˆ ai
+                                                                                           a tanh fNi  k ˆ σai
+                                                                                                                               
+                              where a is the designed updating rate. In light of the unavailability of fNi , Equation
+                              (21) is modiﬁed as follows:
+                                                                                                 n                      
+                                                                             ωˆ ai   a tanh   ωˆ aiT σ ai  k  ˆ  σ ai
+                                                                                                 i 1                    ,                                           (22)
+                                                                                                      
+                                                                                      ζ ωˆ , q , q                    
+                                                                                            a    ai       ai
+
+
+                                  To ensure that the actor NN’s weights are bounded, parameter projection is em-
+                                                                                                                   T
+                              ployed. A set of constant vectors ωai max   ai1 max ,  ai 2 max ,  ,  aih max  are tailored to fulﬁll
+                              the condition ˆ aij   aij max  j  1, 2,  , h  , leading to the design of a projection-based up-
+                              date law for the actor NN as follows:
+                                                          
+                                                            ζ ,                          ωˆ ai  ω ai max or ωˆ ai  ω ai max , ω aiT ζ ai  0
+                                                 ωˆ ai   a ai                                                                                 ,                     (23)
+                                                            a ζ ai   a ξ ai ,         ωˆ ai  ω ai max , ω aiT ζ ai  0
+
+                              where ξai  ω  
+                                          ˆ aiT ζ ai ωˆ ai
+                                                                  2
+                                                                       ωˆ . Provided that ωˆ  0   ω
+                                                                        ai                                             ai               ai max
+                                                                                                                                                 holds true, the projection
+                                                                                       ˆ ai  ωai max .
+                              updating law (23) consistently guarantees the constraint ω
+
+                              3.2. Fractional-Order Super-Twisting Sliding Mode Control
+                                   A fractional-order sliding mode surface is conﬁgured as
+                                                                                           1 q 2 1q ,
+                                                                                        sω                                                                            (24)
+
+                              where 1 and 2 denote coeﬃcients, 0    1 , and 0    1.
+                                  Derived from Equation (24), the dynamics of s are delineated by
+                                                                          s  ω  1   1q  2   q
+                                                                               J 01ω J 0 ω  ω  Cωd  Cω d  J 01 u ,                                          (25)
+                                                                              fˆ  ε     1q     q
+                                                                                  N              1                      2
+
+                                   From Equation (25), the control law is thereby formulated as
+                                                        u  ueq  ues
+                                                     ueq  ω J 0 ω  J 0  ωe Cωd  Cω d   J 0 fˆN  J 0 1 1q  2   q  ,                               (26)
+                                                                             1
+                                                      ues   J 0 k1 sig  s   J 0 k2   sign  s 
+                                                                             2
+
+
+
+                              where 0  1.
+Fractal Fract. 2024, 8, 385                                                                                                                                             8 of 16
+
+
+
+
+                              Remark 1. When  1, the fractional-order control scheme (26) is transformed into the classical
+                              integer-order super-twisting controller, whose control performance and stability characteristics
+                              have been extensively investigated in many prior studies. Consequently, the present discussion
+                              intentionally excludes the case where  1, focusing exclusively on the cases where 0  1.
+
+                                      Incorporating Equation (26) into Equation (25) leads to
+                                                                                                           1
+                                                                                       s   k1 sig 2  s   k 2   sign  s   f d ,                                 (27)
+
+                              where fd  fN  ε , fN  fN  fˆN .
+                                  Subsequently, Equation (27) can be reformulated as
+                                                                                                                   1
+                                                                                                s  k1 sig 2  s   sI
+                                                                                                                                   ,                                      (28)
+                                                                                                sI  k2sign  s   fd
+                                      For clarity and comprehension, Equation (28) is recast in scalar format as:
+                                                                                                                   1
+                                                                                              si  k1i sig 2  si   sIi
+                                                                                                                                       ,                                  (29)
+                                                                                               sIi  k2i sign  si   fdi
+                                      The sequence  t n nN 0 , which is characterized by strict monotonic increase, com-
+                              prises every instant fulﬁlling the criterion si  tn   0 . The presence of solutions to Equa-
+                              tion (29) is elucidated following Garrappa’s [40] framework, thereby augmenting the Fil-
+                              ippov regularization methodology to encompass fractional-order scenarios. Capitalizing
+                              on the implications derived from Equation (29), particularly with regard to si  tn   sIi  tn 
+                              , Equation (25) undergoes a transformation into its subsequent form
+                                                                                                               1
+                                                                         si  t   si  tn   k1i sig 2  si   k2i   sign  si     fdi  t  ,               (30)
+
+                                  Based on Assumption 1 and the characteristics of neural networks, we can assume
+                              that fdi  t  is bounded.
+
+                              4. Stability Analysis
+                              Theorem 1. Given the dynamics during the reaching phase described in Equation (30) with
+                                 1  0.5 and   0,1 , if the parameters are selected to meet the following constraints
+                                                                             k1i  0
+                                                                                                                    0.5
+                                                                                          3            k                       1    
+                                                                             k 2 i  max           m ,  1i           s Ii  t0    m  ,                            (31)
+                                                                                          1           1                             
+                                                                                                                                          
+                                                                               1    k 2 i   m   k 2 i   m   1  1
+
+                              then there exists a ﬁnite time t  t f                                        where si  t   sIi  t   0        holds for t  t f , where
+                                                                                                      1
+                                                 1                n    2                   
+                              t f  t0              1    k   s                  sIi  t0                      ,            which                     applies       for
+                                            1      s  n0               2i       im            
+                                                              0.5 11   1                      0.5 
+                                             k1i sIi  t0                        2    
+                              s                                0.5                                    1 and commences with the given initial conditions
+                                                      1  1                   k 2 i   im 
+                               si  t  , s Ii  t     0, 0  .
+Fractal Fract. 2024, 8, 385                                                                                                                                                       9 of 16
+
+
+
+
+                              Proof of Theorem 1. For a detailed proof, readers are referred to [40]. Consider an open
+                              interval    t0 , t1  and assume si  t   sIi  t   0 , then 1  t   si  t   2  t  ,
+                              1  t   si  t   2  t  . 1  t  , and 2  t  are given by
+
+                                                                                                                                     k 2 i   im           1 
+                                                        1  t   sIi  t0  t  t0   M 20.5M  t  t0                                     t  t0 
+                                                                                                                                      2   
+                                                                                                                                                                        ,           (32)
+                                                                                         k              1 
+                                                        2  t   sIi  t0  t  t0   2i im  t  t0 
+                                                                                          2   
+
+                              where 2 M  sup 2  t  .
+                                    To ascertain an upper limit for time t1, for which si  t1   0 , consider t  t2 as the
+                              time at  2  t   0 since t1  t2 , which leads to
+                                               2
+
+
+
+                                                                                                                       2   
+                                                                       t  t0    t  t0                                              s Ii  t0  ,                           (33)
+                                                                                               2
+                                                                                                                         k 2 i   im
+                                    Additionally, in the scenario where 2  t   2 M , with t2 marking the instance
+                                                                                                                    2
+
+
+                              when 2 t2  0 , the following holds
+                                           
+                                                                                 t   t   k     s t  ,
+                                                                                                            1 
+                                                                                   2      0                                    Ii      0                                           (34)
+                                                                                                              2i          im
+
+                                    One obtains
+                                                                                                         0.5 11                             0.5 
+                                                                                   s Ii  t0                           1    
+                                                                          0.5
+                                                                           2M                    0.5                                                ,                           (35)
+                                                                                      1  1                            k 2 i   im 
+                                    t1  t2 and the monotonically decreasing nature of 1  t  ensure that 1  t   s Ii  t1  ,                                      2
+
+
+                              where 1 t2    s sIi  t0  . Therefore,  s sIi  t0   sIi  t1   0 holds, equivalently
+                                           
+                                                                                         sIi  t1    s sIi  t0  ,                                                              (36)
+
+                                    Next, with the assumption                             s Ii  t m    sm s Ii  t 0                         being valid for the ﬁrst
+                              m 1,, n and solving in  tn , tn 1  , it follows that
+                                                                                                                   0.511   1                           0.5 
+                                                               sIi  tn 1              k1i sIi  tn                                 1    
+                                                                                                                     0.5                       
+                                                                sIi  tn                              1  1                       k 2i   im 
+                                                                                                                   0.511   1                           0.5 
+                                                                                         k1i sIi  t0                                 1                                     (37)
+                                                                                                                     0.5                                       ,
+                                                                                                   1  1                           k 2i   im 
+                                                                                  s
+                                    From Equation (37), one has s Ii  t n 1    sn 1 s Ii  t0  , which leads to lim s Ii  t n   0 .
+                                                                                                                                                                            n
+
+                                                                  n
+                                                                     2   
+                              Considering  tn 1  tn    s                          sIi  t0  , an estimation for the time to convergence is
+                                                                      k2i   im
+                              derived as
+Fractal Fract. 2024, 8, 385                                                                                                               10 of 16
+
+
+
+
+                                                                            
+                                                                t f  t0    tn 1  tn 
+                                                                           n 0
+                                                                                                        1
+                                                                                2                
+                                                                    t0    sn            sIi  t0                ,                     (38)
+                                                                          n 0   k2i   im            
+                                                                                                                  1
+                                                                                  1    n  2               
+                                                                    t0       1  s
+                                                                                                     sIi  t0  
+                                                                          1  s n  0  k2i   im              
+                                   Consequently, at t  t f , sIi  t   0 holds, persisting for any subsequent instant t f .
+                              Moreover, assuming the existence of a time t   t f where si  t    0 yields to a contra-
+                              diction, this serves to validate that si  t   sIi  t   0 t  t f .□
+
+                              5. Simulations
+                                   In this study, we present a novel ACNNFOSMC aimed at enhancing the performance
+                              of spacecraft systems under disturbances, uncertainties, and faults. To validate the eﬃcacy
+                              and superiority of our proposed method, comprehensive simulations were conducted,
+                              with fractional-order PID (FOPID) and smooth super-twisting SMC (SSTSMC) [20] se-
+                              lected as benchmarks for comparison. For the selection of system parameters, we mainly
+                              referred to [20]. The main parameter of the system is inertia. The nominal inertia of the
+                              spacecraft was J0  diag 21,18,15 kg·m2; inertia uncertainties were set as
+                               J   2 sin  0.1t  ,1.3, 0.8;1.0, 2 sin  0.2t  ,1.5; 0.9,1.5, sin  0.3t   kg·m2. Within these simula-
+                              tions, the disturbances were set as d  t    0.8 sin  0.1t  , 0.4 sin  0.2t  , 0.3sin  0.5t   N·m,
+                                                                        0,                    t  25 s          0, t  20 s
+                              fault signals were set as ui                                            and Ei                , the ex-
+                                                                        0.2  0.1sin  5t  , t  25 s          0.2, t  20 s
+                                                                                                                                      T
+                              pected          signal            were              given           by          q d  0   1, 0, 0, 0       and
+                                                                                              T
+                              ωd  0.06sin  t 80 ,cos  2 t 80 ,sin  3 t 80  , and the initial states were set as
+                                                            T                                     T
+                              q   0.8832, 0.3, 0.2, 0.3    and ω   0.1, 0.04, 0.03 . The control gains of ACNNFOSMC
+                              were set as 1  2  0.1 cj  5: 0.5: 5 , bcj  0.1 , c  2 , aj  5: 0.2:5 , baj  1 , c  4
+                              , k1  260 , and k2 10 .
+                                   The simulation results, depicted in Figures 2–4, illustrate the a itude and angular
+                              velocity tracking performances of the three control strategies. In Figures 2–4, the space-
+                              craft under all three controllers can quickly converge to a stable state in about 15 s. Spe-
+                              ciﬁcally, the a itude tracking errors for the proposed controller, fractional-order PID, and
+                              smooth super-twisting controllers were recorded as qi  7.8 10 , qi  6.2 10 , and
+                                                                                                    4             3
+
+
+                               qi  4 103 , respectively. Correspondingly, the angular velocity tracking errors stood at
+                              i  1103 rad/s, i  3 103 rad/s, and i  9 103 rad/s. These ﬁndings undenia-
+                              bly highlight the superior tracking precision oﬀered by our proposed controller, outper-
+                              forming the conventional methods in both a itude and angular velocity control tasks.
+Fractal Fract. 2024, 8, 385                                                                      11 of 16
+
+
+
+
+                              Figure 2. The tracking performance of spacecraft with ACNNFOSMC.
+
+
+
+
+                              Figure 3. The tracking performance of spacecraft with FOPID.
+Fractal Fract. 2024, 8, 385                                                                                            12 of 16
+
+
+
+
+                              Figure 4. The tracking performance of spacecraft with SSTSMC.
+
+                                    Figure 5 provides insights into the control input profiles, revealing that despite all con-
+                              trollers maintaining control inputs within the predefined bounds of ±2 Nm, the fractional-
+                              order PID control exhibits the smoothest control signal among the three, which is a critical
+                              aspect in reducing system wear and improving overall efficiency. This observation under-
+                              scores the importance of control signal smoothness for practical applications. A unique as-
+                              pect of our method lies in the adaptive tuning of the actor-critic neural network weights, as
+                              illustrated in Figure 6. This figure showcases the self-adaptive process of the neural net-
+                              work’s parameters, which dynamically adjusts to optimize control performance, thereby
+                              contributing to the robustness and adaptability of the proposed ACNNFOSMC. In conclu-
+                              sion, the proposed ACNNFOSMC has demonstrated remarkable capabilities in terms of
+                              tracking accuracy and robustness against various operational challenges.
+
+
+
+
+                                  (a)                                                (b)
+
+
+
+
+                                                             (c)
+                              Figure 5. Comparison of control inputs for (a) ACNNFOSMC; (b) FOPID; (c) SSTSMC.
+Fractal Fract. 2024, 8, 385                                                                                                             13 of 16
+
+
+
+
+                              Figure 6. The adaptive tuning of the actor-critic NN’s weights.
+
+                                   To further validate the adaptive capability and strong robustness of the proposed
+                              control         method,           the        system           inertia        uncertainty        was    set   to
+                               J  8 sin  0.1t  , 2.3,1.8;1.0, 6 sin  0.2t  , 2.5; 2.9,1.5,8 sin  0.3t   , and the disturbance was
+                              conﬁgured as d  t   1.2 sin  0.2t  , 0.8 sin  0.3t  , 0.7 sin  0.5t   . Figure 7 illustrates the corre-
+                              sponding a itude and angular velocity tracking errors of the system under the proposed
+                              method and classical sliding mode control, while Figure 8 presents the control inputs.
+
+
+
+
+                                   (a)                                                                (b)
+
+
+
+
+                                   (c)                                                                (d)
+                              Figure 7. Comparison of tracking performance: (a) attitude tracking errors of ACNNFOSMC; (b) angular
+                              velocity errors of ACNNFOSMC; (c) attitude tracking errors of SMC; (d) angular velocity errors of SMC.
+
+
+
+
+                                   (a)                                                          (b)
+                              Figure 8. Comparison of control inputs for (a) ACNNFOSMC; (b) SMC.
+Fractal Fract. 2024, 8, 385                                                                                                14 of 16
+
+
+
+
+                                   Comparing Figures 2 and 7, it is evident that while increases in uncertainties and
+                              disturbances lead to a longer time for the system to reach the steady state, under the action
+                              of the proposed controller, the system still exhibits minimal a itude tracking errors and
+                              angular velocity tracking errors. This demonstrates that the proposed controller possesses
+                              strong adaptive capabilities and robustness against disturbances. As shown in Figure 8,
+                              compared to sliding mode control, the proposed method eﬀectively suppresses cha ering,
+                              further highlighting its advantages.
+
+                              6. Conclusions
+                                    This study has successfully investigated and tackled the critical challenge of a itude
+                              control for rigid spacecraft under uncertain environments, encountering unpredictable
+                              disturbances and facing potential actuator failures. By introducing a novel control strategy
+                              that merges the prowess of an actor-critic neural network with the advanced principles of
+                              a fractional-order super-twisting sliding mode control, we have demonstrated a signiﬁ-
+                              cant advancement in spacecraft control systems. The proposed actor-critic neural-net-
+                              work-based fractional-order super-twisting sliding mode control scheme has proven in-
+                              strumental in accurately estimating and compensating for the combined inﬂuence of un-
+                              certainties, external disturbances, and actuator faults. The actor-critic neural network has
+                              shown exceptional adaptability in the real-time estimation of these detrimental factors,
+                              thereby enabling effective countermeasures. Concurrently, the employment of fractional-
+                              order control has significantly bolstered the system’s responsiveness and precision, ensur-
+                              ing enhanced tracking accuracy and overall system robustness. The stability analyses per-
+                              formed in this research have rigorously substantiated the theoretical foundations of AC-
+                              NNFOSMC, affirming its ability to maintain system stability amidst varying operational
+                              dynamics. The following simulation studies have functioned as concrete evidence, confirm-
+                              ing the exceptional efficacy of our proposed methodology. These simulations have illus-
+                              trated marked improvements in control accuracy and resilience compared to those of other
+                              control methods, underlining the practical significance of our control strategy. Given the
+                              promising results, ACNNFOSMC emerges as a compelling solution for future spacecraft
+                              control systems. It offers a sophisticated yet practical way to navigate complex space envi-
+                              ronments with uncertainties and hazards. Ultimately, this research underscores the trans-
+                              formative potential of integrating advanced computational intelligence with innovative con-
+                              trol theories in advancing aerospace engineering and exploration capabilities. The applica-
+                              tion of our proposed control strategy is predicated on assumptions of lumped uncertainties
+                              that are continuous and bounded in nature. The current limitation is that the tuning of con-
+                              troller parameters necessitates knowledge of the upper bound of these uncertainties, which
+                              might pose a practical challenge in some real-world scenarios. By adopting adaptive mech-
+                              anisms, our future work aims to dynamically adjust controller parameters without the ex-
+                              plicit reliance on predefined uncertainty bounds. This adaptive approach would broaden
+                              the applicability of our control scheme, enabling it to effectively operate in environments
+                              where uncertainty characteristics are less well-known or subject to change over time.
+
+                              Author Contributions: Methodology, C.J. and X.M.; software, X.M., K.Z., and B.Y.; validation, C.J.,
+                              K.Z. and B.Y.; formal analysis, C.J., K.Z., and Y.H.; investigation, C.J., X.M., K.Z., and Y.W.; data
+                              curation, C.J., X.M. and K.Z.; writing—original draft preparation, C.J., X.M., K.Z., and Y.W.; writ-
+                              ing—review and editing, C.J., B.Y., and Y.H; funding acquisition, C.J. and Y.W. All authors have
+                              read and agreed to the published version of the manuscript.
+                              Funding: This research was supported in part by the Foundation of Henan University of Technology
+                              (No. 2021BS071), the Foundation of the Science and Technology Department of Zhengzhou
+                              (No.22ZZRDZX17), and the Key Scientiﬁc and Technological Research Projects in Henan Province
+                              (No. 242102240039 and No. 232102220085).
+                              Data Availability Statement: Data are contained within the article.
+                              Conﬂicts of Interest: The authors declare no conﬂicts of interest.
+Fractal Fract. 2024, 8, 385                                                                                                      15 of 16
+
+
+
+
+References
+1.    Zhang, S.; Zhou, Y.; Cai, S. Fractional-Order PD A itude Control for a Type of Spacecraft with Flexible Appendages. Fractal
+      Fract. 2022, 6, 601.
+2.    Hasan, M.N.; Haris, M.; Qin, S. Fault-tolerant spacecraft a itude control: A critical assessment. Prog. Aerosp. Sci. 2022, 130,
+      100806.
+3.    Jin, T.; Kang, G.; Cai, J.; Jia, S.; Yang, J.; Zhang, X.; Liu, F. Disturbance A enuation and Pointing Control System Design for an
+      Improved Disturbance-Free Payload Spacecraft. Aerospace 2023, 10, 530.
+4.    Golestani, M.; Zhang, W.; Yang, Y.; Xuan-Mung, N. Disturbance observer-based constrained a itude control for ﬂexible space-
+      craft. IEEE T. Aero. Elec. Sys. 2022, 59, 963–972.
+5.    Jing, C.; Du, H.; Liu, Y. Immersion and invariance based adaptive robust control for a itude tracking of spacecraft with input
+      saturation. Adv. Space Res. 2023, 72, 3606–3618.
+6.    Guo, Y.; Zhou, J.; Liu, Y. Distributed RISE control for spacecraft formation reconﬁguration with collision avoidance. J. Franklin
+      I. 2019, 356, 5332–5352.
+7.    Tiwari, M.; Prazenica, R.; Henderson, T. Direct adaptive control of spacecraft near asteroids. Acta Astronaut. 2023, 202, 197–213.
+8.    Nadaﬁ, R.; and Kabganian, M.; Robust backstepping a itude tracking control of an underactuated spacecraft with saturation
+      and time-variant perturbations. P. I. Mech. Eng. G-J Aer. 2022, 236, 502–516.
+9.    Yao, Q. Robust adaptive iterative learning control for high-precision a itude tracking of spacecraft. J. Aerospace Eng. 2021, 34,
+      04020108.
+10.   Wang, Z.; Li, Y. Rigid spacecraft nonlinear robust H∞ a itude controller design under actuator misalignments. Nonlinear Dynam.
+      2023, 111, 15037–15054.
+11.   Pukdeboon, C.; Siricharuanun, P. Nonsingular terminal sliding mode-based ﬁnite-time control for spacecraft a itude tracking.
+      Int. J. Control Autom. 2014, 12, 530–540.
+12.   Moradi, R.; Alikhani, A.; Fathi Jegarkandi, M. Spacecraft a itude fault tolerant control based on multi-objective optimization. J.
+      Theor. App. Mech-Pol. 2020, 58, 983–996.
+13.   Hajnorouzali, Y.; Malekzadeh, M.; Ataei, M. Finite-time disturbance observer based-control of ﬂexible spacecraft. J. Vib. Control
+      2023, 29, 346–361.
+14.   Esmaeilzadeh, S.M.; Golestani, M.; Fekih, A. Adaptive a itude stabilization of ﬂexible spacecraft with fast ﬁxed-time conver-
+      gence. IJST-T. Mech. Eng. 2022, 46, 195–208.
+15.   Han, Z.; Wang, M.; Yan, X.; Qian, H. Adaptive ﬁxed-time nonsingular terminal sliding mode a itude tracking control for space-
+      craft with actuator saturations and faults. Int. J. Aerospace Eng. 2021, 1, 8838784.
+16.   Eshghi, S.; Varatharajoo, R. Nonsingular terminal sliding mode control technique for a itude tracking problem of a small satel-
+      lite with combined energy and a itude control system (CEACS). Aerosp. Sci. Technol. 2018, 76, 14–26.
+17.   Xuan-Mung, N.; Golestani, M. Energy-eﬃcient disturbance observer-based a itude tracking control with ﬁxed-time conver-
+      gence for spacecraft. IEEE T. Aero. Elec. Sys. 2022, 59, 3659–3668.
+18.   Esmaeilzadeh, S.M.; Golestani, M.; Mobayen, S. Cha ering-free fault-tolerant a itude control with fast ﬁxed-time convergence
+      for ﬂexible spacecraft. Int. J. Control Autom. 2021, 19, 767–776.
+19.   Xuan-Mung, N.; Golestani, M.; Hong, S.K. Constrained nonsingular terminal sliding mode a itude control for spacecraft: A
+      funnel control approach. Mathematics 2023, 11, 247.
+20.   Pukdeboon, C. Finite-Time Second-Order Sliding Mode Controllers for Spacecraft A itude Tracking. Math. Probl. Eng. 2013,
+      930269.
+21.   Lu, K.F.; Xia, Y.Q. Finite-time a itude control for rigid spacecraft-based on adaptive super-twisting algorithm. IET Control The-
+      ory A. 2014, 8, 1465-1477.
+22.   Ahmed, S.; Azar, A.T.; Tounsi, M.; Ibraheem, I.K. Adaptive Control Design for Euler–Lagrange Systems Using Fixed-Time Frac-
+      tional Integral Sliding Mode Scheme. Fractal Fract. 2023, 7, 712.
+23.   Yu, Y.; Liu, X. Model-free fractional-order sliding mode control of electric drive system based on nonlinear disturbance observer.
+      Fractal Fract. 2022, 6, 603.
+24.   Alipour, M.; Malekzadeh, M.; Ariaei, A. Practical fractional-order nonsingular terminal sliding mode control of spacecraft. ISA
+      T. 2022, 128, 162–173.
+25.   Zhang, X.; Gao, Z.; Qian, M.; Bai, L. Integrated fault estimation and fault-tolerant control for rigid spacecraft a itude system
+      with multiple actuator faults. Int. J. Innov. Comput. I. 2019, 15, 1255–1270.
+26.   Qian, M.; Shi, Y.; Gao, Z.; Zhang, X. Integrated fault tolerant tracking control for rigid spacecraft using fractional order sliding
+      mode technique. J. Franklin I. 2020, 357, 10557–10583.
+27.   Fang, Y.; Li, S.; Fei, J. Adaptive Intelligent High-Order Sliding Mode Fractional Order Control for Harmonic Suppression. Fractal
+      Fract. 2022, 6, 482.
+28.   Cao, S.; Sun, L.; Jiang, J.; Zuo, Z. Reinforcement learning-based ﬁxed-time trajectory tracking control for uncertain robotic ma-
+      nipulators with input saturation. IEEE T. Neur. Net. Lear. 2021, 34, 4584–4595.
+29.   Chen, R.Z.; Li, Y.X.; Ahn, C.K. Reinforcement-learning-based ﬁxed-time a itude consensus control for multiple spacecraft sys-
+      tems with model uncertainties. Aerosp. Sci. Technol. 2023, 132, 108060.
+30.   Wang, X.; Shi, P.; Wen, C.; Zhao, Y. Design of parameter-self-tuning controller based on reinforcement learning for tracking
+      noncooperative targets in space. IEEE T. Aero. Elec. Sys. 2020, 56, 4192–4208.
+Fractal Fract. 2024, 8, 385                                                                                                    16 of 16
+
+
+
+
+31.   Muduli, R.; Jena, D.; Moger, T. Application of Reinforcement Learning-Based Adaptive PID Controller for Automatic Generation
+      Control of Multi-Area Power System. IEEE T. Autom. Sci. Eng. 2024, 1–12. h ps://doi.org/10.1109/TASE.2024.3359219
+32.   Nohooji, H.R.; Zaraki, A.; Voos, H. Actor–critic learning based PID control for robotic manipulators. Appl. Soft Comput. 2024,
+      151, 111153.
+33.   Ouyang, Y.; Dong, L.; Wei, Y.; Sun, C. Neural network-based tracking control for an elastic joint robot with input constraint via
+      actor-critic design. Neurocomputing 2020, 409, 286–295.
+34.   Patel, B.M.; Dwivedy, S.K. Manoeuvring of underwater snake robot with tail thrust using the actor-critic neural network super-
+      twisting sliding mode control in the uncertain environment and disturbances. Neural. Comput. Appl. 2023, 1–15.
+      h ps://doi.org/10.1007/s00521-023-09113-8
+35.   Wang, N.; Gao, Y.; Zhao, H.; Ahn, C.K. Reinforcement learning-based optimal tracking control of an unknown unmanned sur-
+      face vehicle. IEEE T. Neur. Net. Lear. 2020, 32, 3034–3045.
+36.   Zheng, M.; Wu, Y.; Li, C. Reinforcement learning strategy for spacecraft a itude hyperagile tracking control with uncertainties.
+      Aerosp. Sci. Technol. 2021, 119, 107126.
+37.   Cao, J.; Zhang, Y.; Ju, C.; Xue, X.; Zhang, J. A New Force Control Method by Combining Traditional PID Control with Radial
+      Basis Function Neural Network for a Spacecraft Low-Gravity Simulation System. Aerospace 2023, 10, 520.
+38.   Yu, B.; Du, H.; Ding, L.; Wu, D.; Li, H. Neural network-based robust ﬁnite-time a itude stabilization for rigid spacecraft under
+      angular velocity constraint. Neural. Comput. Appl. 2022, 34, 5107-5117.
+39.   Jing, C.; Du, H.; Liu, Y.; Yan, B.; Liu, C. Immersion and invariance sliding mode control with time-delay estimation for rigid
+      spacecraft with uncertainties and actuator faults. T. I. Meas. Control, 2023, 45, 3138–3146.
+40.   Muñoz-Vázquez, A.J.; Sánchez-Torres, J.D.; Parra-Vega, V.; Sánchez-Orta, A.; Martínez-Reyes, F. A fractional super-twisting
+      control of electrically driven mechanical systems. T. I. Meas. Control 2020, 42, 485–492.
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual au-
+thor(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+

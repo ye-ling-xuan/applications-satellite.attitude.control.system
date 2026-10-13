@@ -1,0 +1,486 @@
+{
+  "review_date": "2026-10-13",
+  "review_status": "final_scope_review_and_supplementary_delivery_completed_remaining_items_disclosed",
+  "scope": "用户授权的成果包整理融合、已接受的08最后研究计划及09结项内容与展示；大创计划书排除",
+  "all_goals_complete": false,
+  "research_execution_blocked": false,
+  "review_method": "Read-only final hashes, counts, primary and archive links, source/QA evidence, supplementary paper PDFs and minimal saved-model review outputs; no retraining or repeated full scientific trajectory recomputation. Only this independent coverage audit is written, and it is explicitly excluded from the delivery manifest.",
+  "requirements": [
+    {
+      "id": "U01",
+      "requirement": "有用原始资料遴选复制，原文件及V1/V2保全",
+      "status": "technically_verified",
+      "evidence": [
+        "01_遴选原始参考/copy_manifest.json",
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/独立核验记录.json"
+      ],
+      "finding": "127份副本一致、14635个既有成果文件保持快照；原工程内容未变，单项Git index行政漂移明确保留。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "U02",
+      "requirement": "单轴/三轴PID、PPO、SAC、TD3在统一条件下解释与对比",
+      "status": "technically_verified",
+      "evidence": [
+        "07_单轴三轴多算法对比/新融合分析.md",
+        "07_单轴三轴多算法对比/核验记录.json"
+      ],
+      "finding": "18份新训练记录及正式7560回合；历史模型迁移复测另列，未混入新模型排名。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "U03",
+      "requirement": "产生有证据的改进并解释效果与代价",
+      "status": "technically_verified",
+      "evidence": [
+        "07_单轴三轴多算法对比/新融合分析.md",
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/研究分析.md"
+      ],
+      "finding": "PID整定与策略校准有配对证据；V3标称SAC以更慢响应/更大RMS换取较低力矩平方代价。惯量随机化未扩大范围，负结果保留。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "R01",
+      "requirement": "测试前冻结协议、场景、种子、校准、边界及旧成果快照",
+      "status": "technically_verified",
+      "evidence": [
+        "08_惯量域随机化与泛化边界研究/01_实验协议与配置/protocol_freeze.json",
+        "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/deployment_freeze.json"
+      ],
+      "finding": "15个冻结输入及部署证据通过；正式测试绑定预测试独立核验。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "R02",
+      "requirement": "新增仅惯量随机化接口，保持动力学与共同条件",
+      "status": "technically_verified",
+      "evidence": [
+        "inertia_generalization/envs.py",
+        "inertia_generalization/vector_training.py",
+        "tests/test_inertia_protocol.py"
+      ],
+      "finding": "标称1与U[0.7,1.3]独立模式、初态/惯量独立随机流、外扰噪声关闭、三轴惯量物理检查。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "R03",
+      "requirement": "12份从零训练SAC、全部种子和同预算",
+      "status": "technically_verified",
+      "evidence": [
+        "08_惯量域随机化与泛化边界研究/02_模型与验证日志",
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/独立核验记录.json"
+      ],
+      "finding": "12份均1000000步，共12000000；best/final、验证历史、零偏、模型和运行源码哈希通过。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "R04",
+      "requirement": "两轴PID-N/PID-R相同结构、候选及预算",
+      "status": "technically_verified",
+      "evidence": [
+        "08_惯量域随机化与泛化边界研究/02_模型与验证日志/pid_configs.json",
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/独立核验记录.json"
+      ],
+      "finding": "4组各144候选，共576，全部验证评分独立复算；三轴两模式选到相同参数按实报告。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "R05",
+      "requirement": "10920正式回合、全部轨迹及配对",
+      "status": "technically_verified",
+      "evidence": [
+        "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/evaluation_manifest.json",
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/独立核验记录.json"
+      ],
+      "finding": "780场景×14实例；训练模式/校准配对各4680、PID780；NPZ身份逐项绑定冻结场景与控制器。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "R06",
+      "requirement": "泛化边界、波动、控制代价与失败解释",
+      "status": "technically_verified",
+      "evidence": [
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/研究分析.md",
+        "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/empirical_boundaries.csv"
+      ],
+      "finding": "27/30门槛、三个种子共同通过、包含标称点的连续已测网格；低/高惯量分别报告，明确SD、网格与控制代价限制。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "R07",
+      "requirement": "原始/校准分开，非等比例/标量分开",
+      "status": "technically_verified",
+      "evidence": [
+        "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/calibration_pairs.csv",
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/研究分析.md"
+      ],
+      "finding": "raw与校准使用同checkpoint；各向异性120场景独立统计，未纳入标量边界。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "R08",
+      "requirement": "全量独立核验与证据保全",
+      "status": "technically_verified",
+      "evidence": [
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/独立核验记录.json",
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/独立核验简要说明.md"
+      ],
+      "finding": "8148000状态转移与控制动作复算最大差异0；132预测试证据文件、120运行源码记录通过；reporting.py测试后展示修订单列。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "R09",
+      "requirement": "五张核心图、离线页面与完整研究分析",
+      "status": "delivered_and_finally_verified",
+      "evidence": [
+        "08_惯量域随机化与泛化边界研究/04_图表与结果页面",
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/研究分析.md"
+      ],
+      "finding": "Five scientific PNG/PDF figures, offline results page and complete analysis present; final visual QA, local links and immutable technical manifest verified.",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "D01",
+      "requirement": "系统搭建与智能控制两篇完整学习综述",
+      "status": "delivered_and_finally_verified",
+      "evidence": [
+        "09_结项文书与答辩/01_两篇学习综述"
+      ],
+      "finding": "Two final reviews integrate V3; RMS time-integration, original SAC double-Q versus SB3 network differences and post-action true-state reward corrections applied; 4/13 citations match; 6/8-page PDFs fully visually reviewed. Personal reading remains unconfirmed.",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "D02",
+      "requirement": "真实文献与取得/阅读层级记录",
+      "status": "delivered_and_finally_verified",
+      "evidence": [
+        "09_结项文书与答辩/05_来源与核验/文献核对清单.md",
+        "09_结项文书与答辩/05_来源与核验/文献获取清单.json",
+        "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/补充文献获取清单.json",
+        "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/补充文献分类与阅读札记.md",
+        "09_结项文书与答辩/08_补充阅读与团队复核/04_附录独立审查/补充材料独立审查.json"
+      ],
+      "finding": "原正文17项来源中9项学术论文/综述/软件论文，8项官方资料另计；补充3篇不同学术来源的真实全文后共12项。取得版本、DOI、PDF哈希、相关段落阅读及方法分类独立核对通过。既有取得层级不变，不等于12篇均取得全文或成员已读；学校具体文献口径仍待确认。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "D03",
+      "requirement": "结项报告、答辩大纲讲稿和问答",
+      "status": "delivered_and_finally_verified",
+      "evidence": [
+        "09_结项文书与答辩/02_结项报告/项目结项报告内容稿.md",
+        "09_结项文书与答辩/03_答辩内容"
+      ],
+      "finding": "Final report and all twelve slide contents/speaker notes integrate passed V3 results; no pending-data item; total suggested duration480seconds; actual school duration remains unconfirmed.",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "D04",
+      "requirement": "可打印PDF、离线HTML和演示视频",
+      "status": "delivered_and_finally_verified",
+      "evidence": [
+        "09_结项文书与答辩/06_可打印PDF/生成清单.json",
+        "09_结项文书与答辩/04_答辩演示",
+        "09_结项文书与答辩/07_演示视频/视频生成清单.json",
+        "09_结项文书与答辩/08_补充阅读与团队复核/03_附录阅读PDF/生成清单.json",
+        "09_结项文书与答辩/08_补充阅读与团队复核/03_附录阅读PDF/visual_review.json"
+      ],
+      "finding": "原4份A4 PDF共28页及12页答辩HTML/PDF已逐页检查，新增2份附录PDF共9页由root全页视觉核验；此次全部PDF与来源哈希、28+9张渲染页图及6张实际视频代表帧哈希通过。视频900帧/90秒/1280×720全量解码证据有效。PDF/HTML不是原生DOCX/PPTX，未重新宣称逐页目视。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "D05",
+      "requirement": "DOCX/PPTX正式格式及逐页渲染",
+      "status": "format_runtime_blocked",
+      "evidence": [
+        "tools/artifact_runtime_diagnostic.md"
+      ],
+      "finding": "技能要求的托管依赖加载器、artifact-tool和合规DOCX渲染运行时缺失；当前没有DOCX/PPTX，不把PDF/HTML称为这些格式。恢复运行时后可沿用同一内容转换，无需重训。",
+      "current_scope_blocker": false,
+      "blocks_requested_file_formats": true
+    },
+    {
+      "id": "D06",
+      "requirement": "总说明、目录、清单和README链接一致",
+      "status": "delivered_and_finally_verified",
+      "evidence": [
+        "最终交付总说明.md",
+        "最终交付清单.json",
+        "09_结项文书与答辩/05_来源与核验/交付整理修订记录.json",
+        "09_结项文书与答辩/05_来源与核验/附录交付修订记录.json"
+      ],
+      "finding": "最终结构和11309个冻结技术文件不变；文书/展示清单160文件、完整包15主文档75本地目标、轻量ZIP106项及5主入口34本地目标均核验通过。原114文件中110不变、4导航/交付工具修订已备份，45新增及1修订记录已纳入；CSV/JSON及全量技术资产未改。ZIP用于阅读展示，完整模型、代码、replay与NPZ仍用完整包。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "H01",
+      "requirement": "成员亲自运行保存模型并独立核算/解释",
+      "status": "pending_team_confirmation",
+      "evidence": [
+        "09_结项文书与答辩/04_提交核对与真实贡献/真实贡献待确认表.md",
+        "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/最小复核使用说明.md",
+        "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/运行核验记录.json",
+        "09_结项文书与答辩/08_补充阅读与团队复核/04_附录独立审查/补充材料独立审查.json"
+      ],
+      "finding": "已提供默认只读的固定两场景8实例复核：独立指标重算、5600保存动作命令及5600步完整20秒闭环回放均通过，25绑定输入不变；另有1条后选各向异性失败教学样本。动力学/PID复用冻结实现，非独立物理模型；代理输出不证明成员本人运行。本人实际复现、解释及V2团队复现仍待确认。",
+      "current_scope_blocker": false,
+      "required_before_school_submission": true
+    },
+    {
+      "id": "H02",
+      "requirement": "成员真实文献阅读与10–15篇要求口径",
+      "status": "pending_team_and_school_confirmation",
+      "evidence": [
+        "09_结项文书与答辩/04_提交核对与真实贡献/真实贡献待确认表.md",
+        "09_结项文书与答辩/05_来源与核验/文献核对清单.md",
+        "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/补充阅读核对.json",
+        "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/补充文献分类与阅读札记.md"
+      ],
+      "finding": "累计12项不同学术来源已提供真实获取/相关段落阅读证据，其中新增3篇全文；8项官方资料另计。不是12篇全文全部阅读或团队成员已读的证明。成员须记录本人实际章节、理解、与项目联系，并按学校对10–15篇等要求的实际口径确认。",
+      "current_scope_blocker": false,
+      "required_before_school_submission": true
+    },
+    {
+      "id": "H03",
+      "requirement": "实际贡献和工具辅助范围",
+      "status": "pending_team_confirmation",
+      "evidence": [
+        "09_结项文书与答辩/04_提交核对与真实贡献/真实贡献待确认表.md"
+      ],
+      "finding": "本人填写证据和日期，团队确认；不从目录名、Git作者或新生成结果反推历史贡献。",
+      "current_scope_blocker": false,
+      "required_before_school_submission": true
+    },
+    {
+      "id": "H04",
+      "requirement": "当前学校模板、实际截止、提交渠道与答辩时长",
+      "status": "pending_school_information",
+      "evidence": [
+        "09_结项文书与答辩/04_提交核对与真实贡献/承诺对应与提交前核对.md"
+      ],
+      "finding": "旧立项格式和工作计划日期不能替代本次通知；当前通用稿不是学校已批准格式。",
+      "current_scope_blocker": false,
+      "required_before_school_submission": true
+    },
+    {
+      "id": "H05",
+      "requirement": "项目编号、现学院/身份、经费票据",
+      "status": "pending_team_confirmation",
+      "evidence": [
+        "09_结项文书与答辩/05_来源与核验/原立项承诺与信息.md"
+      ],
+      "finding": "原件身份已核实，现状及实际经费待核；3000元为原计划，不能视为批准或支出。",
+      "current_scope_blocker": false,
+      "required_before_school_submission": true
+    },
+    {
+      "id": "H06",
+      "requirement": "导师/成员/专家意见与签字、范围差距处理",
+      "status": "pending_actual_parties",
+      "evidence": [
+        "09_结项文书与答辩/04_提交核对与真实贡献/承诺对应与提交前核对.md"
+      ],
+      "finding": "由实际当事人填写；未声称导师/学校已批准范围变化，不代签、不写获优秀。",
+      "current_scope_blocker": false,
+      "required_before_school_submission": true
+    },
+    {
+      "id": "H07",
+      "requirement": "真实计时答辩演练与正式提交",
+      "status": "not_automatically_confirmable",
+      "evidence": [
+        "09_结项文书与答辩/04_提交核对与真实贡献/承诺对应与提交前核对.md"
+      ],
+      "finding": "讲稿和视频已准备不代表团队演练或学校提交发生；需实际演练、修订并按通知提交。",
+      "current_scope_blocker": false,
+      "required_before_school_submission": true
+    },
+    {
+      "id": "G01",
+      "requirement": "STK、独立辨识与预测控制、硬件/在轨/轮动量约束",
+      "status": "historical_or_future_gap_disclosed",
+      "evidence": [
+        "08_惯量域随机化与泛化边界研究/研究计划.md",
+        "09_结项文书与答辩/02_结项报告/项目结项报告内容稿.md"
+      ],
+      "finding": "未完成原承诺或工程展望，已接受最后研究计划明确不再纳入本次结项前技术范围；如实披露，当前执行非必做blocker。",
+      "current_scope_blocker": false
+    },
+    {
+      "id": "G02",
+      "requirement": "全面优于PID、惯量随机化必须提高性能",
+      "status": "unsupported_performance_claim_not_a_task",
+      "evidence": [
+        "08_惯量域随机化与泛化边界研究/研究计划.md",
+        "08_惯量域随机化与泛化边界研究/05_研究分析与核验/研究分析.md"
+      ],
+      "finding": "从来不是本轮预定验收条件；实测不支持该结论，不属于未完成任务，不能为满足叙事改实验。",
+      "current_scope_blocker": false
+    }
+  ],
+  "remaining_items": [
+    "团队本人实际复现、阅读、掌握与贡献/工具辅助确认",
+    "学校当前模板、截止、时长、渠道、身份/编号/经费、意见签字与正式提交",
+    "DOCX/PPTX格式运行时恢复后排版及逐页视觉核验，或由团队按学校允许格式处理"
+  ],
+  "final_integration_checks": {
+    "status": "passed",
+    "structure": {
+      "formal_training_models": 12,
+      "training_steps": 12000000,
+      "csv_rows": {
+        "episode_metrics": 10920,
+        "training_mode_pairs": 4680,
+        "calibration_pairs": 4680,
+        "pid_pairs": 780,
+        "boundary_points": 440,
+        "empirical_boundaries": 40
+      },
+      "raw_traces": 10920,
+      "scientific_figures": 5,
+      "a4_pdf_pages": 28,
+      "defense_pdf_pages": 12,
+      "video_frames": 900,
+      "video_duration_s": 90,
+      "full_independent_verification": "passed",
+      "regression_tests": "63 passed in prior final test run; no research source changed since",
+      "closing_supplement": {
+        "combined_scholarly_sources": 12,
+        "new_full_text_papers": 3,
+        "minimal_instances": 8,
+        "policy_replay_commands": 5600,
+        "closed_loop_steps": 5600,
+        "closed_loop_duration_s_each": 20,
+        "failure_teaching_samples": 1,
+        "appendix_pdf_pages": 9,
+        "member_execution_confirmed": false
+      }
+    },
+    "manifests": [
+      {
+        "manifest": "08_惯量域随机化与泛化边界研究/05_研究分析与核验/技术研究冻结清单.json",
+        "sha256": "200e8f2475475649c0681988a302b88ae504f27ee33b8f579f09daaed2e26649",
+        "files": 11309,
+        "bytes": 1165250504,
+        "status": "passed"
+      },
+      {
+        "manifest": "最终交付清单.json",
+        "sha256": "922050edd956e287859a6bbbd22eada362c8c63709178e8081d23c167105fe17",
+        "files": 160,
+        "bytes": 34726762,
+        "status": "passed"
+      }
+    ],
+    "primary_links": {
+      "primary_documents": 15,
+      "local_targets_checked": 75,
+      "missing": []
+    },
+    "light_archive": {
+      "relative": "最终阅读与展示包.zip",
+      "entries": 106,
+      "bytes": 9199319,
+      "sha256": "022a1f4cc71d6babfabbe58105882cb3cf2f63f3cea611b04f74b96a585a9c80",
+      "all_entries_match_source": true
+    },
+    "light_archive_primary_local_links": {
+      "documents": 5,
+      "checked": 34,
+      "missing": [],
+      "sources": [
+        "08_惯量域随机化与泛化边界研究/04_图表与结果页面/结果总览.html",
+        "09_结项文书与答辩/04_答辩演示/答辩演示.html",
+        "最终交付总说明.md",
+        "09_结项文书与答辩/README.md",
+        "09_结项文书与答辩/08_补充阅读与团队复核/README.md"
+      ]
+    },
+    "preservation_hash_recheck": {
+      "prior_v1_v2_assets": {
+        "file_count": 14635,
+        "preserved": true
+      },
+      "original_v1": {
+        "checked_file_count": 123,
+        "changed_or_missing": [],
+        "preserved": true
+      },
+      "original_v2": {
+        "checked_file_count": 827,
+        "all_file_bytes_preserved": false,
+        "project_content_preserved": true,
+        "changed_project_content": [],
+        "administrative_metadata_drift": [
+          {
+            "path": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/index",
+            "snapshot_sha256": "6735dcfa66f7bf51edc6a262b19f53dca4507941ac044a36629793fa6ffcc4fe",
+            "current_sha256": "58cb46168f4606ce96cd250beace1ed2efb44d0ee7e863cd71d5222d9ce3005f",
+            "snapshot_bytes": 7069,
+            "current_bytes": 7069
+          }
+        ],
+        "interpretation": "Only explicitly listed Git index metadata drift is nonblocking; original snapshot is preserved and no cause is inferred."
+      },
+      "copies_v1": {
+        "checked_file_count": 67,
+        "copies_identical": true
+      },
+      "copies_v2": {
+        "checked_file_count": 60,
+        "copies_identical": true
+      }
+    },
+    "qa_evidence": {
+      "a4_page_images_rehashed": 28,
+      "defense_html_slides_reviewed": 12,
+      "defense_pdf_pages_reviewed": 12,
+      "actual_decoded_video_frame_images_rehashed": 6,
+      "full_video_decode_frames": 900,
+      "scientific_figures_visually_reviewed": 5,
+      "review_method_corrections_applied": 3,
+      "citation_counts": [
+        4,
+        13
+      ],
+      "slide_seconds": 480,
+      "pending_slide_data": [],
+      "fresh_visual_inspection_claimed": false,
+      "appendix_page_images_rehashed": 9,
+      "appendix_pdf_pages_visually_reviewed_by_root": 9,
+      "supplementary_paper_source_visual_pages": 13,
+      "appendix_audit_sha256": "d0987f5279ba25fde78af02bbfef96ccbfbc17a37b0f474bb4d6a2ac9bdea39e"
+    },
+    "heavy_experimental_recomputation_repeated": false,
+    "review_asserts_new_visual_inspection": false,
+    "note": "This final pass rehashed recorded QA images and exact artifacts, supplementary PDFs, minimal bound inputs/outputs, old/new delivery members and ZIP targets. Previous named visual reviewers' inspection is preserved, not represented as fresh inspection of every page/frame. The supplementary audit remains fixed; full experimental dynamics/controller replay was not repeated.",
+    "delivery_supplement_revision_recheck": {
+      "status": "passed",
+      "previous_delivery_files": 114,
+      "unchanged_previous_delivery_files": 110,
+      "changed_navigation_and_tool_files": 4,
+      "added_files_before_revision_record": 45,
+      "old_manifest_and_zip_preserved": true,
+      "no_research_or_formal_result_changes": true
+    },
+    "supplement": {
+      "status": "passed",
+      "academic_sources": 12,
+      "new_full_text_papers": 3,
+      "source_notes_sha256": "2153ac384e00160dbacab852a7f6b5df5aa9b405d342cf7643e352d28480ab91",
+      "independent_audit_sha256": "d0987f5279ba25fde78af02bbfef96ccbfbc17a37b0f474bb4d6a2ac9bdea39e",
+      "minimal_script_sha256": "ebdd6b55dfb99dc1947bd758012036471852d04380f4a3c8f6369f7b5e5770b2",
+      "minimal_instances": 8,
+      "policy_replay_commands": 5600,
+      "closed_loop_steps": 5600,
+      "closed_loop_duration_s_each": 20,
+      "checked_primary_inputs": 25,
+      "failure_teaching_samples": 1,
+      "failure_sample_post_result_and_anisotropic": true,
+      "member_execution_confirmed": false,
+      "member_reading_confirmed": false,
+      "new_research_or_formal_results_added": false
+    }
+  },
+  "checked_utc": "2026-10-12T19:21:02.698Z"
+}

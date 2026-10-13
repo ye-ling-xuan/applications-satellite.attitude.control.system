@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "video_sha256": "efa41ac494a1b95ab913a166639a3d50ebdf66cf08c78f4ca1e0499a4e183229",
+  "video_bytes": 712764,
+  "decoder_executable": ".artifact_deps/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe",
+  "decoder_source": "existing task-local imageio_ffmpeg; no dependency installation",
+  "full_decode": {
+    "status": "passed",
+    "exit_code": 0,
+    "frames": 900,
+    "decoded_time_s": 90.0,
+    "duration_s": 90.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "fps": 10.0,
+    "audio_stream_present": false,
+    "strict_decode_flags": [
+      "-xerror",
+      "-err_detect",
+      "explode"
+    ],
+    "elapsed_s": 0.256,
+    "stdout": "tmp/artifacts/video_review/full_decode_stdout.txt",
+    "stderr": "tmp/artifacts/video_review/full_decode_stderr.txt"
+  },
+  "visual_review": {
+    "status": "passed",
+    "representative_frames": [
+      1,
+      100,
+      300,
+      500,
+      700,
+      850
+    ],
+    "representative_time_s": [
+      0.0,
+      9.9,
+      29.9,
+      49.9,
+      69.9,
+      84.9
+    ],
+    "preencode_jpeg_reviewed": true,
+    "actual_mp4_decoded_png_reviewed": true,
+    "inspection": "All six preencode JPGs and corresponding decoded MP4 PNGs opened and inspected at 1280x720. Chinese text, legends, axes and scientific curves are legible; no visible missing glyphs, clipping or overlap.",
+    "ending_cost_reductions_visible": [
+      54.7,
+      28.7
+    ],
+    "ending_tradeoff_visible": "slower response",
+    "ending_energy_limitation_visible": true,
+    "ending_other_limitations_visible": [
+      "fixed feedback",
+      "static inertia during an episode",
+      "no disturbance or noise",
+      "no verified online adaptation, hardware or in-orbit performance"
+    ],
+    "scope": "Full 900-frame decode establishes encoding integrity; visual review samples six representative frames rather than every frame.",
+    "decoded_images": [
+      {
+        "video_frame": 1,
+        "path": "tmp/artifacts/video_review/encoded_frame_01.png",
+        "sha256": "0b98d7db955b1d39dcc423432f26da685509bc04d4b0d5d2f2a20e9e9d56de4c"
+      },
+      {
+        "video_frame": 100,
+        "path": "tmp/artifacts/video_review/encoded_frame_02.png",
+        "sha256": "2b335e9e28a1ebbe0248eaa1cbd4735e7635a23947e571dab38031657372e823"
+      },
+      {
+        "video_frame": 300,
+        "path": "tmp/artifacts/video_review/encoded_frame_03.png",
+        "sha256": "80dee95ff7731b496a72dfb80221878d87df6cf86cdf3f0ad8d303364506f489"
+      },
+      {
+        "video_frame": 500,
+        "path": "tmp/artifacts/video_review/encoded_frame_04.png",
+        "sha256": "508556a99e7a41a1f39e7a06e82e80fddbc0fb73c6ab374b895628ee8d977d1b"
+      },
+      {
+        "video_frame": 700,
+        "path": "tmp/artifacts/video_review/encoded_frame_05.png",
+        "sha256": "5e12cad8271c64eebee7068343207edc41cadf1d0fb1e9de1248e3b979f867dc"
+      },
+      {
+        "video_frame": 850,
+        "path": "tmp/artifacts/video_review/encoded_frame_06.png",
+        "sha256": "5bb3afd2c7f2342e50e28e5542a8763c9a6c87cfc55a740512aff51f33f8b98b"
+      }
+    ]
+  },
+  "video_or_source_modified": false,
+  "review_date": "2026-10-13"
+}

@@ -1,0 +1,829 @@
+{
+  "created_utc": "2026-10-12T17:54:17.955721+00:00",
+  "scope": "final documents and display artifacts plus referenced complete V3 technical freeze",
+  "file_count": 160,
+  "files": [
+    {
+      "relative": ".gitignore",
+      "bytes": 73,
+      "sha256": "ab359887d3070d243c4f87ef5ebc28f510f614e387aa5e38917dff26e1cb5e2d"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/05_研究分析与核验/技术研究冻结清单.json",
+      "bytes": 3164165,
+      "sha256": "200e8f2475475649c0681988a302b88ae504f27ee33b8f579f09daaed2e26649"
+    },
+    {
+      "relative": "09_结项文书与答辩/01_两篇学习综述/卫星姿态系统搭建学习综述.md",
+      "bytes": 17245,
+      "sha256": "706a0fd5131813d918a85bf324ae0d960a6737fa62ebda4573300067ae87b6d4"
+    },
+    {
+      "relative": "09_结项文书与答辩/01_两篇学习综述/卫星智能姿态控制系统学习综述.md",
+      "bytes": 21209,
+      "sha256": "7d1e1bc4694ca528572c28c0bd58d5fa81ed9ebb2a6af7119c3cd8f2d5563d15"
+    },
+    {
+      "relative": "09_结项文书与答辩/02_结项报告/项目结项报告内容稿.md",
+      "bytes": 17313,
+      "sha256": "7cd3daa8d8c6c78a6422ad0492ce319c8c0ab607662b1abbb23ec7ef6ec9ffca"
+    },
+    {
+      "relative": "09_结项文书与答辩/03_答辩内容/答辩内容.json",
+      "bytes": 10599,
+      "sha256": "34596c5e37772ef01032cbf6e7e6db4cbe48e9995b115d50611c739fe798315f"
+    },
+    {
+      "relative": "09_结项文书与答辩/03_答辩内容/答辩大纲与逐页讲稿.md",
+      "bytes": 9227,
+      "sha256": "ec5e072e61e03fb4b19be07ee321f72a2dc48c98b4a64e7c4eadcad289a91c00"
+    },
+    {
+      "relative": "09_结项文书与答辩/03_答辩内容/答辩问答.md",
+      "bytes": 7921,
+      "sha256": "f1301b93da4f0ad27d018e82fae80c18cd48ca1dcb91b7b08f99c2e2fd326660"
+    },
+    {
+      "relative": "09_结项文书与答辩/04_提交核对与真实贡献/承诺对应与提交前核对.md",
+      "bytes": 3358,
+      "sha256": "bc83509e20e110ebf0a87197c62fb0a5dc7012f55c7a54b53835ea57e7235b64"
+    },
+    {
+      "relative": "09_结项文书与答辩/04_提交核对与真实贡献/真实贡献待确认表.md",
+      "bytes": 2887,
+      "sha256": "b939078996af6af88f255aee6eb1593f43cbd7c81e982529dfc33a45e5aa91aa"
+    },
+    {
+      "relative": "09_结项文书与答辩/04_答辩演示/_qa/visual_review.json",
+      "bytes": 3039,
+      "sha256": "b6cc3ecdd60b0720888f8a51c9deda163acc60fe5336ad86254d87a31566ab54"
+    },
+    {
+      "relative": "09_结项文书与答辩/04_答辩演示/defense_results.js",
+      "bytes": 3456,
+      "sha256": "c969f99ac360b7be14babd17dca71cbff971fb6854f5e76edd4b120109014e77"
+    },
+    {
+      "relative": "09_结项文书与答辩/04_答辩演示/defense_results.json",
+      "bytes": 3331,
+      "sha256": "36e93fbe0dec1bc28910108fc7ff89ff6dbd9f9fcd45d680a0a57f12849bd9aa"
+    },
+    {
+      "relative": "09_结项文书与答辩/04_答辩演示/使用说明.md",
+      "bytes": 3379,
+      "sha256": "50606437fcb362aa3f9c39a25e951151d8c687ffcf87211cde1bc1f52b73c9ac"
+    },
+    {
+      "relative": "09_结项文书与答辩/04_答辩演示/填入正式结果.py",
+      "bytes": 6293,
+      "sha256": "7d9f74cece4359c4af372d4fed2e9dee08d87dd15c2d8b23baf1deaabcd962e6"
+    },
+    {
+      "relative": "09_结项文书与答辩/04_答辩演示/核验演示链接.py",
+      "bytes": 4200,
+      "sha256": "48193cf3bef8bed1982174d40059c165806e1af7af1876674a2eb1f5a174c925"
+    },
+    {
+      "relative": "09_结项文书与答辩/04_答辩演示/答辩演示.html",
+      "bytes": 23885,
+      "sha256": "71fa7b35b077e722f2f691cfe01d95a18d8cbadbc55c32d5ee58f565980f0ac9"
+    },
+    {
+      "relative": "09_结项文书与答辩/04_答辩演示/答辩演示阅读本.pdf",
+      "bytes": 944214,
+      "sha256": "e9e6bbe7908ebcf6992aeaa3789ceda684405c3483bceb6a9f8897cb2bee521f"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/build_content_metadata.py",
+      "bytes": 4669,
+      "sha256": "bc7e4fb8da4938a875f590eaff8de7f6b4b92ca2eff8f166f678500ee5818d6a"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/build_structured_content.py",
+      "bytes": 7310,
+      "sha256": "481b7a44de06b69f5dada325cbe4523df01a984acc643638b0da03524d550a06"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/collect_more_sources.py",
+      "bytes": 1616,
+      "sha256": "3e34cb1453dd072feae8e3156e4a76e6e21bbf122f4e8a2df1ec158e7204cb91"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/collect_sources.py",
+      "bytes": 6229,
+      "sha256": "ae2c437cae90953112cd0327793c27e83c2df141b2ad66cb7458816d1b64bb78"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/SAC实现核对来源.json",
+      "bytes": 386,
+      "sha256": "0186a26636daf7032059e1d9ed7e3b72220a8b40d350228938a55f4f8040566f"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/交付整理修订记录.json",
+      "bytes": 3674,
+      "sha256": "f8cf8e2958556d5485c817af80e25ae800db356137602a911104558e21091ef5"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/内容静态核验.json",
+      "bytes": 4416,
+      "sha256": "e00e6161617577cf8e16b532736939e087f6f4db3592118c91f8db776ee80a20"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/原中期全文提取.txt",
+      "bytes": 13118,
+      "sha256": "daf5e8577bb6939b0ab2dd2fd8a503cd3d7c38c7673693961fa21e495eb25911"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/原报告保全核对.json",
+      "bytes": 1009,
+      "sha256": "e2de9e3f55e883941f401fc10561a8d8091b7de413405aad3021a5b9e7fa08dd"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/原立项全文提取.txt",
+      "bytes": 28577,
+      "sha256": "28c94f4589439988c6ccf746f24e63cb4593aa3b95267ce1beef51fe70c9368f"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/原立项承诺与信息.json",
+      "bytes": 6733,
+      "sha256": "402a0897cfabdeee7d9eb1fcee941f8c88c055f490638aa5bb5ecd27229e3acb"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/原立项承诺与信息.md",
+      "bytes": 5364,
+      "sha256": "858d95939cd10e2c01f47da8b376a34f49697fc3c230361886fffa7ac60df02c"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/原立项第10页核对.png",
+      "bytes": 345961,
+      "sha256": "0adfd15c1aca642cb53ba5804eb843b53a661894a2842c27aa411128e96040a3"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/原立项第2页核对.png",
+      "bytes": 373605,
+      "sha256": "785c8bc0e9d62855fad621c433d01d8fa3f50dd6e1fff361326bdacff1dfba58"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献核对清单.md",
+      "bytes": 6401,
+      "sha256": "ae75f4880349908c6a070135a15478cff8bab2ea2c6ff76d58053c6a46a36539"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A01.html",
+      "bytes": 42489,
+      "sha256": "3a19e2fe2f2886eaaccf759093f7a0eadefd632a33d824ff83b86ba8eb01c114"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A01.txt",
+      "bytes": 5953,
+      "sha256": "d9733635dad0f93eb67fad35cdcd760aa546fb39327e17ea4ec8b88290ef9364"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A01F.pdf",
+      "bytes": 2923532,
+      "sha256": "e78feadadbdbb0b601b3c2bcc81404722cd431a489b307545f9b7bea1e8c4f5b"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A01F.txt",
+      "bytes": 52317,
+      "sha256": "f2f8f31588743e875759ab2fed8fbf003a08d894d4ff1c727b443951cf35079e"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A02.html",
+      "bytes": 44498,
+      "sha256": "6cfff03daca6d7bfa0eb7d915f13ba3cb3e4b47d873f296a33d36d1c0d1904e5"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A02.txt",
+      "bytes": 6653,
+      "sha256": "083f33878e21d8a0ea7140f1e92a7f9dc9f61e749413c0c5a334bbe68b9d84f7"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A02F.pdf",
+      "bytes": 4388102,
+      "sha256": "5c33fae017d02f7025730f05198d4a6b103402822c8bbf48cbc5d8a0474c336a"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A02F.txt",
+      "bytes": 90402,
+      "sha256": "ffc5a802a9f7d8ae0e7f01d9be41fc790fb02211fa541e9d93f80342b3e214e7"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A03.html",
+      "bytes": 41571,
+      "sha256": "270e8a51ab8c1782190454a2c65d26e0b6b20d1a792c3e1dcd6e1fad69b3bc09"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A03.txt",
+      "bytes": 5926,
+      "sha256": "dc0ab732f5ee00a700883d346eff698245a9651683c6c2752aabedc2ce0380bd"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A03F.pdf",
+      "bytes": 2744342,
+      "sha256": "429a584222ffc9c318fde085f6558fd0d3a94dcba8ffe368caab8cf5dc3b6ae5"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A03F.txt",
+      "bytes": 96916,
+      "sha256": "7e296d8e744f4c505cd15fd8b3ca61fee8b32a5965ae6b800cc6699f24036c3f"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A04.html",
+      "bytes": 43042,
+      "sha256": "d3ffdac6e7db209616c5fc0222350d77515efe5f0960201904312960efff8830"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A04.txt",
+      "bytes": 6267,
+      "sha256": "be96ae777c7dc76b41f1d05495eda15fbc3b2319922ec3fe25adade7f8429753"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A04F.pdf",
+      "bytes": 4066798,
+      "sha256": "3fc98c5f4cea050686d45858e647e1b704492121fdae80f8fcd5d560c107f11f"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A04F.txt",
+      "bytes": 58487,
+      "sha256": "55232ef315c933bf2be58190ba65f4afb208168a19696c60b6364cbdb4cb949f"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A05.html",
+      "bytes": 44509,
+      "sha256": "4b08817450c25208f2b10092ad066b24cad8bc2f6b81e9795b3dceba9b8179bb"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A05.txt",
+      "bytes": 6567,
+      "sha256": "bdfc1ff872087e3f66bd45f842808764e11d76f9f2ee35abb0aa6729efa5e82c"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A05F.pdf",
+      "bytes": 2845918,
+      "sha256": "a15cb24630a11218865027024ae2353f80f46d40371b42dccb2b24e9d00d62d8"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A05F.txt",
+      "bytes": 64654,
+      "sha256": "5adaf49ace3825e22e540d0bf915247aa31ddc6b1307f94b551c3fc7337284db"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A06.html",
+      "bytes": 45510,
+      "sha256": "666893e68d862137beef755bffb2cfac7bd4b085f83d977cb6febf2971f6aad9"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/A06.txt",
+      "bytes": 6950,
+      "sha256": "14bb7b8297ea6c908b720d31fb29a4f320947f677dc24c23b2ff5e6f7ece562b"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/B01.json",
+      "bytes": 2326,
+      "sha256": "8fc936a349d1d4d3daaf648bbc9e51adaa1258639fdb7e76ab39f417f4b407f5"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/B01.txt",
+      "bytes": 4005,
+      "sha256": "0df939bc70a970a558478770814eaf895bcfc6228f603cfbcfb261cb112fd980"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/C01.json",
+      "bytes": 28711,
+      "sha256": "3b5d0c063776e65ef93f1c3034b349e98c119fdbb6f7d24852229f6d3a31e0f3"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/C01.txt",
+      "bytes": 50981,
+      "sha256": "c13afc406c250d673a987c8c95326646ccceb46d6f04de565df66eab84c1d087"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/C02.json",
+      "bytes": 10686,
+      "sha256": "59cfb4d7a794bdce5e04c2dd27aaa5120c421d9fb21805945848b9efa357c29b"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/C02.txt",
+      "bytes": 21201,
+      "sha256": "5c48946eef225daa162fadffd90278ffbdd7f7f9c3610e6ed02792778954c2bc"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/D01.html",
+      "bytes": 84466,
+      "sha256": "759f3a9aaf73ff5620fba5fe072f4252ac10d984768f0a73be2ac552396f35e6"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/D01.txt",
+      "bytes": 15605,
+      "sha256": "59ede63fcd7ebb09620a456812f0d3d470fa553161caaa2ce56a97b6fbd31561"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/D02.html",
+      "bytes": 48567,
+      "sha256": "c50a895c8ecaab26e5d6397777b7ffdb660458b3f127013c38ad417a8b7bcd1e"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/D02.txt",
+      "bytes": 6688,
+      "sha256": "6c5ff4077da4009fabba1e70685a79bb58a9f175f0baa5437a56c51c9bcd4337"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/D03.html",
+      "bytes": 38554,
+      "sha256": "869d73c998505869ef6aede9ec90b231e9bbe4c983ad48b63a0d58f50135fa10"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/D03.txt",
+      "bytes": 14845,
+      "sha256": "de5d5d34856935b144f4a2f8eb417bd49e4e7720055b9e33e9c50dfe8b7351b8"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/D04.html",
+      "bytes": 98468,
+      "sha256": "5c8a69a9481b3c0f25d5458a82ec68650b7ab3e21cb852ca5f7c3e28c7d4d830"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/D04.txt",
+      "bytes": 27134,
+      "sha256": "a1951f8cbb6533fb3bae10c140c1ece3ff7ed9b8efceb4339faf66fbaf76a2af"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/M01.json",
+      "bytes": 5689,
+      "sha256": "329ec2f0e5cae26eca143c78ad229fcd3e436ad5cb7f2ec22e1c6896b2103cdd"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/M01.txt",
+      "bytes": 9132,
+      "sha256": "bf322aa38b8728bf8c2d8ae9a83f5c4b9bd71297f007e485693aae4709fb43fc"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/N01.html",
+      "bytes": 518367,
+      "sha256": "e2f355fedf762a9aed087674a2ad45c112df00e2273f4c103ebfcb0f9ae0ccf7"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/N01.txt",
+      "bytes": 81795,
+      "sha256": "c4c9a96c45ba40969348005f2d0d5a7e9ad14c7db0ef3014278305093d88c39f"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/P01.html",
+      "bytes": 5581,
+      "sha256": "820fddcebed2e80c8723568d48471a705b0c34cf180b95467c5daa2e4d59e3fc"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/P01.txt",
+      "bytes": 1163,
+      "sha256": "0015e2a441f721d4243dce2565629a6c244e4a1358de71b36e6b6d089e808d3e"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/R02.html",
+      "bytes": 86590,
+      "sha256": "e2b663b710d173bcacc55aee342bc58c9a4b0f3d6d42a15f5ee75d53dc098b83"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/R02.txt",
+      "bytes": 20849,
+      "sha256": "2daeb47fabdad258281fa1ba8250be2b5dfe9e40ea690914cba384f5c78586e3"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/R03.html",
+      "bytes": 92537,
+      "sha256": "25c2d664d4080fc27364d823dca214909faef32665ed32cd797c6996f88073ed"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/R03.txt",
+      "bytes": 14660,
+      "sha256": "ea87bb2a78bc66ae065a9708ef936be55d63278e8c3217e1d24d4b21e59da91c"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/R04.html",
+      "bytes": 247234,
+      "sha256": "f9528009cf39053859ae7f5ae65f18c5a98d392d8fbbf1ff247b88e2f94b8f34"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/R04.txt",
+      "bytes": 44708,
+      "sha256": "a54255588cc3b0c95726af760711ba060ea1499b3bf2e51634dd29edd3ca86c6"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/S01.html",
+      "bytes": 705535,
+      "sha256": "297dbcfa60cf1032aad6b762f6183101d703391f8ee7e68fd0e1ed31edb07814"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/S01.txt",
+      "bytes": 49418,
+      "sha256": "0923411556f7f2f1386159dea60639fdd69e32d161dd3e23dfdf81b21b0a56fd"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/S02.json",
+      "bytes": 8629,
+      "sha256": "775373fe6068c57df6272669c38609b387a849adcd1fea6dbd254406dec2ca62"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/S02.txt",
+      "bytes": 12085,
+      "sha256": "7b2312e9774f057724c826eaeaceedefa081ab02fa0c4f24f101515f25850350"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献缓存/SAC271.py",
+      "bytes": 16370,
+      "sha256": "a8606c1c55404f3aa16a4346b2bf0b69321d59818f0018cc73426710de19e236"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/文献获取清单.json",
+      "bytes": 8951,
+      "sha256": "640de86a7b76cf0248ffd7a256c5e8c6e3ae3fbd8f6957789935f0b22c46945f"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/正文文献结构化清单.json",
+      "bytes": 11354,
+      "sha256": "b9de434d828c88e766186d9d12d2b1103cd1129b4a8937cdd4e5532b60f4292f"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/综述方法独立审查.json",
+      "bytes": 3551,
+      "sha256": "e371c0c00c0621ef10512208ac15342a4450fc03b2e18ae609aa4965312a5fe5"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/补充文献获取清单.json",
+      "bytes": 5604,
+      "sha256": "107e100f82ae29f838bc6446fc580d52ad51dd72857a293ece3606c4dff2e52b"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/运动学来源获取.json",
+      "bytes": 547,
+      "sha256": "f2bbe8013c6ac7baab31b8c157556cbcd7f160aaed15e306ad20aa0f83f306b4"
+    },
+    {
+      "relative": "09_结项文书与答辩/05_来源与核验/附录交付修订记录.json",
+      "bytes": 13469,
+      "sha256": "ac1cb48b47c7d71bab7f9174d94fa55b8146c39a3c9d96dacbc24da1808e144d"
+    },
+    {
+      "relative": "09_结项文书与答辩/06_可打印PDF/visual_review.json",
+      "bytes": 6912,
+      "sha256": "7e318055351786dce57bf0e976038f84482eaa54e892c1157385772ef609eb38"
+    },
+    {
+      "relative": "09_结项文书与答辩/06_可打印PDF/卫星姿态系统搭建学习综述.pdf",
+      "bytes": 287864,
+      "sha256": "681f363346231ee44c199db98060dfa358b3fe0d7da09c68bf259f8c4c5e05cd"
+    },
+    {
+      "relative": "09_结项文书与答辩/06_可打印PDF/卫星智能姿态控制系统学习综述.pdf",
+      "bytes": 292425,
+      "sha256": "39f9d5cba7db616803b0315824ee2af0e4637c887fa86934868368309184ca05"
+    },
+    {
+      "relative": "09_结项文书与答辩/06_可打印PDF/生成清单.json",
+      "bytes": 2520,
+      "sha256": "6f4a010eb0ba1354bc3ee9656bb8547b90ba63142d6d839954e0e7e1f781fe3a"
+    },
+    {
+      "relative": "09_结项文书与答辩/06_可打印PDF/研究分析.pdf",
+      "bytes": 1313537,
+      "sha256": "da4e9f54fd9405f448ca6a376d0e59826988035d2f44012e214aa0e36a4b3e3c"
+    },
+    {
+      "relative": "09_结项文书与答辩/06_可打印PDF/项目结项报告内容稿.pdf",
+      "bytes": 221114,
+      "sha256": "7c845e2132e56bb3fd5a6ccec233a5ef5d57050ecd0885d237a90ababe1d1b76"
+    },
+    {
+      "relative": "09_结项文书与答辩/07_演示视频/README.md",
+      "bytes": 995,
+      "sha256": "bb243e567170229a3eaad7f3f1b585e6c2dbb466b06364fd2d76a67c1d5fd30d"
+    },
+    {
+      "relative": "09_结项文书与答辩/07_演示视频/卫星姿态控制结项演示.mp4",
+      "bytes": 712764,
+      "sha256": "efa41ac494a1b95ab913a166639a3d50ebdf66cf08c78f4ca1e0499a4e183229"
+    },
+    {
+      "relative": "09_结项文书与答辩/07_演示视频/演示章节字幕.srt",
+      "bytes": 385,
+      "sha256": "397d5dd71681d4dcaea305d0d96a6fdab6f77d687b492ab726116fb2c7d5667c"
+    },
+    {
+      "relative": "09_结项文书与答辩/07_演示视频/视频核验记录.json",
+      "bytes": 3269,
+      "sha256": "ebc8a48e6f94c0eb245bc9b60167428c65f6c0201e593f36b99fe2b29e3b3769"
+    },
+    {
+      "relative": "09_结项文书与答辩/07_演示视频/视频生成清单.json",
+      "bytes": 1309,
+      "sha256": "2fdea137ce9bc4a2d39be04e4900ac6ee32e2326aa1c171f9e93d9a23fd43933"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/F02_AIMS_Crossref.json",
+      "bytes": 3604,
+      "sha256": "abd1ca72cbc2dc83f7ebca41fbc20c785c11e8fa8de960c2a424e0123e45ec86"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L01.pdf",
+      "bytes": 1264086,
+      "sha256": "ed39e32f9dce2bae88bade5337a8b42c29b5e8c4b9adb612e5a669a2adaca58b"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L01.txt",
+      "bytes": 81302,
+      "sha256": "9bc4cc2d805c6c1f9d0a2f184743078c3c79f0b893e79a414a52031359513407"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L01_Crossref.json",
+      "bytes": 25957,
+      "sha256": "6b8c5885f72aee6303801c19499e9eda3bc45f24d9689daf25723e7187642c74"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L02.pdf",
+      "bytes": 411452,
+      "sha256": "56a6aa1942f48c15e6db2f59204083ae785142eb1b4094b29a5af2a286813497"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L02.txt",
+      "bytes": 51805,
+      "sha256": "c036b1f357e4ec6903dc5e9cec9345e492ce963b3e839c248267b1fd37f23453"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L02_arXiv.xml",
+      "bytes": 2464,
+      "sha256": "db43007dcabf1a0def5240713bc5e4f6575dc37590eed49f7fffd5127657288d"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L02_Crossref.json",
+      "bytes": 15695,
+      "sha256": "5de47219606e00929e58359a71c747a117de3bb93fa4d660eefadb194653d239"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L03.pdf",
+      "bytes": 204980,
+      "sha256": "d82bc9392a4b139beb68689fb082a3c6d944f4d1a6c786bb743d8d6e11b9a16f"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L03.txt",
+      "bytes": 36809,
+      "sha256": "b8b25f8741ec4c8777b5b6881f5f33932008da1558bbe646364e7d0bc2f52c5f"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L03_arXiv.xml",
+      "bytes": 2245,
+      "sha256": "13ce54e6b6d73cbb08a01d820d95b36650b55ef037880afa3cccf285339ba84c"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L03_Crossref.json",
+      "bytes": 8390,
+      "sha256": "79836b934ca36aafa3ff7e455742018e3aeda9113091d31831854dd7dbf64394"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p05.png",
+      "bytes": 300198,
+      "sha256": "ea6b6349bf93f191ef11cf0b92b7774ca515242474bc1831c673b128b4286f59"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p06.png",
+      "bytes": 221485,
+      "sha256": "bd9edd2771b307ef13d0c9fe18b3eea7e5393e60901de606c1e5995f4a4d5f53"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p07.png",
+      "bytes": 228129,
+      "sha256": "9b9b3ecb506e4fe8f620f75b225bb502de55905b9fc22d869d1c9c0a115c281c"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p08.png",
+      "bytes": 251251,
+      "sha256": "dbba7eaba4204032c8b397dcc516e29ab20bb9a2689acdfc448d30970da6bc6a"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p10.png",
+      "bytes": 284132,
+      "sha256": "5a0c11b44af0f6011a1c9682cf4da14871422ae7bf1b037cdbb2aa20e28b4ea0"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p12.png",
+      "bytes": 252550,
+      "sha256": "fb40521b2dfb94191f8cea4f65133868d436cded094b27536d19073dbdddf338"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L02_p03.png",
+      "bytes": 272499,
+      "sha256": "3fc70c860ca7774a8bb7f029bf85b300c74a2b187aa25f51103fd52286c5ff05"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L02_p05.png",
+      "bytes": 220262,
+      "sha256": "18e7a631b1925c569dfaf7e7ef0e9054f1fd7a0357f96ece71fad08578b384b0"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L02_p07.png",
+      "bytes": 266662,
+      "sha256": "5e8733e13490a3f620d976288e023fde6980070320848c410b6209e46937d402"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L02_p09.png",
+      "bytes": 246246,
+      "sha256": "9d064125fc68a7d9a1a79d8e11dd4132bf8f19d687f9b3dbe0eb9a907c57862d"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L03_p02.png",
+      "bytes": 499567,
+      "sha256": "3a586101211860c565902fff272503af7aa961e35dff4a3a40f7667f0402fc77"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L03_p03.png",
+      "bytes": 530290,
+      "sha256": "b88a9248d35585aa4fba2ca806e8b5d95528cc858f8d767d2be22aff1b04011e"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L03_p04.png",
+      "bytes": 472304,
+      "sha256": "cfb3b21002e6dd556aac9011a0e214be8925c840ded14b4dc081012f3161095c"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/补充文献分类与阅读札记.md",
+      "bytes": 13447,
+      "sha256": "2153ac384e00160dbacab852a7f6b5df5aa9b405d342cf7643e352d28480ab91"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/补充文献获取清单.json",
+      "bytes": 7114,
+      "sha256": "bca5d270dbcab936724c1326bdf8e2ebddd0049cb00c953fcb292a3f86cf0bf3"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/补充阅读核对.json",
+      "bytes": 11779,
+      "sha256": "f6f88af9e6f8fad1e024ac12869906a262eab4a315f0713e0fd05ba0f2194fd1"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/代理实际仅指标输出.json",
+      "bytes": 27622,
+      "sha256": "cbfc47a09a0a99e7a610608920adb5e9195a0cb70bb72434251ad6d8f9614c93"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/代理实际复核输出.json",
+      "bytes": 42125,
+      "sha256": "9803b47208dfd7baaad1c867e52bfdf5e67ff103e84ebd77b4091f1e26ecc8d7"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/代理实际失败教学输出.json",
+      "bytes": 4948,
+      "sha256": "55e25a50dfca9ed71f66c8f6d8da61524d9f440aae6e40b595e16e70e6a450e3"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/固定复核场景.json",
+      "bytes": 17268,
+      "sha256": "ae393748432b92698600ca792779bbf449d10a771ca8f9b633bc101e2e7ca1fb"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/失败教学样本.json",
+      "bytes": 4217,
+      "sha256": "1bd36815e222649602ce19a6be591456b95422c225f269475db5d311ffbeb957"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/最小复核使用说明.md",
+      "bytes": 9714,
+      "sha256": "517ec60243964dd386194b03b1668de463ed306bfcd87ba672b721af398852a6"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/最小独立复核.py",
+      "bytes": 23583,
+      "sha256": "ebdd6b55dfb99dc1947bd758012036471852d04380f4a3c8f6369f7b5e5770b2"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/运行核验记录.json",
+      "bytes": 11842,
+      "sha256": "2ae4fbe9cb3b2d5a13deb6e42181d1695cfa4bdc6dda3c2b4e4a3d2b3d05b36e"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/预期结果.json",
+      "bytes": 5405,
+      "sha256": "e7684dac99d0c2911502f5f34387499e81adf154afcd04f290fcc6371fd2a8dd"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/03_附录阅读PDF/visual_review.json",
+      "bytes": 2822,
+      "sha256": "154a2dcd7e41fc9a4e2260f5d632a294a7bb369186ab3caf685e6d9182e41904"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/03_附录阅读PDF/最小复核使用说明.pdf",
+      "bytes": 160854,
+      "sha256": "b4d8be250d09c92d5e1ff79aacff99f5eaae5167f07ae489477d927f52fe492f"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/03_附录阅读PDF/生成清单.json",
+      "bytes": 1205,
+      "sha256": "acdde6f4da69c856608f4e9193e4b356e4910a07d5623630d9f349f4a1e381f0"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/03_附录阅读PDF/补充文献分类与阅读札记.pdf",
+      "bytes": 170212,
+      "sha256": "1a8dda26252934ef4e54657e43ecf3fa8643423ea13225b5fed299b5585b3c6b"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/04_附录独立审查/补充材料独立审查.json",
+      "bytes": 4793,
+      "sha256": "d0987f5279ba25fde78af02bbfef96ccbfbc17a37b0f474bb4d6a2ac9bdea39e"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/04_附录独立审查/补充材料独立审查.md",
+      "bytes": 5092,
+      "sha256": "43a5e9ba219eb6fd832b0ad8b36d190bf58f30fd2339042234b874c2847bc1f3"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/README.md",
+      "bytes": 3559,
+      "sha256": "9b48a927b0226119b08125bf8508f6cafe8c8075acda5adae3d4aa24a825e43d"
+    },
+    {
+      "relative": "09_结项文书与答辩/README.md",
+      "bytes": 2357,
+      "sha256": "5deaac73d68c515e1e7ec2a09ff4f5be329885e8feaeef428cea5cb4cdcd7b90"
+    },
+    {
+      "relative": "README.md",
+      "bytes": 13341,
+      "sha256": "9990b6d451358f9d3a6755cd4b2ac41892229cdffa0f47f960fa26bb20edaad4"
+    },
+    {
+      "relative": "tools/artifact_runtime_diagnostic.json",
+      "bytes": 2718,
+      "sha256": "ea99a59ae94ccf85108da67686ef34359261c07d445a3ab56e0ca57d83f20683"
+    },
+    {
+      "relative": "tools/artifact_runtime_diagnostic.md",
+      "bytes": 4156,
+      "sha256": "365e0296ee4809819dd8888af2b0641739af31a4020947f37783ea28bea03879"
+    },
+    {
+      "relative": "tools/artifact_runtime_diagnostic.py",
+      "bytes": 2656,
+      "sha256": "9b0ac28c8311bd2c0549d941d877df515994d58dfd50871ff3115cf30d0aa2a2"
+    },
+    {
+      "relative": "tools/build_closing_pdfs.py",
+      "bytes": 10599,
+      "sha256": "52c8a01db977ab678124d612775db0d0644e67b2cd06821f23b0fb2e6d971ffb"
+    },
+    {
+      "relative": "tools/build_closing_supplement.py",
+      "bytes": 4640,
+      "sha256": "9dbbbe1803d58a513febe30864047702870ac6261744841bb983c6d15d4c293e"
+    },
+    {
+      "relative": "tools/build_closing_video.py",
+      "bytes": 7677,
+      "sha256": "7e8ca459b3fdc6b945744aba724ffb0bba2af2e6c2fbb5fb66a461eb5fef2428"
+    },
+    {
+      "relative": "tools/finalize_closing_delivery.py",
+      "bytes": 19930,
+      "sha256": "02493dc994501b97454dfe0107439b91d88e55dd3ceb16388831e2d204b9b4d2"
+    },
+    {
+      "relative": "tools/render_closing_pdfs.py",
+      "bytes": 2342,
+      "sha256": "4f046e93e4c46571cff2e1b956c206d60256118998bed7b66cf1491e2a1cf724"
+    },
+    {
+      "relative": "工作总说明.md",
+      "bytes": 10167,
+      "sha256": "004b9452922244ee7d32d8f477bcb9e6557c46e4cff007dc98334e7585c2f5e0"
+    },
+    {
+      "relative": "最终交付总说明.md",
+      "bytes": 9269,
+      "sha256": "70a71d4eb3332af9b9b491b305eea17cd16f76d00af152e323505ad9dd432736"
+    },
+    {
+      "relative": "结果总览.html",
+      "bytes": 9531,
+      "sha256": "e450b1e2bb0f82d7f44c4b5947983e2be98fdad1ddc4bd3e94548734cd4635fa"
+    }
+  ],
+  "technical_manifest": "08_惯量域随机化与泛化边界研究/05_研究分析与核验/技术研究冻结清单.json",
+  "legacy_assets": "referenced through immutable prior_assets_snapshot.json; not duplicated here",
+  "exclusions": [
+    ".artifact_deps",
+    ".pytest_cache",
+    "06_开发联调",
+    "__pycache__",
+    "tmp",
+    "_qa screenshots (QA record retained)",
+    "independent final coverage audit (no circular self-hash)",
+    "this manifest",
+    "ZIP",
+    "integration verification record"
+  ],
+  "format_blockers": [
+    "native DOCX",
+    "native PPTX"
+  ],
+  "school_submission_status": "not submitted by this agent",
+  "documented_post_freeze_revision": "09_结项文书与答辩/05_来源与核验/交付整理修订记录.json",
+  "closing_supplement_updated_utc": "2026-10-12T19:11:51.213609+00:00",
+  "documented_closing_supplement_revision": "09_结项文书与答辩/05_来源与核验/附录交付修订记录.json"
+}

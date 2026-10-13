@@ -1,0 +1,72 @@
+{
+  "type": "post-freeze presentation package repair",
+  "reason": "Light ZIP omitted six targets linked by the offline results page; add original README and top-level CSV/JSON evidence without changing any research or final document content.",
+  "previous_delivery_manifest_sha256": "1cbac7db51d2405e69523b852f0fd125d3f83a8acae5fb7dd8f855411bd7c8c3",
+  "previous_light_zip_sha256": "34138d6350f3d1b472e3337c35b59ab55d0cf129100e02628f048b790dadf5b8",
+  "previous_copies": "tmp/artifacts/delivery_revision_before_offline_link_fix",
+  "technical_freeze_sha256_unchanged": "200e8f2475475649c0681988a302b88ae504f27ee33b8f579f09daaed2e26649",
+  "added_original_files": [
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/aggregate_results.json",
+      "bytes": 36366,
+      "sha256": "0e70ea62414c7145b92ef8a7158747f76112681073135a68a68f031b73a6c09d"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/boundary_points.csv",
+      "bytes": 19263,
+      "sha256": "ace2da318823365318df1e3cc0652a85ef6cea68af41d87f84f188dd819c7724"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/calibration_pairs.csv",
+      "bytes": 2659369,
+      "sha256": "9ad8df0d592000fb0522cb672acc81e0550b070fd70164edbffdd4eff575de7e"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/deployment_freeze.json",
+      "bytes": 4136,
+      "sha256": "677304442b995cc49425358e6235e3beda3f852181b2acff3c76bc27b9063853"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/empirical_boundaries.csv",
+      "bytes": 3697,
+      "sha256": "92341919358391174d78033c3f2d69a65f59efb8b44f1ab2f8f55799d977addf"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/episode_metrics.csv",
+      "bytes": 4152145,
+      "sha256": "cd57c2820472977afb4de00c0463cca88225a4f70ad03ef6f27acf4537974eae"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/evaluation_manifest.json",
+      "bytes": 20422,
+      "sha256": "c4138667e3d31004838c3ab2fd6f8744efd87cef4105ffa4f19623b01269782b"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/evaluation_session.json",
+      "bytes": 292,
+      "sha256": "1610e5799ecfd4c8643ca6c5055b16d8f5ddb432eddb3159359360055b9a119c"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/pid_pairs.csv",
+      "bytes": 410824,
+      "sha256": "b1014916922530db392a3ad26c09493be215620149d6149fccebdacabf09cd35"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/summary.csv",
+      "bytes": 37236,
+      "sha256": "f8a67a2261492380b07b9d3a7efe72ceb857c88ffdc57209da0a501ca792715b"
+    },
+    {
+      "relative": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/training_mode_pairs.csv",
+      "bytes": 2687074,
+      "sha256": "f4f45c72f82b06dc92dfd46ae2ad553a7227afada4c3e8aa8b9b33d18d6f25d4"
+    },
+    {
+      "relative": "README.md",
+      "bytes": 12988,
+      "sha256": "43b3685dd9f1b95af1b830183597ea0e4a918cf6f75fddaa64ca81ccfeba6713"
+    }
+  ],
+  "delivery_tool_change": "light_paths selection includes README and root CSV/JSON evidence; verification, scientific data and model selection unchanged",
+  "no_research_or_document_content_changes": true
+}

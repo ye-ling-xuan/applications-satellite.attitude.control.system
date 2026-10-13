@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "reviewer": "root",
+  "review_method": "All rendered appendix pages opened and visually inspected before --record-visual-pass; source and PDF hashes rechecked",
+  "documents": 2,
+  "pages": 9,
+  "records": [
+    {
+      "pdf": "09_结项文书与答辩\\08_补充阅读与团队复核\\03_附录阅读PDF\\补充文献分类与阅读札记.pdf",
+      "pdf_sha256": "1a8dda26252934ef4e54657e43ecf3fa8643423ea13225b5fed299b5585b3c6b",
+      "pages": 5,
+      "rendered_pages": [
+        {
+          "relative": "tmp/artifacts/supplement_pdf_review/document_1/page-1.png",
+          "sha256": "735e8e4f80e3aa4779e33fcd898f0963fdda172baa882744dd5b5a10a422e4cf"
+        },
+        {
+          "relative": "tmp/artifacts/supplement_pdf_review/document_1/page-2.png",
+          "sha256": "fb9470f2dede2e4853b8650b51d88c7c0067256683084c024188f248df497f8c"
+        },
+        {
+          "relative": "tmp/artifacts/supplement_pdf_review/document_1/page-3.png",
+          "sha256": "08cb22672bd8dc30663791143e0eb53b7ba00ea93d2a4d8777f7ae85d32413d7"
+        },
+        {
+          "relative": "tmp/artifacts/supplement_pdf_review/document_1/page-4.png",
+          "sha256": "7426d20867e5a64728bffdecd0f3c4738ddef53c535de8b0a493775efdacc961"
+        },
+        {
+          "relative": "tmp/artifacts/supplement_pdf_review/document_1/page-5.png",
+          "sha256": "5c0ab4db867069b706b598257ae80a7906d5bc7671acc6be0db636fd790af65d"
+        }
+      ],
+      "visual_review": "passed",
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "pdf": "09_结项文书与答辩\\08_补充阅读与团队复核\\03_附录阅读PDF\\最小复核使用说明.pdf",
+      "pdf_sha256": "b4d8be250d09c92d5e1ff79aacff99f5eaae5167f07ae489477d927f52fe492f",
+      "pages": 4,
+      "rendered_pages": [
+        {
+          "relative": "tmp/artifacts/supplement_pdf_review/document_2/page-1.png",
+          "sha256": "63f4b584f1d4f14324389bf12432613e67e5cdd407ed449a9eddec97c27d1eb1"
+        },
+        {
+          "relative": "tmp/artifacts/supplement_pdf_review/document_2/page-2.png",
+          "sha256": "07568f9d5349f8e3717336e265e17baf85c43cbce4e68f43027abef69503ed6c"
+        },
+        {
+          "relative": "tmp/artifacts/supplement_pdf_review/document_2/page-3.png",
+          "sha256": "c6ff513c87305fbb340a582ec4aca1164f73fb36449d3ba5ff89436297e0f5c3"
+        },
+        {
+          "relative": "tmp/artifacts/supplement_pdf_review/document_2/page-4.png",
+          "sha256": "d870e5999e768aa0ae52869a88822dee9e2d4e8e5db9aeedd33d330a7ee24151"
+        }
+      ],
+      "visual_review": "passed",
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}

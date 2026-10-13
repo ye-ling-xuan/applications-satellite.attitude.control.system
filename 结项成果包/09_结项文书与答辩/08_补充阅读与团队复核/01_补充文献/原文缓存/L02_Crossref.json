@@ -1,0 +1,473 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          25
+        ]
+      ],
+      "date-time": "2025-09-25T18:18:38Z",
+      "timestamp": 1758824318585
+    },
+    "reference-count": 25,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "8",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2011,
+              6,
+              17
+            ]
+          ],
+          "date-time": "2011-06-17T00:00:00Z",
+          "timestamp": 1308268800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci. China Technol. Sci."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1007/s11431-011-4475-0",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2011-06-18T08:16:04Z",
+      "timestamp": 1308384964000
+    },
+    "page": "1992-1998",
+    "source": "Crossref",
+    "is-referenced-by-count": 26,
+    "title": [
+      "Distributed adaptive attitude synchronization of multiple spacecraft"
+    ],
+    "prefix": "10.1007",
+    "volume": "54",
+    "author": [
+      {
+        "given": "ZhongKui",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "ZhiSheng",
+        "family": "Duan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2011,
+          6,
+          17
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "4475_CR1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1520",
+        "DOI": "10.1109/TAC.2004.834113",
+        "volume": "49",
+        "author": "R. Olfati-Saber",
+        "year": "2004",
+        "unstructured": "Olfati-Saber R, Murray R M. Consensus problems in networks of agents with switching topology and time-delays. IEEE Trans Autom Control, 2004, 49: 1520–1533",
+        "journal-title": "IEEE Trans Autom Control"
+      },
+      {
+        "key": "4475_CR2",
+        "doi-asserted-by": "crossref",
+        "first-page": "655",
+        "DOI": "10.1109/TAC.2005.846556",
+        "volume": "50",
+        "author": "W. Ren",
+        "year": "2005",
+        "unstructured": "Ren W, Beard R W. Consensus seeking in multiagent systems under dynamically changing interaction topologies. IEEE Trans Autom Control, 2005, 50: 655–661",
+        "journal-title": "IEEE Trans Autom Control"
+      },
+      {
+        "key": "4475_CR3",
+        "doi-asserted-by": "crossref",
+        "first-page": "71",
+        "DOI": "10.1109/MCS.2007.338264",
+        "volume": "27",
+        "author": "W. Ren",
+        "year": "2007",
+        "unstructured": "Ren W, Beard R W, Atkins E M. Information consensus in multivehicle cooperative control. IEEE Control Syst Mag, 2007, 27: 71–82",
+        "journal-title": "IEEE Control Syst Mag"
+      },
+      {
+        "key": "4475_CR4",
+        "doi-asserted-by": "crossref",
+        "first-page": "797",
+        "DOI": "10.1016/j.automatica.2011.01.054",
+        "volume": "47",
+        "author": "Z. K. Li",
+        "year": "2011",
+        "unstructured": "Li Z K, Duan Z S, Cheng G R. On H ∞ and H 2 performance regions of multi-agent systems. Automatica, 2011, 47: 797–803",
+        "journal-title": "Automatica"
+      },
+      {
+        "key": "4475_CR5",
+        "doi-asserted-by": "crossref",
+        "first-page": "213",
+        "DOI": "10.1109/TCSI.2009.2023937",
+        "volume": "57",
+        "author": "Z. K. Li",
+        "year": "2010",
+        "unstructured": "Li Z K, Duan Z S, Cheng G R, et al. Consensus of multiagent systems and synchronization of complex networks: A unified viewpoint. IEEE Trans Circuits Syst I-Regul Pap, 2010, 57: 213–224",
+        "journal-title": "IEEE Trans Circuits Syst I-Regul Pap"
+      },
+      {
+        "key": "4475_CR6",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1049/iet-cta.2009.0466",
+        "volume": "5",
+        "author": "Z. K. Li",
+        "year": "2011",
+        "unstructured": "Li Z K, Duan Z S, Cheng G R. Dynamic consensus of multi-agent systems. IET Contr Theory Appl, 2011, 5: 19–28",
+        "journal-title": "IET Contr Theory Appl"
+      },
+      {
+        "key": "4475_CR7",
+        "doi-asserted-by": "crossref",
+        "first-page": "216",
+        "DOI": "10.1080/00207179.2010.546882",
+        "volume": "84",
+        "author": "Z. K. Li",
+        "year": "2011",
+        "unstructured": "Li Z K, Duan Z S, Cheng G R. Global synchronized regions of linearly coupled Lur’e systems. Int J Control, 2011, 84: 216–227",
+        "journal-title": "Int J Control"
+      },
+      {
+        "key": "4475_CR8",
+        "doi-asserted-by": "crossref",
+        "first-page": "741",
+        "DOI": "10.1007/s11431-010-0072-x",
+        "volume": "53",
+        "author": "J. C. Yan",
+        "year": "2010",
+        "unstructured": "Yan J C, Lu Q S, Lang X F. Flocking shape analysis of multi-agent systems. Sci China Technol Sci, 2010, 53: 741–747",
+        "journal-title": "Sci China Technol Sci"
+      },
+      {
+        "key": "4475_CR9",
+        "doi-asserted-by": "crossref",
+        "first-page": "2930",
+        "DOI": "10.1007/s11431-009-0261-7",
+        "volume": "52",
+        "author": "J. J. Xing",
+        "year": "2009",
+        "unstructured": "Xing J J, Lei Y J, Cheng W K, et al. Nonlinear control of multiple spacecraft formation flying using the constraint forces in Lagrangian systems. Sci China Ser E-Technol Sci, 2009, 52: 2930–2936",
+        "journal-title": "Sci China Ser E-Technol Sci"
+      },
+      {
+        "key": "4475_CR10",
+        "doi-asserted-by": "crossref",
+        "first-page": "1148",
+        "DOI": "10.1109/9.90228",
+        "volume": "36",
+        "author": "J. T. Y. Wen",
+        "year": "1991",
+        "unstructured": "Wen J T Y, Kreutz-Delgado K. The attitude control problem. IEEE Trans Autom Control, 1991, 36: 1148–1162",
+        "journal-title": "IEEE Trans Autom Control"
+      },
+      {
+        "key": "4475_CR11",
+        "doi-asserted-by": "crossref",
+        "first-page": "1597",
+        "DOI": "10.1109/9.728877",
+        "volume": "43",
+        "author": "P. Tsiotras",
+        "year": "1998",
+        "unstructured": "Tsiotras P. Further passivity results for the attitude control problem. IEEE Trans Autom Control, 1998, 43: 1597–1600",
+        "journal-title": "IEEE Trans Autom Control"
+      },
+      {
+        "key": "4475_CR12",
+        "doi-asserted-by": "crossref",
+        "first-page": "947",
+        "DOI": "10.1016/S0005-1098(01)00038-3",
+        "volume": "37",
+        "author": "H. Wong",
+        "year": "2001",
+        "unstructured": "Wong H, de Queiroz M S, Kapila V. Adaptive tracking control using synthesized velocity from attitude measurements. Automatica, 2001, 37: 947–953",
+        "journal-title": "Automatica"
+      },
+      {
+        "key": "4475_CR13",
+        "doi-asserted-by": "crossref",
+        "first-page": "321",
+        "DOI": "10.1016/S0167-6911(00)00102-X",
+        "volume": "42",
+        "author": "M. R. Akella",
+        "year": "2001",
+        "unstructured": "Akella M R. Rigid body attitude tracking without angular velocity feedback. Syst Control Lett, 2001, 42: 321–326",
+        "journal-title": "Syst Control Lett"
+      },
+      {
+        "key": "4475_CR14",
+        "doi-asserted-by": "crossref",
+        "first-page": "1582",
+        "DOI": "10.2514/2.4367",
+        "volume": "22",
+        "author": "P. Wang",
+        "year": "1999",
+        "unstructured": "Wang P, Hadaegh F Y, Lau K. Synchronized formation rotation and attitude control of multiple free-flying spacecraft. J Guid Control Dyn, 1999, 22: 1582–1589",
+        "journal-title": "J Guid Control Dyn"
+      },
+      {
+        "key": "4475_CR15",
+        "doi-asserted-by": "crossref",
+        "first-page": "1359",
+        "DOI": "10.1016/S0005-1098(02)00025-0",
+        "volume": "38",
+        "author": "J. R. Lawton",
+        "year": "2002",
+        "unstructured": "Lawton J R, Beard R W. Synchronize multiple spacecraft rotations. Automatica, 2002, 38: 1359–1364",
+        "journal-title": "Automatica"
+      },
+      {
+        "key": "4475_CR16",
+        "doi-asserted-by": "crossref",
+        "first-page": "73",
+        "DOI": "10.2514/1.9287",
+        "volume": "27",
+        "author": "W. Ren",
+        "year": "2004",
+        "unstructured": "Ren W, Beard R W. Decentralized scheme for spacecraft formation flying via the virtual structure approach. J Guid Control Dyn, 2004, 27: 73–82",
+        "journal-title": "J Guid Control Dyn"
+      },
+      {
+        "key": "4475_CR17",
+        "doi-asserted-by": "crossref",
+        "first-page": "2712",
+        "DOI": "10.1109/ICSMC.2008.4811706",
+        "volume-title": "Proceedings of the 2008 IEEE International Conference on Systems, Man, and Cybernetics",
+        "author": "L. Cheng",
+        "year": "2008",
+        "unstructured": "Cheng L, Hou Z G, Tan M. Decentralized adaptive consensus control for multi-manipulator system with uncertain dynamics. In: Proceedings of the 2008 IEEE International Conference on Systems, Man, and Cybernetics, Singapore: IEEE, 2008. 2712–2717"
+      },
+      {
+        "key": "4475_CR18",
+        "doi-asserted-by": "crossref",
+        "first-page": "429",
+        "DOI": "10.1016/j.sysconle.2009.02.002",
+        "volume": "58",
+        "author": "D. V. Dimarogonas",
+        "year": "2009",
+        "unstructured": "Dimarogonas D V, Tsiotras P, Kyriakopoulos K J. Leader-follower cooperative attitude control of multiple rigid bodies. Syst Control Lett, 2009, 58: 429–435",
+        "journal-title": "Syst Control Lett"
+      },
+      {
+        "key": "4475_CR19",
+        "doi-asserted-by": "crossref",
+        "first-page": "512",
+        "DOI": "10.2514/1.37261",
+        "volume": "32",
+        "author": "S. J. Chung",
+        "year": "2009",
+        "unstructured": "Chung S J, Ahsun U, and Slotine J E. Application of synchronization to formation flying spacecraft: Lagrangian approach. J Guid Control Dyn, 2009, 32: 512–526",
+        "journal-title": "J Guid Control Dyn"
+      },
+      {
+        "key": "4475_CR20",
+        "doi-asserted-by": "crossref",
+        "first-page": "2642",
+        "DOI": "10.1109/TAC.2009.2031567",
+        "volume": "54",
+        "author": "A. Abdessameud",
+        "year": "2009",
+        "unstructured": "Abdessameud A, Tayebi A. Attitude synchronization of a group of spacecraft without velocity measurements. IEEE Trans Autom Control, 2009, 54: 2642–2648",
+        "journal-title": "IEEE Trans Autom Control"
+      },
+      {
+        "key": "4475_CR21",
+        "doi-asserted-by": "crossref",
+        "first-page": "383",
+        "DOI": "10.1109/TCST.2009.2016428",
+        "volume": "18",
+        "author": "W. Ren",
+        "year": "2010",
+        "unstructured": "Ren W. Distributed cooperative attitude synchronization and tracking for multiple rigid bodies. IEEE Trans Control Syst Technol, 2010, 18: 383–392",
+        "journal-title": "IEEE Trans Control Syst Technol"
+      },
+      {
+        "key": "4475_CR22",
+        "doi-asserted-by": "crossref",
+        "first-page": "633",
+        "DOI": "10.2514/1.25629",
+        "volume": "30",
+        "author": "W. Ren",
+        "year": "2007",
+        "unstructured": "Ren W. Formation keeping and attitude alignment for multiple spacecraft through local interactions. J Guid Control Dyn, 2007, 30: 633–638",
+        "journal-title": "J Guid Control Dyn"
+      },
+      {
+        "key": "4475_CR23",
+        "first-page": "439",
+        "volume": "41",
+        "author": "M. D. Shuster",
+        "year": "1993",
+        "unstructured": "Shuster M D. A survey of attitude representation. J Astronaut Sci, 1993, 41: 439–517",
+        "journal-title": "J Astronaut Sci"
+      },
+      {
+        "key": "4475_CR24",
+        "volume-title": "Applied Nonlinear Control",
+        "author": "J. E. Slotine",
+        "year": "1991",
+        "unstructured": "Slotine J E, Li W P. Applied Nonlinear Control. Englewood Cliffs, New Jersey: Prentice Hall, 1991"
+      },
+      {
+        "key": "4475_CR25",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/CBO9780511810817",
+        "volume-title": "Matrix Analysis",
+        "author": "R. A. Horn",
+        "year": "1985",
+        "unstructured": "Horn R A, Johnson C R. Matrix Analysis. Cambridge, UK: Cambridge University Press, 1985"
+      }
+    ],
+    "container-title": [
+      "Science China Technological Sciences"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11431-011-4475-0.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1007/s11431-011-4475-0/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11431-011-4475-0",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          6,
+          1
+        ]
+      ],
+      "date-time": "2019-06-01T15:27:45Z",
+      "timestamp": 1559402865000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/s11431-011-4475-0"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          6,
+          17
+        ]
+      ]
+    },
+    "references-count": 25,
+    "journal-issue": {
+      "issue": "8",
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            8
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "4475"
+    ],
+    "URL": "https://doi.org/10.1007/s11431-011-4475-0",
+    "relation": {},
+    "ISSN": [
+      "1674-7321",
+      "1862-281X"
+    ],
+    "issn-type": [
+      {
+        "value": "1674-7321",
+        "type": "print"
+      },
+      {
+        "value": "1862-281X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          6,
+          17
+        ]
+      ]
+    }
+  }
+}

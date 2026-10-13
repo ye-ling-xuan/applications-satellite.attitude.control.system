@@ -1,0 +1,24 @@
+[
+  {
+    "source": "09_结项文书与答辩\\08_补充阅读与团队复核\\01_补充文献\\补充文献分类与阅读札记.md",
+    "output": "09_结项文书与答辩\\08_补充阅读与团队复核\\03_附录阅读PDF\\补充文献分类与阅读札记.pdf",
+    "pages": 5,
+    "source_sha256": "2153ac384e00160dbacab852a7f6b5df5aa9b405d342cf7643e352d28480ab91",
+    "pdf_sha256": "1a8dda26252934ef4e54657e43ecf3fa8643423ea13225b5fed299b5585b3c6b",
+    "text_characters": 6283,
+    "visual_qa": "passed",
+    "school_template_applied": false,
+    "format": "A4 Chinese reading copy"
+  },
+  {
+    "source": "09_结项文书与答辩\\08_补充阅读与团队复核\\02_最小独立复核\\最小复核使用说明.md",
+    "output": "09_结项文书与答辩\\08_补充阅读与团队复核\\03_附录阅读PDF\\最小复核使用说明.pdf",
+    "pages": 4,
+    "source_sha256": "517ec60243964dd386194b03b1668de463ed306bfcd87ba672b721af398852a6",
+    "pdf_sha256": "b4d8be250d09c92d5e1ff79aacff99f5eaae5167f07ae489477d927f52fe492f",
+    "text_characters": 4694,
+    "visual_qa": "passed",
+    "school_template_applied": false,
+    "format": "A4 Chinese reading copy"
+  }
+]

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>卫星姿态控制研究答辩演示</title>
+<style>
+:root{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:#13263a;background:#e8edf2;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}.toolbar{position:fixed;z-index:5;bottom:18px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:14px;background:#152d45;color:#fff;padding:10px 16px;border-radius:6px;font-size:14px}.toolbar button,.toolbar label{border:1px solid #6e8498;color:#fff;background:transparent;padding:6px 10px;cursor:pointer;border-radius:3px}.toolbar input{display:none}.toolbar output{min-width:70px;text-align:center}.toolbar .help{font-size:12px;color:#d4e2ed}.deck{max-width:1440px;margin:auto;padding:34px 28px 110px}.slide{position:relative;display:none;aspect-ratio:16/9;min-height:700px;background:#fff;padding:58px 72px 46px;box-shadow:0 12px 35px #23384e14;overflow:hidden}.slide.active{display:flex;flex-direction:column}.slide.cover{justify-content:center}.slide h1{font-size:54px;line-height:1.35;letter-spacing:.02em;margin:0 0 30px;max-width:1050px}.slide h2{font-size:36px;line-height:1.35;margin:0 0 30px;font-weight:700}.slide p,.slide li{font-size:23px;line-height:1.65;margin:0 0 18px}.slide ul,.slide ol{margin:0;padding-left:1.35em}.slide li+li{margin-top:12px}.slide .lead{font-size:29px;font-weight:600;max-width:1050px;margin-bottom:32px}.slide .small{font-size:17px;line-height:1.5;color:#526476}.slide .subtitle{font-size:28px;line-height:1.6;max-width:1050px}.slide .muted{color:#526476}.slide .accent{color:#116f9e}.slide .bottom{margin-top:auto;padding-top:25px}.slide .page{position:absolute;right:36px;bottom:22px;font-size:14px;color:#7c8b98}.slide table{border-collapse:collapse;width:100%;font-size:21px;line-height:1.45;margin:0 0 22px}.slide th{background:#eaf0f5;font-weight:600;color:#173d60}.slide td,.slide th{border-bottom:1px solid #d8e1e9;padding:14px 16px;text-align:left;vertical-align:middle}.slide td:first-child{white-space:nowrap}.slide .equation{font-size:28px;line-height:1.6;margin:12px 0 26px;font-family:"Cambria Math","Microsoft YaHei",sans-serif}.slide .columns{display:grid;grid-template-columns:1fr 1fr;gap:54px}.slide .columns h3{font-size:26px;margin:0 0 15px}.slide .columns p,.slide .columns li{font-size:22px}.slide .pending{font-size:23px;line-height:1.6;color:#775b22;background:#faf6e9;padding:22px 26px;max-width:1050px}.slide .figure{display:none;width:100%;min-height:0;flex:1;object-fit:contain;max-height:510px}.slide .figure.ready{display:block}.slide .data-region{flex:1;min-height:0;display:flex;flex-direction:column}.slide .data-region .figure.ready~.pending{display:none}.slide .notes{display:none}.notes-panel{display:none;max-width:1384px;margin:20px auto 100px;background:#fff;padding:24px 32px;color:#2f465a;font-size:20px;line-height:1.7}.notes-panel.open{display:block}.note-head{font-weight:700;color:#173d60;margin-bottom:12px}.status{font-size:19px;color:#7b5c24;margin-top:20px}.verified .status{color:#186e52}.status:empty{display:none}.presentation .deck{max-width:none;padding:0}.presentation .slide{width:100vw;height:100vh;min-height:0;aspect-ratio:auto;box-shadow:none;padding:6vh 6vw}.presentation .slide h1{font-size:clamp(40px,4.2vw,72px)}.presentation .slide h2{font-size:clamp(30px,2.8vw,48px)}.presentation .slide p,.presentation .slide li{font-size:clamp(20px,1.8vw,30px)}.presentation .toolbar{opacity:.2;transition:opacity .2s}.presentation .toolbar:hover,.presentation .toolbar:focus-within{opacity:1}.overview .slide{display:flex;margin-bottom:32px}.overview .deck{max-width:1440px}.overview .notes-panel{display:none!important}@media(max-width:900px){.deck{padding:12px 10px 100px}.slide{min-height:730px;aspect-ratio:auto;padding:34px 28px}.slide h1{font-size:37px}.slide h2{font-size:29px}.slide p,.slide li{font-size:20px}.slide table{font-size:17px}.slide td,.slide th{padding:10px 9px}.slide .columns{gap:22px;grid-template-columns:1fr}.slide .lead{font-size:24px}.toolbar{width:calc(100% - 20px);justify-content:center;gap:6px}.toolbar .help{display:none}.toolbar button,.toolbar label{padding:6px}.slide .equation{font-size:22px}.slide .small{font-size:15px}}@media print{@page{size:297mm 167.0625mm;margin:0}html,body{background:#fff!important}.toolbar,.notes-panel{display:none!important}.deck,.presentation .deck{max-width:none;padding:0;margin:0}.slide,.slide.active,.presentation .slide{display:flex!important;width:297mm;height:167.0625mm;min-height:0;aspect-ratio:auto;padding:13mm 16mm 10mm;box-shadow:none;break-after:page;page-break-after:always;overflow:hidden}.slide:last-child{break-after:auto;page-break-after:auto}.slide h1,.presentation .slide h1{font-size:34pt;margin-bottom:8mm}.slide h2,.presentation .slide h2{font-size:25pt;margin-bottom:7mm}.slide p,.slide li,.presentation .slide p,.presentation .slide li{font-size:17pt;line-height:1.55;margin-bottom:4mm}.slide .lead{font-size:21pt;margin-bottom:7mm}.slide .subtitle{font-size:21pt}.slide .small{font-size:12pt}.slide .columns p,.slide .columns li{font-size:16pt}.slide table{font-size:15pt;margin-bottom:5mm}.slide td,.slide th{padding:3mm 4mm}.slide .equation{font-size:20pt;margin-bottom:6mm}.slide .pending{font-size:17pt;padding:5mm}.slide .figure{max-height:119mm}.slide .page{bottom:5mm;right:8mm;font-size:10pt}.slide .notes{display:none!important}.slide .status{font-size:13pt}.overview .slide{margin-bottom:0}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.toolbar{width:max-content;max-width:calc(100vw - 20px)}.toolbar button,.toolbar label{white-space:nowrap;flex-shrink:0}.toolbar .help{white-space:nowrap}@media(max-width:900px){.toolbar{width:calc(100% - 20px);flex-wrap:wrap}}
+@media print{.slide,.slide.active,.presentation .slide{flex-direction:column}}
+</style>
+</head>
+<body>
+<main class="deck" aria-label="十二页答辩演示">
+<section class="slide cover active" id="slide-1" data-seconds="20">
+<h1>卫星姿态控制中的<br>人工智能研究</h1>
+<p class="subtitle">惯量域随机化与免重整定控制的泛化边界</p>
+<p class="small bottom">大一立项项目结项答辩<br>团队与指导教师信息由项目组据实补充</p>
+<p class="status" data-status>V3正式结果尚未载入，当前版本用于答辩结构与讲解排练</p>
+<aside class="notes">用一句话说明任务：我们让卫星从不同初始朝向转到目标并持续保持，研究惯量改变后固定控制器还能在哪些条件下可靠工作。开场不先宣称强化学习优于PID。</aside><span class="page">01 / 12</span>
+</section>
+<section class="slide" id="slide-2" data-seconds="35">
+<h2>项目目标与控制问题</h2>
+<p class="lead">卫星的姿态决定载荷与天线的指向，控制器输出力矩使姿态误差收敛。</p>
+<ul><li>输入是测得的姿态误差和角速度，输出是受执行器限制的控制力矩。</li><li>比较传统PID与强化学习，观察精度、稳定速度和控制代价。</li><li>本轮重点研究惯量不同于标称值时的可用范围，跨惯量保持控制器冻结。</li></ul>
+<p class="small bottom">每回合惯量固定且未知。研究不包含时变惯量、在线辨识或真实卫星在轨验证。</p>
+<aside class="notes">区分姿态和轨道：这里研究卫星朝向，不控制飞行轨迹。惯量表示相同力矩下卫星改变角速度的难易。工程动机来自燃料或结构变化后的等效惯量变化，但本轮只模拟参数改变后的静态刚体。</aside><span class="page">02 / 12</span>
+</section>
+<section class="slide" id="slide-3" data-seconds="35">
+<h2>项目的技术积累</h2>
+<table><thead><tr><th>阶段</th><th>实际形成的能力</th><th>本轮复用</th></tr></thead><tbody>
+<tr><td>V1 基础原型</td><td>单轴PID、Gym环境与学习控制原型</td><td>建模、仿真与控制概念</td></tr>
+<tr><td>V2 统一比较</td><td>单轴与三轴共同评价、多算法与动作校准</td><td>已核验动力学、指标和部署规则</td></tr>
+<tr><td>V3 受控研究</td><td>仅改变训练惯量分布，保留独立域外测试</td><td>辨别随机化的作用与失败边界</td></tr>
+</tbody></table>
+<p>本轮采用SAC作为主算法，集中完成公平对照和泛化分析。</p>
+<p class="small bottom">V1/V2原文件、模型和结果保留。V3结果独立保存，不把不同实验设计混成同一排名。</p>
+<aside class="notes">解释研究为什么逐步收敛。早期完成了从方程到闭环控制的实现，随后统一不同算法的评价。最后一轮集中到一个问题，避免同时更换算法、奖励和随机因素后无法解释原因。SAC选择基于V2研究取舍，不代表已经证明全面最优。</aside><span class="page">03 / 12</span>
+</section>
+<section class="slide" id="slide-4" data-seconds="55">
+<h2>动力学与共同验收判据</h2>
+<table><thead><tr><th>共同条件</th><th>单轴</th><th>三轴</th></tr></thead><tbody>
+<tr><td>标称惯量</td><td>J₀ = 1 kg·m²</td><td>I₀ = diag(1.2, 1.0, 0.8) kg·m²</td></tr>
+<tr><td>时间步长</td><td>0.05 s</td><td>0.02 s</td></tr>
+<tr><td>力矩上限</td><td>±0.5 N·m</td><td>每轴 ±2 N·m</td></tr>
+<tr><td>姿态与积分</td><td>角度，常加速度精确传播</td><td>四元数，含陀螺耦合的RK4</td></tr>
+</tbody></table>
+<p><strong>每回合20 s，最后5 s所有真实采样点：</strong><br>姿态误差 ≤1°，角速度 ≤0.5°/s，且无物理发散。</p>
+<p class="small bottom">三轴采用姿态测地角和角速度范数。控制代价为 ∫‖τ‖²dt，不等于实际耗电量。</p>
+<aside class="notes">单轴方程是J乘角加速度等于力矩，三轴还包含角速度与角动量的耦合。解释为什么不能只用首次进入误差带作为成功：控制器还可能随后离开。所有算法共用传播、限幅和真实状态指标，观测不暴露真实惯量。</aside><span class="page">04 / 12</span>
+</section>
+<section class="slide" id="slide-5" data-seconds="40">
+<h2>四组核心对照</h2>
+<table><thead><tr><th>控制器</th><th>训练或整定惯量</th><th>部署时冻结</th></tr></thead><tbody>
+<tr><td>PID-N</td><td>标称 ρ = 1</td><td>增益与滤波参数</td></tr>
+<tr><td>PID-R</td><td>域内 ρ ∈ [0.7, 1.3]</td><td>增益与滤波参数</td></tr>
+<tr><td>SAC-N</td><td>每回合 ρ = 1</td><td>网络权重与零动作偏置</td></tr>
+<tr><td>SAC-R</td><td>每回合 ρ ∼ U[0.7, 1.3]</td><td>网络权重与零动作偏置</td></tr>
+</tbody></table>
+<p>两组SAC的算法、网络、奖励与预算相同，初态和惯量采用独立随机流。</p>
+<p class="small bottom">训练与主测试关闭外扰和测量噪声。三轴 I=ρI₀，单轴 J=ρJ₀。<br>SAC主结果含固定零动作偏置校准，同一检查点原始动作另作消融。</p>
+<aside class="notes">主要因果问题是训练惯量分布的改变有没有带来泛化变化。两类PID用相同结构、同样144个候选和相同数量验证回合，形成足够强的传统基线。固定反馈策略不输入惯量，没有在线估计，因此称参数鲁棒性与泛化。</aside><span class="page">05 / 12</span>
+</section>
+<section class="slide" id="slide-6" data-seconds="50">
+<h2>域内验证与独立域外测试</h2>
+<p><strong>验证：</strong>每轴20组新初态，ρ=0.7、0.85、1.0、1.15、1.3各4组。</p>
+<p><strong>主测试：</strong>每轴30组独立初态，在11个倍率复用。</p>
+<table><thead><tr><th>区域</th><th>测试惯量倍率 ρ</th><th>用途</th></tr></thead><tbody>
+<tr><td>训练域内</td><td>0.7，0.8，0.9，1.0，1.1，1.2，1.3</td><td>标称与域内可用性</td></tr>
+<tr><td>预留域外</td><td>0.5，0.6，1.4，1.5</td><td>训练范围外的泛化</td></tr>
+</tbody></table>
+<p class="small bottom">补充4组非等比例三轴惯量迁移。它们独立分析，不并入标量可用区间。</p>
+<aside class="notes">强调测试惯量与初态在选模前固定，测试响应不参与奖励修改或模型选择。所有控制器复用同一初态以便配对。0.7和1.3是随机化训练端点，不能称为域外。重复初态也不当成额外独立样本。</aside><span class="page">06 / 12</span>
+</section>
+<section class="slide" id="slide-7" data-seconds="30">
+<h2>训练与证据链</h2>
+<p class="lead">预定规模：12份SAC模型，合计1,200万交互步。</p>
+<ul><li>每份100万步，种子11、22、33全部保留。</li><li>每10万步，用共同验证集的校准表现选择检查点。</li><li>保留best、final、replay、逐回合初态、校准偏置和文件哈希。</li></ul>
+<p class="equation">验证分数 = 100 × 成功率 − 全程RMS误差 − 0.2 × 控制代价</p>
+<p class="status" data-training>实际完成数量待训练清单与独立核验载入</p>
+<p class="small bottom" data-calibration>固定部署规则：clip(π(o)−π(0),−1,1)，不根据测试响应调整。</p>
+<aside class="notes">同分时依次选择更低RMS、更低代价、更早检查点。SAC-N虽然只在标称惯量训练，也在共同域内验证集选模。原始动作消融使用同一个按校准分数选中的模型，不另选原始表现最好的检查点。完成规模以最后清单为准。</aside><span class="page">07 / 12</span>
+</section>
+<section class="slide" id="slide-8" data-seconds="65">
+<h2>成功率随惯量变化</h2>
+<div class="data-region"><img class="figure" data-figure="success" alt="单轴与三轴成功率随惯量倍率变化的正式结果图"><p class="pending">正式测试和独立核验完成后载入成功率图。当前页面不填入推测曲线或开发模型表现。</p></div>
+<p class="small bottom" data-caption="success">分别观察低惯量端与高惯量端。SAC报告三个训练种子的结果，原始/校准动作分开。</p>
+<aside class="notes">先读三轴主要结果，再用单轴解释机制。指出随机化训练区间，比较SAC-R和SAC-N在域外的变化，并同时查看PID-N和PID-R。任何提高、无明显变化或退化都按实际数据讲，不从总体均值跳到全面优越。</aside><span class="page">08 / 12</span>
+</section>
+<section class="slide" id="slide-9" data-seconds="45">
+<h2>经验可用范围与种子波动</h2>
+<p>成功率至少90%，即30组初态至少27组成功。</p>
+<div class="data-region"><img class="figure" data-figure="boundary" alt="各种子与共同经验可用区间"><table id="boundaries" hidden><thead><tr><th>轴数</th><th>控制对象</th><th>包含标称点的已测区间</th></tr></thead><tbody></tbody></table><p class="pending" id="boundary-pending">正式边界表待载入。SAC保守汇总要求三个种子在该倍率点全部达到阈值。</p></div>
+<p class="small bottom" data-caption="boundary">区间只覆盖预定离散网格。全网格通过时写覆盖至已测范围，不声称找到真实物理边界。</p>
+<aside class="notes">从rho=1向两侧寻找连续通过的已测点。标称点本身没达到90%时，不给出包含标称点的可用区间。平均成功率不能掩盖较差种子。三个种子不足以支持普遍统计显著性，网格间也没有工程保证。</aside><span class="page">09 / 12</span>
+</section>
+<section class="slide" id="slide-10" data-seconds="45">
+<h2>精度、响应速度与控制代价</h2>
+<div class="data-region"><img class="figure" data-figure="tradeoff" alt="RMS误差、稳定时间与控制代价正式比较"><p class="pending">正式图表待载入：误差、成功回合稳定时间、控制代价，以及四组非等比例惯量的补充测试。</p></div>
+<p class="small bottom" data-caption="tradeoff">稳定时间只对成功回合统计。物理发散后的低力矩代价不能视为节能优势。</p>
+<aside class="notes">即使随机化增加成功率，也要检查标称精度或控制代价是否变化。稳定时间样本集合会随成功率变化，需要谨慎比较。非等比例迁移用于压力测试，训练只随机整体倍率，因此这部分不能称同分布验证，也不等于真实结构展开过程。</aside><span class="page">10 / 12</span>
+</section>
+<section class="slide" id="slide-11" data-seconds="45">
+<h2>研究结论与适用范围</h2>
+<ul id="findings"><li>结论待正式结果与独立核验完成后写入。</li><li>说明SAC-R相对SAC-N的域外变化，并对照强PID。</li><li>同时报告精度、速度、控制代价与失败场景。</li></ul>
+<p class="small bottom" id="limitations">适用范围：每回合固定惯量、对角主惯量、有限初态与网格、20 s仿真判据。真实卫星仍需执行器、估计器与硬件验证。</p>
+<aside class="notes">只讲数据支持的结论。如果PID相同或更好，说明固定反馈已经有相当鲁棒性，强化学习的代价与适用范围仍是有效结果。若SAC-R退化，保留相同规模成果并解释局限。不把常见域随机化方法称为新发明算法。</aside><span class="page">11 / 12</span>
+</section>
+<section class="slide" id="slide-12" data-seconds="15">
+<h2>成果与后续工作</h2>
+<p class="lead">可复现的仿真、冻结模型、全轨迹数据与独立核验，构成项目的主要交付。</p>
+<p>另附两篇综述、结项报告内容稿与复现说明。成员本人贡献及学校格式由项目组确认。</p>
+<p class="muted bottom">感谢各位老师<br>欢迎提问</p>
+<p class="small"><a href="../../08_惯量域随机化与泛化边界研究/05_研究分析与核验/研究分析.md">研究分析</a>　<a href="../../08_惯量域随机化与泛化边界研究/05_研究分析与核验/独立核验记录.json">独立核验记录</a>　<a href="../../08_惯量域随机化与泛化边界研究/04_图表与结果页面/结果总览.html">完整结果与五张图</a></p>
+<aside class="notes">结束时点明项目贡献是完整实现与可信证据。后续硬件、在线自适应、时变惯量属于展望。答疑时能解释四元数、奖励、训练/验证/测试分离、动作校准和指标定义，比增加算法名称更重要。</aside><span class="page">12 / 12</span>
+</section>
+</main>
+<aside class="notes-panel" id="notes-panel" aria-live="polite"></aside>
+<nav class="toolbar" aria-label="演示控制"><button id="prev" aria-label="上一页">上一页</button><output id="counter">1 / 12</output><button id="next" aria-label="下一页">下一页</button><button id="notes">讲稿</button><button id="overview">总览</button><button id="present">演示</button><button id="print">打印</button><label>载入结果<input type="file" id="result-file" accept="application/json,.json"></label><span class="help">← →翻页　N讲稿　F演示　Esc退出</span></nav>
+<script src="defense_results.js"></script>
+<script>
+'use strict';
+const slides=Array.from(document.querySelectorAll('.slide'));
+let index=Math.max(0,Math.min(slides.length-1,(Number(location.hash.replace('#slide-',''))||1)-1));
+let notesOpen=false;
+function show(next){index=(next+slides.length)%slides.length;slides.forEach((slide,i)=>slide.classList.toggle('active',i===index));document.getElementById('counter').textContent=`${index+1} / ${slides.length}`;history.replaceState(null,'',`#slide-${index+1}`);const note=slides[index].querySelector('.notes');const panel=document.getElementById('notes-panel');panel.textContent='';const title=document.createElement('div');title.className='note-head';title.textContent=`第${index+1}页讲稿　建议${slides[index].dataset.seconds}秒`;panel.append(title,document.createTextNode(note.textContent));panel.classList.toggle('open',notesOpen);}
+function toggleNotes(){notesOpen=!notesOpen;show(index);}
+document.getElementById('prev').onclick=()=>show(index-1);document.getElementById('next').onclick=()=>show(index+1);document.getElementById('notes').onclick=toggleNotes;document.getElementById('overview').onclick=()=>document.body.classList.toggle('overview');document.getElementById('present').onclick=()=>document.body.classList.toggle('presentation');document.getElementById('print').onclick=()=>window.print();
+document.addEventListener('keydown',event=>{if(['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;if(['ArrowRight','PageDown',' '].includes(event.key)){event.preventDefault();show(index+1);}if(['ArrowLeft','PageUp'].includes(event.key)){event.preventDefault();show(index-1);}if(event.key.toLowerCase()==='n')toggleNotes();if(event.key.toLowerCase()==='f')document.body.classList.toggle('presentation');if(event.key==='Escape')document.body.classList.remove('presentation','overview');});
+function safeImage(value){return typeof value==='string'&&!/^(?:javascript|vbscript|data):/i.test(value.trim())&&!value.includes('\\');}
+function applyResults(data){if(!data||data.verified!==true||data.status!=='verified'){alert('只有完成独立核验并明确标记verified=true的正式结果可载入。');return;}document.body.classList.add('verified');document.querySelector('[data-status]').textContent='正式结果已载入，结论与图表以随附核验记录为准';if(data.training){document.querySelector('[data-training]').textContent=`实际成果：${data.training.models}份模型，${Number(data.training.steps).toLocaleString('zh-CN')}交互步，${Number(data.training.episodes).toLocaleString('zh-CN')}测试回合`;}
+for(const image of document.querySelectorAll('[data-figure]')){image.classList.remove('ready');image.removeAttribute('src');const value=data.figures&&data.figures[image.dataset.figure];if(safeImage(value)){image.src=value;image.classList.add('ready');image.onerror=()=>{image.classList.remove('ready');if(image.dataset.figure==='boundary'){const table=document.getElementById('boundaries');const hasRows=table.querySelector('tbody').children.length>0;table.hidden=!hasRows;document.getElementById('boundary-pending').hidden=hasRows;}};}}
+if(Array.isArray(data.boundaries)&&data.boundaries.length){const table=document.getElementById('boundaries');const body=table.querySelector('tbody');body.textContent='';for(const row of data.boundaries){const tr=document.createElement('tr');for(const key of ['axis','controller','interval']){const td=document.createElement('td');td.textContent=String(row[key]??'');tr.append(td);}body.append(tr);}table.hidden=false;document.getElementById('boundary-pending').hidden=true;if(document.querySelector('[data-figure="boundary"]').classList.contains('ready'))table.hidden=true;}
+if(Array.isArray(data.summary)&&data.summary.length){const list=document.getElementById('findings');list.textContent='';for(const text of data.summary){const item=document.createElement('li');item.textContent=String(text);list.append(item);}}
+for(const caption of document.querySelectorAll('[data-caption]')){const text=data.captions&&data.captions[caption.dataset.caption];if(typeof text==='string')caption.textContent=text;}
+if(typeof data.calibration_note==='string')document.querySelector('[data-calibration]').textContent=data.calibration_note;
+if(data.training){document.querySelector('#slide-7 .lead').textContent=`实际交付：${data.training.models}份SAC模型，合计${(Number(data.training.steps)/10000).toLocaleString('zh-CN')}万交互步。`;}
+if(Array.isArray(data.limitations)&&data.limitations.length)document.getElementById('limitations').textContent=data.limitations.join('；');show(index);}
+document.getElementById('result-file').onchange=async event=>{try{applyResults(JSON.parse(await event.target.files[0].text()));}catch(error){alert('结果文件无法读取：'+error.message);}};
+if(window.INERTIA_DEFENSE_RESULTS&&window.INERTIA_DEFENSE_RESULTS.verified===true)applyResults(window.INERTIA_DEFENSE_RESULTS);
+show(index);
+</script>
+</body>
+</html>

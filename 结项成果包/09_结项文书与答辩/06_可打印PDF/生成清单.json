@@ -1,0 +1,50 @@
+[
+  {
+    "source": "09_结项文书与答辩\\01_两篇学习综述\\卫星姿态系统搭建学习综述.md",
+    "output": "09_结项文书与答辩\\06_可打印PDF\\卫星姿态系统搭建学习综述.pdf",
+    "pages": 6,
+    "source_sha256": "706a0fd5131813d918a85bf324ae0d960a6737fa62ebda4573300067ae87b6d4",
+    "pdf_sha256": "681f363346231ee44c199db98060dfa358b3fe0d7da09c68bf259f8c4c5e05cd",
+    "text_characters": 6741,
+    "visual_qa": "passed",
+    "school_template_applied": false,
+    "format": "A4 Chinese reading copy",
+    "review_evidence": "09_结项文书与答辩/06_可打印PDF/visual_review.json"
+  },
+  {
+    "source": "09_结项文书与答辩\\01_两篇学习综述\\卫星智能姿态控制系统学习综述.md",
+    "output": "09_结项文书与答辩\\06_可打印PDF\\卫星智能姿态控制系统学习综述.pdf",
+    "pages": 8,
+    "source_sha256": "7d1e1bc4694ca528572c28c0bd58d5fa81ed9ebb2a6af7119c3cd8f2d5563d15",
+    "pdf_sha256": "39f9d5cba7db616803b0315824ee2af0e4637c887fa86934868368309184ca05",
+    "text_characters": 9362,
+    "visual_qa": "passed",
+    "school_template_applied": false,
+    "format": "A4 Chinese reading copy",
+    "review_evidence": "09_结项文书与答辩/06_可打印PDF/visual_review.json"
+  },
+  {
+    "source": "09_结项文书与答辩\\02_结项报告\\项目结项报告内容稿.md",
+    "output": "09_结项文书与答辩\\06_可打印PDF\\项目结项报告内容稿.pdf",
+    "pages": 7,
+    "source_sha256": "7cd3daa8d8c6c78a6422ad0492ce319c8c0ab607662b1abbb23ec7ef6ec9ffca",
+    "pdf_sha256": "7c845e2132e56bb3fd5a6ccec233a5ef5d57050ecd0885d237a90ababe1d1b76",
+    "text_characters": 7321,
+    "visual_qa": "passed",
+    "school_template_applied": false,
+    "format": "A4 Chinese reading copy",
+    "review_evidence": "09_结项文书与答辩/06_可打印PDF/visual_review.json"
+  },
+  {
+    "source": "08_惯量域随机化与泛化边界研究\\05_研究分析与核验\\研究分析.md",
+    "output": "09_结项文书与答辩\\06_可打印PDF\\研究分析.pdf",
+    "pages": 7,
+    "source_sha256": "540fb6c165c218870182c9ce1a95d5bda5b4034a7f4762008c56da341f6f2057",
+    "pdf_sha256": "da4e9f54fd9405f448ca6a376d0e59826988035d2f44012e214aa0e36a4b3e3c",
+    "text_characters": 4778,
+    "visual_qa": "passed",
+    "school_template_applied": false,
+    "format": "A4 Chinese reading copy",
+    "review_evidence": "09_结项文书与答辩/06_可打印PDF/visual_review.json"
+  }
+]

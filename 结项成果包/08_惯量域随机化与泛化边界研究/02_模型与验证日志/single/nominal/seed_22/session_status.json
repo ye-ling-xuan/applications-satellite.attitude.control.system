@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "axis": "single",
+  "mode": "nominal",
+  "seed": 22,
+  "requested_steps": 1000000,
+  "actual_steps": 1000000,
+  "development": false,
+  "eligible_for_final_research": true,
+  "best_checkpoint_steps": 600000,
+  "model_sha256": "89182ee711b55e26e2a65869ff8cd0ece1339a5e1a57906e4d3c3fb2c9a856ae",
+  "checkpoint_count": 10,
+  "wall_time_s": 381.96263790001103
+}

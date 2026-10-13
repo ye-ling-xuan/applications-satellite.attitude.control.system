@@ -1,0 +1,44 @@
+{
+  "review_date":"2026-10-13",
+  "status":"passed",
+  "scope":"supplementary academic-source authenticity/content classification and fixed evidence replay support; no new research experiment",
+  "frozen_files_modified":false,
+  "full_scientific_audit_repeated":false,
+  "literature":{
+    "crossref_independently_requested_again":true,
+    "documents":[
+      {"id":"L01","doi":"10.3390/fractalfract8070385","crossref_type":"journal-article","pages":16,"source_version":"publisher_version","sha256":"ed39e32f9dce2bae88bade5337a8b42c29b5e8c4b9adb612e5a669a2adaca58b","classification":"RBF uncertainty estimation combined with fractional-order sliding-mode control","project_implementation_claimed":false},
+      {"id":"L02","doi":"10.1007/s11431-011-4475-0","crossref_type":"journal-article","pages":13,"source_version":"arxiv_author_manuscript_v2","sha256":"56a6aa1942f48c15e6db2f59204083ae785142eb1b4094b29a5af2a286813497","classification":"classical model-based adaptive attitude synchronization with six inertia parameters","project_implementation_claimed":false},
+      {"id":"L03","doi":"10.1109/ISCAS48785.2022.9937721","crossref_type":"proceedings-article","pages":5,"source_version":"arxiv_author_manuscript_v1","sha256":"d82bc9392a4b139beb68689fb082a3c6d944f4d1a6c786bb743d8d6e11b9a16f","classification":"supervised CNN spacecraft pose estimation, perception rather than torque control","project_implementation_claimed":false}
+    ],
+    "pdf_headers_page_counts_bytes_hashes_match":true,
+    "notes_sha256":"2153ac384e00160dbacab852a7f6b5df5aa9b405d342cf7643e352d28480ab91",
+    "independently_visually_inspected_pdf_pages":{"L01":[5,6,7],"L02":[5],"L03":[4]},
+    "text_page_locators_checked":{"L01":[3,4,5,6,7,8,10,12],"L02":[3,5,7,8,9],"L03":[2,3,4]},
+    "external_numbers_match_table_VI":[0.6160,0.7997,1.30,0.1555,2.72],
+    "academic_count":{"existing":9,"new_distinct":3,"total":12,"not_all_12_fulltext_or_personally_read":true},
+    "failed_acquisition_candidates_not_counted":true,
+    "no_member_reading_confirmation_inferred":true
+  },
+  "minimal_review":{
+    "script_sha256":"ebdd6b55dfb99dc1947bd758012036471852d04380f4a3c8f6369f7b5e5770b2",
+    "fixture_sha256":"ae393748432b92698600ca792779bbf449d10a771ca8f9b633bc101e2e7ca1fb",
+    "failure_fixture_sha256":"1bd36815e222649602ce19a6be591456b95422c225f269475db5d311ffbeb957",
+    "default_writes":false,
+    "bytecode_writes_disabled":true,
+    "explicit_log_policy":"new/empty directory outside the entire original project; UTF-8 exclusive creation",
+    "input_paths_confined_to_package":true,
+    "npz_allow_pickle":false,
+    "main_selection":{"axes":["single","three"],"rho":1.4,"sample_id":0,"sac_seed":11,"controllers":["PID_N","PID_R","SAC_N","SAC_R"]},
+    "cases":8,
+    "loaded_models":4,
+    "formula_review":["error rebuilt from theta/quaternion","rate rebuilt from physical omega","time trapezoidal RMS","right-end applied torque cost","20-second complete horizon and every final-five-second sample acceptance","settling only when sustained success"],
+    "in_memory_formula_checks_passed":["constant-angle RMS","constant physical torque cost","terminal rate excess fails holding","quaternion sign invariance","three project-contained log paths rejected","input escape rejected"],
+    "full20s_run":{"status":"passed","elapsed_s":7.153,"input_hashes_checked":25,"inputs_unchanged":true,"saved_action_commands_checked":5600,"closed_loop_steps":5600,"all_full_horizon_acceptance_matches_saved":true,"max_state_difference":1.0217769831621926e-7,"max_rollout_torque_difference_Nm":3.5762786865234375e-6,"max_saved_action_torque_difference_Nm":1.430511474609375e-6},
+    "failure_example_run":{"status":"passed","input_hashes_checked":3,"inputs_unchanged":true,"selection":"post-result teaching; first lexicographic scenario with three SAC_R seed33 success=False failed=False","scenario_id":"test_three_anisotropic_2_000","success":false,"failed":false,"complete":true,"tail_max_error_deg":0.4400616508324686,"tail_max_rate_deg_s":0.6369836038432221,"final_rate_deg_s":0.356609402928905,"classification":"angular-rate holding threshold failure without physical divergence","excluded_from_main_fixture_and_scalar_boundary":true},
+    "limitations":["PID and closed-loop plant reuse frozen shared implementation","two main scenes and SAC seed11 cannot represent full statistics or weaker seed33","teaching failure sample cannot establish failure frequency or cause","agent execution is not member reproduction/contribution proof","does not replace full 10920-episode independent audit"]
+  },
+  "open_findings":[],
+  "integration_status":"awaiting_root_appendix_pdf_and_delivery_manifest_refresh",
+  "technical_manifest_must_remain_sha256":"200e8f2475475649c0681988a302b88ae504f27ee33b8f579f09daaed2e26649"
+}

@@ -1,0 +1,182 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2026-10-09T03:37:17Z",
+      "timestamp": 1791517037826,
+      "version": "4.3.4"
+    },
+    "publisher-location": "New York, NY",
+    "reference-count": 0,
+    "publisher": "Springer New York",
+    "isbn-type": [
+      {
+        "value": "9781493908011",
+        "type": "print"
+      },
+      {
+        "value": "9781493908028",
+        "type": "electronic"
+      }
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2014-01-01T00:00:00Z",
+          "timestamp": 1388534400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2014-01-01T00:00:00Z",
+          "timestamp": 1388534400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "DOI": "10.1007/978-1-4939-0802-8",
+    "type": "book",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          5,
+          31
+        ]
+      ],
+      "date-time": "2014-05-31T03:50:08Z",
+      "timestamp": 1401508208000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 779,
+    "title": [
+      "Fundamentals of Spacecraft Attitude Determination and Control"
+    ],
+    "prefix": "10.1007",
+    "author": [
+      {
+        "given": "F. Landis",
+        "family": "Markley",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John L.",
+        "family": "Crassidis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "container-title": [],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/978-1-4939-0802-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/978-1-4939-0802-8",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          3,
+          10
+        ]
+      ],
+      "date-time": "2021-03-10T07:38:21Z",
+      "timestamp": 1615361901000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/978-1-4939-0802-8"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "ISBN": [
+      "9781493908011",
+      "9781493908028"
+    ],
+    "references-count": 0,
+    "URL": "https://doi.org/10.1007/978-1-4939-0802-8",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    }
+  }
+}

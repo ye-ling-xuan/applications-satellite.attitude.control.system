@@ -1,0 +1,2 @@
+﻿timesteps,zero_action_normalized,validation_scene_count,success_rate,rms_error_deg,control_cost,score
+32,[0.06738364696502686],20,0.0,26.225970988147072,0.0071402507791563045,-26.227399038302902

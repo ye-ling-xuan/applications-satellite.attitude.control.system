@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "mode": "metrics",
+  "fixed_selection": {
+    "post_result_teaching_sample": true,
+    "axis": "three",
+    "controller": "SAC_R",
+    "model_seed": 33,
+    "rule": "first scenario_id in lexicographic order with success=False and failed=False in the frozen formal CSV"
+  },
+  "execution_identity": "person executing this command; no student contribution is inferred",
+  "python_version": "3.12.4",
+  "python_executable": "D:\\Anaconda2024.06-1\\python.exe",
+  "packages": {
+    "numpy": "1.26.4"
+  },
+  "tolerances": {
+    "metric_absolute": 1e-09,
+    "metric_relative": 1e-09,
+    "state_metric_deg": 1e-08,
+    "quaternion_norm": 1e-12,
+    "zero_action_normalized": 1e-07,
+    "action_torque_Nm": 5e-06,
+    "rollout_state": 1e-05,
+    "rollout_torque_Nm": 0.0001
+  },
+  "fixture_file": "失败教学样本.json",
+  "fixture_sha256": "1bd36815e222649602ce19a6be591456b95422c225f269475db5d311ffbeb957",
+  "expected_results_file": "失败教学样本.json",
+  "expected_results_sha256": "1bd36815e222649602ce19a6be591456b95422c225f269475db5d311ffbeb957",
+  "writes_by_default": false,
+  "records": [
+    {
+      "key": "three_SAC_R_seed33_post_result_teaching",
+      "status": "passed",
+      "metrics_recomputed_from_physical_states": {
+        "success": false,
+        "settling_time_s": null,
+        "rms_error_deg": 12.519374871010987,
+        "tail_mean_error_deg": 0.2517054099591662,
+        "tail_max_error_deg": 0.4400616508324686,
+        "tail_max_rate_deg_s": 0.6369836038432221,
+        "control_cost": 6.039992100373267,
+        "final_error_deg": 0.10802771007186578,
+        "final_rate_deg_s": 0.356609402928905,
+        "failed": false,
+        "complete": true,
+        "failure_time_s": null,
+        "active_duration_s": 20.0,
+        "max_error_deg": 69.3887713341071,
+        "max_rate_deg_s": 67.37021096875378
+      },
+      "trace_state_consistency": {
+        "max_error_array_difference_deg": 1.4210854715202004e-14,
+        "max_rate_array_difference_deg_s": 0.0,
+        "quaternion_max_norm_error": 2.220446049250313e-16
+      },
+      "csv_metric_absolute_differences": {
+        "success": 0.0,
+        "settling_time_s": 0.0,
+        "rms_error_deg": 0.0,
+        "tail_mean_error_deg": 0.0,
+        "tail_max_error_deg": 1.1102230246251565e-16,
+        "tail_max_rate_deg_s": 0.0,
+        "control_cost": 0.0,
+        "final_error_deg": 0.0,
+        "final_rate_deg_s": 0.0,
+        "failed": 0.0,
+        "complete": 0.0,
+        "failure_time_s": 0.0,
+        "active_duration_s": 0.0,
+        "max_rate_deg_s": 0.0,
+        "max_error_deg": 0.0
+      },
+      "expected_metric_absolute_differences": {
+        "success": 0.0,
+        "settling_time_s": 0.0,
+        "rms_error_deg": 0.0,
+        "tail_mean_error_deg": 0.0,
+        "tail_max_error_deg": 1.1102230246251565e-16,
+        "tail_max_rate_deg_s": 0.0,
+        "control_cost": 0.0,
+        "final_error_deg": 0.0,
+        "final_rate_deg_s": 0.0,
+        "failed": 0.0,
+        "complete": 0.0,
+        "failure_time_s": 0.0,
+        "active_duration_s": 0.0,
+        "max_rate_deg_s": 0.0,
+        "max_error_deg": 0.0
+      },
+      "npz_metadata_metric_absolute_differences": {
+        "success": 0.0,
+        "settling_time_s": 0.0,
+        "rms_error_deg": 0.0,
+        "tail_mean_error_deg": 0.0,
+        "tail_max_error_deg": 1.1102230246251565e-16,
+        "tail_max_rate_deg_s": 0.0,
+        "control_cost": 0.0,
+        "final_error_deg": 0.0,
+        "final_rate_deg_s": 0.0,
+        "failed": 0.0,
+        "complete": 0.0,
+        "failure_time_s": 0.0,
+        "active_duration_s": 0.0,
+        "max_rate_deg_s": 0.0,
+        "max_error_deg": 0.0
+      },
+      "action_replay": {
+        "status": "not_requested"
+      },
+      "short_rollout": {
+        "status": "not_requested"
+      },
+      "teaching_classification": "angular-rate threshold exceeded in the final five seconds; angle threshold held and no physical divergence"
+    }
+  ],
+  "frozen_inputs_unchanged": true,
+  "checked_input_count": 3,
+  "checked_input_sha256": {
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/episode_metrics.csv": "cd57c2820472977afb4de00c0463cca88225a4f70ad03ef6f27acf4537974eae",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/SAC_R_seed_33_test_three_anisotropic_2_000.npz": "347996541781b78e995a81475fab8c8af897db857ee375911897dec3fcaf5af8",
+    "08_惯量域随机化与泛化边界研究/01_实验协议与配置/protocol.json": "522530cdc38532dbb90d17e9b5fe0b838037339caa5f2bcc9c233c626c24a22d"
+  },
+  "elapsed_s": 0.085,
+  "limitation": "One failure selected after results for teaching only. It cannot establish the frequency or cause of failure and does not replace the full independent audit."
+}

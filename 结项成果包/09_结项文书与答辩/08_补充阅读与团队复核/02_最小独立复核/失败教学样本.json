@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "purpose": "Post-result teaching sample of existing acceptance failure; selected after results, not predeclared research or representative trajectory replacement",
+  "selection": {
+    "post_result_teaching_sample": true,
+    "axis": "three",
+    "controller": "SAC_R",
+    "model_seed": 33,
+    "rule": "first scenario_id in lexicographic order with success=False and failed=False in the frozen formal CSV"
+  },
+  "protocol": {
+    "nominal_inertia": {
+      "single": [
+        1.0
+      ],
+      "three": [
+        1.2,
+        1.0,
+        0.8
+      ]
+    },
+    "dt": {
+      "single": 0.05,
+      "three": 0.02
+    },
+    "max_torque": {
+      "single": 0.5,
+      "three": 2.0
+    },
+    "duration": 20.0,
+    "hold_seconds": 5.0,
+    "angle_tolerance_deg": 1.0,
+    "rate_tolerance_deg_s": 0.5
+  },
+  "tolerances": {
+    "metric_absolute": 1e-09,
+    "metric_relative": 1e-09,
+    "state_metric_deg": 1e-08,
+    "quaternion_norm": 1e-12,
+    "zero_action_normalized": 1e-07,
+    "action_torque_Nm": 5e-06,
+    "rollout_state": 1e-05,
+    "rollout_torque_Nm": 0.0001
+  },
+  "formal_csv": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/episode_metrics.csv",
+  "cases": [
+    {
+      "key": "three_SAC_R_seed33_post_result_teaching",
+      "axis": "three",
+      "controller": "SAC_R",
+      "model_seed": 33,
+      "scenario": {
+        "axis": "three",
+        "split": "test",
+        "sample_id": 0,
+        "initial_state_seed": 2026101203,
+        "euler_deg": [
+          -43.88300267968481,
+          56.37005764378081,
+          -45.29315909120902
+        ],
+        "omega_deg_s": [
+          0.95085570944513,
+          4.73876252921378,
+          -1.2774658527343163
+        ],
+        "scenario_id": "test_three_anisotropic_2_000",
+        "case_id": "anisotropic_2",
+        "case": "anisotropic_2",
+        "family": "inertia_anisotropic",
+        "experiment": "anisotropic",
+        "level": "anisotropic_2",
+        "rho": null,
+        "domain": "anisotropic_transfer",
+        "inertia_scale": [
+          1.4,
+          1.0,
+          1.0
+        ],
+        "planned_validation_rho": null,
+        "noise_seed": 2026111203,
+        "disturbance_bias": 0.0,
+        "disturbance_amplitude": 0.0,
+        "pulse_torque": 0.0,
+        "noise_theta_deg": 0.0,
+        "noise_omega_deg": 0.0
+      },
+      "csv_trace_file": "three/raw_traces/SAC_R_seed_33_test_three_anisotropic_2_000.npz",
+      "trace_path": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/SAC_R_seed_33_test_three_anisotropic_2_000.npz"
+    }
+  ],
+  "input_sha256": {
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/episode_metrics.csv": "cd57c2820472977afb4de00c0463cca88225a4f70ad03ef6f27acf4537974eae",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/SAC_R_seed_33_test_three_anisotropic_2_000.npz": "347996541781b78e995a81475fab8c8af897db857ee375911897dec3fcaf5af8",
+    "08_惯量域随机化与泛化边界研究/01_实验协议与配置/protocol.json": "522530cdc38532dbb90d17e9b5fe0b838037339caa5f2bcc9c233c626c24a22d"
+  },
+  "expected_results": {
+    "cases": {
+      "three_SAC_R_seed33_post_result_teaching": {
+        "success": false,
+        "settling_time_s": null,
+        "rms_error_deg": 12.519374871010987,
+        "tail_mean_error_deg": 0.2517054099591662,
+        "tail_max_error_deg": 0.4400616508324685,
+        "tail_max_rate_deg_s": 0.6369836038432221,
+        "control_cost": 6.039992100373267,
+        "final_error_deg": 0.10802771007186578,
+        "final_rate_deg_s": 0.356609402928905,
+        "failed": false,
+        "complete": true,
+        "failure_time_s": null,
+        "active_duration_s": 20.0,
+        "max_rate_deg_s": 67.37021096875378,
+        "max_error_deg": 69.3887713341071
+      }
+    },
+    "provenance": "existing frozen formal CSV; post-result teaching sample only"
+  },
+  "protocol_path": "08_惯量域随机化与泛化边界研究/01_实验协议与配置/protocol.json"
+}

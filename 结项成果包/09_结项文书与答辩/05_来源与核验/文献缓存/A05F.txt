@@ -1,0 +1,548 @@
+                                        Sim-to-Real Transfer of Robotic Control with Dynamics Randomization
+                                                         Xue Bin Peng1,2 , Marcin Andrychowicz1 , Wojciech Zaremba1 , and Pieter Abbeel1,2
+
+
+                                           Abstract— Simulations are attractive environments for train-
+                                        ing agents as they provide an abundant source of data and
+                                        alleviate certain safety concerns during the training process.
+                                        But the behaviours developed by agents in simulation are often
+                                        specific to the characteristics of the simulator. Due to modeling
+                                        error, strategies that are successful in simulation may not
+                                        transfer to their real world counterparts. In this paper, we
+arXiv:1710.06537v3 [cs.RO] 3 Mar 2018
+
+
+
+
+                                        demonstrate a simple method to bridge this “reality gap”. By
+                                                                                                                Fig. 1. A recurrent neural network policy trained for a pushing task in
+                                        randomizing the dynamics of the simulator during training, we           simulation is deployed directly on a Fetch Robotics arm. The red marker
+                                        are able to develop policies that are capable of adapting to            indicates the target location for the puck.
+                                        very different dynamics, including ones that differ significantly
+                                        from the dynamics on which the policies were trained. This              approach to develop policies that can be transferred directly
+                                        adaptivity enables the policies to generalize to the dynamics of        to the real world. The effectiveness of our approach is
+                                        the real world without any training on the physical system. Our
+                                        approach is demonstrated on an object pushing task using a              demonstrated on an object pushing task, where a policy
+                                        robotic arm. Despite being trained exclusively in simulation, our       trained exclusively in simulation is able to successfully
+                                        policies are able to maintain a similar level of performance when       perform the task with a real robot without additional training
+                                        deployed on a real robot, reliably moving an object to a desired        on the physical system.
+                                        location from random initial configurations. We explore the
+                                        impact of various design decisions and show that the resulting                               II. RELATED WORK
+                                        policies are robust to significant calibration error.
+                                                                                                                   Recent years have seen the application of deep reinforce-
+                                                             I. INTRODUCTION                                    ment learning to a growing repertoire of control problems.
+                                           Deep reinforcement learning (DeepRL) has been shown                  The framework has enabled simulated agents to develop
+                                        to be an effective framework for solving a rich reper-                  highly dynamic motor skills [4], [5], [6], [7]. But due to
+                                        toire of complex control problems. In simulated domains,                the high sample complexity of RL algorithms and other
+                                        agents have been developed to perform a diverse array of                physical limitations, many of the capabilities demonstrated
+                                        challenging tasks [1], [2], [3]. Unfortunately, many of the             in simulation have yet to be replicated in the physical world.
+                                        capabilities demonstrated by simulated agents have often                Guided Policy Search (GPS) [8] represents one of the few
+                                        not been realized by their physical counterparts. Many of               algorithms capable of training policies directly on a real
+                                        the modern DeepRL algorithms, which have spurred recent                 robot. By leveraging trajectory optimization with learned lin-
+                                        breakthroughs, pose high sample complexities, therefore                 ear dynamics models, the method is able to develop complex
+                                        often precluding their direct application to physical systems.          manipulation skills with relatively few interactions with the
+                                        In addition to sample complexity, deploying RL algorithms               environment. The method has also been extended to learning
+                                        in the real world also raises a number of safety concerns               vision-based manipulation policies [9]. Researchers have also
+                                        both for the agent and its surroundings. Since exploration              explored parallelizing training across multiple robots [10].
+                                        is a key component of the learning process, an agent can at             Nonetheless, successful examples of training policies directly
+                                        times perform actions that endanger itself or its environment.          on physical robots have so far been demonstrated only on
+                                        Training agents in simulation is a promising approach that              relatively restrictive domains.
+                                        circumvents some of these obstacles. However, transferring              A. Domain Adaptation
+                                        policies from simulation to the real world entails challenges
+                                                                                                                   The problem of transferring control policies from sim-
+                                        in bridging the ”reality gap”, the mismatch between the
+                                                                                                                ulation to the real world can be viewed as an instance
+                                        simulated and real world environments. Narrowing this gap
+                                                                                                                of domain adaptation, where a model trained in a source
+                                        has been a subject of intense interest in robotics, as it offers
+                                                                                                                domain is transfered to a new target domain. One of the
+                                        the potential of applying powerful algorithms that have so
+                                                                                                                key assumptions behind these methods is that the different
+                                        far been relegated to simulated domains.
+                                                                                                                domains share common characteristics such that representa-
+                                           While significant efforts have been devoted to building
+                                                                                                                tions and behaviours learned in one will prove useful for the
+                                        higher fidelity simulators, we show that dynamics random-
+                                                                                                                other. Learning invariant features has emerged as a promising
+                                        ization using low fidelity simulations can also be an effective
+                                                                                                                approach of taking advantage of these commonalities [11],
+                                             1 OpenAI                                                           [12]. Tzeng et al. [11] and Gupta et al. [13] explored using
+                                             2 UC Berkeley, Department of Electrical Engineering and Computer   pairwise constraints to encourage networks to learn similar
+                                        Science                                                                 embeddings for samples from different domains that are
+labeled as being similar. Daftry et al. [14] applied a similar     their policies were modeled using memoryless feedforward
+approach to transfer policies for controlling aerial vehicles      networks, and while the policies developed robust strategies,
+to different environments and vehicle models. In the context       the lack of internal state limits the feedforward policies’
+of RL, adversarial losses have been used to transfer policies      ability to adapt to mismatch between the simulated and real
+between different simulated domains, by encouraging agents         environment. We show that memory-based policies are able
+to adopt similar behaviours across the various environments        to cope with greater variability during training and also better
+[15]. Alternatively, progressive networks have also been used      generalize to the dynamics of the real world. Unlike previous
+to transfer policies for a robotic arm from simulation to the      methods which often require meticulous calibration of the
+real world [16]. By reusing features learned in simulation,        simulation to closely conform to the physical system, our
+their method was able to significantly reduce the amount           policies are able to adapt to significant calibration error.
+of data needed from the physical system. Christiano et al.
+[17] transfered policies from simulation to a real robot by        C. Non-prehensile Manipulation
+training an inverse-dynamics model from real world data.
+                                                                      Pushing, a form of non-prehensile manipulation, is an
+While promising, these methods nonetheless still require data
+                                                                   effective strategy for positioning and orienting objects that
+from the target domain during training.
+                                                                   are too large or heavy to be grasped [26]. Though pushing has
+B. Domain Randomization                                            attracted much interest from the robotics community [27],
+                                                                   [28], [29], it remains a challenging skill for robots to adopt.
+   Domain randomization is a complementary class of tech-
+                                                                   Part of the difficulty stems from accurately modeling the
+niques for adaptation that is particularly well suited for sim-
+                                                                   complex contact dynamics between surfaces. Characteristics
+ulation. With domain randomization, discrepancies between
+                                                                   such as friction can vary significantly across the surface of an
+the source and target domains are modeled as variability
+                                                                   object, and the resulting motions can be highly sensitive to
+in the source domain. Randomization in the visual domain
+                                                                   the initial configuration of the contact surfaces [26]. Models
+has been used to directly transfer vision-based policies from
+                                                                   have been proposed to facilitate planning algorithms [27],
+simulation to the real world without requiring real images
+                                                                   [30], [28], but they tend to rely on simplifying assumptions
+during training [18], [19]. Sadeghi and Levine [18] trained
+                                                                   that are often violated in practice. More recently, deep learn-
+vision-based controllers for a quadrotor using only synthet-
+                                                                   ing methods have been applied to train predictive models for
+ically rendered scenes, and Tobin et al. [19] demonstrated
+                                                                   pushing [31]. While data-driven methods overcome some of
+transferring image-based object detectors. Unlike previous
+                                                                   the modeling challenges faced by previous frameworks, they
+methods, which sought to bridge the reality gap with high
+                                                                   require a large corpus of real world data during training.
+fidelity rendering [20], their systems used only low fidelity
+                                                                   Such a dataset can be costly to collect, and may become
+rendering and modeled differences in visual appearance by
+                                                                   prohibitive for more complex tasks. Clavera et al. demon-
+randomizing scene properties such as lighting, textures, and
+                                                                   strated transferring pushing policies trained in simulation to
+camera placement. In addition to randomizing the visual
+                                                                   a real PR2 [32]. Their approach took advantage of shaped
+features of a simulation, randomized dynamics have also
+                                                                   reward functions and careful calibration to ensure that the
+been used to develop controllers that are robust to uncertainty
+                                                                   behaviour of the simulation conforms to that of the physical
+in the dynamics of the system. Mordatch et al. [21] used a
+                                                                   system. In contrast, we will show that adaptive policies can
+trajectory optimizer to plan across an ensemble of dynamics
+                                                                   be trained exclusively in simulation and using only sparse
+models, to produce robust trajectories that are then executed
+                                                                   rewards. The resulting policies are able accommodate large
+on a real robot. Their method allowed a Darwin robot to
+                                                                   calibration errors when deployed on a real robot and also
+perform a variety of locomotion skills. But due to the cost
+                                                                   generalize to variability in the dynamics of the physical
+of the trajectory optimization step, the planning is performed
+                                                                   system.
+offline. Other methods have also been proposed to develop
+robust policies through adversarial training schemes [22],
+                                                                                      III. BACKGROUND
+[23]. Yu et al. [24] trained a system identification module
+to explicitly predict parameters of interest, such as mass and        In this section we will provide a review of the RL
+friction. The predicted parameters are then provided as input      framework and notation used in the following sections. We
+to a policy to compute the appropriate controls. While the         consider a standard RL problem where an agent interacts
+results are encouraging, these methods have so far only been       with an environment according to a policy in order to
+demonstrated on transfer between different simulators.             maximize a reward. The state of the environment at timestep
+   The work most reminiscent to our proposed method is             t is denoted by st ∈ S. For simplicity, we assume that
+that of Antonova et al. [25], where randomized dynamics            the state is fully observable. A policy π(a|s) defines a
+was used to transfer manipulation policies from simulation         distribution over the action space A given a particular state s,
+to the real world. By randomizing physical parameters such         where each query to the policy samples an action a from the
+as friction and latency, they were able to train policies in       conditional distribution. The reward function r : S × A →
+simulation for pivoting objects held by a gripper, and later       R provides a scalar signal that reflects the desirability of
+transfer the policies directly to a Baxter robot without requir-   performing an action at a given state. For convenience, we
+ing additional fine-tuning on the physical system. However         denote rt = r(st , at ). The goal of the agent is to maximize
+                            PT       0
+the multi-step return Rt = t0 =t γ t −t rt0 , where γ ∈ [0, 1]     Learning from a sparse binary reward is known to be chal-
+is a discount factor and T is the horizon of each episode.         lenging for most modern RL algorithms. We will therefore
+   The objective during learning is to find an optimal policy      leverage a recent innovation, Hindsight Experience Relay
+π ∗ that maximize the expected return of the agent J(π)            (HER) [35], to train policies using sparse rewards. Consider
+                                                                   an episode with trajectory τ ∈ (s0 , a0 , ..., aT −1 , sT ), where
+                     π ∗ = arg max J(π)                            the goal g was not satisfied over the course the trajectory.
+                                  π
+                                                                   Since the goal was not satisfied, the reward will be −1
+If each episode starts in a fixed initial state, expected return   at every timestep, therefore providing the agent with little
+can be rewritten as the expected return starting at the first      information on how to adjust its actions to procure more
+step                                                               rewards. But suppose that we are provided with a mapping
+                                        "T −1             #        m : S → G, that maps a state to the corresponding
+                                                                   goal satisfied in the given state. For example, m(sT ) = g 0
+                                          X
+        J(π) = E[R0 |π] = Eτ ∼p(τ |π)          r(st , at )
+                                              t=0                  represents the goal that is satisfied in the final state of the
+                                                                   trajectory. Once a new goal has been determined, rewards can
+where p(τ |π) represents the likelihood of a trajectory
+                                                                   be recomputed for the original trajectory under the new goal
+τ = (s0 , a0 , s1 , ..., aT −1 , sT ) under the policy π,
+                                                                   g 0 . While the trajectory was unsuccessful under the original
+                             −1
+                            TY                                     goal, it becomes a successful trajectory under the new goal.
+         p(τ |π) = p(s0 )         p(st+1 |st , at )π(st , at )     Therefore, the rewards computed with respect to g 0 will not
+                            t=0                                    be −1 for every timestep. By replaying past experiences with
+                                                                   HER, the agent can be trained with more successful examples
+with the state transition model p(st+1 |st , at ) being deter-
+                                                                   than is available in the original recorded trajectories. So far,
+mined by the dynamics of the environment. The dynamics
+                                                                   we have only considered replaying goals from the final state
+is therefore of crucial importance, as it determines the
+                                                                   of a trajectory. But HER is also amenable to other replay
+consequences of the agent’s actions, as well as the behaviours
+                                                                   strategies, and we refer interested readers to the original
+that can be realized.
+                                                                   paper [35] for more details.
+A. Policy Gradient Methods                                                                 IV. METHOD
+   For a parametric policy πθ with parameters θ, the objective        Our objective is to train policies that can perform a task
+is to find the optimal parameters θ∗ that maximizes the            under the dynamics of the real world p∗ (st+1 |st , at ). Since
+expected return θ∗ = arg maxθ J(πθ ). Policy gradient              sampling from the real world dynamics can be prohibitive,
+methods [33] is a popular class of algorithms for learning         we instead train a policy using an approximate dynamics
+parametric policies, where an estimate of the gradient of          model p̂(st+1 |st , at ) ≈ p∗ (st+1 |st , at ) that is easier to
+the objective Oθ J(πθ ) is used to perform gradient ascent to      sample from. For all of our experiments, p̂ assumes the form
+maximize the expected return. While the previous definition        of a physics simulation. Due to modeling and other forms
+of a policy is suitable for tasks where the goal is common         of calibration error, behaviours that successfully accomplish
+across all episodes, it can be generalized to tasks where an       a task in simulation may not be successful once deployed
+agent is presented with a different goal every episode by          in the real world. Furthermore, it has been observed that
+constructing a universal policy [34]. A universal policy is        DeepRL policies are prone to exploiting idiosyncrasies of the
+a simple extension where the goal g ∈ G is provided as             simulator to realize behaviours that are infeasible in the real
+an additional input to the policy π(a|s, g). The reward is         world [2], [7]. Therefore, instead of training a policy under
+then also dispensed according to the goal r(st , at , g). In our   one particular dynamics model, we train a policy that can
+framework, a random goal will be sampled at the start of           perform a task under a variety of different dynamics models.
+each episode, and held fixed over the course the episode.          First we introduce a set of dynamics parameters µ that pa-
+For the pushing task, the goal specifies the target location       rameterizes the dynamics of the simulation p̂(st+1 |st , at , µ).
+for an object.                                                     The objective is then modified to maximize the expected
+                                                                   return across a distribution of dynamics models ρµ ,
+B. Hindsight Experience Replay
+                                                                                      "            "T −1             ##
+   During training, RL algorithms often benefit from care-                                           X
+fully shaped reward functions that help guide the agent to-                       E Eτ ∼p(τ |π,µ)         r(st , at )
+                                                                                µ∼ρµ
+wards fulfilling the overall objective of a task. But designing                                       t=0
+
+a reward function can be challenging for more complex              By training policies to adapt to variability in the dynamics
+tasks, and may bias the policy towards adopting less optimal       of the environment, the resulting policy might then better
+behaviours. An alternative is to use a binary reward r(s, g)       generalize to the dynamics of real world.
+that only indicates if a goal is satisfied in a given state,
+                      (                                            A. Tasks
+                        0,     if g is satisfied in s                Our experiments are conducted on a puck pushing task
+            r(s, g) =
+                        −1, otherwise                              using a 7-DOF Fetch Robotics arm. Images of the real robot
+                                                                       friction, and characteristics of the actuators). In order to
+                                                                       determine the appropriate actions, a policy requires some
+                                                                       means of inferring the underlying dynamics of its environ-
+                                                                       ment. While the dynamics parameters are readily available
+                                                                       in simulation, the same does not hold once a policy has been
+                                                                       deployed in the real world. In the absence of direct knowl-
+                                                                       edge of the parameters, the dynamics can be inferred from a
+                                                                       history of past states and actions. System identification using
+                                                                       a history of past trajectories has been previously explored by
+                                                                       Yu et al. [24]. Their system incorporates an online system
+                                                                       identification module φ(st , ht ) = µ̂, which utilizes a history
+Fig. 2. Our experiments are conducted on a 7-DOF Fetch Robotics arm.   of past states and actions ht = [at−1 , st−1 , at−2 , st−2 , ...] to
+Left: Real robot. Right: Simulated MuJoCo model.                       predict the dynamics parameters µ. The predicted parameters
+and simulated model is available in Figure 2. The goal g for           are then used as inputs to a universal policy that samples an
+each episode specifies a random target position on the table           action according to the current state and inferred dynamics
+that the puck should be moved to. The reward is binary with            π(at |st , µ̂). However, this decomposition requires identify-
+rt = 0 if the puck is within a given distance of the target,           ing the dynamics parameters of interest to be predicted at
+and rt = −1 otherwise. At the start of each episode, the arm           runtime, which may be difficult for more complex systems.
+is initialized to a default pose and the initial location of the       Constructing such a set of parameters necessarily requires
+puck is randomly placed within a fixed bound on the table.             some structural assumptions about the dynamics of a system,
+                                                                       which may not hold in the real world. Alternatively, SysID
+B. State and Action                                                    can be implicitly embedded into a policy by using a recurrent
+   The state is represented using the joint positions and              model π(at |st , zt , g), where the internal memory zt = z(ht )
+velocities of the arm, the position of the gripper, as well as         acts as a summary of past states and actions, thereby pro-
+the puck’s position, orientation, linear and angular velocities.       viding a mechanism with which the policy can use to infer
+The combined features result in a 52D state space. Actions             the dynamics of the system. This model can then be trained
+from the policy specify target joint angles for a position             end-to-end and the representation of the internal memory can
+controller. Target angles are specified as relative offsets from       be learned without requiring manual identification of a set
+the current joint rotations. This yields a 7D action space.            of dynamics parameters to be inferred at runtime.
+
+C. Dynamics Randomization                                              E. Recurrent Deterministic Policy Gradient
+   During training, rollouts are organized into episodes of a             Since HER augments the original training data recorded
+fixed length. At the start of each episode, a random set of            from rollouts of the policy with additional data generated
+dynamics parameters µ are sampled according to ρµ and held             from replayed goals, it requires off-policy learning. Deep
+fixed for the duration of the episode. The parameters which            Deterministic Policy Gradient (DDPG) [2] is a popular off-
+we randomize include:                                                  policy algorithm for continuous control. Its extension to
+   • Mass of each link in the robot’s body                             recurrent policies, Recurrent Deterministic Policy Gradient
+   • Damping of each joint                                             (RDPG) [36], provides a method to train recurrent poli-
+   • Mass, friction, and damping of the puck                           cies with off-policy data. To apply RDPG, we denote a
+   • Height of the table                                               deterministic policy as π(st , zt , g) = at . In additional to
+   • Gains for the position controller                                 the policy, we will also model a recurrent universal value
+   • Timestep between actions                                          function as Q(st , at , yt , g, µ), where yt = y(ht ) is the value
+   • Observation noise                                                 function’s internal memory. Since the value function is used
+which results in a total of 95 randomized parameters. The              only during training and the dynamics parameters µ of the
+timestep between actions specifies the amount of time an               simulator are known, µ is provided as an additional input to
+action is applied before the policy is queried again to sample         the value function but not to the policy. We will refer to a
+a new action. This serves as a simple model of the latency             value function with knowledge of the dynamics parameters
+exhibited by the physical controller. The observation noise            as an omniscient critic. This follows the approach of [37],
+models uncertainty in the sensors and is implemented as                [38], where additional information is provided to the value
+independent Gaussian noise applied to each state feature.              function during training in order to reduce the variance of
+While parameters such as mass and damping are constant                 the policy gradients and allow the value function to provide
+over the course of an episode, the action timestep and the             more meaningful feedback for improving the policy.
+observation noise varies randomly each timestep.                          Algorithm 1 summarizes the training procedure, where
+                                                                       M represents a replay buffer [2], and θ and ϕ are the
+D. Adaptive Policy                                                     parameters for the policy and value function respectively. We
+  Manipulation tasks, such as pushing, have a strong depen-            also incorporate target networks [2], but they are excluded
+dency on the physical properties of the system (e.g. mass,             for brevity.
+Algorithm 1 Dynamics Randomization with HER and
+RDPG
+ 1: θ ← random weights
+ 2: ϕ ← random weights
+ 3: while not done do
+ 4:   g ∼ ρg sample goal
+ 5:   µ ∼ ρµ sample dynamics
+ 6:   Generate rollout τ = (s0 , a0 , ..., sT )with dynamics µ
+ 7:   for each st , at in τ do
+ 8:     rt ← r(st , g)
+ 9:   end for
+10:   Store (τ, {rt }, g, µ) in M
+11:   Sample episode (τ, {rt }, g, µ) from M
+12:   with probability k
+13:     g ← replay new goal with HER
+14:     rt ← r(st , g) for each t
+15:   endwith
+
+16:   for each t do
+17:     Compute memories zt and yt
+18:     ât+1 ← πθ (st+1 , zt+1 , g)                               Fig. 3. LSTM policy deployed on the Fetch arm. Bottom: The contact
+19:     ât ← πθ (st , zt , g)                                     dynamics of the puck was modified by attaching a packet of chips to the
+                                                                   bottom.
+20:     qt ← rt + γQϕ (st+1 , ât+1 , yt+1 , g, µ)
+21:     4qt ← qt − Qϕ (st , at , yt , g, µ)                        each hidden layer (apart from the LSTM). The output layer
+22:   end for P                                                    of Q consists of linear units, while π consists of tanh output
+                          ∂Q (s ,a ,y ,g,µ)
+23:   Oϕ = T1 t 4qt ϕ t ∂ϕt t                                      units scaled to span the bounds of each action parameter.
+                   ∂Q (s ,â ,y ,g,µ) ∂ât
+      Oθ = T1 t ϕ t ∂at t
+              P
+24:                                    ∂θ
+25:   Update value function and policy with Oθ and Oϕ                                    V. EXPERIMENTS
+26: end while                                                         Results are best seen in the supplemental video
+                                                                   https://youtu.be/XUW0cnvqbwM. Snapshots of policies de-
+                                                                   ployed on the real robot are available in Figure 3. All
+F. Network Architecture                                            simulations are performed using the MuJoCo physics engine
+                                                                   [39] with a simulation timestep of 0.002s. 20 simulation
+   A schematic illustrations of the policy and value networks      timesteps are performed for every control timestep. Each
+are available in Figure 4. The inputs to the network consist of    episode consists of 100 control timestep, corresponding to
+the current state st and previous action at−1 , and the internal   approximately 4 seconds per episode, but may vary as a
+memory is updated incrementally at every step. Each network        result of the random timesteps between actions. Table I
+consists of a feedforward branch and recurrent branch, with        details the range of values for each dynamics parameter.
+the latter being tasked with inferring the dynamics from           At the start of each episode, a new set of parameters µ is
+past observations. The internal memory is modeled using a          sampled by drawing values for each parameter from their
+layer of LSTM units and is provided only with information          respective range. Parameters such as mass, damping, friction,
+required to infer the dynamics (e.g. st and at−1 ). The            and controller gains are logarithmically sampled, while other
+recurrent branch consists of an embedding layer of 128 fully-      parameters are uniformly sampled. The timestep 4t between
+connected units followed by 128 LSTM units. The goal g             actions varies every step according to 4t ∼ 4t0 + Exp(λ),
+does not hold any information regarding the dynamics of the        where 4t0 = 0.04s is the default control timestep, and
+system, and is therefore processed only by the feedforward         Exp(λ) is an exponential distribution with rate parameter
+branch. Furthermore, since the current state st is of particular   λ. While 4t varies every timestep, λ is fixed within each
+importance for determining the appropriate action for the
+current timestep, a copy is also provided as input to the               Parameter                              Range
+                                                                        Link Mass              [0.25, 4]× default mass of each link
+feedforward branch. This presents subsequent layers with                Joint Damping        [0.2, 20]× default damping of each joint
+more direct access to the current state, without requiring in-          Puck Mass                           [0.1, 0.4]kg
+formation to filter through the LSTM. The features computed             Puck Friction                          [0.1, 5]
+                                                                        Puck Damping                     [0.01, 0.2]N s/m
+by both branches are then concatenated and processed by 2               Table Height                       [0.73, 0.77]m
+additional fully-connected layers of 128 units each. The value          Controller Gains              [0.5, 2]× default gains
+network Q(st , at , at−1 , g, µ) follows a similar architecture,        Action Timestep λ                 [125, 1000]s−1
+with the query action at and parameters µ being processed                                   TABLE I
+by the feedforward branch. ReLU activations are used after               DYNAMICS PARAMETERS AND THEIR RESPECTIVE RANGES .
+                                                                                 consists of 200 timesteps. Little calibration was performed to
+                                                                                 ensure that the behaviour of the simulation closely conforms
+                                                                                 to that of the real robot. While more extensive calibration
+                                                                                 will likely improve performance, we show that our policy
+                                                                                 is nonetheless able to adapt to the physical system despite
+                                                                                 poor calibration. To illustrate the discrepancies between the
+                                                                                 dynamics of the real world and simulation we executed the
+                                                                                 same target trajectory on the real and simulated robot, and
+                                                                                 recorded the resulting joint trajectories. Figure 5 illustrates
+                                                                                 the recorded trajectories. Given the same target trajectory,
+                                                                                 the pose trajectories of the simulated and real robot differ
+                                                                                 significantly, with varying degrees of mismatch across joints.
+                                                                                    During training, parameter updates are performed using
+                                                                                 the ADAM optimizer [40] with a stepsize of 5 × 10−4 for
+                                                                                 both the policy and value function. Updates are performed
+                                                                                 using batches of 128 episodes with 100 steps per episode.
+                                                                                 New goals are sampled using HER with a probability of k =
+                                                                                 0.8. Each policy is trained for approximately 8000 update
+                                                                                 iterations using about 100 million samples, which requires
+Fig. 4. Schematic illustrations of the policy network (top), and value           approximately 8 hours to simulate on a 100 core cluster.
+network (bottom). Features that are relevant for inferring the dynamics of
+the environment are processed by the recurrent branch, while the other inputs    A. Comparison of Architectures
+are processed by the feedforward branch.
+                                                                                    To evaluate the impact of different architectural choices,
+episode. In addition to randomizing the physical properties                      we compared policies modeled using different architectures
+of the simulated environment, we also simulate sensor noise                      and tested their performance in simulation and on the real
+by applying gaussian noise to the observed state features at                     robot. The first is an LSTM policy following the architecture
+every step. The noise has a mean of zero and a standard                          illustrated in Figure 4. Next we consider a memoryless
+deviation of 5% of the running standard deviation of each                        feedforward network (FF) that receives only the current state
+feature. Gaussian action exploration noise is added at every                     st and goal g as input. As a baseline, we also trained
+step with a standard deviation of 0.01rad.                                       a memoryless feedforward network without randomization
+   The real puck has a mass of approximately 0.2kg and                           (FF no Rand), then evaluated the performance with ran-
+a radius of 0.065m. The goal is considered satisfied if the                      domization. To provide the feedforward network with more
+puck is within 0.07m of the target. The location of the                          information to infer the dynamics, we augmented the inputs
+puck is tracked using the PhaseSpace mocap system. When                          with a history of the 8 previously observed states and actions
+evaluating performance on the physical system, each episode                      (FF + Hist). The success rate is determined as the portion of
+                                                                                 episodes where the goal is fulfilled at the end of the episode.
+                                                                                 In simulation, performance of each policy is evaluated over
+                                                                                 100 episodes, with randomized dynamics parameters for
+                                                                                 each episode. Learning curves comparing the performance
+                                                                                 of different model architectures in simulation are available
+                                                                                 in Figure 6. Four policies initialized with different random
+                                                                                 seeds are trained for each architecture. The LSTM learns
+                                                                                 faster while also converging to a higher success rate than
+
+
+
+
+Fig. 5. Joint trajectories recorded from the simulated and real robot when
+executing the same target trajectories. The joints correspond to the shoulder,   Fig. 6. Learning curves of different network architectures. Four policies
+elbow, and wrist of the Fetch arm.                                               are trained for each architecture with different random seeds. Performance
+                                                                                 is evaluated over 100 episodes in simulation with random dynamics.
+                                                                                    Model          Success (Sim)    Success (Real)    Trials (Real)
+                                                                                    LSTM           0.91 ± 0.03      0.89 ± 0.06            28
+                                                                                    FF no Rand      0.51 ± 0.05       0.0 ± 0.0            10
+                                                                                    FF              0.83 ± 0.04      0.67 ± 0.14           12
+                                                                                    FF + Hist       0.87 ± 0.03      0.70 ± 0.10           20
+                                                                                                           TABLE II
+                                                                                 P ERFORMANCE OF THE POLICIES WHEN DEPLOYED ON THE SIMULATED
+                                                                                 AND REAL ROBOT. P ERFORMANCE IN SIMULATION IS EVALUATED OVER
+                                                                                       100 TRIALS WITH RANDOMIZED DYNAMICS PARAMETERS .
+
+                                                                                            Model                      Success       Trials
+Fig. 7. Performance of different models when deployed on the simulated                      all                     0.89 ± 0.06       28
+and real robot for the pushing task. Policies are trained using only data from              fixed action timestep    0.29 ± 0.11      17
+simulation.                                                                                 no observation noise     0.25 ± 0.12      12
+                                                                                            fixed link mass          0.64 ± 0.10      22
+the feedforward models. The feedforward network trained                                     fixed puck friction      0.48 ± 0.10      27
+without randomization is unable to cope with unfamiliar                                                 TABLE III
+dynamics during evaluation. While training a memoryless                          P ERFORMANCE OF LSTM POLICIES ON THE REAL ROBOT, WHERE THE
+policy with randomization improves robustness to random                           POLICIES ARE TRAINED WITH SUBSETS OF PARAMETERS HELD FIXED .
+dynamics, it is still unable to perform the task consistently.
+   Next, we evaluate the performance of the different models                     also develops clever strategies to make fine adjustments to
+when deployed on the real Fetch arm. Figure 7 compares                           position the puck over the target. One such strategy involves
+the performance of the final policies when deployed in                           pressing on one side of the puck in order to partially upend
+simulation and the real world. Table II summarizes the                           it before sliding it to the target. Other strategies including
+performance of the models. The target and initial location                       manipulating the puck from the top or sides depending on the
+of the puck is randomly placed within a 0.3m × 0.3m                              required adjustments, and correcting for case where the puck
+bound. While the performance of LSTM and FF + Hist                               overshoots the target. These behaviours emerged naturally
+policies are comparable in simulation, the LSTM is able to                       from the learning process using only a sparse binary reward.
+better generalize to the dynamics of the physical system. The
+                                                                                                       VI. C ONCLUSIONS
+feedforward network trained without randomization is unable
+to perform the task under the real world dynamics.                                  We demonstrated the use of dynamics randomization
+                                                                                 to train recurrent policies that are capable of adapting
+B. Ablation                                                                      to unfamiliar dynamics at runtime. Training policies with
+   To evaluate the effects of randomizing the various dy-                        randomized dynamics in simulation enables the resulting
+namics parameters, we trained policies with subsets of the                       policies to be deployed directly on a physical robot despite
+parameters held fixed. A complete list of the dynamics                           poor calibrations. By training exclusively in simulation, we
+parameters are available in Table I. The configurations we                       are able to leverage simulators to generate a large volume
+consider include training with a fixed timestep between                          of training data, thereby enabling us to use powerful RL
+actions, training without observation noise, or with fixed                       techniques that are not yet feasible to apply directly on a
+mass for each link. Table III summarizes the performance                         physical system. Our experiments with a real world pushing
+of the resulting policies when deployed on the real robot.                       tasks showed comparable performance to simulation and the
+Disabling randomization of the action timestep, observation                      ability to adapt to changes in contact dynamics. We also
+noise, link mass, and friction impairs the policies’ ability to                  evaluated the importance of design decisions pertaining to
+adapt to the physical environment. Policies trained without                      choices of architecture and parameters which to randomize
+randomizing the action timestep and observation noise show                       during training. We intend to extend this work to a richer
+particularly noticeable drops in performance. This suggests                      repertoire tasks and incorporate more modalities such as
+that coping with the latency of the controller and sensor noise                  vision. We hope this approach will open more opportunities
+are important factors in adapting to the physical system.                        for developing skillful agents in simulation that are then able
+                                                                                 to be deployed in the physical world.
+C. Robustness
+  To evaluate the robustness of the LSTM policy to different                                      VII. ACKNOWLEDGEMENT
+dynamics when deployed on the real robot, we experimented                          We would like to thank Ankur Handa, Vikash Kumar, Bob
+with changing the contact dynamics of the physical system                        McGrew, Matthias Plappert, Alex Ray, Jonas Schneider, and
+by attaching a packet of chips to the bottom of the puck.                        Peter Welinder for their support and feedback on this project.
+The texture of the bag reduces the friction between the puck
+                                                                                                           R EFERENCES
+and the table, while the contents of the bag further alters the
+contact dynamics. Nonetheless, the LSTM policy achieves                           [1] V. Mnih, K. Kavukcuoglu, D. Silver, A. A. Rusu, J. Veness,
+                                                                                      M. G. Bellemare, A. Graves, M. Riedmiller, A. K. Fidjeland,
+a success rate of 0.91 ± 0.04, which is comparable to the                             G. Ostrovski, S. Petersen, C. Beattie, A. Sadik, I. Antonoglou,
+success rate without the attachment 0.89 ± 0.06. The policy                           H. King, D. Kumaran, D. Wierstra, S. Legg, and D. Hassabis,
+     “Human-level control through deep reinforcement learning,” Nature,              with deep q-learning,” CoRR, vol. abs/1609.03759, 2016. [Online].
+     vol. 518, no. 7540, pp. 529–533, 02 2015. [Online]. Available:                  Available: http://arxiv.org/abs/1609.03759
+     http://dx.doi.org/10.1038/nature14236                                      [21] I. Mordatch, K. Lowrey, and E. Todorov, “Ensemble-cio: Full-body
+ [2] T. P. Lillicrap, J. J. Hunt, A. Pritzel, N. Heess, T. Erez,                     dynamic motion planning that transfers to physical humanoids,”
+     Y. Tassa, D. Silver, and D. Wierstra, “Continuous control with deep             in 2015 IEEE/RSJ International Conference on Intelligent Robots
+     reinforcement learning,” CoRR, vol. abs/1509.02971, 2015. [Online].             and Systems, IROS 2015, Hamburg, Germany, September 28
+     Available: http://arxiv.org/abs/1509.02971                                      - October 2, 2015, 2015, pp. 5307–5314. [Online]. Available:
+ [3] Y. Duan, X. Chen, R. Houthooft, J. Schulman, and P. Abbeel,                     https://doi.org/10.1109/IROS.2015.7354126
+     “Benchmarking deep reinforcement learning for continuous control,”         [22] A. Rajeswaran, S. Ghotra, S. Levine, and B. Ravindran, “Epopt:
+     CoRR, vol. abs/1604.06778, 2016. [Online]. Available: http://arxiv.             Learning robust neural network policies using model ensembles,”
+     org/abs/1604.06778                                                              CoRR, vol. abs/1610.01283, 2016. [Online]. Available: http://arxiv.
+ [4] X. B. Peng, G. Berseth, and M. van de Panne, “Terrain-adaptive loco-            org/abs/1610.01283
+     motion skills using deep reinforcement learning,” ACM Transactions         [23] L. Pinto, J. Davidson, R. Sukthankar, and A. Gupta, “Robust
+     on Graphics (Proc. SIGGRAPH 2016), vol. 35, no. 4, 2016.                        adversarial reinforcement learning,” CoRR, vol. abs/1703.02702,
+ [5] X. B. Peng, G. Berseth, K. Yin, and M. van de Panne, “Deeploco:                 2017. [Online]. Available: http://arxiv.org/abs/1703.02702
+     Dynamic locomotion skills using hierarchical deep reinforcement            [24] W. Yu, C. K. Liu, and G. Turk, “Preparing for the unknown: Learning
+     learning,” ACM Transactions on Graphics (Proc. SIGGRAPH 2017),                  a universal policy with online system identification,” CoRR, vol.
+     vol. 36, no. 4, 2017.                                                           abs/1702.02453, 2017. [Online]. Available: http://arxiv.org/abs/1702.
+ [6] L. Liu and J. Hodgins, “Learning to schedule control fragments for              02453
+     physics-based characters using deep q-learning,” ACM Trans. Graph.,        [25] R. Antonova, S. Cruciani, C. Smith, and D. Kragic, “Reinforcement
+     vol. 36, no. 3, pp. 29:1–29:14, Jun. 2017. [Online]. Available:                 learning for pivoting task,” CoRR, vol. abs/1703.00472, 2017.
+     http://doi.acm.org/10.1145/3083723                                              [Online]. Available: http://arxiv.org/abs/1703.00472
+                                                                                [26] K. Yu, M. Bauzá, N. Fazeli, and A. Rodriguez, “More than a million
+ [7] N. Heess, D. TB, S. Sriram, J. Lemmon, J. Merel, G. Wayne,
+                                                                                     ways to be pushed: A high-fidelity experimental data set of planar
+     Y. Tassa, T. Erez, Z. Wang, S. M. A. Eslami, M. A. Riedmiller,
+                                                                                     pushing,” CoRR, vol. abs/1604.04038, 2016. [Online]. Available:
+     and D. Silver, “Emergence of locomotion behaviours in rich
+                                                                                     http://arxiv.org/abs/1604.04038
+     environments,” CoRR, vol. abs/1707.02286, 2017. [Online]. Available:
+                                                                                [27] K. M. Lynch and M. T. Mason, “Stable pushing: Mechanics, controlla-
+     http://arxiv.org/abs/1707.02286
+                                                                                     bility, and planning,” The International Journal of Robotics Research,
+ [8] S. Levine, N. Wagener, and P. Abbeel, “Learning contact-                        vol. 15, no. 6, pp. 533–556, 1996.
+     rich manipulation skills with guided policy search,” CoRR, vol.            [28] M. Dogar and S. Srinivasa, “A framework for push-grasping in clutter,”
+     abs/1501.05611, 2015. [Online]. Available: http://arxiv.org/abs/1501.           in Robotics: Science and Systems VII. Pittsburgh, PA: MIT Press,
+     05611                                                                           July 2011.
+ [9] S. Levine, C. Finn, T. Darrell, and P. Abbeel, “End-to-end training        [29] N. Fazeli, R. Kolbert, R. Tedrake, and A. Rodriguez, “Parameter and
+     of deep visuomotor policies,” CoRR, vol. abs/1504.00702, 2015.                  contact force estimation of planar rigid-bodies undergoing frictional
+     [Online]. Available: http://arxiv.org/abs/1504.00702                            contact,” The International Journal of Robotics Research, vol. 0, no. 0,
+[10] S. Levine, P. Pastor, A. Krizhevsky, and D. Quillen, “Learning                  p. 0278364917698749, 2016.
+     hand-eye coordination for robotic grasping with deep learning              [30] S. Akella and M. T. Mason, “Posing polygonal objects in the plane
+     and large-scale data collection,” CoRR, vol. abs/1603.02199, 2016.              by pushing,” The International Journal of Robotics Research, vol. 17,
+     [Online]. Available: http://arxiv.org/abs/1603.02199                            no. 1, pp. 70–88, 1998.
+[11] E. Tzeng, C. Devin, J. Hoffman, C. Finn, X. Peng, S. Levine,               [31] C. Finn, I. J. Goodfellow, and S. Levine, “Unsupervised learning
+     K. Saenko, and T. Darrell, “Adapting deep visuomotor representations            for physical interaction through video prediction,” CoRR, vol.
+     with weak pairwise constraints,” CoRR, vol. abs/1511.07111, 2015.               abs/1605.07157, 2016. [Online]. Available: http://arxiv.org/abs/1605.
+     [Online]. Available: http://arxiv.org/abs/1511.07111                            07157
+[12] Y. Ganin, E. Ustinova, H. Ajakan, P. Germain, H. Larochelle,               [32] D. H. Ignasi Clavera and P. Abbeel, “Policy transfer via modularity,”
+     F. Laviolette, M. Marchand, and V. Lempitsky, “Domain-adversarial               in IROS. IEEE, 2017.
+     training of neural networks,” J. Mach. Learn. Res., vol. 17,               [33] R. S. Sutton, D. Mcallester, S. Singh, and Y. Mansour, “Policy gradient
+     no. 1, pp. 2096–2030, Jan. 2016. [Online]. Available: http:                     methods for reinforcement learning with function approximation,” in
+     //dl.acm.org/citation.cfm?id=2946645.2946704                                    In Advances in Neural Information Processing Systems 12. MIT
+[13] A. Gupta, C. Devin, Y. Liu, P. Abbeel, and S. Levine, “Learning                 Press, 2000, pp. 1057–1063.
+     invariant feature spaces to transfer skills with reinforcement             [34] T. Schaul, D. Horgan, K. Gregor, and D. Silver, “Universal value
+     learning,” CoRR, vol. abs/1703.02949, 2017. [Online]. Available:                function approximators,” in Proceedings of the 32nd International
+     http://arxiv.org/abs/1703.02949                                                 Conference on Machine Learning, ser. Proceedings of Machine
+[14] S. Daftry, J. A. Bagnell, and M. Hebert, “Learning transferable policies        Learning Research, F. Bach and D. Blei, Eds., vol. 37. Lille,
+     for monocular reactive MAV control,” CoRR, vol. abs/1608.00627,                 France: PMLR, 07–09 Jul 2015, pp. 1312–1320. [Online]. Available:
+     2016. [Online]. Available: http://arxiv.org/abs/1608.00627                      http://proceedings.mlr.press/v37/schaul15.html
+[15] M. Wulfmeier, I. Posner, and P. Abbeel, “Mutual alignment transfer         [35] M. Andrychowicz, F. Wolski, A. Ray, J. Schneider, R. Fong, P. Welin-
+     learning,” CoRR, vol. abs/1707.07907, 2017. [Online]. Available:                der, B. McGrew, J. Tobin, P. Abbeel, and W. Zaremba, “Hindsight
+     http://arxiv.org/abs/1707.07907                                                 experience replay,” in Advances in Neural Information Processing
+[16] A. A. Rusu, M. Vecerik, T. Rothörl, N. Heess, R. Pascanu,                      Systems, 2017.
+     and R. Hadsell, “Sim-to-real robot learning from pixels with               [36] N. Heess, J. J. Hunt, T. P. Lillicrap, and D. Silver, “Memory-based
+     progressive nets,” CoRR, vol. abs/1610.04286, 2016. [Online].                   control with recurrent neural networks,” CoRR, vol. abs/1512.04455,
+     Available: http://arxiv.org/abs/1610.04286                                      2015. [Online]. Available: http://arxiv.org/abs/1512.04455
+[17] P. Christiano, Z. Shah, I. Mordatch, J. Schneider, T. Blackwell,           [37] J. N. Foerster, Y. M. Assael, N. de Freitas, and S. Whiteson,
+     J. Tobin, P. Abbeel, and W. Zaremba, “Transfer from simulation to               “Learning to communicate with deep multi-agent reinforcement
+     real world through learning deep inverse dynamics model,” CoRR,                 learning,” CoRR, vol. abs/1605.06676, 2016. [Online]. Available:
+     vol. abs/1610.03518, 2016. [Online]. Available: http://arxiv.org/abs/           http://arxiv.org/abs/1605.06676
+     1610.03518                                                                 [38] R. Lowe, Y. Wu, A. Tamar, J. Harb, P. Abbeel, and
+                                                                                     I. Mordatch, “Multi-agent actor-critic for mixed cooperative-
+[18] F. Sadeghi and S. Levine, “Cad2rl: Real single-image flight without
+                                                                                     competitive environments,” CoRR, vol. abs/1706.02275, 2017.
+     a single real image,” CoRR, vol. abs/1611.04201, 2016. [Online].
+                                                                                     [Online]. Available: http://arxiv.org/abs/1706.02275
+     Available: http://arxiv.org/abs/1611.04201
+                                                                                [39] E. Todorov, T. Erez, and Y. Tassa, “Mujoco: A physics engine for
+[19] J. Tobin, R. Fong, A. Ray, J. Schneider, W. Zaremba, and P. Abbeel,             model-based control.” in IROS. IEEE, 2012, pp. 5026–5033.
+     “Domain randomization for transferring deep neural networks from           [40] D. P. Kingma and J. Ba, “Adam: A method for stochastic
+     simulation to the real world,” CoRR, vol. abs/1703.06907, 2017.                 optimization,” CoRR, vol. abs/1412.6980, 2014. [Online]. Available:
+     [Online]. Available: http://arxiv.org/abs/1703.06907                            http://arxiv.org/abs/1412.6980
+[20] S. James and E. Johns, “3d simulation for robot arm control
+

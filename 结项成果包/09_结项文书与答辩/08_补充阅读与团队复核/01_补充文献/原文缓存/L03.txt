@@ -1,0 +1,344 @@
+                                              Mobile-URSONet: an Embeddable Neural Network for Onboard
+                                                              Spacecraft Pose Estimation
+                                                                        Julien Posso*, Guy Bois*, Yvon Savaria†
+                                             Department of *Computer Engineering and †Electrical Engineering, École Polytechnique de Montréal
+                                                                                 Montréal (QC), Canada
+                                                                        Email: {firstname.lastname}@polymtl.ca
+arXiv:2205.02065v1 [cs.CV] 4 May 2022
+
+
+
+
+                                           Abstract— Spacecraft pose estimation is an essential com-             Sharma et al. [6], Chan et al. [8] and the EPFL CVLab
+                                        puter vision application that can improve the autonomy of in-         team used a 3-step process to estimate spacecraft pose [5].
+                                        orbit operations. An ESA/Stanford competition brought out             First, they use an object detection CNN to determine the
+                                        solutions that seem hardly compatible with the constraints
+                                        imposed on spacecraft onboard computers. URSONet is among             region of interest and crop the input image. Then, another
+                                        the best in the competition for its generalization capabilities but   CNN regress keypoints. Finally, they solve Pose estimation
+                                        at the cost of a tremendous number of parameters and high             using an off-the-shelf Perspective-n-Point (PnP) solver. Black
+                                        computational complexity. In this paper, we propose Mobile-           et al. follow the same 3-step process, but instead of using
+                                        URSONet: a spacecraft pose estimation convolutional neural            large CNNs, they use a MobileNet-v2 as keypoint regression
+                                        network with 178 times fewer parameters while degrading
+                                        accuracy by no more than four times compared to URSONet.              network. Nevertheless, their method uses a complex pipeline
+                                                                                                              in which the MobileNet-v2 CNN only represents 20.4% of
+                                                              I. INTRODUCTION                                 the inference execution time[9]. Moreover, using keypoints
+                                           Estimating the relative position and orientation (commonly         limits the method to known spacecraft.
+                                        called Pose estimation) of a known but uncooperative space-              Proença et al. proposed URSONet: a straightforward way
+                                        craft from a monocular image is an essential computer                 to solve SPE by regressing position and orientation using
+                                        vision application that allows improving the autonomy of              a single CNN [1]. It allows to directly optimize ESA
+                                        in-orbit spacecraft operations: formation flying, autonomous          competition metrics [5]. They also proposed to deal with
+                                        docking, satellite maintenance, debris removal, etc... [1].           the orientation estimation as a soft classification task which
+                                        Debris removal is crucial for the future of low earth orbit           significantly improves the results. The orientation is encoded
+                                        operations as the exploitation of this orbit grows, especially        as a Gaussian random variable in a discrete output space
+                                        with the Starlink and OneWeb constellations. A significant            so that the CNN learns to predict a mass density function
+                                        increase of debris will accompany these new constellations.           [1]. Then, they used a softmax function and the quaternion
+                                        Several research projects aim to solve this problem: Re-              averaging technique to predict the orientation [10]. URSONet
+                                        moveDEBRIS from the Surrey Space Center, Restore-L from               stands out for its generalization capabilities as Proença et
+                                        NASA, Phoenix program from DARPA [2], or more recently                al. obtained a good score on both synthetic and real test
+                                        the ClearSpace-1 mission from the European Space Agency               sets. In addition, as they do not rely on keypoints, their
+                                        (ESA) [3].                                                            method would be able to generalize to objects with unknown
+                                           Sharma et al. were the first to propose using Convolutional        geometry using SLAM [1]. However, it comes at the cost of
+                                        Neural Networks (CNNs) for Spacecraft Pose Estimation                 a tremendous amount of parameters (500 million) and high
+                                        (SPE) [4]. However, the popularity of CNNs applied to                 computational complexity as they use an ensemble method
+                                        SPE increased in 2019 when ESA and Stanford SLAB                      based on three ResNet-101 CNNs [1].
+                                        (Space Rendezvous Laboratory) organized a competition                    In the spirit of MobileNet proposed by Google [11],
+                                        that brought together 48 participants. Each team proposed             we propose Mobile-URSONet: a spacecraft pose estimation
+                                        a solution that is based at least in part on deep neural              convolutional neural network adapted to spacecraft onboard
+                                        networks, now a dominant technique [5]. The competition               computers. Our lightest model has 178 times fewer param-
+                                        was based on the SPEED (Spacecraft PosE Estimation                    eters while degrading accuracy by no more than four times
+                                        Dataset) dataset introduced earlier by Sharma et. al [6].             compared to URSONet.
+                                        The dataset contains 12000 synthetic images of the Tango                 The outline of this paper is as follows: Section II explains
+                                        satellite to train the models; 2998 synthetic images on which         the methodology we adopted to optimize URSONet for
+                                        the participants were ranked (synthetic test set); and 300            embedded systems. Section III presents the experimental
+                                        real images, which allow characterizing the generalization            results obtained, and section IV concludes the paper.
+                                        capacity of the proposed models (real test set). A post-
+                                        mortem webpage dedicated to model predictions evaluation                              II. PROPOSED METHOD
+                                        is still available as the labels of the test sets are not provided      Our analysis is based on the ESA competition evaluation
+                                        [7].                                                                  metrics [5] which includes: the mean absolute position error
+et (in meters), the mean absolute orientation error eq (in
+degrees), and the mean ESA score E (lower is better) which
+is evaluated on both the synthetic (Esyn ) and real test sets
+(Ereal ).
+A. Generalization metric
+   Many solutions proposed during the ESA competition do
+not obtain as good a score on the real images as on synthetic
+images. Kisantal et al. explains that it comes from the
+change in statistical distribution between the synthetic and
+the real images [5]. However, they do not explain the huge
+differences in generalization between the different models.                           Fig. 1.   Mobile-URSONet architecture
+We propose a generalization metric to characterize these
+differences: G f actor . It represents the ratio between the mean
+                                                                        Bianco et. al. show that MobileNet-V2 has a top-1 accuracy
+ESA score obtained on the real and synthetic test sets:
+                                                                        density (i.e. accuracy per million parameters) more than 10
+                                          Ereal                         times better than the ResNet-101 used by Proença et al. [12].
+                           G f actor =                            (1)   They also show that MobileNet-v2 inference requires only
+                                          Esyn
+                                                                        0.3 GFLOPs (floating-point operations), while a ResNet-
+   Table I presents the results and generalization factors              101 inference requires almost 8 GFLOPs. The computational
+of the first four participants of the ESA competition [5]               complexity of our backbone is 26 times less than the original
+(including the baseline solution of Stanford SLAB [6]), and             URSONet.
+the latest work published on the domain by Black et al. [9].               Moreover, MobileNet-v2 is designed to run in real-time
+We observe a wide variability in generalization factors: from           on smartphone ARM processors [13]. Table II shows that
+2.7 for the third in the competition (Proença et al.) to 39.9 for      it also run on weaker ARM processors now used in the
+the winners of the competition (Chen et al.). Beyond solving            space domain. For instance, the Eye-Sat nanosatellite embeds
+the SPE task using a single CNN (without PnP methods),                  a Zynq 7030 MPSoC (Multiprocessor System on a Chip)
+which is a path to pose estimation of unknown objects,                  developed by Xilinx, which has two ARM A-9 cores [14].
+Proença et al. solution offers the best generalization factor.         More recent projects consider using MPSoC featuring four
+As robustness to changes in distribution is a key criterion             ARM A-53 cores [15] [16].
+when integrating such networks into embedded systems, we
+base our work on that of Proença et al.                                                            TABLE II
+                                                                            I NFERENCE LATENCY OF M OBILE N ET- V 2 ON VARIOUS ARM
+                          TABLE I                                                           PROCESSORS [13] [17]
+        ESA SCORE ON THE TEST SETS AND CORRESPONDING
+                       GENERALIZATION FACTOR                                        Processor (compiler)              Latency
+                                                                                    Qualcomm ARM A-72 (TF-Lite)        75 ms
+           Participants          Esynth       Ereal   G f actor                     Xilinx ARM A-53 (TVM)             132 ms
+           Chen et al. [8]       0.0094      0.3752    39.9                         Xilinx ARM A-9 (TVM)              265 ms
+           EPFL cvlab            0.0215      0.1140     5.3
+           Black et al. [9]      0.0409      0.2918    7.13
+           Proença et al. [1]   0.0571      0.1555     2.7                The second part of the neural network is the bottleneck
+           Sharma et al. [6]     0.0626      0.3951     6.3             (Fig. 1). Many standard CNN architectures uses average
+                                                                        pooling such as MobileNets [11] [13] and ResNets [18]. It
+                                                                        aims to merge semantically similar features [19] by reducing
+B. Neural network architecture                                          the spatial dimension of the feature maps. Thus, it reduces
+   To ensure a good ranking in the ESA competition, Proença            the number of parameters and computational complexity of
+et. al. focused on minimizing the ESA score regardless of               the subsequent layers. Proença et al. replaced the standard
+the complexity of their model. We focused on the trade-off              average pooling layer by a 3x3 convolution layer with a
+between the ESA score, the number of parameters, and the                stride of 2 [1]. They show that increasing the number of
+computational complexity of our model. Figure 1 shows an                feature maps in the bottleneck layer decrease the position
+outline of Mobile-URSONet, the neural network we propose                and orientation error. We summarize their results in table
+in this work. In the following paragraphs, we will explain in           III. The first line of the table (i.e. the configuration with
+detail our architectural choices.                                       eight feature maps) has the same amount of parameters
+   The first component of a CNN is the backbone that extracts           as an average pooling configuration. The table shows that
+features from the input image (Fig. 1). Proença et al. used            multiplying the number of parameters by six only leads to a
+a ResNet-101 backbone, a CNN that achieves 77% top-                     3 degrees improvement in orientation error and 0.24 meters
+1 accuracy on the standard ImageNet benchmark. We use                   improvement in position error. In our opinion, it is not a
+a MobileNet-v2 backbone that achieves only 72% top-1                    suitable trade-off for an embedded system. That is why we
+accuracy on ImageNet but has 13 times fewer parameters.                 kept the original average pooling layer.
+                          TABLE III
+                                                                          momentum of 0.9. We use a batch size of 32 images resized
+ B OTTLENECK SIZE vs. NUMBER OF PARAMETERS , ORIENTATION AND
+                                                                          to 384 * 240 pixels. The learning rate starts at 0.01 for
+                POSITION ERROR ON URSON ET [1]
+                                                                          the first 30 epochs. Then it is decayed to 0.001 for the
+    # feature maps   # params (M)     Ori err. (°)   Pos err. (m)         following 15 epochs. It finishes at 0.0001 for the last five
+           8               40            10.2           0.72              epochs. We employ data augmentation on the training set
+          128              80             7.8           0.54
+          512             240             7.2           0.48
+                                                                          using OpenCV to rotate the camera across the roll axis for
+                                                                          half images with a maximum magnitude of 25°. We also
+                                                                          use Pytorch transformations to add a Gaussian blur and
+   Moreover, the number of parameters of the neural network               randomly change the brightness, contrast, saturation, and
+is agnostic to input image resolution thanks to the average               hue of training images. When using soft classification, we
+pooling layer. Proença et al. show that orientation estimation           have set ∆ which controls the Gaussian width at 3 to act
+is sensitive to image resolution (i.e. increasing image resolu-           as a regularizer. The number of bins per dimension varies
+tion improves accuracy). Thus, increasing image resolution is             between 8 and 32. All hyper-parameters are tuned on the
+a more efficient solution to improve accuracy than removing               validation set. Our code is available at [21].
+the bottleneck as the power consumption highly depends on                 B. Results
+memory accesses [20].
+                                                                             Orientation estimation through regression is done with
+   The last part of the neural network is the two branches
+                                                                          very few parameters but leads to an average error of 32°
+(Fig. 1): the first part estimates orientation, while the other
+                                                                          on the validation set. Orientation estimation through soft
+estimates position. Proença et al. use two fully connected
+                                                                          classification implies many more parameters in the orien-
+layers. We use a single fully connected layer to minimize the
+                                                                          tation branch: it depends on the cube of the number of bins
+number of parameters. Our position branch has only 3843
+                                                                          per dimension (we encode rotations as three Euler angles
+parameters. The number of parameters of our orientation
+                                                                          and then convert it to quaternions). However, using soft
+branch depends on the configuration: in regression, it has
+                                                                          classification improves the orientation error by a factor of
+5124 parameters; in soft classification, it has between 0.6 and
+                                                                          three to five. Table IV shows the results we obtain, with 8
+5 million parameters. It is 39 to 325 times fewer parameters
+                                                                          to 32 bins per dimension. The 16-bins model has 2.6 times
+than Proença et al., which has approximately 195 million
+                                                                          more parameters than the 8-bins model and an orientation
+parameters in their branches.
+                                                                          error divided by 2. However, the 32-bins model has six times
+C. Loss functions                                                         more parameters than the 16-bins model, with no significant
+                                                                          improvement on the orientation error. The 24-bins model also
+   Target’s position estimation is an easy task solved us-
+                                                                          does not bring improvements. It demonstrates a saturation
+ing direct regression. It allows using ESA metrics as loss
+                                                                          effect on orientation error when increasing the number of
+functions, as proposed by Proença et al.. The same cannot
+                                                                          bins per dimension. In addition, we notice that the 32-bins
+apply to orientation estimation, which explains why we try
+                                                                          model is much more prone to overfitting. Based on these
+two methods (i.e. regression and soft classification). In ESA
+                                                                          results, we believe that going beyond 16 bins per dimension
+metrics, the position error depends on the distance from
+                                                                          is not worth it as we focus on the trade-off between the
+the target spacecraft; the neural network is increasingly
+                                                                          orientation error and the number of parameters of the CNN.
+penalized as the target spacecraft is closer. However, this is
+not the case with the orientation in ESA metrics. We propose                                         TABLE IV
+a variant of the loss function when orientation estimation is               E FFECT OF THE NUMBER OF BINS PER DIMENSION ON ORIENTATION
+considered a regression task:                                                           ERROR AND THE NUMBER OF PARAMETERS
+
+                               arccos |q · q̂|                                 # bins per dim.   # params (M)   eq train (°)   eq valid (°)
+                      Lori =                                        (2)               8               2.8          9.74           11.3
+                                   ||t||2
+                                                                                     12               4.4          5.69           7.43
+   In our experiments, it does not lead to significant improve-                      16               7.4           4.5           6.29
+                                                                                     24              19.9          4.18           6.12
+ments compared to the regression loss function proposed by                           32              44.2          4.92           7.29
+Proença et. al. Thus, we also estimate orientation using soft
+classification as Proença et. al. does. The associated loss                 Table V shows the orientation and position error of our
+function is a standard negative log-likelihood [1].                       selected models (from 8 to 16 bins) compared to [1]. As
+                     III. EXPERIMENTS                                     we said before, target position estimation is an easy task
+                                                                          solved using direct regression. Position error is the same in
+A. Implementation and training details                                    all our experiments. It seems to depend only on the number
+   Networks are trained on one Nvidia Tesla P100, using                   of parameters of the backbone, as increasing the number of
+Pytorch on the SPEED dataset. We use the MobileNet-v2                     parameters in the position branch only increases overfitting.
+backbone pre-trained on ImageNet to speed up training. We                 Our backbone uses 13 times fewer parameters than Proença’s
+reserve 15% of the training SPEED dataset as a validation                 backbone while degrading position error by no more than
+set. Parameters are updated using the SGD algorithm with a                three times. Using soft classification, orientation error highly
+depends on the number of parameters of the orientation                       set and a good generalization factor. Our 8-bins model has
+branch. Proença et al. used between 24 and 64 bins per                      178 times fewer parameters while degrading the ESA score
+dimension but only published the orientation error for their                 by no more than four times compared to URSONet. It has an
+24-bins model. The high number of parameters of URSONet                      accuracy density (i.e. ESA score per parameters) 139 times
+causes overfitting that Proença et al. mitigates using a data               higher than the original URSONet. However, we notice that
+augmentation strategy more refined than ours. It explains                    increasing the number of bins per dimension leads the model
+why they achieve a better orientation error of 4.0°, while                   to overfit the synthetic images. Proença et al. demonstrated
+our best model achieves only 6.3° orientation error.                         that a 2.7 generalization factor is achievable while using 24
+                                                                             to 64 bins per orientation dimension. We believe we still
+                            TABLE V
+                                                                             have some margin to improve the generalization capabilities
+O RIENTATION AND POSITION ERROR ON VALIDATION SET COMPARED TO
+                                                                             of our models by using a more advanced data augmentation
+                         P ROENÇA et al.
+                                                                             technique and by investing more effort in hyper-parameter
+             # bins per dim.                 eq (°)   et (m)
+                                                                             tuning.
+             Ours (8 bins)                    11.3     0.54
+             Ours (12 bins)                   7.43     0.51                                            TABLE VI
+             Ours (16 bins)                   6.29     0.56                         ESA SCORE ON TEST SET AND GENERALIZATION FACTOR
+             Proença et al. (24 bins) [1]    4.0      0.17
+                                                                                Participants          # params (M)   Esynth    Ereal   G f actor
+                                                                                Black et al. [9]           6.9       0.0409   0.2918    7.13
+   Figure 2 shows the position and the orientation error of our                 Sharma et al. [6]         11.2       0.0626   0.3951    6.31
+12-bins model on the validation set as a function of distance                   Proença et al. [1]        500       0.0571   0.1555    2.72
+to the target. We see that the position error highly depends                    ours (regression)          2.2       0.6160   0.7997    1.30
+                                                                                ours (8 bins)              2.8       0.2520   0.7868    3.12
+on the distance to the target satellite. We observe the same                    ours (12 bins)             4.4       0.2104   1.2231    5.81
+property for the orientation error. It is surprising as the loss                ours (16 bins)             7.4       0.1947   1.2074    6.20
+function we use does not involve the distance with the target
+spacecraft (in soft classification configuration). High position
+and orientation errors appear when the target spacecraft is
+                                                                             C. Future work
+more than 10 meters apart from the camera. The number
+of outliers is small enough and occurs only when the target                    Future works will explore in-depth embeddability by using
+spacecraft is more than 15 meters apart from the camera. The                 quantization and pruning. It will further optimize the memory
+closer the target spacecraft is, the more confidence we can                  footprint of the parameters and the inference computational
+have in the predictions of our model. It is a crucial property               complexity of Mobile-URSONet. We plan to deploy these
+for autonomous docking or debris removal applications. It                    models on promising commercial chips for future satellite
+also offers an avenue to reduce both the position and the                    onboard computers, such as the Xilinx MPSoCs featuring
+orientation error: zooming and cropping the image around                     ARM-A53 cores and programmable logic.
+the target instead of resizing the whole image as we do now.
+                                                                                                      IV. CONCLUSIONS
+                                                                                In this paper, we analyzed URSONet, a popular neural
+                                                                             network used for spacecraft pose estimation that seems
+                                                                             hardly compatible with the constraints of onboard spacecraft
+                                                                             computers. We found that three architectural choices have a
+                                                                             dominant effect on both the number of parameters and the
+                                                                             computational complexity of the CNN: the backbone, the
+                                                                             bottleneck size, and the number of bins per dimension while
+                                                                             predicting orientation using soft classification. By analyzing
+                                                                             trade-offs for each of these three architectural choices, we
+                                                                             were able to propose Mobile-URSONet, a mobile version of
+                                                                             URSONet in the spirit of Google MobileNets. We showed
+                                                                             that Mobile-URSONet achieves accuracy close to URSONet,
+                                                                             while keeping the number of parameters and computational
+                                                                             complexity compatible with the constraints of spacecraft
+                                                                             onboard computers.
+Fig. 2.   Position and orientation error by distance for our 12-bins model
+
+                                                                                               V. ACKNOWLEDGMENTS
+   Table VI summarizes the results of our models compared
+to our competitors. We propose the most lightweight space-                      The authors thank the Canadian Space Agency, MITACS
+craft pose estimation models: ranging from 2.2 to 7.4 million                and Space Codesign Systems for their financial contribu-
+parameters while keeping a good score on the synthetic test                  tions.
+                             R EFERENCES                                       [19] Y. LeCun, Y. Bengio, and G. Hinton, “Deep learning,” Nature,
+                                                                                    vol. 521, no. 7553, pp. 436–444, May 2015, number: 7553
+ [1] P. F. Proença and Y. Gao, “Deep learning for spacecraft pose es-              Publisher: Nature Publishing Group. [Online]. Available: https:
+     timation from photorealistic rendering,” in 2020 IEEE International            //www.nature.com/articles/nature14539
+     Conference on Robotics and Automation (ICRA). IEEE, 2020, pp.             [20] M. Horowitz, “1.1 Computing’s energy problem (and what we can do
+     6007–6013.                                                                     about it),” in 2014 IEEE International Solid-State Circuits Conference
+                                                                                    Digest of Technical Papers (ISSCC), Feb. 2014, pp. 10–14, iSSN:
+ [2] “Kelvins - Pose Estimation Challenge.” [Online]. Available: https:
+                                                                                    2376-8606.
+     //kelvins.esa.int/satellite-pose-estimation-challenge/home/
+                                                                               [21] “Mobile-URSONet code (GitHub).” [Online]. Available: https:
+ [3] “ESA commissions world’s first space debris removal.”                          //github.com/possoj/Mobile-URSONet
+     [Online]. Available: https://www.esa.int/Safety Security/Clean Space/
+     ESA commissions world s first space debris removal
+ [4] S. Sharma, C. Beierle, and S. D’Amico, “Pose estimation for non-
+     cooperative spacecraft rendezvous using convolutional neural net-
+     works,” in 2018 IEEE Aerospace Conference, Mar. 2018, pp. 1–12.
+ [5] M. Kisantal, S. Sharma, T. H. Park, D. Izzo, M. Märtens,
+     and S. D’Amico, “Satellite Pose Estimation Challenge: Dataset,
+     Competition Design and Results,” arXiv:1911.02050 [cs], Apr. 2020,
+     arXiv: 1911.02050. [Online]. Available: http://arxiv.org/abs/1911.
+     02050
+ [6] S. Sharma and S. D’Amico, “Pose Estimation for Non-Cooperative
+     Rendezvous Using Neural Networks,” arXiv:1906.09868 [cs], Jun.
+     2019, arXiv: 1906.09868. [Online]. Available: http://arxiv.org/abs/
+     1906.09868
+ [7] “Kelvins - Pose Estimation Challenge post mortem - Home.” [Online].
+     Available: https://kelvins.esa.int/satellite-pose-estimation-challenge/
+     leaderboard/post-mortem-leaderboard
+ [8] B. Chen, J. Cao, A. Parra, and T.-J. Chin, “Satellite Pose Estimation
+     with Deep Landmark Regression and Nonlinear Pose Refinement,”
+     arXiv:1908.11542 [cs], Aug. 2019, arXiv: 1908.11542. [Online].
+     Available: http://arxiv.org/abs/1908.11542
+ [9] K. Black, S. Shankar, D. Fonseka, J. Deutsch, A. Dhir, and
+     M. R. Akella, “Real-Time, Flight-Ready, Non-Cooperative Spacecraft
+     Pose Estimation Using Monocular Imagery,” arXiv:2101.09553
+     [cs], Jan. 2021, arXiv: 2101.09553. [Online]. Available: http:
+     //arxiv.org/abs/2101.09553
+[10] F. L. Markley, Y. Cheng, J. L. Crassidis, and Y. Oshman,
+     “Averaging Quaternions,” Journal of Guidance, Control, and
+     Dynamics, vol. 30, no. 4, pp. 1193–1197, Jul. 2007. [Online].
+     Available: https://arc.aiaa.org/doi/10.2514/1.28949
+[11] A. G. Howard, M. Zhu, B. Chen, D. Kalenichenko, W. Wang,
+     T. Weyand, M. Andreetto, and H. Adam, “MobileNets: Efficient
+     Convolutional Neural Networks for Mobile Vision Applications,”
+     arXiv:1704.04861 [cs], Apr. 2017, arXiv: 1704.04861. [Online].
+     Available: http://arxiv.org/abs/1704.04861
+[12] S. Bianco, R. Cadene, L. Celona, and P. Napoletano, “Benchmark
+     Analysis of Representative Deep Neural Network Architectures,”
+     IEEE Access, vol. 6, pp. 64 270–64 277, 2018, arXiv: 1810.00736.
+     [Online]. Available: http://arxiv.org/abs/1810.00736
+[13] M. Sandler, A. Howard, M. Zhu, A. Zhmoginov, and L.-C. Chen,
+     “MobileNetV2: Inverted Residuals and Linear Bottlenecks,” in 2018
+     IEEE/CVF Conference on Computer Vision and Pattern Recognition.
+     Salt Lake City, UT: IEEE, Jun. 2018, pp. 4510–4520. [Online].
+     Available: https://ieeexplore.ieee.org/document/8578572/
+[14] F. Apper, A. Ressouche, N. Humeau, M. Vuillemin, A. Gaboriaud,
+     F. Viaud, and M. Couture, “Eye-Sat: A 3U student CubeSat from
+     CNES packed with technology,” p. 10.
+[15] A. Pérez, A. Rodrı́guez, A. Otero, D. G. Arjona, Á. Jiménez-Peralo,
+     M. Á. Verdugo, and E. De La Torre, “Run-Time Reconfigurable
+     MPSoC-Based On-Board Processor for Vision-Based Space Naviga-
+     tion,” IEEE Access, vol. 8, pp. 59 891–59 905, 2020, conference Name:
+     IEEE Access.
+[16] C. M. Fuchs, P. Chou, X. Wen, N. M. Murillo, G. Furano, S. Holst,
+     A. Tavoularis, S.-K. Lu, A. Plaat, and K. Marinis, “A Fault-Tolerant
+     MPSoC For CubeSats,” in 2019 IEEE International Symposium on
+     Defect and Fault Tolerance in VLSI and Nanotechnology Systems
+     (DFT), Oct. 2019, pp. 1–6, iSSN: 2377-7966.
+[17] T. Moreau, T. Chen, L. Vega, J. Roesch, E. Yan, L. Zheng, J. Fromm,
+     Z. Jiang, L. Ceze, C. Guestrin, and A. Krishnamurthy, “A Hardware-
+     Software Blueprint for Flexible Deep Learning Specialization,”
+     arXiv:1807.04188 [cs, stat], Apr. 2019, arXiv: 1807.04188. [Online].
+     Available: http://arxiv.org/abs/1807.04188
+[18] K. He, X. Zhang, S. Ren, and J. Sun, “Deep Residual Learning
+     for Image Recognition,” arXiv:1512.03385 [cs], Dec. 2015, arXiv:
+     1512.03385. [Online]. Available: http://arxiv.org/abs/1512.03385
+

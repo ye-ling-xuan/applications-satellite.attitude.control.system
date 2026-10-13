@@ -1,0 +1,68 @@
+{
+  "diagnostic_date": "2026-10-13",
+  "scope": "read-only dependency diagnosis; no substitute PPTX/DOCX builders and no desktop LibreOffice invocation",
+  "workspace_dependency_loader": {
+    "tool_name": "load_workspace_dependencies",
+    "present_in_ALL_TOOLS": false,
+    "authoritative_runtime_paths_resolved": false
+  },
+  "managed_node_repl": {
+    "available": true,
+    "artifact_tool_import": "failed",
+    "import_statement": "await import('@oai/artifact-tool')",
+    "message": "Module not found: @oai/artifact-tool"
+  },
+  "searched_roots": [
+    "C:/Users/lenovo/.codex",
+    "C:/Users/lenovo/.codex/plugins/cache/openai-primary-runtime"
+  ],
+  "bundled_runtime_search": {
+    "artifact_tool_files_found": false,
+    "bundled_soffice_found": false,
+    "bundled_node_python_executables_found": false,
+    "skill_mark_scripts_found": true,
+    "limitation": "These findings cover the searched roots and available tool resolver. They do not assert nonexistence anywhere on the computer."
+  },
+  "system_paths_read_only": {
+    "node": "D:/nodejs/node.exe",
+    "python": "D:/Python/python.exe",
+    "research_python": "D:/Anaconda2024.06-1/python.exe",
+    "pdftoppm": "D:/LaTeX/texlive/2025/bin/windows/pdftoppm.exe",
+    "pdfinfo": "D:/LaTeX/texlive/2025/bin/windows/pdfinfo.exe",
+    "pdftoppm_version": "25.02.0",
+    "soffice_on_PATH": false,
+    "known_desktop_soffice_paths_found": false,
+    "edge": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+  },
+  "initial_python_package_probe": {
+    "research_python": {
+      "docx": false,
+      "reportlab": false,
+      "pypdf": true,
+      "pdfplumber": false,
+      "PIL": true,
+      "fitz": false,
+      "playwright": false
+    },
+    "system_python": {
+      "docx": false,
+      "reportlab": false,
+      "pypdf": false,
+      "pdfplumber": false,
+      "PIL": true,
+      "fitz": false,
+      "playwright": false
+    }
+  },
+  "later_root_task_local_pdf_install": {
+    "reportlab_directory_exists": true,
+    "path": "结项成果包/.artifact_deps/reportlab",
+    "note": "Root installs PDF-only dependencies task-locally under PDF skill permission; this does not restore the mandatory PPTX/DOCX runtime."
+  },
+  "format_status": {
+    "pptx": "blocked by mandatory managed authoring runtime",
+    "docx": "blocked by mandatory managed authoring runtime and unavailable compliant render path",
+    "pdf": "report PDFs by root; additional 12-page defense reading copy exported from HTML and visually reviewed after Poppler rendering",
+    "html": "12-slide offline presentation with independently verified V3 actual results; all slides visually reviewed"
+  }
+}

@@ -1,0 +1,490 @@
+                                           Domain Randomization for Transferring Deep Neural Networks from
+                                                           Simulation to the Real World
+                                                  Josh Tobin1 , Rachel Fong2 , Alex Ray2 , Jonas Schneider2 , Wojciech Zaremba2 , Pieter Abbeel3
+
+
+                                            Abstract— Bridging the ‘reality gap’ that separates simulated                      Training                                   Test
+                                         robotics from experiments on hardware could accelerate robotic
+                                         research through improved data availability. This paper ex-
+                                         plores domain randomization, a simple technique for training
+                                         models on simulated images that transfer to real images by ran-
+arXiv:1703.06907v1 [cs.RO] 20 Mar 2017
+
+
+
+
+                                         domizing rendering in the simulator. With enough variability in
+                                         the simulator, the real world may appear to the model as just
+                                         another variation. We focus on the task of object localization,
+                                         which is a stepping stone to general robotic manipulation
+                                         skills. We find that it is possible to train a real-world object
+                                         detector that is accurate to 1.5 cm and robust to distractors
+                                         and partial occlusions using only data from a simulator with
+
+                                                                                                                                    …
+                                         non-realistic random textures. To demonstrate the capabilities
+                                         of our detectors, we show they can be used to perform grasping
+                                         in a cluttered environment. To our knowledge, this is the first
+                                         successful transfer of a deep neural network trained only on
+                                         simulated RGB images (without pre-training on real images)
+                                         to the real world for the purpose of robotic control.
+
+                                                            I. INTRODUCTION
+                                            Performing robotic learning in a physics simulator could
+                                                                                                            Fig. 1.    Illustration of our approach. An object detector is trained on
+                                         accelerate the impact of machine learning on robotics by           hundreds of thousands of low-fidelity rendered images with random camera
+                                         allowing faster, more scalable, and lower-cost data collection     positions, lighting conditions, object positions, and non-realistic textures.
+                                         than is possible with physical robots. Learning in simula-         At test time, the same detector is used in the real world with no additional
+                                                                                                            training.
+                                         tion is especially promising for building on recent results
+                                         using deep reinforcement learning to achieve human-level
+                                         performance on tasks like Atari [27] and robotic control
+                                                                                                            the reality gap, form the barrier to using simulated data on
+                                         [21], [38]. Deep reinforcement learning employs random
+                                                                                                            real robots.
+                                         exploration, which can be dangerous on physical hardware. It
+                                                                                                               This paper explores domain randomization, a simple but
+                                         often requires hundreds of thousands or millions of samples
+                                                                                                            promising method for addressing the reality gap. Instead of
+                                         [27], which could take thousands of hours to collect, making
+                                                                                                            training a model on a single simulated environment, we
+                                         it impractical for many applications. Ideally, we could learn
+                                                                                                            randomize the simulator to expose the model to a wide
+                                         policies that encode complex behaviors entirely in simulation
+                                                                                                            range of environments at training time. The purpose of this
+                                         and successfully run those policies on physical robots with
+                                                                                                            work is to test the following hypothesis: if the variability in
+                                         minimal additional training.
+                                                                                                            simulation is significant enough, models trained in simulation
+                                            Unfortunately, discrepancies between physics simulators         will generalize to the real world with no additional training.
+                                         and the real world make transferring behaviors from sim-              Though in principle domain randomization could be ap-
+                                         ulation challenging. System identification, the process of         plied to any component of the reality gap, we focus on the
+                                         tuning the parameters of the simulation to match the behavior      challenge of transferring from low-fidelity simulated camera
+                                         of the physical system, is time-consuming and error-prone.         images. Robotic control from camera pixels is attractive due
+                                         Even with strong system identification, the real world has         to the low cost of cameras and the rich data they provide, but
+                                         unmodeled physical effects like nonrigidity, gear backlash,        challenging because it involves processing high-dimensional
+                                         wear-and-tear, and fluid dynamics that are not captured by         input data. Recent work has shown that supervised learning
+                                         current physics simulators. Furthermore, low-fidelity sim-         with deep neural networks is a powerful tool for learning
+                                         ulated sensors like image renderers are often unable to            generalizable representations from high-dimensional inputs
+                                         reproduce the richness and noise produced by their real-           [20], but deep learning relies on a large amount of labeled
+                                         world counterparts. These differences, known collectively as       data. Labeled data is difficult to obtain in the real world
+                                           1 OpenAI and UC Berkeley EECS, josh@openai.com                   for precise robotic manipulation behaviors, but it is easy to
+                                           2 OpenAI, {rfong,   aray, jonas, woj}@openai.com                 generate in a physics simulator.
+                                           3 OpenAI, UC Berkeley EECS & ICSI, pieter@openai.com                We focus on the task of training a neural network to
+detect the location of an object. Object localization from           of approaches have been proposed, including re-training the
+pixels is a well-studied problem in robotics, and state-of-          model in the target domain (e.g., [52]), adapting the weights
+the-art methods employ complex, hand-engineered image                of the model based on the statistics of the source and target
+processing pipelines (e.g., [6], [5], [44]). This work is a first    domains (e.g., [22]), learning invariant features between
+step toward the goal of using deep learning to improve the           domains (e.g., [47]), and learning a mapping from the target
+accuracy of object detection pipelines. Moreover, we see sim-        domain to the source domain (e.g., [43]). Researchers in
+to-real transfer for object localization as a stepping stone to      the reinforcement learning community have also studied the
+transferring general-purpose manipulation behaviors.                 problem of domain adaptation by learning invariant feature
+   We find that for a range of geometric objects, we are able        representations [13], adapting pretrained networks [35], and
+to train a detector that is accurate to around 1.5 cm in the         other methods. See [13] for a more complete treatment of
+real world using only simulated data rendered with simple,           domain adaptation in the reinforcement learning literature.
+algorithmically generated textures. Although previous work              In this paper we study the possibility of transfer from
+demonstrated the ability to perform robotic control using a          simulation to the real world without performing domain
+neural network pretrained on ImageNet and fine-tuned on              adaptation.
+randomized rendered pixels [37], this paper provides the first
+demonstration that domain randomization can be useful for            C. Bridging the reality gap
+robotic tasks requiring precision. We also provide an ablation          Previous work on leveraging simulated data for physical
+study of the impact of different choices of randomization            robotic experiments explored several strategies for bridging
+and training method on the success of transfer. We find that         the reality gap.
+with a sufficient number of textures, pre-training the object           One approach is to make the simulator closely match
+detector using real images is unnecessary. To our knowledge,         the physical reality by performing system identification and
+this is the first successful transfer of a deep neural network       using high-quality rendering. Though using realistic RGB
+trained only on simulated RGB images to the real world for           rendering alone has had limited success for transferring to
+the purpose of robotic control.                                      real robotic tasks [16], incorporating realistic simulation of
+                                                                     depth information can allow models trained on rendered
+                   II. RELATED WORK                                  images to transfer reasonably well to the real world [32].
+A. Object detection and pose estimation for robotics                 Combining data from high-quality simulators with other
+   Object detection and pose estimation for robotics is a well-      approaches like fine-tuning can also reduce the number of
+studied problem in the literature (see, e.g., [4], [5], [6], [10],   labeled samples required in the real world [34].
+[44], [50], [54]). Recent approaches typically involve offline          Unlike these approaches, ours allows the use of low-
+construction or learning of a 3D model of objects in the             quality renderers optimized for speed and not carefully
+scene (e.g., a full 3D mesh model [44] or a 3D metric feature        matched to real-world textures, lighting, and scene config-
+representation [5]). At test time, features from the test data       urations.
+(e.g., Scale-Invariant Feature Transform [SIFT] features [12]           Other work explores using domain adaptation techniques
+or color co-occurrence histograms [10]) are matched with the         to bridge the reality gap. It is often faster to fine-tune a
+3D models (or features from the 3D models). For example,             controller learned in simulation than to learn from scratch in
+a black-box nonlinear optimization algorithm can be used             the real world [7], [18]. In [11], the authors use a variational
+to minimize the re-projection error of the SIFT points from          autoencoder trained on simulated data to encode trajectories
+the object model and the 2D points in the test image [4].            of motor outputs corresponding to a desired behavior type
+Most successful approaches rely on using multiple camera             (e.g., reaching, grasping) as a low-dimensional latent code.
+frames [6] or depth information [44]. There has also been            A policy is learned on real data mapping features to distri-
+some success with only monocular camera images [4].                  butions over latent codes. The learned policy overcomes the
+   Compared to our method, traditional approaches require            reality gap by choosing latent codes that correspond to the
+less extensive training and take advantage of richer sensory         desired physical behavior via exploration.
+data, allowing them to detect the full 3D pose of objects               Domain adaptation has also been applied to robotic vision.
+(position and orientation) without any assumptions about             Rusu et al. [36] explore using the progressive network
+the location or size of the surface on which the objects             architecture to adapt a model that is pre-trained on simulated
+are placed. However, our approach avoids the challenging             pixels, and find it has better sample efficiency than fine-
+problem of 3D reconstruction, and employs a simple, easy             tuning or training in the real-world alone. In [46], the authors
+to implement deep learning-based pipeline that may scale             explore learning a correspondence between domains that
+better to more challenging problems.                                 allows the real images to be mapped into a space understood
+                                                                     by the model. While both of the preceding approaches
+B. Domain adaptation                                                 require reward functions or labeled data, which can be
+   The computer vision community has devoted significant             difficult to obtain in the real world, Mitash and collaborators
+study to the problem of adapting vision-based models trained         [26] explore pretraining an object detector using realistic
+in a source domain to a previously unseen target domain              rendered images with randomized lighting from 3D models
+(see, e.g., [9], [14], [15], [19], [23], [25], [51]). A variety      to bootstrap an automated learning learning process that does
+not require manually labeling data and uses only around 500           Sadeghi and Levine’s work [37] is the most similar to our
+real-world samples.                                                own. The authors demonstrate that a policy mapping images
+   A related idea, iterative learning control, employs real-       to controls learned in a simulator with varied 3D scenes and
+world data to improve the dynamics model used to determine         textures can be applied successfully to real-world quadrotor
+the optimal control behavior, rather than using real-world         flight. However, their experiments – collision avoidance in
+data to improve the controller directly. Iterative learning con-   hallways and open spaces – do not demonstrate the ability to
+trol starts with a dynamics model, applies the corresponding       deal with high-precision tasks. Our approach also does not
+control behavior on the real system, and then closes the loop      rely on precise camera information or calibration, instead
+by using the resulting data to improve the dynamics model.         randomizing the position, orientation, and field of view
+Iterative learning control has been applied to a variety of        of the camera in the simulator. Whereas their approach
+robotic control problems, from model car control (e.g., [1]        chooses textures from a dataset of around 200 pre-generated
+and [8]) to surgical robotics (e.g., [48]).                        materials, most of which are realistic, our approach is the first
+   Domain adaptation and iterative learning control are im-        to use only non-realistic textures created by a simple random
+portant tools for addressing the reality gap, but in contrast      generation process, which allows us to train on hundreds of
+to these approaches, ours requires no additional training on       thousands (or more) of unique texturizations of the scene.
+real-world data. Our method can also be combined easily
+with most domain adaptation techniques.                                                    III. METHOD
+   Several authors have previously explored the idea of using         Given some objects of interest {si }i , our goal is to train an
+domain randomization to bridge the reality gap.                    object detector d(I0 ) that maps a single monocular camera
+   In the context of physics adaptation, Mordatch and collab-      frame I0 to the Cartesian coordinates {(xi , yi , zi )}i of each
+orators [28] show that training a policy on an ensemble of         object. In addition to the objects of interest, our scenes
+dynamics models can make the controller robust to modeling         sometimes contain distractor objects that must be ignored by
+error and improve transfer to a real robot. Similarly, in [2],     the network. Our approach is to train a deep neural network
+the authors train a policy to pivot a tool held in the robot’s     in simulation using domain randomization. The remainder of
+gripper in a simulator with randomized friction and action         this section describes the specific domain randomization and
+delays, and find that it works in the real world and is robust     neural network training methodology we use.
+to errors in estimation of the system parameters.
+   Rather than relying on controller robustness, Yu et al. [53]    A. Domain randomization
+use a model trained on varied physics to perform system               The purpose of domain randomization is to provide
+identification using online trajectory data, but their approach    enough simulated variability at training time such that at
+is not shown to succeed in the real world. Rajeswaran et al.       test time the model is able to generalize to real-world data.
+[33] explore different training strategies for learning from       We randomize the following aspects of the domain for each
+an ensemble of models, including adversarial training and          sample used during training:
+adapting the ensemble distribution using data from the target         • Number and shape of distractor objects on the table
+domain, but also do not demonstrate successful real-world             • Position and texture of all objects on the table
+transfer.                                                             • Textures of the table, floor, skybox, and robot
+   Researchers in computer vision have used 3D models as              • Position, orientation, and field of view of the camera
+a tool to improve performance on real images since the                • Number of lights in the scene
+earliest days of the field (e.g., [30], [24]). More recently,         • Position, orientation, and specular characteristics of the
+3D models have been used to augment training data to                     lights
+aid transferring deep neural networks between datasets and            • Type and amount of random noise added to images
+prevent over-fitting on small datasets for tasks like viewpoint
+estimation [40] and object detection [42], [29]. Recent work          Since we use a single monocular camera image from an
+has explored using only synthetic data for training 2D object      uncalibrated camera to estimate object positions, we fix the
+detectors (i.e., predicting a bounding box for objects in the      height of the table in simulation, effectively creating a 2D
+scene). In [31], the authors find that by pretraining a network    pose estimation task. Random textures are chosen among the
+on ImageNet and fine-tuning on synthetic data created from         following:
+3D models, better detection performance on the PASCAL                (a) A random RGB value
+dataset can be achieved than training with only a few labeled        (b) A gradient between two random RGB values
+examples from the real dataset.                                      (c) A checker pattern between two random RGB values
+   In contrast to our work, most object detection results          The textures of all objects are chosen uniformly at random
+in computer vision use realistic textures, but do not create       – the detector does not have access to the color of the
+coherent 3D scenes. Instead, objects are rendered against a        object(s) of interest at training time, only their size and
+solid background or a randomly chosen photograph. As a             shape. We render images using the MuJoCo Physics Engine’s
+result, our approach allows our models to understand the 3D        [45] built-in renderer. This renderer is not intended to be
+spatial information necessary for rich interactions with the       photo-realistic, and physically plausible choices of textures
+physical world.                                                    and lighting are not needed.
+   Between 0 and 10 distractor objects are added to the
+table in each scene. Distractor objects on the floor or in
+the background are unnecessary, despite some clutter (e.g.,
+cables) on the floor in our real images.
+   Our method avoids calibration and precise placement of
+the camera in the real world by randomizing characteristics
+of the cameras used to render images in training. We manu-
+ally place a camera in the simulated scene that approximately
+matches the viewpoint and field of view of the real camera.
+Each training sample places the camera randomly within a
+(10 × 5 × 10) cm box around this initial point. The viewing
+angle of the camera is calculated analytically to point at a
+fixed point on the table, and then offset by up to 0.1 radians
+in each direction. The field of view is also scaled by up to                                                                                 Fig. 3.   The geometric objects used in our experiments.
+5 % from the starting point.
+B. Model architecture and training                                                                                                   the object and one or more distractors (also from among the
+                                                                                                                                     geometric object set) on a simulated tabletop and (b) a label
+                                                                                                          Fully connected layers
+                                                                             Convolutional layers
+                                                                                                                                     corresponding to the Cartesian coordinates of the center of
+                                                                                                                                     mass of the object in the world frame.
+                                                                                                                         (x, y, z)
+                                                                                                                                        For each experiment, we performed a small hyperparam-
+                                                                                                                                     eter search, evaluating combinations of two learning rates
+                                                                                                                                     (1e−4 and 2e−4) and three batch sizes (25, 50, and 100).
+             (224 x 224 x 64) (112 x 112 x 128) (56 x 56 x 256) (28 x 28 x 512) (14 x 14 x 512) (1 x 1 x 256) (1 x 1 x 64)           We report the performance of the best network.
+                                                                                                                                        The goals of our experiments are:
+Fig. 2. The model architecture used in our experiments. Each vertical
+bar corresponds to a layer of the model. ReLU nonlinearities are used                                                                  (a) Evaluate the localization accuracy of our trained de-
+throughout, and max pooling occurs between each of the groupings of                                                                        tectors in the real world, including in the presence of
+convolutional layers. The input is an image from an external webcam
+downsized to (224 × 224) and the output of the network predicts the
+                                                                                                                                           distractor objects and partial occlusions
+(x, y, z) coordinates of object(s) of interest.                                                                                        (b) Assess which elements of our approach are most
+                                                                                                                                           critical for achieving transfer from simulation to the
+   We parametrize our object detector with a deep convo-                                                                                   real world
+lutional neural network. In particular, we use a modified                                                                              (c) Determine whether the learned detectors are accurate
+version the VGG-16 architecture [39] shown in Figure 2.                                                                                    enough to perform robotic manipulation tasks
+We chose this architecture because it performs well on a
+variety of computer vision tasks, and because it has a wide                                                                                                            TABLE I
+availability of pretrained weights. We use the standard VGG                                                                                              Detection error for various objects, cm
+convolutional layers, but use smaller fully connected layers                                                                                 Evaluation type      Object only     Distractors      Occlusions
+of sizes 256 and 64 and do not use dropout. For the majority                                                                                      Cone            1.3 ± 1.11      1.5 ± 1.0        1.4 ± 0.6
+of our experiments, we use weights obtained by pretraining                                                                                        Cube             1.3 ± 0.6      1.8 ± 1.2        1.4 ± 0.61
+on ImageNet to initialize the convolutional layers, which                                                                                       Cylinder          1.1 ± 0.91      1.9 ± 2.8        1.9 ± 2.9
+we hypothesized would be essential to achieving transfer.                                                                                    Hexagonal Prism       0.7 ± 0.5     0.6 ± 0.31        1.0 ± 1.01
+In practice, we found that using random weight initialization                                                                                    Pyramid          0.9 ± 0.31     1.0 ± 0.51        1.1 ± 0.71
+                                                                                                                                            Rectangular Prism      1.3 ± 0.7     1.2 ± 0.41        0.9 ± 0.6
+works as well in most cases.
+                                                                                                                                               Tetrahedron        0.8 ± 0.41     1.0 ± 0.41        3.2 ± 5.8
+   We train the detector through stochastic gradient descent
+                                                                                                                                             Triangular Prism     0.9 ± 0.41     0.9 ± 0.41        1.9 ± 2.2
+on the L2 loss between the object positions estimated by
+the network and the true object positions using the Adam
+optimizer [17]. We found that using a learning rate of around                                                                        B. Localization accuracy
+1e−4 (as opposed to the standard 1e−3 for Adam) improved
+                                                                                                                                        To evaluate the accuracy of learned detectors in the real
+convergence and helped avoid a common local optimum,
+                                                                                                                                     world, we captured 480 webcam images of one or more
+mapping all objects to the center of the table.
+                                                                                                                                     geometric objects on a table at a distance of 70 cm to 105 cm
+                              IV. EXPERIMENTS                                                                                        from the camera. The camera position remains constant
+A. Experimental Setup                                                                                                                across all images. We did not control for lighting conditions
+                                                                                                                                     or the rest of the scene around the table (e.g., all images
+   We evaluated our approach by training object detectors
+                                                                                                                                     contain part of the robot and tape and wires on the floor).
+for each of eight geometric objects. We constructed mesh
+representations for each object to render in the simulator.                                                                            1 Categories for which the best final performance was achieved for
+Each training sample consists of (a) a rendered image of                                                                             detector trained from scratch.
+We measured ground truth positions for a single object per                        few as 5, 000 training samples, but performance improves up
+image by aligning the object on a grid on the tabletop. Each                      to around 50, 000 samples.
+of the eight geometric objects has 60 labeled images in the                          Figure 4 also compares to the performance of a model
+dataset: 20 with the object alone on the table, 20 in which                       trained from scratch (i.e., without using pre-trained ImageNet
+one or more distractor objects are present on the table, and                      weights). Our hypothesis that pre-training would be essential
+20 in which the object is also partially occluded by another                      to generalizing to the real world proved to be false. With a
+object.                                                                           large amount of training data, random weight initialization
+   Table I summarizes the performance of our models on the                        can achieve nearly the same performance in transferring to
+test set. Our object detectors are able to localize objects to                    the real world as does pre-trained weight initialization. The
+within 1.5 cm (on average) in the real world and perform well                     best detectors for a given object were often those initialized
+in the presence of clutter and partial occlusions. Though the                     with random weights. However, using a pre-trained model
+accuracy of our trained detectors is promising, note that they                    can significantly improve performance when less training
+are still over-fitting2 the simulated training data, where error                  data is used.
+is 0.3 cm to 0.5 cm. Even with over-fitting, the accuracy is                         Figure 5 shows the sensitivity to the number of unique
+comparable at a similar distance to the translation error in                      texturizations of the scene when trained on a fixed number
+traditional techniques for pose estimation in clutter from a                      (10, 000) of training examples. We found that performance
+single monocular camera frame [5] that use higher-resolution                      degrades significantly when fewer than 1, 000 textures are
+images.                                                                           used, indicating that for our experiments, using a large
+                                                                                  number of random textures (in addition to random distractors
+C. Ablation study                                                                 and object positions) is necessary to achieving transfer. Note
+   To evaluate the importance of different factors of our                         that when 1, 000 random textures are used in training, the
+training methodology, we assessed the sensitivity of the                          performance using 10, 000 images is comparable to that
+algorithm to the following:                                                       of using only 1, 000 images, indicating that in the low
+   • Number of training images                                                    data regime, texture randomization is more important than
+   • Number of unique textures seen in training                                   randomization of object positions.3
+   • Use of random noise in pre-processing
+   • Presence of distractors in training
+   • Randomization of camera position in training
+   • Use of pre-trained weights in the detection model
+
+   We found that the method is at least somewhat sensitive
+to all of the factors except the use of random noise.
+
+
+
+
+                                                                                  Fig. 5. Sensitivity to amount of texture randomization. In each case, the
+                                                                                  detector was trained using 10, 000 random object positions and combina-
+                                                                                  tions of distractors, but only the given number of unique texturizations and
+                                                                                  lighting conditions were used.
+
+                                                                                     Table II examines the performance of the algorithm when
+                                                                                  random noise, distractors, and camera randomization are
+Fig. 4. Sensitivity of test error on real images to the number of simulated       removed in training. Incorporating distractors during training
+training examples used. Each training example corresponds to a single             appears to be critical to resilience to distractors in the
+labeled example of an object on the table with between 0 and 10 distractor
+objects. Lighting and all textures are randomized between iterations.             real world. Randomizing the position of the camera also
+                                                                                  consistently provides a slight accuracy boost, but reasonably
+   Figure 4 shows the sensitivity to the number of training                       high accuracy is achievable without it. Adding noise during
+samples used for pre-trained models and models trained from                       pretraining appears to have a negligible effect. In practice,
+scratch. Using a pre-trained model, we are able to achieve                        we found that adding a small amount of random noise to
+relatively accurate real-world detection performance with as                      images at training time improves convergence and makes
+                                                                                  training less susceptible to local minima.
+   2 Overfitting in this setting is more subtle than in the standard supervised
+learning where train and test data come from the same distribution. In the        D. Robotics experiments
+standard supervised learning setting overfitting can be avoided by using a           To demonstrate the potential of this technique for transfer-
+hold-out set during training. We do apply this idea to ensure that we are
+not overfitting on the simulated data. However, since our goal is to learn        ring robotic behaviors learned in simulation to the real world,
+from training data originated in the simulator and generalize to test data
+originated from the real world, we assume to not have any real world data           3 Note the total number of textures is higher than the number of training
+available during training. Therefore no validation on real data can be done       examples in some of these experiments because every scene has many
+during training.                                                                  surfaces, each with its own texture.
+                                   TABLE II
+
+         Average detection error on geometric shapes by method, cm4
+             Evaluation                          Real images
+               type                Object only    Distractors   Occlusions
+            Full method            1.3 ± 0.6     1.8 ± 1.7      2.4 ± 3.0
+          No noise added           1.4 ± 0.7     1.9 ± 2.0      2.4 ± 2.8
+      No camera randomization      2.0 ± 2.1     2.4 ± 2.3      2.9 ± 3.5
+      No distractors in training   1.5 ± 0.6     7.2 ± 4.5      7.4 ± 5.3
+
+
+
+
+we evaluated the use of our object detection networks for
+localizing an object in clutter and performing a prescribed                  Fig. 6. Two representative executions of grasping objects using vision
+grasp. For two of our most consistently accurate detectors,                  learned in simulation only. The object detector network estimates the
+we evaluated the ability to pick up the detected object in 20                positions of the object of interest, and then a motion planner plans a simple
+                                                                             sequence of motions to grasp the object at that location.
+increasingly cluttered scenes using the positions estimated
+by the detector and off-the-shelf motion planning software
+[41]. To test the robustness of our method to discrepancies
+                                                                                • Introducing additional forms of texture, lighting, and
+in object distributions between training and test time, some
+                                                                                  rendering randomization to the simulation and training
+of our test images contain distractors placed at orientations
+                                                                                  on more data
+not seen during training (e.g., a hexagonal prism placed on
+                                                                                • Incorporating multiple camera viewpoints, stereo vision,
+its side).
+                                                                                  or depth information
+   We deployed the pipeline on a Fetch robot [49], and found
+                                                                                • Combining domain randomization with domain adapta-
+it was able to successfully detect and pick up the target object
+                                                                                  tion
+in 38 out of 40 trials, including in highly cluttered scenes
+with significant occlusion of the target object. Note that the                  Domain randomization is a promising research direction
+trained detectors have no prior information about the color                  toward bridging the reality gap for robotic behaviors learned
+of the target object, only its shape and size, and are able                  in simulation. Deep reinforcement learning may allow more
+to detect objects placed closely to other objects of the same                complex policies to be learned in simulation through large-
+color.                                                                       scale exploration and optimization, and domain randomiza-
+   To test the performance of our object detectors on real-                  tion could be an important tool for making such policies
+world objects with non-uniform textures, we trained an object                useful on real robots.
+detector to localize a can of Spam from the YCB Dataset [3].
+                                                                                                          R EFERENCES
+At training time, the can was present on the table along with
+geometric object distractors. At test time, instead of using                  [1] Pieter Abbeel, Morgan Quigley, and Andrew Y Ng. Using inaccurate
+geometric object distractors, we placed other food items from                     models in reinforcement learning. In Proceedings of the 23rd inter-
+                                                                                  national conference on Machine learning, pages 1–8. ACM, 2006.
+the YCB set on the table. The detector was able to ignore                     [2] Rika Antonova, Silvia Cruciani, Christian Smith, and Danica
+the previously unseen distractors and pick up the target in 9                     Kragic. Reinforcement learning for pivoting task. arXiv preprint
+of 10 trials.                                                                     arXiv:1703.00472, 2017.
+                                                                              [3] Berk Calli, Arjun Singh, Aaron Walsman, Siddhartha Srinivasa, Pieter
+   Figure 6 shows examples of the robot grasping trials. For                      Abbeel, and Aaron M Dollar. The ycb object and model set: Towards
+videos, please visit the web page associated with this paper.5                    common benchmarks for manipulation research. In Advanced Robotics
+                                                                                  (ICAR), 2015 International Conference on, pages 510–517. IEEE,
+                                                                                  2015.
+                            V. CONCLUSION                                     [4] Alvaro Collet, Dmitry Berenson, Siddhartha S Srinivasa, and Dave
+                                                                                  Ferguson. Object recognition and full pose registration from a single
+  We demonstrated that an object detector trained only in                         image for robotic manipulation. In Robotics and Automation, 2009.
+simulation can achieve high enough accuracy in the real                           ICRA’09. IEEE International Conference on, pages 48–55. IEEE,
+                                                                                  2009.
+world to perform grasping in clutter. Future work will explore                [5] Alvaro Collet, Manuel Martinez, and Siddhartha S Srinivasa. The
+how to make this technique reliable and effective enough                          moped framework: Object recognition and pose estimation for manip-
+to perform tasks that require contact-rich manipulation or                        ulation. The International Journal of Robotics Research, 30(10):1284–
+                                                                                  1306, 2011.
+higher precision.                                                             [6] Alvaro Collet and Siddhartha S Srinivasa. Efficient multi-view object
+  Future directions that could improve the accuracy of object                     recognition and full pose estimation. In Robotics and Automation
+detectors trained using domain randomization include:                             (ICRA), 2010 IEEE International Conference on, pages 2050–2055.
+                                                                                  IEEE, 2010.
+  •   Using higher resolution camera frames                                   [7] Mark Cutler and Jonathan P How. Efficient reinforcement learning for
+  •   Optimizing model architecture choice                                        robots using informative simulated priors. In Robotics and Automation
+                                                                                  (ICRA), 2015 IEEE International Conference on, pages 2605–2612.
+                                                                                  IEEE, 2015.
+  4 Each of the models compared was trained with 20, 000 training exam-
+                                                                              [8] Mark Cutler, Thomas J Walsh, and Jonathan P How. Reinforcement
+ples                                                                              learning with multi-fidelity simulators. In Robotics and Automation
+  5 https://sites.google.com/view/                                                (ICRA), 2014 IEEE International Conference on, pages 3888–3895.
+domainrandomization/                                                              IEEE, 2014.
+ [9] Lixin Duan, Dong Xu, and Ivor Tsang.               Learning with aug-        eration from cad models for 2.5 d recognition. arXiv preprint
+     mented features for heterogeneous domain adaptation. arXiv preprint          arXiv:1702.08558, 2017.
+     arXiv:1206.4660, 2012.                                                  [33] Aravind Rajeswaran, Sarvjeet Ghotra, Sergey Levine, and Balaraman
+[10] Staffan Ekvall, Danica Kragic, and Frank Hoffmann. Object recog-             Ravindran. Epopt: Learning robust neural network policies using
+     nition and pose estimation using color cooccurrence histograms and           model ensembles. arXiv preprint arXiv:1610.01283, 2016.
+     geometric modeling. Image and Vision Computing, 23(11):943–955,         [34] Stephan R Richter, Vibhav Vineet, Stefan Roth, and Vladlen Koltun.
+     2005.                                                                        Playing for data: Ground truth from computer games. In European
+[11] Ali Ghadirzadeh, Atsuto Maki, Danica Kragic, and Mårten Björkman.          Conference on Computer Vision, pages 102–118. Springer, 2016.
+     Deep predictive policy training using reinforcement learning. arXiv     [35] Andrei A Rusu, Neil C Rabinowitz, Guillaume Desjardins, Hubert
+     preprint arXiv:1703.00727, 2017.                                             Soyer, James Kirkpatrick, Koray Kavukcuoglu, Razvan Pascanu,
+[12] Iryna Gordon and David G Lowe. What and where: 3d object                     and Raia Hadsell. Progressive neural networks. arXiv preprint
+     recognition with accurate pose. In Toward category-level object              arXiv:1606.04671, 2016.
+     recognition, pages 67–82. Springer, 2006.                               [36] Andrei A Rusu, Matej Vecerik, Thomas Rothörl, Nicolas Heess,
+[13] Abhishek Gupta, Coline Devin, YuXuan Liu, Pieter Abbeel, and                 Razvan Pascanu, and Raia Hadsell. Sim-to-real robot learning from
+     Sergey Levine. Learning invariant feature spaces to transfer skills          pixels with progressive nets. arXiv preprint arXiv:1610.04286, 2016.
+     with reinforcement learning. ICLR 2017, to appear, 2017.                [37] Fereshteh Sadeghi and Sergey Levine. (cad) 2 RL: Real single-image
+[14] Judy Hoffman, Sergio Guadarrama, Eric Tzeng, Ronghang Hu, Jeff               flight without a single real image. arXiv preprint arXiv:1611.04201,
+     Donahue, Ross Girshick, Trevor Darrell, and Kate Saenko. Lsda: Large         2016.
+     scale detection through adaptation. In Neural Information Processing    [38] John Schulman, Sergey Levine, Pieter Abbeel, Michael I Jordan, and
+     Symposium (NIPS), 2014.                                                      Philipp Moritz. Trust region policy optimization. In ICML, pages
+[15] Judy Hoffman, Erik Rodner, Jeff Donahue, Trevor Darrell, and Kate            1889–1897, 2015.
+     Saenko. Efficient learning of domain-invariant image representations.   [39] Karen Simonyan and Andrew Zisserman.              Very deep convolu-
+     arXiv preprint arXiv:1301.3224, 2013.                                        tional networks for large-scale image recognition. arXiv preprint
+[16] Stephen James and Edward Johns. 3d simulation for robot arm control          arXiv:1409.1556, 2014.
+     with deep q-learning. arXiv preprint arXiv:1609.03759, 2016.            [40] Hao Su, Charles R Qi, Yangyan Li, and Leonidas J Guibas. Render for
+[17] Diederik Kingma and Jimmy Ba. Adam: A method for stochastic                  cnn: Viewpoint estimation in images using cnns trained with rendered
+     optimization. arXiv preprint arXiv:1412.6980, 2014.                          3d model views. In Proceedings of the IEEE International Conference
+[18] J Zico Kolter and Andrew Y Ng. Learning omnidirectional path                 on Computer Vision, pages 2686–2694, 2015.
+     following using dimensionality reduction. In Robotics: Science and      [41] Ioan A Sucan and Sachin Chitta. Moveit! http://moveit.ros.org.
+     Systems, 2007.
+                                                                             [42] Baochen Sun and Kate Saenko. From virtual to reality: Fast adaptation
+[19] Brian Kulis, Kate Saenko, and Trevor Darrell. What you saw is not
+                                                                                  of virtual object detectors to real domains. In BMVC, volume 1, page 3,
+     what you get: Domain adaptation using asymmetric kernel transforms.
+                                                                                  2014.
+     In Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+                                                                             [43] Yaniv Taigman, Adam Polyak, and Lior Wolf. Unsupervised cross-
+     Conference on, pages 1785–1792. IEEE, 2011.
+                                                                                  domain image generation. arXiv preprint arXiv:1611.02200, 2016.
+[20] Yann LeCun, Yoshua Bengio, and Geoffrey Hinton. Deep learning.
+     Nature, 521(7553):436–444, 2015.                                        [44] Jie Tang, Stephen Miller, Arjun Singh, and Pieter Abbeel. A textured
+[21] Sergey Levine, Chelsea Finn, Trevor Darrell, and Pieter Abbeel. End-         object recognition pipeline for color and depth image data. In Robotics
+     to-end training of deep visuomotor policies. Journal of Machine              and Automation (ICRA), 2012 IEEE International Conference on,
+     Learning Research, 17(39):1–40, 2016.                                        pages 3467–3474. IEEE, 2012.
+[22] Yanghao Li, Naiyan Wang, Jianping Shi, Jiaying Liu, and Xiaodi Hou.     [45] Emanuel Todorov, Tom Erez, and Yuval Tassa. Mujoco: A physics
+     Revisiting batch normalization for practical domain adaptation. arXiv        engine for model-based control. In Intelligent Robots and Systems
+     preprint arXiv:1603.04779, 2016.                                             (IROS), 2012 IEEE/RSJ International Conference on, pages 5026–
+[23] Mingsheng Long, Yue Cao, Jianmin Wang, and Michael I Jordan.                 5033. IEEE, 2012.
+     Learning transferable features with deep adaptation networks. In        [46] Eric Tzeng, Coline Devin, Judy Hoffman, Chelsea Finn, Pieter Abbeel,
+     ICML, pages 97–105, 2015.                                                    Sergey Levine, Kate Saenko, and Trevor Darrell. Adapting deep vi-
+[24] David G Lowe. Three-dimensional object recognition from single               suomotor representations with weak pairwise constraints. In Workshop
+     two-dimensional images. Artificial intelligence, 31(3):355–395, 1987.        on the Algorithmic Foundations of Robotics (WAFR), 2016.
+[25] Yishay Mansour, Mehryar Mohri, and Afshin Rostamizadeh. Do-             [47] Eric Tzeng, Judy Hoffman, Ning Zhang, Kate Saenko, and Trevor
+     main adaptation: Learning bounds and algorithms. arXiv preprint              Darrell. Deep domain confusion: Maximizing for domain invariance.
+     arXiv:0902.3430, 2009.                                                       arXiv preprint arXiv:1412.3474, 2014.
+[26] Chaitanya Mitash, Kostas E Bekris, and Abdeslam Boularias. A self-      [48] Jur Van Den Berg, Stephen Miller, Daniel Duckworth, Humphrey Hu,
+     supervised learning system for object detection using physics simula-        Andrew Wan, Xiao-Yu Fu, Ken Goldberg, and Pieter Abbeel. Super-
+     tion and multi-view pose estimation. arXiv preprint arXiv:1703.03347,        human performance of surgical tasks by robots using iterative learning
+     2017.                                                                        from human-guided demonstrations. In Robotics and Automation
+[27] Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Andrei A Rusu,              (ICRA), 2010 IEEE International Conference on, pages 2074–2081.
+     Joel Veness, Marc G Bellemare, Alex Graves, Martin Riedmiller,               IEEE, 2010.
+     Andreas K Fidjeland, Georg Ostrovski, et al. Human-level control        [49] Melonee Wise, Michael Ferguson, Derek King, Eric Diehr, and David
+     through deep reinforcement learning. Nature, 518(7540):529–533,              Dymesich. Fetch and freight: Standard platforms for service robot
+     2015.                                                                        applications. In Workshop on Autonomous Mobile Service Robots,
+[28] Igor Mordatch, Kendall Lowrey, and Emanuel Todorov. Ensemble-                2016.
+     cio: Full-body dynamic motion planning that transfers to physical       [50] Patrick Wunsch and Gerd Hirzinger. Real-time visual tracking of
+     humanoids. In Intelligent Robots and Systems (IROS), 2015 IEEE/RSJ           3d objects with dynamic handling of occlusion. In Robotics and
+     International Conference on, pages 5307–5314. IEEE, 2015.                    Automation, 1997. Proceedings., 1997 IEEE International Conference
+[29] Yair Movshovitz-Attias, Takeo Kanade, and Yaser Sheikh. How useful           on, volume 4, pages 2868–2873. IEEE, 1997.
+     is photo-realistic rendering for visual learning? In Computer Vision–   [51] Jun Yang, Rong Yan, and Alexander G Hauptmann. Cross-domain
+     ECCV 2016 Workshops, pages 202–217. Springer, 2016.                          video concept detection using adaptive svms. In Proceedings of the
+[30] Ramakant Nevatia and Thomas O Binford. Description and recognition           15th ACM international conference on Multimedia, pages 188–197.
+     of curved objects. Artificial Intelligence, 8(1):77–98, 1977.                ACM, 2007.
+[31] Xingchao Peng, Baochen Sun, Karim Ali, and Kate Saenko. Learning        [52] Jason Yosinski, Jeff Clune, Yoshua Bengio, and Hod Lipson. How
+     deep object detectors from 3d models. In Proceedings of the IEEE             transferable are features in deep neural networks? In Advances in
+     International Conference on Computer Vision, pages 1278–1286,                neural information processing systems, pages 3320–3328, 2014.
+     2015.                                                                   [53] Wenhao Yu, C Karen Liu, and Greg Turk. Preparing for the unknown:
+[32] Benjamin Planche, Ziyan Wu, Kai Ma, Shanhui Sun, Stefan Kluckner,            Learning a universal policy with online system identification. arXiv
+     Terrence Chen, Andreas Hutter, Sergey Zakharov, Harald Kosch,                preprint arXiv:1702.02453, 2017.
+     and Jan Ernst. Depthsynth: Real-time realistic synthetic data gen-      [54] Stefan Zickler and Manuela M Veloso. Detection and localization
+    of multiple objects. In Humanoid Robots, 2006 6th IEEE-RAS
+    International Conference on, pages 20–25. IEEE, 2006.
+
+                       APPENDIX
+A. Randomly generated samples from our method
+   Figure 7 displays a selection of the images used during
+training for the object detectors detailed in the paper.
+
+
+
+
+                                                                 Fig. 7. A selection of randomly textured scenes used in the training phase
+                                                                 of our method
+

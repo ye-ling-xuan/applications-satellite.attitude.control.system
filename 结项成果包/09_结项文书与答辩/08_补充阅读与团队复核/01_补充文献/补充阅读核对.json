@@ -1,0 +1,277 @@
+{
+  "status": "tool_assisted_acquisition_and_relevant_section_reading_complete",
+  "date": "2026-10-13",
+  "scope": "Only supplemental source acquisition, relevant reading, classification and provenance; no original document changes or new experiments",
+  "notes_file": "补充文献分类与阅读札记.md",
+  "notes_sha256": "2153ac384e00160dbacab852a7f6b5df5aa9b405d342cf7643e352d28480ab91",
+  "notes_characters": 6282,
+  "academic_source_count": {
+    "existing_main_text_source_ids": [
+      "A01/A01F",
+      "A02/A02F",
+      "A03/A03F",
+      "P01",
+      "A04/A04F",
+      "A05/A05F",
+      "A06",
+      "S01",
+      "S02"
+    ],
+    "existing_count": 9,
+    "new_distinct_sources_count": 3,
+    "cumulative_count": 12,
+    "not_equivalent_to_all_12_full_text_or_member_reading": true,
+    "existing_reading_level_manifest": "../../05_来源与核验/文献核对清单.md",
+    "existing_reading_levels_unchanged": true,
+    "new_doi_absent_from_frozen_reviews": true
+  },
+  "documents": [
+    {
+      "id": "L01",
+      "doi": "10.3390/fractalfract8070385",
+      "classification": "hybrid_rbf_neural_uncertainty_estimator_and_fractional_order_sliding_mode_control",
+      "source_version": "publisher_version",
+      "pdf_path": "原文缓存/L01.pdf",
+      "pdf_sha256": "ed39e32f9dce2bae88bade5337a8b42c29b5e8c4b9adb612e5a669a2adaca58b",
+      "pdf_pages": 16,
+      "actual_relevant_text_pages_read": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "section_locators": [
+        "p3 eq1-4 spacecraft model",
+        "p4 Assumption1 and controller roles",
+        "p5 Figure1 and eq9-11 critic input/cost",
+        "p6 eq12-18 critic online update/projection and actor output",
+        "p7 eq20-26 actor online update and hybrid torque law",
+        "p8 Theorem1 reaching-phase conditions",
+        "p9-10 proof/simulation settings",
+        "p11-12 tracking/control figures and smoothness discussion"
+      ],
+      "visual_inspections": [
+        {
+          "pdf_page": 5,
+          "image_path": "原文缓存/视觉核对/L01_p05.png",
+          "image_sha256": "ea6b6349bf93f191ef11cf0b92b7774ca515242474bc1831c673b128b4286f59",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        },
+        {
+          "pdf_page": 6,
+          "image_path": "原文缓存/视觉核对/L01_p06.png",
+          "image_sha256": "bd9edd2771b307ef13d0c9fe18b3eea7e5393e60901de606c1e5995f4a4d5f53",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        },
+        {
+          "pdf_page": 7,
+          "image_path": "原文缓存/视觉核对/L01_p07.png",
+          "image_sha256": "9b9b3ecb506e4fe8f620f75b225bb502de55905b9fc22d869d1c9c0a115c281c",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        },
+        {
+          "pdf_page": 8,
+          "image_path": "原文缓存/视觉核对/L01_p08.png",
+          "image_sha256": "dbba7eaba4204032c8b397dcc516e29ab20bb9a2689acdfc448d30970da6bc6a",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        },
+        {
+          "pdf_page": 10,
+          "image_path": "原文缓存/视觉核对/L01_p10.png",
+          "image_sha256": "5a0c11b44af0f6011a1c9682cf4da14871422ae7bf1b037cdbb2aa20e28b4ea0",
+          "inspection_status": "visually_checked_simulation_fault_times_and_FOPID_smoothness_claim"
+        },
+        {
+          "pdf_page": 12,
+          "image_path": "原文缓存/视觉核对/L01_p12.png",
+          "image_sha256": "fb40521b2dfb94191f8cea4f65133868d436cded094b27536d19073dbdddf338",
+          "inspection_status": "visually_checked_simulation_fault_times_and_FOPID_smoothness_claim"
+        }
+      ],
+      "limitations_and_nonclaims": [
+        "Actor estimates lumped uncertainty rather than acting as SB3 SAC torque policy",
+        "Continuous online NN weight updates differ from offline training with frozen deployment",
+        "Projection bounds NN weights, not an unconditional entire-system stability proof",
+        "External simulation only; project has not implemented/reproduced the hybrid controller",
+        "Partial notation/assumption/numerical discretization issues require further scrutiny before replication"
+      ],
+      "full_text_obtained": true,
+      "full_text_every_page_read": false,
+      "tool_assisted_reading_not_member_reading": true,
+      "project_reproduction_completed": false
+    },
+    {
+      "id": "L02",
+      "doi": "10.1007/s11431-011-4475-0",
+      "classification": "classical_model_based_adaptive_attitude_synchronization_with_online_inertia_parameter_updates",
+      "source_version": "arxiv_author_manuscript_v2",
+      "pdf_path": "原文缓存/L02.pdf",
+      "pdf_sha256": "56a6aa1942f48c15e6db2f59204083ae785142eb1b4094b29a5af2a286813497",
+      "pdf_pages": 13,
+      "actual_relevant_text_pages_read": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "section_locators": [
+        "p2 MRP definition and Euler attitude dynamics",
+        "p3 Properties1-3 and eq3 six inertia parameters",
+        "p4 synchronization/filter error and regressor construction",
+        "p5 eq10-11 controller and online adaptation, Theorem1",
+        "p6 proof scope and reference boundedness",
+        "p7 eq20-21 leader tracking and Theorem2 graph condition",
+        "p8 bounded parameter errors and tracking convergence",
+        "p9 Table1 six-spacecraft simulation and no-velocity future-work statement"
+      ],
+      "visual_inspections": [
+        {
+          "pdf_page": 3,
+          "image_path": "原文缓存/视觉核对/L02_p03.png",
+          "image_sha256": "3fc70c860ca7774a8bb7f029bf85b300c74a2b187aa25f51103fd52286c5ff05",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        },
+        {
+          "pdf_page": 5,
+          "image_path": "原文缓存/视觉核对/L02_p05.png",
+          "image_sha256": "18e7a631b1925c569dfaf7e7ef0e9054f1fd7a0357f96ece71fad08578b384b0",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        },
+        {
+          "pdf_page": 7,
+          "image_path": "原文缓存/视觉核对/L02_p07.png",
+          "image_sha256": "5e8733e13490a3f620d976288e023fde6980070320848c410b6209e46937d402",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        },
+        {
+          "pdf_page": 9,
+          "image_path": "原文缓存/视觉核对/L02_p09.png",
+          "image_sha256": "9d064125fc68a7d9a1a79d8e11dd4132bf8f19d687f9b3dbe0eb9a907c57862d",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        }
+      ],
+      "limitations_and_nonclaims": [
+        "No neural network or reinforcement learning",
+        "Unknown constant positive-definite inertia matrices and directed graph conditions",
+        "Tracking convergence is not asserted as exact inertia identification",
+        "Author manuscript PDF page numbers differ from journal pagination",
+        "Project single-spacecraft frozen-policy tests do not reproduce multi-spacecraft theorem"
+      ],
+      "full_text_obtained": true,
+      "full_text_every_page_read": false,
+      "tool_assisted_reading_not_member_reading": true,
+      "project_reproduction_completed": false
+    },
+    {
+      "id": "L03",
+      "doi": "10.1109/ISCAS48785.2022.9937721",
+      "classification": "supervised_cnn_spacecraft_pose_estimation_perception_not_closed_loop_attitude_control",
+      "source_version": "arxiv_author_manuscript_v1",
+      "pdf_path": "原文缓存/L03.pdf",
+      "pdf_sha256": "d82bc9392a4b139beb68689fb082a3c6d944f4d1a6c786bb743d8d6e11b9a16f",
+      "pdf_pages": 5,
+      "actual_relevant_text_pages_read": [
+        2,
+        3,
+        4
+      ],
+      "section_locators": [
+        "p2 Figure1 MobileNet-v2 backbone/avg pooling/two heads",
+        "p2 eq1 generalization score ratio",
+        "p2 TableII cited backbone latency rather than flight validation",
+        "p3 losses/training and TableIV parameters/bin tradeoff",
+        "p4 TableV/VI accuracy and synthetic-to-real results",
+        "p4 Future work quantization/pruning/commercial-chip deployment"
+      ],
+      "visual_inspections": [
+        {
+          "pdf_page": 2,
+          "image_path": "原文缓存/视觉核对/L03_p02.png",
+          "image_sha256": "3a586101211860c565902fff272503af7aa961e35dff4a3a40f7667f0402fc77",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        },
+        {
+          "pdf_page": 3,
+          "image_path": "原文缓存/视觉核对/L03_p03.png",
+          "image_sha256": "b88a9248d35585aa4fba2ca806e8b5d95528cc858f8d767d2be22aff1b04011e",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        },
+        {
+          "pdf_page": 4,
+          "image_path": "原文缓存/视觉核对/L03_p04.png",
+          "image_sha256": "cfb3b21002e6dd556aac9011a0e214be8925c840ded14b4dc081012f3161095c",
+          "inspection_status": "visually_checked_formula_figure_table_roles"
+        }
+      ],
+      "limitations_and_nonclaims": [
+        "Input images; output relative position and quaternion; no torque policy",
+        "Supervised offline label training, not SAC",
+        "IEEE ISCAS conference paper, not IEEE journal",
+        "No verified full-network on-orbit deployment in this paper",
+        "Smaller E_real/E_syn ratio alone does not imply smaller absolute E_real",
+        "All numerical examples are external paper results, not project data"
+      ],
+      "full_text_obtained": true,
+      "full_text_every_page_read": false,
+      "tool_assisted_reading_not_member_reading": true,
+      "project_reproduction_completed": false
+    }
+  ],
+  "external_numeric_example": {
+    "source": "L03",
+    "pdf_page": 4,
+    "table": "VI",
+    "classification": "external_paper_result_not_project_result",
+    "regression": {
+      "params_millions": 2.2,
+      "E_syn": 0.616,
+      "E_real": 0.7997,
+      "G_factor": 1.3
+    },
+    "Proenca_reference_baseline": {
+      "E_real": 0.1555,
+      "G_factor": 2.72
+    },
+    "supported_claim": "Smaller real/synthetic score ratio alone does not imply smaller absolute real-image score"
+  },
+  "failed_candidates_counted_as_full_text": false,
+  "journal_or_conference_labels_verified": true,
+  "independent_source_audit": {
+    "status": "passed",
+    "reviewer": "/root/audit_new_algorithms",
+    "report_path": "../04_附录独立审查/补充材料独立审查.json",
+    "report_sha256": "d0987f5279ba25fde78af02bbfef96ccbfbc17a37b0f474bb4d6a2ac9bdea39e",
+    "notes_hash_verified": true,
+    "open_findings": []
+  },
+  "appendix_pdf": {
+    "status": "passed",
+    "pdf_path": "../03_附录阅读PDF/补充文献分类与阅读札记.pdf",
+    "pdf_sha256": "1a8dda26252934ef4e54657e43ecf3fa8643423ea13225b5fed299b5585b3c6b",
+    "pages": 5,
+    "reviewer": "root",
+    "visual_review_path": "../03_附录阅读PDF/visual_review.json",
+    "visual_review_sha256": "154a2dcd7e41fc9a4e2260f5d632a294a7bb369186ab3caf685e6d9182e41904",
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "source_notes_sha256": "2153ac384e00160dbacab852a7f6b5df5aa9b405d342cf7643e352d28480ab91"
+  },
+  "existing_frozen_primary_documents_edited": false,
+  "new_control_experiments_run": false,
+  "members_reading_or_contribution_inferred": false
+}

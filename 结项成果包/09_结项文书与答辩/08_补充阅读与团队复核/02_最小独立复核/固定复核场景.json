@@ -1,0 +1,424 @@
+{
+  "schema_version": 1,
+  "purpose": "Member-executable review of existing frozen evidence; fixture fixed before this replay, no response-based selection",
+  "selection": {
+    "axes": [
+      "single",
+      "three"
+    ],
+    "rho": 1.4,
+    "sample_id": 0,
+    "sac_seed": 11,
+    "controllers": [
+      "PID_N",
+      "PID_R",
+      "SAC_N",
+      "SAC_R"
+    ]
+  },
+  "protocol": {
+    "nominal_inertia": {
+      "single": [
+        1.0
+      ],
+      "three": [
+        1.2,
+        1.0,
+        0.8
+      ]
+    },
+    "dt": {
+      "single": 0.05,
+      "three": 0.02
+    },
+    "max_torque": {
+      "single": 0.5,
+      "three": 2.0
+    },
+    "duration": 20.0,
+    "hold_seconds": 5.0,
+    "angle_tolerance_deg": 1.0,
+    "rate_tolerance_deg_s": 0.5
+  },
+  "formal_csv": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/episode_metrics.csv",
+  "tolerances": {
+    "metric_absolute": 1e-09,
+    "metric_relative": 1e-09,
+    "state_metric_deg": 1e-08,
+    "quaternion_norm": 1e-12,
+    "zero_action_normalized": 1e-07,
+    "action_torque_Nm": 5e-06,
+    "rollout_state": 1e-05,
+    "rollout_torque_Nm": 0.0001
+  },
+  "cases": [
+    {
+      "key": "single_PID_N",
+      "axis": "single",
+      "controller": "PID_N",
+      "model_seed": 0,
+      "scenario": {
+        "axis": "single",
+        "split": "test",
+        "sample_id": 0,
+        "initial_state_seed": 2026101203,
+        "theta_deg": -43.88300267968481,
+        "omega_deg_s": 4.547560151621925,
+        "scenario_id": "test_single_rho_1.40_000",
+        "case_id": "rho_1.40",
+        "case": "rho_1.40",
+        "family": "inertia_scalar",
+        "experiment": "scalar",
+        "level": 1.4,
+        "rho": 1.4,
+        "domain": "out_of_domain",
+        "inertia_scale": 1.4,
+        "planned_validation_rho": null,
+        "noise_seed": 2026111203,
+        "disturbance_bias": 0.0,
+        "disturbance_amplitude": 0.0,
+        "pulse_torque": 0.0,
+        "noise_theta_deg": 0.0,
+        "noise_omega_deg": 0.0
+      },
+      "csv_trace_file": "single/raw_traces/PID_N_seed_0_test_single_rho_1.40_000.npz",
+      "trace_path": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/single/raw_traces/PID_N_seed_0_test_single_rho_1.40_000.npz",
+      "pid_gains": {
+        "kp": 8.0,
+        "ki": 0.0,
+        "kd": 5.0,
+        "alpha": 1.0,
+        "integral_limit": 2.0
+      }
+    },
+    {
+      "key": "single_PID_R",
+      "axis": "single",
+      "controller": "PID_R",
+      "model_seed": 0,
+      "scenario": {
+        "axis": "single",
+        "split": "test",
+        "sample_id": 0,
+        "initial_state_seed": 2026101203,
+        "theta_deg": -43.88300267968481,
+        "omega_deg_s": 4.547560151621925,
+        "scenario_id": "test_single_rho_1.40_000",
+        "case_id": "rho_1.40",
+        "case": "rho_1.40",
+        "family": "inertia_scalar",
+        "experiment": "scalar",
+        "level": 1.4,
+        "rho": 1.4,
+        "domain": "out_of_domain",
+        "inertia_scale": 1.4,
+        "planned_validation_rho": null,
+        "noise_seed": 2026111203,
+        "disturbance_bias": 0.0,
+        "disturbance_amplitude": 0.0,
+        "pulse_torque": 0.0,
+        "noise_theta_deg": 0.0,
+        "noise_omega_deg": 0.0
+      },
+      "csv_trace_file": "single/raw_traces/PID_R_seed_0_test_single_rho_1.40_000.npz",
+      "trace_path": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/single/raw_traces/PID_R_seed_0_test_single_rho_1.40_000.npz",
+      "pid_gains": {
+        "kp": 8.0,
+        "ki": 0.08,
+        "kd": 5.0,
+        "alpha": 1.0,
+        "integral_limit": 2.0
+      }
+    },
+    {
+      "key": "single_SAC_N",
+      "axis": "single",
+      "controller": "SAC_N",
+      "model_seed": 11,
+      "scenario": {
+        "axis": "single",
+        "split": "test",
+        "sample_id": 0,
+        "initial_state_seed": 2026101203,
+        "theta_deg": -43.88300267968481,
+        "omega_deg_s": 4.547560151621925,
+        "scenario_id": "test_single_rho_1.40_000",
+        "case_id": "rho_1.40",
+        "case": "rho_1.40",
+        "family": "inertia_scalar",
+        "experiment": "scalar",
+        "level": 1.4,
+        "rho": 1.4,
+        "domain": "out_of_domain",
+        "inertia_scale": 1.4,
+        "planned_validation_rho": null,
+        "noise_seed": 2026111203,
+        "disturbance_bias": 0.0,
+        "disturbance_amplitude": 0.0,
+        "pulse_torque": 0.0,
+        "noise_theta_deg": 0.0,
+        "noise_omega_deg": 0.0
+      },
+      "csv_trace_file": "single/raw_traces/SAC_N_seed_11_test_single_rho_1.40_000.npz",
+      "trace_path": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/single/raw_traces/SAC_N_seed_11_test_single_rho_1.40_000.npz",
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/best_model.zip",
+      "checkpoint_steps": 900000,
+      "zero_action_normalized": [
+        -0.08825987577438354
+      ]
+    },
+    {
+      "key": "single_SAC_R",
+      "axis": "single",
+      "controller": "SAC_R",
+      "model_seed": 11,
+      "scenario": {
+        "axis": "single",
+        "split": "test",
+        "sample_id": 0,
+        "initial_state_seed": 2026101203,
+        "theta_deg": -43.88300267968481,
+        "omega_deg_s": 4.547560151621925,
+        "scenario_id": "test_single_rho_1.40_000",
+        "case_id": "rho_1.40",
+        "case": "rho_1.40",
+        "family": "inertia_scalar",
+        "experiment": "scalar",
+        "level": 1.4,
+        "rho": 1.4,
+        "domain": "out_of_domain",
+        "inertia_scale": 1.4,
+        "planned_validation_rho": null,
+        "noise_seed": 2026111203,
+        "disturbance_bias": 0.0,
+        "disturbance_amplitude": 0.0,
+        "pulse_torque": 0.0,
+        "noise_theta_deg": 0.0,
+        "noise_omega_deg": 0.0
+      },
+      "csv_trace_file": "single/raw_traces/SAC_R_seed_11_test_single_rho_1.40_000.npz",
+      "trace_path": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/single/raw_traces/SAC_R_seed_11_test_single_rho_1.40_000.npz",
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/randomized/seed_11/best_model.zip",
+      "checkpoint_steps": 800000,
+      "zero_action_normalized": [
+        -0.4143339991569519
+      ]
+    },
+    {
+      "key": "three_PID_N",
+      "axis": "three",
+      "controller": "PID_N",
+      "model_seed": 0,
+      "scenario": {
+        "axis": "three",
+        "split": "test",
+        "sample_id": 0,
+        "initial_state_seed": 2026101203,
+        "euler_deg": [
+          -43.88300267968481,
+          56.37005764378081,
+          -45.29315909120902
+        ],
+        "omega_deg_s": [
+          0.95085570944513,
+          4.73876252921378,
+          -1.2774658527343163
+        ],
+        "scenario_id": "test_three_rho_1.40_000",
+        "case_id": "rho_1.40",
+        "case": "rho_1.40",
+        "family": "inertia_scalar",
+        "experiment": "scalar",
+        "level": 1.4,
+        "rho": 1.4,
+        "domain": "out_of_domain",
+        "inertia_scale": 1.4,
+        "planned_validation_rho": null,
+        "noise_seed": 2026111203,
+        "disturbance_bias": 0.0,
+        "disturbance_amplitude": 0.0,
+        "pulse_torque": 0.0,
+        "noise_theta_deg": 0.0,
+        "noise_omega_deg": 0.0
+      },
+      "csv_trace_file": "three/raw_traces/PID_N_seed_0_test_three_rho_1.40_000.npz",
+      "trace_path": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/PID_N_seed_0_test_three_rho_1.40_000.npz",
+      "pid_gains": {
+        "kp": 8.0,
+        "ki": 0.0,
+        "kd": 4.0,
+        "alpha": 1.0,
+        "integral_limit": 5.0
+      }
+    },
+    {
+      "key": "three_PID_R",
+      "axis": "three",
+      "controller": "PID_R",
+      "model_seed": 0,
+      "scenario": {
+        "axis": "three",
+        "split": "test",
+        "sample_id": 0,
+        "initial_state_seed": 2026101203,
+        "euler_deg": [
+          -43.88300267968481,
+          56.37005764378081,
+          -45.29315909120902
+        ],
+        "omega_deg_s": [
+          0.95085570944513,
+          4.73876252921378,
+          -1.2774658527343163
+        ],
+        "scenario_id": "test_three_rho_1.40_000",
+        "case_id": "rho_1.40",
+        "case": "rho_1.40",
+        "family": "inertia_scalar",
+        "experiment": "scalar",
+        "level": 1.4,
+        "rho": 1.4,
+        "domain": "out_of_domain",
+        "inertia_scale": 1.4,
+        "planned_validation_rho": null,
+        "noise_seed": 2026111203,
+        "disturbance_bias": 0.0,
+        "disturbance_amplitude": 0.0,
+        "pulse_torque": 0.0,
+        "noise_theta_deg": 0.0,
+        "noise_omega_deg": 0.0
+      },
+      "csv_trace_file": "three/raw_traces/PID_R_seed_0_test_three_rho_1.40_000.npz",
+      "trace_path": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/PID_R_seed_0_test_three_rho_1.40_000.npz",
+      "pid_gains": {
+        "kp": 8.0,
+        "ki": 0.0,
+        "kd": 4.0,
+        "alpha": 1.0,
+        "integral_limit": 5.0
+      }
+    },
+    {
+      "key": "three_SAC_N",
+      "axis": "three",
+      "controller": "SAC_N",
+      "model_seed": 11,
+      "scenario": {
+        "axis": "three",
+        "split": "test",
+        "sample_id": 0,
+        "initial_state_seed": 2026101203,
+        "euler_deg": [
+          -43.88300267968481,
+          56.37005764378081,
+          -45.29315909120902
+        ],
+        "omega_deg_s": [
+          0.95085570944513,
+          4.73876252921378,
+          -1.2774658527343163
+        ],
+        "scenario_id": "test_three_rho_1.40_000",
+        "case_id": "rho_1.40",
+        "case": "rho_1.40",
+        "family": "inertia_scalar",
+        "experiment": "scalar",
+        "level": 1.4,
+        "rho": 1.4,
+        "domain": "out_of_domain",
+        "inertia_scale": 1.4,
+        "planned_validation_rho": null,
+        "noise_seed": 2026111203,
+        "disturbance_bias": 0.0,
+        "disturbance_amplitude": 0.0,
+        "pulse_torque": 0.0,
+        "noise_theta_deg": 0.0,
+        "noise_omega_deg": 0.0
+      },
+      "csv_trace_file": "three/raw_traces/SAC_N_seed_11_test_three_rho_1.40_000.npz",
+      "trace_path": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/SAC_N_seed_11_test_three_rho_1.40_000.npz",
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/best_model.zip",
+      "checkpoint_steps": 400000,
+      "zero_action_normalized": [
+        -0.16441833972930908,
+        0.019417643547058105,
+        -0.31497591733932495
+      ]
+    },
+    {
+      "key": "three_SAC_R",
+      "axis": "three",
+      "controller": "SAC_R",
+      "model_seed": 11,
+      "scenario": {
+        "axis": "three",
+        "split": "test",
+        "sample_id": 0,
+        "initial_state_seed": 2026101203,
+        "euler_deg": [
+          -43.88300267968481,
+          56.37005764378081,
+          -45.29315909120902
+        ],
+        "omega_deg_s": [
+          0.95085570944513,
+          4.73876252921378,
+          -1.2774658527343163
+        ],
+        "scenario_id": "test_three_rho_1.40_000",
+        "case_id": "rho_1.40",
+        "case": "rho_1.40",
+        "family": "inertia_scalar",
+        "experiment": "scalar",
+        "level": 1.4,
+        "rho": 1.4,
+        "domain": "out_of_domain",
+        "inertia_scale": 1.4,
+        "planned_validation_rho": null,
+        "noise_seed": 2026111203,
+        "disturbance_bias": 0.0,
+        "disturbance_amplitude": 0.0,
+        "pulse_torque": 0.0,
+        "noise_theta_deg": 0.0,
+        "noise_omega_deg": 0.0
+      },
+      "csv_trace_file": "three/raw_traces/SAC_R_seed_11_test_three_rho_1.40_000.npz",
+      "trace_path": "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/SAC_R_seed_11_test_three_rho_1.40_000.npz",
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/randomized/seed_11/best_model.zip",
+      "checkpoint_steps": 1000000,
+      "zero_action_normalized": [
+        -0.5673040151596069,
+        -0.6939632296562195,
+        0.6351205110549927
+      ]
+    }
+  ],
+  "input_sha256": {
+    "08_惯量域随机化与泛化边界研究/01_实验协议与配置/protocol.json": "522530cdc38532dbb90d17e9b5fe0b838037339caa5f2bcc9c233c626c24a22d",
+    "08_惯量域随机化与泛化边界研究/01_实验协议与配置/protocol_freeze.json": "9c43c62d631b339f57fc60f58adc1dfc4465c219062b1d010792eae79f7cda1b",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/pid_configs.json": "5e34cff73f7633f581438b06f6477cc0483bdd23ce2bc9dd9eaf4b244b41e77a",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/episode_metrics.csv": "cd57c2820472977afb4de00c0463cca88225a4f70ad03ef6f27acf4537974eae",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/deployment_freeze.json": "677304442b995cc49425358e6235e3beda3f852181b2acff3c76bc27b9063853",
+    "multi_algorithm_benchmark/controllers.py": "a971deb369c45401320fa0075585f690b7bd7aa029d4a5b45a1c6f2b718f90d1",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "satellite_benchmark/config.py": "3fb24364a558686bb1de115495c1016e31fce1404df7b05e68569f687908c151",
+    "satellite_benchmark/env.py": "9c94da5a71caa36d78d952ead964e6759f2755d2a1b774cb13091dc2b0468ffa",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/single/raw_traces/PID_N_seed_0_test_single_rho_1.40_000.npz": "012dac1208dc54cc0d0683120c0ef85dc00ef33f63ea7c58899a6078f7683a9a",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/single/raw_traces/PID_R_seed_0_test_single_rho_1.40_000.npz": "6bf16d4d84804a61f6026e39e14e10e1bca719db79791c2b2dbf61555d6f78f7",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/single/raw_traces/SAC_N_seed_11_test_single_rho_1.40_000.npz": "943df462ebcc830cb5eb5690621e975034a2126d8cfe930e34abb35fd4f5ddf1",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/best_model.zip": "f3cb02558d358faaad8474b8161bec5c12ceffeb312ccdfc841fbf3860138e86",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/training_metadata.json": "eac68f1e5ca28b973d12a6cfe08d07a8a7aa989761794eb385b1cf9638d680f2",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/single/raw_traces/SAC_R_seed_11_test_single_rho_1.40_000.npz": "01ac82277feebac3876d337ba745de83453ae77cf7e0dea7dd74b3367b10e708",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/randomized/seed_11/best_model.zip": "bee025ac0432fd660178bb60eac76a371076e72f46ace51f219695ca3a3969ef",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/randomized/seed_11/training_metadata.json": "0b2ae67068550d0f37c0c33038f5653e1eabad9f19c9fdf3c52525eddf845625",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/PID_N_seed_0_test_three_rho_1.40_000.npz": "e090ee7af8829246ad7e2babc3fca32c8a65b04abe7aa2a0e11dbc5cb495f58e",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/PID_R_seed_0_test_three_rho_1.40_000.npz": "b5a3d4e52d40d03478f67513ca99caa568b1a67ab7393133d3bfbe759527ac1d",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/SAC_N_seed_11_test_three_rho_1.40_000.npz": "6b168c84f8332f9e945a6ebfe0422b88e570647bf00d0d2b18b4cdbc7031dc60",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/best_model.zip": "ee74c85023050658aabeebe5a08760887393ea3132b2044cc2be59902541a910",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/training_metadata.json": "205ff6fa97f403ebcb9a9f815b8010db5173ff7ac7d2bd0f8db81ec9f0d5ac90",
+    "08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/three/raw_traces/SAC_R_seed_11_test_three_rho_1.40_000.npz": "ae45b63f93997cc00ab27f0fa990aed6ce216b184ba4fd19f0ce1fd53f535acf",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/randomized/seed_11/best_model.zip": "38281d94edd7a324ec5f4c9c1a1d9a1882cb044fafcac00693cb48bb56468928",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/randomized/seed_11/training_metadata.json": "8655f6027f72157d1ae8ffe4822a0e9cf2d31b7c6d260852feb04fa33c961b36"
+  },
+  "protocol_path": "08_惯量域随机化与泛化边界研究/01_实验协议与配置/protocol.json"
+}

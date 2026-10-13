@@ -1,0 +1,110 @@
+{
+  "references_cached_and_hashed": 17,
+  "slides": 12,
+  "duration_seconds": 480,
+  "reviews": [
+    {
+      "path": "01_两篇学习综述/卫星姿态系统搭建学习综述.md",
+      "characters": 7616,
+      "body_cited": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "bibliography_count": 4,
+      "citation_numbers_match": true,
+      "sha256": "706a0fd5131813d918a85bf324ae0d960a6737fa62ebda4573300067ae87b6d4"
+    },
+    {
+      "path": "01_两篇学习综述/卫星智能姿态控制系统学习综述.md",
+      "characters": 10103,
+      "body_cited": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "bibliography_count": 13,
+      "citation_numbers_match": true,
+      "sha256": "7d1e1bc4694ca528572c28c0bd58d5fa81ed9ebb2a6af7119c3cd8f2d5563d15"
+    }
+  ],
+  "formal_docx_pptx_rendered": false,
+  "V3_final_integrated": true,
+  "companion_fixed_version_sources_cached_and_hashed": 1,
+  "V3_verification_status": "passed",
+  "V3_report_sha256": "540fb6c165c218870182c9ce1a95d5bda5b4034a7f4762008c56da341f6f2057",
+  "review_method_findings_resolved": true,
+  "pdf_source_status": "final_markdown_ready_for_rerender",
+  "verification_date": "2026-10-13",
+  "pdf_visual_review": {
+    "review_date": "2026-10-13",
+    "reviewer": "month_scope_review",
+    "status": "passed",
+    "reviewed_documents": [
+      "卫星姿态系统搭建学习综述.pdf",
+      "卫星智能姿态控制系统学习综述.pdf"
+    ],
+    "reviewed_page_counts": [
+      6,
+      8
+    ],
+    "reviewed_contact_sheets": [
+      "结项成果包/tmp/artifacts/pdf_review/contact_01.jpg",
+      "结项成果包/tmp/artifacts/pdf_review/contact_02.jpg",
+      "结项成果包/tmp/artifacts/pdf_review/contact_03.jpg",
+      "结项成果包/tmp/artifacts/pdf_review/contact_04.jpg",
+      "结项成果包/tmp/artifacts/pdf_review/contact_05.jpg",
+      "结项成果包/tmp/artifacts/pdf_review/contact_06.jpg",
+      "结项成果包/tmp/artifacts/pdf_review/contact_07.jpg"
+    ],
+    "contact_sheet_sha256": {
+      "contact_01.jpg": "42babcc26d2cca8bd9c550b5874c411112d153c74f6c72b3b255092deae9c6ad",
+      "contact_02.jpg": "da4059230653f18c95f06e881c00af47f8992e5831fb331cf5249e618879bb56",
+      "contact_03.jpg": "69bcc06d39a3b6c3ab8c66cf259bb2575d3a2c33313f2b1c454cdf7f28dad05e",
+      "contact_04.jpg": "e8dd3b3c559e683388797798455f92fac93b591bba9a84496d95794b71050f43",
+      "contact_05.jpg": "f6438b84735486ac537c017ff0423a6d64ceb1efddc411caf003187f3883b976",
+      "contact_06.jpg": "2ab603cac216c739a79e8bf32b7f37f9e424164ce4230175813fa18d506d8b56",
+      "contact_07.jpg": "332a60a1591d27764ee722c2d32560e6bee77c534d156842509a1be859af56a1"
+    },
+    "passed_checks": [
+      "两篇全部14页逐张视觉检查",
+      "页边和页脚无裁切重叠",
+      "表格完整且在页边内",
+      "独立LaTeX公式正常包括修正后的RMS与PPO SAC TD3校准公式",
+      "4与13项引用及最后项目内部证据可读且完整",
+      "重新生成后两综述全部14页再次逐张视觉检查",
+      "q₀ q₁ q₂ q₃、Rᵀ、q⁻¹、⊗、−均清楚可见",
+      "I₁ I₂ I₃、ω点、惯量不等式、滤波式及ρ∼U均清楚可见",
+      "正文数学字形修复后未见新增裁切或重叠"
+    ],
+    "source_markdown_changed_by_visual_review": false,
+    "generation_manifest_updated": false,
+    "prior_review_status": "revision_required_inline_unicode_math_glyphs",
+    "renderer_fix": "生成器内嵌DejaVuSans承载正文Unicode数学字形；源Markdown保持原样。",
+    "resolved_findings": [
+      {
+        "severity": "meaning_affecting_rendering",
+        "issue": "正文Unicode数学上/下标和部分符号缺字；独立公式图不受影响",
+        "examples": [
+          "搭建综述第2页q₀ q₁ q₂ q₃与q⁻¹",
+          "搭建综述第3页I₁ I₂ I₃及惯量三角不等式",
+          "搭建综述第4页滤波式中的Unicode减号",
+          "智能综述第4页ρ∼U中的∼"
+        ],
+        "required_action": "由主任务在PDF渲染器做安全字符转换或支持数学字形的字体回退，再渲染并复查涉及页面"
+      }
+    ],
+    "open_findings": []
+  }
+}

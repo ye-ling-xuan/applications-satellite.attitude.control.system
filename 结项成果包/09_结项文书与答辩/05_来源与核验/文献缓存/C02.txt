@@ -1,0 +1,783 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 2340706,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              3
+            ]
+          ],
+          "date-time": "2026-10-03T11:34:41Z",
+          "timestamp": 1791027281407,
+          "version": "4.1.0"
+        },
+        "reference-count": 16,
+        "publisher": "American Institute of Aeronautics and Astronautics (AIAA)",
+        "issue": "5",
+        "content-domain": {
+          "domain": [
+            "arc.aiaa.org"
+          ],
+          "crossmark-restriction": true
+        },
+        "short-container-title": [
+          "Journal of Guidance, Control, and Dynamics"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              1998,
+              9
+            ]
+          ]
+        },
+        "DOI": "10.2514/2.4310",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2008,
+              8,
+              13
+            ]
+          ],
+          "date-time": "2008-08-13T12:04:42Z",
+          "timestamp": 1218629082000
+        },
+        "page": "684-691",
+        "update-policy": "https://doi.org/10.2514/aiaa_crossmarkpolicy",
+        "source": "Crossref",
+        "is-referenced-by-count": 311,
+        "title": [
+          "Adaptive Asymptotic Tracking of Spacecraft Attitude Motion with Inertia Matrix Identification"
+        ],
+        "prefix": "10.2514",
+        "volume": "21",
+        "author": [
+          {
+            "given": "Jasim",
+            "family": "Ahmed",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Michigan, Ann Arbor, Michigan 48109-2140"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Vincent T.",
+            "family": "Coppola",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Michigan, Ann Arbor, Michigan 48109-2140"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Dennis S.",
+            "family": "Bernstein",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Michigan, Ann Arbor, Michigan 48109-2140"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "1387",
+        "reference": [
+          {
+            "key": "p_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2514/3.55974"
+          },
+          {
+            "issue": "1",
+            "key": "p_2",
+            "first-page": "47",
+            "volume": "32",
+            "author": "Skaar S. B.",
+            "year": "1984",
+            "journal-title": "Journal of Astronautical Sciences"
+          },
+          {
+            "key": "p_3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2514/3.19988"
+          },
+          {
+            "key": "p_4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/9.467669"
+          },
+          {
+            "key": "p_5",
+            "volume": "23",
+            "author": "Singh S. N.",
+            "year": "1987",
+            "journal-title": "IEEE Transactions on Aerospace Electrical Systems"
+          },
+          {
+            "key": "p_6",
+            "first-page": "2867",
+            "volume-title": "Proceedings of the American Control Conference",
+            "author": "Sheen J. J.",
+            "year": "1994"
+          },
+          {
+            "key": "p_7",
+            "volume-title": "Applied Nonlinear Control",
+            "author": "Slotine J. J. E.",
+            "year": "1989"
+          },
+          {
+            "key": "p_8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/9.90228"
+          },
+          {
+            "key": "p_9",
+            "first-page": "552",
+            "volume-title": "Proceedings of the American Control Conference",
+            "author": "Zaremba A. T.",
+            "year": "1997"
+          },
+          {
+            "key": "p_10",
+            "volume-title": "Adaptive Control",
+            "author": "Astrom K. J.",
+            "year": "1995",
+            "edition": "2"
+          },
+          {
+            "key": "p_11",
+            "first-page": "1210",
+            "volume-title": "Proceedings of the International Conference on Robotics and Automation",
+            "author": "Hsu P.",
+            "year": "1987"
+          },
+          {
+            "key": "p_12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0167-6911(90)90055-Y"
+          },
+          {
+            "key": "p_13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0167-6911(92)90021-J"
+          },
+          {
+            "key": "p_14",
+            "volume-title": "Spacecraft Attitude Dynamics",
+            "author": "Hughes P. C.",
+            "year": "1986"
+          },
+          {
+            "key": "p_15",
+            "volume-title": "Stable Adaptive Systems",
+            "author": "Narendra K. S.",
+            "year": "1989"
+          },
+          {
+            "key": "p_16",
+            "volume-title": "Principles of Dynamics",
+            "author": "Greenwood D. T.",
+            "year": "1988"
+          }
+        ],
+        "container-title": [
+          "Journal of Guidance, Control, and Dynamics"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "http://arc.aiaa.org/doi/pdf/10.2514/2.4310",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2021,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2021-03-01T00:40:09Z",
+          "timestamp": 1614559209000
+        },
+        "score": 64.720985,
+        "resource": {
+          "primary": {
+            "URL": "https://arc.aiaa.org/doi/10.2514/2.4310"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              1998,
+              9
+            ]
+          ]
+        },
+        "references-count": 16,
+        "journal-issue": {
+          "issue": "5",
+          "published-print": {
+            "date-parts": [
+              [
+                1998,
+                9
+              ]
+            ]
+          }
+        },
+        "alternative-id": [
+          "10.2514/2.4310"
+        ],
+        "URL": "https://doi.org/10.2514/2.4310",
+        "ISSN": [
+          "0731-5090",
+          "1533-3884"
+        ],
+        "issn-type": [
+          {
+            "value": "0731-5090",
+            "type": "print"
+          },
+          {
+            "value": "1533-3884",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1998,
+              9
+            ]
+          ]
+        },
+        "assertion": [
+          {
+            "value": "2012-05-23",
+            "order": 3,
+            "name": "published",
+            "label": "Published",
+            "group": {
+              "name": "publication_history",
+              "label": "Publication History"
+            }
+          }
+        ]
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              23
+            ]
+          ],
+          "date-time": "2024-10-23T04:31:04Z",
+          "timestamp": 1729657864279,
+          "version": "3.28.0"
+        },
+        "publisher-location": "Reston, Virigina",
+        "reference-count": 13,
+        "publisher": "American Institute of Aeronautics and Astronautics",
+        "content-domain": {
+          "domain": [
+            "arc.aiaa.org"
+          ],
+          "crossmark-restriction": true
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              1997,
+              8,
+              11
+            ]
+          ]
+        },
+        "DOI": "10.2514/6.1997-3530",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              10,
+              2
+            ]
+          ],
+          "date-time": "2013-10-02T13:48:30Z",
+          "timestamp": 1380721710000
+        },
+        "update-policy": "http://dx.doi.org/10.2514/aiaa_crossmarkpolicy",
+        "source": "Crossref",
+        "is-referenced-by-count": 3,
+        "title": [
+          "Adaptive asymptotic tracking of spacecraft attitude motion with inertia matrix identification"
+        ],
+        "prefix": "10.2514",
+        "author": [
+          {
+            "given": "Jasim",
+            "family": "Ahmed",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Michigan, Univ., Ann Arbor"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Vincent",
+            "family": "Coppola",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Michigan, Univ., Ann Arbor"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Dennis",
+            "family": "Bernstein",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Michigan, Univ., Ann Arbor"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Jasim",
+            "family": "Ahmed",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Michigan, Univ., Ann Arbor"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Vincent",
+            "family": "Coppola",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Michigan, Univ., Ann Arbor"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Dennis",
+            "family": "Bernstein",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Michigan, Univ., Ann Arbor"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "member": "1387",
+        "published-online": {
+          "date-parts": [
+            [
+              1997,
+              8,
+              22
+            ]
+          ]
+        },
+        "reference": [
+          {
+            "key": "p_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2514/3.55974"
+          },
+          {
+            "issue": "1",
+            "key": "p_2",
+            "first-page": "47",
+            "volume": "32",
+            "author": "Skaar S. B.",
+            "year": "1984",
+            "journal-title": "The Journal of Astronautical Sciences"
+          },
+          {
+            "key": "p_3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2514/3.19988"
+          },
+          {
+            "key": "p_4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/9.467669"
+          },
+          {
+            "issue": "3",
+            "key": "p_5",
+            "volume": "23",
+            "author": "Singh S. N.",
+            "year": "1987",
+            "journal-title": "IEEE Trans. Aerospace Elect. Sys."
+          },
+          {
+            "key": "p_6",
+            "first-page": "2867",
+            "volume-title": "Proc. Amer. Contr. Con/.",
+            "author": "Sheen J. J.",
+            "year": "1994"
+          },
+          {
+            "volume-title": "Applied Nonlinear Control",
+            "year": "1989",
+            "author": "Slotine J. J. E.",
+            "key": "p_7"
+          },
+          {
+            "key": "p_8",
+            "volume-title": "Adaptive Control",
+            "author": "Astrom K. J.",
+            "year": "1995",
+            "edition": "2"
+          },
+          {
+            "key": "p_9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0167-6911(90)90055-Y"
+          },
+          {
+            "key": "p_10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0167-6911(92)90021-J"
+          },
+          {
+            "volume-title": "Hughes. P. C. Spacecraft Attitude Dynamics",
+            "year": "1986",
+            "key": "p_11"
+          },
+          {
+            "volume-title": "Stable Adaptive Systems",
+            "year": "1989",
+            "author": "Narendra K.S.",
+            "key": "p_12"
+          },
+          {
+            "volume-title": "Principles of Dynamics",
+            "year": "1988",
+            "author": "Greenwood D. T.",
+            "key": "p_13"
+          }
+        ],
+        "event": {
+          "name": "Guidance, Navigation, and Control Conference",
+          "location": "New Orleans,LA,U.S.A."
+        },
+        "container-title": [
+          "Guidance, Navigation, and Control Conference"
+        ],
+        "link": [
+          {
+            "URL": "http://arc.aiaa.org/doi/pdf/10.2514/6.1997-3530",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2021,
+              3,
+              7
+            ]
+          ],
+          "date-time": "2021-03-07T21:30:47Z",
+          "timestamp": 1615152647000
+        },
+        "score": 64.700645,
+        "resource": {
+          "primary": {
+            "URL": "https://arc.aiaa.org/doi/10.2514/6.1997-3530"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              1997,
+              8,
+              11
+            ]
+          ]
+        },
+        "references-count": 13,
+        "alternative-id": [
+          "10.2514/6.1997-3530",
+          "10.2514/MGNC97"
+        ],
+        "URL": "https://doi.org/10.2514/6.1997-3530",
+        "published": {
+          "date-parts": [
+            [
+              1997,
+              8,
+              11
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              24
+            ]
+          ],
+          "date-time": "2025-05-24T19:02:19Z",
+          "timestamp": 1748113339603
+        },
+        "reference-count": 9,
+        "publisher": "IEEE",
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "DOI": "10.1109/cdc.1997.657527",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2002,
+              11,
+              23
+            ]
+          ],
+          "date-time": "2002-11-23T03:09:49Z",
+          "timestamp": 1038020989000
+        },
+        "page": "2471-2476",
+        "source": "Crossref",
+        "is-referenced-by-count": 12,
+        "title": [
+          "Asymptotic tracking of spacecraft attitude motion with inertia matrix identification"
+        ],
+        "prefix": "10.1109",
+        "volume": "3",
+        "author": [
+          {
+            "given": "J.",
+            "family": "Ahmed",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "V.T.",
+            "family": "Coppola",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "D.S.",
+            "family": "Bernstein",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/9.90228"
+          },
+          {
+            "journal-title": "Applied nonlinear control",
+            "year": "1989",
+            "author": "slotine",
+            "key": "ref3"
+          },
+          {
+            "key": "ref6",
+            "first-page": "1210",
+            "article-title": "Adaptive Identification and Control for Manipulators without Using Joint Accelerations",
+            "author": "hsu",
+            "year": "1987",
+            "journal-title": "Proc IEEE Int Conf Robotics Automation"
+          },
+          {
+            "journal-title": "Adaptive Control",
+            "year": "1995",
+            "author": "astrom",
+            "key": "ref5"
+          },
+          {
+            "journal-title": "Stable Adaptive Systems",
+            "year": "1989",
+            "author": "narendra",
+            "key": "ref8"
+          },
+          {
+            "journal-title": "Spacecraft Attitude Dynamics",
+            "year": "1986",
+            "author": "hughes",
+            "key": "ref7"
+          },
+          {
+            "key": "ref2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/9.467669"
+          },
+          {
+            "journal-title": "Principles of Dynamics",
+            "year": "1988",
+            "author": "greenwood",
+            "key": "ref9"
+          },
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2514/3.19988"
+          }
+        ],
+        "event": {
+          "name": "36th IEEE Conference on Decision and Control",
+          "acronym": "CDC-97",
+          "location": "San Diego, CA, USA"
+        },
+        "container-title": [
+          "Proceedings of the 36th IEEE Conference on Decision and Control"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx4/5239/14225/00657527.pdf?arnumber=657527",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2017,
+              3,
+              9
+            ]
+          ],
+          "date-time": "2017-03-09T19:51:12Z",
+          "timestamp": 1489089072000
+        },
+        "score": 60.92764,
+        "resource": {
+          "primary": {
+            "URL": "http://ieeexplore.ieee.org/document/657527/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              null
+            ]
+          ]
+        },
+        "references-count": 9,
+        "URL": "https://doi.org/10.1109/cdc.1997.657527"
+      }
+    ],
+    "items-per-page": 3,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "type": "post-freeze closing literature and team-review supplement",
+  "recorded_utc": "2026-10-12T19:11:51.084720+00:00",
+  "reason": "Add three authentic full-text case studies and a default-read-only minimal saved-model/metric review; complete closing support without new research.",
+  "previous_delivery_manifest_sha256": "d6aa072be74ecc2659f26e26fa0a7687b10a26284dacc39f617347edf6ab2fd5",
+  "previous_light_zip_sha256": "5b1eb16460d556c4e7d0b7592f296dd40e4b3ef7f24afa750394ba494dfde139",
+  "previous_delivery_manifest_file_count": 114,
+  "previous_copies": "tmp/artifacts/delivery_revision_before_closing_supplement",
+  "technical_freeze_sha256_unchanged": "200e8f2475475649c0681988a302b88ae504f27ee33b8f579f09daaed2e26649",
+  "unchanged_previous_delivery_files": 110,
+  "changed_navigation_and_delivery_tool_files": [
+    {
+      "relative": "09_结项文书与答辩/README.md",
+      "before_sha256": "b4e7532bfcc3582f976ab203e3e6a4b13f1f16ea378543a4d66ac24d91f046e3",
+      "after_sha256": "5deaac73d68c515e1e7ec2a09ff4f5be329885e8feaeef428cea5cb4cdcd7b90"
+    },
+    {
+      "relative": "README.md",
+      "before_sha256": "43b3685dd9f1b95af1b830183597ea0e4a918cf6f75fddaa64ca81ccfeba6713",
+      "after_sha256": "9990b6d451358f9d3a6755cd4b2ac41892229cdffa0f47f960fa26bb20edaad4"
+    },
+    {
+      "relative": "tools/finalize_closing_delivery.py",
+      "before_sha256": "3a65f4450a8e0bbe96172e08062fecc77a775d4c8d4029b8e23bee90f9cb8919",
+      "after_sha256": "02493dc994501b97454dfe0107439b91d88e55dd3ceb16388831e2d204b9b4d2"
+    },
+    {
+      "relative": "最终交付总说明.md",
+      "before_sha256": "a148b0c3e49a359f3dbdaf7fbafe79b3ae2292309795f41f3f73ea60c16c6339",
+      "after_sha256": "70a71d4eb3332af9b9b491b305eea17cd16f76d00af152e323505ad9dd432736"
+    }
+  ],
+  "added_files_before_this_revision_record": [
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/F02_AIMS_Crossref.json",
+      "bytes": 3604,
+      "sha256": "abd1ca72cbc2dc83f7ebca41fbc20c785c11e8fa8de960c2a424e0123e45ec86"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L01.pdf",
+      "bytes": 1264086,
+      "sha256": "ed39e32f9dce2bae88bade5337a8b42c29b5e8c4b9adb612e5a669a2adaca58b"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L01.txt",
+      "bytes": 81302,
+      "sha256": "9bc4cc2d805c6c1f9d0a2f184743078c3c79f0b893e79a414a52031359513407"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L01_Crossref.json",
+      "bytes": 25957,
+      "sha256": "6b8c5885f72aee6303801c19499e9eda3bc45f24d9689daf25723e7187642c74"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L02.pdf",
+      "bytes": 411452,
+      "sha256": "56a6aa1942f48c15e6db2f59204083ae785142eb1b4094b29a5af2a286813497"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L02.txt",
+      "bytes": 51805,
+      "sha256": "c036b1f357e4ec6903dc5e9cec9345e492ce963b3e839c248267b1fd37f23453"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L02_Crossref.json",
+      "bytes": 15695,
+      "sha256": "5de47219606e00929e58359a71c747a117de3bb93fa4d660eefadb194653d239"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L02_arXiv.xml",
+      "bytes": 2464,
+      "sha256": "db43007dcabf1a0def5240713bc5e4f6575dc37590eed49f7fffd5127657288d"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L03.pdf",
+      "bytes": 204980,
+      "sha256": "d82bc9392a4b139beb68689fb082a3c6d944f4d1a6c786bb743d8d6e11b9a16f"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L03.txt",
+      "bytes": 36809,
+      "sha256": "b8b25f8741ec4c8777b5b6881f5f33932008da1558bbe646364e7d0bc2f52c5f"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L03_Crossref.json",
+      "bytes": 8390,
+      "sha256": "79836b934ca36aafa3ff7e455742018e3aeda9113091d31831854dd7dbf64394"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/L03_arXiv.xml",
+      "bytes": 2245,
+      "sha256": "13ce54e6b6d73cbb08a01d820d95b36650b55ef037880afa3cccf285339ba84c"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p05.png",
+      "bytes": 300198,
+      "sha256": "ea6b6349bf93f191ef11cf0b92b7774ca515242474bc1831c673b128b4286f59"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p06.png",
+      "bytes": 221485,
+      "sha256": "bd9edd2771b307ef13d0c9fe18b3eea7e5393e60901de606c1e5995f4a4d5f53"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p07.png",
+      "bytes": 228129,
+      "sha256": "9b9b3ecb506e4fe8f620f75b225bb502de55905b9fc22d869d1c9c0a115c281c"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p08.png",
+      "bytes": 251251,
+      "sha256": "dbba7eaba4204032c8b397dcc516e29ab20bb9a2689acdfc448d30970da6bc6a"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p10.png",
+      "bytes": 284132,
+      "sha256": "5a0c11b44af0f6011a1c9682cf4da14871422ae7bf1b037cdbb2aa20e28b4ea0"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L01_p12.png",
+      "bytes": 252550,
+      "sha256": "fb40521b2dfb94191f8cea4f65133868d436cded094b27536d19073dbdddf338"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L02_p03.png",
+      "bytes": 272499,
+      "sha256": "3fc70c860ca7774a8bb7f029bf85b300c74a2b187aa25f51103fd52286c5ff05"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L02_p05.png",
+      "bytes": 220262,
+      "sha256": "18e7a631b1925c569dfaf7e7ef0e9054f1fd7a0357f96ece71fad08578b384b0"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L02_p07.png",
+      "bytes": 266662,
+      "sha256": "5e8733e13490a3f620d976288e023fde6980070320848c410b6209e46937d402"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L02_p09.png",
+      "bytes": 246246,
+      "sha256": "9d064125fc68a7d9a1a79d8e11dd4132bf8f19d687f9b3dbe0eb9a907c57862d"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L03_p02.png",
+      "bytes": 499567,
+      "sha256": "3a586101211860c565902fff272503af7aa961e35dff4a3a40f7667f0402fc77"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L03_p03.png",
+      "bytes": 530290,
+      "sha256": "b88a9248d35585aa4fba2ca806e8b5d95528cc858f8d767d2be22aff1b04011e"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/原文缓存/视觉核对/L03_p04.png",
+      "bytes": 472304,
+      "sha256": "cfb3b21002e6dd556aac9011a0e214be8925c840ded14b4dc081012f3161095c"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/补充文献分类与阅读札记.md",
+      "bytes": 13447,
+      "sha256": "2153ac384e00160dbacab852a7f6b5df5aa9b405d342cf7643e352d28480ab91"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/补充文献获取清单.json",
+      "bytes": 7114,
+      "sha256": "bca5d270dbcab936724c1326bdf8e2ebddd0049cb00c953fcb292a3f86cf0bf3"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/01_补充文献/补充阅读核对.json",
+      "bytes": 11779,
+      "sha256": "f6f88af9e6f8fad1e024ac12869906a262eab4a315f0713e0fd05ba0f2194fd1"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/代理实际仅指标输出.json",
+      "bytes": 27622,
+      "sha256": "cbfc47a09a0a99e7a610608920adb5e9195a0cb70bb72434251ad6d8f9614c93"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/代理实际复核输出.json",
+      "bytes": 42125,
+      "sha256": "9803b47208dfd7baaad1c867e52bfdf5e67ff103e84ebd77b4091f1e26ecc8d7"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/代理实际失败教学输出.json",
+      "bytes": 4948,
+      "sha256": "55e25a50dfca9ed71f66c8f6d8da61524d9f440aae6e40b595e16e70e6a450e3"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/固定复核场景.json",
+      "bytes": 17268,
+      "sha256": "ae393748432b92698600ca792779bbf449d10a771ca8f9b633bc101e2e7ca1fb"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/失败教学样本.json",
+      "bytes": 4217,
+      "sha256": "1bd36815e222649602ce19a6be591456b95422c225f269475db5d311ffbeb957"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/最小复核使用说明.md",
+      "bytes": 9714,
+      "sha256": "517ec60243964dd386194b03b1668de463ed306bfcd87ba672b721af398852a6"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/最小独立复核.py",
+      "bytes": 23583,
+      "sha256": "ebdd6b55dfb99dc1947bd758012036471852d04380f4a3c8f6369f7b5e5770b2"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/运行核验记录.json",
+      "bytes": 11842,
+      "sha256": "2ae4fbe9cb3b2d5a13deb6e42181d1695cfa4bdc6dda3c2b4e4a3d2b3d05b36e"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/02_最小独立复核/预期结果.json",
+      "bytes": 5405,
+      "sha256": "e7684dac99d0c2911502f5f34387499e81adf154afcd04f290fcc6371fd2a8dd"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/03_附录阅读PDF/visual_review.json",
+      "bytes": 2822,
+      "sha256": "154a2dcd7e41fc9a4e2260f5d632a294a7bb369186ab3caf685e6d9182e41904"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/03_附录阅读PDF/最小复核使用说明.pdf",
+      "bytes": 160854,
+      "sha256": "b4d8be250d09c92d5e1ff79aacff99f5eaae5167f07ae489477d927f52fe492f"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/03_附录阅读PDF/生成清单.json",
+      "bytes": 1205,
+      "sha256": "acdde6f4da69c856608f4e9193e4b356e4910a07d5623630d9f349f4a1e381f0"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/03_附录阅读PDF/补充文献分类与阅读札记.pdf",
+      "bytes": 170212,
+      "sha256": "1a8dda26252934ef4e54657e43ecf3fa8643423ea13225b5fed299b5585b3c6b"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/04_附录独立审查/补充材料独立审查.json",
+      "bytes": 4793,
+      "sha256": "d0987f5279ba25fde78af02bbfef96ccbfbc17a37b0f474bb4d6a2ac9bdea39e"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/04_附录独立审查/补充材料独立审查.md",
+      "bytes": 5092,
+      "sha256": "43a5e9ba219eb6fd832b0ad8b36d190bf58f30fd2339042234b874c2847bc1f3"
+    },
+    {
+      "relative": "09_结项文书与答辩/08_补充阅读与团队复核/README.md",
+      "bytes": 3559,
+      "sha256": "9b48a927b0226119b08125bf8508f6cafe8c8075acda5adae3d4aa24a825e43d"
+    },
+    {
+      "relative": "tools/build_closing_supplement.py",
+      "bytes": 4640,
+      "sha256": "9dbbbe1803d58a513febe30864047702870ac6261744841bb983c6d15d4c293e"
+    }
+  ],
+  "light_archive_omissions": [
+    "large original-paper QA page PNGs; still bound by the complete document manifest",
+    "complete research code/models/replay/NPZ; use the full package for execution"
+  ],
+  "no_new_research_or_formal_result_changes": true,
+  "main_reviews_report_and_existing_PDFs_unchanged": true,
+  "member_reading_or_execution_not_confirmed": true,
+  "remaining": [
+    "school requirements and personal confirmations",
+    "native DOCX/PPTX managed runtime",
+    "signatures and actual submission"
+  ]
+}

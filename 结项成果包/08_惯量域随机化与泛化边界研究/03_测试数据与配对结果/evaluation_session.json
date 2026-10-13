@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "outputs_preserved_on_failure": true,
+  "episode_count": 10920,
+  "scene_counts": {
+    "single": 330,
+    "three": 450
+  },
+  "training_model_count": 12,
+  "training_mode_pair_count": 4680,
+  "calibration_pair_count": 4680,
+  "pid_pair_count": 780
+}

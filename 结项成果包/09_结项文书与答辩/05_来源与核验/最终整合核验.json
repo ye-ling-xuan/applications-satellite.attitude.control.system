@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-12T19:26:22.655144+00:00",
+  "scope": "artifact integrity, counts and primary local links; scientific replay already recorded separately",
+  "structure": {
+    "formal_training_models": 12,
+    "training_steps": 12000000,
+    "csv_rows": {
+      "episode_metrics": 10920,
+      "training_mode_pairs": 4680,
+      "calibration_pairs": 4680,
+      "pid_pairs": 780,
+      "boundary_points": 440,
+      "empirical_boundaries": 40
+    },
+    "raw_traces": 10920,
+    "scientific_figures": 5,
+    "a4_pdf_pages": 28,
+    "defense_pdf_pages": 12,
+    "video_frames": 900,
+    "video_duration_s": 90,
+    "full_independent_verification": "passed",
+    "regression_tests": "63 passed in prior final test run; no research source changed since",
+    "closing_supplement": {
+      "combined_scholarly_sources": 12,
+      "new_full_text_papers": 3,
+      "minimal_instances": 8,
+      "policy_replay_commands": 5600,
+      "closed_loop_steps": 5600,
+      "closed_loop_duration_s_each": 20,
+      "failure_teaching_samples": 1,
+      "appendix_pdf_pages": 9,
+      "member_execution_confirmed": false
+    }
+  },
+  "manifests": [
+    {
+      "manifest": "08_惯量域随机化与泛化边界研究/05_研究分析与核验/技术研究冻结清单.json",
+      "sha256": "200e8f2475475649c0681988a302b88ae504f27ee33b8f579f09daaed2e26649",
+      "files": 11309,
+      "bytes": 1165250504,
+      "status": "passed"
+    },
+    {
+      "manifest": "最终交付清单.json",
+      "sha256": "922050edd956e287859a6bbbd22eada362c8c63709178e8081d23c167105fe17",
+      "files": 160,
+      "bytes": 34726762,
+      "status": "passed"
+    }
+  ],
+  "links": {
+    "primary_documents": 15,
+    "local_targets_checked": 75,
+    "missing": []
+  },
+  "light_archive": {
+    "relative": "最终阅读与展示包.zip",
+    "entries": 106,
+    "bytes": 9199319,
+    "sha256": "022a1f4cc71d6babfabbe58105882cb3cf2f63f3cea611b04f74b96a585a9c80",
+    "all_entries_match_source": true
+  },
+  "remaining": [
+    "school template/deadline/project number",
+    "personal reading/reproduction/contribution confirmation",
+    "fees/opinions/signatures",
+    "native DOCX/PPTX managed runtime",
+    "actual submission and defense"
+  ],
+  "no_new_experiments": true
+}
