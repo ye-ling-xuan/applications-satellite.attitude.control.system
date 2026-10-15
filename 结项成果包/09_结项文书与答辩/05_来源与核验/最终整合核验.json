@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checked_utc": "2026-10-12T19:26:22.655144+00:00",
+  "checked_utc": "2026-10-14T13:46:41.771428+00:00",
   "scope": "artifact integrity, counts and primary local links; scientific replay already recorded separately",
   "structure": {
     "formal_training_models": 12,
@@ -31,6 +31,21 @@
       "failure_teaching_samples": 1,
       "appendix_pdf_pages": 9,
       "member_execution_confirmed": false
+    },
+    "school_template": {
+      "school_template_received": true,
+      "source_and_copy_sha256": "a3d5eeb6941cbe2165bf60f44ac9870b2cfac197bf2563bda713c249c7f2cd72",
+      "fifth_section_visible_non_whitespace_characters": 3190,
+      "six_headings_match": true,
+      "manuscript_fact_and_reference_check": "passed",
+      "reading_pdf_pages": 4,
+      "native_filled_docx_produced": false,
+      "known_contact_college_title_reuse_confirmed": true,
+      "unknown_personal_fields_left_blank": true,
+      "actual_form_date_filled": false,
+      "optional_continuation_filled": true,
+      "continuation_is_future_work": true,
+      "confirmation_and_continuation_audit": "passed"
     }
   },
   "manifests": [
@@ -43,29 +58,31 @@
     },
     {
       "manifest": "最终交付清单.json",
-      "sha256": "922050edd956e287859a6bbbd22eada362c8c63709178e8081d23c167105fe17",
-      "files": 160,
-      "bytes": 34726762,
+      "sha256": "2e2138a3392447156d706258c01096cf54f3ca6c5dd4e5c57a1c03b7312c49c6",
+      "files": 187,
+      "bytes": 35082971,
       "status": "passed"
     }
   ],
   "links": {
-    "primary_documents": 15,
-    "local_targets_checked": 75,
+    "primary_documents": 17,
+    "local_targets_checked": 97,
     "missing": []
   },
   "light_archive": {
     "relative": "最终阅读与展示包.zip",
-    "entries": 106,
-    "bytes": 9199319,
-    "sha256": "022a1f4cc71d6babfabbe58105882cb3cf2f63f3cea611b04f74b96a585a9c80",
+    "entries": 133,
+    "bytes": 9441951,
+    "sha256": "0fd0ce14c9119daa20c2ecdef2b10a18540007a574d139f98580420bfe956877",
     "all_entries_match_source": true
   },
   "remaining": [
-    "school template/deadline/project number",
+    "school template received; native form filling, actual deadline/channel/defense duration still pending",
+    "unknown majors and actual form date intentionally left blank per user",
     "personal reading/reproduction/contribution confirmation",
-    "fees/opinions/signatures",
+    "fees/opinions/signatures as required by actual school instructions",
     "native DOCX/PPTX managed runtime",
+    "future application schedule/budget/roles to be set at application time; continuation intention and text prepared",
     "actual submission and defense"
   ],
   "no_new_experiments": true

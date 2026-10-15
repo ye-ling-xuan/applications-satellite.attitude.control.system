@@ -1,0 +1,46 @@
+{
+  "client_date": "2026-10-14",
+  "template_sha256": "a3d5eeb6941cbe2165bf60f44ac9870b2cfac197bf2563bda713c249c7f2cd72",
+  "status": "text_prepared_native_Word_pending",
+  "fifth_section_headings": [
+    "1 课题背景",
+    "2 课题研究内容与方法",
+    "3 研究结果",
+    "4 创新点",
+    "5 结束语",
+    "6 参考文献"
+  ],
+  "six_headings_match_template": true,
+  "school_length_instruction": "字数应在3000字左右",
+  "fifth_section": {
+    "visible_text_non_whitespace_characters": 3190,
+    "plain_text_with_link_urls_non_whitespace_characters": 3454,
+    "chinese_characters": 2128,
+    "count_note": "可见文本计数包含标点、英文、数字与参考文献，排除Markdown和链接目的地；纯文本另含可查询URL。汉字数仅汉字。学校未给出具体字数软件或精确上下限，不将字符数冒称Word字数。"
+  },
+  "fourth_section": {
+    "visible_text_non_whitespace_characters": 522,
+    "plain_text_with_link_urls_non_whitespace_characters": 522,
+    "chinese_characters": 407,
+    "count_note": "可见文本计数包含标点、英文、数字与参考文献，排除Markdown和链接目的地；纯文本另含可查询URL。汉字数仅汉字。学校未给出具体字数软件或精确上下限，不将字符数冒称Word字数。"
+  },
+  "source_text_sha256": "f57e46ed1f0cf2b70f74f23ba44d80314d8b6030227b500fbe149dd85f70fb43",
+  "achievement_text_sha256": "0a56b2f24f0d6691aed11b5f89bd2849b17f5d86e03f19b2cfddb42dcd240485",
+  "source_template_preserved": true,
+  "source_copy_identical": true,
+  "optional_sixth_section_filled": true,
+  "sixth_section_is_future_work": true,
+  "future_plan_text_sha256": "6b453ec64e6587a3a13c1f57d8ac1f9f646ecb37cf59929e78d3d1b6b712b7c7",
+  "sixth_section": {
+    "visible_text_non_whitespace_characters": 868,
+    "plain_text_with_link_urls_non_whitespace_characters": 868,
+    "chinese_characters": 779,
+    "count_note": "可见文本计数包含标点、英文、数字与参考文献，排除Markdown和链接目的地；纯文本另含可查询URL。汉字数仅汉字。学校未给出具体字数软件或精确上下限，不将字符数冒称Word字数。"
+  },
+  "user_confirmation_record_sha256": "77804d4a48b7569f82b1e224f74cee4b60ca233cbcf943adc14abe6b37dcd99b",
+  "historical_contact_college_title_reuse_confirmed_by_user": true,
+  "unknown_fields_left_blank": true,
+  "personal_confirmation_inferred": false,
+  "no_new_research": true,
+  "new_template_received": true
+}

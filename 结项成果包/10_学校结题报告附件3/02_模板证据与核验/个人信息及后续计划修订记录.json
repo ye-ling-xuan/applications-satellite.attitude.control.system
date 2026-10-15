@@ -1,0 +1,103 @@
+{
+  "type": "user-confirmed historical identity reuse and separately written future research direction",
+  "client_date": "2026-10-14",
+  "recorded_utc": "2026-10-14T13:46:31.070534+00:00",
+  "user_confirmation_record": "10_学校结题报告附件3/02_模板证据与核验/用户确认记录.json",
+  "user_confirmation_record_sha256": "77804d4a48b7569f82b1e224f74cee4b60ca233cbcf943adc14abe6b37dcd99b",
+  "previous_delivery_manifest_sha256": "3f554dc7b03237bcbe6d35f3941949e4a7b66fbd218be96cae9aaef045cb4e6c",
+  "previous_light_zip_sha256": "a7ee451ce3a642fa40b6c6de7a09dfa985c013ef63309a3c6cca2a39851ff25b",
+  "previous_delivery_file_count": 181,
+  "previous_copies": "tmp/artifacts/delivery_revision_before_school_user_confirmation",
+  "technical_freeze_sha256_unchanged": "200e8f2475475649c0681988a302b88ae504f27ee33b8f579f09daaed2e26649",
+  "previous_files_unchanged": 171,
+  "changed_files": [
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/回填字段.json",
+      "before_sha256": "f5af9dd62dbfcaf8eea9e36bdf2e0572d346deb75956b276cb89763e96a821fd",
+      "after_sha256": "6fb8c96cce2ad0b5cb577c127bc6136017d762f373e3ed8a5cc88b759568a819"
+    },
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/封面及成员回填参考.md",
+      "before_sha256": "496facb0456c90c3e7a5716b34e2caadda5f9d3d4097a0802b554d29570fcbbb",
+      "after_sha256": "0a2b4142a8b3577ce311bfb19e3bd75ba8975abf63f5ebfd912e5f663109ed4e"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/正文覆盖与字数.json",
+      "before_sha256": "7931ad53d50e97c2f7962427637d69e9d444053f3844b828eee2899622a3461e",
+      "after_sha256": "a6d6faa7198f9ddd70a15a88497207c4333e883d5379b9709a63c1dfefc9aa21"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/运行时及填报状态.md",
+      "before_sha256": "34887ed7ac4ee90fb0ba18fc920c988e9f14ff8e61a79874541a66754da100ee",
+      "after_sha256": "54755cce52f72f59f532ac06a885aa018e1ad67d121ec2ef054e12d09e3db387"
+    },
+    {
+      "relative": "10_学校结题报告附件3/README.md",
+      "before_sha256": "3dfd5fd5348627597b0fd25cfc3b1de13e0ea8bf0d581bb1cc24e255a794ff6e",
+      "after_sha256": "fc7f2fa44402ba7523bcbc48c56c3135fdd0de06c09f5b6f80ebc6ef79a3211d"
+    },
+    {
+      "relative": "10_学校结题报告附件3/build_school_closing_materials.py",
+      "before_sha256": "fc213b516f845eb2978ae5bd7b169994474ecd0892014e2350d5b7cc723b1eba",
+      "after_sha256": "cee7cfb9974c706d08b1ebe3f9ec7837e740717c48be7bf7e1b3e5c9b87991ae"
+    },
+    {
+      "relative": "10_学校结题报告附件3/附件3填报稿.md",
+      "before_sha256": "9172d8d8bea5b4dd584a1178585041dcf32486d32efe0480aadc3812282860e2",
+      "after_sha256": "ada402d4aa42d5b8bae7440614d79d166f3c0eb25d603dfc6e341cc8b53c4fbb"
+    },
+    {
+      "relative": "README.md",
+      "before_sha256": "2b10286899214f797d5c83577f99b760e9792f037681fed0fe37514153ffa284",
+      "after_sha256": "44c3cfc3bbfb5e027b9853eec8cca9f7f0a30486dddbb336c18998bff0d36a4b"
+    },
+    {
+      "relative": "tools/finalize_closing_delivery.py",
+      "before_sha256": "609922a6f52240c43bebcc55dfc6f95cb4571cc4a42edaaaf43e8d56e2b7e171",
+      "after_sha256": "d4a212d5d8b582c22201dfe7b9886378da59f50c7a17c50036c4d8ce12a348dd"
+    },
+    {
+      "relative": "最终交付总说明.md",
+      "before_sha256": "fc71d765b860cf80bb6bf3ba7da76f8b7d4b07c8238354084b22c5e202e7e54e",
+      "after_sha256": "c22cc571e1e9ff18aaba853b3a73a15eb769224072687bc28313144d60713600"
+    }
+  ],
+  "added_files_before_revision_record": [
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/后续大创工作方向与预期成果.md",
+      "bytes": 2600,
+      "sha256": "6b453ec64e6587a3a13c1f57d8ac1f9f646ecb37cf59929e78d3d1b6b712b7c7"
+    },
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/后续大创工作方向与预期成果.txt",
+      "bytes": 2610,
+      "sha256": "75986c86b9d7840f4691a3fc233574b6efa35728086444ac0d2908af827d4081"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/用户确认与后续方向独立核对.json",
+      "bytes": 8206,
+      "sha256": "01f042bcd997ee399e49ee6ecb265bd635e260e720c2857f2315f93441358950"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/用户确认与后续方向独立核对.md",
+      "bytes": 3730,
+      "sha256": "86b10bb36468efee1a8a1ad2a57aae3c5c34bc76c777896a5b9e65608da59c4c"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/用户确认记录.json",
+      "bytes": 1472,
+      "sha256": "77804d4a48b7569f82b1e224f74cee4b60ca233cbcf943adc14abe6b37dcd99b"
+    }
+  ],
+  "original_template_sha256": "a3d5eeb6941cbe2165bf60f44ac9870b2cfac197bf2563bda713c249c7f2cd72",
+  "historical_contact_college_title_reuse_confirmed": true,
+  "unknown_fields_left_blank": true,
+  "continuation_intention_confirmed": true,
+  "sixth_section_filled_with_future_work": true,
+  "new_research_or_formal_result_changes": false,
+  "previous_09_documents_and_prior_audits_unchanged": true,
+  "main_school_report_achievements_and_reading_pdf_unchanged": true,
+  "native_filled_docx_produced": false,
+  "school_submission_status": "not submitted",
+  "historical_status_note": "Earlier lack-of-confirmation records are historical; this revision implements the explicit user replies. It does not imply personal learning/contribution confirmation or formal submission."
+}

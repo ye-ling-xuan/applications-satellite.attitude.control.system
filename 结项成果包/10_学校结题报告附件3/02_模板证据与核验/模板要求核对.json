@@ -1,0 +1,1080 @@
+{
+  "audit_date": "2026-10-14",
+  "status": "read_only_template_requirements_extracted",
+  "scope": "School Attachment 3 template requirements and mapping only; original DOCX, frozen 08/09 and prior final coverage audits unchanged",
+  "source": {
+    "relative": "附件3：大一年度项目结题报告.docx",
+    "sha256": "a3d5eeb6941cbe2165bf60f44ac9870b2cfac197bf2563bda713c249c7f2cd72",
+    "bytes": 21633,
+    "extraction_method": "PowerShell .NET System.IO.Compression.ZipFile + System.Xml.XmlDocument read-only",
+    "original_unchanged": true
+  },
+  "namespace": {
+    "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  },
+  "locator_note": "XPath indexes count direct same-name siblings within w:body, w:tbl, w:tr and w:tc; labels and blank positions are evidence, not completed school fields.",
+  "cover_fields": [
+    {
+      "id": "F01",
+      "label": "项目名称",
+      "xml_locator": "/w:document/w:body/w:p[15]",
+      "availability": "verified_historical_source",
+      "note": "人工智能在卫星姿态控制系统中的应用；原立项与中期一致"
+    },
+    {
+      "id": "F02",
+      "label": "项目负责人",
+      "xml_locator": "/w:document/w:body/w:p[16]",
+      "availability": "verified_historical_source",
+      "note": "刘绍轩"
+    },
+    {
+      "id": "F03",
+      "label": "负责人学号",
+      "xml_locator": "/w:document/w:body/w:p[16]",
+      "availability": "historical_value_available",
+      "note": "原立项承诺与信息.json有值，仅用于本地学校表，提交前本人核对"
+    },
+    {
+      "id": "F04",
+      "label": "负责人联系电话",
+      "xml_locator": "/w:document/w:body/w:p[17]",
+      "availability": "must_verify_original_or_person",
+      "note": "当前结构化信息未记录；不猜测，不公开扩散"
+    },
+    {
+      "id": "F05",
+      "label": "负责人电子邮箱",
+      "xml_locator": "/w:document/w:body/w:p[17]",
+      "availability": "must_verify_original_or_person",
+      "note": "同上"
+    },
+    {
+      "id": "F06",
+      "label": "负责人院系及专业",
+      "xml_locator": "/w:document/w:body/w:p[18]",
+      "availability": "historical_college_available_current_major_unconfirmed",
+      "note": "原件旧学院有值；当前院系及专业须确认"
+    },
+    {
+      "id": "F07",
+      "label": "指导教师",
+      "xml_locator": "/w:document/w:body/w:p[20]",
+      "availability": "verified_historical_source",
+      "note": "董瑞琦"
+    },
+    {
+      "id": "F08",
+      "label": "指导教师职称",
+      "xml_locator": "/w:document/w:body/w:p[20]",
+      "availability": "historical_title_available_current_unconfirmed",
+      "note": "原件为副教授，现职称需确认"
+    },
+    {
+      "id": "F09",
+      "label": "指导教师联系电话",
+      "xml_locator": "/w:document/w:body/w:p[21]",
+      "availability": "must_verify_original_or_person",
+      "note": "当前结构化信息未记录；核对原件或本人提供"
+    },
+    {
+      "id": "F10",
+      "label": "指导教师电子邮箱",
+      "xml_locator": "/w:document/w:body/w:p[21]",
+      "availability": "must_verify_original_or_person",
+      "note": "同上"
+    },
+    {
+      "id": "F11",
+      "label": "指导教师院系及专业",
+      "xml_locator": "/w:document/w:body/w:p[22]",
+      "availability": "historical_college_available_current_major_unconfirmed",
+      "note": "原件旧学院有值；当前院系及专业须确认"
+    },
+    {
+      "id": "F12",
+      "label": "填表日期",
+      "xml_locator": "/w:document/w:body/w:p[30]",
+      "availability": "actual_filing_date_required",
+      "note": "由实际填表日期填写，审计日期不自动等同学校填表日期"
+    }
+  ],
+  "sections": [
+    {
+      "id": "S01",
+      "title": "一、项目团队成员（包括项目负责人、按顺序）",
+      "heading_locator": "/w:document/w:body/w:p[32]",
+      "table_locator": "/w:document/w:body/w:tbl[1]",
+      "rows": 6,
+      "blank_member_rows": 5,
+      "columns": [
+        "姓名",
+        "性别",
+        "所在学院",
+        "学号",
+        "联系电话",
+        "本人签字"
+      ],
+      "known_members_in_order": [
+        "刘绍轩",
+        "姚星宇",
+        "谢斯捷",
+        "陈茂菘"
+      ],
+      "mapping": "4名原件成员对应空行2–5，余下第6行留空；姓名、学号和旧学院有原件依据，性别/当前学院/联系电话需核对，每人签字必须由本人完成，不能添加虚构第5名成员。"
+    },
+    {
+      "id": "S02",
+      "title": "二、指导教师意见",
+      "heading_locator": "/w:document/w:body/w:p[34]",
+      "table_locator": "/w:document/w:body/w:tbl[2]",
+      "signature_locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[7]",
+      "date_locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[8]",
+      "mapping": "意见、签名、日期由指导教师本人填写；不可代写同意结项或优秀等级。"
+    },
+    {
+      "id": "S03",
+      "title": "三、项目专家组意见",
+      "heading_locator": "/w:document/w:body/w:p[37]",
+      "table_locator": "/w:document/w:body/w:tbl[3]",
+      "signature_locator": "/w:document/w:body/w:tbl[3]/w:tr[1]/w:tc[1]/w:p[6]",
+      "date_locator": "/w:document/w:body/w:tbl[3]/w:tr[1]/w:tc[1]/w:p[7]",
+      "mapping": "专家组意见、组长签名及日期由实际评审方填写，保持待填。"
+    },
+    {
+      "id": "S04",
+      "title": "四、项目成果",
+      "heading_locator": "/w:document/w:body/w:p[40]",
+      "table_locator": "/w:document/w:body/w:tbl[4]",
+      "mapping": "可从现有36正式训练记录、24080正式回合另720迁移、两篇综述、技术分析、代码模型/CSV/NPZ、图表/离线页/答辩/视频及新增阅读复核附录中精简列举；不得称论文发表、软件著作权、硬件在轨或学校已验收。"
+    },
+    {
+      "id": "S05",
+      "title": "五、项目研究结题报告",
+      "heading_locator": "/w:document/w:body/w:p[44]",
+      "word_requirement": {
+        "verbatim": "字数应在3000字左右",
+        "scope": "第五部分结题报告正文；未定义字符统计口径、是否含参考文献或允许上下限，不自行发明硬阈值",
+        "locator": "/w:document/w:body/w:p[44]"
+      },
+      "subsections": [
+        {
+          "title": "1、课题背景",
+          "locator": "/w:document/w:body/w:p[46]",
+          "existing_report_mapping": "09报告 一 项目背景与原定目标"
+        },
+        {
+          "title": "2、课题研究内容与方法",
+          "locator": "/w:document/w:body/w:p[47]",
+          "existing_report_mapping": "09报告 二 研究内容与方法"
+        },
+        {
+          "title": "3、研究结果",
+          "locator": "/w:document/w:body/w:p[48]",
+          "existing_report_mapping": "09报告 三 研究过程与实际成果；关键数字从最终实测取值"
+        },
+        {
+          "title": "4、创新点",
+          "locator": "/w:document/w:body/w:p[49]",
+          "existing_report_mapping": "09报告 四 主要认识与项目贡献；可写评价/强基线/部署消融/泛化边界的项目贡献，不主张算法发明"
+        },
+        {
+          "title": "5、结束语",
+          "locator": "/w:document/w:body/w:p[50]",
+          "existing_report_mapping": "09报告 五不足、八结论合并，保留未完成STK/辨识MPC/硬件及仿真边界"
+        },
+        {
+          "title": "6、参考文献",
+          "locator": "/w:document/w:body/w:p[51]",
+          "existing_report_mapping": "09报告已核对的实际引用；正文引用与文末一致，模板未设条数下限"
+        }
+      ],
+      "mapping": "应生成新约3000字学校稿，不能整篇粘贴旧通用稿；旧稿7595字符、去空白7075、汉字4373（统计不等同Word字数），有摘要及八章，结构与篇幅均需重组。"
+    },
+    {
+      "id": "S06",
+      "title": "六、拟依托本项目继续开展大学生创新创业训练计划报告",
+      "heading_locator": "/w:document/w:body/w:p[53]",
+      "optional": true,
+      "verbatim": "如不期望继续开展，则无需填写",
+      "subsections": [
+        {
+          "title": "（一）后续计划开展的工作方向或内容",
+          "locator": "/w:document/w:body/w:p[54]",
+          "following_blank_positions": [
+            "/w:document/w:body/w:p[55]",
+            "/w:document/w:body/w:p[56]"
+          ]
+        },
+        {
+          "title": "（二）预期成果",
+          "locator": "/w:document/w:body/w:p[57]",
+          "following_blank_positions": [
+            "/w:document/w:body/w:p[58]",
+            "/w:document/w:body/w:p[59]",
+            "/w:document/w:body/w:p[60]",
+            "/w:document/w:body/w:p[61]",
+            "/w:document/w:body/w:p[62]",
+            "/w:document/w:body/w:p[63]",
+            "/w:document/w:body/w:p[64]",
+            "/w:document/w:body/w:p[65]",
+            "/w:document/w:body/w:p[66]",
+            "/w:document/w:body/w:p[67]"
+          ]
+        }
+      ],
+      "mapping": "是否续做需用户决定；未作决定不代填承诺，不使用用户排除的大创报名计划书。"
+    }
+  ],
+  "not_explicitly_required_by_template": [
+    "项目编号栏目",
+    "经费收支栏目或票据",
+    "实际截止日期",
+    "提交渠道",
+    "答辩时长",
+    "必需附加附件清单",
+    "论文发表或专利/软著数量",
+    "核心文献最低条数",
+    "优秀评定门槛",
+    "固定页数"
+  ],
+  "distinction": "学校通知可能另有要求，未在本DOCX中出现不能推定全校不要求。当前模板缺口已由用户提供解决；其他学校信息仍需通知或本人依据。",
+  "geometry": {
+    "sections": 2,
+    "page_twips": {
+      "width": 11906,
+      "height": 16838
+    },
+    "paper": "approximately A4",
+    "margins_twips": {
+      "top": 1134,
+      "right": 1134,
+      "bottom": 1134,
+      "left": 1134,
+      "header": 851,
+      "footer": 992,
+      "gutter": 0
+    },
+    "available_body_width_twips": 9638,
+    "document_grid_line_pitch_twips": 312,
+    "explicit_fonts": [
+      "宋体",
+      "黑体"
+    ],
+    "explicit_font_sizes_half_points": [
+      24,
+      28,
+      31,
+      36,
+      52
+    ],
+    "explicit_font_note": "实际XML直接格式值，不能推导为统一字体字号或另加旧立项排版要求。",
+    "tables_have_fixed_column_layout": true,
+    "row_height_rule_exact_count": 0,
+    "row_height_note": "各行有w:trHeight值但hRule未显式设置；不得误称精确固定行高。应保留模板表结构并渲染检查内容增长、分页和签名空间。",
+    "cell_width_sum_twips": [
+      9697,
+      9702,
+      9660,
+      9645
+    ],
+    "layout_risks": [
+      "4表均fixed列布局，成员列较窄，长学院/电话可能换行；总单元格宽略大于名义正文宽，但自动表宽/单元格边距/实际渲染影响，不能仅凭XML断言越界。",
+      "意见与成果表含多空段落；逐项粘贴内容可能增加行高或分页，应保留签字日期空间。",
+      "P32含显式分页，P43含分节；不得用XML缓存lastRenderedPageBreak或文档属性猜页数。"
+    ],
+    "page_count": null,
+    "page_count_status": "not_rendered_unknown",
+    "visual_qa_status": "not_run",
+    "native_generated_docx_status": "none_in_this_audit"
+  },
+  "other_parts": {
+    "content_parts_checked": [
+      "word/document.xml",
+      "word/footnotes.xml",
+      "word/endnotes.xml",
+      "word/footer1.xml",
+      "word/footer2.xml"
+    ],
+    "footnotes_and_endnotes_text": "empty",
+    "footer_text": "PAGE field; footer2 cached value2 is not page count",
+    "tracked_insertions": 0,
+    "tracked_deletions": 0,
+    "comment_references": 0,
+    "content_controls_or_form_fields": 0
+  },
+  "evidence": {
+    "crosschecked_files": [
+      "结项成果包/09_结项文书与答辩/02_结项报告/项目结项报告内容稿.md",
+      "结项成果包/09_结项文书与答辩/05_来源与核验/原立项承诺与信息.md",
+      "结项成果包/09_结项文书与答辩/05_来源与核验/原立项承诺与信息.json"
+    ],
+    "xml_extraction": {
+      "source": "附件3：大一年度项目结题报告.docx",
+      "sha256": "a3d5eeb6941cbe2165bf60f44ac9870b2cfac197bf2563bda713c249c7f2cd72",
+      "bytes": 21633,
+      "extraction_method": "PowerShell .NET System.IO.Compression.ZipFile + System.Xml.XmlDocument read-only",
+      "paragraph_count": 67,
+      "nonempty_paragraphs": [
+        {
+          "locator": "/w:document/w:body/w:p[8]",
+          "text": "哈尔滨工业大学（深圳）"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[9]",
+          "text": "大一年度项目结题报告"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[15]",
+          "text": "项目名称：                                       "
+        },
+        {
+          "locator": "/w:document/w:body/w:p[16]",
+          "text": "项目负责人：                 学号：              "
+        },
+        {
+          "locator": "/w:document/w:body/w:p[17]",
+          "text": "联系电话：                电子邮箱：             "
+        },
+        {
+          "locator": "/w:document/w:body/w:p[18]",
+          "text": "院系及专业：                                     "
+        },
+        {
+          "locator": "/w:document/w:body/w:p[20]",
+          "text": "指导教师：                职称：                 "
+        },
+        {
+          "locator": "/w:document/w:body/w:p[21]",
+          "text": "联系电话：                电子邮箱：             "
+        },
+        {
+          "locator": "/w:document/w:body/w:p[22]",
+          "text": "院系及专业：                                     "
+        },
+        {
+          "locator": "/w:document/w:body/w:p[30]",
+          "text": "填表日期：      年  月  日"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[32]",
+          "text": "一、项目团队成员（包括项目负责人、按顺序）"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[34]",
+          "text": "二、指导教师意见"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[37]",
+          "text": "三、项目专家组意见"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[40]",
+          "text": "四、项目成果"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[44]",
+          "text": "五、项目研究结题报告（字数应在3000字左右）"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[45]",
+          "text": "    （一）主要内容："
+        },
+        {
+          "locator": "/w:document/w:body/w:p[46]",
+          "text": "1、课题背景"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[47]",
+          "text": "2、课题研究内容与方法"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[48]",
+          "text": "3、研究结果"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[49]",
+          "text": "4、创新点"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[50]",
+          "text": "5、结束语"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[51]",
+          "text": "6、参考文献"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[53]",
+          "text": "六、拟依托本项目继续开展大学生创新创业训练计划报告（如不期望继续开展，则无需填写）"
+        },
+        {
+          "locator": "/w:document/w:body/w:p[54]",
+          "text": "（一）后续计划开展的工作方向或内容："
+        },
+        {
+          "locator": "/w:document/w:body/w:p[57]",
+          "text": "（二）预期成果："
+        }
+      ],
+      "tables": [
+        {
+          "locator": "/w:document/w:body/w:tbl[1]",
+          "width": "<w:tblW w:w=\"0\" w:type=\"auto\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" />",
+          "layout": "<w:tblLayout w:type=\"fixed\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" />",
+          "rows": [
+            {
+              "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]",
+              "height_twips": "404",
+              "height_rule": "",
+              "cant_split": false,
+              "cells": [
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[1]",
+                  "text": "姓名",
+                  "width_twips": "1274",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[2]",
+                  "text": "性别",
+                  "width_twips": "834",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[3]",
+                  "text": "所在学院",
+                  "width_twips": "2312",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[4]",
+                  "text": "学号",
+                  "width_twips": "1470",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[5]",
+                  "text": "联系电话",
+                  "width_twips": "2415",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[6]",
+                  "text": "本人签字",
+                  "width_twips": "1392",
+                  "paragraphs": 1
+                }
+              ]
+            },
+            {
+              "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]",
+              "height_twips": "404",
+              "height_rule": "",
+              "cant_split": false,
+              "cells": [
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[1]",
+                  "text": "",
+                  "width_twips": "1274",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[2]",
+                  "text": "",
+                  "width_twips": "834",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[3]",
+                  "text": "",
+                  "width_twips": "2312",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[4]",
+                  "text": "",
+                  "width_twips": "1470",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[5]",
+                  "text": "",
+                  "width_twips": "2415",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[6]",
+                  "text": "",
+                  "width_twips": "1392",
+                  "paragraphs": 1
+                }
+              ]
+            },
+            {
+              "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]",
+              "height_twips": "404",
+              "height_rule": "",
+              "cant_split": false,
+              "cells": [
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[1]",
+                  "text": "",
+                  "width_twips": "1274",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[2]",
+                  "text": "",
+                  "width_twips": "834",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[3]",
+                  "text": "",
+                  "width_twips": "2312",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[4]",
+                  "text": "",
+                  "width_twips": "1470",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[5]",
+                  "text": "",
+                  "width_twips": "2415",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[6]",
+                  "text": "",
+                  "width_twips": "1392",
+                  "paragraphs": 1
+                }
+              ]
+            },
+            {
+              "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]",
+              "height_twips": "404",
+              "height_rule": "",
+              "cant_split": false,
+              "cells": [
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[1]",
+                  "text": "",
+                  "width_twips": "1274",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[2]",
+                  "text": "",
+                  "width_twips": "834",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[3]",
+                  "text": "",
+                  "width_twips": "2312",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[4]",
+                  "text": "",
+                  "width_twips": "1470",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[5]",
+                  "text": "",
+                  "width_twips": "2415",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[6]",
+                  "text": "",
+                  "width_twips": "1392",
+                  "paragraphs": 1
+                }
+              ]
+            },
+            {
+              "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]",
+              "height_twips": "404",
+              "height_rule": "",
+              "cant_split": false,
+              "cells": [
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[1]",
+                  "text": "",
+                  "width_twips": "1274",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[2]",
+                  "text": "",
+                  "width_twips": "834",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[3]",
+                  "text": "",
+                  "width_twips": "2312",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[4]",
+                  "text": "",
+                  "width_twips": "1470",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[5]",
+                  "text": "",
+                  "width_twips": "2415",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[6]",
+                  "text": "",
+                  "width_twips": "1392",
+                  "paragraphs": 1
+                }
+              ]
+            },
+            {
+              "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]",
+              "height_twips": "404",
+              "height_rule": "",
+              "cant_split": false,
+              "cells": [
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[1]",
+                  "text": "",
+                  "width_twips": "1274",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[2]",
+                  "text": "",
+                  "width_twips": "834",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[3]",
+                  "text": "",
+                  "width_twips": "2312",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[4]",
+                  "text": "",
+                  "width_twips": "1470",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[5]",
+                  "text": "",
+                  "width_twips": "2415",
+                  "paragraphs": 1
+                },
+                {
+                  "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[6]",
+                  "text": "",
+                  "width_twips": "1392",
+                  "paragraphs": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locator": "/w:document/w:body/w:tbl[2]",
+          "width": "<w:tblW w:w=\"0\" w:type=\"auto\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" />",
+          "layout": "<w:tblLayout w:type=\"fixed\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" />",
+          "rows": [
+            {
+              "locator": "/w:document/w:body/w:tbl[2]/w:tr[1]",
+              "height_twips": "2061",
+              "height_rule": "",
+              "cant_split": false,
+              "cells": [
+                {
+                  "locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]",
+                  "text": " 签    名：                                                                   年     月     日",
+                  "width_twips": "9702",
+                  "paragraphs": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locator": "/w:document/w:body/w:tbl[3]",
+          "width": "<w:tblW w:w=\"0\" w:type=\"auto\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" />",
+          "layout": "<w:tblLayout w:type=\"fixed\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" />",
+          "rows": [
+            {
+              "locator": "/w:document/w:body/w:tbl[3]/w:tr[1]",
+              "height_twips": "428",
+              "height_rule": "",
+              "cant_split": false,
+              "cells": [
+                {
+                  "locator": "/w:document/w:body/w:tbl[3]/w:tr[1]/w:tc[1]",
+                  "text": "                                                                          组长签名：                                                                  年     月     日",
+                  "width_twips": "9660",
+                  "paragraphs": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locator": "/w:document/w:body/w:tbl[4]",
+          "width": "<w:tblW w:w=\"0\" w:type=\"auto\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" />",
+          "layout": "<w:tblLayout w:type=\"fixed\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" />",
+          "rows": [
+            {
+              "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]",
+              "height_twips": "3338",
+              "height_rule": "",
+              "cant_split": false,
+              "cells": [
+                {
+                  "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]",
+                  "text": "",
+                  "width_twips": "9645",
+                  "paragraphs": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "all_blank_body_paragraph_locators": [
+      "/w:document/w:body/w:p[1]",
+      "/w:document/w:body/w:p[2]",
+      "/w:document/w:body/w:p[3]",
+      "/w:document/w:body/w:p[4]",
+      "/w:document/w:body/w:p[5]",
+      "/w:document/w:body/w:p[6]",
+      "/w:document/w:body/w:p[7]",
+      "/w:document/w:body/w:p[10]",
+      "/w:document/w:body/w:p[11]",
+      "/w:document/w:body/w:p[12]",
+      "/w:document/w:body/w:p[13]",
+      "/w:document/w:body/w:p[14]",
+      "/w:document/w:body/w:p[19]",
+      "/w:document/w:body/w:p[23]",
+      "/w:document/w:body/w:p[24]",
+      "/w:document/w:body/w:p[25]",
+      "/w:document/w:body/w:p[26]",
+      "/w:document/w:body/w:p[27]",
+      "/w:document/w:body/w:p[28]",
+      "/w:document/w:body/w:p[29]",
+      "/w:document/w:body/w:p[31]",
+      "/w:document/w:body/w:p[33]",
+      "/w:document/w:body/w:p[35]",
+      "/w:document/w:body/w:p[36]",
+      "/w:document/w:body/w:p[38]",
+      "/w:document/w:body/w:p[39]",
+      "/w:document/w:body/w:p[41]",
+      "/w:document/w:body/w:p[42]",
+      "/w:document/w:body/w:p[43]",
+      "/w:document/w:body/w:p[52]",
+      "/w:document/w:body/w:p[55]",
+      "/w:document/w:body/w:p[56]",
+      "/w:document/w:body/w:p[58]",
+      "/w:document/w:body/w:p[59]",
+      "/w:document/w:body/w:p[60]",
+      "/w:document/w:body/w:p[61]",
+      "/w:document/w:body/w:p[62]",
+      "/w:document/w:body/w:p[63]",
+      "/w:document/w:body/w:p[64]",
+      "/w:document/w:body/w:p[65]",
+      "/w:document/w:body/w:p[66]",
+      "/w:document/w:body/w:p[67]"
+    ],
+    "all_table_paragraph_slots": [
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[1]/w:p[1]",
+        "text": "姓名"
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[2]/w:p[1]",
+        "text": "性别"
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[3]/w:p[1]",
+        "text": "所在学院"
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[4]/w:p[1]",
+        "text": "学号"
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[5]/w:p[1]",
+        "text": "联系电话"
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[6]/w:p[1]",
+        "text": "本人签字"
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[1]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[2]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[3]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[4]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[5]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[6]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[1]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[2]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[3]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[4]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[5]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[6]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[1]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[2]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[3]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[4]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[5]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[6]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[1]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[2]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[3]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[4]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[5]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[5]/w:tc[6]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[1]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[2]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[3]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[4]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[5]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[1]/w:tr[6]/w:tc[6]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[2]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[3]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[4]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[5]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[6]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[7]",
+        "text": " 签    名："
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[2]/w:tr[1]/w:tc[1]/w:p[8]",
+        "text": "                                                                   年     月     日"
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[3]/w:tr[1]/w:tc[1]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[3]/w:tr[1]/w:tc[1]/w:p[2]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[3]/w:tr[1]/w:tc[1]/w:p[3]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[3]/w:tr[1]/w:tc[1]/w:p[4]",
+        "text": "                                       "
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[3]/w:tr[1]/w:tc[1]/w:p[5]",
+        "text": "               "
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[3]/w:tr[1]/w:tc[1]/w:p[6]",
+        "text": "                    组长签名：           "
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[3]/w:tr[1]/w:tc[1]/w:p[7]",
+        "text": "                                                       年     月     日"
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[1]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[2]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[3]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[4]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[5]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[6]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[7]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[8]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[9]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[10]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[11]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[12]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[13]",
+        "text": ""
+      },
+      {
+        "locator": "/w:document/w:body/w:tbl[4]/w:tr[1]/w:tc[1]/w:p[14]",
+        "text": ""
+      }
+    ],
+    "explicit_break_and_section_paragraphs": [
+      {
+        "locator": "/w:document/w:body/w:p[32]",
+        "xml": "<w:p w14:paraId=\"15AF48F4\" w14:textId=\"77777777\" w:rsidR=\"00B127A8\" w:rsidRDefault=\"00B127A8\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pPr><w:spacing w:line=\"360\" w:lineRule=\"auto\" /><w:rPr><w:b /><w:bCs /><w:sz w:val=\"28\" /><w:szCs w:val=\"28\" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii=\"宋体\" /><w:b /><w:sz w:val=\"24\" /></w:rPr><w:br w:type=\"page\" /></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" /><w:b /><w:bCs /><w:sz w:val=\"28\" /><w:szCs w:val=\"28\" /></w:rPr><w:lastRenderedPageBreak /><w:t>一、项目团队成员</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" /><w:bCs /><w:sz w:val=\"28\" /><w:szCs w:val=\"28\" /></w:rPr><w:t>（包括项目负责人、按顺序）</w:t></w:r></w:p>"
+      },
+      {
+        "locator": "/w:document/w:body/w:p[43]",
+        "xml": "<w:p w14:paraId=\"16DCE790\" w14:textId=\"77777777\" w:rsidR=\"00B127A8\" w:rsidRDefault=\"00B127A8\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:pPr><w:rPr><w:rFonts w:ascii=\"宋体\" /><w:sz w:val=\"24\" /></w:rPr><w:sectPr w:rsidR=\"00B127A8\"><w:footerReference w:type=\"even\" r:id=\"rId6\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" /><w:footerReference w:type=\"default\" r:id=\"rId7\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" /><w:pgSz w:w=\"11906\" w:h=\"16838\" /><w:pgMar w:top=\"1134\" w:right=\"1134\" w:bottom=\"1134\" w:left=\"1134\" w:header=\"851\" w:footer=\"992\" w:gutter=\"0\" /><w:cols w:space=\"720\" /><w:docGrid w:linePitch=\"312\" /></w:sectPr></w:pPr></w:p>"
+      }
+    ]
+  },
+  "limits": [
+    "This is source/requirements extraction without DOCX rendering; no page count or final layout pass claimed.",
+    "No original DOCX edit or native generation, no frozen 08/09 edit, no previous coverage audit edit.",
+    "No new training, evaluation or scientific replay.",
+    "Personal signatures/opinions, current identities and actual continuation intent remain unconfirmed."
+  ]
+}

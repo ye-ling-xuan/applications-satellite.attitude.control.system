@@ -1,0 +1,361 @@
+{
+  "audit_date": "2026-10-14",
+  "status": "passed",
+  "reviewer": "/root/audit_new_algorithms",
+  "scope": "Independent school-template manuscript factual, reference, scope, heading and length review. No manuscript/source changes, experimental recomputation or native DOCX generation.",
+  "reviewed_files": [
+    {
+      "path": "10_学校结题报告附件3/01_可粘贴正文/项目成果.md",
+      "sha256": "0a56b2f24f0d6691aed11b5f89bd2849b17f5d86e03f19b2cfddb42dcd240485",
+      "markdown_non_whitespace": 522,
+      "visible_non_whitespace": 522,
+      "cjk": 407,
+      "headings": [],
+      "references": [],
+      "body_citation_tokens": []
+    },
+    {
+      "path": "10_学校结题报告附件3/01_可粘贴正文/项目研究结题报告.md",
+      "sha256": "f57e46ed1f0cf2b70f74f23ba44d80314d8b6030227b500fbe149dd85f70fb43",
+      "markdown_non_whitespace": 3472,
+      "visible_non_whitespace": 3190,
+      "cjk": 2128,
+      "headings": [
+        "1 课题背景",
+        "2 课题研究内容与方法",
+        "3 研究结果",
+        "4 创新点",
+        "5 结束语",
+        "6 参考文献"
+      ],
+      "references": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "body_citation_tokens": [
+        "1",
+        "2-4",
+        "5",
+        "6"
+      ]
+    }
+  ],
+  "school_template_sha256": "a3d5eeb6941cbe2165bf60f44ac9870b2cfac197bf2563bda713c249c7f2cd72",
+  "template_requirement_record": "模板要求核对.json",
+  "heading_check": {
+    "status": "passed",
+    "expected": [
+      "课题背景",
+      "课题研究内容与方法",
+      "研究结果",
+      "创新点",
+      "结束语",
+      "参考文献"
+    ],
+    "actual": [
+      "1 课题背景",
+      "2 课题研究内容与方法",
+      "3 研究结果",
+      "4 创新点",
+      "5 结束语",
+      "6 参考文献"
+    ],
+    "native_template_order_retained": true,
+    "optional_sixth_part_continuation_not_fabricated": true
+  },
+  "length_check": {
+    "status": "approximately_3000_visible_characters_as_drafted",
+    "visible_non_whitespace_including_titles_and_references": 3190,
+    "markdown_non_whitespace_including_urls": 3472,
+    "cjk_characters": 2128,
+    "scope": "可见文本先将Markdown链接替换为标签、去标题标记/行内格式和空白；含六标题及参考文献，不含链接目的地URL。不是Word字数或学校认定口径。",
+    "template_exact_requirement": "字数应在3000字左右",
+    "no_hard_range_invented": true,
+    "english_reference_titles_preserved": true,
+    "school_acceptance_not_asserted": true
+  },
+  "reference_and_scalar_checks": {
+    "status": "passed",
+    "references_checked": [
+      {
+        "number": 1,
+        "source_id": "N01",
+        "title": "Guidance Navigation and Control",
+        "url": "https://www.nasa.gov/smallsat-institute/sst-soa/guidance-navigation-and-control/",
+        "year": null,
+        "reading_level": "official_chapter_sections",
+        "match": true
+      },
+      {
+        "number": 2,
+        "source_id": "A01",
+        "title": "Proximal Policy Optimization Algorithms",
+        "url": "https://arxiv.org/abs/1707.06347",
+        "year": 2017,
+        "reading_level": "abstract_and_full_paper_relevant_sections",
+        "match": true
+      },
+      {
+        "number": 3,
+        "source_id": "A02",
+        "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor",
+        "url": "https://arxiv.org/abs/1801.01290",
+        "year": 2018,
+        "reading_level": "abstract_and_full_paper_relevant_sections",
+        "match": true
+      },
+      {
+        "number": 4,
+        "source_id": "A03",
+        "title": "Addressing Function Approximation Error in Actor-Critic Methods",
+        "url": "https://arxiv.org/abs/1802.09477",
+        "year": 2018,
+        "reading_level": "abstract_and_full_paper_method_sections",
+        "match": true
+      },
+      {
+        "number": 5,
+        "source_id": "P01",
+        "title": "Stable-Baselines3: Reliable Reinforcement Learning Implementations",
+        "url": "https://www.jmlr.org/papers/v22/20-1364.html",
+        "year": 2021,
+        "reading_level": "journal_abstract_and_metadata",
+        "match": true
+      },
+      {
+        "number": 6,
+        "source_id": "A05",
+        "title": "Sim-to-Real Transfer of Robotic Control with Dynamics Randomization",
+        "url": "https://arxiv.org/abs/1710.06537",
+        "year": 2017,
+        "reading_level": "abstract_and_full_paper_relevant_sections",
+        "match": true
+      }
+    ],
+    "cited_reference_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "metrics_checked": [
+      {
+        "axis": "single",
+        "pid_success_pct": 100,
+        "nominal_sac_success_pct": 100,
+        "randomized_sac_success_pct": 98.88888888888889,
+        "nominal_raw_success_pct": 33.33333333333333,
+        "cost_reduction_pct": 54.745403157358055,
+        "pid_settling_s": 3.2625000000000006,
+        "sac_settling_s": 4.2636111111111115,
+        "pid_rms_deg": 6.384462047752093,
+        "sac_rms_deg": 7.077821966956814
+      },
+      {
+        "axis": "three",
+        "pid_success_pct": 100,
+        "nominal_sac_success_pct": 100,
+        "randomized_sac_success_pct": 84.44444444444444,
+        "nominal_raw_success_pct": 0,
+        "cost_reduction_pct": 28.664686801631255,
+        "pid_settling_s": 3.234,
+        "sac_settling_s": 6.1945,
+        "pid_rms_deg": 9.16328489845958,
+        "sac_rms_deg": 11.701739922350976
+      }
+    ],
+    "common_boundaries_checked": [
+      {
+        "axis": "single",
+        "controller": "PID_N",
+        "model_seed": "common",
+        "threshold": 0.9,
+        "definition": "contiguous measured grid through nominal",
+        "lower_rho": 0.5,
+        "upper_rho": 1.5,
+        "grid_points": 11,
+        "nominal_passed": true,
+        "reaches_test_lower_limit": true,
+        "reaches_test_upper_limit": true
+      },
+      {
+        "axis": "single",
+        "controller": "PID_R",
+        "model_seed": "common",
+        "threshold": 0.9,
+        "definition": "contiguous measured grid through nominal",
+        "lower_rho": 0.5,
+        "upper_rho": 1.5,
+        "grid_points": 11,
+        "nominal_passed": true,
+        "reaches_test_lower_limit": true,
+        "reaches_test_upper_limit": true
+      },
+      {
+        "axis": "single",
+        "controller": "SAC_N",
+        "model_seed": "common",
+        "threshold": 0.9,
+        "definition": "contiguous measured grid through nominal",
+        "lower_rho": 0.5,
+        "upper_rho": 1.5,
+        "grid_points": 11,
+        "nominal_passed": true,
+        "reaches_test_lower_limit": true,
+        "reaches_test_upper_limit": true
+      },
+      {
+        "axis": "single",
+        "controller": "SAC_R",
+        "model_seed": "common",
+        "threshold": 0.9,
+        "definition": "contiguous measured grid through nominal",
+        "lower_rho": 0.5,
+        "upper_rho": 1.5,
+        "grid_points": 11,
+        "nominal_passed": true,
+        "reaches_test_lower_limit": true,
+        "reaches_test_upper_limit": true
+      },
+      {
+        "axis": "three",
+        "controller": "PID_N",
+        "model_seed": "common",
+        "threshold": 0.9,
+        "definition": "contiguous measured grid through nominal",
+        "lower_rho": 0.5,
+        "upper_rho": 1.5,
+        "grid_points": 11,
+        "nominal_passed": true,
+        "reaches_test_lower_limit": true,
+        "reaches_test_upper_limit": true
+      },
+      {
+        "axis": "three",
+        "controller": "PID_R",
+        "model_seed": "common",
+        "threshold": 0.9,
+        "definition": "contiguous measured grid through nominal",
+        "lower_rho": 0.5,
+        "upper_rho": 1.5,
+        "grid_points": 11,
+        "nominal_passed": true,
+        "reaches_test_lower_limit": true,
+        "reaches_test_upper_limit": true
+      },
+      {
+        "axis": "three",
+        "controller": "SAC_N",
+        "model_seed": "common",
+        "threshold": 0.9,
+        "definition": "contiguous measured grid through nominal",
+        "lower_rho": 0.5,
+        "upper_rho": 1.5,
+        "grid_points": 11,
+        "nominal_passed": true,
+        "reaches_test_lower_limit": true,
+        "reaches_test_upper_limit": true
+      },
+      {
+        "axis": "three",
+        "controller": "SAC_R",
+        "model_seed": "common",
+        "threshold": 0.9,
+        "definition": "contiguous measured grid through nominal",
+        "lower_rho": 0.5,
+        "upper_rho": 1.1,
+        "grid_points": 7,
+        "nominal_passed": true,
+        "reaches_test_lower_limit": true,
+        "reaches_test_upper_limit": false
+      }
+    ],
+    "anisotropic_checked": {
+      "PID_N": 1,
+      "PID_R": 1,
+      "SAC_N": 1,
+      "SAC_R": 0.8583333333333334
+    },
+    "source_files": [
+      {
+        "relative": "09_结项文书与答辩/05_来源与核验/正文文献结构化清单.json",
+        "sha256": "b9de434d828c88e766186d9d12d2b1103cd1129b4a8937cdd4e5532b60f4292f"
+      },
+      {
+        "relative": "08_惯量域随机化与泛化边界研究/05_研究分析与核验/核心结论.json",
+        "sha256": "cffa2aea78cd2e9af40645cfc46715388d8acc643000ee195caae780f615ae6a"
+      }
+    ],
+    "new_experiments_run": false,
+    "native_word_count_or_page_count_claimed": false
+  },
+  "manual_claim_checks": [
+    {
+      "claim": "V2 18 new training records and7560 formal episodes; historical transfer kept separate",
+      "status": "passed",
+      "source": "07_单轴三轴多算法对比/新融合分析.md"
+    },
+    {
+      "claim": "V2 nine-condition equal-weight calibrated learning best success single68.9%/three63.0%, below improved PID71.1%/72.8%",
+      "status": "passed",
+      "source": "07_单轴三轴多算法对比/新融合分析.md",
+      "scope": "V2 only; no cross-version performance ranking"
+    },
+    {
+      "claim": "V3 12 fresh SAC checkpoints at1M each/12M steps,576 PID candidates,780 scenes/10920 episodes and8148000 replay intervals with zero recorded state/torque difference",
+      "status": "passed",
+      "source": "08_惯量域随机化与泛化边界研究/05_研究分析与核验/独立核验记录.json",
+      "verification_mode": "existing passed full audit and final report checked; no rerun"
+    },
+    {
+      "claim": "Three randomized seed33 scalar failures82, rate-holding exceedance with no physical divergence; maximum validation success85%",
+      "status": "passed",
+      "source": "08_惯量域随机化与泛化边界研究/05_研究分析与核验/研究分析.md",
+      "cause_not_invented": true
+    },
+    {
+      "claim": "V3 only training inertia differs, no disturbance/noise; shared domain validation;20-second complete deployment with every last5-second point meeting1deg/0.5deg/s and no divergence",
+      "status": "passed",
+      "source": "08_惯量域随机化与泛化边界研究/研究计划.md",
+      "same_checkpoint_raw_calibrated_preserved": true
+    },
+    {
+      "claim": "Fourth-section outcomes522 non-whitespace characters, accurate key achievements and limits",
+      "status": "passed",
+      "source": "10_学校结题报告附件3/01_可粘贴正文/项目成果.md"
+    }
+  ],
+  "scope_checks": {
+    "status": "passed",
+    "no_new_rl_algorithm_claim": true,
+    "torque_squared_cost_not_electrical_energy": true,
+    "calibration_not_retraining_or_online_adaptation": true,
+    "finite_grid_not_true_stability_boundary": true,
+    "anisotropic_not_scalar_boundary": true,
+    "negative_results_and_weaker_seed_retained": true,
+    "stated_stk_identification_mpc_hardware_in_orbit_gaps": true,
+    "personal_contribution_and_reproduction_pending": true,
+    "no_teacher_approval_signature_or_school_grade_fabricated": true,
+    "unrelated_excluded_dachuang_plan_not_used": true
+  },
+  "open_content_findings": [],
+  "remaining": [
+    "Current school word-count convention and final native layout/page count require actual filling/rendering; none asserted here.",
+    "Current identity/contact fields, individual signatures/opinions and actual member learning/reproduction require confirmation.",
+    "User continuation intent, school actual deadline/channel and actual submission remain unconfirmed."
+  ],
+  "changes_performed_by_reviewer": [
+    "New10/02 template requirement MD/JSON",
+    "New10/02 school manuscript independent review MD/JSON"
+  ],
+  "original_docx_or_frozen_artifacts_modified": false,
+  "new_training_or_evaluation_run": false,
+  "full_independent_scientific_audit_repeated": false,
+  "native_docx_visual_qa_claimed": false
+}

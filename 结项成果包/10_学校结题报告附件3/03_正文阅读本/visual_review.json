@@ -1,0 +1,31 @@
+{
+  "pdf_sha256": "a662b91b442573cedab7589b205bab00678ed7764ad2c02ed26a0c9bfc222b85",
+  "pages": [
+    {
+      "relative": "tmp/artifacts/school_template_pdf_review/page-1.png",
+      "sha256": "efe97821cc1c7173d24532f80a8a0a6bcf2697d133552eea1f04886bf1fc0ec2"
+    },
+    {
+      "relative": "tmp/artifacts/school_template_pdf_review/page-2.png",
+      "sha256": "f59cfc94aa78386b9163d933ba95ad36d27598c2407a12e41f50903e72cd491b"
+    },
+    {
+      "relative": "tmp/artifacts/school_template_pdf_review/page-3.png",
+      "sha256": "89fb1c6d68d5aa8e6db24d36cdbc09a04cb454194d18ffdd7d4d45ef5f639e52"
+    },
+    {
+      "relative": "tmp/artifacts/school_template_pdf_review/page-4.png",
+      "sha256": "bb8d4d3c46ec638cda32d88d4da0d1414458762714168e663879b088315e3799"
+    }
+  ],
+  "visual_review": "passed",
+  "status": "passed",
+  "reviewer": "root",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "scope": "All reading-copy PDF pages opened and checked; this does not render or validate the source or a filled DOCX form"
+}

@@ -1,0 +1,26 @@
+{
+  "client_date": "2026-10-14",
+  "source": "本轮用户对两项填报澄清的直接回复",
+  "questions_and_verbatim_answers": [
+    {
+      "question": "附件3封面和成员信息中，联系电话、邮箱、学院、教师职称是否沿用2026年6月22日的中期报告？请同时补充负责人和教师的专业、实际填表日期；有变更的项目直接写新值。",
+      "answer": "是，不确定的空着"
+    },
+    {
+      "question": "附件3第六部分是可选的“继续开展大创计划”。你们是否准备申请后续大创？",
+      "answer": "计划申请，需另写后续方向"
+    }
+  ],
+  "historical_contact_college_title_reuse_confirmed_by_user": true,
+  "continuation_intention_confirmed_by_user": true,
+  "unknown_fields_left_blank": true,
+  "fields_left_blank": ["负责人专业", "教师专业", "实际填表日期", "本人签字", "指导教师意见、签名及日期", "专家组意见、组长签名及日期", "第五个成员位"],
+  "future_direction": "基于在线惯量估计与学习补偿的卫星姿态控制",
+  "future_plan_is_new_text": true,
+  "excluded_previous_application_plan_used": false,
+  "current_research_extended": false,
+  "native_filled_docx_produced": false,
+  "personal_reading_reproduction_and_contribution_confirmation_inferred": false,
+  "actual_school_submission_inferred": false,
+  "date_note": "client_date为本次编制记录日期，不作为用户实际填表日期。"
+}

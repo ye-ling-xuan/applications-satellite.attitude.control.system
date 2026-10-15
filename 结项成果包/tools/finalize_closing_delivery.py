@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 STUDY = ROOT / "08_惯量域随机化与泛化边界研究"
 CLOSING = ROOT / "09_结项文书与答辩"
 SUPPLEMENT = CLOSING / "08_补充阅读与团队复核"
+SCHOOL = ROOT / "10_学校结题报告附件3"
 ANALYSIS = STUDY / "05_研究分析与核验"
 TECH = ANALYSIS / "技术研究冻结清单.json"
 DELIVERY = ROOT / "最终交付清单.json"
@@ -70,6 +71,7 @@ def final_files():
     paths += [ROOT / "tools" / name for name in (
         "build_closing_pdfs.py", "render_closing_pdfs.py", "build_closing_video.py", "build_closing_supplement.py",
         "artifact_runtime_diagnostic.md", "artifact_runtime_diagnostic.json", "artifact_runtime_diagnostic.py", "finalize_closing_delivery.py")]
+    paths += files_under(SCHOOL)
     return sorted(set(paths))
 
 
@@ -156,6 +158,71 @@ def supplement_check():
             "appendix_pdf_pages": sum(p["pages"] for p in pdfs), "member_execution_confirmed": False}
 
 
+def school_template_check():
+    expected_sha = "a3d5eeb6941cbe2165bf60f44ac9870b2cfac197bf2563bda713c249c7f2cd72"
+    name = "附件3：大一年度项目结题报告.docx"
+    assert_equal(sha(ROOT.parent / name), expected_sha, "user school template")
+    assert_equal(sha(SCHOOL / "00_原始模板" / name), expected_sha, "retained school template copy")
+    evidence = SCHOOL / "02_模板证据与核验"
+    coverage = read(evidence / "正文覆盖与字数.json")
+    assert_equal(coverage["six_headings_match_template"], True, "six school report headings")
+    assert_equal(coverage["optional_sixth_section_filled"], True, "optional continuation field")
+    assert_equal(coverage["sixth_section_is_future_work"], True, "continuation is future work")
+    content = SCHOOL / "01_可粘贴正文"
+    assert_equal(sha(content / "项目研究结题报告.md"), coverage["source_text_sha256"], "school report SHA")
+    assert_equal(sha(content / "项目成果.md"), coverage["achievement_text_sha256"], "school achievements SHA")
+    assert_equal(sha(content / "后续大创工作方向与预期成果.md"), coverage["future_plan_text_sha256"], "school continuation text SHA")
+    confirmation_path = evidence / "用户确认记录.json"
+    confirmation = read(confirmation_path)
+    assert_equal(sha(confirmation_path), coverage["user_confirmation_record_sha256"], "school user confirmation SHA")
+    for key in ("historical_contact_college_title_reuse_confirmed_by_user", "continuation_intention_confirmed_by_user", "unknown_fields_left_blank"):
+        assert_equal(confirmation[key], True, "explicit school confirmation: " + key)
+    assert_equal(confirmation["questions_and_verbatim_answers"][0]["answer"], "是，不确定的空着", "verbatim identity confirmation")
+    assert_equal(confirmation["questions_and_verbatim_answers"][1]["answer"], "计划申请，需另写后续方向", "verbatim continuation confirmation")
+    audit = read(evidence / "学校稿独立核对.json")
+    assert_equal(audit["status"], "passed", "independent school manuscript check")
+    assert_equal(audit["open_content_findings"], [], "school manuscript open findings")
+    for item in audit["reviewed_files"]:
+        assert_equal(sha(ROOT / item["path"]), item["sha256"], "audited school text")
+    fields = read(content / "回填字段.json")
+    assert_equal(fields["native_filled_docx_produced"], False, "native school DOCX status")
+    assert_equal(fields["historical_contact_college_title_reuse_confirmed_by_user"], True, "reuse of known school personal details")
+    assert_equal(fields["continuation_intention_confirmed_by_user"], True, "user continuation intention")
+    assert_equal(fields["all_personal_fields_complete"], False, "unknown school personal fields remain blank")
+    assert_equal(fields["unknown_fields_left_blank"], True, "blank unknown school fields")
+    assert_equal(fields["user_confirmation_record_sha256"], sha(confirmation_path), "field authorization SHA")
+    assert_equal(fields["future_plan_text_sha256"], coverage["future_plan_text_sha256"], "field continuation SHA")
+    for key in ("leader_major", "advisor_major", "actual_form_date", "advisor_opinion", "expert_opinion"):
+        assert_equal(fields[key], None, "blank school field: " + key)
+    assert_equal(len(fields["members"]), 4, "school member count")
+    for member in fields["members"]:
+        assert_equal(member["signature"], None, "blank member signature")
+    continuation_audit = read(evidence / "用户确认与后续方向独立核对.json")
+    assert_equal(continuation_audit["status"], "passed", "school user confirmation and future direction audit")
+    assert_equal(continuation_audit["open_findings"], [], "school confirmation open findings")
+    for reviewed in continuation_audit["reviewed_files"]:
+        assert_equal(sha(ROOT / reviewed["path"]), reviewed["sha256"], "audited school confirmation file")
+    pdf_dir = SCHOOL / "03_正文阅读本"
+    item = read(pdf_dir / "生成清单.json")[0]
+    assert_equal(item["visual_qa"], "passed", "school reading PDF visual QA")
+    assert_equal(sha(ROOT / item["source"]), item["source_sha256"], "school PDF source SHA")
+    assert_equal(sha(ROOT / item["output"]), item["pdf_sha256"], "school reading PDF SHA")
+    from pypdf import PdfReader
+    assert_equal(len(PdfReader(ROOT / item["output"]).pages), item["pages"], "school reading PDF pages")
+    qa = read(pdf_dir / "visual_review.json")
+    assert_equal(qa["status"], "passed", "school reading PDF page QA")
+    assert_equal(qa["reviewed_pages"], list(range(1, item["pages"] + 1)), "school PDF reviewed pages")
+    for page in qa["pages"]:
+        assert_equal(sha(ROOT / page["relative"]), page["sha256"], "school PDF rendered page")
+    return {"school_template_received": True, "source_and_copy_sha256": expected_sha,
+            "fifth_section_visible_non_whitespace_characters": coverage["fifth_section"]["visible_text_non_whitespace_characters"],
+            "six_headings_match": True, "manuscript_fact_and_reference_check": "passed",
+            "reading_pdf_pages": item["pages"], "native_filled_docx_produced": False,
+            "known_contact_college_title_reuse_confirmed": True, "unknown_personal_fields_left_blank": True,
+            "actual_form_date_filled": False, "optional_continuation_filled": True,
+            "continuation_is_future_work": True, "confirmation_and_continuation_audit": "passed"}
+
+
 def structural_check():
     model_dir = STUDY / "02_模型与验证日志"
     metas = sorted(model_dir.glob("*/*/seed_*/training_metadata.json"))
@@ -208,7 +275,7 @@ def structural_check():
             "raw_traces": 10920, "scientific_figures": 5, "a4_pdf_pages": sum(p["pages"] for p in pdfs),
             "defense_pdf_pages": 12, "video_frames": 900, "video_duration_s": 90,
             "full_independent_verification": "passed", "regression_tests": "63 passed in prior final test run; no research source changed since",
-            "closing_supplement": supplement}
+            "closing_supplement": supplement, "school_template": school_template_check()}
 
 
 class Links(HTMLParser):
@@ -228,6 +295,7 @@ def link_check():
     primary += [SUPPLEMENT / "README.md"]
     primary += sorted((SUPPLEMENT / "01_补充文献").glob("*札记.md"))
     primary += sorted((SUPPLEMENT / "02_最小独立复核").glob("*说明.md"))
+    primary += [SCHOOL / "README.md", SCHOOL / "附件3填报稿.md"]
     missing = []; checked = 0
     for source in primary:
         content = source.read_text(encoding="utf-8")
@@ -269,6 +337,7 @@ def light_paths():
     # Full texts are useful in the reading copy; large source-page QA images
     # stay in the complete delivery, whose manifest still binds them.
     paths += [p for p in files_under(SUPPLEMENT) if "视觉核对" not in p.parts]
+    paths += files_under(SCHOOL)
     paths += [p for p in files_under(ANALYSIS) if p.name not in {"技术研究冻结清单.json", "测试前独立核验_attempt1.json"}]
     paths += files_under(STUDY / "04_图表与结果页面")
     # Keep every evidence link on the offline results page usable in the
@@ -316,7 +385,7 @@ def verify():
     result = {"status": "passed", "checked_utc": datetime.now(timezone.utc).isoformat(), "scope": "artifact integrity, counts and primary local links; scientific replay already recorded separately",
               "structure": stats, "manifests": manifests, "links": links,
               "light_archive": {"relative": ARCHIVE.relative_to(ROOT).as_posix(), "entries": len(expected) + 1, "bytes": ARCHIVE.stat().st_size, "sha256": sha(ARCHIVE), "all_entries_match_source": True},
-              "remaining": ["school template/deadline/project number", "personal reading/reproduction/contribution confirmation", "fees/opinions/signatures", "native DOCX/PPTX managed runtime", "actual submission and defense"],
+              "remaining": ["school template received; native form filling, actual deadline/channel/defense duration still pending", "unknown majors and actual form date intentionally left blank per user", "personal reading/reproduction/contribution confirmation", "fees/opinions/signatures as required by actual school instructions", "native DOCX/PPTX managed runtime", "future application schedule/budget/roles to be set at application time; continuation intention and text prepared", "actual submission and defense"],
               "no_new_experiments": True}
     write(CHECK, result)
     return result

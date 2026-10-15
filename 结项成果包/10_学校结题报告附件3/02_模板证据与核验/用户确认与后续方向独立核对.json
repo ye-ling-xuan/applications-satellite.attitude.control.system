@@ -1,0 +1,149 @@
+{
+  "status": "passed",
+  "open_findings": [],
+  "review_date": "2026-10-14",
+  "reviewer": "/root/audit_new_algorithms",
+  "scope": "User-authorized reuse of known midterm fields, true blank unknown/signature/opinion fields, and new future DACHUANG direction; the frozen fifth-section school manuscript and prior independent audit remain unchanged.",
+  "reviewed_files": [
+    {
+      "path": "10_学校结题报告附件3/01_可粘贴正文/后续大创工作方向与预期成果.md",
+      "sha256": "6b453ec64e6587a3a13c1f57d8ac1f9f646ecb37cf59929e78d3d1b6b712b7c7"
+    },
+    {
+      "path": "10_学校结题报告附件3/01_可粘贴正文/后续大创工作方向与预期成果.txt",
+      "sha256": "75986c86b9d7840f4691a3fc233574b6efa35728086444ac0d2908af827d4081"
+    },
+    {
+      "path": "10_学校结题报告附件3/01_可粘贴正文/回填字段.json",
+      "sha256": "6fb8c96cce2ad0b5cb577c127bc6136017d762f373e3ed8a5cc88b759568a819"
+    },
+    {
+      "path": "10_学校结题报告附件3/01_可粘贴正文/封面及成员回填参考.md",
+      "sha256": "0a2b4142a8b3577ce311bfb19e3bd75ba8975abf63f5ebfd912e5f663109ed4e"
+    },
+    {
+      "path": "10_学校结题报告附件3/附件3填报稿.md",
+      "sha256": "ada402d4aa42d5b8bae7440614d79d166f3c0eb25d603dfc6e341cc8b53c4fbb"
+    },
+    {
+      "path": "10_学校结题报告附件3/02_模板证据与核验/用户确认记录.json",
+      "sha256": "77804d4a48b7569f82b1e224f74cee4b60ca233cbcf943adc14abe6b37dcd99b"
+    },
+    {
+      "path": "10_学校结题报告附件3/build_school_closing_materials.py",
+      "sha256": "cee7cfb9974c706d08b1ebe3f9ec7837e740717c48be7bf7e1b3e5c9b87991ae"
+    },
+    {
+      "path": "10_学校结题报告附件3/README.md",
+      "sha256": "fc7f2fa44402ba7523bcbc48c56c3135fdd0de06c09f5b6f80ebc6ef79a3211d"
+    },
+    {
+      "path": "10_学校结题报告附件3/02_模板证据与核验/运行时及填报状态.md",
+      "sha256": "54755cce52f72f59f532ac06a885aa018e1ad67d121ec2ef054e12d09e3db387"
+    },
+    {
+      "path": "10_学校结题报告附件3/02_模板证据与核验/正文覆盖与字数.json",
+      "sha256": "a6d6faa7198f9ddd70a15a88497207c4333e883d5379b9709a63c1dfefc9aa21"
+    },
+    {
+      "path": "10_学校结题报告附件3/01_可粘贴正文/项目研究结题报告.md",
+      "sha256": "f57e46ed1f0cf2b70f74f23ba44d80314d8b6030227b500fbe149dd85f70fb43"
+    },
+    {
+      "path": "10_学校结题报告附件3/01_可粘贴正文/项目成果.md",
+      "sha256": "0a56b2f24f0d6691aed11b5f89bd2849b17f5d86e03f19b2cfddb42dcd240485"
+    }
+  ],
+  "user_authorization": {
+    "source": "本轮用户对填报澄清的直接回复，已记录于02_模板证据与核验/用户确认记录.json",
+    "known_contact_college_title_reuse_answer": "是，不确定的空着",
+    "continuation_intent_answer": "计划申请，需另写后续方向",
+    "authorization_record_sha256": "77804d4a48b7569f82b1e224f74cee4b60ca233cbcf943adc14abe6b37dcd99b",
+    "known_reuse_confirmed": true,
+    "unknown_blank_requested": true,
+    "continuation_intent_confirmed": true,
+    "does_not_authorize_invented_personal_contribution_or_school_approval": true
+  },
+  "historical_crosscheck": {
+    "status": "passed",
+    "historical_source_sha256_checked": true,
+    "cover_fields_found": 11,
+    "member_rows_exactly_compared": 4,
+    "member_columns_compared": 5,
+    "private_values_in_output": false,
+    "source_modified": false,
+    "source_project_relative": "项目报告/中期检查报告.docx",
+    "source_sha256": "428dbd49788dad99a5107b43eba9f25e3dc09b40532e49708e271665ad78d63b",
+    "method": "Read-only PowerShell .NET ZipFile/XML. Eleven cover values matched source text, and each of four first-table member rows exactly matched name/gender/college/student ID/phone columns. No private values copied into this review report."
+  },
+  "field_checks": {
+    "status": "passed",
+    "known_fields_applied_under_user_authorization": true,
+    "current_college_reuses_historical_values_as_authorized": true,
+    "four_members_preserve_original_order": true,
+    "fifth_member_row_empty": true,
+    "leader_major": null,
+    "advisor_major": null,
+    "actual_form_date": null,
+    "all_member_signatures_null": true,
+    "advisor_opinion_null": true,
+    "expert_opinion_null": true,
+    "signature_dates_not_fabricated": true,
+    "prepared_client_date_not_used_as_actual_filing_date": true,
+    "native_filled_docx_produced": false,
+    "all_personal_fields_complete": false,
+    "personal_reading_reproduction_and_contribution_not_inferred": true,
+    "actual_school_submission_not_inferred": true
+  },
+  "content_checks": {
+    "status": "passed",
+    "school_sections_one_to_six_in_order": true,
+    "fifth_section_six_required_subtitles_preserved": true,
+    "fifth_section_visible_non_whitespace_chars": 3190,
+    "fifth_section_body_and_fourth_achievements_hashes_unchanged": true,
+    "continuation_two_subsections_in_combined_draft": true,
+    "future_md_and_utf8_bom_txt_equivalent": true,
+    "all_three_plain_text_exports_match_visible_markdown_plus_urls": true,
+    "future_direction": "基于在线惯量估计与学习补偿的卫星姿态控制",
+    "future_plan_separate_from_completed_current_work": true,
+    "future_measures": {
+      "compatible_with_observed_domain_randomization_negative_result": true,
+      "time_history_and_online_inertia_estimation_proposed_not_implemented": true,
+      "unknown_constant_inertia_first_not_mass_loss_or_appendage_process_model": true,
+      "identifiability_excitation_noise_and_parameter_error_considered": true,
+      "strong_pid_and_fixed_sac_baselines_retained": true,
+      "bounded_learning_compensation_and_estimation_compensation_ablations_proposed": true,
+      "limits_checks_and_fallback_not_strict_safety_claim": true,
+      "prespecified_training_validation_independent_testing_failures_and_cost_compute_metrics": true,
+      "no_required_ai_superiority_or_expanded_range": true,
+      "hardware_conditional_no_in_orbit_commitment": true,
+      "timeline_budget_team_roles_subject_to_actual_application": true,
+      "no_unobtained_paper_patent_or_certification_promised": true
+    },
+    "wording_correction_applied": "将“传统反馈保证基本控制能力”改为“以传统反馈作为基础控制器”，避免无条件保证。",
+    "excluded_prior_dachuang_application_not_used_as_basis_or_cited": true,
+    "new_future_md_used_as_generation_input": true,
+    "no_new_current_closing_research_experiments": true
+  },
+  "generation_script_review": {
+    "status": "passed",
+    "script_entrypoint_not_run": true,
+    "source_template_hash_checks_present": true,
+    "prepares_new_text_and_pdf_only_not_native_docx": true,
+    "writes_null_unknown_date_majors_signatures_opinions": true,
+    "uses_user_confirmation_record_sha_and_future_text_sha": true,
+    "future_inserted_after_fifth_report_under_sixth_section": true,
+    "no_training_model_selection_or_formal_result_edits_called": true,
+    "review_method": "Static read plus importing module for pure plain(text) equivalence check; no prepare/build/render entrypoints executed in this independent audit."
+  },
+  "historical_status_note": "Prior template extraction, manuscript review,181-file adaptation revision and09 coverage audits describe their pre-reply historical states. They remain unchanged. This new review binds the later user-confirmed reuse and optional continuation draft.",
+  "remaining": [
+    "Native school DOCX filling and rendered page verification remain pending required runtime; current artifacts are text/reference and reading PDF.",
+    "Unknown majors and actual filing date stay blank per user instruction; actual signatures/opinions, team personal learning/reproduction and school submission must come from actual parties.",
+    "Future proposal budget, schedule, scale, roles and approval remain for actual new application, not current completed achievements."
+  ],
+  "new_research_or_full_trajectory_audit_run": false,
+  "existing_audits_or_frozen_content_edited": false,
+  "actual_school_approval_or_submission_claimed": false,
+  "review_is_not_native_docx_layout_approval": true
+}

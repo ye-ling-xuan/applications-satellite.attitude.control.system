@@ -1,0 +1,13 @@
+[
+  {
+    "source": "10_学校结题报告附件3\\03_正文阅读本\\附件3正文阅读本.md",
+    "output": "10_学校结题报告附件3\\03_正文阅读本\\附件3正文阅读本.pdf",
+    "pages": 4,
+    "source_sha256": "8b89f52dc7ebf78688f5caf3e0097a4bc1bb2403ea5ce522d592913e8eb00bd8",
+    "pdf_sha256": "a662b91b442573cedab7589b205bab00678ed7764ad2c02ed26a0c9bfc222b85",
+    "text_characters": 4042,
+    "visual_qa": "passed",
+    "school_template_applied": false,
+    "format": "A4 Chinese reading copy"
+  }
+]

@@ -1,7 +1,7 @@
 {
   "created_utc": "2026-10-12T17:54:17.955721+00:00",
   "scope": "final documents and display artifacts plus referenced complete V3 technical freeze",
-  "file_count": 160,
+  "file_count": 187,
   "files": [
     {
       "relative": ".gitignore",
@@ -744,9 +744,144 @@
       "sha256": "5deaac73d68c515e1e7ec2a09ff4f5be329885e8feaeef428cea5cb4cdcd7b90"
     },
     {
+      "relative": "10_学校结题报告附件3/00_原始模板/附件3：大一年度项目结题报告.docx",
+      "bytes": 21633,
+      "sha256": "a3d5eeb6941cbe2165bf60f44ac9870b2cfac197bf2563bda713c249c7f2cd72"
+    },
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/后续大创工作方向与预期成果.md",
+      "bytes": 2600,
+      "sha256": "6b453ec64e6587a3a13c1f57d8ac1f9f646ecb37cf59929e78d3d1b6b712b7c7"
+    },
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/后续大创工作方向与预期成果.txt",
+      "bytes": 2610,
+      "sha256": "75986c86b9d7840f4691a3fc233574b6efa35728086444ac0d2908af827d4081"
+    },
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/回填字段.json",
+      "bytes": 3365,
+      "sha256": "6fb8c96cce2ad0b5cb577c127bc6136017d762f373e3ed8a5cc88b759568a819"
+    },
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/封面及成员回填参考.md",
+      "bytes": 1888,
+      "sha256": "0a2b4142a8b3577ce311bfb19e3bd75ba8975abf63f5ebfd912e5f663109ed4e"
+    },
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/项目成果.md",
+      "bytes": 1435,
+      "sha256": "0a56b2f24f0d6691aed11b5f89bd2849b17f5d86e03f19b2cfddb42dcd240485"
+    },
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/项目成果.txt",
+      "bytes": 1443,
+      "sha256": "17d112e3c0e8793a22a2a7621ccab7ce8019e67ec26e21fd51615637a3eba4e9"
+    },
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/项目研究结题报告.md",
+      "bytes": 8291,
+      "sha256": "f57e46ed1f0cf2b70f74f23ba44d80314d8b6030227b500fbe149dd85f70fb43"
+    },
+    {
+      "relative": "10_学校结题报告附件3/01_可粘贴正文/项目研究结题报告.txt",
+      "bytes": 8347,
+      "sha256": "bf58df2c3d77c8aa939e4e5562a9d04886d611fefc45809562afa8c2fe7bd058"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/个人信息及后续计划修订记录.json",
+      "bytes": 5644,
+      "sha256": "1d5b082a5e07c929d752542034227d0c17ca775338e432efa9c06649cc7048fa"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/学校模板适配修订记录.json",
+      "bytes": 6362,
+      "sha256": "e384b8d080e02c692740803dfeee177a10adfe5938fb9ecb7f283ad3619d8070"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/学校稿独立核对.json",
+      "bytes": 12705,
+      "sha256": "6fcf58644f4912dd99c4a7336af2c31eaa77966e64d02b3ca1fec1299e86fd2e"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/学校稿独立核对.md",
+      "bytes": 3126,
+      "sha256": "ce416a16681e7b0b982cc80c9c3b827adb1db2b961df17c75b6d6574308715ce"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/模板要求核对.json",
+      "bytes": 39767,
+      "sha256": "80f58c2cd70d36c87e6d820215a53da00f5c17916f7210f3a9bf91a730afc996"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/模板要求核对.md",
+      "bytes": 6890,
+      "sha256": "eb9d059d331a5da0fef04c873c1a93ba94f037f0c179c5871a06296fb2a5bd73"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/正文覆盖与字数.json",
+      "bytes": 2543,
+      "sha256": "a6d6faa7198f9ddd70a15a88497207c4333e883d5379b9709a63c1dfefc9aa21"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/用户确认与后续方向独立核对.json",
+      "bytes": 8206,
+      "sha256": "01f042bcd997ee399e49ee6ecb265bd635e260e720c2857f2315f93441358950"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/用户确认与后续方向独立核对.md",
+      "bytes": 3730,
+      "sha256": "86b10bb36468efee1a8a1ad2a57aae3c5c34bc76c777896a5b9e65608da59c4c"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/用户确认记录.json",
+      "bytes": 1472,
+      "sha256": "77804d4a48b7569f82b1e224f74cee4b60ca233cbcf943adc14abe6b37dcd99b"
+    },
+    {
+      "relative": "10_学校结题报告附件3/02_模板证据与核验/运行时及填报状态.md",
+      "bytes": 2387,
+      "sha256": "54755cce52f72f59f532ac06a885aa018e1ad67d121ec2ef054e12d09e3db387"
+    },
+    {
+      "relative": "10_学校结题报告附件3/03_正文阅读本/visual_review.json",
+      "bytes": 1063,
+      "sha256": "67562d4a1ac971ddf2017f08441071bb9dcfe85739d195f3f9a593a83dc74373"
+    },
+    {
+      "relative": "10_学校结题报告附件3/03_正文阅读本/生成清单.json",
+      "bytes": 535,
+      "sha256": "016fa62c16875b0848b35468e0d4576affa5477114d7aba9e727672eceb3610d"
+    },
+    {
+      "relative": "10_学校结题报告附件3/03_正文阅读本/附件3正文阅读本.md",
+      "bytes": 10035,
+      "sha256": "8b89f52dc7ebf78688f5caf3e0097a4bc1bb2403ea5ce522d592913e8eb00bd8"
+    },
+    {
+      "relative": "10_学校结题报告附件3/03_正文阅读本/附件3正文阅读本.pdf",
+      "bytes": 159087,
+      "sha256": "a662b91b442573cedab7589b205bab00678ed7764ad2c02ed26a0c9bfc222b85"
+    },
+    {
+      "relative": "10_学校结题报告附件3/build_school_closing_materials.py",
+      "bytes": 13683,
+      "sha256": "cee7cfb9974c706d08b1ebe3f9ec7837e740717c48be7bf7e1b3e5c9b87991ae"
+    },
+    {
+      "relative": "10_学校结题报告附件3/README.md",
+      "bytes": 4540,
+      "sha256": "fc7f2fa44402ba7523bcbc48c56c3135fdd0de06c09f5b6f80ebc6ef79a3211d"
+    },
+    {
+      "relative": "10_学校结题报告附件3/附件3填报稿.md",
+      "bytes": 14633,
+      "sha256": "ada402d4aa42d5b8bae7440614d79d166f3c0eb25d603dfc6e341cc8b53c4fbb"
+    },
+    {
       "relative": "README.md",
-      "bytes": 13341,
-      "sha256": "9990b6d451358f9d3a6755cd4b2ac41892229cdffa0f47f960fa26bb20edaad4"
+      "bytes": 14171,
+      "sha256": "44c3cfc3bbfb5e027b9853eec8cca9f7f0a30486dddbb336c18998bff0d36a4b"
     },
     {
       "relative": "tools/artifact_runtime_diagnostic.json",
@@ -780,8 +915,8 @@
     },
     {
       "relative": "tools/finalize_closing_delivery.py",
-      "bytes": 19930,
-      "sha256": "02493dc994501b97454dfe0107439b91d88e55dd3ceb16388831e2d204b9b4d2"
+      "bytes": 25886,
+      "sha256": "d4a212d5d8b582c22201dfe7b9886378da59f50c7a17c50036c4d8ce12a348dd"
     },
     {
       "relative": "tools/render_closing_pdfs.py",
@@ -795,8 +930,8 @@
     },
     {
       "relative": "最终交付总说明.md",
-      "bytes": 9269,
-      "sha256": "70a71d4eb3332af9b9b491b305eea17cd16f76d00af152e323505ad9dd432736"
+      "bytes": 10672,
+      "sha256": "c22cc571e1e9ff18aaba853b3a73a15eb769224072687bc28313144d60713600"
     },
     {
       "relative": "结果总览.html",
@@ -825,5 +960,14 @@
   "school_submission_status": "not submitted by this agent",
   "documented_post_freeze_revision": "09_结项文书与答辩/05_来源与核验/交付整理修订记录.json",
   "closing_supplement_updated_utc": "2026-10-12T19:11:51.213609+00:00",
-  "documented_closing_supplement_revision": "09_结项文书与答辩/05_来源与核验/附录交付修订记录.json"
+  "documented_closing_supplement_revision": "09_结项文书与答辩/05_来源与核验/附录交付修订记录.json",
+  "school_template_updated_client_date": "2026-10-14",
+  "school_template_revision": "10_学校结题报告附件3/02_模板证据与核验/学校模板适配修订记录.json",
+  "school_template_received": true,
+  "native_filled_school_docx_produced": false,
+  "school_user_confirmation_updated_client_date": "2026-10-14",
+  "school_user_confirmation_revision": "10_学校结题报告附件3/02_模板证据与核验/个人信息及后续计划修订记录.json",
+  "known_school_personal_details_reuse_confirmed": true,
+  "unknown_school_fields_left_blank": true,
+  "school_continuation_section_prepared": true
 }
