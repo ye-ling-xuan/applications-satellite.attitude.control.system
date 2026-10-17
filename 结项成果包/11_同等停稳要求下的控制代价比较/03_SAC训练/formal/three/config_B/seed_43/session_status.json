@@ -1,0 +1,35 @@
+{
+  "axis": "three",
+  "seed": 43,
+  "config": "B",
+  "stage": "formal",
+  "requested_steps": 1000000,
+  "actual_steps": 1000000,
+  "fresh_training": true,
+  "eligible_for_formal_results": true,
+  "status": "complete",
+  "best": {
+    "timesteps": 900000,
+    "deployment": "calibrated",
+    "validation_count": 96,
+    "success_4s": 0,
+    "success_6s": 0,
+    "success_8s": 0,
+    "mean_control_cost": 13.870611113542166,
+    "mean_rms_error_deg": 77.8390667376886,
+    "rank": [
+      0,
+      -13.870611113542166,
+      -900000,
+      1
+    ],
+    "checkpoint": "checkpoint_0900000.zip",
+    "model_path": "03_SAC训练/formal/three/config_B/seed_43/best_model.zip",
+    "seed": 43,
+    "axis": "three",
+    "calibrated": true,
+    "model_sha256": "c7b4d2f99418547cee18e525ded18912e833ebb07e40d4bbcfa101ebab1ea996",
+    "selection_split": "validation"
+  },
+  "wall_time_s": 519.132356999995
+}

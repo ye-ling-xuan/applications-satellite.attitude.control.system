@@ -1,0 +1,20 @@
+{
+  "failed_development_test": "selected best development candidate is tested diagnostically; no formal three-seed claim",
+  "diagnostic_selection": "same predeclared validation ranking; never choose from test responses",
+  "regions": [
+    "in_domain",
+    "ideal",
+    "out_of_domain"
+  ],
+  "shard_unit": "one controller, kind, region and actuator parameter; all 256 common initial states",
+  "bootstrap_seed": 202610170901,
+  "bootstrap_repetitions": 20000,
+  "bootstrap_unit": "initial state, retaining all six actuator parameters",
+  "primary_family_size": 12,
+  "confidence_for_primary_intervals": 0.9958333333333333,
+  "acceptance": "all in-domain episodes pass in both methods and all three formal seeds; all corrected difference intervals below zero",
+  "emphasized_reduction": 0.05,
+  "test_initials_independent": 256,
+  "all_searches_and_failed_runs_retained": true,
+  "online_learning_in_tests": false
+}

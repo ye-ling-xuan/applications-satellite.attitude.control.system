@@ -1,0 +1,59 @@
+{
+  "verified_utc": "2026-10-17T13:16:48.875383+00:00",
+  "test_command": "python -X utf8 -B -m unittest test_transfer_physics test_transfer_independent -v",
+  "tests": 16,
+  "passed": 16,
+  "representative_maneuvers": [
+    {
+      "kind": "lag",
+      "parameter_s": 0.0,
+      "intervals": 80
+    },
+    {
+      "kind": "lag",
+      "parameter_s": 0.05,
+      "intervals": 80
+    },
+    {
+      "kind": "lag",
+      "parameter_s": 0.3,
+      "intervals": 80
+    },
+    {
+      "kind": "lag",
+      "parameter_s": 0.5,
+      "intervals": 80
+    },
+    {
+      "kind": "delay",
+      "parameter_s": 0.0,
+      "intervals": 80
+    },
+    {
+      "kind": "delay",
+      "parameter_s": 0.05,
+      "intervals": 80
+    },
+    {
+      "kind": "delay",
+      "parameter_s": 0.3,
+      "intervals": 80
+    },
+    {
+      "kind": "delay",
+      "parameter_s": 0.5,
+      "intervals": 80
+    }
+  ],
+  "independent_ODE": "scipy solve_ivp DOP853; rtol2e-12 atol2e-14",
+  "full_maneuver_error_budgets": {
+    "quaternion_component": 1e-05,
+    "angular_rate_rad_s": 1e-05,
+    "torque_endpoint_Nm": 3e-12,
+    "total_cost_absolute": 1e-10
+  },
+  "independent_dynamics_scope": "listed representative numerical verification cases only, not all research test responses",
+  "output_verifier_fixture": "all 6 controller-region groups, exact expected coverage, independent metrics and cost; changed output refused on resume",
+  "three_axis_joint_training": false,
+  "source12_modified": false
+}

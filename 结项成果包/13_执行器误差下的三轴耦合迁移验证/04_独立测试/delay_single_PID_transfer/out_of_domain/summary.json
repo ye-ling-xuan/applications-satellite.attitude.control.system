@@ -1,0 +1,15 @@
+{
+  "controller": "delay_single_PID_transfer",
+  "kind": "delay",
+  "method": "pid_transfer",
+  "stage": "traditional",
+  "region": "out_of_domain",
+  "diagnostic_only": false,
+  "count": 384,
+  "passes": 275,
+  "success_rate": 0.7161458333333334,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.0595272284224595,
+  "mean_command_cost": 0.05952722842971738,
+  "max_settling_time_s": 8.0
+}

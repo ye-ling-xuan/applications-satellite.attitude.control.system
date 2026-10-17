@@ -1,0 +1,726 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-17T08:22:01.797929+00:00",
+  "scope": "all exported held-out episodes: independent metrics, frozen model/PID actions, original-plant physical replay",
+  "uses_new_controller_or_metric_implementation": false,
+  "trains_or_changes_parameters": false,
+  "tolerances_absolute": {
+    "time_s": 1e-10,
+    "metrics": 1e-09,
+    "applied_action_torque_Nm": 5e-07,
+    "replay_attitude": 1e-09,
+    "replay_omega_rad_s": 1e-09,
+    "replay_error_deg": 1e-07,
+    "replay_rate_deg_s": 1e-07,
+    "replay_observation": 1e-06,
+    "quaternion_norm": 1e-09
+  },
+  "relative_tolerance": 0.0,
+  "counts": {
+    "controllers": 39,
+    "episodes": 9984,
+    "csv_rows": 9984,
+    "metric_values": 159744,
+    "physical_state_action_intervals": 6912000,
+    "independently_recomputed_action_intervals": 6912000,
+    "frozen_files": 39
+  },
+  "controllers": [
+    {
+      "id": "single_pid_4s",
+      "axis": "single",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "c515ce0f99b5c6de56eda81e8c699d5638483f831c5773f17fa41216caf29ec5",
+      "episodes": 256,
+      "success_counts": {
+        "4": 256,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 0.20906525202304838,
+      "status": "passed"
+    },
+    {
+      "id": "single_pid_margin_4s",
+      "axis": "single",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "e794fa21a111e2285a3d95da735958f4fe555f5c2b20830277753edb5f5629f2",
+      "episodes": 256,
+      "success_counts": {
+        "4": 256,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 0.2419335274740019,
+      "status": "passed"
+    },
+    {
+      "id": "single_pid_6s",
+      "axis": "single",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "7fadaac70f2f0162aeb7af83f0d0f874c395c06cc371a65d3e16790d98038255",
+      "episodes": 256,
+      "success_counts": {
+        "4": 19,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 0.06019925511271845,
+      "status": "passed"
+    },
+    {
+      "id": "single_pid_margin_6s",
+      "axis": "single",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "9a22189626e83100c4516bcc4816a753c95e5006cf91592a9ccc0d791d341dd1",
+      "episodes": 256,
+      "success_counts": {
+        "4": 24,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 0.06785070695328857,
+      "status": "passed"
+    },
+    {
+      "id": "single_pid_8s",
+      "axis": "single",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "56dbcda428e8b7de858388e86ad74a4be06e84ccca2521b7dbc64044eece83c2",
+      "episodes": 256,
+      "success_counts": {
+        "4": 14,
+        "6": 41,
+        "8": 256
+      },
+      "mean_control_cost": 0.02587403125931849,
+      "status": "passed"
+    },
+    {
+      "id": "single_pid_margin_8s",
+      "axis": "single",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "edec3e3a1f9d34dcf0dcbdcd1ab44d15259fb7541e87181340b82efd6bedc017",
+      "episodes": 256,
+      "success_counts": {
+        "4": 14,
+        "6": 44,
+        "8": 256
+      },
+      "mean_control_cost": 0.026745248740624575,
+      "status": "passed"
+    },
+    {
+      "id": "three_pid_4s",
+      "axis": "three",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "b4491185b64d506b2a0e08ccae177cc056ded8c02f5925c522b5a96c370d3451",
+      "episodes": 256,
+      "success_counts": {
+        "4": 254,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 1.321216339618179,
+      "status": "passed"
+    },
+    {
+      "id": "three_pid_margin_4s",
+      "axis": "three",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "d06f7bb87325f3ed8dd61bba9c720df6c844f00455d5e7e7254a508a5cfe5a20",
+      "episodes": 256,
+      "success_counts": {
+        "4": 255,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 1.4958442710642543,
+      "status": "passed"
+    },
+    {
+      "id": "three_pid_6s",
+      "axis": "three",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "f8928e3de2e421947df5c451a8a7e983bd27cb9cc241515d5f5b35b1b26b2b29",
+      "episodes": 256,
+      "success_counts": {
+        "4": 1,
+        "6": 255,
+        "8": 256
+      },
+      "mean_control_cost": 0.32009149850851637,
+      "status": "passed"
+    },
+    {
+      "id": "three_pid_margin_6s",
+      "axis": "three",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "ffe3f0990cb1f0f825dc7ba825b0f4c9fb292284ee3bba1e12d12804c2a888df",
+      "episodes": 256,
+      "success_counts": {
+        "4": 1,
+        "6": 255,
+        "8": 256
+      },
+      "mean_control_cost": 0.3685381710233572,
+      "status": "passed"
+    },
+    {
+      "id": "three_pid_8s",
+      "axis": "three",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "88120aea0611c1eefebfc2ae7654eb16b77092c57c04796ec399fc1ea4beb10e",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 5,
+        "8": 255
+      },
+      "mean_control_cost": 0.12470378184172902,
+      "status": "passed"
+    },
+    {
+      "id": "three_pid_margin_8s",
+      "axis": "three",
+      "kind": "pid",
+      "seed": -1,
+      "trajectory_sha256": "9ac5c2b4959535b516170d438729d12a3fdb4d02495402fa6ba7b3bd55530a8e",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 7,
+        "8": 256
+      },
+      "mean_control_cost": 0.13425711411412486,
+      "status": "passed"
+    },
+    {
+      "id": "single_legacy_11_scale_1p25",
+      "axis": "single",
+      "kind": "legacy",
+      "seed": 11,
+      "trajectory_sha256": "e8370ab47a38f0daa4b129709e6b8534e6abc9a9d93ef8f8d738128c949a0f45",
+      "episodes": 256,
+      "success_counts": {
+        "4": 146,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 0.24443124002575733,
+      "status": "passed"
+    },
+    {
+      "id": "single_legacy_11_scale_1p0",
+      "axis": "single",
+      "kind": "legacy",
+      "seed": 11,
+      "trajectory_sha256": "526cd26ca0d9da4bb70d71b18c753b5ad10feb68e1877d5830e6a15a9d2e9d05",
+      "episodes": 256,
+      "success_counts": {
+        "4": 118,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 0.2177754497088243,
+      "status": "passed"
+    },
+    {
+      "id": "single_legacy_11_scale_0p8",
+      "axis": "single",
+      "kind": "legacy",
+      "seed": 11,
+      "trajectory_sha256": "9c4333c79f4d4458c173f9e1bbe151ee95174893ed72b3a11c5f8f88f01834c7",
+      "episodes": 256,
+      "success_counts": {
+        "4": 77,
+        "6": 232,
+        "8": 256
+      },
+      "mean_control_cost": 0.16977795550960034,
+      "status": "passed"
+    },
+    {
+      "id": "single_legacy_22_scale_1p5",
+      "axis": "single",
+      "kind": "legacy",
+      "seed": 22,
+      "trajectory_sha256": "d3bc4e1cda8526eda08afd4ac26d82f4ef26b3121fda38057132a337c4425b4b",
+      "episodes": 256,
+      "success_counts": {
+        "4": 201,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 0.20643548450487367,
+      "status": "passed"
+    },
+    {
+      "id": "single_legacy_22_scale_0p8",
+      "axis": "single",
+      "kind": "legacy",
+      "seed": 22,
+      "trajectory_sha256": "cb8affaa7281e61d9816836b0b97ec8897c8b5c31e1caf3a25dcf1c2450d3816",
+      "episodes": 256,
+      "success_counts": {
+        "4": 127,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 0.15117343900686492,
+      "status": "passed"
+    },
+    {
+      "id": "single_legacy_33_scale_2p0",
+      "axis": "single",
+      "kind": "legacy",
+      "seed": 33,
+      "trajectory_sha256": "274edc69214a8a16f702ee285adbbff578a8d253f020cb0401ca028a9f33aac8",
+      "episodes": 256,
+      "success_counts": {
+        "4": 166,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 0.22349713376798588,
+      "status": "passed"
+    },
+    {
+      "id": "single_legacy_33_scale_1p5",
+      "axis": "single",
+      "kind": "legacy",
+      "seed": 33,
+      "trajectory_sha256": "c3abb14956927cd2b6be024f5dfc42f70b79320c9fc5152a03fb1399faa0f029",
+      "episodes": 256,
+      "success_counts": {
+        "4": 155,
+        "6": 256,
+        "8": 256
+      },
+      "mean_control_cost": 0.20285757348866187,
+      "status": "passed"
+    },
+    {
+      "id": "single_legacy_33_scale_1p0",
+      "axis": "single",
+      "kind": "legacy",
+      "seed": 33,
+      "trajectory_sha256": "072e98f9ade4d2854063cf3944b53fc17f2c7f9e531eccd217b393724c7597d4",
+      "episodes": 256,
+      "success_counts": {
+        "4": 110,
+        "6": 223,
+        "8": 256
+      },
+      "mean_control_cost": 0.17362200733899416,
+      "status": "passed"
+    },
+    {
+      "id": "three_legacy_11_scale_1p25",
+      "axis": "three",
+      "kind": "legacy",
+      "seed": 11,
+      "trajectory_sha256": "dfa0d837d4914295dc440adeb919458bbcbeb74dc59c5026db91fa218b1f90b0",
+      "episodes": 256,
+      "success_counts": {
+        "4": 21,
+        "6": 98,
+        "8": 216
+      },
+      "mean_control_cost": 4.022711666873572,
+      "status": "passed"
+    },
+    {
+      "id": "three_legacy_11_scale_1p0",
+      "axis": "three",
+      "kind": "legacy",
+      "seed": 11,
+      "trajectory_sha256": "111fbdc374a33b6d6198bd118bc6ecf5ba129d70c55a543dfbe46de63d42e661",
+      "episodes": 256,
+      "success_counts": {
+        "4": 25,
+        "6": 98,
+        "8": 231
+      },
+      "mean_control_cost": 3.4997675044178553,
+      "status": "passed"
+    },
+    {
+      "id": "three_legacy_11_scale_0p8",
+      "axis": "three",
+      "kind": "legacy",
+      "seed": 11,
+      "trajectory_sha256": "77d36b678ca7380f1af6d27289bb231258dc6ce6cc7cfbbdbc3c7f5c9cfd2e94",
+      "episodes": 256,
+      "success_counts": {
+        "4": 20,
+        "6": 91,
+        "8": 233
+      },
+      "mean_control_cost": 2.7673394174589587,
+      "status": "passed"
+    },
+    {
+      "id": "three_legacy_22_scale_2p0",
+      "axis": "three",
+      "kind": "legacy",
+      "seed": 22,
+      "trajectory_sha256": "40d45683fbfb593e5194b8bc2a6e850bff709950f73c9791baf52a8e7e9df4e3",
+      "episodes": 256,
+      "success_counts": {
+        "4": 68,
+        "6": 210,
+        "8": 254
+      },
+      "mean_control_cost": 4.391920965728495,
+      "status": "passed"
+    },
+    {
+      "id": "three_legacy_33_scale_2p0",
+      "axis": "three",
+      "kind": "legacy",
+      "seed": 33,
+      "trajectory_sha256": "4a6c43489b4730cc0df1511ef29297af27e6c15a7ce05da3a5af1b9dbd2e3131",
+      "episodes": 256,
+      "success_counts": {
+        "4": 37,
+        "6": 213,
+        "8": 253
+      },
+      "mean_control_cost": 3.698141203117397,
+      "status": "passed"
+    },
+    {
+      "id": "three_legacy_33_scale_1p0",
+      "axis": "three",
+      "kind": "legacy",
+      "seed": 33,
+      "trajectory_sha256": "23e9b3809f91f7bfe7184cfbc46a0bbf0a5c9b407f354fc937296dfc6f61d75b",
+      "episodes": 256,
+      "success_counts": {
+        "4": 35,
+        "6": 211,
+        "8": 255
+      },
+      "mean_control_cost": 2.978372752518581,
+      "status": "passed"
+    },
+    {
+      "id": "three_legacy_33_scale_0p8",
+      "axis": "three",
+      "kind": "legacy",
+      "seed": 33,
+      "trajectory_sha256": "5ff9c825deb0a45276b30dc1ace0849f5f906a1771cc04e53c1e4ee8caee9726",
+      "episodes": 256,
+      "success_counts": {
+        "4": 34,
+        "6": 202,
+        "8": 256
+      },
+      "mean_control_cost": 2.4015424470943296,
+      "status": "passed"
+    },
+    {
+      "id": "single_fresh_41_selected",
+      "axis": "single",
+      "kind": "fresh",
+      "seed": 41,
+      "trajectory_sha256": "71c7acf256d9e930f1337e662ff4e57a14087cdf9f1fb3884d3e07ea89d12600",
+      "episodes": 256,
+      "success_counts": {
+        "4": 23,
+        "6": 92,
+        "8": 246
+      },
+      "mean_control_cost": 0.16182885820863577,
+      "status": "passed"
+    },
+    {
+      "id": "single_fresh_41_ablation",
+      "axis": "single",
+      "kind": "fresh",
+      "seed": 41,
+      "trajectory_sha256": "1e132c8a8070efcb41828c398214ab5281ba3645d8f5de97a03e912561a659c0",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 0,
+        "8": 0
+      },
+      "mean_control_cost": 0.1947752079223176,
+      "status": "passed"
+    },
+    {
+      "id": "single_fresh_42_selected",
+      "axis": "single",
+      "kind": "fresh",
+      "seed": 42,
+      "trajectory_sha256": "6679e66f30e30e4a5c0cf194cda0b9163fd3894f16dbb77cf7a616aaa28e9347",
+      "episodes": 256,
+      "success_counts": {
+        "4": 22,
+        "6": 183,
+        "8": 231
+      },
+      "mean_control_cost": 0.07517131672298491,
+      "status": "passed"
+    },
+    {
+      "id": "single_fresh_42_ablation",
+      "axis": "single",
+      "kind": "fresh",
+      "seed": 42,
+      "trajectory_sha256": "130f48f46a85165113ad6b52f46b87c8dad00f318988497c5b22f08e94fb3350",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 0,
+        "8": 0
+      },
+      "mean_control_cost": 0.13265315779538894,
+      "status": "passed"
+    },
+    {
+      "id": "single_fresh_43_selected",
+      "axis": "single",
+      "kind": "fresh",
+      "seed": 43,
+      "trajectory_sha256": "662b1d541739803e9d45cdf9aebde15a434352a09593493eccf3f318e0a816b6",
+      "episodes": 256,
+      "success_counts": {
+        "4": 7,
+        "6": 96,
+        "8": 100
+      },
+      "mean_control_cost": 0.14348947202055712,
+      "status": "passed"
+    },
+    {
+      "id": "single_fresh_43_ablation",
+      "axis": "single",
+      "kind": "fresh",
+      "seed": 43,
+      "trajectory_sha256": "189d913b0d6a0a8016c039dc60c0399bfaaf1be6adea910a66ebb5c71bb521ed",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 0,
+        "8": 0
+      },
+      "mean_control_cost": 0.13722134296918012,
+      "status": "passed"
+    },
+    {
+      "id": "three_fresh_41_selected",
+      "axis": "three",
+      "kind": "fresh",
+      "seed": 41,
+      "trajectory_sha256": "a754eaba03399c229a05927c4db64a83ae3624cbdbfd7b8a302e3fe02786128f",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 0,
+        "8": 0
+      },
+      "mean_control_cost": 11.607312244310396,
+      "status": "passed"
+    },
+    {
+      "id": "three_fresh_41_ablation",
+      "axis": "three",
+      "kind": "fresh",
+      "seed": 41,
+      "trajectory_sha256": "79793ceb0ca91eb3463ee73f3bd5cfc2ca703e0fc4a58cedf2baaad5d8dbbd14",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 0,
+        "8": 0
+      },
+      "mean_control_cost": 14.722875404320023,
+      "status": "passed"
+    },
+    {
+      "id": "three_fresh_42_selected",
+      "axis": "three",
+      "kind": "fresh",
+      "seed": 42,
+      "trajectory_sha256": "ec03588b4016e58c248c31eee041cc0447c9f314e0658c2fc5197b8eeb785f95",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 0,
+        "8": 0
+      },
+      "mean_control_cost": 6.290603512077394,
+      "status": "passed"
+    },
+    {
+      "id": "three_fresh_42_ablation",
+      "axis": "three",
+      "kind": "fresh",
+      "seed": 42,
+      "trajectory_sha256": "6c6d6e05bddee361aa2d41bbcfc8b63e312d9b548bfd66b0d3ce491165a991c6",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 0,
+        "8": 0
+      },
+      "mean_control_cost": 13.044290879858739,
+      "status": "passed"
+    },
+    {
+      "id": "three_fresh_43_selected",
+      "axis": "three",
+      "kind": "fresh",
+      "seed": 43,
+      "trajectory_sha256": "35b0db55d4d5804099597645cf7402610e820de8b3410c11a2843a09adb6d411",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 0,
+        "8": 0
+      },
+      "mean_control_cost": 13.73634948899489,
+      "status": "passed"
+    },
+    {
+      "id": "three_fresh_43_ablation",
+      "axis": "three",
+      "kind": "fresh",
+      "seed": 43,
+      "trajectory_sha256": "de63f9eba714fb4cd38b47e831795ae684e2a194363f2741ecd928c259570070",
+      "episodes": 256,
+      "success_counts": {
+        "4": 0,
+        "6": 0,
+        "8": 0
+      },
+      "mean_control_cost": 17.657614116122822,
+      "status": "passed"
+    }
+  ],
+  "file_sha256": {
+    "01_实验方案\\部署冻结.json": "b4ba3213c0988d2f3310cbc7a4a99dbece4c03aa61c49645665e1083eaab10ef",
+    "package/08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/best_model.zip": "f3cb02558d358faaad8474b8161bec5c12ceffeb312ccdfc841fbf3860138e86",
+    "package/08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_22/best_model.zip": "89182ee711b55e26e2a65869ff8cd0ece1339a5e1a57906e4d3c3fb2c9a856ae",
+    "package/08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_33/best_model.zip": "0d54a85724425971d1fe2834fe843a9fa860ae670bf9ed3a686f761ee693a9b1",
+    "package/08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/best_model.zip": "ee74c85023050658aabeebe5a08760887393ea3132b2044cc2be59902541a910",
+    "package/08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_22/best_model.zip": "f0de77df6ab54ba67028d11615760a955e61cd72f0a6c5bee2758e0437d678f7",
+    "package/08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_33/best_model.zip": "0020aab30b9d834bdf819ebac0a13a796221ed37decfdf083fe398927abf2867",
+    "package/11_同等停稳要求下的控制代价比较/01_实验方案/test_single.json": "f6cea6316ccdd9a445d4c6f00526d4ac47ef90a8ff014e7f9cedd3fceb45be4a",
+    "package/11_同等停稳要求下的控制代价比较/01_实验方案/test_three.json": "60f4b7b449a171a144a864d5957138b0b0638ccc5c72e292d3c324f7308b569e",
+    "package/11_同等停稳要求下的控制代价比较/01_实验方案/任务定义.json": "a0af2e54f6de5b8d15f474b16e56adc2691eda1bc230fc3a28c7c46a068014c5",
+    "package/11_同等停稳要求下的控制代价比较/02_PID整定/selected_pid.json": "f6a4b95549882d07d8f257422ecbaaffa4fd43cecc3e7744dd4aa156982af839",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_41/best_model.zip": "6fb111928854312960a8ad772701bcb4a72294b32f74255f9a6d60fa5a12c7e0",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_41/training_metadata.json": "02851d3675dafd4c08952738b0bcef281f994519e16b63424146ad84c61e0c02",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_42/best_model.zip": "23ec0aec3b8b5ab7d7e601d30e6d8e8fbf5f8116cc18d8e85b11a17d90f1ec32",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_42/training_metadata.json": "120d4cb0b965dfe9acd383c99064d747b4a17fbde9e8ed8f4344311751d83910",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_43/best_model.zip": "078a5600cb09821f12c63b9b6dc549caeb94d268020d4857f488e2a3e64d23d5",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_43/training_metadata.json": "df351813471af36561e66e571e998be48776cec801f039f68f5ec0028351b9a3",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_41/best_model.zip": "b744d2c5712752927f99b48083f775c3c9c20fbef56f133e55e097d926f4ce87",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_41/training_metadata.json": "8e571d4fa339e42c7d43e47099b44353ecfcda2bbaeda04650689cf0766f3b7d",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_42/best_model.zip": "906faddf8c64b541a6331a8e13f0065d4fbddf24667624a6e89f3c888fb60e4a",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_42/training_metadata.json": "06e28da22073bd28f2f80774fbb4f30b94e9fa81d4e218f438835921c7a92edb",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_43/best_model.zip": "c7b4d2f99418547cee18e525ded18912e833ebb07e40d4bbcfa101ebab1ea996",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_43/training_metadata.json": "8caebb1d244e13f6703972eea8b396d40f9e1912d9a3ddfea0953b494955af59",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/formal_source.py": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/io_retry_runner.py": "43046e764b1b1ace12d76a852f269e342fce25c047704c89986306582f4ccb37",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/旧模型验证与动作缩放/selected_legacy.json": "f15c85a8eb9c4426514010cee5e68fd267d9a73fe0fe7b7f231c1a8b5d3843ae",
+    "package/11_同等停稳要求下的控制代价比较/03_SAC训练/正式训练配置冻结.json": "a7df258764a27934f31ba15d1810b7c47ff731ed81907fca2b689f3ddbff81b4",
+    "package/11_同等停稳要求下的控制代价比较/代码/deadline_study/__init__.py": "9b20913d318906909555891a768e78c58a04fa150f06c2f4f673b99fc301ef1c",
+    "package/11_同等停稳要求下的控制代价比较/代码/deadline_study/baselines.py": "03a25b0a7768e018087203d169cc9dc9700b51a24a06f52b2c02442c85aa36d2",
+    "package/11_同等停稳要求下的控制代价比较/代码/deadline_study/cli.py": "8e38ec003f99f40ed4d21a6fef8672bf024b01b6d48f252d162fd1ed92fadab7",
+    "package/11_同等停稳要求下的控制代价比较/代码/deadline_study/delivery.py": "47ae1263bedfe1afc7d3a2a65a53adf11b477dbf62dadb8b058f354daf9cbfa2",
+    "package/11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a",
+    "package/11_同等停稳要求下的控制代价比较/代码/deadline_study/legacy.py": "f58236d6d467bbc6db7189908e98b6b0aa64b77b760f975830a075c5a481b5ee",
+    "package/11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b",
+    "package/11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419",
+    "package/11_同等停稳要求下的控制代价比较/代码/deadline_study/verification.py": "d5f84a813cc4c2107a9a8bbd6f76bb0ba7dcca2335b3004bcef6fa196a89a80a",
+    "package/11_同等停稳要求下的控制代价比较/代码/test_deadline_study.py": "0685dc2f23f080d7f70e9bb489a75ae61b4e6576b120ac22a5fefffb0a194b1b",
+    "package/11_同等停稳要求下的控制代价比较/代码/test_delivery.py": "791d451965d1dd117692db3ff205f7079e0b46a738fa09ff4d66c2952273d8ce",
+    "package/multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "package/multi_algorithm_benchmark/vector_training.py": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757",
+    "04_独立测试\\episode_metrics.csv": "4ea5f9235cfc180ed7a98c6ee23b5d642562533371e284d780aaeeae82eb6603",
+    "04_独立测试\\trajectories\\single_pid_4s.npz": "c515ce0f99b5c6de56eda81e8c699d5638483f831c5773f17fa41216caf29ec5",
+    "04_独立测试\\trajectories\\single_pid_margin_4s.npz": "e794fa21a111e2285a3d95da735958f4fe555f5c2b20830277753edb5f5629f2",
+    "04_独立测试\\trajectories\\single_pid_6s.npz": "7fadaac70f2f0162aeb7af83f0d0f874c395c06cc371a65d3e16790d98038255",
+    "04_独立测试\\trajectories\\single_pid_margin_6s.npz": "9a22189626e83100c4516bcc4816a753c95e5006cf91592a9ccc0d791d341dd1",
+    "04_独立测试\\trajectories\\single_pid_8s.npz": "56dbcda428e8b7de858388e86ad74a4be06e84ccca2521b7dbc64044eece83c2",
+    "04_独立测试\\trajectories\\single_pid_margin_8s.npz": "edec3e3a1f9d34dcf0dcbdcd1ab44d15259fb7541e87181340b82efd6bedc017",
+    "04_独立测试\\trajectories\\three_pid_4s.npz": "b4491185b64d506b2a0e08ccae177cc056ded8c02f5925c522b5a96c370d3451",
+    "04_独立测试\\trajectories\\three_pid_margin_4s.npz": "d06f7bb87325f3ed8dd61bba9c720df6c844f00455d5e7e7254a508a5cfe5a20",
+    "04_独立测试\\trajectories\\three_pid_6s.npz": "f8928e3de2e421947df5c451a8a7e983bd27cb9cc241515d5f5b35b1b26b2b29",
+    "04_独立测试\\trajectories\\three_pid_margin_6s.npz": "ffe3f0990cb1f0f825dc7ba825b0f4c9fb292284ee3bba1e12d12804c2a888df",
+    "04_独立测试\\trajectories\\three_pid_8s.npz": "88120aea0611c1eefebfc2ae7654eb16b77092c57c04796ec399fc1ea4beb10e",
+    "04_独立测试\\trajectories\\three_pid_margin_8s.npz": "9ac5c2b4959535b516170d438729d12a3fdb4d02495402fa6ba7b3bd55530a8e",
+    "04_独立测试\\trajectories\\single_legacy_11_scale_1p25.npz": "e8370ab47a38f0daa4b129709e6b8534e6abc9a9d93ef8f8d738128c949a0f45",
+    "04_独立测试\\trajectories\\single_legacy_11_scale_1p0.npz": "526cd26ca0d9da4bb70d71b18c753b5ad10feb68e1877d5830e6a15a9d2e9d05",
+    "04_独立测试\\trajectories\\single_legacy_11_scale_0p8.npz": "9c4333c79f4d4458c173f9e1bbe151ee95174893ed72b3a11c5f8f88f01834c7",
+    "04_独立测试\\trajectories\\single_legacy_22_scale_1p5.npz": "d3bc4e1cda8526eda08afd4ac26d82f4ef26b3121fda38057132a337c4425b4b",
+    "04_独立测试\\trajectories\\single_legacy_22_scale_0p8.npz": "cb8affaa7281e61d9816836b0b97ec8897c8b5c31e1caf3a25dcf1c2450d3816",
+    "04_独立测试\\trajectories\\single_legacy_33_scale_2p0.npz": "274edc69214a8a16f702ee285adbbff578a8d253f020cb0401ca028a9f33aac8",
+    "04_独立测试\\trajectories\\single_legacy_33_scale_1p5.npz": "c3abb14956927cd2b6be024f5dfc42f70b79320c9fc5152a03fb1399faa0f029",
+    "04_独立测试\\trajectories\\single_legacy_33_scale_1p0.npz": "072e98f9ade4d2854063cf3944b53fc17f2c7f9e531eccd217b393724c7597d4",
+    "04_独立测试\\trajectories\\three_legacy_11_scale_1p25.npz": "dfa0d837d4914295dc440adeb919458bbcbeb74dc59c5026db91fa218b1f90b0",
+    "04_独立测试\\trajectories\\three_legacy_11_scale_1p0.npz": "111fbdc374a33b6d6198bd118bc6ecf5ba129d70c55a543dfbe46de63d42e661",
+    "04_独立测试\\trajectories\\three_legacy_11_scale_0p8.npz": "77d36b678ca7380f1af6d27289bb231258dc6ce6cc7cfbbdbc3c7f5c9cfd2e94",
+    "04_独立测试\\trajectories\\three_legacy_22_scale_2p0.npz": "40d45683fbfb593e5194b8bc2a6e850bff709950f73c9791baf52a8e7e9df4e3",
+    "04_独立测试\\trajectories\\three_legacy_33_scale_2p0.npz": "4a6c43489b4730cc0df1511ef29297af27e6c15a7ce05da3a5af1b9dbd2e3131",
+    "04_独立测试\\trajectories\\three_legacy_33_scale_1p0.npz": "23e9b3809f91f7bfe7184cfbc46a0bbf0a5c9b407f354fc937296dfc6f61d75b",
+    "04_独立测试\\trajectories\\three_legacy_33_scale_0p8.npz": "5ff9c825deb0a45276b30dc1ace0849f5f906a1771cc04e53c1e4ee8caee9726",
+    "04_独立测试\\trajectories\\single_fresh_41_selected.npz": "71c7acf256d9e930f1337e662ff4e57a14087cdf9f1fb3884d3e07ea89d12600",
+    "04_独立测试\\trajectories\\single_fresh_41_ablation.npz": "1e132c8a8070efcb41828c398214ab5281ba3645d8f5de97a03e912561a659c0",
+    "04_独立测试\\trajectories\\single_fresh_42_selected.npz": "6679e66f30e30e4a5c0cf194cda0b9163fd3894f16dbb77cf7a616aaa28e9347",
+    "04_独立测试\\trajectories\\single_fresh_42_ablation.npz": "130f48f46a85165113ad6b52f46b87c8dad00f318988497c5b22f08e94fb3350",
+    "04_独立测试\\trajectories\\single_fresh_43_selected.npz": "662b1d541739803e9d45cdf9aebde15a434352a09593493eccf3f318e0a816b6",
+    "04_独立测试\\trajectories\\single_fresh_43_ablation.npz": "189d913b0d6a0a8016c039dc60c0399bfaaf1be6adea910a66ebb5c71bb521ed",
+    "04_独立测试\\trajectories\\three_fresh_41_selected.npz": "a754eaba03399c229a05927c4db64a83ae3624cbdbfd7b8a302e3fe02786128f",
+    "04_独立测试\\trajectories\\three_fresh_41_ablation.npz": "79793ceb0ca91eb3463ee73f3bd5cfc2ca703e0fc4a58cedf2baaad5d8dbbd14",
+    "04_独立测试\\trajectories\\three_fresh_42_selected.npz": "ec03588b4016e58c248c31eee041cc0447c9f314e0658c2fc5197b8eeb785f95",
+    "04_独立测试\\trajectories\\three_fresh_42_ablation.npz": "6c6d6e05bddee361aa2d41bbcfc8b63e312d9b548bfd66b0d3ce491165a991c6",
+    "04_独立测试\\trajectories\\three_fresh_43_selected.npz": "35b0db55d4d5804099597645cf7402610e820de8b3410c11a2843a09adb6d411",
+    "04_独立测试\\trajectories\\three_fresh_43_ablation.npz": "de63f9eba714fb4cd38b47e831795ae684e2a194363f2741ecd928c259570070",
+    "verification_source.py": "d5f84a813cc4c2107a9a8bbd6f76bb0ba7dcca2335b3004bcef6fa196a89a80a"
+  },
+  "statistical_scope": "no hypothesis selection or performance claims; training seeds are not counted as independent initial-state samples",
+  "checks": 1099164,
+  "issue_count": 0,
+  "issues_first_100": [],
+  "maximum_absolute_errors": {
+    "time_s": 0.0,
+    "initial_torque_Nm": 0.0,
+    "saved_rate_from_omega_deg_s": 5.684341886080802e-14,
+    "saved_angle_from_attitude_deg": 8.526512829121202e-14,
+    "metrics_control_cost": 8.881784197001252e-16,
+    "metrics_settling_time_s": 0.0,
+    "metrics_rms_error_deg": 1.7763568394002505e-15,
+    "metrics_final_error_deg": 0.0,
+    "metrics_final_rate_deg_s": 0.0,
+    "metrics_max_angle_after_4s": 0.0,
+    "metrics_max_rate_after_4s": 0.0,
+    "metrics_max_angle_after_6s": 0.0,
+    "metrics_max_rate_after_6s": 0.0,
+    "metrics_max_angle_after_8s": 0.0,
+    "metrics_max_rate_after_8s": 0.0,
+    "applied_action_torque_Nm": 0.0,
+    "replay_attitude": 0.0,
+    "replay_omega_rad_s": 0.0,
+    "replay_error_deg": 0.0,
+    "replay_rate_deg_s": 0.0,
+    "replay_observation": 0.0,
+    "quaternion_norm": 2.220446049250313e-16
+  }
+}

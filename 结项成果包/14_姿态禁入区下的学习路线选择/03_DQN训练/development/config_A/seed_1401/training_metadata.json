@@ -1,0 +1,187 @@
+{
+  "status": "complete",
+  "stage": "development",
+  "config_name": "A",
+  "seed": 1401,
+  "requested_decisions": 10000,
+  "actual_decisions": 10000,
+  "best": {
+    "decisions": 8000,
+    "validation": {
+      "count": 128,
+      "successes": 128,
+      "collisions": 0,
+      "success_rate": 1.0,
+      "safety_rate": 1.0,
+      "mean_torque_cost": 0.18143992386978672,
+      "mean_success_cost": 0.18143992386978672
+    },
+    "model_path": "03_DQN训练/development/config_A/seed_1401/best.zip",
+    "model_sha256": "257d552f33b4edefe4841340ace690d3d8fe97fe3611473ecafb41469f271160",
+    "updates": 936
+  },
+  "checkpoints": [
+    {
+      "decisions": 2000,
+      "validation": {
+        "count": 128,
+        "successes": 119,
+        "collisions": 9,
+        "success_rate": 0.9296875,
+        "safety_rate": 0.9296875,
+        "mean_torque_cost": 0.24415702110678678,
+        "mean_success_cost": 0.19268904084726812
+      },
+      "model_path": "03_DQN训练/development/config_A/seed_1401/checkpoints/decisions_002000/model.zip",
+      "model_sha256": "933779ec876e87644cf115c764380983d4bf45538c27fccdf4be54207e9f9272",
+      "updates": 186
+    },
+    {
+      "decisions": 4000,
+      "validation": {
+        "count": 128,
+        "successes": 122,
+        "collisions": 6,
+        "success_rate": 0.953125,
+        "safety_rate": 0.953125,
+        "mean_torque_cost": 0.22684005732281404,
+        "mean_success_cost": 0.1894292926211226
+      },
+      "model_path": "03_DQN训练/development/config_A/seed_1401/checkpoints/decisions_004000/model.zip",
+      "model_sha256": "13b7068781b31366b6b4b1d35681190f7420d7ea3445dd13ba000a942b042ba7",
+      "updates": 436
+    },
+    {
+      "decisions": 6000,
+      "validation": {
+        "count": 128,
+        "successes": 127,
+        "collisions": 1,
+        "success_rate": 0.9921875,
+        "safety_rate": 0.9921875,
+        "mean_torque_cost": 0.18927212569578591,
+        "mean_success_cost": 0.18281803603829158
+      },
+      "model_path": "03_DQN训练/development/config_A/seed_1401/checkpoints/decisions_006000/model.zip",
+      "model_sha256": "e273b2b635b782b10b237b5e9840c11da8f451c39b97fd2a27953cb57769fb14",
+      "updates": 686
+    },
+    {
+      "decisions": 8000,
+      "validation": {
+        "count": 128,
+        "successes": 128,
+        "collisions": 0,
+        "success_rate": 1.0,
+        "safety_rate": 1.0,
+        "mean_torque_cost": 0.18143992386978672,
+        "mean_success_cost": 0.18143992386978672
+      },
+      "model_path": "03_DQN训练/development/config_A/seed_1401/checkpoints/decisions_008000/model.zip",
+      "model_sha256": "257d552f33b4edefe4841340ace690d3d8fe97fe3611473ecafb41469f271160",
+      "updates": 936
+    },
+    {
+      "decisions": 10000,
+      "validation": {
+        "count": 128,
+        "successes": 128,
+        "collisions": 0,
+        "success_rate": 1.0,
+        "safety_rate": 1.0,
+        "mean_torque_cost": 0.18143992386978672,
+        "mean_success_cost": 0.18143992386978672
+      },
+      "model_path": "03_DQN训练/development/config_A/seed_1401/checkpoints/decisions_010000/model.zip",
+      "model_sha256": "f783cb8644c49626fb9fb13f8037848bcc54dc31d4254bcc4eec5d39c1535bc7",
+      "updates": 1186
+    }
+  ],
+  "source_sha256": {
+    "代码/route_study/__init__.py": "9fe31802efa70a85fe1c96e9c47c2757e8693524084e31951ab2e1b62ccdb9b1",
+    "代码/route_study/baselines.py": "4de9dd3a0ba3c43b0c31ad52f19d0b8d0393ebbcbd067d0c510c258cd6d675d1",
+    "代码/route_study/cli.py": "607827d9aefb3eca0ad98f01944f0cc9b922cec71cab13ea64c17016c3b42821",
+    "代码/route_study/delivery.py": "9ea07087cbde9e02d85c26488719c1c906a0e954dc465231fd119d608ebee9aa",
+    "代码/route_study/learning.py": "baa4410c164abe14dffa68cecea0a05e2fa965805b344a7b71734ec6bc8c7e35",
+    "代码/route_study/physics.py": "14f4056f98bf20c8d881e59c6b69250f02acc1b3cce5e79fe540aee668bc0ac9",
+    "代码/route_study/protocol.py": "50a9d27001f174bbc0f6c32fe078d3b7899db81439e9e5e5577bc347e3b43ada",
+    "代码/route_study/verify.py": "cc95af32fa677cbfa94578e55d366c7c9cc74f569e5336adadbb5851d9e9d958",
+    "代码/test_learning.py": "855330ccc33142ce766b1d8820be35269a3b0e3fe0a1712ba33ddca6f6530390",
+    "代码/test_routes.py": "b39adfc2e9717d58a4cc9ed1c28aded1c23f928227e35f5195507a318e8529cc"
+  },
+  "source_sha256_after": {
+    "代码/route_study/__init__.py": "9fe31802efa70a85fe1c96e9c47c2757e8693524084e31951ab2e1b62ccdb9b1",
+    "代码/route_study/baselines.py": "4de9dd3a0ba3c43b0c31ad52f19d0b8d0393ebbcbd067d0c510c258cd6d675d1",
+    "代码/route_study/cli.py": "607827d9aefb3eca0ad98f01944f0cc9b922cec71cab13ea64c17016c3b42821",
+    "代码/route_study/delivery.py": "9ea07087cbde9e02d85c26488719c1c906a0e954dc465231fd119d608ebee9aa",
+    "代码/route_study/learning.py": "baa4410c164abe14dffa68cecea0a05e2fa965805b344a7b71734ec6bc8c7e35",
+    "代码/route_study/physics.py": "14f4056f98bf20c8d881e59c6b69250f02acc1b3cce5e79fe540aee668bc0ac9",
+    "代码/route_study/protocol.py": "50a9d27001f174bbc0f6c32fe078d3b7899db81439e9e5e5577bc347e3b43ada",
+    "代码/route_study/verify.py": "cc95af32fa677cbfa94578e55d366c7c9cc74f569e5336adadbb5851d9e9d958",
+    "代码/test_learning.py": "855330ccc33142ce766b1d8820be35269a3b0e3fe0a1712ba33ddca6f6530390",
+    "代码/test_routes.py": "b39adfc2e9717d58a4cc9ed1c28aded1c23f928227e35f5195507a318e8529cc"
+  },
+  "parameters": {
+    "kp": 0.25298221281347033,
+    "kd": 0.8798097129208117,
+    "ki": 0.0
+  },
+  "declaration": {
+    "configs": {
+      "A": {
+        "learning_rate": 0.0003,
+        "exploration_fraction": 0.4,
+        "exploration_final_eps": 0.05
+      },
+      "B": {
+        "learning_rate": 0.001,
+        "exploration_fraction": 0.6,
+        "exploration_final_eps": 0.02
+      }
+    },
+    "settings": {
+      "net_arch": [
+        64,
+        64
+      ],
+      "gamma": 0.0,
+      "batch_size": 128,
+      "buffer_size": 50000,
+      "learning_starts": 512,
+      "train_freq_vector_steps": 1,
+      "gradient_steps": 2,
+      "n_envs": 16,
+      "target_update_interval": 2000,
+      "device": "cpu",
+      "torch_threads": 1
+    },
+    "feature_order": [
+      "sin(initial angle)",
+      "cos(initial angle)",
+      "sin(target angle)",
+      "cos(target angle)"
+    ],
+    "omega0": 0.0,
+    "reward": "(-10 if collision else +10 if full task success else -2) -0.1*torque_cost/(limit^2*duration) -0.05*settling_or_duration/duration",
+    "gamma_explanation": "every contextual decision is terminal, no next-decision value is bootstrapped",
+    "optimizer_ratio": "two gradient updates per 16 aggregate route decisions after warmup512",
+    "validation_selection": "maximize task successes, then minimize collisions, then torque cost, then earlier checkpoint",
+    "no_oracle_actions": true,
+    "no_rule_correction": true,
+    "no_test_calibration": true
+  },
+  "database_sha256": "156d5f589a2eb9256d9b27dedecc9e8fbb1b543a0706fd20e0e565b56ff7a970",
+  "cached_environment": true,
+  "new_physical_rollouts_during_optimizer_training": 0,
+  "test_responses_used": false,
+  "training_seconds": 1.4069999999483116,
+  "validation_seconds": 0.14200000005075708,
+  "optimizer_updates": 1186,
+  "unique_training_states_seen": 7851,
+  "unique_state_action_pairs_seen": 8327,
+  "repeat_state_action_replays": 1673,
+  "final": {
+    "model_path": "03_DQN训练/development/config_A/seed_1401/final.zip",
+    "model_sha256": "f783cb8644c49626fb9fb13f8037848bcc54dc31d4254bcc4eec5d39c1535bc7"
+  }
+}

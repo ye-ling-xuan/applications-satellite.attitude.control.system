@@ -1,0 +1,15 @@
+{
+  "controller": "delay_residual_formal_seed101_three_axis_transfer",
+  "kind": "delay",
+  "method": "residual",
+  "stage": "formal",
+  "region": "in_domain",
+  "diagnostic_only": false,
+  "count": 768,
+  "passes": 119,
+  "success_rate": 0.15494791666666666,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.6179061590461283,
+  "mean_command_cost": 0.6225225568677246,
+  "max_settling_time_s": 8.0
+}

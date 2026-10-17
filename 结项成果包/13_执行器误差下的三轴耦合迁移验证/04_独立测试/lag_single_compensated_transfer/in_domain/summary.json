@@ -1,0 +1,15 @@
+{
+  "controller": "lag_single_compensated_transfer",
+  "kind": "lag",
+  "method": "compensated_transfer",
+  "stage": "traditional",
+  "region": "in_domain",
+  "diagnostic_only": false,
+  "count": 768,
+  "passes": 756,
+  "success_rate": 0.984375,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.039456895991227,
+  "mean_command_cost": 0.048812554499489846,
+  "max_settling_time_s": 8.0
+}

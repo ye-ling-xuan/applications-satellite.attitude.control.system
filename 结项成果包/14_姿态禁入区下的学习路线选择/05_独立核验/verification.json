@@ -1,0 +1,180 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "method": "analytic_route_PID",
+      "region": "detour",
+      "count": 128,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 128,
+      "collisions": 0,
+      "mean_torque_cost": 0.5407916913159414,
+      "mean_success_cost": 0.5407916913159414
+    },
+    {
+      "method": "analytic_route_PID",
+      "region": "edge",
+      "count": 128,
+      "max_state_difference": 1.3322676295501878e-15,
+      "passed": true,
+      "successes": 128,
+      "collisions": 0,
+      "mean_torque_cost": 0.333645571720474,
+      "mean_success_cost": 0.333645571720474
+    },
+    {
+      "method": "analytic_route_PID",
+      "region": "test",
+      "count": 512,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 512,
+      "collisions": 0,
+      "mean_torque_cost": 0.16913039150225878,
+      "mean_success_cost": 0.16913039150225878
+    },
+    {
+      "method": "direct_PID",
+      "region": "detour",
+      "count": 128,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 0,
+      "collisions": 128,
+      "mean_torque_cost": 0.20703922903805572,
+      "mean_success_cost": null
+    },
+    {
+      "method": "direct_PID",
+      "region": "edge",
+      "count": 128,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 80,
+      "collisions": 48,
+      "mean_torque_cost": 0.17015657364448666,
+      "mean_success_cost": 0.16926149878600077
+    },
+    {
+      "method": "direct_PID",
+      "region": "test",
+      "count": 512,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 434,
+      "collisions": 78,
+      "mean_torque_cost": 0.11945470813948128,
+      "mean_success_cost": 0.10345968331131468
+    },
+    {
+      "method": "DQN_seed_101",
+      "region": "detour",
+      "count": 128,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 128,
+      "collisions": 0,
+      "mean_torque_cost": 0.5407916913159414,
+      "mean_success_cost": 0.5407916913159414
+    },
+    {
+      "method": "DQN_seed_101",
+      "region": "edge",
+      "count": 128,
+      "max_state_difference": 1.3322676295501878e-15,
+      "passed": true,
+      "successes": 122,
+      "collisions": 6,
+      "mean_torque_cost": 0.37547805069137824,
+      "mean_success_cost": 0.3497068529791277
+    },
+    {
+      "method": "DQN_seed_101",
+      "region": "test",
+      "count": 512,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 512,
+      "collisions": 0,
+      "mean_torque_cost": 0.16913039150225878,
+      "mean_success_cost": 0.16913039150225878
+    },
+    {
+      "method": "DQN_seed_202",
+      "region": "detour",
+      "count": 128,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 128,
+      "collisions": 0,
+      "mean_torque_cost": 0.5407916913159414,
+      "mean_success_cost": 0.5407916913159414
+    },
+    {
+      "method": "DQN_seed_202",
+      "region": "edge",
+      "count": 128,
+      "max_state_difference": 1.3322676295501878e-15,
+      "passed": true,
+      "successes": 121,
+      "collisions": 7,
+      "mean_torque_cost": 0.3884969447757232,
+      "mean_success_cost": 0.35211018842361136
+    },
+    {
+      "method": "DQN_seed_202",
+      "region": "test",
+      "count": 512,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 504,
+      "collisions": 8,
+      "mean_torque_cost": 0.18703659296677966,
+      "mean_success_cost": 0.17165150542110888
+    },
+    {
+      "method": "DQN_seed_303",
+      "region": "detour",
+      "count": 128,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 128,
+      "collisions": 0,
+      "mean_torque_cost": 0.5407916913159414,
+      "mean_success_cost": 0.5407916913159414
+    },
+    {
+      "method": "DQN_seed_303",
+      "region": "edge",
+      "count": 128,
+      "max_state_difference": 1.3322676295501878e-15,
+      "passed": true,
+      "successes": 126,
+      "collisions": 2,
+      "mean_torque_cost": 0.34799246997913547,
+      "mean_success_cost": 0.3388845814198244
+    },
+    {
+      "method": "DQN_seed_303",
+      "region": "test",
+      "count": 512,
+      "max_state_difference": 8.881784197001252e-16,
+      "passed": true,
+      "successes": 512,
+      "collisions": 0,
+      "mean_torque_cost": 0.16913039150225878,
+      "mean_success_cost": 0.16913039150225878
+    }
+  ],
+  "helpers_imported_from_production": false,
+  "independently_recomputed": [
+    "DQN q-network argmax",
+    "analytic direction",
+    "PID antiwindup",
+    "exact held-torque propagation",
+    "continuous periodic-arc intersection",
+    "costs",
+    "full acceptance window"
+  ]
+}

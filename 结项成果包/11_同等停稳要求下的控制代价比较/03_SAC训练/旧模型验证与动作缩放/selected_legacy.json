@@ -1,0 +1,468 @@
+{
+  "scales": [
+    0.25,
+    0.4,
+    0.6,
+    0.8,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "split": "validation",
+  "models": [
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "single",
+      "seed": 11,
+      "deadline_s": 4.0,
+      "action_scale": 1.25,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/best_model.zip",
+      "model_sha256": "f3cb02558d358faaad8474b8161bec5c12ceffeb312ccdfc841fbf3860138e86",
+      "zero_action": [
+        -0.08825987577438354
+      ],
+      "validation": {
+        "axis": "single",
+        "seed": 11,
+        "action_scale": 1.25,
+        "validation_count": 96,
+        "mean_control_cost": 0.2584217098583754,
+        "passes_4s": 56,
+        "passes_6s": 96,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "single",
+      "seed": 11,
+      "deadline_s": 6.0,
+      "action_scale": 1.0,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/best_model.zip",
+      "model_sha256": "f3cb02558d358faaad8474b8161bec5c12ceffeb312ccdfc841fbf3860138e86",
+      "zero_action": [
+        -0.08825987577438354
+      ],
+      "validation": {
+        "axis": "single",
+        "seed": 11,
+        "action_scale": 1.0,
+        "validation_count": 96,
+        "mean_control_cost": 0.23231734097179357,
+        "passes_4s": 38,
+        "passes_6s": 96,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "single",
+      "seed": 11,
+      "deadline_s": 8.0,
+      "action_scale": 0.8,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/best_model.zip",
+      "model_sha256": "f3cb02558d358faaad8474b8161bec5c12ceffeb312ccdfc841fbf3860138e86",
+      "zero_action": [
+        -0.08825987577438354
+      ],
+      "validation": {
+        "axis": "single",
+        "seed": 11,
+        "action_scale": 0.8,
+        "validation_count": 96,
+        "mean_control_cost": 0.18122059076891306,
+        "passes_4s": 27,
+        "passes_6s": 86,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "single",
+      "seed": 22,
+      "deadline_s": 4.0,
+      "action_scale": 1.5,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_22/best_model.zip",
+      "model_sha256": "89182ee711b55e26e2a65869ff8cd0ece1339a5e1a57906e4d3c3fb2c9a856ae",
+      "zero_action": [
+        -0.28799498081207275
+      ],
+      "validation": {
+        "axis": "single",
+        "seed": 22,
+        "action_scale": 1.5,
+        "validation_count": 96,
+        "mean_control_cost": 0.22296814110336674,
+        "passes_4s": 77,
+        "passes_6s": 96,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "single",
+      "seed": 22,
+      "deadline_s": 6.0,
+      "action_scale": 0.8,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_22/best_model.zip",
+      "model_sha256": "89182ee711b55e26e2a65869ff8cd0ece1339a5e1a57906e4d3c3fb2c9a856ae",
+      "zero_action": [
+        -0.28799498081207275
+      ],
+      "validation": {
+        "axis": "single",
+        "seed": 22,
+        "action_scale": 0.8,
+        "validation_count": 96,
+        "mean_control_cost": 0.16645112102252793,
+        "passes_4s": 41,
+        "passes_6s": 96,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "single",
+      "seed": 22,
+      "deadline_s": 8.0,
+      "action_scale": 0.8,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_22/best_model.zip",
+      "model_sha256": "89182ee711b55e26e2a65869ff8cd0ece1339a5e1a57906e4d3c3fb2c9a856ae",
+      "zero_action": [
+        -0.28799498081207275
+      ],
+      "validation": {
+        "axis": "single",
+        "seed": 22,
+        "action_scale": 0.8,
+        "validation_count": 96,
+        "mean_control_cost": 0.16645112102252793,
+        "passes_4s": 41,
+        "passes_6s": 96,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "single",
+      "seed": 33,
+      "deadline_s": 4.0,
+      "action_scale": 2.0,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_33/best_model.zip",
+      "model_sha256": "0d54a85724425971d1fe2834fe843a9fa860ae670bf9ed3a686f761ee693a9b1",
+      "zero_action": [
+        -0.4419436454772949
+      ],
+      "validation": {
+        "axis": "single",
+        "seed": 33,
+        "action_scale": 2.0,
+        "validation_count": 96,
+        "mean_control_cost": 0.24955183232687575,
+        "passes_4s": 62,
+        "passes_6s": 96,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "single",
+      "seed": 33,
+      "deadline_s": 6.0,
+      "action_scale": 1.5,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_33/best_model.zip",
+      "model_sha256": "0d54a85724425971d1fe2834fe843a9fa860ae670bf9ed3a686f761ee693a9b1",
+      "zero_action": [
+        -0.4419436454772949
+      ],
+      "validation": {
+        "axis": "single",
+        "seed": 33,
+        "action_scale": 1.5,
+        "validation_count": 96,
+        "mean_control_cost": 0.22930076940942098,
+        "passes_4s": 57,
+        "passes_6s": 96,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "single",
+      "seed": 33,
+      "deadline_s": 8.0,
+      "action_scale": 1.0,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_33/best_model.zip",
+      "model_sha256": "0d54a85724425971d1fe2834fe843a9fa860ae670bf9ed3a686f761ee693a9b1",
+      "zero_action": [
+        -0.4419436454772949
+      ],
+      "validation": {
+        "axis": "single",
+        "seed": 33,
+        "action_scale": 1.0,
+        "validation_count": 96,
+        "mean_control_cost": 0.1997606957212106,
+        "passes_4s": 33,
+        "passes_6s": 84,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "three",
+      "seed": 11,
+      "deadline_s": 4.0,
+      "action_scale": 1.25,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/best_model.zip",
+      "model_sha256": "ee74c85023050658aabeebe5a08760887393ea3132b2044cc2be59902541a910",
+      "zero_action": [
+        -0.16441833972930908,
+        0.019417643547058105,
+        -0.31497591733932495
+      ],
+      "validation": {
+        "axis": "three",
+        "seed": 11,
+        "action_scale": 1.25,
+        "validation_count": 96,
+        "mean_control_cost": 4.275433354853793,
+        "passes_4s": 12,
+        "passes_6s": 30,
+        "passes_8s": 80
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "three",
+      "seed": 11,
+      "deadline_s": 6.0,
+      "action_scale": 1.0,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/best_model.zip",
+      "model_sha256": "ee74c85023050658aabeebe5a08760887393ea3132b2044cc2be59902541a910",
+      "zero_action": [
+        -0.16441833972930908,
+        0.019417643547058105,
+        -0.31497591733932495
+      ],
+      "validation": {
+        "axis": "three",
+        "seed": 11,
+        "action_scale": 1.0,
+        "validation_count": 96,
+        "mean_control_cost": 3.7315606631680516,
+        "passes_4s": 9,
+        "passes_6s": 37,
+        "passes_8s": 90
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "three",
+      "seed": 11,
+      "deadline_s": 8.0,
+      "action_scale": 0.8,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/best_model.zip",
+      "model_sha256": "ee74c85023050658aabeebe5a08760887393ea3132b2044cc2be59902541a910",
+      "zero_action": [
+        -0.16441833972930908,
+        0.019417643547058105,
+        -0.31497591733932495
+      ],
+      "validation": {
+        "axis": "three",
+        "seed": 11,
+        "action_scale": 0.8,
+        "validation_count": 96,
+        "mean_control_cost": 2.944414664137033,
+        "passes_4s": 6,
+        "passes_6s": 33,
+        "passes_8s": 92
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "three",
+      "seed": 22,
+      "deadline_s": 4.0,
+      "action_scale": 2.0,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_22/best_model.zip",
+      "model_sha256": "f0de77df6ab54ba67028d11615760a955e61cd72f0a6c5bee2758e0437d678f7",
+      "zero_action": [
+        0.5971941947937012,
+        -0.8105125427246094,
+        0.045351624488830566
+      ],
+      "validation": {
+        "axis": "three",
+        "seed": 22,
+        "action_scale": 2.0,
+        "validation_count": 96,
+        "mean_control_cost": 4.55057066385433,
+        "passes_4s": 20,
+        "passes_6s": 76,
+        "passes_8s": 95
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "three",
+      "seed": 22,
+      "deadline_s": 6.0,
+      "action_scale": 2.0,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_22/best_model.zip",
+      "model_sha256": "f0de77df6ab54ba67028d11615760a955e61cd72f0a6c5bee2758e0437d678f7",
+      "zero_action": [
+        0.5971941947937012,
+        -0.8105125427246094,
+        0.045351624488830566
+      ],
+      "validation": {
+        "axis": "three",
+        "seed": 22,
+        "action_scale": 2.0,
+        "validation_count": 96,
+        "mean_control_cost": 4.55057066385433,
+        "passes_4s": 20,
+        "passes_6s": 76,
+        "passes_8s": 95
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "three",
+      "seed": 22,
+      "deadline_s": 8.0,
+      "action_scale": 2.0,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_22/best_model.zip",
+      "model_sha256": "f0de77df6ab54ba67028d11615760a955e61cd72f0a6c5bee2758e0437d678f7",
+      "zero_action": [
+        0.5971941947937012,
+        -0.8105125427246094,
+        0.045351624488830566
+      ],
+      "validation": {
+        "axis": "three",
+        "seed": 22,
+        "action_scale": 2.0,
+        "validation_count": 96,
+        "mean_control_cost": 4.55057066385433,
+        "passes_4s": 20,
+        "passes_6s": 76,
+        "passes_8s": 95
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "three",
+      "seed": 33,
+      "deadline_s": 4.0,
+      "action_scale": 2.0,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_33/best_model.zip",
+      "model_sha256": "0020aab30b9d834bdf819ebac0a13a796221ed37decfdf083fe398927abf2867",
+      "zero_action": [
+        -0.040435850620269775,
+        0.005144000053405762,
+        0.5366537570953369
+      ],
+      "validation": {
+        "axis": "three",
+        "seed": 33,
+        "action_scale": 2.0,
+        "validation_count": 96,
+        "mean_control_cost": 4.0261880216899515,
+        "passes_4s": 19,
+        "passes_6s": 83,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "three",
+      "seed": 33,
+      "deadline_s": 6.0,
+      "action_scale": 1.0,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_33/best_model.zip",
+      "model_sha256": "0020aab30b9d834bdf819ebac0a13a796221ed37decfdf083fe398927abf2867",
+      "zero_action": [
+        -0.040435850620269775,
+        0.005144000053405762,
+        0.5366537570953369
+      ],
+      "validation": {
+        "axis": "three",
+        "seed": 33,
+        "action_scale": 1.0,
+        "validation_count": 96,
+        "mean_control_cost": 3.237600523403762,
+        "passes_4s": 14,
+        "passes_6s": 85,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    },
+    {
+      "kind": "legacy_sac_scaled",
+      "axis": "three",
+      "seed": 33,
+      "deadline_s": 8.0,
+      "action_scale": 0.8,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_33/best_model.zip",
+      "model_sha256": "0020aab30b9d834bdf819ebac0a13a796221ed37decfdf083fe398927abf2867",
+      "zero_action": [
+        -0.040435850620269775,
+        0.005144000053405762,
+        0.5366537570953369
+      ],
+      "validation": {
+        "axis": "three",
+        "seed": 33,
+        "action_scale": 0.8,
+        "validation_count": 96,
+        "mean_control_cost": 2.60372042557888,
+        "passes_4s": 13,
+        "passes_6s": 81,
+        "passes_8s": 96
+      },
+      "fresh_training": false,
+      "selection": "new validation; maximize passes then minimize full-horizon cost"
+    }
+  ],
+  "method": "existing zero-bias-calibrated SAC followed by fixed scalar action gain and clipping",
+  "is_new_training": false,
+  "all_original_models_retained": true
+}

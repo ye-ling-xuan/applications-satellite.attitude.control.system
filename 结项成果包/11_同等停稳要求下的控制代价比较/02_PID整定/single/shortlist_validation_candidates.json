@@ -1,0 +1,2298 @@
+[
+  {
+    "kp": [
+      0.37097550841462973
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.0049780204854382
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.46300647943630335
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.1227355611475642
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.46300647943630335
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.2248024303427976
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.5778683366892206
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.2542912527146168
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.5778683366892206
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.3683177302341276
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.7212249274664974
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.273874439181358
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.7212249274664974
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.4012618830994938
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.7212249274664974
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.5286493270176298
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.7212249274664974
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.6560367709357655
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.9001451766318204
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.1385117717221116
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.9001451766318204
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.2808257431873755
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.9001451766318204
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.4231397146526392
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.9001451766318204
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.5654536861179034
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.9001451766318204
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.7077676575831675
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.9001451766318204
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.8500816290484312
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.9001451766318204
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.9923956005136951
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.1234516558652492
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.2719160288501592
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.1234516558652492
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.430905532456429
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.1234516558652492
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.5898950360626989
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.1234516558652492
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.748884539668969
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.1234516558652492
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.907874043275239
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.1234516558652492
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.0668635468815086
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.1234516558652492
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.2258530504877787
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.1234516558652492
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.3848425540940483
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.402155625372657
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.7761897863371692
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.402155625372657
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.9538087649708862
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.402155625372657
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.131427743604603
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.402155625372657
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.30904672223832
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.402155625372657
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.4866657008720368
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.402155625372657
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.6642846795057538
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.402155625372657
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.8419036581394708
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7500000000000002
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.5874507866387546
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7500000000000002
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.984313483298443
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7500000000000002
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.1827448316282876
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7500000000000002
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.381176179958132
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7500000000000002
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.5796075282879762
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7500000000000002
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.7780388766178206
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7500000000000002
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.9764702249476644
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7500000000000002
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.174901573277509
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7500000000000002
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.3733329216073535
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7500000000000002
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.571764269937198
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      1.9951415255617853
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.2168239172908724
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.43850630901996
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.6601887007490475
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.8818710924781343
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.1035534842072217
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.3252358759363085
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.5469182676653963
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.7686006593944836
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.9902830511235705
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1841370134545994
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.211965442852658
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.725973996309929
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.72423644439204
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.725973996309929
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      2.9718943029731344
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.725973996309929
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.219552161554229
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.725973996309929
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.4672100201353233
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.725973996309929
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.7148678787164178
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.725973996309929
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.457841454459701
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.725973996309929
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.705499313040796
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.725973996309929
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.953157171621891
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.725973996309929
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      5.200815030202985
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      3.4022289731744375
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.0434467926131727
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      3.4022289731744375
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.320123773759825
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      3.4022289731744375
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.596800754906477
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      3.4022289731744375
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.8734777360531285
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      3.4022289731744375
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.15015471719978
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      3.4022289731744375
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.426831698346433
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      3.4022289731744375
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      5.810216604079693
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      3.4022289731744375
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      6.0868935852263455
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      3.4022289731744375
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      6.363570566372998
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.246248130604527
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.4000603723420597
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.246248130604527
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.7091567698277017
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.246248130604527
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.018253167313343
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.246248130604527
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.327349564798985
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.246248130604527
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.636445962284626
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.246248130604527
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.945542359770269
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.246248130604527
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      5.25463875725591
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.246248130604527
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      5.563735154741552
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.246248130604527
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      7.4183135396554025
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.299650120208997
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      3.7984598789863497
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.299650120208997
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.143774413439655
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.299650120208997
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.489088947892959
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.299650120208997
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.834403482346263
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.299650120208997
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      5.525032551252873
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.299650120208997
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      5.870347085706177
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.299650120208997
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      6.215661620159482
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.299650120208997
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      6.560976154612786
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      6.614378277661477
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      4.629318051249362
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      6.614378277661477
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      5.015094555520142
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      6.614378277661477
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      5.400871059790922
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      6.614378277661477
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      7.329753581144822
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      6.614378277661477
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      7.715530085415604
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      6.614378277661477
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      8.101306589686384
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      8.25526195270315
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      5.1717548981712405
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      8.25526195270315
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      5.602734473018843
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      8.25526195270315
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      6.033714047866446
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      8.25526195270315
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      6.464693622714049
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      8.25526195270315
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      9.05057107179967
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      8.25526195270315
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      9.481550646647273
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      8.25526195270315
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      9.912530221494876
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      10.30321324952139
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      6.740709935191496
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      10.30321324952139
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      7.222189216276602
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      10.30321324952139
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      7.7036684973617096
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      10.30321324952139
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      8.185147778446817
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      10.30321324952139
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      11.555502746042563
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      12.859216809026014
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      8.068443784007805
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      12.859216809026014
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      8.606340036274993
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      12.859216809026014
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      9.14423628854218
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      12.859216809026014
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      9.682132540809366
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      12.859216809026014
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      10.220028793076553
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      16.049309369503572
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      10.215705270572219
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      16.049309369503572
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      10.816629110017642
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      16.049309369503572
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      11.417552949463067
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      16.049309369503572
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      12.018476788908494
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      16.049309369503572
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      12.619400628353917
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      20.030794648180823
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      12.755396094588704
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      20.030794648180823
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      13.426732731146005
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      20.030794648180823
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      14.098069367703305
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      20.030794648180823
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      14.769406004260604
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      20.030794648180823
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      15.440742640817906
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      25.0
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      15.750000000000002
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      25.0
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      16.5
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      25.0
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      17.25
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      25.0
+    ],
+    "ki": [
+      0.0
+    ],
+    "kd": [
+      18.0
+    ],
+    "integral_limit": 2.0,
+    "family": "common_PD",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.6206691589631097
+    ],
+    "ki": [
+      0.004974805923816779
+    ],
+    "kd": [
+      2.4564411619226605
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      13.493573141396272
+    ],
+    "ki": [
+      0.15986614924067663
+    ],
+    "kd": [
+      9.28039452914236
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.7835868107041348
+    ],
+    "ki": [
+      0.0032968341098976867
+    ],
+    "kd": [
+      3.4123964008336802
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.059599902429643
+    ],
+    "ki": [
+      0.04857160698306343
+    ],
+    "kd": [
+      5.61245509085221
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.280219799090864
+    ],
+    "ki": [
+      0.08353820627509473
+    ],
+    "kd": [
+      6.126245132957966
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.977063289859867
+    ],
+    "ki": [
+      0.007746127321064879
+    ],
+    "kd": [
+      3.399905010766693
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      10.315434614801571
+    ],
+    "ki": [
+      0.011214291309846107
+    ],
+    "kd": [
+      6.505553155122417
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      8.392320085848572
+    ],
+    "ki": [
+      0.016394743306833402
+    ],
+    "kd": [
+      5.33372552207108
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      7.86126095706065
+    ],
+    "ki": [
+      0.007599382246063539
+    ],
+    "kd": [
+      6.520365758535725
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      8.820568014798699
+    ],
+    "ki": [
+      0.3294383081146423
+    ],
+    "kd": [
+      6.553715768291158
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.060282002304663
+    ],
+    "ki": [
+      0.006261380763039736
+    ],
+    "kd": [
+      4.75290026965249
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      15.948461387355984
+    ],
+    "ki": [
+      0.243611884182292
+    ],
+    "kd": [
+      11.055531572069562
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      5.861505985748056
+    ],
+    "ki": [
+      0.09056324134437908
+    ],
+    "kd": [
+      6.190440358552028
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      4.604066177567991
+    ],
+    "ki": [
+      0.002992562334064871
+    ],
+    "kd": [
+      3.5037421624970118
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.5953329732862092
+    ],
+    "ki": [
+      0.005629044815880808
+    ],
+    "kd": [
+      2.87557524204279
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      14.399856506825099
+    ],
+    "ki": [
+      0.016778715209846255
+    ],
+    "kd": [
+      9.530591911674207
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.651423793733971
+    ],
+    "ki": [
+      0.0011702018420125316
+    ],
+    "kd": [
+      3.617640108032761
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.969772128127368
+    ],
+    "ki": [
+      0.0013741793319287084
+    ],
+    "kd": [
+      3.552060073911006
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.026582382813503
+    ],
+    "ki": [
+      0.001041762409003982
+    ],
+    "kd": [
+      1.1817468528480022
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.6931895507210475
+    ],
+    "ki": [
+      0.003665508432746801
+    ],
+    "kd": [
+      2.0467378979312305
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.1281712536208937
+    ],
+    "ki": [
+      0.00839923127729997
+    ],
+    "kd": [
+      2.8843361888599888
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.4277338581419001
+    ],
+    "ki": [
+      0.010543499884516083
+    ],
+    "kd": [
+      2.401784310759176
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.947487441916348
+    ],
+    "ki": [
+      0.00449251251584315
+    ],
+    "kd": [
+      2.019577140215604
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.248130442418629
+    ],
+    "ki": [
+      0.005636127468084403
+    ],
+    "kd": [
+      2.138217266605881
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.7998692286144298
+    ],
+    "ki": [
+      0.03519609438444201
+    ],
+    "kd": [
+      2.649973374066711
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      12.549174588051383
+    ],
+    "ki": [
+      0.0010585067607170003
+    ],
+    "kd": [
+      8.444364223805337
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      11.52920831023663
+    ],
+    "ki": [
+      0.06483804417855962
+    ],
+    "kd": [
+      8.571697756564392
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.9293355394599099
+    ],
+    "ki": [
+      0.0061807048262859455
+    ],
+    "kd": [
+      1.0949073258745794
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      7.0116869745778665
+    ],
+    "ki": [
+      0.006445330268121339
+    ],
+    "kd": [
+      7.53779597036486
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.9609986454959674
+    ],
+    "ki": [
+      0.0367266086371739
+    ],
+    "kd": [
+      2.9192695027006894
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      9.494438749158798
+    ],
+    "ki": [
+      0.010014829432283504
+    ],
+    "kd": [
+      6.026238262395459
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      10.337619620276143
+    ],
+    "ki": [
+      0.06646279953519973
+    ],
+    "kd": [
+      6.646174126139405
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      13.960190283719477
+    ],
+    "ki": [
+      0.006535323656217159
+    ],
+    "kd": [
+      8.643304992073395
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      3.695530397280494
+    ],
+    "ki": [
+      0.012285937873950211
+    ],
+    "kd": [
+      3.918512714317962
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      0.8527328799388219
+    ],
+    "ki": [
+      0.0014030536287199331
+    ],
+    "kd": [
+      1.3200184221546145
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.3156815606515613
+    ],
+    "ki": [
+      0.0011521458308628167
+    ],
+    "kd": [
+      1.6920612637136967
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      1.0760791219154136
+    ],
+    "ki": [
+      0.004684919578084358
+    ],
+    "kd": [
+      1.5800604926867627
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      11.62003157039388
+    ],
+    "ki": [
+      0.010751605077804139
+    ],
+    "kd": [
+      8.080746655358084
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      2.9795279012023252
+    ],
+    "ki": [
+      0.0015564666969551098
+    ],
+    "kd": [
+      5.057934120737113
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  },
+  {
+    "kp": [
+      6.345635191367578
+    ],
+    "ki": [
+      0.09547951734032456
+    ],
+    "kd": [
+      7.3762354738603815
+    ],
+    "integral_limit": 2.0,
+    "family": "common_or_scaled_PID",
+    "stage": "broad"
+  }
+]

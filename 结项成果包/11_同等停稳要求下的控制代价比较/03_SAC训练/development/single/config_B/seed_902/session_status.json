@@ -1,0 +1,35 @@
+{
+  "axis": "single",
+  "seed": 902,
+  "config": "B",
+  "stage": "development",
+  "requested_steps": 200000,
+  "actual_steps": 200000,
+  "fresh_training": true,
+  "eligible_for_formal_results": false,
+  "status": "complete",
+  "best": {
+    "timesteps": 100000,
+    "deployment": "calibrated",
+    "validation_count": 96,
+    "success_4s": 0,
+    "success_6s": 0,
+    "success_8s": 0,
+    "mean_control_cost": 0.5110526542106352,
+    "mean_rms_error_deg": 79.50130651796177,
+    "rank": [
+      0,
+      -0.5110526542106352,
+      -100000,
+      1
+    ],
+    "checkpoint": "checkpoint_0100000.zip",
+    "model_path": "03_SAC训练/development/single/config_B/seed_902/best_model.zip",
+    "seed": 902,
+    "axis": "single",
+    "calibrated": true,
+    "model_sha256": "c3484f80d514534d5af6873bc05b76f58db509d01e11a2079eda800c8faee663",
+    "selection_split": "validation"
+  },
+  "wall_time_s": 77.02587049998692
+}

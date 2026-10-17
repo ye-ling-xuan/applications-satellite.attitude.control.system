@@ -1,0 +1,5890 @@
+[
+  {
+    "scenario_id": "test_three_0000",
+    "sample_id": 0,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101703,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      36.94015710603719,
+      -19.595496796709483,
+      -44.70849723530932
+    ],
+    "omega_deg_s": [
+      -1.2276475588439206,
+      2.045176580434342,
+      0.14236798009437024
+    ]
+  },
+  {
+    "scenario_id": "test_three_0001",
+    "sample_id": 1,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101704,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      37.769655357459214,
+      -45.67331594664948,
+      20.541456011922364
+    ],
+    "omega_deg_s": [
+      0.9222843523832296,
+      1.7914395542264119,
+      4.278105159269085
+    ]
+  },
+  {
+    "scenario_id": "test_three_0002",
+    "sample_id": 2,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101705,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      33.72259198668519,
+      2.059200194389952,
+      -0.7975812517248286
+    ],
+    "omega_deg_s": [
+      -4.3685147717730235,
+      -1.5241075333469833,
+      -4.722554968831096
+    ]
+  },
+  {
+    "scenario_id": "test_three_0003",
+    "sample_id": 3,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101706,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -40.698068020377846,
+      1.4161208470580817,
+      -20.792567143530007
+    ],
+    "omega_deg_s": [
+      1.9418877853015273,
+      0.8724618882432411,
+      -4.4193489369650685
+    ]
+  },
+  {
+    "scenario_id": "test_three_0004",
+    "sample_id": 4,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101707,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      56.42919973893835,
+      28.22010835147516,
+      -56.81954850167738
+    ],
+    "omega_deg_s": [
+      0.9088453092208448,
+      4.3827209759772465,
+      3.071379574024501
+    ]
+  },
+  {
+    "scenario_id": "test_three_0005",
+    "sample_id": 5,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101708,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -14.939785294531696,
+      47.58494687249291,
+      -21.491197241203956
+    ],
+    "omega_deg_s": [
+      -2.1134198019885284,
+      -0.8653573351025639,
+      0.27471536134007657
+    ]
+  },
+  {
+    "scenario_id": "test_three_0006",
+    "sample_id": 6,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101709,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -52.636610548705335,
+      -23.02560419319385,
+      -46.63696816409053
+    ],
+    "omega_deg_s": [
+      -2.291361127025564,
+      1.9594671421396592,
+      0.957994077235595
+    ]
+  },
+  {
+    "scenario_id": "test_three_0007",
+    "sample_id": 7,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101710,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      52.871097983692735,
+      3.5422152756707135,
+      -7.60993204884322
+    ],
+    "omega_deg_s": [
+      -1.5022484730901455,
+      -0.23621864883184163,
+      1.3988899250273263
+    ]
+  },
+  {
+    "scenario_id": "test_three_0008",
+    "sample_id": 8,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101711,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -55.43035128928673,
+      19.47397048421034,
+      -51.807682775489205
+    ],
+    "omega_deg_s": [
+      -1.6458672295599919,
+      3.577185034695786,
+      -1.6085659106657415
+    ]
+  },
+  {
+    "scenario_id": "test_three_0009",
+    "sample_id": 9,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101712,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      53.113229076147064,
+      -37.03420269271489,
+      -33.40489497651555
+    ],
+    "omega_deg_s": [
+      3.9744528284230594,
+      3.9212099650481225,
+      1.1098084498219665
+    ]
+  },
+  {
+    "scenario_id": "test_three_0010",
+    "sample_id": 10,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101713,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -35.027420330438446,
+      22.759250081408325,
+      -4.897362706020289
+    ],
+    "omega_deg_s": [
+      -2.13012425542047,
+      0.270961323014828,
+      3.0461938251927663
+    ]
+  },
+  {
+    "scenario_id": "test_three_0011",
+    "sample_id": 11,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101714,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      13.695867399045156,
+      15.856021378978241,
+      20.871938994837535
+    ],
+    "omega_deg_s": [
+      -1.4993031529952794,
+      4.890527485588139,
+      3.2378328625946704
+    ]
+  },
+  {
+    "scenario_id": "test_three_0012",
+    "sample_id": 12,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101715,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      25.433007336135404,
+      43.51547012807022,
+      5.531354903337032
+    ],
+    "omega_deg_s": [
+      2.5577577502153765,
+      -0.8904747297095863,
+      -2.4767025778308858
+    ]
+  },
+  {
+    "scenario_id": "test_three_0013",
+    "sample_id": 13,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101716,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -38.0062256280631,
+      6.742543530966415,
+      33.64485536377863
+    ],
+    "omega_deg_s": [
+      -3.7371930389579253,
+      3.2944866187271487,
+      -2.1856861633652267
+    ]
+  },
+  {
+    "scenario_id": "test_three_0014",
+    "sample_id": 14,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101717,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -51.630077748056074,
+      -40.84007894099212,
+      -30.339182600279052
+    ],
+    "omega_deg_s": [
+      1.5086974250601912,
+      3.1864816924891137,
+      -1.784462179603108
+    ]
+  },
+  {
+    "scenario_id": "test_three_0015",
+    "sample_id": 15,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101718,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      27.17757104576708,
+      25.143187690651885,
+      28.49870810968227
+    ],
+    "omega_deg_s": [
+      2.322238223577485,
+      1.1674185906024839,
+      -4.698514807053247
+    ]
+  },
+  {
+    "scenario_id": "test_three_0016",
+    "sample_id": 16,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101719,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -12.873298434495346,
+      -57.968987719146575,
+      -1.349110331049019
+    ],
+    "omega_deg_s": [
+      1.3403630336136851,
+      1.594905759464175,
+      2.9877049858556273
+    ]
+  },
+  {
+    "scenario_id": "test_three_0017",
+    "sample_id": 17,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101720,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -20.218699422635083,
+      27.22122901647421,
+      39.5475887535319
+    ],
+    "omega_deg_s": [
+      2.9899458598841333,
+      0.7911303025392389,
+      -2.385026641859925
+    ]
+  },
+  {
+    "scenario_id": "test_three_0018",
+    "sample_id": 18,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101721,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -58.410627700495425,
+      -16.00992408775131,
+      31.5478636615494
+    ],
+    "omega_deg_s": [
+      1.3030040273685337,
+      -1.188875224108478,
+      -1.402224438852869
+    ]
+  },
+  {
+    "scenario_id": "test_three_0019",
+    "sample_id": 19,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101722,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      28.89407818114968,
+      -57.92850573649883,
+      22.69362430757036
+    ],
+    "omega_deg_s": [
+      3.3163620641603657,
+      -3.1961874879598104,
+      -4.8118798501843685
+    ]
+  },
+  {
+    "scenario_id": "test_three_0020",
+    "sample_id": 20,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101723,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -6.554348387042921,
+      -38.862126407007416,
+      40.5072171469004
+    ],
+    "omega_deg_s": [
+      -4.931170412846658,
+      -0.036589701265071994,
+      1.9094779535032878
+    ]
+  },
+  {
+    "scenario_id": "test_three_0021",
+    "sample_id": 21,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101724,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -3.9976663822367016,
+      48.40066899843444,
+      -0.9850854766844179
+    ],
+    "omega_deg_s": [
+      -4.024606275100026,
+      -4.498793175191325,
+      -3.3333390763812076
+    ]
+  },
+  {
+    "scenario_id": "test_three_0022",
+    "sample_id": 22,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101725,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      56.57694717621703,
+      14.660280834628068,
+      11.966156119293672
+    ],
+    "omega_deg_s": [
+      0.5389889799187326,
+      -1.207413388473836,
+      -1.4747728847435084
+    ]
+  },
+  {
+    "scenario_id": "test_three_0023",
+    "sample_id": 23,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101726,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      12.001883288660636,
+      38.56357729489626,
+      30.87077036255961
+    ],
+    "omega_deg_s": [
+      -3.427037609586171,
+      4.1980502985349375,
+      -4.966686896031921
+    ]
+  },
+  {
+    "scenario_id": "test_three_0024",
+    "sample_id": 24,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101727,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      20.819752835605243,
+      16.11312604856029,
+      -26.032529309870824
+    ],
+    "omega_deg_s": [
+      -1.7523740063014404,
+      2.5753194747424946,
+      4.607344142945687
+    ]
+  },
+  {
+    "scenario_id": "test_three_0025",
+    "sample_id": 25,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101728,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -25.48553434929181,
+      24.406423734884697,
+      -34.84328913596185
+    ],
+    "omega_deg_s": [
+      3.9493270962463463,
+      -3.6788788374278547,
+      3.1405202410780575
+    ]
+  },
+  {
+    "scenario_id": "test_three_0026",
+    "sample_id": 26,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101729,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      32.677544932626446,
+      -20.306743128167753,
+      50.012403225093266
+    ],
+    "omega_deg_s": [
+      -1.4212472170725743,
+      -0.12345640954382553,
+      3.4339083102127166
+    ]
+  },
+  {
+    "scenario_id": "test_three_0027",
+    "sample_id": 27,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101730,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      38.92636380824666,
+      10.51666606975742,
+      -25.82413949163729
+    ],
+    "omega_deg_s": [
+      0.5513980734021029,
+      -3.9099774539090024,
+      1.9052510749981693
+    ]
+  },
+  {
+    "scenario_id": "test_three_0028",
+    "sample_id": 28,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101731,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -25.415070157033178,
+      35.425377870832165,
+      27.516633109503786
+    ],
+    "omega_deg_s": [
+      -3.138957727088166,
+      -3.265247091961798,
+      2.3868992639550193
+    ]
+  },
+  {
+    "scenario_id": "test_three_0029",
+    "sample_id": 29,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101732,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      31.16630612978237,
+      -34.37103245229579,
+      -48.188994343798136
+    ],
+    "omega_deg_s": [
+      0.2136666430439611,
+      -1.2279681286573463,
+      -0.1888454109650919
+    ]
+  },
+  {
+    "scenario_id": "test_three_0030",
+    "sample_id": 30,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101733,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      35.48423823151823,
+      -55.42820194858573,
+      -28.08106530938941
+    ],
+    "omega_deg_s": [
+      -1.629307961711124,
+      -4.036555664954024,
+      2.892151322743003
+    ]
+  },
+  {
+    "scenario_id": "test_three_0031",
+    "sample_id": 31,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101734,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      53.359365492856256,
+      -10.561137086083477,
+      8.777588652708573
+    ],
+    "omega_deg_s": [
+      -4.7925348430465045,
+      -2.1822073456014888,
+      -1.3850172529108562
+    ]
+  },
+  {
+    "scenario_id": "test_three_0032",
+    "sample_id": 32,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101735,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      5.696940432517039,
+      57.018548033025496,
+      49.85759681062929
+    ],
+    "omega_deg_s": [
+      4.5704154634216305,
+      -3.790915711541334,
+      3.9904302771015647
+    ]
+  },
+  {
+    "scenario_id": "test_three_0033",
+    "sample_id": 33,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101736,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -24.670935806369222,
+      33.35361562028834,
+      54.96666799401336
+    ],
+    "omega_deg_s": [
+      1.0863967490084239,
+      3.07811757025139,
+      3.6783916596486286
+    ]
+  },
+  {
+    "scenario_id": "test_three_0034",
+    "sample_id": 34,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101737,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      8.500305977373728,
+      10.04365943360699,
+      -48.58679637427726
+    ],
+    "omega_deg_s": [
+      4.6158373706716045,
+      0.33003468171576067,
+      -3.269198636930711
+    ]
+  },
+  {
+    "scenario_id": "test_three_0035",
+    "sample_id": 35,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101738,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      48.894711677225246,
+      19.200138405059917,
+      48.852038510122256
+    ],
+    "omega_deg_s": [
+      -4.939062172361266,
+      -2.0066600110106867,
+      -0.040134773880508234
+    ]
+  },
+  {
+    "scenario_id": "test_three_0036",
+    "sample_id": 36,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101739,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -17.57417764079839,
+      -13.293314885191464,
+      30.46696635566863
+    ],
+    "omega_deg_s": [
+      1.715711634528474,
+      -0.45129622106756884,
+      2.3393015785451796
+    ]
+  },
+  {
+    "scenario_id": "test_three_0037",
+    "sample_id": 37,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101740,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      47.53471359067687,
+      -59.72435762951522,
+      -6.070267915997675
+    ],
+    "omega_deg_s": [
+      3.823966093767586,
+      2.419441166569724,
+      -1.62174486372518
+    ]
+  },
+  {
+    "scenario_id": "test_three_0038",
+    "sample_id": 38,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101741,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      9.010692038968003,
+      56.66830451318866,
+      1.8882310925766674
+    ],
+    "omega_deg_s": [
+      2.391747870572118,
+      4.2275084984607005,
+      2.5173402817756765
+    ]
+  },
+  {
+    "scenario_id": "test_three_0039",
+    "sample_id": 39,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101742,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -42.555095922152475,
+      31.258701177645534,
+      10.49683565408209
+    ],
+    "omega_deg_s": [
+      -2.7439831723275256,
+      0.9522312685570391,
+      4.989881416638772
+    ]
+  },
+  {
+    "scenario_id": "test_three_0040",
+    "sample_id": 40,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101743,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -43.787241952148946,
+      -29.332874452920134,
+      59.421587980772145
+    ],
+    "omega_deg_s": [
+      3.188429939775272,
+      -3.133471861762269,
+      -4.269569682891625
+    ]
+  },
+  {
+    "scenario_id": "test_three_0041",
+    "sample_id": 41,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101744,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -27.41800788775737,
+      22.61255401750266,
+      25.84332750219184
+    ],
+    "omega_deg_s": [
+      0.18445365848752893,
+      3.262759569927878,
+      -2.725393938260331
+    ]
+  },
+  {
+    "scenario_id": "test_three_0042",
+    "sample_id": 42,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101745,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      10.090655437489346,
+      -52.4276406019744,
+      46.64358689337499
+    ],
+    "omega_deg_s": [
+      2.1665068891203383,
+      3.9624451980766597,
+      -0.7253672469717909
+    ]
+  },
+  {
+    "scenario_id": "test_three_0043",
+    "sample_id": 43,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101746,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -35.994377576929914,
+      -35.249753445473864,
+      -2.621873065772732
+    ],
+    "omega_deg_s": [
+      -4.226937914652416,
+      -3.977961081410567,
+      -1.2790046046005985
+    ]
+  },
+  {
+    "scenario_id": "test_three_0044",
+    "sample_id": 44,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101747,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -47.8019621414014,
+      -3.772942102125498,
+      -19.72893873406192
+    ],
+    "omega_deg_s": [
+      2.5108998622989915,
+      -3.5899187518951603,
+      2.8936537825421995
+    ]
+  },
+  {
+    "scenario_id": "test_three_0045",
+    "sample_id": 45,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101748,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      9.78010700732078,
+      5.371896195785624,
+      -2.173137879368653
+    ],
+    "omega_deg_s": [
+      1.3226304202175685,
+      3.6879384234259724,
+      1.3980445430427348
+    ]
+  },
+  {
+    "scenario_id": "test_three_0046",
+    "sample_id": 46,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101749,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -15.86492725230017,
+      -47.105818896009595,
+      -11.222657451982329
+    ],
+    "omega_deg_s": [
+      3.444566960684117,
+      0.5053951729418857,
+      -1.7560750310216955
+    ]
+  },
+  {
+    "scenario_id": "test_three_0047",
+    "sample_id": 47,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101750,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      12.827925450150673,
+      29.939364001490333,
+      7.016714380376371
+    ],
+    "omega_deg_s": [
+      4.720591313996396,
+      4.376052907640593,
+      3.936106225687615
+    ]
+  },
+  {
+    "scenario_id": "test_three_0048",
+    "sample_id": 48,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101751,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -20.224013309681098,
+      -27.969906140940154,
+      3.5582575245801777
+    ],
+    "omega_deg_s": [
+      4.870179007533455,
+      -1.1087467850271517,
+      2.1687923141830145
+    ]
+  },
+  {
+    "scenario_id": "test_three_0049",
+    "sample_id": 49,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101752,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -44.54534897793309,
+      -57.83157703222962,
+      25.27574562289081
+    ],
+    "omega_deg_s": [
+      2.2426170956807905,
+      3.925587118888261,
+      2.7088792875413104
+    ]
+  },
+  {
+    "scenario_id": "test_three_0050",
+    "sample_id": 50,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101753,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -1.9946812745141003,
+      -15.605878135597763,
+      -11.678739537338657
+    ],
+    "omega_deg_s": [
+      -1.854280822908784,
+      -1.3681253433578977,
+      -3.2483249460970987
+    ]
+  },
+  {
+    "scenario_id": "test_three_0051",
+    "sample_id": 51,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101754,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -9.734072045549297,
+      10.08960065800683,
+      43.43431037213418
+    ],
+    "omega_deg_s": [
+      4.1874368684621395,
+      0.6166128667788842,
+      -1.5705913433448213
+    ]
+  },
+  {
+    "scenario_id": "test_three_0052",
+    "sample_id": 52,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101755,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      16.81456613710749,
+      43.310526669325824,
+      3.2585172961512754
+    ],
+    "omega_deg_s": [
+      0.5995059245988958,
+      1.2077533056720746,
+      3.837399260922238
+    ]
+  },
+  {
+    "scenario_id": "test_three_0053",
+    "sample_id": 53,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101756,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      49.31578563720309,
+      -8.252847006136491,
+      6.423357091619209
+    ],
+    "omega_deg_s": [
+      -4.294305627337395,
+      -0.6088964664960974,
+      -3.996575156711576
+    ]
+  },
+  {
+    "scenario_id": "test_three_0054",
+    "sample_id": 54,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101757,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -50.56460351603713,
+      13.906973140753308,
+      58.881421554021344
+    ],
+    "omega_deg_s": [
+      1.0526109079032562,
+      -1.2320033992153503,
+      -1.4264734256091636
+    ]
+  },
+  {
+    "scenario_id": "test_three_0055",
+    "sample_id": 55,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101758,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -37.137343241112035,
+      34.843587978448795,
+      44.44376899753357
+    ],
+    "omega_deg_s": [
+      2.5700265276559495,
+      2.0065185930638325,
+      3.6231748998896407
+    ]
+  },
+  {
+    "scenario_id": "test_three_0056",
+    "sample_id": 56,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101759,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -38.281930883275024,
+      48.664148470014155,
+      -36.847832254224535
+    ],
+    "omega_deg_s": [
+      4.7906308761739425,
+      2.4931879648145907,
+      -1.8977902622357776
+    ]
+  },
+  {
+    "scenario_id": "test_three_0057",
+    "sample_id": 57,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101760,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -32.05584826067347,
+      -22.125579170584288,
+      11.550810248519326
+    ],
+    "omega_deg_s": [
+      1.142603939835082,
+      -2.2169296886540213,
+      2.5508116769587996
+    ]
+  },
+  {
+    "scenario_id": "test_three_0058",
+    "sample_id": 58,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101761,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      1.82380001774402,
+      -6.941115624755533,
+      -54.66454620328314
+    ],
+    "omega_deg_s": [
+      1.0327976788110433,
+      -4.9233294578979585,
+      1.5716594576639515
+    ]
+  },
+  {
+    "scenario_id": "test_three_0059",
+    "sample_id": 59,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101762,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      38.991316740230275,
+      21.962781018147567,
+      9.175350327034053
+    ],
+    "omega_deg_s": [
+      -0.2689516451203513,
+      -4.9993220172076915,
+      3.443947229354743
+    ]
+  },
+  {
+    "scenario_id": "test_three_0060",
+    "sample_id": 60,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101763,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      22.146886193295998,
+      -50.44123132246431,
+      10.55799639094407
+    ],
+    "omega_deg_s": [
+      -2.6322753749553707,
+      0.3615046100828039,
+      -3.4039275411788616
+    ]
+  },
+  {
+    "scenario_id": "test_three_0061",
+    "sample_id": 61,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101764,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      47.2436786487164,
+      48.40458632150404,
+      -21.889550057884342
+    ],
+    "omega_deg_s": [
+      -2.9592022417390873,
+      -1.8193222913302334,
+      1.6018570951485867
+    ]
+  },
+  {
+    "scenario_id": "test_three_0062",
+    "sample_id": 62,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101765,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -12.625236921572402,
+      18.344050204114126,
+      -13.227626376224919
+    ],
+    "omega_deg_s": [
+      -0.2812274946024864,
+      2.983025706679224,
+      -2.9544684961850143
+    ]
+  },
+  {
+    "scenario_id": "test_three_0063",
+    "sample_id": 63,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101766,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -28.93579023020244,
+      -33.557774451177735,
+      -53.39318766279887
+    ],
+    "omega_deg_s": [
+      0.35261604989348605,
+      -1.6548581698854647,
+      1.0208852717961303
+    ]
+  },
+  {
+    "scenario_id": "test_three_0064",
+    "sample_id": 64,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101767,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -33.98050897317683,
+      38.13825314088018,
+      -6.3728969939608575
+    ],
+    "omega_deg_s": [
+      -4.224009160762586,
+      3.33295972118718,
+      -3.6122416467283127
+    ]
+  },
+  {
+    "scenario_id": "test_three_0065",
+    "sample_id": 65,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101768,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      47.65818538603368,
+      21.361918980091417,
+      -39.313191288740796
+    ],
+    "omega_deg_s": [
+      -2.2145578637086913,
+      0.7448215085163277,
+      1.1167660233625547
+    ]
+  },
+  {
+    "scenario_id": "test_three_0066",
+    "sample_id": 66,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101769,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      43.30666626666914,
+      3.8184045609217705,
+      17.74187397594889
+    ],
+    "omega_deg_s": [
+      -1.1746136541266692,
+      2.6407749506353584,
+      -2.4309058982590215
+    ]
+  },
+  {
+    "scenario_id": "test_three_0067",
+    "sample_id": 67,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101770,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      57.47191237156406,
+      17.776322488675035,
+      -54.25654871035553
+    ],
+    "omega_deg_s": [
+      -1.6693465382870656,
+      3.069458578859866,
+      4.469753861489989
+    ]
+  },
+  {
+    "scenario_id": "test_three_0068",
+    "sample_id": 68,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101771,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      6.797257105451052,
+      59.02198533297745,
+      51.74614860286202
+    ],
+    "omega_deg_s": [
+      -4.122321069121668,
+      -1.0574987813576309,
+      3.749347259593206
+    ]
+  },
+  {
+    "scenario_id": "test_three_0069",
+    "sample_id": 69,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101772,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -49.36142599222228,
+      -4.22232412775373,
+      2.112113909082069
+    ],
+    "omega_deg_s": [
+      1.933838263200939,
+      1.9082577320482672,
+      1.491365746934676
+    ]
+  },
+  {
+    "scenario_id": "test_three_0070",
+    "sample_id": 70,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101773,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -8.34335644188296,
+      4.3931472975039725,
+      -23.506608965125388
+    ],
+    "omega_deg_s": [
+      3.76865571467987,
+      3.120193731897075,
+      2.5486956163717593
+    ]
+  },
+  {
+    "scenario_id": "test_three_0071",
+    "sample_id": 71,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101774,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -3.2109952754885214,
+      -55.81071733186356,
+      -31.998422436158513
+    ],
+    "omega_deg_s": [
+      3.3838087410072006,
+      -2.947832612083366,
+      3.1415094495317177
+    ]
+  },
+  {
+    "scenario_id": "test_three_0072",
+    "sample_id": 72,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101775,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      31.87205698613792,
+      5.415895228891301,
+      -40.427302936583715
+    ],
+    "omega_deg_s": [
+      -4.422338135150488,
+      1.3217281746367444,
+      -2.354846674504356
+    ]
+  },
+  {
+    "scenario_id": "test_three_0073",
+    "sample_id": 73,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101776,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -36.552665717480636,
+      -41.57688655045874,
+      55.172369353688694
+    ],
+    "omega_deg_s": [
+      3.369532461303571,
+      -0.37275694373792057,
+      2.909162451049961
+    ]
+  },
+  {
+    "scenario_id": "test_three_0074",
+    "sample_id": 74,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101777,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      53.80926627703465,
+      28.7337444710777,
+      -9.158928341275086
+    ],
+    "omega_deg_s": [
+      3.334862675670058,
+      3.030352563982852,
+      2.8081820299405527
+    ]
+  },
+  {
+    "scenario_id": "test_three_0075",
+    "sample_id": 75,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101778,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      27.99000083917035,
+      -6.78720071360361,
+      45.770442770270606
+    ],
+    "omega_deg_s": [
+      4.3846142428521855,
+      1.1576713137333607,
+      -1.5403817179662105
+    ]
+  },
+  {
+    "scenario_id": "test_three_0076",
+    "sample_id": 76,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101779,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      45.95201614432152,
+      32.957773020293786,
+      -4.938861461733552
+    ],
+    "omega_deg_s": [
+      -4.579637434420527,
+      4.372953686990288,
+      3.6240736599783716
+    ]
+  },
+  {
+    "scenario_id": "test_three_0077",
+    "sample_id": 77,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101780,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -47.73257496270182,
+      1.0396892854255881,
+      32.0910267578749
+    ],
+    "omega_deg_s": [
+      1.1162049088761625,
+      -2.4641940207528545,
+      -3.521937010457691
+    ]
+  },
+  {
+    "scenario_id": "test_three_0078",
+    "sample_id": 78,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101781,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -44.5216145396176,
+      -56.78678662986038,
+      -33.8283014927948
+    ],
+    "omega_deg_s": [
+      -1.2923433491956002,
+      -3.29830384118174,
+      1.0703246762741543
+    ]
+  },
+  {
+    "scenario_id": "test_three_0079",
+    "sample_id": 79,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101782,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      6.664721254043641,
+      -29.137682313393366,
+      1.1885467176531677
+    ],
+    "omega_deg_s": [
+      4.414369353939996,
+      0.7928188138966252,
+      -2.812138077448184
+    ]
+  },
+  {
+    "scenario_id": "test_three_0080",
+    "sample_id": 80,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101783,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      37.07799360673013,
+      -38.718026813897715,
+      44.72799128590454
+    ],
+    "omega_deg_s": [
+      -2.8887254297446185,
+      1.7609340175096015,
+      -2.3745998630057077
+    ]
+  },
+  {
+    "scenario_id": "test_three_0081",
+    "sample_id": 81,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101784,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      20.293226338806633,
+      -47.31087800664131,
+      24.672012704479926
+    ],
+    "omega_deg_s": [
+      1.4154591322180634,
+      -3.375277364558894,
+      -1.7034298120270677
+    ]
+  },
+  {
+    "scenario_id": "test_three_0082",
+    "sample_id": 82,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101785,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      31.043007997632145,
+      9.348389515432345,
+      -3.9505979041885766
+    ],
+    "omega_deg_s": [
+      4.987134409050331,
+      3.86243051241083,
+      -3.4948986557365425
+    ]
+  },
+  {
+    "scenario_id": "test_three_0083",
+    "sample_id": 83,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101786,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -41.88646481337331,
+      11.390447007036954,
+      -45.04553244900028
+    ],
+    "omega_deg_s": [
+      -1.0850010704932989,
+      0.9907095836428761,
+      -1.1548283859163622
+    ]
+  },
+  {
+    "scenario_id": "test_three_0084",
+    "sample_id": 84,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101787,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      1.0831791516508247,
+      3.7463975460397805,
+      -24.446398789230194
+    ],
+    "omega_deg_s": [
+      -3.904016916216425,
+      -3.7738816120383643,
+      -1.7106410437589172
+    ]
+  },
+  {
+    "scenario_id": "test_three_0085",
+    "sample_id": 85,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101788,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      17.892865416409876,
+      9.276216264952993,
+      37.80678693144486
+    ],
+    "omega_deg_s": [
+      0.10501446068449294,
+      0.8500809310956505,
+      -3.2244833396446513
+    ]
+  },
+  {
+    "scenario_id": "test_three_0086",
+    "sample_id": 86,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101789,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -49.08079086711098,
+      58.68605531160783,
+      -35.693983504512104
+    ],
+    "omega_deg_s": [
+      1.283546162962649,
+      -1.7873994323198605,
+      -2.1965827254583283
+    ]
+  },
+  {
+    "scenario_id": "test_three_0087",
+    "sample_id": 87,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101790,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      47.994389064442814,
+      12.842217471841522,
+      -2.869022083719706
+    ],
+    "omega_deg_s": [
+      -2.6756021691846543,
+      -1.5203149681641301,
+      3.1449699367429353
+    ]
+  },
+  {
+    "scenario_id": "test_three_0088",
+    "sample_id": 88,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101791,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -5.339120082224753,
+      29.84415010691349,
+      -6.920830855159167
+    ],
+    "omega_deg_s": [
+      -0.22121307672638935,
+      -3.8606166248264095,
+      1.2242139657584943
+    ]
+  },
+  {
+    "scenario_id": "test_three_0089",
+    "sample_id": 89,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101792,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      21.83040165556629,
+      27.91693691547053,
+      -4.007914788575256
+    ],
+    "omega_deg_s": [
+      0.18477669786074546,
+      2.2502182591217856,
+      0.12141713582435898
+    ]
+  },
+  {
+    "scenario_id": "test_three_0090",
+    "sample_id": 90,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101793,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      33.021232413230464,
+      35.97004558520098,
+      -8.861167533520245
+    ],
+    "omega_deg_s": [
+      -3.342689632837218,
+      2.420648426253342,
+      -1.2196823322016859
+    ]
+  },
+  {
+    "scenario_id": "test_three_0091",
+    "sample_id": 91,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101794,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -52.41827339784019,
+      10.045044333241506,
+      56.91503621992487
+    ],
+    "omega_deg_s": [
+      -3.6474024498958793,
+      1.4767333610698916,
+      0.06288429452848465
+    ]
+  },
+  {
+    "scenario_id": "test_three_0092",
+    "sample_id": 92,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101795,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      13.691914917936032,
+      7.587523658746775,
+      -38.51444016263896
+    ],
+    "omega_deg_s": [
+      -2.6482677640093377,
+      3.8731471650855713,
+      -0.1123755276089149
+    ]
+  },
+  {
+    "scenario_id": "test_three_0093",
+    "sample_id": 93,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101796,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      50.65083148980999,
+      16.16611081033885,
+      10.289760557480378
+    ],
+    "omega_deg_s": [
+      -0.05642092502205376,
+      4.074623158658362,
+      4.316632165973651
+    ]
+  },
+  {
+    "scenario_id": "test_three_0094",
+    "sample_id": 94,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101797,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -23.986736743483227,
+      -20.900043598205116,
+      26.69000913839352
+    ],
+    "omega_deg_s": [
+      -0.11380619966449146,
+      3.586327646772677,
+      3.4019904854662215
+    ]
+  },
+  {
+    "scenario_id": "test_three_0095",
+    "sample_id": 95,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101798,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      56.09943569780921,
+      1.4939776400735383,
+      29.49708168291768
+    ],
+    "omega_deg_s": [
+      -1.5741715250448616,
+      2.9166089043353915,
+      -4.345311938432862
+    ]
+  },
+  {
+    "scenario_id": "test_three_0096",
+    "sample_id": 96,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101799,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      17.508317011908957,
+      29.381174388692727,
+      11.046965092824593
+    ],
+    "omega_deg_s": [
+      1.2870962566924007,
+      4.169395619431592,
+      -0.06789170220621088
+    ]
+  },
+  {
+    "scenario_id": "test_three_0097",
+    "sample_id": 97,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101800,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      15.369304835969587,
+      -21.241818845518004,
+      -54.78302831844937
+    ],
+    "omega_deg_s": [
+      -0.3998272685729978,
+      -1.079119385704014,
+      -1.3554373128186716
+    ]
+  },
+  {
+    "scenario_id": "test_three_0098",
+    "sample_id": 98,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101801,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -50.07785258115682,
+      10.786942916087071,
+      -37.4624800437788
+    ],
+    "omega_deg_s": [
+      2.593665243020271,
+      -0.5085876631137367,
+      0.20347055010222448
+    ]
+  },
+  {
+    "scenario_id": "test_three_0099",
+    "sample_id": 99,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101802,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      57.91523838080833,
+      -44.55877041736182,
+      -23.904454836229952
+    ],
+    "omega_deg_s": [
+      -4.342731919504271,
+      -2.607324089037031,
+      -0.5352581100231024
+    ]
+  },
+  {
+    "scenario_id": "test_three_0100",
+    "sample_id": 100,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101803,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      24.687960250876074,
+      58.15421696217538,
+      -42.55755686282064
+    ],
+    "omega_deg_s": [
+      1.940640064172026,
+      1.8724512423658526,
+      -3.9171715704887964
+    ]
+  },
+  {
+    "scenario_id": "test_three_0101",
+    "sample_id": 101,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101804,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -20.232585835189532,
+      -43.61164085054817,
+      30.103743686119472
+    ],
+    "omega_deg_s": [
+      -1.328562772522183,
+      2.720453347738463,
+      2.0139680332492205
+    ]
+  },
+  {
+    "scenario_id": "test_three_0102",
+    "sample_id": 102,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101805,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      57.94628588399968,
+      9.6799595256701,
+      -59.059113898069846
+    ],
+    "omega_deg_s": [
+      -2.8483002692916184,
+      3.8265075432421156,
+      -1.1578261763168518
+    ]
+  },
+  {
+    "scenario_id": "test_three_0103",
+    "sample_id": 103,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101806,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -0.059492749050718885,
+      13.139636867944532,
+      -5.629923511559795
+    ],
+    "omega_deg_s": [
+      0.5322365732709766,
+      -2.5260864038485407,
+      -2.6322028198605176
+    ]
+  },
+  {
+    "scenario_id": "test_three_0104",
+    "sample_id": 104,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101807,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -11.667815110332725,
+      45.48400483006657,
+      -58.64309568969154
+    ],
+    "omega_deg_s": [
+      3.891926413561796,
+      -2.690443365089943,
+      -4.644570809023028
+    ]
+  },
+  {
+    "scenario_id": "test_three_0105",
+    "sample_id": 105,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101808,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      27.216365022658394,
+      24.699458549175404,
+      12.023126217546576
+    ],
+    "omega_deg_s": [
+      1.7054806462432284,
+      -1.9825118426985808,
+      4.074154027637659
+    ]
+  },
+  {
+    "scenario_id": "test_three_0106",
+    "sample_id": 106,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101809,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      1.9325512471916255,
+      44.67208243925839,
+      -11.610560365952225
+    ],
+    "omega_deg_s": [
+      -1.4091712175509064,
+      4.725449282224462,
+      2.493468254181068
+    ]
+  },
+  {
+    "scenario_id": "test_three_0107",
+    "sample_id": 107,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101810,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -21.02281585189977,
+      19.585702934250506,
+      38.958199780997205
+    ],
+    "omega_deg_s": [
+      -2.855846894727793,
+      -3.3833202461654177,
+      2.578875285144661
+    ]
+  },
+  {
+    "scenario_id": "test_three_0108",
+    "sample_id": 108,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101811,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -35.881758669115236,
+      -13.445151515400028,
+      54.73870253030236
+    ],
+    "omega_deg_s": [
+      -2.4419393882170204,
+      -3.2316407006098755,
+      -1.3507695514927152
+    ]
+  },
+  {
+    "scenario_id": "test_three_0109",
+    "sample_id": 109,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101812,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      6.415013220088156,
+      -43.05208581051676,
+      -45.90229762829624
+    ],
+    "omega_deg_s": [
+      3.726074014123986,
+      -2.9271999829729642,
+      -0.5404508283975247
+    ]
+  },
+  {
+    "scenario_id": "test_three_0110",
+    "sample_id": 110,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101813,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      51.935144133175,
+      26.015025557486297,
+      59.45004637746868
+    ],
+    "omega_deg_s": [
+      -1.6601609729150715,
+      -1.3516979130158169,
+      -1.322906909435606
+    ]
+  },
+  {
+    "scenario_id": "test_three_0111",
+    "sample_id": 111,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101814,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -50.0111752157419,
+      52.00201524330741,
+      -6.476147496190016
+    ],
+    "omega_deg_s": [
+      4.63653058395921,
+      4.790960822508037,
+      -0.8050570501070133
+    ]
+  },
+  {
+    "scenario_id": "test_three_0112",
+    "sample_id": 112,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101815,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      59.95545660352336,
+      -17.26933106653894,
+      24.206650328305784
+    ],
+    "omega_deg_s": [
+      -1.5209360353260184,
+      -3.843581401351951,
+      -3.7832826282623033
+    ]
+  },
+  {
+    "scenario_id": "test_three_0113",
+    "sample_id": 113,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101816,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      11.080324188678603,
+      -29.405689481956948,
+      -51.3893767356058
+    ],
+    "omega_deg_s": [
+      3.140246758516705,
+      4.320386152910874,
+      2.9953229624471343
+    ]
+  },
+  {
+    "scenario_id": "test_three_0114",
+    "sample_id": 114,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101817,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      47.2949827931767,
+      -44.921576040543066,
+      -19.11264042013415
+    ],
+    "omega_deg_s": [
+      -2.1253897539222977,
+      4.632745907716949,
+      1.7130067879697064
+    ]
+  },
+  {
+    "scenario_id": "test_three_0115",
+    "sample_id": 115,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101818,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      10.548013652708804,
+      -50.64493079965746,
+      18.294988831562662
+    ],
+    "omega_deg_s": [
+      4.135717107403218,
+      -3.993737784985296,
+      -0.9358543180305867
+    ]
+  },
+  {
+    "scenario_id": "test_three_0116",
+    "sample_id": 116,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101819,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      3.850486424535042,
+      23.578001114714567,
+      -11.86608058086582
+    ],
+    "omega_deg_s": [
+      -0.2064471401061141,
+      -4.896664494532756,
+      -4.175563779651298
+    ]
+  },
+  {
+    "scenario_id": "test_three_0117",
+    "sample_id": 117,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101820,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -22.27289757358384,
+      -55.62005489244896,
+      7.152941490147711
+    ],
+    "omega_deg_s": [
+      -0.9023072956749996,
+      1.204549041229546,
+      1.7897015173687283
+    ]
+  },
+  {
+    "scenario_id": "test_three_0118",
+    "sample_id": 118,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101821,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      17.66427086130038,
+      7.000720144931421,
+      22.03678172653349
+    ],
+    "omega_deg_s": [
+      -2.6753088356893153,
+      2.7480239299320406,
+      -1.6664583625825538
+    ]
+  },
+  {
+    "scenario_id": "test_three_0119",
+    "sample_id": 119,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101822,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -2.342082850993677,
+      -22.563775510265472,
+      -16.91368157500719
+    ],
+    "omega_deg_s": [
+      2.9745675167992616,
+      4.906561720637772,
+      -3.904000495900808
+    ]
+  },
+  {
+    "scenario_id": "test_three_0120",
+    "sample_id": 120,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101823,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -52.965727760562864,
+      -13.115175608720342,
+      -24.867098443975905
+    ],
+    "omega_deg_s": [
+      2.814768399476887,
+      2.107723010179667,
+      -4.735295928299914
+    ]
+  },
+  {
+    "scenario_id": "test_three_0121",
+    "sample_id": 121,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101824,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      1.412056761197931,
+      -57.40222429014211,
+      31.19203366101192
+    ],
+    "omega_deg_s": [
+      2.352635620024566,
+      -2.9017480782218765,
+      -1.576516483842345
+    ]
+  },
+  {
+    "scenario_id": "test_three_0122",
+    "sample_id": 122,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101825,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -6.732142546838574,
+      13.54113783257165,
+      47.05158020902947
+    ],
+    "omega_deg_s": [
+      2.7752251346895127,
+      1.377032888986875,
+      1.3534375574571964
+    ]
+  },
+  {
+    "scenario_id": "test_three_0123",
+    "sample_id": 123,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101826,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      28.56158106782459,
+      37.62146238936619,
+      51.41011360875629
+    ],
+    "omega_deg_s": [
+      0.21027344357617572,
+      -1.094557425532349,
+      -2.3243940745155225
+    ]
+  },
+  {
+    "scenario_id": "test_three_0124",
+    "sample_id": 124,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101827,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -54.797475593432964,
+      -48.241042876878765,
+      -3.5564599510363593
+    ],
+    "omega_deg_s": [
+      -2.7983182214761273,
+      -3.203865167423313,
+      -3.7423628460021776
+    ]
+  },
+  {
+    "scenario_id": "test_three_0125",
+    "sample_id": 125,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101828,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      38.4281214049267,
+      8.678779419307205,
+      -33.94452044117275
+    ],
+    "omega_deg_s": [
+      0.9723499733307737,
+      -3.41161959026317,
+      0.6180991734033272
+    ]
+  },
+  {
+    "scenario_id": "test_three_0126",
+    "sample_id": 126,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101829,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      19.87574894853148,
+      -52.98422592892359,
+      -24.323817970935337
+    ],
+    "omega_deg_s": [
+      0.14560907712512794,
+      0.446640257022624,
+      2.853301411331141
+    ]
+  },
+  {
+    "scenario_id": "test_three_0127",
+    "sample_id": 127,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101830,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      12.432308411731597,
+      29.76648459650211,
+      24.901893859711237
+    ],
+    "omega_deg_s": [
+      4.364066254870055,
+      1.081329562767845,
+      0.9713071718065782
+    ]
+  },
+  {
+    "scenario_id": "test_three_0128",
+    "sample_id": 128,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101831,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -24.222872783297674,
+      26.868590228067944,
+      -51.620817344582726
+    ],
+    "omega_deg_s": [
+      1.5217014000153304,
+      -0.09106112332561533,
+      -1.853071163165112
+    ]
+  },
+  {
+    "scenario_id": "test_three_0129",
+    "sample_id": 129,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101832,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -39.26186351523214,
+      -20.30220330768377,
+      -11.733251307896566
+    ],
+    "omega_deg_s": [
+      2.937284051847472,
+      -4.039437365208424,
+      -4.335911855500179
+    ]
+  },
+  {
+    "scenario_id": "test_three_0130",
+    "sample_id": 130,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101833,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -17.82262071065727,
+      -25.255692500380782,
+      -20.115697878355626
+    ],
+    "omega_deg_s": [
+      -3.542489947287577,
+      -1.3344986780062906,
+      -3.1076585962942795
+    ]
+  },
+  {
+    "scenario_id": "test_three_0131",
+    "sample_id": 131,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101834,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      18.2147071247564,
+      0.2965415127983988,
+      -53.68100144875345
+    ],
+    "omega_deg_s": [
+      1.3770241085074488,
+      2.69832097893362,
+      0.2929727070759105
+    ]
+  },
+  {
+    "scenario_id": "test_three_0132",
+    "sample_id": 132,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101835,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      32.91436047060762,
+      -47.27028451370656,
+      41.10408042346613
+    ],
+    "omega_deg_s": [
+      2.5583352027274966,
+      0.3374432032328931,
+      1.4044568803581692
+    ]
+  },
+  {
+    "scenario_id": "test_three_0133",
+    "sample_id": 133,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101836,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -37.97691857042591,
+      -39.1491505212872,
+      -52.556384868368795
+    ],
+    "omega_deg_s": [
+      4.922856021005895,
+      0.7019610409304686,
+      2.305549392495273
+    ]
+  },
+  {
+    "scenario_id": "test_three_0134",
+    "sample_id": 134,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101837,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -32.82109422398987,
+      -15.471844977884189,
+      -34.576496608928835
+    ],
+    "omega_deg_s": [
+      -4.687802661218473,
+      -3.4895736617460225,
+      0.31172899160186773
+    ]
+  },
+  {
+    "scenario_id": "test_three_0135",
+    "sample_id": 135,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101838,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -11.219858250755316,
+      -20.96683515200551,
+      23.06001237185967
+    ],
+    "omega_deg_s": [
+      -0.597196740782179,
+      -3.885230989575781,
+      -3.3812265643970374
+    ]
+  },
+  {
+    "scenario_id": "test_three_0136",
+    "sample_id": 136,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101839,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -38.79068860915224,
+      -41.96844897805896,
+      13.093474658751234
+    ],
+    "omega_deg_s": [
+      -3.9533462550854037,
+      0.14546752374850502,
+      0.444833342338395
+    ]
+  },
+  {
+    "scenario_id": "test_three_0137",
+    "sample_id": 137,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101840,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      40.517927711137204,
+      -57.47998200243962,
+      40.61173249182501
+    ],
+    "omega_deg_s": [
+      3.5420022275489114,
+      -3.1501095200286033,
+      3.0401497351987654
+    ]
+  },
+  {
+    "scenario_id": "test_three_0138",
+    "sample_id": 138,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101841,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      39.26900306900757,
+      -51.87095646317319,
+      23.987273660362618
+    ],
+    "omega_deg_s": [
+      1.2413014100254527,
+      -4.252175166847541,
+      -2.297010928886667
+    ]
+  },
+  {
+    "scenario_id": "test_three_0139",
+    "sample_id": 139,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101842,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      11.732745602265297,
+      31.426933912160962,
+      57.694883793434215
+    ],
+    "omega_deg_s": [
+      2.3578762080567026,
+      3.3115099280652505,
+      -3.677897839378914
+    ]
+  },
+  {
+    "scenario_id": "test_three_0140",
+    "sample_id": 140,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101843,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      52.77750927014226,
+      -28.01901589914845,
+      19.84296570989352
+    ],
+    "omega_deg_s": [
+      4.166046714277822,
+      -4.041244778051638,
+      -1.0788312361395302
+    ]
+  },
+  {
+    "scenario_id": "test_three_0141",
+    "sample_id": 141,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101844,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      25.43039074010008,
+      13.385574892800506,
+      -16.3900226266909
+    ],
+    "omega_deg_s": [
+      -1.7489769793850076,
+      -2.695095068009943,
+      -4.141890142824862
+    ]
+  },
+  {
+    "scenario_id": "test_three_0142",
+    "sample_id": 142,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101845,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -53.456841999627116,
+      -40.19944603856352,
+      -29.512045698770237
+    ],
+    "omega_deg_s": [
+      -3.9070530128134804,
+      3.2547205290474537,
+      -0.8849920215343152
+    ]
+  },
+  {
+    "scenario_id": "test_three_0143",
+    "sample_id": 143,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101846,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      8.858892947496642,
+      -17.50485556048713,
+      -32.10542095797573
+    ],
+    "omega_deg_s": [
+      -2.549394833094687,
+      -1.3473595488512222,
+      -0.594899205967522
+    ]
+  },
+  {
+    "scenario_id": "test_three_0144",
+    "sample_id": 144,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101847,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      47.914607952417285,
+      -21.453494960801265,
+      0.9741531519502544
+    ],
+    "omega_deg_s": [
+      4.698879296176104,
+      -1.5790497919932154,
+      -4.055452617803333
+    ]
+  },
+  {
+    "scenario_id": "test_three_0145",
+    "sample_id": 145,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101848,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      35.24884071588292,
+      26.883208401638186,
+      -9.884074272794116
+    ],
+    "omega_deg_s": [
+      -0.4285338942352892,
+      3.018993693173318,
+      2.101280747551092
+    ]
+  },
+  {
+    "scenario_id": "test_three_0146",
+    "sample_id": 146,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101849,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      18.46801690768909,
+      -50.203532622452656,
+      29.862407000507318
+    ],
+    "omega_deg_s": [
+      2.457818106346777,
+      2.115304655045981,
+      2.6382013432086975
+    ]
+  },
+  {
+    "scenario_id": "test_three_0147",
+    "sample_id": 147,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101850,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -53.02130693112571,
+      -54.79619495736512,
+      -20.5266302300299
+    ],
+    "omega_deg_s": [
+      -2.900838651708578,
+      2.051643108264237,
+      0.4019081131199851
+    ]
+  },
+  {
+    "scenario_id": "test_three_0148",
+    "sample_id": 148,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101851,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      21.642900522673813,
+      27.9650727057669,
+      50.567237076751454
+    ],
+    "omega_deg_s": [
+      0.2928383408331623,
+      4.797018998443342,
+      4.503593708724358
+    ]
+  },
+  {
+    "scenario_id": "test_three_0149",
+    "sample_id": 149,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101852,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -7.181974656392718,
+      4.502172359893606,
+      -30.87250074112207
+    ],
+    "omega_deg_s": [
+      -3.5165904208851573,
+      2.4819854943210506,
+      4.237259939107787
+    ]
+  },
+  {
+    "scenario_id": "test_three_0150",
+    "sample_id": 150,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101853,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -7.86923073917027,
+      -38.43509735951773,
+      -8.285730196413013
+    ],
+    "omega_deg_s": [
+      -0.19106967608968795,
+      4.415534889901091,
+      -2.2196619184354516
+    ]
+  },
+  {
+    "scenario_id": "test_three_0151",
+    "sample_id": 151,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101854,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -33.40692937734974,
+      -41.221530361327744,
+      -22.58701172423092
+    ],
+    "omega_deg_s": [
+      1.7538300483755496,
+      -4.06612049770895,
+      -4.515902978245926
+    ]
+  },
+  {
+    "scenario_id": "test_three_0152",
+    "sample_id": 152,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101855,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -42.89870994191169,
+      -49.93362077841402,
+      35.72440362250052
+    ],
+    "omega_deg_s": [
+      -0.2648022209473302,
+      -3.429601007851616,
+      -0.24889555573137567
+    ]
+  },
+  {
+    "scenario_id": "test_three_0153",
+    "sample_id": 153,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101856,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      8.227388431025986,
+      -14.771373733747595,
+      12.682054970284952
+    ],
+    "omega_deg_s": [
+      0.5246970762553174,
+      2.021204232206011,
+      -1.48828107903608
+    ]
+  },
+  {
+    "scenario_id": "test_three_0154",
+    "sample_id": 154,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101857,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      41.58241177562151,
+      11.427206884900329,
+      -40.231968724528116
+    ],
+    "omega_deg_s": [
+      -4.217396300190693,
+      4.4866568918027845,
+      3.7028820822971333
+    ]
+  },
+  {
+    "scenario_id": "test_three_0155",
+    "sample_id": 155,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101858,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -58.45574487716506,
+      -4.308264921765129,
+      -16.304942881755473
+    ],
+    "omega_deg_s": [
+      -4.591525620557929,
+      -4.237271987583274,
+      -1.2879456645557328
+    ]
+  },
+  {
+    "scenario_id": "test_three_0156",
+    "sample_id": 156,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101859,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      10.928285020899267,
+      53.92238201849716,
+      -59.006255686531574
+    ],
+    "omega_deg_s": [
+      2.2507138101056317,
+      0.9419653499749092,
+      -0.1247567725747798
+    ]
+  },
+  {
+    "scenario_id": "test_three_0157",
+    "sample_id": 157,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101860,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -55.75146628607047,
+      -49.061886653759665,
+      -7.913859738610171
+    ],
+    "omega_deg_s": [
+      -4.594166182926851,
+      -1.8912890765993975,
+      -0.6225276884209467
+    ]
+  },
+  {
+    "scenario_id": "test_three_0158",
+    "sample_id": 158,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101861,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -26.533122988566745,
+      57.97256374346607,
+      -43.16885027968967
+    ],
+    "omega_deg_s": [
+      -3.315197034370482,
+      0.07449289507207624,
+      2.007054165801949
+    ]
+  },
+  {
+    "scenario_id": "test_three_0159",
+    "sample_id": 159,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101862,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      22.97614046784885,
+      56.4662264039503,
+      36.24427619099632
+    ],
+    "omega_deg_s": [
+      -2.501200854791714,
+      4.350121791938177,
+      -0.5201835301098612
+    ]
+  },
+  {
+    "scenario_id": "test_three_0160",
+    "sample_id": 160,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101863,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -0.3874330229522869,
+      54.67648986762097,
+      44.34533426503397
+    ],
+    "omega_deg_s": [
+      4.313756771169853,
+      1.4422848797220045,
+      -2.348529612924779
+    ]
+  },
+  {
+    "scenario_id": "test_three_0161",
+    "sample_id": 161,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101864,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -22.80144632042054,
+      35.34361587063577,
+      -26.0756410210645
+    ],
+    "omega_deg_s": [
+      4.1715394307919045,
+      -2.683779012774601,
+      2.0091514867097047
+    ]
+  },
+  {
+    "scenario_id": "test_three_0162",
+    "sample_id": 162,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101865,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      2.2041570173428724,
+      -5.886262566789462,
+      3.267012584835115
+    ],
+    "omega_deg_s": [
+      3.4331254137747855,
+      0.8658480309566974,
+      -2.4121907321427525
+    ]
+  },
+  {
+    "scenario_id": "test_three_0163",
+    "sample_id": 163,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101866,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -17.03814661097916,
+      23.488859810977345,
+      51.08892408597791
+    ],
+    "omega_deg_s": [
+      -2.731233536017953,
+      2.3047941474860743,
+      -0.5015804705329607
+    ]
+  },
+  {
+    "scenario_id": "test_three_0164",
+    "sample_id": 164,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101867,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      47.61680627688578,
+      -25.89778568815398,
+      4.394027780785933
+    ],
+    "omega_deg_s": [
+      -1.4369233290918784,
+      -4.445546846945691,
+      -4.508249098719314
+    ]
+  },
+  {
+    "scenario_id": "test_three_0165",
+    "sample_id": 165,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101868,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      59.60205058451888,
+      -38.99034033085841,
+      -1.8009341743004939
+    ],
+    "omega_deg_s": [
+      4.685639834903311,
+      1.462522643070078,
+      -0.9521048421517442
+    ]
+  },
+  {
+    "scenario_id": "test_three_0166",
+    "sample_id": 166,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101869,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      26.198142890357346,
+      44.08294890988836,
+      -59.731048447098985
+    ],
+    "omega_deg_s": [
+      -4.656763724427649,
+      2.541423024525246,
+      -2.2437381954960056
+    ]
+  },
+  {
+    "scenario_id": "test_three_0167",
+    "sample_id": 167,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101870,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -36.153886666374184,
+      20.375510879418528,
+      25.137734429375556
+    ],
+    "omega_deg_s": [
+      -0.8166792465081727,
+      3.1968442234476626,
+      -3.960320572334972
+    ]
+  },
+  {
+    "scenario_id": "test_three_0168",
+    "sample_id": 168,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101871,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      32.38834489064406,
+      0.4103488028720861,
+      -17.175820953922532
+    ],
+    "omega_deg_s": [
+      -1.9171531314781518,
+      -3.822683017056563,
+      -4.601994822112471
+    ]
+  },
+  {
+    "scenario_id": "test_three_0169",
+    "sample_id": 169,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101872,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -28.999080808902768,
+      33.39705535684672,
+      -23.236856126752315
+    ],
+    "omega_deg_s": [
+      1.504572654500902,
+      4.406796076912409,
+      -4.009534925827958
+    ]
+  },
+  {
+    "scenario_id": "test_three_0170",
+    "sample_id": 170,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101873,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -1.3840666454388781,
+      26.944478317238406,
+      -48.145029189293844
+    ],
+    "omega_deg_s": [
+      -2.5261201304157064,
+      -0.18952916852239277,
+      -1.633830787838627
+    ]
+  },
+  {
+    "scenario_id": "test_three_0171",
+    "sample_id": 171,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101874,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      29.123127125574825,
+      45.88221849567293,
+      29.17956021831762
+    ],
+    "omega_deg_s": [
+      2.4171150385713966,
+      -3.400068654068048,
+      0.35139106357189664
+    ]
+  },
+  {
+    "scenario_id": "test_three_0172",
+    "sample_id": 172,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101875,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      37.48150304944899,
+      41.87500441271675,
+      -47.939145449794495
+    ],
+    "omega_deg_s": [
+      0.8346461525418611,
+      -0.18147132656849418,
+      0.9093237411556352
+    ]
+  },
+  {
+    "scenario_id": "test_three_0173",
+    "sample_id": 173,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101876,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      57.48303289427923,
+      55.49535743318991,
+      -55.08787906523061
+    ],
+    "omega_deg_s": [
+      -3.4171187799254463,
+      -2.091956155386031,
+      -1.5318808152800822
+    ]
+  },
+  {
+    "scenario_id": "test_three_0174",
+    "sample_id": 174,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101877,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      33.56309903101088,
+      59.61519859746146,
+      2.381095872260744
+    ],
+    "omega_deg_s": [
+      -1.7982931342935982,
+      0.5084043381779901,
+      -1.8719875310301823
+    ]
+  },
+  {
+    "scenario_id": "test_three_0175",
+    "sample_id": 175,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101878,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      8.118410499407318,
+      36.40183921589555,
+      47.83008781351995
+    ],
+    "omega_deg_s": [
+      1.0110552409302453,
+      2.7926025977268862,
+      1.3531374773192155
+    ]
+  },
+  {
+    "scenario_id": "test_three_0176",
+    "sample_id": 176,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101879,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      48.493552060351604,
+      -58.76967980757024,
+      -10.959285732241042
+    ],
+    "omega_deg_s": [
+      2.823108598112542,
+      -2.673976051952015,
+      -1.547945865594965
+    ]
+  },
+  {
+    "scenario_id": "test_three_0177",
+    "sample_id": 177,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101880,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -54.8610344497837,
+      -49.748625993822145,
+      22.414568289730838
+    ],
+    "omega_deg_s": [
+      -1.2413254429133023,
+      4.984209246387186,
+      4.53425697183474
+    ]
+  },
+  {
+    "scenario_id": "test_three_0178",
+    "sample_id": 178,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101881,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      40.937944170556506,
+      10.100186585941287,
+      57.18864773851247
+    ],
+    "omega_deg_s": [
+      -3.8550724784039425,
+      0.6021535446576038,
+      1.536063452768622
+    ]
+  },
+  {
+    "scenario_id": "test_three_0179",
+    "sample_id": 179,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101882,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -57.834113851694724,
+      -18.374331298606684,
+      -6.4443137072779635
+    ],
+    "omega_deg_s": [
+      -0.6879001077950679,
+      -2.173452620302767,
+      -4.974458495006079
+    ]
+  },
+  {
+    "scenario_id": "test_three_0180",
+    "sample_id": 180,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101883,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -59.88010229508362,
+      -41.219973169098274,
+      -47.49111247895621
+    ],
+    "omega_deg_s": [
+      -4.241419675697198,
+      3.8903775145166293,
+      -1.4260735132051483
+    ]
+  },
+  {
+    "scenario_id": "test_three_0181",
+    "sample_id": 181,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101884,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      40.14121109079797,
+      9.509399691167218,
+      25.71210308640157
+    ],
+    "omega_deg_s": [
+      0.38250416882088434,
+      -0.932177333493236,
+      -0.6736141336169252
+    ]
+  },
+  {
+    "scenario_id": "test_three_0182",
+    "sample_id": 182,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101885,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      38.93830424339126,
+      -45.196328169995425,
+      8.777049227851236
+    ],
+    "omega_deg_s": [
+      -3.4710428984323674,
+      -2.688945798249777,
+      -3.7850560545006626
+    ]
+  },
+  {
+    "scenario_id": "test_three_0183",
+    "sample_id": 183,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101886,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -37.508095397514914,
+      1.096546725027757,
+      7.723912276735689
+    ],
+    "omega_deg_s": [
+      3.817300021890702,
+      3.803407975638226,
+      2.370507213281056
+    ]
+  },
+  {
+    "scenario_id": "test_three_0184",
+    "sample_id": 184,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101887,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -0.6256338085057251,
+      -40.93794192330439,
+      33.4472384379731
+    ],
+    "omega_deg_s": [
+      -4.586424084204658,
+      1.1910502363985813,
+      1.563863489125116
+    ]
+  },
+  {
+    "scenario_id": "test_three_0185",
+    "sample_id": 185,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101888,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -23.63496048762328,
+      -1.6419112567384104,
+      -46.50908166673179
+    ],
+    "omega_deg_s": [
+      -1.9816890852035263,
+      4.296287727785149,
+      -4.025432151999847
+    ]
+  },
+  {
+    "scenario_id": "test_three_0186",
+    "sample_id": 186,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101889,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      52.37544829526233,
+      39.87893528566913,
+      20.590168229906126
+    ],
+    "omega_deg_s": [
+      3.7885952730050434,
+      2.858105928693364,
+      -0.06714527743243348
+    ]
+  },
+  {
+    "scenario_id": "test_three_0187",
+    "sample_id": 187,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101890,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      2.495002594475835,
+      40.07919177983756,
+      44.55024822723317
+    ],
+    "omega_deg_s": [
+      -3.2538239587704343,
+      3.0130410637866607,
+      1.0211474106051295
+    ]
+  },
+  {
+    "scenario_id": "test_three_0188",
+    "sample_id": 188,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101891,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -58.87963592782212,
+      54.5460737372583,
+      18.27535490656335
+    ],
+    "omega_deg_s": [
+      0.06440991174520505,
+      2.1220639965384933,
+      0.7354697304907534
+    ]
+  },
+  {
+    "scenario_id": "test_three_0189",
+    "sample_id": 189,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101892,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -35.50170878265775,
+      54.40747830381177,
+      57.97258189710496
+    ],
+    "omega_deg_s": [
+      -4.1544002399781546,
+      4.959451017694198,
+      2.330747641224886
+    ]
+  },
+  {
+    "scenario_id": "test_three_0190",
+    "sample_id": 190,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101893,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      58.0031320770742,
+      48.73050989728064,
+      57.84008494845479
+    ],
+    "omega_deg_s": [
+      -4.883449555797624,
+      0.8088307853428489,
+      -3.5126123906407223
+    ]
+  },
+  {
+    "scenario_id": "test_three_0191",
+    "sample_id": 191,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101894,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      43.478084357837304,
+      -4.792008208985592,
+      21.25952139767888
+    ],
+    "omega_deg_s": [
+      -0.11763620233882754,
+      1.8253874149153901,
+      -3.1349887218651027
+    ]
+  },
+  {
+    "scenario_id": "test_three_0192",
+    "sample_id": 192,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101895,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -42.36756165537089,
+      34.703609446933,
+      -51.1414821671373
+    ],
+    "omega_deg_s": [
+      -1.8715039506390765,
+      4.742540633477228,
+      -0.689795143808464
+    ]
+  },
+  {
+    "scenario_id": "test_three_0193",
+    "sample_id": 193,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101896,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      31.141420933243808,
+      -13.925223984682049,
+      -43.95761436431922
+    ],
+    "omega_deg_s": [
+      1.110791455260883,
+      3.1931331187628054,
+      -0.43551404849559994
+    ]
+  },
+  {
+    "scenario_id": "test_three_0194",
+    "sample_id": 194,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101897,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      15.354267276571392,
+      34.23149873560965,
+      -43.0068274948262
+    ],
+    "omega_deg_s": [
+      3.4679635346791606,
+      -4.373826740178095,
+      2.8246706336236516
+    ]
+  },
+  {
+    "scenario_id": "test_three_0195",
+    "sample_id": 195,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101898,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      32.49158553609168,
+      -50.011087962356655,
+      -20.091765017794515
+    ],
+    "omega_deg_s": [
+      -0.8075546078603333,
+      -4.877980907343263,
+      0.06584953272256033
+    ]
+  },
+  {
+    "scenario_id": "test_three_0196",
+    "sample_id": 196,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101899,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -7.104378613979414,
+      50.03401939183901,
+      -34.33852434955277
+    ],
+    "omega_deg_s": [
+      -2.192388357795406,
+      -2.3116444972836057,
+      -2.372461904458195
+    ]
+  },
+  {
+    "scenario_id": "test_three_0197",
+    "sample_id": 197,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101900,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      48.30821233969519,
+      -32.94550540883137,
+      -54.85387269660055
+    ],
+    "omega_deg_s": [
+      -2.139833812890158,
+      -0.19648519940542375,
+      -0.690591080533939
+    ]
+  },
+  {
+    "scenario_id": "test_three_0198",
+    "sample_id": 198,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101901,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      37.9616405863396,
+      -46.67153858206017,
+      46.414801548388866
+    ],
+    "omega_deg_s": [
+      2.414742155984176,
+      -0.9856274368071549,
+      4.299461546742766
+    ]
+  },
+  {
+    "scenario_id": "test_three_0199",
+    "sample_id": 199,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101902,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -8.464738645196888,
+      -6.386350838910076,
+      -23.606602906062633
+    ],
+    "omega_deg_s": [
+      4.232421898040183,
+      0.8237009096859671,
+      -0.4390176304616533
+    ]
+  },
+  {
+    "scenario_id": "test_three_0200",
+    "sample_id": 200,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101903,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      26.08910446863868,
+      26.442668189058352,
+      17.097332147291198
+    ],
+    "omega_deg_s": [
+      3.434843073035644,
+      -3.8549459697732438,
+      -0.895511615029795
+    ]
+  },
+  {
+    "scenario_id": "test_three_0201",
+    "sample_id": 201,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101904,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      53.78463789768553,
+      10.004722370520454,
+      12.67218639729559
+    ],
+    "omega_deg_s": [
+      -2.627422916076425,
+      0.812603523300087,
+      -1.565495286819778
+    ]
+  },
+  {
+    "scenario_id": "test_three_0202",
+    "sample_id": 202,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101905,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -20.192827158744514,
+      -35.34079091037868,
+      -46.17723929676377
+    ],
+    "omega_deg_s": [
+      -2.508106863819979,
+      0.6182823535445925,
+      -1.6581066685283696
+    ]
+  },
+  {
+    "scenario_id": "test_three_0203",
+    "sample_id": 203,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101906,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -33.673474689376796,
+      -29.686170356789244,
+      -3.679955870957137
+    ],
+    "omega_deg_s": [
+      0.1866456408701742,
+      -3.8482448585343807,
+      -2.2623073282692694
+    ]
+  },
+  {
+    "scenario_id": "test_three_0204",
+    "sample_id": 204,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101907,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -29.631610553311887,
+      43.418605825144695,
+      -22.93372384272397
+    ],
+    "omega_deg_s": [
+      0.7864064898623004,
+      -3.216372467007136,
+      2.3599166300410923
+    ]
+  },
+  {
+    "scenario_id": "test_three_0205",
+    "sample_id": 205,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101908,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -54.354214970475326,
+      -54.0353233683132,
+      30.861332639406925
+    ],
+    "omega_deg_s": [
+      -3.950246536143603,
+      0.28037506632801623,
+      -4.361357577743652
+    ]
+  },
+  {
+    "scenario_id": "test_three_0206",
+    "sample_id": 206,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101909,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      8.200137212038939,
+      -36.71701081035866,
+      37.558643912719916
+    ],
+    "omega_deg_s": [
+      4.380092403189419,
+      4.081395139638449,
+      0.6034209372640431
+    ]
+  },
+  {
+    "scenario_id": "test_three_0207",
+    "sample_id": 207,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101910,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      14.725628175832824,
+      5.858286388096516,
+      -34.45861899036238
+    ],
+    "omega_deg_s": [
+      -3.326867377047773,
+      2.17710803479965,
+      -2.1741708095098122
+    ]
+  },
+  {
+    "scenario_id": "test_three_0208",
+    "sample_id": 208,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101911,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -43.231567982504586,
+      -1.0452463027634522,
+      -0.07087411598688931
+    ],
+    "omega_deg_s": [
+      4.597376409017059,
+      -3.2840008561575984,
+      4.02021974819143
+    ]
+  },
+  {
+    "scenario_id": "test_three_0209",
+    "sample_id": 209,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101912,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -8.772960732778927,
+      -47.726180009126935,
+      -52.39446838146166
+    ],
+    "omega_deg_s": [
+      -3.3083219252843374,
+      -1.1296293903806287,
+      2.9677453398842975
+    ]
+  },
+  {
+    "scenario_id": "test_three_0210",
+    "sample_id": 210,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101913,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -43.05507366107138,
+      -1.992218650868125,
+      -48.27723481164796
+    ],
+    "omega_deg_s": [
+      2.4226673389432065,
+      2.7423862920126316,
+      3.017869666392997
+    ]
+  },
+  {
+    "scenario_id": "test_three_0211",
+    "sample_id": 211,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101914,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -9.426402553422903,
+      -42.03539612018062,
+      5.798029407737147
+    ],
+    "omega_deg_s": [
+      1.9917299933695753,
+      0.44527740434813357,
+      -2.546423097482502
+    ]
+  },
+  {
+    "scenario_id": "test_three_0212",
+    "sample_id": 212,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101915,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -32.50213965902887,
+      -33.697149249097706,
+      7.477051562218705
+    ],
+    "omega_deg_s": [
+      -2.697444013305504,
+      -4.135402592769049,
+      0.1263972528780899
+    ]
+  },
+  {
+    "scenario_id": "test_three_0213",
+    "sample_id": 213,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101916,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      43.41381759576899,
+      -15.328958365710278,
+      58.40236467326443
+    ],
+    "omega_deg_s": [
+      2.788809556667159,
+      -3.8982988360662727,
+      -4.026408825126532
+    ]
+  },
+  {
+    "scenario_id": "test_three_0214",
+    "sample_id": 214,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101917,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      1.31865590296173,
+      54.21502663174307,
+      -34.49994065337977
+    ],
+    "omega_deg_s": [
+      1.9892264860723339,
+      3.557757367471172,
+      4.642054521209104
+    ]
+  },
+  {
+    "scenario_id": "test_three_0215",
+    "sample_id": 215,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101918,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      47.484651492692024,
+      -37.85044884486882,
+      41.366248595164066
+    ],
+    "omega_deg_s": [
+      2.251951112432222,
+      -1.4120365763276386,
+      -4.386600382645866
+    ]
+  },
+  {
+    "scenario_id": "test_three_0216",
+    "sample_id": 216,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101919,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -49.24131225738064,
+      -10.988164414696044,
+      22.426154815960857
+    ],
+    "omega_deg_s": [
+      3.532395285391079,
+      1.4461089910803429,
+      -0.9278804823362119
+    ]
+  },
+  {
+    "scenario_id": "test_three_0217",
+    "sample_id": 217,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101920,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -0.4490991432926563,
+      -41.08513293415375,
+      52.106554190642484
+    ],
+    "omega_deg_s": [
+      -4.273745924033541,
+      4.319819645520095,
+      -1.796792609017773
+    ]
+  },
+  {
+    "scenario_id": "test_three_0218",
+    "sample_id": 218,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101921,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -32.620677378300826,
+      45.02634915564006,
+      -43.040559151781935
+    ],
+    "omega_deg_s": [
+      -4.284007051215672,
+      0.20166274524552463,
+      0.3284749530309039
+    ]
+  },
+  {
+    "scenario_id": "test_three_0219",
+    "sample_id": 219,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101922,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      17.254233104889835,
+      -47.65221849799926,
+      -32.2713377102087
+    ],
+    "omega_deg_s": [
+      -1.6149284886243431,
+      2.236908253055309,
+      0.2920028355587707
+    ]
+  },
+  {
+    "scenario_id": "test_three_0220",
+    "sample_id": 220,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101923,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      37.474939871031765,
+      9.326632648674547,
+      51.19601163386167
+    ],
+    "omega_deg_s": [
+      -4.323734241417691,
+      -0.6049350648758525,
+      4.567218715181651
+    ]
+  },
+  {
+    "scenario_id": "test_three_0221",
+    "sample_id": 221,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101924,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -2.0351991881261995,
+      -20.207954251787875,
+      -24.093576764813527
+    ],
+    "omega_deg_s": [
+      4.256282348684373,
+      2.284457371722058,
+      -0.8764191561527177
+    ]
+  },
+  {
+    "scenario_id": "test_three_0222",
+    "sample_id": 222,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101925,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      23.27011787010278,
+      -14.013618540906407,
+      -41.4457169608499
+    ],
+    "omega_deg_s": [
+      2.7869099041274206,
+      -0.0648102894310334,
+      -3.7894611218943863
+    ]
+  },
+  {
+    "scenario_id": "test_three_0223",
+    "sample_id": 223,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101926,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -8.915677284535548,
+      16.521012743728292,
+      9.337833266365791
+    ],
+    "omega_deg_s": [
+      2.1318619495752102,
+      -3.8037990346730757,
+      -3.878457355359882
+    ]
+  },
+  {
+    "scenario_id": "test_three_0224",
+    "sample_id": 224,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101927,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      52.20883063517215,
+      26.20190748002115,
+      38.09302524773888
+    ],
+    "omega_deg_s": [
+      -4.6492489305132345,
+      0.5276114147785442,
+      1.5817993717777332
+    ]
+  },
+  {
+    "scenario_id": "test_three_0225",
+    "sample_id": 225,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101928,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -23.860976525068352,
+      50.60990479297615,
+      35.509584536284535
+    ],
+    "omega_deg_s": [
+      -3.6711374627807114,
+      -0.5217043439224156,
+      -0.920425656889102
+    ]
+  },
+  {
+    "scenario_id": "test_three_0226",
+    "sample_id": 226,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101929,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      20.189246347255704,
+      34.26945495595416,
+      0.059227913174268565
+    ],
+    "omega_deg_s": [
+      4.342310273321825,
+      -1.6904072963828698,
+      4.508949887084086
+    ]
+  },
+  {
+    "scenario_id": "test_three_0227",
+    "sample_id": 227,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101930,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      15.085076699941013,
+      -11.585295652091602,
+      39.350304690850365
+    ],
+    "omega_deg_s": [
+      -4.8302990593261255,
+      -1.9870059987972102,
+      1.1445809789852914
+    ]
+  },
+  {
+    "scenario_id": "test_three_0228",
+    "sample_id": 228,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101931,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      42.10682921044936,
+      34.80005023812528,
+      27.06237859807206
+    ],
+    "omega_deg_s": [
+      4.075936243786698,
+      -1.1979071225667735,
+      0.07105448551918592
+    ]
+  },
+  {
+    "scenario_id": "test_three_0229",
+    "sample_id": 229,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101932,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -15.351015402722695,
+      22.805892289952922,
+      -31.115613856785526
+    ],
+    "omega_deg_s": [
+      -1.076011641389747,
+      -4.384098831446078,
+      4.243072290500491
+    ]
+  },
+  {
+    "scenario_id": "test_three_0230",
+    "sample_id": 230,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101933,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -13.389753274073833,
+      6.792124685398775,
+      -36.02101962818053
+    ],
+    "omega_deg_s": [
+      3.5917372618866015,
+      -1.735274352147247,
+      -3.792317764098365
+    ]
+  },
+  {
+    "scenario_id": "test_three_0231",
+    "sample_id": 231,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101934,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      55.89760351730018,
+      45.9400338144916,
+      57.0251991811995
+    ],
+    "omega_deg_s": [
+      -4.20603995764358,
+      2.3488071993398005,
+      -0.8235509326400416
+    ]
+  },
+  {
+    "scenario_id": "test_three_0232",
+    "sample_id": 232,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101935,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      14.044507840032892,
+      17.057199599956334,
+      -14.974147289356232
+    ],
+    "omega_deg_s": [
+      -3.290677843202329,
+      -3.2330364459441876,
+      -4.778277762957802
+    ]
+  },
+  {
+    "scenario_id": "test_three_0233",
+    "sample_id": 233,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101936,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      10.768773791304781,
+      20.97152027505497,
+      -9.349289152123433
+    ],
+    "omega_deg_s": [
+      -4.65733753120789,
+      2.557941406331585,
+      -1.5517106138018297
+    ]
+  },
+  {
+    "scenario_id": "test_three_0234",
+    "sample_id": 234,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101937,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -41.7130872206621,
+      25.24572532651399,
+      -31.367876486874803
+    ],
+    "omega_deg_s": [
+      -1.2702088307696071,
+      -1.6794417654996572,
+      2.862406567307172
+    ]
+  },
+  {
+    "scenario_id": "test_three_0235",
+    "sample_id": 235,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101938,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -42.82186764083773,
+      -34.52403359855239,
+      47.667557069272135
+    ],
+    "omega_deg_s": [
+      4.293546240333004,
+      -0.4120683313353277,
+      3.080198573656121
+    ]
+  },
+  {
+    "scenario_id": "test_three_0236",
+    "sample_id": 236,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101939,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -21.681135421822148,
+      -45.196438460863405,
+      3.244567973372803
+    ],
+    "omega_deg_s": [
+      -1.6137136171036168,
+      1.2364276854126803,
+      -4.361796257992589
+    ]
+  },
+  {
+    "scenario_id": "test_three_0237",
+    "sample_id": 237,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101940,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      0.39470082453905064,
+      27.46595404858158,
+      -7.250844108410234
+    ],
+    "omega_deg_s": [
+      3.7821982410032753,
+      -2.977258944446275,
+      3.2067359379851688
+    ]
+  },
+  {
+    "scenario_id": "test_three_0238",
+    "sample_id": 238,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101941,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -4.633672301402044,
+      -9.98494168088228,
+      -29.217128382334362
+    ],
+    "omega_deg_s": [
+      0.971573344565714,
+      -2.447663419269687,
+      -0.3578202102502175
+    ]
+  },
+  {
+    "scenario_id": "test_three_0239",
+    "sample_id": 239,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101942,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -5.794277626598685,
+      -52.06119929679671,
+      3.1657722002431115
+    ],
+    "omega_deg_s": [
+      -4.921025057657639,
+      -3.4299464026647684,
+      4.981901107290485
+    ]
+  },
+  {
+    "scenario_id": "test_three_0240",
+    "sample_id": 240,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101943,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -27.033756538892263,
+      -11.109396539943972,
+      22.969683456668662
+    ],
+    "omega_deg_s": [
+      -3.9787979547235883,
+      -4.025141266993115,
+      -4.2802154588290975
+    ]
+  },
+  {
+    "scenario_id": "test_three_0241",
+    "sample_id": 241,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101944,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      45.503670062621126,
+      -18.202851095298215,
+      45.195593264091514
+    ],
+    "omega_deg_s": [
+      2.286103740032001,
+      3.9952769635786662,
+      -4.2561814020612365
+    ]
+  },
+  {
+    "scenario_id": "test_three_0242",
+    "sample_id": 242,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101945,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -50.00556265591673,
+      6.381664644147762,
+      53.62029209827534
+    ],
+    "omega_deg_s": [
+      3.7625286934249687,
+      -4.872603696750648,
+      3.433582111774175
+    ]
+  },
+  {
+    "scenario_id": "test_three_0243",
+    "sample_id": 243,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101946,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      49.927380020613995,
+      41.382400804233555,
+      -16.300471439583724
+    ],
+    "omega_deg_s": [
+      3.364337461555033,
+      4.532988057544705,
+      -3.5384103368060735
+    ]
+  },
+  {
+    "scenario_id": "test_three_0244",
+    "sample_id": 244,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101947,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -24.044178742565393,
+      4.0252687665329745,
+      -19.11676381668766
+    ],
+    "omega_deg_s": [
+      0.8820402598022357,
+      0.5203388482070839,
+      -3.6276078855181404
+    ]
+  },
+  {
+    "scenario_id": "test_three_0245",
+    "sample_id": 245,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101948,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      10.090772077016226,
+      3.4202118273172175,
+      5.110037696050881
+    ],
+    "omega_deg_s": [
+      -0.16112762183233986,
+      -2.4738723371253437,
+      4.462194645210017
+    ]
+  },
+  {
+    "scenario_id": "test_three_0246",
+    "sample_id": 246,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101949,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -41.65578530182004,
+      23.292349652398954,
+      13.67039290209955
+    ],
+    "omega_deg_s": [
+      -3.990217876304183,
+      4.9081124904406295,
+      3.807293808451403
+    ]
+  },
+  {
+    "scenario_id": "test_three_0247",
+    "sample_id": 247,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101950,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      49.133060454068655,
+      38.51750286220768,
+      -18.913933807753367
+    ],
+    "omega_deg_s": [
+      -3.3700179590866277,
+      -0.014615565818269616,
+      -3.2819010367901735
+    ]
+  },
+  {
+    "scenario_id": "test_three_0248",
+    "sample_id": 248,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101951,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      42.948174368748894,
+      -55.17761801249029,
+      -24.797165796550217
+    ],
+    "omega_deg_s": [
+      2.8618710752638528,
+      4.3299780584737135,
+      -3.4700905203964885
+    ]
+  },
+  {
+    "scenario_id": "test_three_0249",
+    "sample_id": 249,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101952,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      24.888866488118992,
+      37.25037504483669,
+      -4.486589359028123
+    ],
+    "omega_deg_s": [
+      0.7779938492702829,
+      -0.7326240284316228,
+      -3.9947868947916954
+    ]
+  },
+  {
+    "scenario_id": "test_three_0250",
+    "sample_id": 250,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101953,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -11.079743038819217,
+      39.609306567578614,
+      -11.082530863683566
+    ],
+    "omega_deg_s": [
+      2.1413746892176757,
+      0.5220038183945448,
+      -4.858224864037457
+    ]
+  },
+  {
+    "scenario_id": "test_three_0251",
+    "sample_id": 251,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101954,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      9.748547194648125,
+      7.034817173304475,
+      -20.81892267755753
+    ],
+    "omega_deg_s": [
+      -0.17809009448979118,
+      -1.116673096903844,
+      3.8478311134169783
+    ]
+  },
+  {
+    "scenario_id": "test_three_0252",
+    "sample_id": 252,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101955,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -24.525615565101845,
+      -22.10022594402973,
+      -18.674298211657685
+    ],
+    "omega_deg_s": [
+      2.2370079283663333,
+      -0.2924724326306336,
+      -2.403639220882284
+    ]
+  },
+  {
+    "scenario_id": "test_three_0253",
+    "sample_id": 253,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101956,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      -13.904261203362765,
+      18.148828577680362,
+      2.650549975451085
+    ],
+    "omega_deg_s": [
+      -4.891663939716755,
+      -2.204471426810838,
+      0.697449958398618
+    ]
+  },
+  {
+    "scenario_id": "test_three_0254",
+    "sample_id": 254,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101957,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      39.3076515404413,
+      1.130453072096273,
+      -22.428382504516094
+    ],
+    "omega_deg_s": [
+      -1.622379979174855,
+      1.210762125860036,
+      -1.7032211769716543
+    ]
+  },
+  {
+    "scenario_id": "test_three_0255",
+    "sample_id": 255,
+    "axis": "three",
+    "split": "test",
+    "inertia_scale": 1.0,
+    "noise_seed": 2026101958,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "euler_deg": [
+      4.882670950434601,
+      -5.42632890492979,
+      -57.04757905623593
+    ],
+    "omega_deg_s": [
+      -4.793356680349664,
+      1.9013860809419416,
+      -0.3469873066025926
+    ]
+  }
+]

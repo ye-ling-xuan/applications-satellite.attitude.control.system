@@ -1,0 +1,2167 @@
+{
+  "created_utc": "2026-10-17T08:30:42.129205+00:00",
+  "scope": "new research directory only; excludes this inventory and Python/pytest caches",
+  "formal_experiment_inputs_unchanged": true,
+  "deployment_freeze_sha256": "b4ba3213c0988d2f3310cbc7a4a99dbece4c03aa61c49645665e1083eaab10ef",
+  "independent_verification_sha256": "ca237c55f830b6b0e83b309564dce6732e62b8dc30e3ac6e9e3f16562a9a6c05",
+  "independent_verification_status": "passed",
+  "file_count": 431,
+  "total_bytes": 601801016,
+  "files": [
+    {
+      "path": "01_实验方案/development_single.json",
+      "bytes": 13317,
+      "sha256": "88dcde968031fdb1182e57aa297af0c5ac55707c24521f370bad1d8764b945b7"
+    },
+    {
+      "path": "01_实验方案/development_three.json",
+      "bytes": 17707,
+      "sha256": "4f5be55e6f0e44748243c2c00980e6e00b72b7812982125236a9439328aac4ff"
+    },
+    {
+      "path": "01_实验方案/test_single.json",
+      "bytes": 103049,
+      "sha256": "f6cea6316ccdd9a445d4c6f00526d4ac47ef90a8ff014e7f9cedd3fceb45be4a"
+    },
+    {
+      "path": "01_实验方案/test_three.json",
+      "bytes": 138378,
+      "sha256": "60f4b7b449a171a144a864d5957138b0b0638ccc5c72e292d3c324f7308b569e"
+    },
+    {
+      "path": "01_实验方案/validation_single.json",
+      "bytes": 39726,
+      "sha256": "1579440d83974eb59dca2afa11173f46256fb5d8fd1829e7577faab87bf411a5"
+    },
+    {
+      "path": "01_实验方案/validation_three.json",
+      "bytes": 53001,
+      "sha256": "62e2eb1e4107add6f756777306ba88e6619fbbe8cbc135f848fb8b683389ff16"
+    },
+    {
+      "path": "01_实验方案/任务定义.json",
+      "bytes": 1688,
+      "sha256": "a0af2e54f6de5b8d15f474b16e56adc2691eda1bc230fc3a28c7c46a068014c5"
+    },
+    {
+      "path": "01_实验方案/研究方案.md",
+      "bytes": 3803,
+      "sha256": "ceb31864bb83a44590f0e8a828f68a6724119c6730aa106c0b4c700500f606fd"
+    },
+    {
+      "path": "01_实验方案/部署冻结.json",
+      "bytes": 43936,
+      "sha256": "b4ba3213c0988d2f3310cbc7a4a99dbece4c03aa61c49645665e1083eaab10ef"
+    },
+    {
+      "path": "02_PID整定/implementation_equivalence.json",
+      "bytes": 332,
+      "sha256": "11e7edee6996181f11d2665bd6b67c7e273980450b6111036ed87286754f2c36"
+    },
+    {
+      "path": "02_PID整定/README.md",
+      "bytes": 5296,
+      "sha256": "e3669e79b114d6c2c8729ea3be81c2f25ad2810e2cbf49c9959d7182b6c6f916"
+    },
+    {
+      "path": "02_PID整定/search_design.json",
+      "bytes": 1348,
+      "sha256": "a0edb37a96d4295c49fee9a2947226cebb72be3fc41147819f012bdd4f844968"
+    },
+    {
+      "path": "02_PID整定/selected_pid.json",
+      "bytes": 13720,
+      "sha256": "f6a4b95549882d07d8f257422ecbaaffa4fd43cecc3e7744dd4aa156982af839"
+    },
+    {
+      "path": "02_PID整定/selected_validation_recomputation.json",
+      "bytes": 3480,
+      "sha256": "061dba757dcbb70030a6b05769a7e8bfa5b50fdbc09c32135d2a3db2d1db1011"
+    },
+    {
+      "path": "02_PID整定/single/broad_development_candidates.json",
+      "bytes": 144939,
+      "sha256": "03d83f9dabdd38b6feed2664c83a9d8905fffbbf9f40ad115d415f3fff90bd8c"
+    },
+    {
+      "path": "02_PID整定/single/broad_development_ranking.csv",
+      "bytes": 78270,
+      "sha256": "993e9ab9c14a17b2dc31ac3a1289b2409f80a8271f9f4f96a7b28f37f9070803"
+    },
+    {
+      "path": "02_PID整定/single/refine1_validation_candidates.json",
+      "bytes": 114475,
+      "sha256": "a28f23b95641aac95e05244b5afcbe6dbf3a8491af7519671287c5e1edbb381c"
+    },
+    {
+      "path": "02_PID整定/single/refine1_validation_episodes.csv",
+      "bytes": 14173076,
+      "sha256": "d5c9469b7f334176151b975d8be83e1a230cb9166519cec3499b63431ec9c7cd"
+    },
+    {
+      "path": "02_PID整定/single/refine1_validation_ranking.csv",
+      "bytes": 63008,
+      "sha256": "0f077e8dca3d0ff275377bc242ef2bc0359259d8caed68370a8d445e04611220"
+    },
+    {
+      "path": "02_PID整定/single/refine2_validation_candidates.json",
+      "bytes": 193155,
+      "sha256": "c7b6130253d2af7cc2f14a00d5765eb6129f2a67508ec3d3df0272a34fab5ebe"
+    },
+    {
+      "path": "02_PID整定/single/refine2_validation_episodes.csv",
+      "bytes": 23940857,
+      "sha256": "6c513bb303133fcae06c047a14385e3c7c4982651b76aca37e7aba49a0221cd8"
+    },
+    {
+      "path": "02_PID整定/single/refine2_validation_ranking.csv",
+      "bytes": 106216,
+      "sha256": "8bbd1507ed5bbdeacbe16cad36de6e3b0a83afdb6de3b754c104d8f66ea0ae4c"
+    },
+    {
+      "path": "02_PID整定/single/selected_pid.json",
+      "bytes": 5867,
+      "sha256": "63a8ab1e76d8edca0df84c373f1d38a45889713631eebe2ffb23a440f045b87c"
+    },
+    {
+      "path": "02_PID整定/single/shortlist_validation_candidates.json",
+      "bytes": 36108,
+      "sha256": "0359d1c3931e5e4fbc11d656e984e8cc7084a7fdff843396b1ce6ad963473d94"
+    },
+    {
+      "path": "02_PID整定/single/shortlist_validation_episodes.csv",
+      "bytes": 4482507,
+      "sha256": "7641ecc1c63e34a7b0344a5879b69bb8ff3c42ef13d60536a76d339b49d0f32a"
+    },
+    {
+      "path": "02_PID整定/single/shortlist_validation_ranking.csv",
+      "bytes": 20762,
+      "sha256": "7df5644103e372f1846317dbab67f2c2de412ed4ffa49ccd84ffea526191aaaf"
+    },
+    {
+      "path": "02_PID整定/three/broad_development_candidates.json",
+      "bytes": 556046,
+      "sha256": "be07b33de5b4ce486f4e0d24c5c93e01563e2a7420f72ad68a2209bef349a477"
+    },
+    {
+      "path": "02_PID整定/three/broad_development_ranking.csv",
+      "bytes": 183665,
+      "sha256": "3e262e4c3027db4424f9d330e81e6bc473fb93459d8f888280be74b9259e87c7"
+    },
+    {
+      "path": "02_PID整定/three/refine1_validation_candidates.json",
+      "bytes": 193506,
+      "sha256": "0e30cca57df408c9568e4278918c7f682653c4b86a113af41c337034687e1c0a"
+    },
+    {
+      "path": "02_PID整定/three/refine1_validation_episodes.csv",
+      "bytes": 14287710,
+      "sha256": "723d235a4df03e573c108cbd6ef43653b8a11be73c748b790a5aa72b08af5d64"
+    },
+    {
+      "path": "02_PID整定/three/refine1_validation_ranking.csv",
+      "bytes": 64792,
+      "sha256": "ae7f048002ff19e198889fdc81f863bb2edeed21db01f497d48d1b3ba7110552"
+    },
+    {
+      "path": "02_PID整定/three/refine2_validation_candidates.json",
+      "bytes": 322928,
+      "sha256": "b43cbc95736f41c8f5f49c0fabcb0e619ef5f01e39fcb8f1b8ebe51c0fbe0457"
+    },
+    {
+      "path": "02_PID整定/three/refine2_validation_episodes.csv",
+      "bytes": 23860827,
+      "sha256": "75ebd8ec736b3c2569a289a00238419084d33fb92f1e48e60bef67f2f77e6907"
+    },
+    {
+      "path": "02_PID整定/three/refine2_validation_ranking.csv",
+      "bytes": 108518,
+      "sha256": "06b84dbcb04d3b80b846a42e1e0743a6463af784416a307197a9a7709184edd0"
+    },
+    {
+      "path": "02_PID整定/three/selected_pid.json",
+      "bytes": 6907,
+      "sha256": "68682c2b2c4f464a03e626628141dfc7ea9dda40b00bc6681b32b1549abb8eeb"
+    },
+    {
+      "path": "02_PID整定/three/shortlist_validation_candidates.json",
+      "bytes": 63713,
+      "sha256": "94c11b65fbd610a45691129fab9946e95bcb6f955725e7761696216cd7adeb03"
+    },
+    {
+      "path": "02_PID整定/three/shortlist_validation_episodes.csv",
+      "bytes": 4782091,
+      "sha256": "54f580f910bd119ed641311a23683574978fd3b5d31adab95b142d1fd253c1f1"
+    },
+    {
+      "path": "02_PID整定/three/shortlist_validation_ranking.csv",
+      "bytes": 22241,
+      "sha256": "61015c6dfd4e0948c2f89b7396e38611eba8964d008f8d04648d64c103d3bbb4"
+    },
+    {
+      "path": "02_PID整定/核验_PID选择.py",
+      "bytes": 2318,
+      "sha256": "0b53ea4953fd5df113c69b76874e7c2543c153ec07375e48b298b1955329c1e9"
+    },
+    {
+      "path": "02_PID整定/运行日志.txt",
+      "bytes": 32136,
+      "sha256": "d84eb5e620fb5f44e31b47a24b02e925a91bf4f542d4664f4895cb9333222176"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/best_checkpoint.json",
+      "bytes": 622,
+      "sha256": "e479e95bca6a433d66895cfeee98a7f8678e23be3d725f666114b3d2b8ebd951"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/best_model.zip",
+      "bytes": 247781,
+      "sha256": "d61aa6c72566b233183b8d0278ce2a13b23d17725636d3bf9b08d7633126cf1b"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/checkpoint_0100000.zip",
+      "bytes": 247765,
+      "sha256": "3e0eeeaed8465d28403dd0e81a7be3c4b9c832cfb062fcb56cf703d75ad5978e"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/checkpoint_0200000.zip",
+      "bytes": 247781,
+      "sha256": "d61aa6c72566b233183b8d0278ce2a13b23d17725636d3bf9b08d7633126cf1b"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/final_model.zip",
+      "bytes": 247762,
+      "sha256": "3a1746e5fb7b2333ee9d0107837978d7f420a5867ab5a21e342dbab4262dfb63"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/monitor_0.monitor.csv",
+      "bytes": 2608,
+      "sha256": "efd43e2c23b59be028fb20fa6c8d8de06e96ee585426f328026b6924d72235f4"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/monitor_1.monitor.csv",
+      "bytes": 2668,
+      "sha256": "8d02224110c142361920b46cfaee4ba53633d44ab3b109b19914baf0d59de0d8"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/monitor_2.monitor.csv",
+      "bytes": 2605,
+      "sha256": "e9cf6ef9f566e684612177f8c65adcd6b60d558330171f64da2c9451fc507063"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/monitor_3.monitor.csv",
+      "bytes": 2741,
+      "sha256": "a9f5a7c35e126d7d175b5649508fa13091f335163ac79d8536e45eeaceb728aa"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/monitor_4.monitor.csv",
+      "bytes": 2679,
+      "sha256": "f375362debbf31e45bc3507888d04be48d82aa540128d2355b1435dd96192f2b"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/monitor_5.monitor.csv",
+      "bytes": 2682,
+      "sha256": "9089a7d02f05fe3aff1ec0ebdc0a0241084d33cb72126d131f9978e5d76f1291"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/monitor_6.monitor.csv",
+      "bytes": 2546,
+      "sha256": "9c609463da7f7822e65056d462d38bb29fc57bb83ca1bbb7d3b286596dad626b"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/monitor_7.monitor.csv",
+      "bytes": 2671,
+      "sha256": "bb829b30ec92c4ac10e26f19ac62d9e93244f6cad299e6ce2230b1f4a7503d5c"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/session_status.json",
+      "bytes": 951,
+      "sha256": "3d29f2e617b85f6652bc2b55848e51a6c20c89bdc841a3fb54eda8721114602e"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/training_initial_states.csv",
+      "bytes": 29634,
+      "sha256": "30a03e4294e96e61ac085f09263ac9c728b5916c221abdb9c305dbcebdc43b05"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/training_manifest.json",
+      "bytes": 2542,
+      "sha256": "c27696ed748a200bbf6f69224acec4ae018b609e9a355b93a5c14914243c2294"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/training_metadata.json",
+      "bytes": 4691,
+      "sha256": "9786d35ba1161ec44d9d9b8d4c4621b7e56d4c373ea241307d49b24f5e20dba2"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/validation_episode_metrics.csv",
+      "bytes": 98065,
+      "sha256": "c6e6233debd362ef034cf26e09ec2f3498f828f9965ddfddab38224567e286bc"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/validation_history.csv",
+      "bytes": 360,
+      "sha256": "45ef07ecb168b6f93fb45042eaf170a11169ef8702f9a10ce0f6f0785ac7d548"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_A/seed_901/validation_scenarios.json",
+      "bytes": 39726,
+      "sha256": "1579440d83974eb59dca2afa11173f46256fb5d8fd1829e7577faab87bf411a5"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/best_checkpoint.json",
+      "bytes": 620,
+      "sha256": "24fdbff3e258c14210e70af776fb95e8ed1e93e0b087fa8a1e82b7b3b73ba082"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/best_model.zip",
+      "bytes": 247725,
+      "sha256": "c3484f80d514534d5af6873bc05b76f58db509d01e11a2079eda800c8faee663"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/checkpoint_0100000.zip",
+      "bytes": 247725,
+      "sha256": "daeae8cd47b7e62d9e2b7bb07078f08775bc2988e06f94fb53557f96fa09340d"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/checkpoint_0200000.zip",
+      "bytes": 247725,
+      "sha256": "d5fc46f5ae7f88844d13221a9b0e8ad715879a41aa7526f3b67f01834a41b564"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/final_model.zip",
+      "bytes": 247706,
+      "sha256": "f1368dd4b62fbb264864113ab499e2a47826261036d050808d0359451203812c"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/monitor_0.monitor.csv",
+      "bytes": 3872,
+      "sha256": "5516ba34e754f54307255242fb762d8644a0852c37012d342869576c5e61ad59"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/monitor_1.monitor.csv",
+      "bytes": 3767,
+      "sha256": "2c7b9c53335f3b7f93945cf69f6d9321443520cd0f397da3e4dd8f900104886f"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/monitor_2.monitor.csv",
+      "bytes": 3831,
+      "sha256": "acd97befc582ac6d391bae4785ad2918eb7f34e6909fe820a26f230a0b6dd53a"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/monitor_3.monitor.csv",
+      "bytes": 3807,
+      "sha256": "19f2dc015da79298a0813a270eb1b9f8259de26faa0c47b86648526738a2f23e"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/monitor_4.monitor.csv",
+      "bytes": 3803,
+      "sha256": "3a036d9d3fcabb72a383906b9bdd9cce22edb509c5e6b45ff83c452d0d0f376d"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/monitor_5.monitor.csv",
+      "bytes": 3831,
+      "sha256": "62fa0206f0dab72af2eec9498ad92f3e1c3020e8eca3279ac732bfec90352a49"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/monitor_6.monitor.csv",
+      "bytes": 3733,
+      "sha256": "0101105761fea56e7053caa47aacb20a1414348a38c4b2e9a1ea9b079a3c7462"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/monitor_7.monitor.csv",
+      "bytes": 4107,
+      "sha256": "d4ad89d8c9910b2252365ea33f7e3d4c6bbf1dc543c5b47d38c836ebabe277f5"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/session_status.json",
+      "bytes": 949,
+      "sha256": "dbb05833a6c61421d5d5a22debc239ef84111e116d4d23d2dce6732314908364"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/training_initial_states.csv",
+      "bytes": 42783,
+      "sha256": "180d3e5ca02af0d472e340a1554b10c5e0ba5c61c1521372a96047049d2ad4dc"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/training_manifest.json",
+      "bytes": 2978,
+      "sha256": "6432ea18ea0e1d27ee574922dca283eb80fe84521cfd4a864f4ae6a47fa03c5d"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/training_metadata.json",
+      "bytes": 5125,
+      "sha256": "d582551f66830937a1617dcf7be628a48e0a4da7a38c2ba61287aa74547decec"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/validation_episode_metrics.csv",
+      "bytes": 96700,
+      "sha256": "440f2d344eecff6a7381b7cd429796ddd8ab1f8ae8fb1f47e90a5ed9870d1167"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/validation_history.csv",
+      "bytes": 358,
+      "sha256": "8197f35b32a0ab8fb896ec8d7b6d5378144a6392fff38735390f47fb245ecc30"
+    },
+    {
+      "path": "03_SAC训练/development/single/config_B/seed_902/validation_scenarios.json",
+      "bytes": 39726,
+      "sha256": "1579440d83974eb59dca2afa11173f46256fb5d8fd1829e7577faab87bf411a5"
+    },
+    {
+      "path": "03_SAC训练/development/source_A.py",
+      "bytes": 19337,
+      "sha256": "77a070400b146daf9692ee34da9baf28389ee83b37ed6ae8a07cfc5bd14d3b4c"
+    },
+    {
+      "path": "03_SAC训练/development/source_B.py",
+      "bytes": 20332,
+      "sha256": "2f14c95743d752b394b3e933428069d97731c01d727ab505767917798d59b7df"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/best_checkpoint.json",
+      "bytes": 613,
+      "sha256": "9ee1ff965f2c2de198003f486c47fa21e7288d8eec16d36fe81a08eee69ad709"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/best_model.zip",
+      "bytes": 266644,
+      "sha256": "1f4045838262b051c1bd0fc6da7c4e621c7477463317318fbd0e440d9e7f0a87"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/checkpoint_0100000.zip",
+      "bytes": 266644,
+      "sha256": "bbfd8fc8f6d739128a3a8acc6162e8063946b9640792254ebff982dccb284058"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/checkpoint_0200000.zip",
+      "bytes": 266752,
+      "sha256": "df61a16c6d7eec8ee118aed565bb0a3d4e4158e60aa6fa3ba4c56ee5d0da3b22"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/final_model.zip",
+      "bytes": 266733,
+      "sha256": "e70ae457541309a628a66a2cfe6be07b916e69746b3fbbbdbbb5049f9c2f67cd"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/monitor_0.monitor.csv",
+      "bytes": 3496,
+      "sha256": "74b419036d6d7800fad68ff97f66b7f5e7ca4dee7c09524f198dfc5dcc842465"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/monitor_1.monitor.csv",
+      "bytes": 3289,
+      "sha256": "b1c9935bc25cc59ed2024ba8af084bb32f8a0aecb6ed314ac4f190f73b1a9bdc"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/monitor_2.monitor.csv",
+      "bytes": 3556,
+      "sha256": "bf94fe85c7c9b4cf059424849981b30f9012cc59ba235f8cc9f804a4d2f67e03"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/monitor_3.monitor.csv",
+      "bytes": 3424,
+      "sha256": "3788501f476b8703cfc32af89186f433227b24417c6acd66091653663568ba1e"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/monitor_4.monitor.csv",
+      "bytes": 3213,
+      "sha256": "9b12570f55b84311c713df24529f6a999d5dbc3e76d3c171d3ed3c3bec283bdf"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/monitor_5.monitor.csv",
+      "bytes": 3429,
+      "sha256": "345f105dc2b7bfab886c473860e67ca8389234934e60dbf174d4e4f47ad46d35"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/monitor_6.monitor.csv",
+      "bytes": 3387,
+      "sha256": "8c1f88c72192439deb952500202ad6fee618a4581eccd1ca923ff65f513b25ab"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/monitor_7.monitor.csv",
+      "bytes": 3344,
+      "sha256": "6abf464a4288881c39282fdcaca87ec2cafe58732005a4bc9418786402f2dc29"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/session_status.json",
+      "bytes": 941,
+      "sha256": "df89fb08c44970d72a7af26a113345ac8d16cd4c7a9dd24ab190efa16e0f7afd"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/training_initial_states.csv",
+      "bytes": 102495,
+      "sha256": "d2e6bd1d3f9ca59c03da75a0eeeee5ce752ce51c6ce0004f1845cd47c8427673"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/training_manifest.json",
+      "bytes": 2542,
+      "sha256": "eaa0644c93c12e76fd4e31bb177b6846f868581c51f5f2452d3fb16210b0bda6"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/training_metadata.json",
+      "bytes": 4682,
+      "sha256": "48a3fdc7103dad2659c0f2ca965684c5b25db7eb70603f226dc9c3290cd7d9d6"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/validation_episode_metrics.csv",
+      "bytes": 96733,
+      "sha256": "bcae968a9b95fa393843eae865381d31e0d7205fcc09307f15885412344e436b"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/validation_history.csv",
+      "bytes": 360,
+      "sha256": "5045fd9cfd6110e2b06ea119a95bec7f7e6be7282ce1a99220415856c464c86e"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_A/seed_901/validation_scenarios.json",
+      "bytes": 53001,
+      "sha256": "62e2eb1e4107add6f756777306ba88e6619fbbe8cbc135f848fb8b683389ff16"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/best_checkpoint.json",
+      "bytes": 619,
+      "sha256": "27628b9a39426827e44c730bb56f75d8ae33d0cffe30e9ca38da972ecfc0f3cb"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/best_model.zip",
+      "bytes": 266744,
+      "sha256": "7ca5df997a569f8e39be704083bffe1c09b3cd5b32a9ec679ffe5d93553b7ed5"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/checkpoint_0100000.zip",
+      "bytes": 266700,
+      "sha256": "84b14eb0e7eb29f362358cec2c59463b7f187aa60222e9f010885824ee1aabbd"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/checkpoint_0200000.zip",
+      "bytes": 266744,
+      "sha256": "b429df03339bafc9980917a06d7d9c10bca24801e11ab04326fdd38218b2f00a"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/final_model.zip",
+      "bytes": 266725,
+      "sha256": "2fdfd748892571685fe15b09f73ed6eecf6097bea03d673f97fabfe54e227126"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/monitor_0.monitor.csv",
+      "bytes": 2411,
+      "sha256": "150747c1252bc32d13885ec9b9303b0e723b5420cd23a78407f2d649d5687285"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/monitor_1.monitor.csv",
+      "bytes": 2206,
+      "sha256": "fe319968579f4d95c48de4cdb0d11121b60b4b13078e147ca4dd0ea23ff842bc"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/monitor_2.monitor.csv",
+      "bytes": 2173,
+      "sha256": "77f98054817b4c5435fbac44a4b3f72de21a5daddf5acff32f20a2211ec5de1e"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/monitor_3.monitor.csv",
+      "bytes": 2236,
+      "sha256": "0ef1338015df2323577e0b6889cebc710613dc4640dec91da2a09e7cf1dd7879"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/monitor_4.monitor.csv",
+      "bytes": 2177,
+      "sha256": "36c80d26675865a9169cbf7923656f36089274cda4ac65ccce16ead4efae7837"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/monitor_5.monitor.csv",
+      "bytes": 2206,
+      "sha256": "8b9f4db46fcf65d76405129ad3d12f138ae254366722c7be143f892c5a3c53ae"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/monitor_6.monitor.csv",
+      "bytes": 2096,
+      "sha256": "3198981a2814f85f1b7a76db1c4c7fb33ed01f4513775dede0563c5ad6b0eba9"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/monitor_7.monitor.csv",
+      "bytes": 2067,
+      "sha256": "2f48f88b192fb54d2ab967b93012fbf4063163413ca818b03f991a864f1a43dd"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/session_status.json",
+      "bytes": 947,
+      "sha256": "fc3f9b11bd26a9531f8c58d4cede405a518b2035d0be024bd173a02312c622b3"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/training_initial_states.csv",
+      "bytes": 66284,
+      "sha256": "44ba30a7bf9dd81384e22e24c411142a81ddfc40ad96906d9129547360b5061a"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/training_manifest.json",
+      "bytes": 2978,
+      "sha256": "d29ef54abd5a5d5b53866bde0b11abf1574589aaa59d23e25ecb197547e169f5"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/training_metadata.json",
+      "bytes": 5124,
+      "sha256": "a05caca2a61d6250bb11c384c71c1e1f9374c58421abb446b54d393f02f41e2f"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/validation_episode_metrics.csv",
+      "bytes": 96978,
+      "sha256": "29566f973c82209c940d087c09689a23b13054b210d477aae1ffe0b33513a89a"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/validation_history.csv",
+      "bytes": 360,
+      "sha256": "511ccba4f66a3f830e29ab7d4168fc1993a7502b5d1157d2730bd2e53c905a27"
+    },
+    {
+      "path": "03_SAC训练/development/three/config_B/seed_902/validation_scenarios.json",
+      "bytes": 53001,
+      "sha256": "62e2eb1e4107add6f756777306ba88e6619fbbe8cbc135f848fb8b683389ff16"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/best_checkpoint.json",
+      "bytes": 619,
+      "sha256": "14aa92d3dfeda205ca87c868a3522dba5aa4ec4ac9d295132d9e5cda00c6a703"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/best_model.zip",
+      "bytes": 247768,
+      "sha256": "6fb111928854312960a8ad772701bcb4a72294b32f74255f9a6d60fa5a12c7e0"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/checkpoint_0100000.zip",
+      "bytes": 247766,
+      "sha256": "6b4ae60eed1d13f3476a6de5fc18d61271129f25156a818c93d4fc016feef28d"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/checkpoint_0200000.zip",
+      "bytes": 247767,
+      "sha256": "ea5c9935c35490737ade3c4e127a9a72ad04d37b1f4ad5c6eb3516e67c5f8d1d"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/checkpoint_0300000.zip",
+      "bytes": 247767,
+      "sha256": "87ba3f1e1ceaa7c5c75c7df5524cd333d483b4064c0d309951486707bca101d1"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/checkpoint_0400000.zip",
+      "bytes": 247768,
+      "sha256": "6fb111928854312960a8ad772701bcb4a72294b32f74255f9a6d60fa5a12c7e0"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/checkpoint_0500000.zip",
+      "bytes": 247768,
+      "sha256": "5e5b81beb772e412f69e986f2c57790d72d79914380736bc174d3ba8a8d5dd4c"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/checkpoint_0600000.zip",
+      "bytes": 247779,
+      "sha256": "ac87998c45d5ec801b47324978e77a935904b42c644a79775056957048ecd541"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/checkpoint_0700000.zip",
+      "bytes": 247779,
+      "sha256": "e8b5064a7a0efd1bc237acca6f5be7645fb1b3f603d18d8ef7b2370d6a8476f3"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/checkpoint_0800000.zip",
+      "bytes": 247779,
+      "sha256": "d6bd75f95f71fdb806b749eff2567c44ad744cd546727306b7fd464adfcdbb3e"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/checkpoint_0900000.zip",
+      "bytes": 247779,
+      "sha256": "e952cc92d2fbdd3a51bb6440c0906462f802139f708626ad2c12fcaca138fac3"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/checkpoint_1000000.zip",
+      "bytes": 247779,
+      "sha256": "844e0b1848c4ca63a0c8bf0f49b266b1fe1240ef09c3856afbdb22a3bfcba9c9"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/final_model.zip",
+      "bytes": 247764,
+      "sha256": "c84d4e2d6233b091c6415b04c823957b5b3aeb347b3239dd55cdc9e5540ef343"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/monitor_0.monitor.csv",
+      "bytes": 11577,
+      "sha256": "943e1d23798ffed59997de3b73452a293a465e86d9bcebb706fe33f6af2782d8"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/monitor_1.monitor.csv",
+      "bytes": 11697,
+      "sha256": "035b478488c8d1fb4c861898a5689a5dd83861f82e1de48fe594103ddefdfa7d"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/monitor_2.monitor.csv",
+      "bytes": 11558,
+      "sha256": "0ae618aeaf352f7ba21ab7e1948d8803769f8bccd88aa58173bbdd33e2c96f72"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/monitor_3.monitor.csv",
+      "bytes": 11506,
+      "sha256": "3e118bd12f8c51c5bba7e78e70057f73242af739694cafa7b23ee0d8b501fba3"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/monitor_4.monitor.csv",
+      "bytes": 11657,
+      "sha256": "fafb95f7c60ca1a72dcf272b8008bb636d6334dc00c6e2f08544b263430ceedf"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/monitor_5.monitor.csv",
+      "bytes": 11653,
+      "sha256": "79c776e871c9ed4b0b273dfc6d83c4aea4eaf1236cbca7f4c6df9863a7be7fc0"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/monitor_6.monitor.csv",
+      "bytes": 11781,
+      "sha256": "e5c2fae425360cce13acee802beccbb2d8d41ebc2e66c25fdf37e154b8f4aca8"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/monitor_7.monitor.csv",
+      "bytes": 11631,
+      "sha256": "7fa127c5b8db9232a2093c1a64f8e8111681fbc5e29a1b512a32665c84a0283c"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/optimizer_logs/progress.csv",
+      "bytes": 89256,
+      "sha256": "3f265a7781c47be08a2aaa55f8fdae9598f22ab03d3cf934909e88060278e146"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/session_status.json",
+      "bytes": 944,
+      "sha256": "cd92c3539ce2c7814d15d3ed9bd1b866ae14592d1797f4d3e45da0fa0d523e8d"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py",
+      "bytes": 4965,
+      "sha256": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py",
+      "bytes": 4221,
+      "sha256": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py",
+      "bytes": 21295,
+      "sha256": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/source_snapshot/multi_algorithm_benchmark/envs.py",
+      "bytes": 13898,
+      "sha256": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/source_snapshot/multi_algorithm_benchmark/vector_training.py",
+      "bytes": 15675,
+      "sha256": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/training_initial_states.csv",
+      "bytes": 129361,
+      "sha256": "2ad8a7a8542c1e609881da829d6268fffa253690c1619ec9809937fd603d69cb"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/training_manifest.json",
+      "bytes": 3078,
+      "sha256": "7cc485b54d1512079c321bf07c976ef0c0253d5e737c06df8a5336e2866ac1b5"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/training_metadata.json",
+      "bytes": 6418,
+      "sha256": "02851d3675dafd4c08952738b0bcef281f994519e16b63424146ad84c61e0c02"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/validation_episode_metrics.csv",
+      "bytes": 499048,
+      "sha256": "b37e2f1916100798c9024731da6f4bd6645c05456bc963d0484484f40965c52f"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/validation_history.csv",
+      "bytes": 1381,
+      "sha256": "62036465ab71624f2621d024db52ac4e58647c1ced39bf67ea04b96983151eaf"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_41/validation_scenarios.json",
+      "bytes": 39726,
+      "sha256": "1579440d83974eb59dca2afa11173f46256fb5d8fd1829e7577faab87bf411a5"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/best_checkpoint.json",
+      "bytes": 617,
+      "sha256": "df461d4ab588a83b83dbdb28c6b38a7ec8f0d70a539bb19f72b3f551b440d56f"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/best_model.zip",
+      "bytes": 247779,
+      "sha256": "23ec0aec3b8b5ab7d7e601d30e6d8e8fbf5f8116cc18d8e85b11a17d90f1ec32"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/checkpoint_0100000.zip",
+      "bytes": 247766,
+      "sha256": "a0701ddd4a9ef95890e060ec8764b56631d6fc226f5e7fdb307b6d263ce90eea"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/checkpoint_0200000.zip",
+      "bytes": 247767,
+      "sha256": "d4b1ae7af5818b52bf49bdee3ef2ebddaf06e6ec5cf71fb84acf8f435900d791"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/checkpoint_0300000.zip",
+      "bytes": 247767,
+      "sha256": "6fb21fc4a4c9c37acc20bbf0615bf976843c1bb324f3c36e2a67972b50cecd9d"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/checkpoint_0400000.zip",
+      "bytes": 247768,
+      "sha256": "7dbb91219c055e199d5b3b990e0f15afc1d0adf4aadf33cde63d0164927b02de"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/checkpoint_0500000.zip",
+      "bytes": 247768,
+      "sha256": "bc8ed46f4df454383de6cfe0471e7f4d58f7fca363109e091d0543e83db255d2"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/checkpoint_0600000.zip",
+      "bytes": 247779,
+      "sha256": "6ea11c6bd28b131e5c1a46a1865b92643bd9d9ab6b35857ef01eacddb854a6e8"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/checkpoint_0700000.zip",
+      "bytes": 247779,
+      "sha256": "23ec0aec3b8b5ab7d7e601d30e6d8e8fbf5f8116cc18d8e85b11a17d90f1ec32"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/checkpoint_0800000.zip",
+      "bytes": 247779,
+      "sha256": "ec2e6dbde534255f02bf8e23e528d5a42190639923dfcd1cc5eff1dd650219e9"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/checkpoint_0900000.zip",
+      "bytes": 247779,
+      "sha256": "ba1354926403d274aed6bf20b16a20f1aefedc7d010505b2fa8910fce97a97fe"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/checkpoint_1000000.zip",
+      "bytes": 247779,
+      "sha256": "fd15ab75930071cb61c62252ccd64755ae272095b4e0dd24b78cbb7ffc9f3ce6"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/final_model.zip",
+      "bytes": 247764,
+      "sha256": "96e71d3b0fd570ebea42d4bc6eb67e11d592188e792fc958bca3ab7eee01b56c"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/monitor_0.monitor.csv",
+      "bytes": 11040,
+      "sha256": "7f2bfb89c3da8b499689e79222d8317dd7fe0aa1db4f2982e40e1a00f237969a"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/monitor_1.monitor.csv",
+      "bytes": 11048,
+      "sha256": "b20737f91a71c692693f533f4a398f9b406f3ff2d8372820747767c054bc1022"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/monitor_2.monitor.csv",
+      "bytes": 11041,
+      "sha256": "0f118cc176e406ec7c59b9691d962a788fe3da465121cc66635777c609d2632b"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/monitor_3.monitor.csv",
+      "bytes": 11038,
+      "sha256": "df3bf2d43914b4a21f8479643b1dad88301f2877c763aa5be0b0aa0a1c13f08e"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/monitor_4.monitor.csv",
+      "bytes": 11059,
+      "sha256": "d84d9016f8827a589f573fad5112e36033ee2c2a30e3e7e09181646d231067c0"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/monitor_5.monitor.csv",
+      "bytes": 11048,
+      "sha256": "6a7228597edb80a4f6003a833189c3bd6f11d0ea101352616f85e69aefd92fe1"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/monitor_6.monitor.csv",
+      "bytes": 11055,
+      "sha256": "ca798b50a853f42b5a14c3ab37798332052c306363b0b6108e8bc96a8a1ec764"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/monitor_7.monitor.csv",
+      "bytes": 11097,
+      "sha256": "74df7daca776fa2ba944564ef0327872ce7610c2e3906f3d3d45480c41f8fbdc"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/optimizer_logs/progress.csv",
+      "bytes": 84701,
+      "sha256": "565c9440166a6312b85d3c0a7a58e732b10049621695a1890bd607cde063e70a"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/session_status.json",
+      "bytes": 941,
+      "sha256": "752b44075ba5abc16a114f4cb6bfcf4c85d75843e227a7979764366fa252f474"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py",
+      "bytes": 4965,
+      "sha256": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py",
+      "bytes": 4221,
+      "sha256": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py",
+      "bytes": 21295,
+      "sha256": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/source_snapshot/execution_io_retry_runner.py",
+      "bytes": 1474,
+      "sha256": "43046e764b1b1ace12d76a852f269e342fce25c047704c89986306582f4ccb37"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/source_snapshot/multi_algorithm_benchmark/envs.py",
+      "bytes": 13898,
+      "sha256": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/source_snapshot/multi_algorithm_benchmark/vector_training.py",
+      "bytes": 15675,
+      "sha256": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/training_initial_states.csv",
+      "bytes": 122672,
+      "sha256": "d70b5bb377bc0784588e33e8a1791f3c5a281df73ef290612f6fca7f089a9d2b"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/training_manifest.json",
+      "bytes": 3408,
+      "sha256": "285c521e2c5f322fb580f9713d6e1b660a237f1769700076dbce793cadb85cfe"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/training_metadata.json",
+      "bytes": 6745,
+      "sha256": "120d4cb0b965dfe9acd383c99064d747b4a17fbde9e8ed8f4344311751d83910"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/validation_episode_metrics.csv",
+      "bytes": 502483,
+      "sha256": "c2fd787d3887a1e0499428e9736510f54d61adcdf07734d7e809e5ec36081322"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/validation_history.csv",
+      "bytes": 1387,
+      "sha256": "686e29034535a6bb022d296035ec5d08ae37db7e0e0ab1b64083100a26275f4b"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_42/validation_scenarios.json",
+      "bytes": 39726,
+      "sha256": "1579440d83974eb59dca2afa11173f46256fb5d8fd1829e7577faab87bf411a5"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/best_checkpoint.json",
+      "bytes": 618,
+      "sha256": "e92ef5bd72707a8b77d9afab87dc3b8701d656335afd2604204ca8a61ca2f8cd"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/best_model.zip",
+      "bytes": 247744,
+      "sha256": "078a5600cb09821f12c63b9b6dc549caeb94d268020d4857f488e2a3e64d23d5"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/checkpoint_0100000.zip",
+      "bytes": 247670,
+      "sha256": "47b59e6b9189a49df0dde1b05953a74aca3c13e2211674e35aa4986de630036c"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/checkpoint_0200000.zip",
+      "bytes": 247719,
+      "sha256": "d1264384f873027bf0ff076e0bf3a518a81fdc7070ed43bf190f8ef158d65601"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/checkpoint_0300000.zip",
+      "bytes": 247768,
+      "sha256": "d505d28f05d4b5a88b60bdb845098216610fa350bf4305a61cbbc8af1479fcf1"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/checkpoint_0400000.zip",
+      "bytes": 247752,
+      "sha256": "70689320683f1321df3706376e69d0347e37ec4339130e97cd1d99840740059e"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/checkpoint_0500000.zip",
+      "bytes": 247744,
+      "sha256": "078a5600cb09821f12c63b9b6dc549caeb94d268020d4857f488e2a3e64d23d5"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/checkpoint_0600000.zip",
+      "bytes": 247747,
+      "sha256": "c94b34a3b1c68b13b61ea93628438cafc02529f198c8c4f12d53fe798b853e66"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/checkpoint_0700000.zip",
+      "bytes": 247711,
+      "sha256": "372eaa64bbe82502fd158a3512e2e8564bb744c2dc896c0d159fbbf250eb45a0"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/checkpoint_0800000.zip",
+      "bytes": 247667,
+      "sha256": "43b6e5691267c0e1a89f77248f2d98ac22ece13af93be1eb82741702121f4790"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/checkpoint_0900000.zip",
+      "bytes": 247643,
+      "sha256": "925152cb43f2edda424ed9c898e11d2609ea422f36c4eece872609979f144086"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/checkpoint_1000000.zip",
+      "bytes": 247643,
+      "sha256": "ae0c62b80b640b3ed5feeda5da75ee81aae00719d9d829d2e68a68abeae057b9"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/final_model.zip",
+      "bytes": 247628,
+      "sha256": "65ce8716ec234db4d447b04f27794124a90316aec2db10aaf498b23172e9427e"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/monitor_0.monitor.csv",
+      "bytes": 22896,
+      "sha256": "4b758b6e52914e831a9e33e19880e5a584725c888ee0f943b1e8120e8d3b5b50"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/monitor_1.monitor.csv",
+      "bytes": 22945,
+      "sha256": "9d458b01abe89d24e0dccaf36b767e6f93c5edd5ae75b37c3b841ac72515d74a"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/monitor_2.monitor.csv",
+      "bytes": 23489,
+      "sha256": "39c29bf85671791b1f3effa5e8c26504a74a662623162530f0b1b79caf71e85f"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/monitor_3.monitor.csv",
+      "bytes": 23054,
+      "sha256": "d25ddd2faecf22e82711e98aee2ba3ff7eaadac01c560a97ccea6c8c9b39f390"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/monitor_4.monitor.csv",
+      "bytes": 22463,
+      "sha256": "9e3c62831ddab8b1be97378f3472d5fccf128c669d050a45884c3c1947913ad5"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/monitor_5.monitor.csv",
+      "bytes": 23422,
+      "sha256": "9688af94e27b5a18416ee508debc899dc4da228680282abb5184ceda9fde49aa"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/monitor_6.monitor.csv",
+      "bytes": 22892,
+      "sha256": "439b7d77363efefb6b23aba3b713e43761145bfaeee1ad39f9d32313e0ea220e"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/monitor_7.monitor.csv",
+      "bytes": 22983,
+      "sha256": "c72d1ba5f2dd94a8fb1282d6725999daf97a8eb7e9666223683e136eec9ff126"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/optimizer_logs/progress.csv",
+      "bytes": 177532,
+      "sha256": "f7027f66086c470aec3e1a3239abc9b9dd3f4b7d8e85617dc444af9e1f6541a6"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/session_status.json",
+      "bytes": 940,
+      "sha256": "1e1f6644504995efefeb48e91801645031a47ed9c12ef819e8d963881134951a"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py",
+      "bytes": 4965,
+      "sha256": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py",
+      "bytes": 4221,
+      "sha256": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py",
+      "bytes": 21295,
+      "sha256": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/source_snapshot/multi_algorithm_benchmark/envs.py",
+      "bytes": 13898,
+      "sha256": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/source_snapshot/multi_algorithm_benchmark/vector_training.py",
+      "bytes": 15675,
+      "sha256": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/training_initial_states.csv",
+      "bytes": 258059,
+      "sha256": "fbff52b96ff5d54c142ad2290dc7fb5ae2cd9b5ae8939c8d8baf9f195e714652"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/training_manifest.json",
+      "bytes": 3078,
+      "sha256": "13ab78d930b8d6379b2b6a48929e4e259d21bfec2509869510364eb0fe52168b"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/training_metadata.json",
+      "bytes": 6414,
+      "sha256": "df351813471af36561e66e571e998be48776cec801f039f68f5ec0028351b9a3"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/validation_episode_metrics.csv",
+      "bytes": 489657,
+      "sha256": "42c81fccebe4f61a058ea0a6b327028203f969f963eeb085d41bb963cf2a555d"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/validation_history.csv",
+      "bytes": 1357,
+      "sha256": "74e88f9a5ce43c81f63eb34b6e81944e6888fb4569585d9cdc31678472be57de"
+    },
+    {
+      "path": "03_SAC训练/formal/single/config_B/seed_43/validation_scenarios.json",
+      "bytes": 39726,
+      "sha256": "1579440d83974eb59dca2afa11173f46256fb5d8fd1829e7577faab87bf411a5"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/best_checkpoint.json",
+      "bytes": 614,
+      "sha256": "6fef07104015d4b5e9583faa3f48d512f99a9feae94855c4cd3e75f9a51f8fd3"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/best_model.zip",
+      "bytes": 266646,
+      "sha256": "b744d2c5712752927f99b48083f775c3c9c20fbef56f133e55e097d926f4ce87"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/checkpoint_0100000.zip",
+      "bytes": 266633,
+      "sha256": "5460d51176dbfc1a783ec7df3d6ef9308517477c994ac5205a63c614b7af843a"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/checkpoint_0200000.zip",
+      "bytes": 266718,
+      "sha256": "751fb2c807a889126ce1ba481521606ba858220c7df435d170e652768181a490"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/checkpoint_0300000.zip",
+      "bytes": 266731,
+      "sha256": "04922cb2a014acfb4e8ea5a6eeb5aebec50a42251b8495ea0b7af8cbf838a050"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/checkpoint_0400000.zip",
+      "bytes": 266711,
+      "sha256": "f5369c2eebdc6ebd7106fd160d5b97266fd8a80017a194642a6c4538d77fff0f"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/checkpoint_0500000.zip",
+      "bytes": 266711,
+      "sha256": "8abc2dd3f74885a2633f0359f543b6b953a0282daf7748e8706819bf9c68a07f"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/checkpoint_0600000.zip",
+      "bytes": 266718,
+      "sha256": "b47ca00adf0c0509d3d30d254409d952460e0b2e1d477a70f1c498d232cdecc4"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/checkpoint_0700000.zip",
+      "bytes": 266734,
+      "sha256": "f58b7677a2b3464498d494be067acca31c35cdcaf6d40c32f24ee4958465d008"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/checkpoint_0800000.zip",
+      "bytes": 266694,
+      "sha256": "27e064ad50b4ec6e11edccd5a4a0b0f71d58f4ce54f8c2c5bc096b6a0709f86c"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/checkpoint_0900000.zip",
+      "bytes": 266654,
+      "sha256": "dfac9ac08ee32240845fa83f59616c5310c1999218b4fbd957bc80874100efa3"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/checkpoint_1000000.zip",
+      "bytes": 266646,
+      "sha256": "98f9d8a3fd3c62bed65584cb1f09b5e4bc8eac58ac54496479d24e40d157b9eb"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/final_model.zip",
+      "bytes": 266631,
+      "sha256": "6ecf81f61d6b3ec88c32c99abb57a6ebd0df7ade18c10786d456c8e31c74ee39"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/monitor_0.monitor.csv",
+      "bytes": 15795,
+      "sha256": "383dfd4fc792bf8c610f94358e95e30239e7beeb4d62e31a0b3fa26430c17256"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/monitor_1.monitor.csv",
+      "bytes": 16290,
+      "sha256": "dbf6d11f3935051365c0a1052b0b6214ba6aad82f5400444631883d1b4f75cfd"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/monitor_2.monitor.csv",
+      "bytes": 15930,
+      "sha256": "ac90fdcf2118d20d3f537738a0627db1b71bc6f7f05fcd0a0e63c8a856dd8543"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/monitor_3.monitor.csv",
+      "bytes": 16180,
+      "sha256": "ee35414d7126d91fa15a610a5affa933c6f98f8da3c56b354d4681aa5ab0ff42"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/monitor_4.monitor.csv",
+      "bytes": 15543,
+      "sha256": "44c8885a015a86527e38b981d940d69eaa79d110fbeaa96e784921311709ad5e"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/monitor_5.monitor.csv",
+      "bytes": 15481,
+      "sha256": "48629d9df3d0d07a36d5d6c1868849ed9a27fc7cb44dede1161a315aa97f5d32"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/monitor_6.monitor.csv",
+      "bytes": 15733,
+      "sha256": "61d9091c435710ea8184172512ac40346bb56ce88e61fbce13f071984d09899d"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/monitor_7.monitor.csv",
+      "bytes": 16004,
+      "sha256": "79194cd9196637052a388312d711f3dbea6d7644c71fe899e9dda76a8890fb6a"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/optimizer_logs/progress.csv",
+      "bytes": 118567,
+      "sha256": "d1a76e20ce72ce3dc6435a5fcf17f21827819c70626e39a489f3a9229751a3c6"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/session_status.json",
+      "bytes": 937,
+      "sha256": "56eecb0cc8e2c328a6809b5702dee7ee124c738aeb01fb2a9d5587db06e971a1"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py",
+      "bytes": 4965,
+      "sha256": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py",
+      "bytes": 4221,
+      "sha256": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py",
+      "bytes": 21295,
+      "sha256": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/source_snapshot/multi_algorithm_benchmark/envs.py",
+      "bytes": 13898,
+      "sha256": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/source_snapshot/multi_algorithm_benchmark/vector_training.py",
+      "bytes": 15675,
+      "sha256": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/training_initial_states.csv",
+      "bytes": 476967,
+      "sha256": "6440ef39fe0c8e9d513017d89682599f54d96ec6a7dc16f8ee710a5915f2ea96"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/training_manifest.json",
+      "bytes": 3078,
+      "sha256": "679a6255d4e1ec2f9a395959d7743e6c4e1b8beda437031d6ad5253933718024"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/training_metadata.json",
+      "bytes": 6412,
+      "sha256": "8e571d4fa339e42c7d43e47099b44353ecfcda2bbaeda04650689cf0766f3b7d"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/validation_episode_metrics.csv",
+      "bytes": 483004,
+      "sha256": "712b5b28046f8f31d04629ce2f84230c3ace7047bb49646a0faf242dac4bd63a"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/validation_history.csv",
+      "bytes": 1352,
+      "sha256": "68696fe99f69b4fcada7bb1002bad0c5475e56490e18db3c25db6c593e285178"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_41/validation_scenarios.json",
+      "bytes": 53001,
+      "sha256": "62e2eb1e4107add6f756777306ba88e6619fbbe8cbc135f848fb8b683389ff16"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/best_checkpoint.json",
+      "bytes": 611,
+      "sha256": "dd29875d4165e1c001fcd840822586a00f82a2438f43487e85e82e91a5ea7713"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/best_model.zip",
+      "bytes": 266674,
+      "sha256": "906faddf8c64b541a6331a8e13f0065d4fbddf24667624a6e89f3c888fb60e4a"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/checkpoint_0100000.zip",
+      "bytes": 266653,
+      "sha256": "78cb4bd42fe258403a9a4bb7bac4f5bc84e69ded2b89c668d527a4c82fee1b68"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/checkpoint_0200000.zip",
+      "bytes": 266663,
+      "sha256": "5462b32add499809b709d7f6fc18ff016fdacdf43e926e28171599730f4751f7"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/checkpoint_0300000.zip",
+      "bytes": 266695,
+      "sha256": "0cd867b6e13bfa042396707c8d07ef09709ac958c9bf448a52ba6dba1a1a0b45"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/checkpoint_0400000.zip",
+      "bytes": 266703,
+      "sha256": "22a92673a5081ab32f64501456b11217820e04a7b6d84420a4c5227da5244482"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/checkpoint_0500000.zip",
+      "bytes": 266723,
+      "sha256": "a848e8ef75b571955debf75bfa7c9615047371240afd21672c736718b40222f7"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/checkpoint_0600000.zip",
+      "bytes": 266650,
+      "sha256": "bdefc46385226e1e4440f42d06c434ee911a9dc154878f044b01c7a288fd03f3"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/checkpoint_0700000.zip",
+      "bytes": 266698,
+      "sha256": "693128690c3ba90f003f539b390dfe36a39eccf137779118a443c77fd8989f6c"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/checkpoint_0800000.zip",
+      "bytes": 266726,
+      "sha256": "b40ae0e28df3547cbe6cb876d741e8283cbc9183139e161fa7b2c1d228c1508a"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/checkpoint_0900000.zip",
+      "bytes": 266706,
+      "sha256": "ef0671063579c04fb173196ddc1ebf395820211ad164067328087e72fabb290c"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/checkpoint_1000000.zip",
+      "bytes": 266674,
+      "sha256": "0b5e1f95fb2856ca73d4f7129f0b1b34d40f09304a2f9cf510d7752003f47822"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/final_model.zip",
+      "bytes": 266659,
+      "sha256": "199ef6ad1b67530acf608880e040fbde3df9f8e605089be73abbbf712f1bf656"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/monitor_0.monitor.csv",
+      "bytes": 17921,
+      "sha256": "f9f3ba130b779187e999fc81723c9eac117f4f310003f534f80d4f07405d5c01"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/monitor_1.monitor.csv",
+      "bytes": 17959,
+      "sha256": "c4fccc4e43e534fbd32d7004f776b6ae520ce5146ad76fdab367c9480681f6ce"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/monitor_2.monitor.csv",
+      "bytes": 18335,
+      "sha256": "71bf957f748a4b4ca8f9d919f586b34c3964f9403e7f3b77f5046591d4ac06d2"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/monitor_3.monitor.csv",
+      "bytes": 18235,
+      "sha256": "0032925aecae2e9056393aa313a27745f3cf2f3d38992973d333f6c427b4ae72"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/monitor_4.monitor.csv",
+      "bytes": 18169,
+      "sha256": "c564a006e836845c31146d8bdbe3338c4fd5402eeb8de92aafcc4e04bfb26c35"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/monitor_5.monitor.csv",
+      "bytes": 18315,
+      "sha256": "33cffac16a48172b1ff8ce2dc3baee9e5c9d596fb45df1f3c1a6bdb3489d110b"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/monitor_6.monitor.csv",
+      "bytes": 17981,
+      "sha256": "1b4cae33171bd46e9fadf143f419ead3c8cab3b746cf7a6c698d9eb58b123618"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/monitor_7.monitor.csv",
+      "bytes": 18198,
+      "sha256": "4eb567128682fd6521cf05873f68f7b8e528c2c56c0022e283e3b6d4cceed1e2"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/optimizer_logs/progress.csv",
+      "bytes": 139628,
+      "sha256": "a77959801efffabde9f2eedc0ab39ba4254675b00e34b60a0d1cae29f1961046"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/session_status.json",
+      "bytes": 934,
+      "sha256": "9c96bd826fe9df9dfa802a67f2e31da7da47f17ed31f00718d6fa71760dd4157"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py",
+      "bytes": 4965,
+      "sha256": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py",
+      "bytes": 4221,
+      "sha256": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py",
+      "bytes": 21295,
+      "sha256": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/source_snapshot/multi_algorithm_benchmark/envs.py",
+      "bytes": 13898,
+      "sha256": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/source_snapshot/multi_algorithm_benchmark/vector_training.py",
+      "bytes": 15675,
+      "sha256": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/training_initial_states.csv",
+      "bytes": 545432,
+      "sha256": "2eb7d5e7d54395cd5a9f119507a5d0fd00cace84a8479783b9c2ced4cb5d7e8e"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/training_manifest.json",
+      "bytes": 3077,
+      "sha256": "9ef3e439402101165de826679d343e1e5fcaaf1249d5a17a0a72c8ab82483c0a"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/training_metadata.json",
+      "bytes": 6408,
+      "sha256": "06e28da22073bd28f2f80774fbb4f30b94e9fa81d4e218f438835921c7a92edb"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/validation_episode_metrics.csv",
+      "bytes": 482250,
+      "sha256": "6dbfff49d44592c14f393d59743ad2cffaa1241b5427d307de42fb28ac061933"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/validation_history.csv",
+      "bytes": 1341,
+      "sha256": "e34a4109612de7bf7d0dabecea9472ff81788c93d4c81310b111b6cf488f3db9"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_42/validation_scenarios.json",
+      "bytes": 53001,
+      "sha256": "62e2eb1e4107add6f756777306ba88e6619fbbe8cbc135f848fb8b683389ff16"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/best_checkpoint.json",
+      "bytes": 610,
+      "sha256": "a8727548bca552bbba0c12b61fb8a159c1ab1bcc245dd9a69832870d85214ee6"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/best_model.zip",
+      "bytes": 266626,
+      "sha256": "c7b4d2f99418547cee18e525ded18912e833ebb07e40d4bbcfa101ebab1ea996"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/checkpoint_0100000.zip",
+      "bytes": 266621,
+      "sha256": "bfde67803cd458d62c91b4c9a068dfc437b5953f6c07d4f19472f858aede6487"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/checkpoint_0200000.zip",
+      "bytes": 266718,
+      "sha256": "bdae6d75ed3168b5f2c1fe41fec2551c4d0b59c2c11c1666da0a3de91f0b6177"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/checkpoint_0300000.zip",
+      "bytes": 266667,
+      "sha256": "de858fcbdab3826a7faf76008b901e6c96dbbc2339074b28ced2274223ef9c4f"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/checkpoint_0400000.zip",
+      "bytes": 266695,
+      "sha256": "a2972d2d5db85177cf23c3af10fd847c145186460bd11406b28a745fc4a3a791"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/checkpoint_0500000.zip",
+      "bytes": 266719,
+      "sha256": "adafd8e2e6af20363562af7754d491b00da0e70c633c2e042025921b540192ab"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/checkpoint_0600000.zip",
+      "bytes": 266722,
+      "sha256": "a7dfdd8dd92b7dfe945598a65857c1fe7498d7f66f5f21291597a86e436deccc"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/checkpoint_0700000.zip",
+      "bytes": 266666,
+      "sha256": "07fe0bedd779709a7e1ced378bbebf635fcf682aedf1827d240985d0508383b9"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/checkpoint_0800000.zip",
+      "bytes": 266638,
+      "sha256": "c78ae31af604f62fe944124dac99530f61f139c5752a2b6ba770e82747bb40c1"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/checkpoint_0900000.zip",
+      "bytes": 266626,
+      "sha256": "4d3547c2ce104b0d499397fffd4d99898c1566a17f6f713880c7d7ed1a7056c4"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/checkpoint_1000000.zip",
+      "bytes": 266622,
+      "sha256": "a83e96f30320f2e52bdde574bab3b18624437e2d340e80e1fb37b0ae05097847"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/final_model.zip",
+      "bytes": 266607,
+      "sha256": "2ad680ec0706b5c58ce8ec7608990b042e2f366b1cb1c2022afb2fc56665e5ce"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/monitor_0.monitor.csv",
+      "bytes": 18243,
+      "sha256": "185600fd662f7002c123c109ac489ad0866e5e219d7f428ad388b44c8d09fe05"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/monitor_1.monitor.csv",
+      "bytes": 18013,
+      "sha256": "bdc473cd8f853328111af54b03d94a39c32b8d90d31f7bc98b41b9d820f510e8"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/monitor_2.monitor.csv",
+      "bytes": 18552,
+      "sha256": "c606e252ec8ea9d8178a51a6c96adeae3c391d1086783ec3b1c87e43b755f35a"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/monitor_3.monitor.csv",
+      "bytes": 17847,
+      "sha256": "fe2cdfdf93e8c6e502da5b7b8008ac139094d207ea47a57cb299b5b7ef0c1729"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/monitor_4.monitor.csv",
+      "bytes": 18188,
+      "sha256": "ec919d5d1828aeca5c3aee795a9495f5d61f2715622ab019895c7b9b0f14af98"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/monitor_5.monitor.csv",
+      "bytes": 18341,
+      "sha256": "d83641da16ec04bb822bb4695fd9f9ef1c63ed0ff2e402c71df966c19ee75db8"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/monitor_6.monitor.csv",
+      "bytes": 18052,
+      "sha256": "21ba7f74e5e64adaa6584ee45363c9695f1bee475155c129d72045c1c2cd2c1b"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/monitor_7.monitor.csv",
+      "bytes": 18057,
+      "sha256": "730344d6b55a4822acb78090648818ca57cf40f00a536733c890e3cd34b254fd"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/optimizer_logs/progress.csv",
+      "bytes": 137397,
+      "sha256": "dd9f9b1575225d8c3e3b9a8f692ef512f01c17af4e6156c7788e52062963f9ce"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/session_status.json",
+      "bytes": 932,
+      "sha256": "c2a79a76d92ecdccb36ee51a822c03d35d2a055036c881289394ea18bae3aa9e"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py",
+      "bytes": 4965,
+      "sha256": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py",
+      "bytes": 4221,
+      "sha256": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py",
+      "bytes": 21295,
+      "sha256": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/source_snapshot/multi_algorithm_benchmark/envs.py",
+      "bytes": 13898,
+      "sha256": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/source_snapshot/multi_algorithm_benchmark/vector_training.py",
+      "bytes": 15675,
+      "sha256": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/training_initial_states.csv",
+      "bytes": 545092,
+      "sha256": "d77c266d97ed9440130faca82cd8c624cba602ebf5ff159bcb3a95a51518a7e6"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/training_manifest.json",
+      "bytes": 3078,
+      "sha256": "69f757a83d5feb09ce227cd3de6c45ea6c0bd94eb7cd21e5c7d3ad6b2e2f562e"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/training_metadata.json",
+      "bytes": 6407,
+      "sha256": "8caebb1d244e13f6703972eea8b396d40f9e1912d9a3ddfea0953b494955af59"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/validation_episode_metrics.csv",
+      "bytes": 481000,
+      "sha256": "1cba0098cc5e0c0a216c9d0dd68a5b108f3468ca458dae1a81a0a3e9fdcaac7f"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/validation_history.csv",
+      "bytes": 1343,
+      "sha256": "b50a5f82f7a83e02d63d76c447ee3db87b43e2d14f2fe38dab8dc8f3e39fd6da"
+    },
+    {
+      "path": "03_SAC训练/formal/three/config_B/seed_43/validation_scenarios.json",
+      "bytes": 53001,
+      "sha256": "62e2eb1e4107add6f756777306ba88e6619fbbe8cbc135f848fb8b683389ff16"
+    },
+    {
+      "path": "03_SAC训练/formal_source.py",
+      "bytes": 21295,
+      "sha256": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/best_checkpoint.json",
+      "bytes": 610,
+      "sha256": "8323261cd447317ccf43abf978ad313d234c79c3fef913ec32957d3b5110f324"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/best_checkpoint.json.tmp",
+      "bytes": 618,
+      "sha256": "103a2590a2dc931c032912706175cea953b0b4b487407c74356d124694858825"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/best_model.zip",
+      "bytes": 247766,
+      "sha256": "4ec6fccd32d250df30ce6f5f540c7ba5751b1ce228ea632f9f3a6a0385f3af7a"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/checkpoint_0100000.zip",
+      "bytes": 247766,
+      "sha256": "4ec6fccd32d250df30ce6f5f540c7ba5751b1ce228ea632f9f3a6a0385f3af7a"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/interrupted_model.zip",
+      "bytes": 247766,
+      "sha256": "4ec6fccd32d250df30ce6f5f540c7ba5751b1ce228ea632f9f3a6a0385f3af7a"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/monitor_0.monitor.csv",
+      "bytes": 1190,
+      "sha256": "d0b1e12e70fc8e1e4b367cb52606a654e7e4f311542b21983869a2d28ac5ce0a"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/monitor_1.monitor.csv",
+      "bytes": 1155,
+      "sha256": "1b6c92788f33438475ae75a0b4cb69aa97de49413c66de296e68f1e606e35cce"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/monitor_2.monitor.csv",
+      "bytes": 1185,
+      "sha256": "3d43523c629248f93dde927f346c8877c7c25c1c2071cb7b770385f941f6c038"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/monitor_3.monitor.csv",
+      "bytes": 1190,
+      "sha256": "e43b75a6162e5c3020e7ff65365cb4668b5d3fcee479dd7aeea25ff7f8c9481b"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/monitor_4.monitor.csv",
+      "bytes": 1194,
+      "sha256": "129024e22020024fffaee70e3125665522dab2b7b3faa8b553ced114738778eb"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/monitor_5.monitor.csv",
+      "bytes": 1185,
+      "sha256": "afbcf4f6f16e2464b27d7403b978754425f3799d40d6b1a1502d1c1ca0125c96"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/monitor_6.monitor.csv",
+      "bytes": 1155,
+      "sha256": "a1f64218b7540b61259f12962c7a48a1c6e69da43496c36b8828fe149db30569"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/monitor_7.monitor.csv",
+      "bytes": 1226,
+      "sha256": "c8d64b8b871d74a5a646babc2415290f01d5808c790de863bdc55ca60243ca21"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/optimizer_logs/progress.csv",
+      "bytes": 8373,
+      "sha256": "5249c88cd8cc1f32d922daa40a379c1d6ca6dcfb24cbe3e8949a126bae10a384"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/session_status.json",
+      "bytes": 323,
+      "sha256": "7a1451d2a2bfb71d247e6c5d0e291938cef6293736a5ef4f19bcdc7b1c5aacf3"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py",
+      "bytes": 4965,
+      "sha256": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py",
+      "bytes": 4221,
+      "sha256": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/source_snapshot/11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py",
+      "bytes": 21295,
+      "sha256": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/source_snapshot/multi_algorithm_benchmark/envs.py",
+      "bytes": 13898,
+      "sha256": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/source_snapshot/multi_algorithm_benchmark/vector_training.py",
+      "bytes": 15675,
+      "sha256": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/training_initial_states.csv",
+      "bytes": 12990,
+      "sha256": "9428e33f4427b51890c1012e5eb817f54c8c6500bdd891131ae657bf2afa4866"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/training_manifest.json",
+      "bytes": 3077,
+      "sha256": "a9b1b8bf6b367d063150e2095c2c92ee46fc300738ee7a91619f0d3c09c3f659"
+    },
+    {
+      "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k/validation_scenarios.json",
+      "bytes": 39726,
+      "sha256": "1579440d83974eb59dca2afa11173f46256fb5d8fd1829e7577faab87bf411a5"
+    },
+    {
+      "path": "03_SAC训练/interface_and_physics_verification.json",
+      "bytes": 1398,
+      "sha256": "caed177994ffed068b1f1f12249a76eabde5f2b2e140515c654ee6909a5aaa8e"
+    },
+    {
+      "path": "03_SAC训练/io_incident_record.json",
+      "bytes": 2981,
+      "sha256": "6f6dd5d0e1556e25528e1a115caafb039d1bc1dc1233287ec68ed4e447b3590d"
+    },
+    {
+      "path": "03_SAC训练/io_retry_execution_record.json",
+      "bytes": 293,
+      "sha256": "39c2d85c32413ccd8cc3391bed950a23674cd7b790b317bb5b546a35a80db707"
+    },
+    {
+      "path": "03_SAC训练/io_retry_runner.py",
+      "bytes": 1474,
+      "sha256": "43046e764b1b1ace12d76a852f269e342fce25c047704c89986306582f4ccb37"
+    },
+    {
+      "path": "03_SAC训练/IO中断与恢复说明.md",
+      "bytes": 1802,
+      "sha256": "5dea4d68704e62e9e9b84cd67372993d2a411a2ae06acbc97c4b62c0cf2ea567"
+    },
+    {
+      "path": "03_SAC训练/training_completion_audit.json",
+      "bytes": 7118,
+      "sha256": "2f57319f8a1d9eb3b19c6fff60b21cee7d271358316cd6549c4d92e03fe6e20b"
+    },
+    {
+      "path": "03_SAC训练/旧模型验证与动作缩放/selected_legacy.json",
+      "bytes": 15651,
+      "sha256": "f15c85a8eb9c4426514010cee5e68fd267d9a73fe0fe7b7f231c1a8b5d3843ae"
+    },
+    {
+      "path": "03_SAC训练/旧模型验证与动作缩放/全部动作缩放验证.csv",
+      "bytes": 2261,
+      "sha256": "c12c36619c1d212c3f020368ec50f705822f37b03a65f402ab88b6224a86fea6"
+    },
+    {
+      "path": "03_SAC训练/正式训练配置冻结.json",
+      "bytes": 5960,
+      "sha256": "a7df258764a27934f31ba15d1810b7c47ff731ed81907fca2b689f3ddbff81b4"
+    },
+    {
+      "path": "03_SAC训练/训练方法与记录说明.md",
+      "bytes": 6839,
+      "sha256": "710a0358cc3a65e69940a2f3dba58091f6ab9f5e61e1f5457c7c338ef257d6a7"
+    },
+    {
+      "path": "04_独立测试/episode_metrics.csv",
+      "bytes": 2955621,
+      "sha256": "4ea5f9235cfc180ed7a98c6ee23b5d642562533371e284d780aaeeae82eb6603"
+    },
+    {
+      "path": "04_独立测试/test_run.json",
+      "bytes": 7030,
+      "sha256": "15c20d8a7e6099d492bf2c6de2345dbaf663b5a0e883cf207e0b5c4ec51f7751"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_fresh_41_ablation.npz",
+      "bytes": 3808974,
+      "sha256": "1e132c8a8070efcb41828c398214ab5281ba3645d8f5de97a03e912561a659c0"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_fresh_41_selected.npz",
+      "bytes": 4168048,
+      "sha256": "71c7acf256d9e930f1337e662ff4e57a14087cdf9f1fb3884d3e07ea89d12600"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_fresh_42_ablation.npz",
+      "bytes": 3821652,
+      "sha256": "130f48f46a85165113ad6b52f46b87c8dad00f318988497c5b22f08e94fb3350"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_fresh_42_selected.npz",
+      "bytes": 4108230,
+      "sha256": "6679e66f30e30e4a5c0cf194cda0b9163fd3894f16dbb77cf7a616aaa28e9347"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_fresh_43_ablation.npz",
+      "bytes": 3685270,
+      "sha256": "189d913b0d6a0a8016c039dc60c0399bfaaf1be6adea910a66ebb5c71bb521ed"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_fresh_43_selected.npz",
+      "bytes": 3714096,
+      "sha256": "662b1d541739803e9d45cdf9aebde15a434352a09593493eccf3f318e0a816b6"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_legacy_11_scale_0p8.npz",
+      "bytes": 3951959,
+      "sha256": "9c4333c79f4d4458c173f9e1bbe151ee95174893ed72b3a11c5f8f88f01834c7"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_legacy_11_scale_1p0.npz",
+      "bytes": 3744307,
+      "sha256": "526cd26ca0d9da4bb70d71b18c753b5ad10feb68e1877d5830e6a15a9d2e9d05"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_legacy_11_scale_1p25.npz",
+      "bytes": 3555206,
+      "sha256": "e8370ab47a38f0daa4b129709e6b8534e6abc9a9d93ef8f8d738128c949a0f45"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_legacy_22_scale_0p8.npz",
+      "bytes": 3941932,
+      "sha256": "cb8affaa7281e61d9816836b0b97ec8897c8b5c31e1caf3a25dcf1c2450d3816"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_legacy_22_scale_1p5.npz",
+      "bytes": 3530496,
+      "sha256": "d3bc4e1cda8526eda08afd4ac26d82f4ef26b3121fda38057132a337c4425b4b"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_legacy_33_scale_1p0.npz",
+      "bytes": 3164729,
+      "sha256": "072e98f9ade4d2854063cf3944b53fc17f2c7f9e531eccd217b393724c7597d4"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_legacy_33_scale_1p5.npz",
+      "bytes": 3139352,
+      "sha256": "c3abb14956927cd2b6be024f5dfc42f70b79320c9fc5152a03fb1399faa0f029"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_legacy_33_scale_2p0.npz",
+      "bytes": 3210740,
+      "sha256": "274edc69214a8a16f702ee285adbbff578a8d253f020cb0401ca028a9f33aac8"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_pid_4s.npz",
+      "bytes": 4653476,
+      "sha256": "c515ce0f99b5c6de56eda81e8c699d5638483f831c5773f17fa41216caf29ec5"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_pid_6s.npz",
+      "bytes": 4676926,
+      "sha256": "7fadaac70f2f0162aeb7af83f0d0f874c395c06cc371a65d3e16790d98038255"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_pid_8s.npz",
+      "bytes": 4676669,
+      "sha256": "56dbcda428e8b7de858388e86ad74a4be06e84ccca2521b7dbc64044eece83c2"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_pid_margin_4s.npz",
+      "bytes": 4609360,
+      "sha256": "e794fa21a111e2285a3d95da735958f4fe555f5c2b20830277753edb5f5629f2"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_pid_margin_6s.npz",
+      "bytes": 4676259,
+      "sha256": "9a22189626e83100c4516bcc4816a753c95e5006cf91592a9ccc0d791d341dd1"
+    },
+    {
+      "path": "04_独立测试/trajectories/single_pid_margin_8s.npz",
+      "bytes": 4676949,
+      "sha256": "edec3e3a1f9d34dcf0dcbdcd1ab44d15259fb7541e87181340b82efd6bedc017"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_fresh_41_ablation.npz",
+      "bytes": 5502808,
+      "sha256": "79793ceb0ca91eb3463ee73f3bd5cfc2ca703e0fc4a58cedf2baaad5d8dbbd14"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_fresh_41_selected.npz",
+      "bytes": 22670408,
+      "sha256": "a754eaba03399c229a05927c4db64a83ae3624cbdbfd7b8a302e3fe02786128f"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_fresh_42_ablation.npz",
+      "bytes": 6703588,
+      "sha256": "6c6d6e05bddee361aa2d41bbcfc8b63e312d9b548bfd66b0d3ce491165a991c6"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_fresh_42_selected.npz",
+      "bytes": 17001275,
+      "sha256": "ec03588b4016e58c248c31eee041cc0447c9f314e0658c2fc5197b8eeb785f95"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_fresh_43_ablation.npz",
+      "bytes": 5013026,
+      "sha256": "de63f9eba714fb4cd38b47e831795ae684e2a194363f2741ecd928c259570070"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_fresh_43_selected.npz",
+      "bytes": 3508007,
+      "sha256": "35b0db55d4d5804099597645cf7402610e820de8b3410c11a2843a09adb6d411"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_legacy_11_scale_0p8.npz",
+      "bytes": 25157476,
+      "sha256": "77d36b678ca7380f1af6d27289bb231258dc6ce6cc7cfbbdbc3c7f5c9cfd2e94"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_legacy_11_scale_1p0.npz",
+      "bytes": 24959685,
+      "sha256": "111fbdc374a33b6d6198bd118bc6ecf5ba129d70c55a543dfbe46de63d42e661"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_legacy_11_scale_1p25.npz",
+      "bytes": 25075764,
+      "sha256": "dfa0d837d4914295dc440adeb919458bbcbeb74dc59c5026db91fa218b1f90b0"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_legacy_22_scale_2p0.npz",
+      "bytes": 23308366,
+      "sha256": "40d45683fbfb593e5194b8bc2a6e850bff709950f73c9791baf52a8e7e9df4e3"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_legacy_33_scale_0p8.npz",
+      "bytes": 22963448,
+      "sha256": "5ff9c825deb0a45276b30dc1ace0849f5f906a1771cc04e53c1e4ee8caee9726"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_legacy_33_scale_1p0.npz",
+      "bytes": 22869189,
+      "sha256": "23e9b3809f91f7bfe7184cfbc46a0bbf0a5c9b407f354fc937296dfc6f61d75b"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_legacy_33_scale_2p0.npz",
+      "bytes": 22995642,
+      "sha256": "4a6c43489b4730cc0df1511ef29297af27e6c15a7ce05da3a5af1b9dbd2e3131"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_pid_4s.npz",
+      "bytes": 28112593,
+      "sha256": "b4491185b64d506b2a0e08ccae177cc056ded8c02f5925c522b5a96c370d3451"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_pid_6s.npz",
+      "bytes": 28513866,
+      "sha256": "f8928e3de2e421947df5c451a8a7e983bd27cb9cc241515d5f5b35b1b26b2b29"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_pid_8s.npz",
+      "bytes": 28759281,
+      "sha256": "88120aea0611c1eefebfc2ae7654eb16b77092c57c04796ec399fc1ea4beb10e"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_pid_margin_4s.npz",
+      "bytes": 28085850,
+      "sha256": "d06f7bb87325f3ed8dd61bba9c720df6c844f00455d5e7e7254a508a5cfe5a20"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_pid_margin_6s.npz",
+      "bytes": 28556179,
+      "sha256": "ffe3f0990cb1f0f825dc7ba825b0f4c9fb292284ee3bba1e12d12804c2a888df"
+    },
+    {
+      "path": "04_独立测试/trajectories/three_pid_margin_8s.npz",
+      "bytes": 28744003,
+      "sha256": "9ac5c2b4959535b516170d438729d12a3fdb4d02495402fa6ba7b3bd55530a8e"
+    },
+    {
+      "path": "05_图表与分析/01_八秒期限通过率与控制代价.png",
+      "bytes": 157515,
+      "sha256": "7d33ff715c4c16c69d76632177cac453dbfabab727a422d88afcf43eb03a8f1a"
+    },
+    {
+      "path": "05_图表与分析/02_固定初态的完整响应.png",
+      "bytes": 283328,
+      "sha256": "65618f0f27426d86c89b5075e4dd77e798ff7f635d0b19fcaa87cbe3ea15b8c9"
+    },
+    {
+      "path": "05_图表与分析/全部控制器与期限汇总.csv",
+      "bytes": 17921,
+      "sha256": "461d35b82510fe271e455cd464978fec182692d48a88446cbef32ff3f58c7a40"
+    },
+    {
+      "path": "05_图表与分析/全部训练尝试统计.json",
+      "bytes": 2164,
+      "sha256": "6a3d549d03addf6b9cc9c81a9822f525fe37c3a8fcee7627b119625eb6da1639"
+    },
+    {
+      "path": "05_图表与分析/研究结果说明.md",
+      "bytes": 7133,
+      "sha256": "1c70799a5be98ddfe6cc5ae4cfeb44220f302353b817a4c50fb41d6cd383d16b"
+    },
+    {
+      "path": "05_图表与分析/结果阅读本.html",
+      "bytes": 10716,
+      "sha256": "b7918fb15ddabaaedc346ae4ffeeac5b5ef63318fce3b991023059ccbf902f64"
+    },
+    {
+      "path": "05_图表与分析/配对比较与结论.json",
+      "bytes": 32738,
+      "sha256": "8c447d6143a5820a9913dfd8bb073de1af741e80a3b52a865325baabeec07226"
+    },
+    {
+      "path": "06_核验/核验运行日志.txt",
+      "bytes": 6882,
+      "sha256": "c4b1134dcc26eb5cbe54ba59d8b3f5d1599a987ce2e45ecb124017ce019fee4c"
+    },
+    {
+      "path": "06_核验/独立核验报告.json",
+      "bytes": 30290,
+      "sha256": "ca237c55f830b6b0e83b309564dce6732e62b8dc30e3ac6e9e3f16562a9a6c05"
+    },
+    {
+      "path": "06_核验/结果文字独立审查.md",
+      "bytes": 6323,
+      "sha256": "d053757f8fd1c8b78f776cd2bf790c6eb83f578824f6d4e1607101c17513a649"
+    },
+    {
+      "path": "06_核验/阅读本文字更正记录.json",
+      "bytes": 383,
+      "sha256": "26624b8c433821b7a1a7882c4b0456ae81d3aff5449ef9a71a8b5f2291d1ae38"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1669,
+      "sha256": "11a3e3a53fed5ebe7628c85c433610c39670129515a18685585ee58dda55b0d6"
+    },
+    {
+      "path": "requirements-additional.txt",
+      "bytes": 175,
+      "sha256": "3a6432147106462b910146fc695d47fba14793785a4873b900a174f46c03ba65"
+    },
+    {
+      "path": "代码/deadline_study/__init__.py",
+      "bytes": 83,
+      "sha256": "9b20913d318906909555891a768e78c58a04fa150f06c2f4f673b99fc301ef1c"
+    },
+    {
+      "path": "代码/deadline_study/baselines.py",
+      "bytes": 18287,
+      "sha256": "03a25b0a7768e018087203d169cc9dc9700b51a24a06f52b2c02442c85aa36d2"
+    },
+    {
+      "path": "代码/deadline_study/cli.py",
+      "bytes": 1072,
+      "sha256": "8e38ec003f99f40ed4d21a6fef8672bf024b01b6d48f252d162fd1ed92fadab7"
+    },
+    {
+      "path": "代码/deadline_study/delivery.py",
+      "bytes": 31394,
+      "sha256": "47ae1263bedfe1afc7d3a2a65a53adf11b477dbf62dadb8b058f354daf9cbfa2"
+    },
+    {
+      "path": "代码/deadline_study/evaluation.py",
+      "bytes": 4965,
+      "sha256": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a"
+    },
+    {
+      "path": "代码/deadline_study/legacy.py",
+      "bytes": 3953,
+      "sha256": "f58236d6d467bbc6db7189908e98b6b0aa64b77b760f975830a075c5a481b5ee"
+    },
+    {
+      "path": "代码/deadline_study/protocol.py",
+      "bytes": 4221,
+      "sha256": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b"
+    },
+    {
+      "path": "代码/deadline_study/training.py",
+      "bytes": 21295,
+      "sha256": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419"
+    },
+    {
+      "path": "代码/deadline_study/verification.py",
+      "bytes": 21027,
+      "sha256": "d5f84a813cc4c2107a9a8bbd6f76bb0ba7dcca2335b3004bcef6fa196a89a80a"
+    },
+    {
+      "path": "代码/test_deadline_study.py",
+      "bytes": 10158,
+      "sha256": "0685dc2f23f080d7f70e9bb489a75ae61b4e6576b120ac22a5fefffb0a194b1b"
+    },
+    {
+      "path": "代码/test_delivery.py",
+      "bytes": 11597,
+      "sha256": "791d451965d1dd117692db3ff205f7079e0b46a738fa09ff4d66c2952273d8ce"
+    },
+    {
+      "path": "复核与运行说明.md",
+      "bytes": 3340,
+      "sha256": "1d4d896ea4aab06603c6aa6cfcd0251a6c264eadcec3733a1a633bb8722bd62c"
+    },
+    {
+      "path": "本轮工作说明.md",
+      "bytes": 6506,
+      "sha256": "20a8f364c10df11414f0ac71237000b6b2b9bfdb8631611b3514e5d2b4247818"
+    },
+    {
+      "path": "生成说明阅读本.py",
+      "bytes": 3470,
+      "sha256": "9da7dcb76698852d62300807e00ed2d0d7ce12ab7aaf5a254a9e274297ef9fda"
+    },
+    {
+      "path": "结果总览.html",
+      "bytes": 8346,
+      "sha256": "95d57d42758478ef9bfb4750cda126de19fee15786786d4d41501eab0700e161"
+    },
+    {
+      "path": "运行研究.py",
+      "bytes": 309,
+      "sha256": "bb5278f6478f56a53172c5cdef3b927316031c6a5c8db2838a5426c9eb627f64"
+    }
+  ]
+}

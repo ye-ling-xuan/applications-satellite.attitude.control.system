@@ -1,0 +1,71 @@
+{
+  "study": "三轴耦合迁移验证",
+  "joint_three_axis_training": false,
+  "inertia_kg_m2": [
+    1.2,
+    1.0,
+    0.8
+  ],
+  "dt_s": 0.05,
+  "horizon_s": 22.0,
+  "deadline_s": 8.0,
+  "per_axis_command_limit_Nm": 0.5,
+  "acceptance_attitude_error_deg": 1.0,
+  "acceptance_rate_vector_norm_deg_s": 0.5,
+  "quaternion": "scalar-first body-to-inertial",
+  "error": "existing quaternion_error: shortest target rotation vector in body frame",
+  "dynamics": "J*omega_dot=tau_actual-cross(omega,J*omega); q_dot=.5*q*[0,omega]",
+  "rk4_substeps": 2,
+  "lag_torque": "analytic exponential evaluated at every RK stage",
+  "actual_cost": "exact continuous torque-square integral, sum of three axes",
+  "initial_actual_torque": 0.0,
+  "command_prehistory": 0.0,
+  "parameter_constant_per_episode": true,
+  "parameter_shared_by_three_actuators": true,
+  "in_domain_s": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "out_of_domain_s": {
+    "lag": [
+      0.4,
+      0.5
+    ],
+    "delay": [
+      0.35,
+      0.4,
+      0.5
+    ]
+  },
+  "counts": {
+    "development": 32,
+    "validation": 32,
+    "test": 128
+  },
+  "independent_seeds": {
+    "development": 202610171301,
+    "validation": 202610171302,
+    "test": 202610171303
+  },
+  "initial_euler_xyz_deg": [
+    -40.0,
+    40.0
+  ],
+  "initial_body_rate_each_axis_deg_s": [
+    -3.0,
+    3.0
+  ],
+  "physical_failure_attitude_deg": 170.0,
+  "physical_failure_rate_norm_deg_s": 300.0,
+  "selection": "maximize validation successes then minimize mean full-horizon actual torque-square cost",
+  "transfer": "12 selected PID/model compensation and every available formal seed; development models diagnostic only",
+  "residual_base": "original per-run single-axis training base; never replace with retuned three-axis gains",
+  "source12_read_only": true,
+  "independent_dynamics_verification": "predeclared representative cases only, not all trajectories",
+  "metric_verification": "all saved test trajectories, costs and limits recomputed",
+  "no_continuous_or_infinite_time_stability_claim": true
+}

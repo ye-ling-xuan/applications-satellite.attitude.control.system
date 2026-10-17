@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "freeze_sha256": "41f35b44c7fede460b44ed6cbc53e9e9c956c353b8a323f177f5840580cab6da",
+  "controller": "delay_residual_formal_seed303_three_axis_transfer",
+  "region": "in_domain",
+  "artifact_sha256": {
+    "traces.npz": "48be21398db2bb10b7b4338bb1db394dae577503c2df3f2e29d5b902a71d59c4",
+    "metrics.csv": "de583e1e5864b5ad8c3c104881e9a12b9db26750a7759d39355a077534892b1f",
+    "summary.json": "b6d0ed038b8b213157182bca06e86f494b83daeeb68cacf19bc4c92d26731e1f"
+  }
+}

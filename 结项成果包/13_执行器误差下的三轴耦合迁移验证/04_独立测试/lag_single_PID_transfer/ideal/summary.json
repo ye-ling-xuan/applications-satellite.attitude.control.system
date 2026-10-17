@@ -1,0 +1,15 @@
+{
+  "controller": "lag_single_PID_transfer",
+  "kind": "lag",
+  "method": "pid_transfer",
+  "stage": "traditional",
+  "region": "ideal",
+  "diagnostic_only": false,
+  "count": 128,
+  "passes": 79,
+  "success_rate": 0.6171875,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.03360411422139177,
+  "mean_command_cost": 0.03360411422139177,
+  "max_settling_time_s": 8.0
+}

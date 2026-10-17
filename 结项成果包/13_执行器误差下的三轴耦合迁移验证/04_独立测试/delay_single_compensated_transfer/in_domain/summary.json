@@ -1,0 +1,15 @@
+{
+  "controller": "delay_single_compensated_transfer",
+  "kind": "delay",
+  "method": "compensated_transfer",
+  "stage": "traditional",
+  "region": "in_domain",
+  "diagnostic_only": false,
+  "count": 768,
+  "passes": 620,
+  "success_rate": 0.8072916666666666,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.04838379651831465,
+  "mean_command_cost": 0.04838379653590045,
+  "max_settling_time_s": 8.0
+}

@@ -1,0 +1,15 @@
+{
+  "controller": "lag_residual_formal_seed202_three_axis_transfer",
+  "kind": "lag",
+  "method": "residual",
+  "stage": "formal",
+  "region": "in_domain",
+  "diagnostic_only": false,
+  "count": 768,
+  "passes": 768,
+  "success_rate": 1.0,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.18301028172663755,
+  "mean_command_cost": 0.5443042765815155,
+  "max_settling_time_s": 7.75
+}

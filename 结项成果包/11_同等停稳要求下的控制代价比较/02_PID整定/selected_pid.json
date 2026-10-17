@@ -1,0 +1,462 @@
+{
+  "single": {
+    "axis": "single",
+    "search_seed": 2026101744,
+    "test_responses_used": false,
+    "gain_unit": "physical torque / rad and rad/s",
+    "counts": {
+      "broad_development_candidates": 656,
+      "shortlist_validation_candidates": 164,
+      "refine1_validation_candidates": 524,
+      "refine2_validation_candidates": 884
+    },
+    "wall_time_s": 28.645750399999088,
+    "deadlines": {
+      "4": {
+        "parameters": {
+          "kp": [
+            2.389270571622221
+          ],
+          "ki": [
+            0.0
+          ],
+          "kd": [
+            2.499673115773737
+          ],
+          "integral_limit": 2.0,
+          "family": "common_PD",
+          "stage": "refine2"
+        },
+        "validation": {
+          "candidate_id": "single_refine2_00588",
+          "axis": "single",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "common_PD",
+          "count": 96,
+          "mean_control_cost": 0.22487565651207397,
+          "max_settling_time_s": 3.95,
+          "mean_rms_error_deg": 6.915032132210656,
+          "failed": 0,
+          "success_4s": 96,
+          "success_6s": 96,
+          "success_8s": 96
+        },
+        "selection_rule": "max passing count, then min mean full-horizon torque-squared integral"
+      },
+      "6": {
+        "parameters": {
+          "kp": [
+            0.6539172205073348
+          ],
+          "ki": [
+            0.0
+          ],
+          "kd": [
+            1.2880800472162515
+          ],
+          "integral_limit": 2.0,
+          "family": "common_PD",
+          "stage": "refine2"
+        },
+        "validation": {
+          "candidate_id": "single_refine2_00683",
+          "axis": "single",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "common_PD",
+          "count": 96,
+          "mean_control_cost": 0.06413833126388492,
+          "max_settling_time_s": 6.0,
+          "mean_rms_error_deg": 8.286635212790996,
+          "failed": 0,
+          "success_4s": 6,
+          "success_6s": 96,
+          "success_8s": 96
+        },
+        "selection_rule": "max passing count, then min mean full-horizon torque-squared integral"
+      },
+      "8": {
+        "parameters": {
+          "kp": [
+            0.37097550841462973
+          ],
+          "ki": [
+            0.0
+          ],
+          "kd": [
+            1.0049780204854382
+          ],
+          "integral_limit": 2.0,
+          "family": "common_PD",
+          "stage": "broad"
+        },
+        "validation": {
+          "candidate_id": "single_refine2_00000",
+          "axis": "single",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "common_PD",
+          "count": 96,
+          "mean_control_cost": 0.027085262211623645,
+          "max_settling_time_s": 8.0,
+          "mean_rms_error_deg": 9.593952109520648,
+          "failed": 0,
+          "success_4s": 4,
+          "success_6s": 13,
+          "success_8s": 96
+        },
+        "selection_rule": "max passing count, then min mean full-horizon torque-squared integral"
+      }
+    },
+    "auxiliary_validation_time_margin_0_25s": {
+      "4": {
+        "parameters": {
+          "kp": [
+            2.9260785471135358
+          ],
+          "ki": [
+            0.0
+          ],
+          "kd": [
+            2.7583788525200847
+          ],
+          "integral_limit": 2.0,
+          "family": "common_or_scaled_PID",
+          "stage": "refine2"
+        },
+        "validation": {
+          "candidate_id": "single_refine2_00641",
+          "axis": "single",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "common_or_scaled_PID",
+          "count": 96,
+          "mean_control_cost": 0.260043119201719,
+          "max_settling_time_s": 3.75,
+          "mean_rms_error_deg": 6.833782473426421,
+          "failed": 0,
+          "success_4s": 96,
+          "success_6s": 96,
+          "success_8s": 96
+        },
+        "selection_rule": "auxiliary: all validation pass and max settling <=deadline-0.25s, then min mean cost",
+        "reserved_validation_time_margin_s": 0.25
+      },
+      "6": {
+        "parameters": {
+          "kp": [
+            0.7167357011855819
+          ],
+          "ki": [
+            0.0
+          ],
+          "kd": [
+            1.3467276833688235
+          ],
+          "integral_limit": 2.0,
+          "family": "common_PD",
+          "stage": "refine2"
+        },
+        "validation": {
+          "candidate_id": "single_refine2_00714",
+          "axis": "single",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "common_PD",
+          "count": 96,
+          "mean_control_cost": 0.07248839029344907,
+          "max_settling_time_s": 5.75,
+          "mean_rms_error_deg": 8.116322964487518,
+          "failed": 0,
+          "success_4s": 8,
+          "success_6s": 96,
+          "success_8s": 96
+        },
+        "selection_rule": "auxiliary: all validation pass and max settling <=deadline-0.25s, then min mean cost",
+        "reserved_validation_time_margin_s": 0.25
+      },
+      "8": {
+        "parameters": {
+          "kp": [
+            0.373177161510015
+          ],
+          "ki": [
+            0.0
+          ],
+          "kd": [
+            0.9813210438085724
+          ],
+          "integral_limit": 2.0,
+          "family": "common_PD",
+          "stage": "refine2"
+        },
+        "validation": {
+          "candidate_id": "single_refine2_00767",
+          "axis": "single",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "common_PD",
+          "count": 96,
+          "mean_control_cost": 0.028043694731839316,
+          "max_settling_time_s": 7.75,
+          "mean_rms_error_deg": 9.522057850690233,
+          "failed": 0,
+          "success_4s": 4,
+          "success_6s": 13,
+          "success_8s": 96
+        },
+        "selection_rule": "auxiliary: all validation pass and max settling <=deadline-0.25s, then min mean cost",
+        "reserved_validation_time_margin_s": 0.25
+      }
+    }
+  },
+  "three": {
+    "axis": "three",
+    "search_seed": 2026101744,
+    "test_responses_used": false,
+    "gain_unit": "physical torque / rad and rad/s",
+    "counts": {
+      "broad_development_candidates": 1551,
+      "shortlist_validation_candidates": 178,
+      "refine1_validation_candidates": 538,
+      "refine2_validation_candidates": 898
+    },
+    "wall_time_s": 482.0550121999986,
+    "deadlines": {
+      "4": {
+        "parameters": {
+          "kp": [
+            3.271168795571915,
+            2.725973996309929,
+            2.180779197047943
+          ],
+          "ki": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "kd": [
+            3.566273163567761,
+            2.9718943029731344,
+            2.377515442378508
+          ],
+          "integral_limit": 2.0,
+          "family": "inertia_scaled_PD",
+          "stage": "broad"
+        },
+        "validation": {
+          "candidate_id": "three_refine2_00069",
+          "axis": "three",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "inertia_scaled_PD",
+          "count": 96,
+          "mean_control_cost": 1.4106496879809918,
+          "max_settling_time_s": 4.0,
+          "mean_rms_error_deg": 10.966306973821041,
+          "failed": 0,
+          "success_4s": 96,
+          "success_6s": 96,
+          "success_8s": 96
+        },
+        "selection_rule": "max passing count, then min mean full-horizon torque-squared integral"
+      },
+      "6": {
+        "parameters": {
+          "kp": [
+            1.187959564700931,
+            0.9899663039174426,
+            0.791973043133954
+          ],
+          "ki": [
+            0.0036972695873110036,
+            0.0030810579894258367,
+            0.00246484639154067
+          ],
+          "kd": [
+            2.0784591211884216,
+            1.732049267657018,
+            1.3856394141256143
+          ],
+          "integral_limit": 2.0,
+          "family": "common_or_scaled_PID",
+          "stage": "refine2"
+        },
+        "validation": {
+          "candidate_id": "three_refine2_00706",
+          "axis": "three",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "common_or_scaled_PID",
+          "count": 96,
+          "mean_control_cost": 0.3386417315191676,
+          "max_settling_time_s": 5.98,
+          "mean_rms_error_deg": 13.945440591512243,
+          "failed": 0,
+          "success_4s": 0,
+          "success_6s": 96,
+          "success_8s": 96
+        },
+        "selection_rule": "max passing count, then min mean full-horizon torque-squared integral"
+      },
+      "8": {
+        "parameters": {
+          "kp": [
+            0.6257720455886661,
+            0.5214767046572217,
+            0.4171813637257774
+          ],
+          "ki": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "kd": [
+            1.5125334731543711,
+            1.2604445609619759,
+            1.008355648769581
+          ],
+          "integral_limit": 2.0,
+          "family": "inertia_scaled_PD",
+          "stage": "refine2"
+        },
+        "validation": {
+          "candidate_id": "three_refine2_00839",
+          "axis": "three",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "inertia_scaled_PD",
+          "count": 96,
+          "mean_control_cost": 0.1311758542304425,
+          "max_settling_time_s": 7.96,
+          "mean_rms_error_deg": 16.419912735923397,
+          "failed": 0,
+          "success_4s": 0,
+          "success_6s": 1,
+          "success_8s": 96
+        },
+        "selection_rule": "max passing count, then min mean full-horizon torque-squared integral"
+      }
+    },
+    "auxiliary_validation_time_margin_0_25s": {
+      "4": {
+        "parameters": {
+          "kp": [
+            3.483334318270631,
+            2.902778598558859,
+            2.322222878847087
+          ],
+          "ki": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "kd": [
+            3.507133566443029,
+            2.922611305369191,
+            2.3380890442953532
+          ],
+          "integral_limit": 2.0,
+          "family": "inertia_scaled_PD",
+          "stage": "refine2"
+        },
+        "validation": {
+          "candidate_id": "three_refine2_00538",
+          "axis": "three",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "inertia_scaled_PD",
+          "count": 96,
+          "mean_control_cost": 1.5981295925851284,
+          "max_settling_time_s": 3.72,
+          "mean_rms_error_deg": 10.691086310093452,
+          "failed": 0,
+          "success_4s": 96,
+          "success_6s": 96,
+          "success_8s": 96
+        },
+        "selection_rule": "auxiliary: all validation pass and max settling <=deadline-0.25s, then min mean cost",
+        "reserved_validation_time_margin_s": 0.25
+      },
+      "6": {
+        "parameters": {
+          "kp": [
+            1.280373372004984,
+            1.0540512051991813,
+            0.7883019644552476
+          ],
+          "ki": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "kd": [
+            2.009005113307253,
+            1.6533913495452583,
+            1.3618857083301752
+          ],
+          "integral_limit": 2.0,
+          "family": "inertia_scaled_PD",
+          "stage": "refine1"
+        },
+        "validation": {
+          "candidate_id": "three_refine1_00315",
+          "axis": "three",
+          "split": "validation",
+          "stage": "refine1",
+          "family": "inertia_scaled_PD",
+          "count": 96,
+          "mean_control_cost": 0.389109106894179,
+          "max_settling_time_s": 5.72,
+          "mean_rms_error_deg": 13.631078251286903,
+          "failed": 0,
+          "success_4s": 0,
+          "success_6s": 96,
+          "success_8s": 96
+        },
+        "selection_rule": "auxiliary: all validation pass and max settling <=deadline-0.25s, then min mean cost",
+        "reserved_validation_time_margin_s": 0.25
+      },
+      "8": {
+        "parameters": {
+          "kp": [
+            0.6533954790371999,
+            0.5444962325309999,
+            0.43559698602479996
+          ],
+          "ki": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "kd": [
+            1.5264837834026552,
+            1.2720698195022127,
+            1.0176558556017705
+          ],
+          "integral_limit": 2.0,
+          "family": "inertia_scaled_PD",
+          "stage": "refine2"
+        },
+        "validation": {
+          "candidate_id": "three_refine2_00843",
+          "axis": "three",
+          "split": "validation",
+          "stage": "refine2",
+          "family": "inertia_scaled_PD",
+          "count": 96,
+          "mean_control_cost": 0.14132830134843208,
+          "max_settling_time_s": 7.7,
+          "mean_rms_error_deg": 16.192023328800406,
+          "failed": 0,
+          "success_4s": 0,
+          "success_6s": 2,
+          "success_8s": 96
+        },
+        "selection_rule": "auxiliary: all validation pass and max settling <=deadline-0.25s, then min mean cost",
+        "reserved_validation_time_margin_s": 0.25
+      }
+    }
+  }
+}

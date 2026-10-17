@@ -1,0 +1,4 @@
+# Original pinned scientific dependencies stay in the parent package.
+-r ../requirements-tested.txt
+# Needed only to regenerate the offline HTML reading copy.
+Markdown==3.4.1

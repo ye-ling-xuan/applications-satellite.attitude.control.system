@@ -1,0 +1,63 @@
+{
+  "dt_s": 0.05,
+  "duration_s": 22.0,
+  "deadline_s": 8.0,
+  "inertia_kg_m2": 1.0,
+  "command_limit_Nm": 0.5,
+  "angle_tolerance_deg": 1.0,
+  "rate_tolerance_deg_s": 0.5,
+  "physical_failure_angle_deg": 170.0,
+  "physical_failure_rate_deg_s": 300.0,
+  "history_intervals": 30,
+  "residual_alpha": 0.5,
+  "in_domain_grid_s": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "out_of_domain_grid_s": {
+    "lag": [
+      0.4,
+      0.5
+    ],
+    "delay": [
+      0.35,
+      0.4,
+      0.5
+    ]
+  },
+  "lag_training": "uniform continuous [0.05,0.30] s",
+  "delay_training": "uniform discrete {1,...,6}*0.05 s",
+  "parameter_constant_within_episode": true,
+  "hidden_deployment_quantities": [
+    "true parameter",
+    "actual torque",
+    "physical input queue"
+  ],
+  "initial_actual_torque_Nm": 0.0,
+  "prehistory_commands_Nm": 0.0,
+  "formal_seeds": [
+    101,
+    202,
+    303
+  ],
+  "development_seeds": {
+    "A": 9101,
+    "B": 9102
+  },
+  "development_steps_per_run": 150000,
+  "formal_steps_per_run": 500000,
+  "validation_every_steps": 50000,
+  "development_gate_success_rate": 0.95,
+  "development_gate_physical_failures": 0,
+  "primary_comparisons": 4,
+  "correction_intervals": 12,
+  "family_alpha": 0.05,
+  "emphasized_cost_reduction_fraction": 0.05,
+  "independent_test_initial_states": 256,
+  "continuous_time_stability_claim": false,
+  "training_budget_steps_upper_bound": 7200000
+}

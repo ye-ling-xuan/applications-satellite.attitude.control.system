@@ -1,0 +1,15 @@
+{
+  "controller": "lag_direct_development_diagnostic_seed9101_three_axis_transfer",
+  "kind": "lag",
+  "method": "direct",
+  "stage": "development_diagnostic",
+  "region": "out_of_domain",
+  "diagnostic_only": true,
+  "count": 256,
+  "passes": 0,
+  "success_rate": 0.0,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.04908742120411358,
+  "mean_command_cost": 0.29112585778570665,
+  "max_settling_time_s": null
+}

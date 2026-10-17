@@ -1,0 +1,7 @@
+﻿controller,kind,method,count,passes,success_rate,physical_failures,mean_actual_cost,mean_command_cost,max_settling_time_s
+lag_retuned_3D_PID,lag,retuned,192,192,1.0,0,0.03813636244987286,0.044998884770196625,8.0
+lag_single_PID_transfer,lag,pid_transfer,192,133,0.6927083333333334,0,0.033382656919519436,0.038823737343329556,8.0
+lag_single_compensated_transfer,lag,compensated_transfer,192,187,0.9739583333333334,0,0.03654768117683258,0.04523144676458313,7.95
+delay_retuned_3D_PID,delay,retuned,192,192,1.0,0,0.06445173912503582,0.06445173912506166,7.2
+delay_single_PID_transfer,delay,pid_transfer,192,132,0.6875,0,0.038981007911872534,0.03898100798827944,7.8500000000000005
+delay_single_compensated_transfer,delay,compensated_transfer,192,165,0.859375,0,0.044831094836085196,0.04483109485336211,8.0

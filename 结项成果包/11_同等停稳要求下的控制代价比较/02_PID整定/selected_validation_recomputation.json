@@ -1,0 +1,126 @@
+{
+  "test_responses_read": false,
+  "all_passed": true,
+  "checks": [
+    {
+      "axis": "single",
+      "group": "deadlines",
+      "deadline_s": 4,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 0.22487565651207397,
+      "max_settling_time_recomputed": 3.95,
+      "passed": true
+    },
+    {
+      "axis": "single",
+      "group": "deadlines",
+      "deadline_s": 6,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 0.06413833126388493,
+      "max_settling_time_recomputed": 6.0,
+      "passed": true
+    },
+    {
+      "axis": "single",
+      "group": "deadlines",
+      "deadline_s": 8,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 0.027085262211623645,
+      "max_settling_time_recomputed": 8.0,
+      "passed": true
+    },
+    {
+      "axis": "single",
+      "group": "auxiliary_validation_time_margin_0_25s",
+      "deadline_s": 4,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 0.260043119201719,
+      "max_settling_time_recomputed": 3.75,
+      "passed": true
+    },
+    {
+      "axis": "single",
+      "group": "auxiliary_validation_time_margin_0_25s",
+      "deadline_s": 6,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 0.07248839029344907,
+      "max_settling_time_recomputed": 5.75,
+      "passed": true
+    },
+    {
+      "axis": "single",
+      "group": "auxiliary_validation_time_margin_0_25s",
+      "deadline_s": 8,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 0.028043694731839316,
+      "max_settling_time_recomputed": 7.75,
+      "passed": true
+    },
+    {
+      "axis": "three",
+      "group": "deadlines",
+      "deadline_s": 4,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 1.4106496879809916,
+      "max_settling_time_recomputed": 4.0,
+      "passed": true
+    },
+    {
+      "axis": "three",
+      "group": "deadlines",
+      "deadline_s": 6,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 0.3386417315191675,
+      "max_settling_time_recomputed": 5.98,
+      "passed": true
+    },
+    {
+      "axis": "three",
+      "group": "deadlines",
+      "deadline_s": 8,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 0.13117585423044248,
+      "max_settling_time_recomputed": 7.96,
+      "passed": true
+    },
+    {
+      "axis": "three",
+      "group": "auxiliary_validation_time_margin_0_25s",
+      "deadline_s": 4,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 1.5981295925851284,
+      "max_settling_time_recomputed": 3.72,
+      "passed": true
+    },
+    {
+      "axis": "three",
+      "group": "auxiliary_validation_time_margin_0_25s",
+      "deadline_s": 6,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 0.389109106894179,
+      "max_settling_time_recomputed": 5.72,
+      "passed": true
+    },
+    {
+      "axis": "three",
+      "group": "auxiliary_validation_time_margin_0_25s",
+      "deadline_s": 8,
+      "episode_count": 96,
+      "passing": 96,
+      "mean_control_cost_recomputed": 0.14132830134843205,
+      "max_settling_time_recomputed": 7.7,
+      "passed": true
+    }
+  ]
+}

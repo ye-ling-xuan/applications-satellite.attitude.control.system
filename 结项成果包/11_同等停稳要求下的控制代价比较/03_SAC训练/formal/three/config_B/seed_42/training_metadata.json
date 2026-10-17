@@ -1,0 +1,169 @@
+{
+  "axis": "three",
+  "seed": 42,
+  "config": "B",
+  "stage": "formal",
+  "requested_steps": 1000000,
+  "actual_steps": 1000000,
+  "fresh_training": true,
+  "eligible_for_formal_results": true,
+  "algorithm": "SAC",
+  "n_envs": 8,
+  "validation_interval": 100000,
+  "observation": "physical error_rad, 2*omega_rad_s, (8-time)/8",
+  "duration_s": 20.0,
+  "deadline_s": 8.0,
+  "dt": 0.02,
+  "max_torque": 2.0,
+  "reward": {
+    "effort_weight": 0.3,
+    "early_angle": 0.2,
+    "ramp_angle": 3.0,
+    "hold_angle": 60.0,
+    "hold_rate": 6.0,
+    "early_rate": 0.1,
+    "reward_multiplier": "inverse_dt"
+  },
+  "reward_formula": "-dt*(effort_weight*sum(torque^2)+angle_weight(t)*sum(error_rad^2)+rate_weight(t)*sum(omega_rad_s^2)); divergence -1000",
+  "reward_multiplier": "inverse_dt for B; multiplies all integral terms by same positive constant within each task",
+  "angle_weight": "early_angle+ramp_angle*(t/8)^4 before8s; hold_angle at/after8s",
+  "rate_weight": "early_rate before8s; hold_rate at/after8s",
+  "finite_horizon_terminal": "20s done=True and TimeLimit.truncated=False; no value bootstrap beyond20s",
+  "validation_selection": "maximize success_8s count, minimize complete-horizon mean control_cost, then prefer earlier checkpoint; compare raw/calibrated deployment",
+  "calibration": "clip(pi(error,rate,t)-pi(0,0,t),-1,1)",
+  "formal_test_used_for_selection": false,
+  "hyperparameters": {
+    "learning_rate": 0.0003,
+    "gamma": 0.9995,
+    "policy_kwargs": {
+      "net_arch": [
+        64,
+        64
+      ],
+      "use_sde": false
+    },
+    "buffer_size": 200000,
+    "learning_starts": 10000,
+    "batch_size": 256,
+    "tau": 0.005,
+    "train_freq": [
+      4,
+      "step"
+    ],
+    "gradient_steps": 2,
+    "ent_coef": "auto_0.01",
+    "target_entropy": -3.0,
+    "seed": 42,
+    "device": "cpu",
+    "verbose": 0
+  },
+  "environment_stream_seed_rule": "uint32 SeedSequence([training_seed, vector_rank]).generate_state(1)[0]",
+  "environment_stream_seeds": [
+    3444837047,
+    3329053876,
+    955475868,
+    2541583436,
+    964687612,
+    2103693821,
+    709256125,
+    1955881634
+  ],
+  "source_sha256": {
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "multi_algorithm_benchmark/vector_training.py": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+  },
+  "versions": {
+    "python": "3.12.4",
+    "numpy": "1.26.4",
+    "torch": "2.10.0+cpu",
+    "gymnasium": "1.2.3",
+    "stable_baselines3": "2.7.1"
+  },
+  "status": "complete",
+  "gradient_updates": 61876,
+  "best": {
+    "timesteps": 1000000,
+    "deployment": "calibrated",
+    "validation_count": 96,
+    "success_4s": 0,
+    "success_6s": 0,
+    "success_8s": 0,
+    "mean_control_cost": 6.184591366357189,
+    "mean_rms_error_deg": 90.33918363248648,
+    "rank": [
+      0,
+      -6.184591366357189,
+      -1000000,
+      1
+    ],
+    "checkpoint": "checkpoint_1000000.zip",
+    "model_path": "03_SAC训练/formal/three/config_B/seed_42/best_model.zip",
+    "seed": 42,
+    "axis": "three",
+    "calibrated": true,
+    "model_sha256": "906faddf8c64b541a6331a8e13f0065d4fbddf24667624a6e89f3c888fb60e4a",
+    "selection_split": "validation"
+  },
+  "wall_time_s": 525.6133673000149,
+  "source_sha256_after": {
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "multi_algorithm_benchmark/vector_training.py": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+  },
+  "runtime_source_unchanged": true,
+  "artifacts": {
+    "best_model.zip": {
+      "sha256": "906faddf8c64b541a6331a8e13f0065d4fbddf24667624a6e89f3c888fb60e4a",
+      "bytes": 266674
+    },
+    "checkpoint_0100000.zip": {
+      "sha256": "78cb4bd42fe258403a9a4bb7bac4f5bc84e69ded2b89c668d527a4c82fee1b68",
+      "bytes": 266653
+    },
+    "checkpoint_0200000.zip": {
+      "sha256": "5462b32add499809b709d7f6fc18ff016fdacdf43e926e28171599730f4751f7",
+      "bytes": 266663
+    },
+    "checkpoint_0300000.zip": {
+      "sha256": "0cd867b6e13bfa042396707c8d07ef09709ac958c9bf448a52ba6dba1a1a0b45",
+      "bytes": 266695
+    },
+    "checkpoint_0400000.zip": {
+      "sha256": "22a92673a5081ab32f64501456b11217820e04a7b6d84420a4c5227da5244482",
+      "bytes": 266703
+    },
+    "checkpoint_0500000.zip": {
+      "sha256": "a848e8ef75b571955debf75bfa7c9615047371240afd21672c736718b40222f7",
+      "bytes": 266723
+    },
+    "checkpoint_0600000.zip": {
+      "sha256": "bdefc46385226e1e4440f42d06c434ee911a9dc154878f044b01c7a288fd03f3",
+      "bytes": 266650
+    },
+    "checkpoint_0700000.zip": {
+      "sha256": "693128690c3ba90f003f539b390dfe36a39eccf137779118a443c77fd8989f6c",
+      "bytes": 266698
+    },
+    "checkpoint_0800000.zip": {
+      "sha256": "b40ae0e28df3547cbe6cb876d741e8283cbc9183139e161fa7b2c1d228c1508a",
+      "bytes": 266726
+    },
+    "checkpoint_0900000.zip": {
+      "sha256": "ef0671063579c04fb173196ddc1ebf395820211ad164067328087e72fabb290c",
+      "bytes": 266706
+    },
+    "checkpoint_1000000.zip": {
+      "sha256": "0b5e1f95fb2856ca73d4f7129f0b1b34d40f09304a2f9cf510d7752003f47822",
+      "bytes": 266674
+    },
+    "final_model.zip": {
+      "sha256": "199ef6ad1b67530acf608880e040fbde3df9f8e605089be73abbbf712f1bf656",
+      "bytes": 266659
+    }
+  }
+}

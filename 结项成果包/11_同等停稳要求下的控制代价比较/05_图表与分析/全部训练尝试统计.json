@@ -1,0 +1,90 @@
+[
+  {
+    "path": "03_SAC训练/development/single/config_A/seed_901",
+    "axis": "single",
+    "seed": 901,
+    "stage": "development",
+    "status": "complete",
+    "actual_steps": 200000
+  },
+  {
+    "path": "03_SAC训练/development/single/config_B/seed_902",
+    "axis": "single",
+    "seed": 902,
+    "stage": "development",
+    "status": "complete",
+    "actual_steps": 200000
+  },
+  {
+    "path": "03_SAC训练/development/three/config_A/seed_901",
+    "axis": "three",
+    "seed": 901,
+    "stage": "development",
+    "status": "complete",
+    "actual_steps": 200000
+  },
+  {
+    "path": "03_SAC训练/development/three/config_B/seed_902",
+    "axis": "three",
+    "seed": 902,
+    "stage": "development",
+    "status": "complete",
+    "actual_steps": 200000
+  },
+  {
+    "path": "03_SAC训练/formal/single/config_B/seed_41",
+    "axis": "single",
+    "seed": 41,
+    "stage": "formal",
+    "status": "complete",
+    "actual_steps": 1000000
+  },
+  {
+    "path": "03_SAC训练/formal/single/config_B/seed_42",
+    "axis": "single",
+    "seed": 42,
+    "stage": "formal",
+    "status": "complete",
+    "actual_steps": 1000000
+  },
+  {
+    "path": "03_SAC训练/formal/single/config_B/seed_43",
+    "axis": "single",
+    "seed": 43,
+    "stage": "formal",
+    "status": "complete",
+    "actual_steps": 1000000
+  },
+  {
+    "path": "03_SAC训练/formal/three/config_B/seed_41",
+    "axis": "three",
+    "seed": 41,
+    "stage": "formal",
+    "status": "complete",
+    "actual_steps": 1000000
+  },
+  {
+    "path": "03_SAC训练/formal/three/config_B/seed_42",
+    "axis": "three",
+    "seed": 42,
+    "stage": "formal",
+    "status": "complete",
+    "actual_steps": 1000000
+  },
+  {
+    "path": "03_SAC训练/formal/three/config_B/seed_43",
+    "axis": "three",
+    "seed": 43,
+    "stage": "formal",
+    "status": "complete",
+    "actual_steps": 1000000
+  },
+  {
+    "path": "03_SAC训练/incomplete_runs/single_config_B_seed42_iofailure_100k",
+    "axis": "single",
+    "seed": 42,
+    "stage": "formal",
+    "status": "incomplete",
+    "actual_steps": 100000
+  }
+]

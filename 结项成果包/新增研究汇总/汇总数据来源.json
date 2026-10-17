@@ -1,0 +1,196 @@
+{
+  "generated_utc": "2026-10-17T13:52:20.832036+00:00",
+  "sources_sha256": {
+    "12_执行器滞后与纯延迟对比研究/05_独立核验/核验结果.json": "235e1bdfdeb6c6bf562c6cb47b4ede6983c01216c67d1e6a744cedfbace18a89",
+    "12_执行器滞后与纯延迟对比研究/06_结果与说明/分组汇总.csv": "03b125b8ac7931f6890116bb9bad308f2e594a9488919ed1dded2859628c4c61",
+    "12_执行器滞后与纯延迟对比研究/06_结果与说明/结果摘要.json": "fee1daab30140e96612c6db0292ad874b46e85e8acb447ffd49f99b393676ae7",
+    "13_执行器误差下的三轴耦合迁移验证/04_独立测试/all_summaries.csv": "92413d9736f1c2e9eaac6bc77dbfc27232f6d09c6727b5569cf6aee4ddbdd6cb",
+    "13_执行器误差下的三轴耦合迁移验证/04_独立测试/freeze.json": "41f35b44c7fede460b44ed6cbc53e9e9c956c353b8a323f177f5840580cab6da",
+    "13_执行器误差下的三轴耦合迁移验证/05_独立核验/all_saved_verification.json": "c4aa51c58b0a9451f3b8830ddf847b897ce577f8ec22fe651cd0e297c2fb13d9",
+    "13_执行器误差下的三轴耦合迁移验证/05_独立核验/summary_semantic_verification.json": "561bd2811f5d32c8781537d540d0454c983218c366a1d7eb3a0b5d03531cf4a0",
+    "14_姿态禁入区下的学习路线选择/04_独立测试/responses/summary.csv": "6e66871a19ccc49b40008b233860d1e41bf8d60683afe3f5a64a738e7b78749c",
+    "14_姿态禁入区下的学习路线选择/05_独立核验/verification.json": "c177fbfe095b19cc7394af0aa20f85023b5d9ca2f381b912cbdfddc83e07bfe1",
+    "14_姿态禁入区下的学习路线选择/06_报告/paired_intervals.json": "06350bbd51e24c72a3d323e07a7f95969714f325f3262e7e0f3a55c023777f55",
+    "14_姿态禁入区下的学习路线选择/06_报告/资源与可复现性.json": "e7f4690d92cc5bf09112c853641e11cafa525761f9169fcbef721416abc3368b"
+  },
+  "single_axis": {
+    "completed_runs": 14,
+    "formal_runs": 6,
+    "actual_training_steps": 4200000,
+    "test_records": 29184,
+    "comparisons": [
+      {
+        "kind": "lag",
+        "method": "direct",
+        "formal_models": 0,
+        "all_in_domain_pass": false,
+        "corrected_intervals": [],
+        "mean_cost_reduction_fraction": null,
+        "cost_advantage_supported": false,
+        "emphasized_improvement": false,
+        "diagnostic_only": true
+      },
+      {
+        "kind": "lag",
+        "method": "residual",
+        "formal_models": 3,
+        "all_in_domain_pass": true,
+        "corrected_intervals": [
+          {
+            "seed": 101,
+            "mean_difference": 0.04861022629037846,
+            "confidence": 0.9958333333333333,
+            "low": 0.04146064437182304,
+            "high": 0.05611629435459231,
+            "independent_initial_states": 256,
+            "parameters_per_initial": 6,
+            "repetitions": 20000
+          },
+          {
+            "seed": 202,
+            "mean_difference": 0.07705270317772213,
+            "confidence": 0.9958333333333333,
+            "low": 0.06844658991994039,
+            "high": 0.0858742203051024,
+            "independent_initial_states": 256,
+            "parameters_per_initial": 6,
+            "repetitions": 20000
+          },
+          {
+            "seed": 303,
+            "mean_difference": 0.08005538116493056,
+            "confidence": 0.9958333333333333,
+            "low": 0.0706285729127056,
+            "high": 0.08956816598647883,
+            "independent_initial_states": 256,
+            "parameters_per_initial": 6,
+            "repetitions": 20000
+          }
+        ],
+        "mean_cost_reduction_fraction": -2.5686269126674475,
+        "cost_advantage_supported": false,
+        "emphasized_improvement": false,
+        "diagnostic_only": false
+      },
+      {
+        "kind": "delay",
+        "method": "direct",
+        "formal_models": 0,
+        "all_in_domain_pass": false,
+        "corrected_intervals": [],
+        "mean_cost_reduction_fraction": null,
+        "cost_advantage_supported": false,
+        "emphasized_improvement": false,
+        "diagnostic_only": true
+      },
+      {
+        "kind": "delay",
+        "method": "residual",
+        "formal_models": 3,
+        "all_in_domain_pass": false,
+        "corrected_intervals": [
+          {
+            "seed": 101,
+            "mean_difference": 0.244442585433875,
+            "confidence": 0.9958333333333333,
+            "low": 0.22401686892715295,
+            "high": 0.2657940974028523,
+            "independent_initial_states": 256,
+            "parameters_per_initial": 6,
+            "repetitions": 20000
+          },
+          {
+            "seed": 202,
+            "mean_difference": 0.15772337715281534,
+            "confidence": 0.9958333333333333,
+            "low": 0.1465185463024951,
+            "high": 0.16889867798337896,
+            "independent_initial_states": 256,
+            "parameters_per_initial": 6,
+            "repetitions": 20000
+          },
+          {
+            "seed": 303,
+            "mean_difference": 0.15341074050014913,
+            "confidence": 0.9958333333333333,
+            "low": 0.1454914758424939,
+            "high": 0.16158566201099997,
+            "independent_initial_states": 256,
+            "parameters_per_initial": 6,
+            "repetitions": 20000
+          }
+        ],
+        "mean_cost_reduction_fraction": -5.950004265531721,
+        "cost_advantage_supported": false,
+        "emphasized_improvement": false,
+        "diagnostic_only": false
+      }
+    ],
+    "independent_initial_states": 256,
+    "independent_verification_passed": true
+  },
+  "three_axis": {
+    "controller_count": 14,
+    "output_groups": 42,
+    "test_records": 17024,
+    "joint_training": false
+  },
+  "route_primary": [
+    {
+      "method": "direct_PID",
+      "region": "test",
+      "count": "512",
+      "successes": "434",
+      "collisions": "78",
+      "success_rate": "0.84765625",
+      "safety_rate": "0.84765625",
+      "mean_torque_cost": "0.11945470813948127",
+      "mean_success_cost": "0.10345968331131469"
+    },
+    {
+      "method": "analytic_route_PID",
+      "region": "test",
+      "count": "512",
+      "successes": "512",
+      "collisions": "0",
+      "success_rate": "1.0",
+      "safety_rate": "1.0",
+      "mean_torque_cost": "0.16913039150225878",
+      "mean_success_cost": "0.16913039150225878"
+    },
+    {
+      "method": "DQN_seed_101",
+      "region": "test",
+      "count": "512",
+      "successes": "512",
+      "collisions": "0",
+      "success_rate": "1.0",
+      "safety_rate": "1.0",
+      "mean_torque_cost": "0.16913039150225878",
+      "mean_success_cost": "0.16913039150225878"
+    },
+    {
+      "method": "DQN_seed_202",
+      "region": "test",
+      "count": "512",
+      "successes": "504",
+      "collisions": "8",
+      "success_rate": "0.984375",
+      "safety_rate": "0.984375",
+      "mean_torque_cost": "0.18703659296677963",
+      "mean_success_cost": "0.17165150542110885"
+    },
+    {
+      "method": "DQN_seed_303",
+      "region": "test",
+      "count": "512",
+      "successes": "512",
+      "collisions": "0",
+      "success_rate": "1.0",
+      "safety_rate": "1.0",
+      "mean_torque_cost": "0.16913039150225878",
+      "mean_success_cost": "0.16913039150225878"
+    }
+  ],
+  "scope": "learning route choice improves direct-target PID; no superiority over analytic planning"
+}

@@ -1,0 +1,126 @@
+{
+  "diagnostic": "constructed reward escape counterexample; not a controller evaluation",
+  "created_utc": "2026-10-17T13:21:42.600202+00:00",
+  "training_performed": false,
+  "heldout_responses_used": false,
+  "source_modified": false,
+  "initial_state_constructed": true,
+  "initial_angle_deg": 60.0,
+  "initial_rate_deg_s": 0.0,
+  "kind": "lag",
+  "parameter_s": 0.05,
+  "gamma": 0.995,
+  "constants": {
+    "DT": 0.05,
+    "DURATION": 22.0,
+    "DEADLINE": 8.0,
+    "LIMIT": 0.5,
+    "INERTIA": 1.0,
+    "FAIL_ANGLE": 170.0,
+    "FAIL_RATE": 300.0
+  },
+  "reward_weights": {
+    "A": {
+      "error_weight": 1.0,
+      "rate_weight": 0.5,
+      "torque_weight": 0.1,
+      "violation_weight": 8.0
+    },
+    "B": {
+      "error_weight": 1.0,
+      "rate_weight": 0.5,
+      "torque_weight": 0.02,
+      "violation_weight": 12.0
+    }
+  },
+  "failure_reward": -1000.0,
+  "reward_dtype": "float32",
+  "source_snapshot": "03_SAC训练/development/delay/direct/reward_A/seed_9101/source_snapshot",
+  "source_sha256": {
+    "代码/actuator_study/__init__.py": "5d327c1052b3b3c925009e523697cfb4b655296ce6915ec9ae3bf228473ed690",
+    "代码/actuator_study/analysis.py": "216b0cfb29706e6082a8ec2d4183df8c3e576122a111ce6f4f96f380403ee5ab",
+    "代码/actuator_study/baselines.py": "22cef23a41daeac2f5fe52522a9977b96061ddd8c186602cae71aa68522e0194",
+    "代码/actuator_study/cli.py": "6ae908553acf69d3000d1e0fe1dea68719a2fa60c0b1a1e23f84af50c2f9d32c",
+    "代码/actuator_study/delivery.py": "3f23058bf87f62a4f1fe92ee82b8b778bd5054248f8ee47012f4b655a8707127",
+    "代码/actuator_study/evaluation.py": "21c20717a67078b1a3fbc80756b847647c608ff46a1da7e1f6bdc96d66772bfe",
+    "代码/actuator_study/learning.py": "ea0d560d082642c9b80116c487c675afaffbc849906bfbbb308f29e9fcb0b363",
+    "代码/actuator_study/physics.py": "3f5bd200e47fe00fd11bf3ad9198043f64e22b4f94fb6d1d2b2b567acf57de40",
+    "代码/actuator_study/protocol.py": "5b0b275d02bda6efef2411f37d44b5b477bb704d0694b1e6769af1858f639515",
+    "代码/actuator_study/test_baselines.py": "70cdfaf61493ad90926722b10314b192ee2905acbc3be4d623f250fbc623788a",
+    "代码/actuator_study/verification.py": "93baf486dbd2d84cb77849b8f64226a7a2101dbcd449f879f8a0d3c619c9ec72",
+    "代码/test_evaluation_delivery.py": "5c3ea0d858ed99a0fee3953fb267477d7ad0d289b5606b0dc7e5508c3d6b32cb",
+    "代码/test_learning.py": "fd4abf3f8a01e1c15aacb710b14a77cb2ffae7f066d1713800e0761d3aa0eb62",
+    "代码/test_physics.py": "99227a44d09cbe206bbcf7a18f4db5ae1dde6170eeaf921991022905c482e423",
+    "代码/test_verification.py": "42c02817d689774e642c1539220c3f5721e7cbbfb9882af5f3a0ef4d0e2bcd59"
+  },
+  "reward_source_sha256": "ea0d560d082642c9b80116c487c675afaffbc849906bfbbb308f29e9fcb0b363",
+  "learning_declaration_sha256": "46cdcbd25b3b77a25e6d6433babb02a44ed3978993745a2caf2a27a2d5564bb8",
+  "independent_script_sha256": "a21326a09bc2bc35352109d795c8fdab54372086b064b640e01cc2ab4a7b19e6",
+  "trajectories": [
+    {
+      "policy": "保持60度_零命令",
+      "constant_command_Nm": 0.0,
+      "steps": 440,
+      "failed": false,
+      "terminal_time_s": 22.0,
+      "final_angle_deg": 59.99999999999999,
+      "final_rate_deg_s": 0.0,
+      "actual_torque_square_integral": 0.0,
+      "trace_file": "保持60度_零命令.npz",
+      "returns": {
+        "A": {
+          "discounted_return": -1598.022097151047,
+          "undiscounted_return": -5122.399892807007
+        },
+        "B": {
+          "discounted_return": -1952.129903661492,
+          "undiscounted_return": -6583.600107192993
+        }
+      }
+    },
+    {
+      "policy": "向外饱和_提前失效",
+      "constant_command_Nm": 0.5,
+      "steps": 57,
+      "failed": true,
+      "terminal_time_s": 2.85,
+      "final_angle_deg": 172.33553770783703,
+      "final_rate_deg_s": 80.21409131831525,
+      "actual_torque_square_integral": 0.69375,
+      "trace_file": "向外饱和_提前失效.npz",
+      "returns": {
+        "A": {
+          "discounted_return": -1066.834136260473,
+          "undiscounted_return": -1360.8524680137634
+        },
+        "B": {
+          "discounted_return": -1066.6443114692202,
+          "undiscounted_return": -1360.634461402893
+        }
+      }
+    }
+  ],
+  "ordinary_penalty_bounds": {
+    "A": {
+      "max_ordinary_step_penalty_before_deadline": 7.505,
+      "max_ordinary_step_penalty_after_deadline": 27.905,
+      "discounted_full_horizon_ordinary_penalty_upper_bound": 2724.7916878196625
+    },
+    "B": {
+      "max_ordinary_step_penalty_before_deadline": 7.501000000000001,
+      "max_ordinary_step_penalty_after_deadline": 38.101,
+      "discounted_full_horizon_ordinary_penalty_upper_bound": 3418.6758226191923
+    }
+  },
+  "artifact_sha256": {
+    "保持60度_零命令.npz": "4560c94f2b84b8197064436fd8830c104fb8005d662272fc06044d63649e0f34",
+    "向外饱和_提前失效.npz": "a4076f5db7b582381fff07134e16b52cb489357cbb3a1062e9c600c609033301"
+  },
+  "limitations": [
+    "The example proves a reward preference exists, not that a trained policy intentionally exploits it.",
+    "Neither command is an optimized successful controller; successful control can achieve a better return.",
+    "The example does not prove SAC infeasible or generally inferior to PID.",
+    "All planned configurations, failed attempts and original results remain unchanged.",
+    "Any changed reward, initialization, exploration or absorbing failure state requires a separate declared study."
+  ]
+}

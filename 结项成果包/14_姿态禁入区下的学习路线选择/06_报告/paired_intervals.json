@@ -1,0 +1,26 @@
+{
+  "intervals": [
+    {
+      "seed": 101,
+      "difference": 0.15234375,
+      "lower": 0.115234375,
+      "upper": 0.19140625
+    },
+    {
+      "seed": 202,
+      "difference": 0.13671875,
+      "lower": 0.095703125,
+      "upper": 0.177734375
+    },
+    {
+      "seed": 303,
+      "difference": 0.15234375,
+      "lower": 0.115234375,
+      "upper": 0.19140625
+    }
+  ],
+  "bootstrap_samples": 20000,
+  "family_alpha": 0.05,
+  "comparisons": 3,
+  "supported": true
+}

@@ -1,0 +1,1274 @@
+{
+  "created_utc": "2026-10-17T08:19:32.259056+00:00",
+  "test_controller_responses_read": false,
+  "controllers": [
+    {
+      "id": "single_pid_4s",
+      "axis": "single",
+      "kind": "pid",
+      "group": "pid",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          2.389270571622221
+        ],
+        "ki": [
+          0.0
+        ],
+        "kd": [
+          2.499673115773737
+        ],
+        "integral_limit": 2.0,
+        "family": "common_PD",
+        "stage": "refine2"
+      },
+      "optimized_deadlines": [
+        4.0
+      ],
+      "validation": {
+        "candidate_id": "single_refine2_00588",
+        "axis": "single",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "common_PD",
+        "count": 96,
+        "mean_control_cost": 0.22487565651207397,
+        "max_settling_time_s": 3.95,
+        "mean_rms_error_deg": 6.915032132210656,
+        "failed": 0,
+        "success_4s": 96,
+        "success_6s": 96,
+        "success_8s": 96
+      }
+    },
+    {
+      "id": "single_pid_margin_4s",
+      "axis": "single",
+      "kind": "pid",
+      "group": "pid_margin",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          2.9260785471135358
+        ],
+        "ki": [
+          0.0
+        ],
+        "kd": [
+          2.7583788525200847
+        ],
+        "integral_limit": 2.0,
+        "family": "common_or_scaled_PID",
+        "stage": "refine2"
+      },
+      "optimized_deadlines": [
+        4.0
+      ],
+      "validation": {
+        "candidate_id": "single_refine2_00641",
+        "axis": "single",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "common_or_scaled_PID",
+        "count": 96,
+        "mean_control_cost": 0.260043119201719,
+        "max_settling_time_s": 3.75,
+        "mean_rms_error_deg": 6.833782473426421,
+        "failed": 0,
+        "success_4s": 96,
+        "success_6s": 96,
+        "success_8s": 96
+      },
+      "validation_time_margin_s": 0.25
+    },
+    {
+      "id": "single_pid_6s",
+      "axis": "single",
+      "kind": "pid",
+      "group": "pid",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          0.6539172205073348
+        ],
+        "ki": [
+          0.0
+        ],
+        "kd": [
+          1.2880800472162515
+        ],
+        "integral_limit": 2.0,
+        "family": "common_PD",
+        "stage": "refine2"
+      },
+      "optimized_deadlines": [
+        6.0
+      ],
+      "validation": {
+        "candidate_id": "single_refine2_00683",
+        "axis": "single",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "common_PD",
+        "count": 96,
+        "mean_control_cost": 0.06413833126388492,
+        "max_settling_time_s": 6.0,
+        "mean_rms_error_deg": 8.286635212790996,
+        "failed": 0,
+        "success_4s": 6,
+        "success_6s": 96,
+        "success_8s": 96
+      }
+    },
+    {
+      "id": "single_pid_margin_6s",
+      "axis": "single",
+      "kind": "pid",
+      "group": "pid_margin",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          0.7167357011855819
+        ],
+        "ki": [
+          0.0
+        ],
+        "kd": [
+          1.3467276833688235
+        ],
+        "integral_limit": 2.0,
+        "family": "common_PD",
+        "stage": "refine2"
+      },
+      "optimized_deadlines": [
+        6.0
+      ],
+      "validation": {
+        "candidate_id": "single_refine2_00714",
+        "axis": "single",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "common_PD",
+        "count": 96,
+        "mean_control_cost": 0.07248839029344907,
+        "max_settling_time_s": 5.75,
+        "mean_rms_error_deg": 8.116322964487518,
+        "failed": 0,
+        "success_4s": 8,
+        "success_6s": 96,
+        "success_8s": 96
+      },
+      "validation_time_margin_s": 0.25
+    },
+    {
+      "id": "single_pid_8s",
+      "axis": "single",
+      "kind": "pid",
+      "group": "pid",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          0.37097550841462973
+        ],
+        "ki": [
+          0.0
+        ],
+        "kd": [
+          1.0049780204854382
+        ],
+        "integral_limit": 2.0,
+        "family": "common_PD",
+        "stage": "broad"
+      },
+      "optimized_deadlines": [
+        8.0
+      ],
+      "validation": {
+        "candidate_id": "single_refine2_00000",
+        "axis": "single",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "common_PD",
+        "count": 96,
+        "mean_control_cost": 0.027085262211623645,
+        "max_settling_time_s": 8.0,
+        "mean_rms_error_deg": 9.593952109520648,
+        "failed": 0,
+        "success_4s": 4,
+        "success_6s": 13,
+        "success_8s": 96
+      }
+    },
+    {
+      "id": "single_pid_margin_8s",
+      "axis": "single",
+      "kind": "pid",
+      "group": "pid_margin",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          0.373177161510015
+        ],
+        "ki": [
+          0.0
+        ],
+        "kd": [
+          0.9813210438085724
+        ],
+        "integral_limit": 2.0,
+        "family": "common_PD",
+        "stage": "refine2"
+      },
+      "optimized_deadlines": [
+        8.0
+      ],
+      "validation": {
+        "candidate_id": "single_refine2_00767",
+        "axis": "single",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "common_PD",
+        "count": 96,
+        "mean_control_cost": 0.028043694731839316,
+        "max_settling_time_s": 7.75,
+        "mean_rms_error_deg": 9.522057850690233,
+        "failed": 0,
+        "success_4s": 4,
+        "success_6s": 13,
+        "success_8s": 96
+      },
+      "validation_time_margin_s": 0.25
+    },
+    {
+      "id": "three_pid_4s",
+      "axis": "three",
+      "kind": "pid",
+      "group": "pid",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          3.271168795571915,
+          2.725973996309929,
+          2.180779197047943
+        ],
+        "ki": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "kd": [
+          3.566273163567761,
+          2.9718943029731344,
+          2.377515442378508
+        ],
+        "integral_limit": 2.0,
+        "family": "inertia_scaled_PD",
+        "stage": "broad"
+      },
+      "optimized_deadlines": [
+        4.0
+      ],
+      "validation": {
+        "candidate_id": "three_refine2_00069",
+        "axis": "three",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "inertia_scaled_PD",
+        "count": 96,
+        "mean_control_cost": 1.4106496879809918,
+        "max_settling_time_s": 4.0,
+        "mean_rms_error_deg": 10.966306973821041,
+        "failed": 0,
+        "success_4s": 96,
+        "success_6s": 96,
+        "success_8s": 96
+      }
+    },
+    {
+      "id": "three_pid_margin_4s",
+      "axis": "three",
+      "kind": "pid",
+      "group": "pid_margin",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          3.483334318270631,
+          2.902778598558859,
+          2.322222878847087
+        ],
+        "ki": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "kd": [
+          3.507133566443029,
+          2.922611305369191,
+          2.3380890442953532
+        ],
+        "integral_limit": 2.0,
+        "family": "inertia_scaled_PD",
+        "stage": "refine2"
+      },
+      "optimized_deadlines": [
+        4.0
+      ],
+      "validation": {
+        "candidate_id": "three_refine2_00538",
+        "axis": "three",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "inertia_scaled_PD",
+        "count": 96,
+        "mean_control_cost": 1.5981295925851284,
+        "max_settling_time_s": 3.72,
+        "mean_rms_error_deg": 10.691086310093452,
+        "failed": 0,
+        "success_4s": 96,
+        "success_6s": 96,
+        "success_8s": 96
+      },
+      "validation_time_margin_s": 0.25
+    },
+    {
+      "id": "three_pid_6s",
+      "axis": "three",
+      "kind": "pid",
+      "group": "pid",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          1.187959564700931,
+          0.9899663039174426,
+          0.791973043133954
+        ],
+        "ki": [
+          0.0036972695873110036,
+          0.0030810579894258367,
+          0.00246484639154067
+        ],
+        "kd": [
+          2.0784591211884216,
+          1.732049267657018,
+          1.3856394141256143
+        ],
+        "integral_limit": 2.0,
+        "family": "common_or_scaled_PID",
+        "stage": "refine2"
+      },
+      "optimized_deadlines": [
+        6.0
+      ],
+      "validation": {
+        "candidate_id": "three_refine2_00706",
+        "axis": "three",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "common_or_scaled_PID",
+        "count": 96,
+        "mean_control_cost": 0.3386417315191676,
+        "max_settling_time_s": 5.98,
+        "mean_rms_error_deg": 13.945440591512243,
+        "failed": 0,
+        "success_4s": 0,
+        "success_6s": 96,
+        "success_8s": 96
+      }
+    },
+    {
+      "id": "three_pid_margin_6s",
+      "axis": "three",
+      "kind": "pid",
+      "group": "pid_margin",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          1.280373372004984,
+          1.0540512051991813,
+          0.7883019644552476
+        ],
+        "ki": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "kd": [
+          2.009005113307253,
+          1.6533913495452583,
+          1.3618857083301752
+        ],
+        "integral_limit": 2.0,
+        "family": "inertia_scaled_PD",
+        "stage": "refine1"
+      },
+      "optimized_deadlines": [
+        6.0
+      ],
+      "validation": {
+        "candidate_id": "three_refine1_00315",
+        "axis": "three",
+        "split": "validation",
+        "stage": "refine1",
+        "family": "inertia_scaled_PD",
+        "count": 96,
+        "mean_control_cost": 0.389109106894179,
+        "max_settling_time_s": 5.72,
+        "mean_rms_error_deg": 13.631078251286903,
+        "failed": 0,
+        "success_4s": 0,
+        "success_6s": 96,
+        "success_8s": 96
+      },
+      "validation_time_margin_s": 0.25
+    },
+    {
+      "id": "three_pid_8s",
+      "axis": "three",
+      "kind": "pid",
+      "group": "pid",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          0.6257720455886661,
+          0.5214767046572217,
+          0.4171813637257774
+        ],
+        "ki": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "kd": [
+          1.5125334731543711,
+          1.2604445609619759,
+          1.008355648769581
+        ],
+        "integral_limit": 2.0,
+        "family": "inertia_scaled_PD",
+        "stage": "refine2"
+      },
+      "optimized_deadlines": [
+        8.0
+      ],
+      "validation": {
+        "candidate_id": "three_refine2_00839",
+        "axis": "three",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "inertia_scaled_PD",
+        "count": 96,
+        "mean_control_cost": 0.1311758542304425,
+        "max_settling_time_s": 7.96,
+        "mean_rms_error_deg": 16.419912735923397,
+        "failed": 0,
+        "success_4s": 0,
+        "success_6s": 1,
+        "success_8s": 96
+      }
+    },
+    {
+      "id": "three_pid_margin_8s",
+      "axis": "three",
+      "kind": "pid",
+      "group": "pid_margin",
+      "seed": -1,
+      "parameters": {
+        "kp": [
+          0.6533954790371999,
+          0.5444962325309999,
+          0.43559698602479996
+        ],
+        "ki": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "kd": [
+          1.5264837834026552,
+          1.2720698195022127,
+          1.0176558556017705
+        ],
+        "integral_limit": 2.0,
+        "family": "inertia_scaled_PD",
+        "stage": "refine2"
+      },
+      "optimized_deadlines": [
+        8.0
+      ],
+      "validation": {
+        "candidate_id": "three_refine2_00843",
+        "axis": "three",
+        "split": "validation",
+        "stage": "refine2",
+        "family": "inertia_scaled_PD",
+        "count": 96,
+        "mean_control_cost": 0.14132830134843208,
+        "max_settling_time_s": 7.7,
+        "mean_rms_error_deg": 16.192023328800406,
+        "failed": 0,
+        "success_4s": 0,
+        "success_6s": 2,
+        "success_8s": 96
+      },
+      "validation_time_margin_s": 0.25
+    },
+    {
+      "id": "single_legacy_11_scale_1p25",
+      "axis": "single",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 11,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/best_model.zip",
+      "model_sha256": "f3cb02558d358faaad8474b8161bec5c12ceffeb312ccdfc841fbf3860138e86",
+      "calibrated": true,
+      "scale": 1.25,
+      "optimized_deadlines": [
+        4.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "single_legacy_11_scale_1p0",
+      "axis": "single",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 11,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/best_model.zip",
+      "model_sha256": "f3cb02558d358faaad8474b8161bec5c12ceffeb312ccdfc841fbf3860138e86",
+      "calibrated": true,
+      "scale": 1.0,
+      "optimized_deadlines": [
+        6.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "single_legacy_11_scale_0p8",
+      "axis": "single",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 11,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/best_model.zip",
+      "model_sha256": "f3cb02558d358faaad8474b8161bec5c12ceffeb312ccdfc841fbf3860138e86",
+      "calibrated": true,
+      "scale": 0.8,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "single_legacy_22_scale_1p5",
+      "axis": "single",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 22,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_22/best_model.zip",
+      "model_sha256": "89182ee711b55e26e2a65869ff8cd0ece1339a5e1a57906e4d3c3fb2c9a856ae",
+      "calibrated": true,
+      "scale": 1.5,
+      "optimized_deadlines": [
+        4.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "single_legacy_22_scale_0p8",
+      "axis": "single",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 22,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_22/best_model.zip",
+      "model_sha256": "89182ee711b55e26e2a65869ff8cd0ece1339a5e1a57906e4d3c3fb2c9a856ae",
+      "calibrated": true,
+      "scale": 0.8,
+      "optimized_deadlines": [
+        6.0,
+        8.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "single_legacy_33_scale_2p0",
+      "axis": "single",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 33,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_33/best_model.zip",
+      "model_sha256": "0d54a85724425971d1fe2834fe843a9fa860ae670bf9ed3a686f761ee693a9b1",
+      "calibrated": true,
+      "scale": 2.0,
+      "optimized_deadlines": [
+        4.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "single_legacy_33_scale_1p5",
+      "axis": "single",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 33,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_33/best_model.zip",
+      "model_sha256": "0d54a85724425971d1fe2834fe843a9fa860ae670bf9ed3a686f761ee693a9b1",
+      "calibrated": true,
+      "scale": 1.5,
+      "optimized_deadlines": [
+        6.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "single_legacy_33_scale_1p0",
+      "axis": "single",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 33,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_33/best_model.zip",
+      "model_sha256": "0d54a85724425971d1fe2834fe843a9fa860ae670bf9ed3a686f761ee693a9b1",
+      "calibrated": true,
+      "scale": 1.0,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "three_legacy_11_scale_1p25",
+      "axis": "three",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 11,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/best_model.zip",
+      "model_sha256": "ee74c85023050658aabeebe5a08760887393ea3132b2044cc2be59902541a910",
+      "calibrated": true,
+      "scale": 1.25,
+      "optimized_deadlines": [
+        4.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "three_legacy_11_scale_1p0",
+      "axis": "three",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 11,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/best_model.zip",
+      "model_sha256": "ee74c85023050658aabeebe5a08760887393ea3132b2044cc2be59902541a910",
+      "calibrated": true,
+      "scale": 1.0,
+      "optimized_deadlines": [
+        6.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "three_legacy_11_scale_0p8",
+      "axis": "three",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 11,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/best_model.zip",
+      "model_sha256": "ee74c85023050658aabeebe5a08760887393ea3132b2044cc2be59902541a910",
+      "calibrated": true,
+      "scale": 0.8,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "three_legacy_22_scale_2p0",
+      "axis": "three",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 22,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_22/best_model.zip",
+      "model_sha256": "f0de77df6ab54ba67028d11615760a955e61cd72f0a6c5bee2758e0437d678f7",
+      "calibrated": true,
+      "scale": 2.0,
+      "optimized_deadlines": [
+        4.0,
+        6.0,
+        8.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "three_legacy_33_scale_2p0",
+      "axis": "three",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 33,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_33/best_model.zip",
+      "model_sha256": "0020aab30b9d834bdf819ebac0a13a796221ed37decfdf083fe398927abf2867",
+      "calibrated": true,
+      "scale": 2.0,
+      "optimized_deadlines": [
+        4.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "three_legacy_33_scale_1p0",
+      "axis": "three",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 33,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_33/best_model.zip",
+      "model_sha256": "0020aab30b9d834bdf819ebac0a13a796221ed37decfdf083fe398927abf2867",
+      "calibrated": true,
+      "scale": 1.0,
+      "optimized_deadlines": [
+        6.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "three_legacy_33_scale_0p8",
+      "axis": "three",
+      "kind": "legacy",
+      "group": "legacy_sac",
+      "seed": 33,
+      "model_path": "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_33/best_model.zip",
+      "model_sha256": "0020aab30b9d834bdf819ebac0a13a796221ed37decfdf083fe398927abf2867",
+      "calibrated": true,
+      "scale": 0.8,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": false
+    },
+    {
+      "id": "single_fresh_41_selected",
+      "axis": "single",
+      "kind": "fresh",
+      "group": "fresh_sac",
+      "seed": 41,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_41/best_model.zip",
+      "model_sha256": "6fb111928854312960a8ad772701bcb4a72294b32f74255f9a6d60fa5a12c7e0",
+      "calibrated": true,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 400000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 400000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 5,
+        "success_6s": 27,
+        "success_8s": 90,
+        "mean_control_cost": 0.16882895250607258,
+        "mean_rms_error_deg": 7.3084002273723785,
+        "rank": [
+          90,
+          -0.16882895250607258,
+          -400000,
+          1
+        ],
+        "checkpoint": "checkpoint_0400000.zip",
+        "model_path": "03_SAC训练/formal/single/config_B/seed_41/best_model.zip",
+        "seed": 41,
+        "axis": "single",
+        "calibrated": true,
+        "model_sha256": "6fb111928854312960a8ad772701bcb4a72294b32f74255f9a6d60fa5a12c7e0",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": false
+    },
+    {
+      "id": "single_fresh_41_ablation",
+      "axis": "single",
+      "kind": "fresh",
+      "group": "fresh_sac_ablation",
+      "seed": 41,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_41/best_model.zip",
+      "model_sha256": "6fb111928854312960a8ad772701bcb4a72294b32f74255f9a6d60fa5a12c7e0",
+      "calibrated": false,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 400000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 400000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 5,
+        "success_6s": 27,
+        "success_8s": 90,
+        "mean_control_cost": 0.16882895250607258,
+        "mean_rms_error_deg": 7.3084002273723785,
+        "rank": [
+          90,
+          -0.16882895250607258,
+          -400000,
+          1
+        ],
+        "checkpoint": "checkpoint_0400000.zip",
+        "model_path": "03_SAC训练/formal/single/config_B/seed_41/best_model.zip",
+        "seed": 41,
+        "axis": "single",
+        "calibrated": true,
+        "model_sha256": "6fb111928854312960a8ad772701bcb4a72294b32f74255f9a6d60fa5a12c7e0",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": true
+    },
+    {
+      "id": "single_fresh_42_selected",
+      "axis": "single",
+      "kind": "fresh",
+      "group": "fresh_sac",
+      "seed": 42,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_42/best_model.zip",
+      "model_sha256": "23ec0aec3b8b5ab7d7e601d30e6d8e8fbf5f8116cc18d8e85b11a17d90f1ec32",
+      "calibrated": true,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 700000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 700000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 9,
+        "success_6s": 64,
+        "success_8s": 86,
+        "mean_control_cost": 0.07827281568480611,
+        "mean_rms_error_deg": 8.42555401506083,
+        "rank": [
+          86,
+          -0.07827281568480611,
+          -700000,
+          1
+        ],
+        "checkpoint": "checkpoint_0700000.zip",
+        "model_path": "03_SAC训练/formal/single/config_B/seed_42/best_model.zip",
+        "seed": 42,
+        "axis": "single",
+        "calibrated": true,
+        "model_sha256": "23ec0aec3b8b5ab7d7e601d30e6d8e8fbf5f8116cc18d8e85b11a17d90f1ec32",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": false
+    },
+    {
+      "id": "single_fresh_42_ablation",
+      "axis": "single",
+      "kind": "fresh",
+      "group": "fresh_sac_ablation",
+      "seed": 42,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_42/best_model.zip",
+      "model_sha256": "23ec0aec3b8b5ab7d7e601d30e6d8e8fbf5f8116cc18d8e85b11a17d90f1ec32",
+      "calibrated": false,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 700000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 700000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 9,
+        "success_6s": 64,
+        "success_8s": 86,
+        "mean_control_cost": 0.07827281568480611,
+        "mean_rms_error_deg": 8.42555401506083,
+        "rank": [
+          86,
+          -0.07827281568480611,
+          -700000,
+          1
+        ],
+        "checkpoint": "checkpoint_0700000.zip",
+        "model_path": "03_SAC训练/formal/single/config_B/seed_42/best_model.zip",
+        "seed": 42,
+        "axis": "single",
+        "calibrated": true,
+        "model_sha256": "23ec0aec3b8b5ab7d7e601d30e6d8e8fbf5f8116cc18d8e85b11a17d90f1ec32",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": true
+    },
+    {
+      "id": "single_fresh_43_selected",
+      "axis": "single",
+      "kind": "fresh",
+      "group": "fresh_sac",
+      "seed": 43,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_43/best_model.zip",
+      "model_sha256": "078a5600cb09821f12c63b9b6dc549caeb94d268020d4857f488e2a3e64d23d5",
+      "calibrated": true,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 500000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 500000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 2,
+        "success_6s": 27,
+        "success_8s": 31,
+        "mean_control_cost": 0.17580276764907118,
+        "mean_rms_error_deg": 45.92626367969757,
+        "rank": [
+          31,
+          -0.17580276764907118,
+          -500000,
+          1
+        ],
+        "checkpoint": "checkpoint_0500000.zip",
+        "model_path": "03_SAC训练/formal/single/config_B/seed_43/best_model.zip",
+        "seed": 43,
+        "axis": "single",
+        "calibrated": true,
+        "model_sha256": "078a5600cb09821f12c63b9b6dc549caeb94d268020d4857f488e2a3e64d23d5",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": false
+    },
+    {
+      "id": "single_fresh_43_ablation",
+      "axis": "single",
+      "kind": "fresh",
+      "group": "fresh_sac_ablation",
+      "seed": 43,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_43/best_model.zip",
+      "model_sha256": "078a5600cb09821f12c63b9b6dc549caeb94d268020d4857f488e2a3e64d23d5",
+      "calibrated": false,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 500000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 500000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 2,
+        "success_6s": 27,
+        "success_8s": 31,
+        "mean_control_cost": 0.17580276764907118,
+        "mean_rms_error_deg": 45.92626367969757,
+        "rank": [
+          31,
+          -0.17580276764907118,
+          -500000,
+          1
+        ],
+        "checkpoint": "checkpoint_0500000.zip",
+        "model_path": "03_SAC训练/formal/single/config_B/seed_43/best_model.zip",
+        "seed": 43,
+        "axis": "single",
+        "calibrated": true,
+        "model_sha256": "078a5600cb09821f12c63b9b6dc549caeb94d268020d4857f488e2a3e64d23d5",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": true
+    },
+    {
+      "id": "three_fresh_41_selected",
+      "axis": "three",
+      "kind": "fresh",
+      "group": "fresh_sac",
+      "seed": 41,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_41/best_model.zip",
+      "model_sha256": "b744d2c5712752927f99b48083f775c3c9c20fbef56f133e55e097d926f4ce87",
+      "calibrated": true,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 1000000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 1000000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 0,
+        "success_6s": 0,
+        "success_8s": 0,
+        "mean_control_cost": 11.024284243688188,
+        "mean_rms_error_deg": 118.49645915088472,
+        "rank": [
+          0,
+          -11.024284243688188,
+          -1000000,
+          1
+        ],
+        "checkpoint": "checkpoint_1000000.zip",
+        "model_path": "03_SAC训练/formal/three/config_B/seed_41/best_model.zip",
+        "seed": 41,
+        "axis": "three",
+        "calibrated": true,
+        "model_sha256": "b744d2c5712752927f99b48083f775c3c9c20fbef56f133e55e097d926f4ce87",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": false
+    },
+    {
+      "id": "three_fresh_41_ablation",
+      "axis": "three",
+      "kind": "fresh",
+      "group": "fresh_sac_ablation",
+      "seed": 41,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_41/best_model.zip",
+      "model_sha256": "b744d2c5712752927f99b48083f775c3c9c20fbef56f133e55e097d926f4ce87",
+      "calibrated": false,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 1000000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 1000000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 0,
+        "success_6s": 0,
+        "success_8s": 0,
+        "mean_control_cost": 11.024284243688188,
+        "mean_rms_error_deg": 118.49645915088472,
+        "rank": [
+          0,
+          -11.024284243688188,
+          -1000000,
+          1
+        ],
+        "checkpoint": "checkpoint_1000000.zip",
+        "model_path": "03_SAC训练/formal/three/config_B/seed_41/best_model.zip",
+        "seed": 41,
+        "axis": "three",
+        "calibrated": true,
+        "model_sha256": "b744d2c5712752927f99b48083f775c3c9c20fbef56f133e55e097d926f4ce87",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": true
+    },
+    {
+      "id": "three_fresh_42_selected",
+      "axis": "three",
+      "kind": "fresh",
+      "group": "fresh_sac",
+      "seed": 42,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_42/best_model.zip",
+      "model_sha256": "906faddf8c64b541a6331a8e13f0065d4fbddf24667624a6e89f3c888fb60e4a",
+      "calibrated": true,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 1000000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 1000000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 0,
+        "success_6s": 0,
+        "success_8s": 0,
+        "mean_control_cost": 6.184591366357189,
+        "mean_rms_error_deg": 90.33918363248648,
+        "rank": [
+          0,
+          -6.184591366357189,
+          -1000000,
+          1
+        ],
+        "checkpoint": "checkpoint_1000000.zip",
+        "model_path": "03_SAC训练/formal/three/config_B/seed_42/best_model.zip",
+        "seed": 42,
+        "axis": "three",
+        "calibrated": true,
+        "model_sha256": "906faddf8c64b541a6331a8e13f0065d4fbddf24667624a6e89f3c888fb60e4a",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": false
+    },
+    {
+      "id": "three_fresh_42_ablation",
+      "axis": "three",
+      "kind": "fresh",
+      "group": "fresh_sac_ablation",
+      "seed": 42,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_42/best_model.zip",
+      "model_sha256": "906faddf8c64b541a6331a8e13f0065d4fbddf24667624a6e89f3c888fb60e4a",
+      "calibrated": false,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 1000000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 1000000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 0,
+        "success_6s": 0,
+        "success_8s": 0,
+        "mean_control_cost": 6.184591366357189,
+        "mean_rms_error_deg": 90.33918363248648,
+        "rank": [
+          0,
+          -6.184591366357189,
+          -1000000,
+          1
+        ],
+        "checkpoint": "checkpoint_1000000.zip",
+        "model_path": "03_SAC训练/formal/three/config_B/seed_42/best_model.zip",
+        "seed": 42,
+        "axis": "three",
+        "calibrated": true,
+        "model_sha256": "906faddf8c64b541a6331a8e13f0065d4fbddf24667624a6e89f3c888fb60e4a",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": true
+    },
+    {
+      "id": "three_fresh_43_selected",
+      "axis": "three",
+      "kind": "fresh",
+      "group": "fresh_sac",
+      "seed": 43,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_43/best_model.zip",
+      "model_sha256": "c7b4d2f99418547cee18e525ded18912e833ebb07e40d4bbcfa101ebab1ea996",
+      "calibrated": true,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 900000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 900000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 0,
+        "success_6s": 0,
+        "success_8s": 0,
+        "mean_control_cost": 13.870611113542166,
+        "mean_rms_error_deg": 77.8390667376886,
+        "rank": [
+          0,
+          -13.870611113542166,
+          -900000,
+          1
+        ],
+        "checkpoint": "checkpoint_0900000.zip",
+        "model_path": "03_SAC训练/formal/three/config_B/seed_43/best_model.zip",
+        "seed": 43,
+        "axis": "three",
+        "calibrated": true,
+        "model_sha256": "c7b4d2f99418547cee18e525ded18912e833ebb07e40d4bbcfa101ebab1ea996",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": false
+    },
+    {
+      "id": "three_fresh_43_ablation",
+      "axis": "three",
+      "kind": "fresh",
+      "group": "fresh_sac_ablation",
+      "seed": 43,
+      "model_path": "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_43/best_model.zip",
+      "model_sha256": "c7b4d2f99418547cee18e525ded18912e833ebb07e40d4bbcfa101ebab1ea996",
+      "calibrated": false,
+      "optimized_deadlines": [
+        8.0
+      ],
+      "fresh_training": true,
+      "checkpoint_steps": 900000,
+      "reward_config": "B",
+      "validation": {
+        "timesteps": 900000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 0,
+        "success_6s": 0,
+        "success_8s": 0,
+        "mean_control_cost": 13.870611113542166,
+        "mean_rms_error_deg": 77.8390667376886,
+        "rank": [
+          0,
+          -13.870611113542166,
+          -900000,
+          1
+        ],
+        "checkpoint": "checkpoint_0900000.zip",
+        "model_path": "03_SAC训练/formal/three/config_B/seed_43/best_model.zip",
+        "seed": 43,
+        "axis": "three",
+        "calibrated": true,
+        "model_sha256": "c7b4d2f99418547cee18e525ded18912e833ebb07e40d4bbcfa101ebab1ea996",
+        "selection_split": "validation"
+      },
+      "ablation_same_model": true
+    }
+  ],
+  "frozen_sha256": {
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_11/best_model.zip": "f3cb02558d358faaad8474b8161bec5c12ceffeb312ccdfc841fbf3860138e86",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_22/best_model.zip": "89182ee711b55e26e2a65869ff8cd0ece1339a5e1a57906e4d3c3fb2c9a856ae",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/single/nominal/seed_33/best_model.zip": "0d54a85724425971d1fe2834fe843a9fa860ae670bf9ed3a686f761ee693a9b1",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_11/best_model.zip": "ee74c85023050658aabeebe5a08760887393ea3132b2044cc2be59902541a910",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_22/best_model.zip": "f0de77df6ab54ba67028d11615760a955e61cd72f0a6c5bee2758e0437d678f7",
+    "08_惯量域随机化与泛化边界研究/02_模型与验证日志/three/nominal/seed_33/best_model.zip": "0020aab30b9d834bdf819ebac0a13a796221ed37decfdf083fe398927abf2867",
+    "11_同等停稳要求下的控制代价比较/01_实验方案/test_single.json": "f6cea6316ccdd9a445d4c6f00526d4ac47ef90a8ff014e7f9cedd3fceb45be4a",
+    "11_同等停稳要求下的控制代价比较/01_实验方案/test_three.json": "60f4b7b449a171a144a864d5957138b0b0638ccc5c72e292d3c324f7308b569e",
+    "11_同等停稳要求下的控制代价比较/01_实验方案/任务定义.json": "a0af2e54f6de5b8d15f474b16e56adc2691eda1bc230fc3a28c7c46a068014c5",
+    "11_同等停稳要求下的控制代价比较/02_PID整定/selected_pid.json": "f6a4b95549882d07d8f257422ecbaaffa4fd43cecc3e7744dd4aa156982af839",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_41/best_model.zip": "6fb111928854312960a8ad772701bcb4a72294b32f74255f9a6d60fa5a12c7e0",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_41/training_metadata.json": "02851d3675dafd4c08952738b0bcef281f994519e16b63424146ad84c61e0c02",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_42/best_model.zip": "23ec0aec3b8b5ab7d7e601d30e6d8e8fbf5f8116cc18d8e85b11a17d90f1ec32",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_42/training_metadata.json": "120d4cb0b965dfe9acd383c99064d747b4a17fbde9e8ed8f4344311751d83910",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_43/best_model.zip": "078a5600cb09821f12c63b9b6dc549caeb94d268020d4857f488e2a3e64d23d5",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/single/config_B/seed_43/training_metadata.json": "df351813471af36561e66e571e998be48776cec801f039f68f5ec0028351b9a3",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_41/best_model.zip": "b744d2c5712752927f99b48083f775c3c9c20fbef56f133e55e097d926f4ce87",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_41/training_metadata.json": "8e571d4fa339e42c7d43e47099b44353ecfcda2bbaeda04650689cf0766f3b7d",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_42/best_model.zip": "906faddf8c64b541a6331a8e13f0065d4fbddf24667624a6e89f3c888fb60e4a",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_42/training_metadata.json": "06e28da22073bd28f2f80774fbb4f30b94e9fa81d4e218f438835921c7a92edb",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_43/best_model.zip": "c7b4d2f99418547cee18e525ded18912e833ebb07e40d4bbcfa101ebab1ea996",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal/three/config_B/seed_43/training_metadata.json": "8caebb1d244e13f6703972eea8b396d40f9e1912d9a3ddfea0953b494955af59",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/formal_source.py": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/io_retry_runner.py": "43046e764b1b1ace12d76a852f269e342fce25c047704c89986306582f4ccb37",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/旧模型验证与动作缩放/selected_legacy.json": "f15c85a8eb9c4426514010cee5e68fd267d9a73fe0fe7b7f231c1a8b5d3843ae",
+    "11_同等停稳要求下的控制代价比较/03_SAC训练/正式训练配置冻结.json": "a7df258764a27934f31ba15d1810b7c47ff731ed81907fca2b689f3ddbff81b4",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/__init__.py": "9b20913d318906909555891a768e78c58a04fa150f06c2f4f673b99fc301ef1c",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/baselines.py": "03a25b0a7768e018087203d169cc9dc9700b51a24a06f52b2c02442c85aa36d2",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/cli.py": "8e38ec003f99f40ed4d21a6fef8672bf024b01b6d48f252d162fd1ed92fadab7",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/delivery.py": "47ae1263bedfe1afc7d3a2a65a53adf11b477dbf62dadb8b058f354daf9cbfa2",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/legacy.py": "f58236d6d467bbc6db7189908e98b6b0aa64b77b760f975830a075c5a481b5ee",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/verification.py": "d5f84a813cc4c2107a9a8bbd6f76bb0ba7dcca2335b3004bcef6fa196a89a80a",
+    "11_同等停稳要求下的控制代价比较/代码/test_deadline_study.py": "0685dc2f23f080d7f70e9bb489a75ae61b4e6576b120ac22a5fefffb0a194b1b",
+    "11_同等停稳要求下的控制代价比较/代码/test_delivery.py": "791d451965d1dd117692db3ff205f7079e0b46a738fa09ff4d66c2952273d8ce",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "multi_algorithm_benchmark/vector_training.py": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+  },
+  "formal_training_runs": 6,
+  "formal_training_interactions": 6000000,
+  "test_scenes_per_axis": 256,
+  "all_seeds_and_deadlines_retained": true,
+  "selection_of_PID_and_legacy_separately_for_each_deadline": true,
+  "fresh_SAC_optimized_for_8s_only": true,
+  "primary_PID": "minimum validation cost among maximal validation-pass candidates",
+  "additional_PID": "chosen from evaluated candidates; validation settling <= deadline-0.25s; not retuned after test",
+  "observation_difference": "fresh SAC also reads elapsed time; PID remains fixed-gain feedback; this is not an equal-architecture comparison"
+}

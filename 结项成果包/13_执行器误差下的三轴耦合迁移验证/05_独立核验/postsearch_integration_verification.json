@@ -1,0 +1,28 @@
+{
+  "reason": "Use authoritative frozen single-axis controller list, verify model/artifact hashes, bind single-axis freeze checksum",
+  "tuning_source_sha256": "7793aaea2c162ff1a41f23f00557f5932a9a1025a4a042eb21cc66aaba0e1b65",
+  "current_source_sha256": "38f31d400ee1da478b891db0c6cac417bdab4aedf10a646cbf29a7d5f52b9aa2",
+  "preserved_tuning_source_snapshot": "02_三轴PID整定\\source_snapshot\\transfer_study.py",
+  "unchanged_AST_nodes": [
+    "derivative",
+    "rigid_interval",
+    "Plant",
+    "GeometricPID",
+    "AxisTransfer",
+    "evaluate",
+    "summarize",
+    "tune",
+    "scenes",
+    "design"
+  ],
+  "changed_IO_only_functions": [
+    "controller_specs",
+    "freeze",
+    "run_test",
+    "verify_saved"
+  ],
+  "physics_controller_gain_search_and_scenarios_unchanged": true,
+  "parameters_unchanged": true,
+  "new_model_selection": false,
+  "research_test_responses_used": false
+}

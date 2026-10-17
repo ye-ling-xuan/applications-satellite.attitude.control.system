@@ -1,0 +1,12 @@
+{
+  "controller": "delay_single_PID_transfer",
+  "kind": "delay",
+  "method": "pid_transfer",
+  "count": 192,
+  "passes": 132,
+  "success_rate": 0.6875,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.038981007911872534,
+  "mean_command_cost": 0.03898100798827944,
+  "max_settling_time_s": 7.8500000000000005
+}

@@ -1,0 +1,1152 @@
+{
+  "entries": [
+    {
+      "controller_id": "lag_pid",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "lag_pid",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "lag_pid",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "lag_pid",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "lag_pid",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "lag_pid",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "lag_pid",
+      "kind": "lag",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/lag_pid/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/lag_pid/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "lag_pid",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/lag_pid/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/lag_pid/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "lag_pid",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/lag_pid/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/lag_pid/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "lag_model_compensated",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "lag_model_compensated",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "lag_model_compensated",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "lag_model_compensated",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "lag_model_compensated",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "lag_model_compensated",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "lag_model_compensated",
+      "kind": "lag",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/lag_model_compensated/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/lag_model_compensated/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "lag_model_compensated",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/lag_model_compensated/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/lag_model_compensated/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "lag_model_compensated",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/lag_model_compensated/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/lag_model_compensated/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "lag_direct_development_diagnostic_seed9101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "lag_direct_development_diagnostic_seed9101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "lag_direct_development_diagnostic_seed9101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "lag_direct_development_diagnostic_seed9101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "lag_direct_development_diagnostic_seed9101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "lag_direct_development_diagnostic_seed9101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "lag_direct_development_diagnostic_seed9101",
+      "kind": "lag",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "lag_direct_development_diagnostic_seed9101",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "lag_direct_development_diagnostic_seed9101",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed101",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed101",
+      "kind": "lag",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed101/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed101/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed101",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed101/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed101/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed101",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed101/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed101/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed202",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed202",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed202",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed202",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed202",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed202",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed202",
+      "kind": "lag",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed202/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed202/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed202",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed202/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed202/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed202",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed202/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed202/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed303",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed303",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed303",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed303",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed303",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed303",
+      "kind": "lag",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed303",
+      "kind": "lag",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed303/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed303/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed303",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed303/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed303/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "lag_residual_formal_seed303",
+      "kind": "lag",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/lag_residual_formal_seed303/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/lag_residual_formal_seed303/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "delay_pid",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "delay_pid",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "delay_pid",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "delay_pid",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "delay_pid",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "delay_pid",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "delay_pid",
+      "kind": "delay",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/delay_pid/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/delay_pid/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "delay_pid",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.35,
+      "trace_path": "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.35.npz",
+      "data_path": "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.35.json"
+    },
+    {
+      "controller_id": "delay_pid",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "delay_pid",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "delay_model_compensated",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "delay_model_compensated",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "delay_model_compensated",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "delay_model_compensated",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "delay_model_compensated",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "delay_model_compensated",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "delay_model_compensated",
+      "kind": "delay",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/delay_model_compensated/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/delay_model_compensated/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "delay_model_compensated",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.35,
+      "trace_path": "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.35.npz",
+      "data_path": "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.35.json"
+    },
+    {
+      "controller_id": "delay_model_compensated",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "delay_model_compensated",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "delay_direct_development_diagnostic_seed9102",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "delay_direct_development_diagnostic_seed9102",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "delay_direct_development_diagnostic_seed9102",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "delay_direct_development_diagnostic_seed9102",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "delay_direct_development_diagnostic_seed9102",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "delay_direct_development_diagnostic_seed9102",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "delay_direct_development_diagnostic_seed9102",
+      "kind": "delay",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "delay_direct_development_diagnostic_seed9102",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.35,
+      "trace_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.35.npz",
+      "data_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.35.json"
+    },
+    {
+      "controller_id": "delay_direct_development_diagnostic_seed9102",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "delay_direct_development_diagnostic_seed9102",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed101",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed101",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed101",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed101",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed101",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed101",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed101",
+      "kind": "delay",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed101/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed101/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed101",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.35,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.35.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.35.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed101",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed101",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed202",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed202",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed202",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed202",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed202",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed202",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed202",
+      "kind": "delay",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed202/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed202/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed202",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.35,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.35.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.35.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed202",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed202",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.50.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed303",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.05,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.05.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.05.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed303",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.1,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.10.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.10.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed303",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.15,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.15.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.15.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed303",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.2,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.20.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.20.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed303",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.25,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.25.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.25.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed303",
+      "kind": "delay",
+      "region": "in_domain",
+      "parameter_s": 0.3,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.30.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.30.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed303",
+      "kind": "delay",
+      "region": "ideal",
+      "parameter_s": 0.0,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed303/ideal/parameter_0.00.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed303/ideal/parameter_0.00.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed303",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.35,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.35.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.35.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed303",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.4,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.40.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.40.json"
+    },
+    {
+      "controller_id": "delay_residual_formal_seed303",
+      "kind": "delay",
+      "region": "out_of_domain",
+      "parameter_s": 0.5,
+      "trace_path": "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.50.npz",
+      "data_path": "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.50.json"
+    }
+  ],
+  "artifacts": {
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.05.npz": "4cdca92fccf1d6b34f54829979f0acb35e7f08736f260bf9d42d3229ae54a42f",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.05.json": "cb806f655d9133b39bef82f1f79ec23f9f3bd18be320354eab0764f654436364",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.10.npz": "fdcf5903de3d6c7e38ff12318a091d5950594b91ebd19a4c693ce1ffbdfe683b",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.10.json": "9e5e0dc9f0bcb2d7142509da13f6567328731c74e19172c11ac53190dd073f4f",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.15.npz": "02ab58aec239a864c63c1870c40d7a97b18643f071503d0667722ec11989b3d8",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.15.json": "0f4d3759e3c6ca6b1e7d33b573236e805824923ace8f3becdb93829b2ca2b81e",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.20.npz": "a174f49196bd493c47e8dc212fea17c5560e388a9fc95f3494dfb626826e877d",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.20.json": "41bc3a1e0cd0b33ce5809dc8951db7870d6f1287fe8b1fb776d15570ba370f23",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.25.npz": "1eef5f800bc7db273d7e4f37ce252458ca25718dbc395d2e1097c8496fa0ac5f",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.25.json": "f5bcbe2f8a60dbfb5b5a7afb2a0ea3392b590b9a99a61d80cc6672919e6fd9f4",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.30.npz": "a3377259047b271d2837ce5937b8baa3615946bbd19224e9648b719aa5676e31",
+    "04_独立测试/trajectories/lag_pid/in_domain/parameter_0.30.json": "f6e7bb3992b3a93acd7b11cb11b864e973188dbe83929017bf1bfcd129e837b6",
+    "04_独立测试/trajectories/lag_pid/ideal/parameter_0.00.npz": "e40bc68b24d837692357b27cd8e89e52a99e3eac3906784477012a99ed6c3d2b",
+    "04_独立测试/trajectories/lag_pid/ideal/parameter_0.00.json": "73d5fc7c047df6885345437d21562faa2f3f6679c9918541b99f101f23889a00",
+    "04_独立测试/trajectories/lag_pid/out_of_domain/parameter_0.40.npz": "4c789f18a9acd554f586ea0fa74db31b0c560705ceabb7ea977fc7dc0bdfef10",
+    "04_独立测试/trajectories/lag_pid/out_of_domain/parameter_0.40.json": "204505a7f954b4b5976bcc7ed0ac61aa92496565aed58792663f6cffb175ee25",
+    "04_独立测试/trajectories/lag_pid/out_of_domain/parameter_0.50.npz": "cda015dec6211b9e44093a80c74dc0bbb9e2e7977bcaf60fb048bd8b690da602",
+    "04_独立测试/trajectories/lag_pid/out_of_domain/parameter_0.50.json": "e77a166e42fd790ca4f89ff151fc2f6f746be35d0bf282ed2686914dfb36e093",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.05.npz": "32bd85af0546217a4cb86f7acc062fc113568f0258eccead0fda3c65e003272e",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.05.json": "f96bc87b6b19c7dd6929a9fbf4d2a3c3a2ca74477cc4706759250768b536b759",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.10.npz": "4b4065ba2b84b7f332427f32c93558d2c769f4d3787547d12f5c80b9e6558037",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.10.json": "e43ebecc7748e26e4e3dfe9d0da1e85e223584708ec85d2dde8aa7159850c2f1",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.15.npz": "729a051e022e8ca261733d99b4ede6375286fede3f30003acaa1c9085bc51041",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.15.json": "ef882f43b0566595fcb6d984f109c98c3d37f7f690e034c052d3755d6bdf37d1",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.20.npz": "c0996c2a76072384fc2bfe7762cb522a833f9cb45144c53542f66165808f4ff4",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.20.json": "6eda5dc3c911a8eabe008f78646f87428d783378f52e003fa94558e3927a817d",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.25.npz": "9ff2f4bb231f8385b7175692686083424a0fbe3c9a50fbff152295d1af1b1165",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.25.json": "935b720be4935682e3c1eed14a2d9ce6b7d0b7a43ee653e7f45c9da348077d5f",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.30.npz": "8d3a04b4ff61b33ae76a1ef9781625984f99a4abadf0515d9bc64a121664f74d",
+    "04_独立测试/trajectories/lag_model_compensated/in_domain/parameter_0.30.json": "17561001800274bcd86c2a889117f534cd4365722ecc57c143413c9e0f5791fb",
+    "04_独立测试/trajectories/lag_model_compensated/ideal/parameter_0.00.npz": "cdb82c7318654f37da4ef2c7b21fb93659beef91cb754df30f2340aad961e7cc",
+    "04_独立测试/trajectories/lag_model_compensated/ideal/parameter_0.00.json": "84330a9bbd8b579c4e526c10fcae7e554e3f00f8a2c8ae7dde81fa1049d3619b",
+    "04_独立测试/trajectories/lag_model_compensated/out_of_domain/parameter_0.40.npz": "61dd8079e3b992d8346e75022f0ff96d590cd9961bda29028524f182b7cee927",
+    "04_独立测试/trajectories/lag_model_compensated/out_of_domain/parameter_0.40.json": "eb8030918b739ae9ccb0d3e9780fb7e7fda61feb5e3de03eea3ce7b833ad1b82",
+    "04_独立测试/trajectories/lag_model_compensated/out_of_domain/parameter_0.50.npz": "7bfe6cf86c3e907bf3fd5363ea0e6c5f9cc491dfb2a762f5f66657cc174da5ab",
+    "04_独立测试/trajectories/lag_model_compensated/out_of_domain/parameter_0.50.json": "ce7f9e5b6808f8a8a5971d8eddeb08d16c420fd30d7be69f61a80272a9aa1d4e",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.05.npz": "87c1bd480ad31625501ed0cddaabf403f407db1e1760fcb53680d09194a202b9",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.05.json": "e2d1c77dcb335c60e62cc5f4cf6dc50ac303ea9eb958ffc6fe1a49098c687f4f",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.10.npz": "3aa368b8b7bc1e9308b1635d9e702da5b1304353e455682702bbc687e1e6f967",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.10.json": "01c887cf0630d2d201bf2bd43cd98bc6ee8f1849117b92fe5f0be28ab7216ca9",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.15.npz": "93d0ec92087360b374e559106ffde8627fb42d5c156f50cc58fa6529f79a5534",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.15.json": "f667c68c814268f02e59ab843e3ed4e2222b89c92952c5f3325aa346058819af",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.20.npz": "1f17c81caed7582a289ac9bbf067ba774cff92e6d49db06f8c1a4085a70cbfd2",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.20.json": "0b35bea0200291007aa7c3af30faa5d6dbcf26ca2421a8dd1cfa8b4d13205042",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.25.npz": "0a2ef8a77d1b8f590b36c6f9d21d94192f0931b01deddf33b53ba210a2ff80a6",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.25.json": "c713d40096954b2213bbdf54f51d360beb953b47580d1f413d98654a225d4a2c",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.30.npz": "339d70c5fd5af4aa1277b73816eef74a604a9bf8650c1bc2c19d2769ec282340",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/in_domain/parameter_0.30.json": "7ad2b9dc5fa01e92f75a78aaadda336712ca06461094c6827376417407c906fd",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/ideal/parameter_0.00.npz": "c5710ce13e45bcd85f3bfb70f2f96d774570a24d389767e6162082861bed3afe",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/ideal/parameter_0.00.json": "54fa03d36e8ae0648f280cb7539159342d31919fd26c1d9167e45a5bbae2a560",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/out_of_domain/parameter_0.40.npz": "23352c6ef3aeef755203320ca3f03fec6b0d23971750abec7b01075cc4b92e5e",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/out_of_domain/parameter_0.40.json": "1cc7899aa5d36198de79849c3591109020bff53ac0dad64dccf6da0938010c82",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/out_of_domain/parameter_0.50.npz": "4080f36bd27a1c1ea25b4f517528d303e14064d2b4b0489d1b7febde66ea85dd",
+    "04_独立测试/trajectories/lag_direct_development_diagnostic_seed9101/out_of_domain/parameter_0.50.json": "3d3d66eb2d522e3f7d6d6b7d357587db2cf0d526d38b2718679d7c5d140027a2",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.05.npz": "2dc4bd71dfff10d23ce4c60439e40144001784cfb9d65f14c681e44923cb434f",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.05.json": "3c23edee96ba07e5ec6c8088834df9c117b26da65b4329ea27afbf099d0f3e08",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.10.npz": "ce9dbe46631e3c639d65804fdf34edd307213db4e0682cb4481bcb88350ec153",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.10.json": "e0fa04b117b342d13f124bc2663c489c0320681acc52b5b3e00529e4ac9c3190",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.15.npz": "8c1e6b264b0cb8a06f4e001187a1a266b489b6f413c6091cf0cc9b21b3bf7da9",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.15.json": "f78da123afcdf45ef4baae0fa8e263b635a1a49cef120f3431a6f0c52c90e429",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.20.npz": "be554befe066bca55b48c7d11c609a96f3df67a337c1e0475b0f8d867edc8656",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.20.json": "411cd43d672609dfe859af5b64e340f996280121df98af2f99f4b13690835428",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.25.npz": "3ac767e158ada06f68a2dc20c3cb94eaca5580e47beae9ce5e95b2f3cfea7d25",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.25.json": "ae6776881760be17bf917fd791bfce45e78b9c827dae4bf6aca045918932331e",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.30.npz": "a1659fca385c4b398ea0e5de039b9b0961bda60807f0bae5fea589481247c36c",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/in_domain/parameter_0.30.json": "fa6e4bdf6943460307c58ae359ae84a379a2c497a3c86f8278572c678c2bae70",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/ideal/parameter_0.00.npz": "f82b704c7ae6bd1e259da8ca135e34b9b360439550c409e666879ef46f92280f",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/ideal/parameter_0.00.json": "43a7767c62ab84abc6f5822be91697c8986a3d531624cd2154e1cba1a6e99b47",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/out_of_domain/parameter_0.40.npz": "f9642beb5a9f956bbf0b199ca27ac50fc6326e21537599eb9dc0aab2fcde8353",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/out_of_domain/parameter_0.40.json": "fcd95a9ff042bd5df6bbcfc7d827493fb0ecdf63329983cf43c6eccd427ad1b9",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/out_of_domain/parameter_0.50.npz": "c426901a41ad9cb273724f36f6a7d590eb23cbb4fcd32a0c0d0e2c9ed1844356",
+    "04_独立测试/trajectories/lag_residual_formal_seed101/out_of_domain/parameter_0.50.json": "95ec2f6cc3472600f8b9b9907cd2e006b324b34c92faec26e76e5d2792447335",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.05.npz": "e069250ce6d45c6555b9c5817611f633e4dd868b6a31d1b4f33db389da32b44a",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.05.json": "1f7c3fb45e68563759e8f17889b5aae6613835d2542e6a7da09a3723f0b30c47",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.10.npz": "3aa838ca55f29687ce35c36354fb3067f79109fbd2fd27bc52c97e9a5fb210d7",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.10.json": "019d450ea9ab13dad38ce7003203a3f1b412186e65fe3354ea6603b1be981b67",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.15.npz": "97ca114f0925fed4387be305a0039c23b1432b03d59feb21110f25e03bee3b86",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.15.json": "39293d7008bdd67213fa3121b6ea5c32779b521474a44a4516b42a8be5ba8868",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.20.npz": "0f358abccc03588554408cf35e81c09e7e529ec0cfac0ed331d5cb203ce9bcf7",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.20.json": "7b576e5125705801170bf2da087acfde4f0e8ba7c896696f51e6f33f7b8e44a1",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.25.npz": "809646a8c909b0e63657a3e92da59c2ac81aae0729e643c538308e81ddb108ad",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.25.json": "79434f3a477ac2304123aefd351fa458cfa7c90842c955b15cf2f5d1962c5ea5",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.30.npz": "b8effb0d4dee12fd17904223657c55bea61a62e495f51c5ab72a9bdc97525d20",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/in_domain/parameter_0.30.json": "e58fb8dc9bc7ad939564595530aabe79ff3d39a38fafbb5e29862ef87b66f8ff",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/ideal/parameter_0.00.npz": "b1e1d0df585f59464635e8c9142fc843a12b65941a65e7faed29ea4297bd6220",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/ideal/parameter_0.00.json": "1c315908ffdbee01f31512774f96ef35f10352905f69d6f80273b0ca4e62dccb",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/out_of_domain/parameter_0.40.npz": "b5061d448fba4818f75086c2cb1ffc8d353d92de77ad4fda08d824e53ed26412",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/out_of_domain/parameter_0.40.json": "8974d00408e16ecf125a3f8e247387978b4bfa4c11c2398c738d2dc4e878d845",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/out_of_domain/parameter_0.50.npz": "4af8068c61e452985bbb58825c0b198f3566041fd79db8c9502c2b738328e040",
+    "04_独立测试/trajectories/lag_residual_formal_seed202/out_of_domain/parameter_0.50.json": "617fc548cb0fc68a35948cf8793daeffcb1b9c5610101ffc57396ce36af2b85d",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.05.npz": "5cccc576a75ad30de08a8e36cbd7a4320044509ed4c2a6dca2da43bcf1cacfc7",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.05.json": "879bf0517832be5891ae8b803b197a20efcc439488e7f6fed8a0eab04c1a7fc0",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.10.npz": "16cb4809c0ec1c015119423445281a3aed2cc8a2876728737aad626b18a185f8",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.10.json": "8b40cc35ac73be4b4534da90970ef7e8f92412102a9a3096bfbf7d21165a95bf",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.15.npz": "2376b8905945acb5f03feec53ca32a618075f3e27bd9579d24e33e78c36280e4",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.15.json": "79c03e662803b1af9fe8bef76a011fb3fcc8123731060caecd469198ae9dfb35",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.20.npz": "411f814fd4ec12498a85ace64dc395ff129f660f21c4b361a1d6e2596e5f40b3",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.20.json": "07918ddc5db6936ee16147fdb7165386ceca7e0f80e55b99ff618d0def9036f3",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.25.npz": "e3311250b1d3be53c742146010aef98869d931822d3d116b676442c1ccb45693",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.25.json": "354a9ec7cb5f695ba2cf27e0cd514416f3133b379da09fdb951617c362a53d80",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.30.npz": "89f1cc849dfb7f19531af4883d1f506ca667d367aa72b5ba182acbbb77a0911f",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/in_domain/parameter_0.30.json": "92fd38fdca18e73a236983e568187fbc529e4790dcd2f24cf365d53c499b2112",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/ideal/parameter_0.00.npz": "a6e236392994ec76165c3d6fedd1da1a4e0db532e3daefb2cf5aac5be9d4aa4d",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/ideal/parameter_0.00.json": "14883417f122e663298367e7a970d1695eea924080ce01644eb3bf8f85397656",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/out_of_domain/parameter_0.40.npz": "728c3b506f8709286076a936a69123de2428c762e8312cf18c22ed9a6acd0f4a",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/out_of_domain/parameter_0.40.json": "a5f4352dd7d7940140657427aa7deb284ec27a172e332fb455d07c73a2fd7de7",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/out_of_domain/parameter_0.50.npz": "4653ebb1efa9332082a7d1be1468ecdb4bead2c67fc6c00776fc638323ca5881",
+    "04_独立测试/trajectories/lag_residual_formal_seed303/out_of_domain/parameter_0.50.json": "2918481dac9a722171ad39d1d1e666df7f4203e9004d3aac2691596ce5cdfc13",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.05.npz": "e10e6a5a9a98210e47b8ae2bd5732616adf6b200360c374a12666ababf886c51",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.05.json": "3f567df1d863f3e3c5e36bb72d02b020abc61644d7ccd2b3478779b910a11c6b",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.10.npz": "7e6126fb812123c460655d439bb78c98e39aeeadac3edd4179f86ec3339fec6e",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.10.json": "73d5510702cd9d2d6f0cf9ab3e9c948662527a212052f9c2cba3eb6354890776",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.15.npz": "ddee7e615449205e5d949473cf139fee3dff09ead18868ee6235d9c7ae385c68",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.15.json": "1d80a5f2a885b991d0f58cbdb9b8d9051ae708b3d15e75ade4a802af631f4ab0",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.20.npz": "d04b97bef7081f028e40d4d009c6c8a25a770983300346275f5f022192056452",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.20.json": "a0388ce4b3a6cd6f020cbfc4762d65c2dfeae6c0777e3a606e3a9b506ba75dfe",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.25.npz": "fb3f30662c51f9766fd04a219774b1a8328a151627e783ba443f4968a621a2d3",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.25.json": "5f28c89b9dd157fd382ec2bdaff39ef49233d14d0f9ac0955ffedca750985b24",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.30.npz": "f34f76caa4cf6383fe8404fffd62f4f1dd9c96aadaa586aa33bb26524ce52246",
+    "04_独立测试/trajectories/delay_pid/in_domain/parameter_0.30.json": "987ef754bbf3eb4420421fafd7ecec149abc103c9d291c31412673e66c87a1da",
+    "04_独立测试/trajectories/delay_pid/ideal/parameter_0.00.npz": "8426295db5bdd05616c68f1beb2dff8384a6dd4cbfe0142eab79f76c63c47ce8",
+    "04_独立测试/trajectories/delay_pid/ideal/parameter_0.00.json": "3037c623be8ba2df38eaf66c175dc5c1bff0b32eda81b08ef7c3cbbee4a6acfb",
+    "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.35.npz": "4cb3e7bb9cfb2c2005315bda1cc07f925d0292b0db1a4aad78420bcbfada81b8",
+    "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.35.json": "b91880d60a76a313bbe55bcc16f94a8b3bd238255058ddf8de968d9e337931fd",
+    "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.40.npz": "806c313caa317aa81be0fd567382c87e41f9182c3961930d0c7b72455b81da2a",
+    "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.40.json": "7a067b1ab703482f8a4157a04a1b781a01166f56c75e20b77dd869704dd1c52c",
+    "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.50.npz": "9e5f5ab8bf14f1e0a0f6ba4dc0c7c2be1a60fb0eab588939301167527fa1f97f",
+    "04_独立测试/trajectories/delay_pid/out_of_domain/parameter_0.50.json": "b331415348fdb243fcd1a14dc59410759b993967ac5c4adc877ad3c00ac8ee27",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.05.npz": "7d7617631b53190b74bdf27f1a8bc7c6d36a5e23ceedeb64493ce7e7d959f361",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.05.json": "812dde75c279708c5efdaf4e5fb780e40ff14dd8fe353d72a6772ea4dae59183",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.10.npz": "a13ff1b4cd2ad826007fac9ac7a1526681523b647124eb30459ed6dee94cf2fd",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.10.json": "601339fec212923c5055b6d11baa51a34be56607beb6643d9f3a3848f6ce59dc",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.15.npz": "9edb6d204d5571ed91e85b4220606980b2642e454f27576b8dcd32ec5e161344",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.15.json": "91574a5fdb7f461edb38a89bb1c593c5a0577f4c29b52834aead1f3d86bfa198",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.20.npz": "064787eded21261b0854febdfd0b47a0010279bfe21284898f09ac27e7e75838",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.20.json": "f0175306a087984c6ee0e8566ac087ff8cf7f2245c7a37dae57e6b2aff8980bc",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.25.npz": "2118f0371a167ebdf76fefb993a5624cf76ad9bf03516a4a842b14f0aad9ca67",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.25.json": "29985ed4c0d3a23f018cae93fe7ccf7334713102e2e33fcca56b7296a6415ec3",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.30.npz": "7e98c6c03214be2867dc35ef2264b4ebbd8e2583d38bb86eca4ee88ca42da4ee",
+    "04_独立测试/trajectories/delay_model_compensated/in_domain/parameter_0.30.json": "02be87f0d7cbe67469e2a8906e6e22d901c01984aa62e6e57ebd884189d20511",
+    "04_独立测试/trajectories/delay_model_compensated/ideal/parameter_0.00.npz": "2e35dcf84c8306aad9ece755cf8bb3ff1ddd917bfa8d0c3fc71c1fbaf5a53fcd",
+    "04_独立测试/trajectories/delay_model_compensated/ideal/parameter_0.00.json": "5b59f3fe4f4cb18fdc5795886811b51c49e0dd54e9773de28ee671bcf70e9a52",
+    "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.35.npz": "915d59fb8b1e77819a030e5c9af9a74b718faf4018f205596dd0cbb6f2a43dc7",
+    "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.35.json": "4a3ce421234104847da2231689a5697c9a165533a6d8130fb5e8cadedb9c68d7",
+    "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.40.npz": "5ba4ae0324cc941e941f24bca3609d42c8e2ba193c346db4fa4bd4896140179b",
+    "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.40.json": "ff0c54f1a1000ced1b808ec5605fe125d9074f1e6ab1ba65b6bd60d0771d9daa",
+    "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.50.npz": "6f97d41b6adf7a73d89a0f0ecf095bdbcfa30baaf5f57a2e2878aafc4616c0fe",
+    "04_独立测试/trajectories/delay_model_compensated/out_of_domain/parameter_0.50.json": "d8d7e92678df316ba42c682902718afcd0e4c4cc174cac703e6ac6eaf242a38b",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.05.npz": "5a0ae9bb361e1c994b6e947af57a24da595f90ce17bfa25f3d051975891fd7e6",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.05.json": "6783f15619c22efbc6cbc2feea5dcaa9421b9056522b1403b8e2fcf0064d1872",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.10.npz": "87510f8ab9c19cb2109f578bd96d98dda9ae130caf35e044d383c9c04da870c7",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.10.json": "75eea94104b02bd280d3e9d89c688087b6f0d080ca9b77c4d536f5507a42190d",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.15.npz": "460d6edb31a40d1187f6caacbe008452525ae5c661922637a171fad148429883",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.15.json": "0ad3336d9afafd91d53a70cf483ba315a2bcb6783c80b4f7c813027d7dca97e3",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.20.npz": "e546d0d38911e2286251ac0b2ec7f6cb1988ae54bbc7d3887deb3ffa2ee7353f",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.20.json": "2251759885317d30595829ba6d47c26d50691e08bf41195b9384233598ce965a",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.25.npz": "88e4f57844c64da72d184cebee95706e6b7da725b6c7d73c140ac63a65c490ac",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.25.json": "b7bc1946b3527bf2242659fe1f0b6444a89655650829b18228fe129862537dbc",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.30.npz": "ec2be792fe96d53a20ad70f2cc835aa2cb39f3fce1861f9a3501dd68d6dbd4e1",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/in_domain/parameter_0.30.json": "d38dd5d7edc78e49d89529666bbde93d810d0cd8b60d8cc758599fb4bd85935f",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/ideal/parameter_0.00.npz": "194dcfa8f042036ac92b0bbb665ca41238d2aad0d8f8fadf4b846c32aeb31ea5",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/ideal/parameter_0.00.json": "14ea687ede7f3d6ab8e1f06bbce77164b532cfc2afed978d3e336699099deb63",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.35.npz": "499a31fb0146bd42db016cffffb432833e131f012c7d4420fa8b79056005ea56",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.35.json": "f6b9c24b9d6bfa8b373f50693e485f6b26ca25ee5fb3dba75a23adba823ec258",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.40.npz": "b111403f8e6bae64f8c49bcdbd2960d302e48887fe3dd096f70aa695c8d4d48a",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.40.json": "60b388b3bb7db30ba34b3b5d97246f9634b0c3b5be9337dc53d7e4f7fc3e9e29",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.50.npz": "88d3c30889c39f21959fe06b4ae2e919914f82689a7dbf4b8897751fc51c5cce",
+    "04_独立测试/trajectories/delay_direct_development_diagnostic_seed9102/out_of_domain/parameter_0.50.json": "fd65818b7375bf18d744f77659562603cb44f692f852c261ed0bb32ec72f8803",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.05.npz": "a1a9f951b9c3d3b9799bd3c275b1efbaaf5c261d9e5333b6761251ae665056ae",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.05.json": "43c18e590af8b30925b1adcead477b358d1c5a9000f398d53fb966c68ca345a1",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.10.npz": "53ff43af232e073eb551e5ef12e79fe3a5ef899d04620c306a042c1bd87aa564",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.10.json": "82860499507766ac6ab57485a66173a2fceea6ea9ba070b9fd603dc886d7a649",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.15.npz": "6267dce46bac8a5f0925a59aaa476e1c01cfb3750a2924a2180e7812aeeaff02",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.15.json": "59c4fce1229b8c7a51f5c4da7228bca0e116a56e4e6fbc0253bd47af7f86ae43",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.20.npz": "b8b84f2210df4c43e592d1b2076f502e0e49410518847fc04cbe1b24a84ee839",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.20.json": "ffe408b602207d9646d079d2da2d646d5c0575e6dc9761a97da1d7a2bbcd2ce3",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.25.npz": "deac75a246cef9d6276b8e8129b8c0dc33bd78928c4b7f9ba0c247b15aea5d7e",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.25.json": "6e7f7a558af978b3ce4dc7a742462208d744f091dc3aa543e4701bb37652b777",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.30.npz": "c66fbd353006a7a69f22efdf46e3f9970650e64ddab52a570947ffff7b7ad5f1",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/in_domain/parameter_0.30.json": "cf09e6d09b289e4039002a012fb052f9b3e28bf29da0112a98601db1c5985d23",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/ideal/parameter_0.00.npz": "cd6cdd6d56cf3494bcf2f172f407e71bab60dfc67963c2139cde2a60b9c0933f",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/ideal/parameter_0.00.json": "cdb37f45d7e3c3d3333fe2a3e668cb7d42f043601c76363345ff2e6316b94440",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.35.npz": "6e7e8b314d73926b759a1fc1764aea1d8021aa680b9369078c5d1700fff8151d",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.35.json": "2eb8cce360622ad4d60191d47566a2441e9a6e0deae7f205caeff5f041dc50ee",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.40.npz": "c635574fd1bb8011332fef9be75c3b432e1d7f20a74f0a4d9740128475ff7077",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.40.json": "1c81e958ee06aecb40365f1164bdd287e8205f4f3a0c5152d83debc6880c849f",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.50.npz": "54970ca9c5f88738351ab6b5012b9fa3c5d8d4f14056d15e669a55f04d722a1d",
+    "04_独立测试/trajectories/delay_residual_formal_seed101/out_of_domain/parameter_0.50.json": "afd85d737d4db159e283a251c003adf9af07cb7235a4eeb565e25a7443c3739e",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.05.npz": "b1c374e792ee5d0eed7d076e2bebc5b81ec2fd74918bfae08398abc40ad5f590",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.05.json": "dd250bd62c8c5af7e186c2d90f1a6053839cc7c1a9872d50b30c61f0ca98f667",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.10.npz": "c20e00c6b0c98c97df6a8829aecf1c9819026fd84818cb56f1ed4385898743ea",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.10.json": "6da7cb610f17bf173cbda7e18a7859ec69201805b54288628af7e55c56b6506e",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.15.npz": "386b0e2ee0813a02f78271d13dab6ffc06f43e1cd41d3f382a4317f5c6760ea7",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.15.json": "ed41060d827f04d8bde2a1d33408d31a7f54629eb38f0e3f735a403693d9c0b3",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.20.npz": "b2e4abe22ddcc2794c9255ed7e6b434ef8985b046a7a9d23d1f420ec606af95f",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.20.json": "c1a4c19df6c4b0b6ec3935367d0f5c710229ebf5fd24fd4921fbf9bf9f17382b",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.25.npz": "08573593e95b42e8d88663414e80730ff3f48970444579ec354a5f732ca77c82",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.25.json": "0135da65d89919ebaf317a42d6a37ac85a4c7ba5d4ba22b26272cb2d44374334",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.30.npz": "d8eea31f652fb91284fb3055fb041f328a7417a10e434a97cc23e8d1b7f73b18",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/in_domain/parameter_0.30.json": "f515cce1085c1baf2aedf28840846e112a5d79c71e53606ef9c620cf0be9cd29",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/ideal/parameter_0.00.npz": "631b24a40b733640b52f381a37e5087beb78a7b27e0c499efb07c8b7fd83ba46",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/ideal/parameter_0.00.json": "0523d9fe3b5b5181c730349d77a9e1797b05f2e3ee4d6466075c725366c245a5",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.35.npz": "023f2a79cf399c01cadb908ccfe016ae76bcf2a3c164b8a9bfeb91ecb38c7cf5",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.35.json": "f31ba1d3be6663f33662d5bedef4cdc5266a15301b4603d1399e353ea7a36175",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.40.npz": "70c3feade8f034c4b33b6fe6a33815ee190bb70385d243afac3279abe7ad653f",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.40.json": "280cdde3b2d30c6631405db4a8f18ee8394d31de29bbe0364e913326d8d3090a",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.50.npz": "ab93ec4f3b74cc51b0eeb6172326c25530ec0e6042d8790ced10feb180eb0428",
+    "04_独立测试/trajectories/delay_residual_formal_seed202/out_of_domain/parameter_0.50.json": "e4c1414211df94be6cf6851da5482f7179dbedfbf6c02550f7dd30c359083694",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.05.npz": "5ad523a225339da1f381c61b4aab3719a1998d5c1540e1a33bcc890a17454bd2",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.05.json": "d9ecfddd984b48f06d0dd4b1fc336a714c878247aa6d62fa68bc894f1467bb76",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.10.npz": "494559879a3113b7bec948b08f546fc14108d1cd24118c605b7cc7e6a367d0aa",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.10.json": "0c92f81de8ee458e6d1052409c16d7ea464c813a7826e3d536f9f1d6e2925cfc",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.15.npz": "60c59a3c44fa52959bbc06b9575631a029edd730a91623301cfaf13ff33afcdf",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.15.json": "4c45f5ca37b120166a049c6cf8a05ce166d83833b2d688fdb078a79567dca2d7",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.20.npz": "7b6294531abce91678a749c40fc4ef50d7dfdde6c48ad67c2fdb4a9ad587729b",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.20.json": "697bbdc96f6d38a918941f547de342b3a9ffd89853dc523e5ef49f84b3707deb",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.25.npz": "76aae50267ef24c3d44eff111f6a672708a2336783c5feb83f3b99e5aca32a4d",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.25.json": "6fc6cbc172c4db2fc4cb18b8ad636a8aaa7aaeac421cf58b160544cf93dbc12e",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.30.npz": "6ec480cc4fc631f855b392971dac0808afbadb17def7fb2d480be352b256f117",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/in_domain/parameter_0.30.json": "cc70cc7f81d3d622507b83f014b580b436ee2875923e26170b32c99d5ce18bd8",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/ideal/parameter_0.00.npz": "9997be04591c12c224ca2832abc264847e5f28f99063b6a926b02c2e7828085e",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/ideal/parameter_0.00.json": "67cbfa4c28b91263cc0bb49338627b2171d0c5fab8bc72908d24b9631053033b",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.35.npz": "05a83bee4271bac081d7f4ee2fc52c0f10098c39b3e00fc85cd5256875a83017",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.35.json": "08562427f347e43f61f3776798fdee9933d036735cc675d680f818d9b524e335",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.40.npz": "fd5e18c5d11f090c97d73beec4f779ff774ffe2fe45dcdafbf3a594bf208f53f",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.40.json": "b3d406c4881d92694c326b578fee3bc551bec34389c4f2661f79ebde5fbf22a7",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.50.npz": "ec5b398735cc9ac740ec990fdf7c60ee75f8df59c2b62071902bcb04d42a8d8f",
+    "04_独立测试/trajectories/delay_residual_formal_seed303/out_of_domain/parameter_0.50.json": "eeb5071f21633bb6463766201ea0fa2900975e4fc69b6a76b24772ef3cd493c9",
+    "04_独立测试/episode_metrics.csv": "591829446642f1856a82baba115a3e001445b332eb286f4f396152d73c6b1378"
+  },
+  "freeze_sha256": "059579fc729ac5a47b7e3de65bcf55cf2f881c60d6f40f1706320401b455a09c",
+  "complete": true,
+  "completed_utc": "2026-10-17T13:40:33.458034+00:00",
+  "episode_records": 29184,
+  "independent_initial_states": 256
+}

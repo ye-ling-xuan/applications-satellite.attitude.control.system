@@ -1,0 +1,99 @@
+{
+  "rewards": {
+    "A": {
+      "error_weight": 1.0,
+      "rate_weight": 0.5,
+      "torque_weight": 0.1,
+      "violation_weight": 8.0
+    },
+    "B": {
+      "error_weight": 1.0,
+      "rate_weight": 0.5,
+      "torque_weight": 0.02,
+      "violation_weight": 12.0
+    }
+  },
+  "sac": {
+    "policy": "MlpPolicy",
+    "net_arch": [
+      128,
+      128
+    ],
+    "learning_rate": 0.0003,
+    "batch_size": 256,
+    "gamma": 0.995,
+    "tau": 0.005,
+    "buffer_size": 300000,
+    "ent_coef": "auto_0.01",
+    "target_entropy": -1.0,
+    "learning_starts": 10000,
+    "train_freq_vector_steps": 1,
+    "gradient_steps": 1,
+    "n_envs": 8,
+    "feature_dtype": "float32",
+    "device": "cpu",
+    "torch_threads": 1
+  },
+  "reward_formula": {
+    "state_scale_deg": 5.0,
+    "rate_scale_deg_s": 5.0,
+    "state_square_cap": 100.0,
+    "excess_square_cap": 25.0,
+    "physical_failure_reward": -1000.0,
+    "interval_reward": "-dt*(we*min((theta/5deg)^2,100)+ww*min((omega/5deg/s)^2,100)+wu*actual_cost/(dt*limit^2)+1[t_end>=8]*wv*(outside+min(excess_angle^2,25)+min(excess_rate^2,25)))",
+    "excess": "max(abs(state)/acceptance_tolerance-1,0)",
+    "deadline_sample_included": true
+  },
+  "feature_order": [
+    "31 chronological measured error/rate pairs",
+    "30 chronological past sent clipped total commands",
+    "elapsed/22",
+    "valid_intervals/30",
+    "residual only: proposed raw PID / 0.5",
+    "residual only: committed PID integral / 2"
+  ],
+  "feature_scales": {
+    "error_rad": 1.0471975511965976,
+    "rate_rad_s": 0.5235987755982988,
+    "command_Nm": 0.5,
+    "integral_rad_s": 2.0
+  },
+  "feature_dimensions": {
+    "direct": 94,
+    "residual": 96
+  },
+  "history_intervals": 30,
+  "prehistory_measurements": "repeat initial measurement",
+  "prehistory_commands": 0.0,
+  "prehistory_valid": 0,
+  "action_direct": "0.5*clip(action,-1,1)",
+  "action_residual": "clip(raw_PID+0.5*0.5*clip(action,-1,1),-0.5,0.5)",
+  "anti_windup": "PID commit uses the final clipped total command",
+  "training_random_stream": "SeedSequence([seed, kind_id, method_id, rank]); lag=0,delay=1; direct=0,residual=1",
+  "terminal": "physical failure or t=22; TimeLimit.truncated=False; complete terminal_observation",
+  "selection": "maximize validation passes, minimize mean actual cost, earliest checkpoint",
+  "development_steps": 150000,
+  "formal_steps": 500000,
+  "validation_every": 50000,
+  "validation_count": 576,
+  "development_seeds": {
+    "A": 9101,
+    "B": 9102
+  },
+  "formal_seeds": [
+    101,
+    202,
+    303
+  ],
+  "development_gate": {
+    "success_rate": 0.95,
+    "physical_failures": 0
+  },
+  "hidden_from_features": [
+    "true parameter",
+    "actual torque",
+    "simulator delay queue"
+  ],
+  "test_response_calibration": false,
+  "replay_buffer_persisted": false
+}

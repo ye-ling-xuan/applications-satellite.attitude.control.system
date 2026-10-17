@@ -1,0 +1,15 @@
+{
+  "controller": "lag_retuned_3D_PID",
+  "kind": "lag",
+  "method": "retuned",
+  "stage": "traditional",
+  "region": "in_domain",
+  "diagnostic_only": false,
+  "count": 768,
+  "passes": 766,
+  "success_rate": 0.9973958333333334,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.041136984691689284,
+  "mean_command_cost": 0.048533080402712654,
+  "max_settling_time_s": 8.0
+}

@@ -1,0 +1,79 @@
+{
+  "source_and_inputs_unchanged": true,
+  "selection_matches_all_attempts": true,
+  "validation_summaries": [
+    {
+      "controller": "lag_retuned_3D_PID",
+      "kind": "lag",
+      "method": "retuned",
+      "count": 192,
+      "passes": 192,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.03813636244987286,
+      "mean_command_cost": 0.044998884770196625,
+      "max_settling_time_s": 8.0
+    },
+    {
+      "controller": "lag_single_PID_transfer",
+      "kind": "lag",
+      "method": "pid_transfer",
+      "count": 192,
+      "passes": 133,
+      "success_rate": 0.6927083333333334,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.033382656919519436,
+      "mean_command_cost": 0.038823737343329556,
+      "max_settling_time_s": 8.0
+    },
+    {
+      "controller": "lag_single_compensated_transfer",
+      "kind": "lag",
+      "method": "compensated_transfer",
+      "count": 192,
+      "passes": 187,
+      "success_rate": 0.9739583333333334,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.03654768117683258,
+      "mean_command_cost": 0.04523144676458313,
+      "max_settling_time_s": 7.95
+    },
+    {
+      "controller": "delay_retuned_3D_PID",
+      "kind": "delay",
+      "method": "retuned",
+      "count": 192,
+      "passes": 192,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06445173912503582,
+      "mean_command_cost": 0.06445173912506166,
+      "max_settling_time_s": 7.2
+    },
+    {
+      "controller": "delay_single_PID_transfer",
+      "kind": "delay",
+      "method": "pid_transfer",
+      "count": 192,
+      "passes": 132,
+      "success_rate": 0.6875,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.038981007911872534,
+      "mean_command_cost": 0.03898100798827944,
+      "max_settling_time_s": 7.8500000000000005
+    },
+    {
+      "controller": "delay_single_compensated_transfer",
+      "kind": "delay",
+      "method": "compensated_transfer",
+      "count": 192,
+      "passes": 165,
+      "success_rate": 0.859375,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.044831094836085196,
+      "mean_command_cost": 0.04483109485336211,
+      "max_settling_time_s": 8.0
+    }
+  ],
+  "test_responses_used": false
+}

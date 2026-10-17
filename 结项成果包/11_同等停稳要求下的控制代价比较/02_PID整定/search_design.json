@@ -1,0 +1,35 @@
+{
+  "random_seed": 2026101744,
+  "development_scenes": 32,
+  "validation_scenes": 96,
+  "test_responses_used": false,
+  "batch_size_development": 48,
+  "broad_grid": {
+    "natural_frequency_rad_s": [
+      0.35,
+      5.0,
+      25
+    ],
+    "damping_ratio": [
+      0.45,
+      1.8,
+      19
+    ]
+  },
+  "families": [
+    "common_PD",
+    "inertia_scaled_PD (three-axis)",
+    "common_or_scaled_PID",
+    "independent_axis_PD_PID (three-axis)"
+  ],
+  "random_integral_candidates_per_axis": 180,
+  "random_independent_three_axis_candidates": 420,
+  "integral_limit_rad_s": 2.0,
+  "conditional_anti_windup": true,
+  "selection_rule": "maximize passing count then minimize full-horizon mean control effort",
+  "shortlist": "top60 per deadline plus top8 per deadline and family on development",
+  "refinement": "2 rounds: top6 per deadline each get20 perturbations; log-gain sigma0.16 then0.07; retain past candidates",
+  "validation_reuse": "all refinement and selection uses same validation set; final reliability must be checked on independent test set",
+  "no_guarantee_of_global_PID_optimum": true,
+  "prespecified_auxiliary": "Among already evaluated validation candidates, choose minimum mean cost with all scenes passing and max settling<=deadline-0.25s; no additional search; main selection unchanged"
+}

@@ -1,0 +1,363 @@
+{
+  "status": "complete",
+  "kind": "delay",
+  "method": "residual",
+  "reward_name": "A",
+  "seed": 303,
+  "stage": "formal",
+  "requested_steps": 500000,
+  "actual_steps": 500000,
+  "best": {
+    "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/best.zip",
+    "model_sha256": "e94bb62b7e11147d4ed874ae3cc8a911e83a4100cb9843bc553862aa2c171f60",
+    "steps": 400000,
+    "validation": {
+      "count": 576,
+      "passes": 576,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.19586993819276977,
+      "mean_command_cost": 0.19616057630389877,
+      "mean_rms_error_deg": 9.119492728067396,
+      "max_settling_time_s": 7.9,
+      "mean_settling_time_success_only_s": 5.644097222222222
+    },
+    "optimizer_updates": 48750,
+    "checkpoint_model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_400000/model.zip"
+  },
+  "checkpoints": [
+    {
+      "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_050000/model.zip",
+      "model_sha256": "6cc41e2745b2dc3bed755c86a44f9d01cba402a93f2a8e970e54d296d25e403f",
+      "steps": 50000,
+      "validation": {
+        "count": 576,
+        "passes": 103,
+        "success_rate": 0.17881944444444445,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.2154317250615968,
+        "mean_command_cost": 0.21689483268488854,
+        "mean_rms_error_deg": 10.463998474922974,
+        "max_settling_time_s": 7.95,
+        "mean_settling_time_success_only_s": 5.51116504854369
+      },
+      "optimizer_updates": 5000
+    },
+    {
+      "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_100000/model.zip",
+      "model_sha256": "c88cdf0b3e955781cc04b965403f8d29114353142a8e9cba98e6ad22eb751f44",
+      "steps": 100000,
+      "validation": {
+        "count": 576,
+        "passes": 125,
+        "success_rate": 0.2170138888888889,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.14862532756722058,
+        "mean_command_cost": 0.15019479230049107,
+        "mean_rms_error_deg": 10.130036160563357,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 6.5144
+      },
+      "optimizer_updates": 11250
+    },
+    {
+      "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_150000/model.zip",
+      "model_sha256": "b590b52a8148022668fbc90ee9679eab8d59505f61dde135920db4d092352666",
+      "steps": 150000,
+      "validation": {
+        "count": 576,
+        "passes": 180,
+        "success_rate": 0.3125,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.24748132817012397,
+        "mean_command_cost": 0.24847228357521514,
+        "mean_rms_error_deg": 9.884884430465268,
+        "max_settling_time_s": 7.95,
+        "mean_settling_time_success_only_s": 7.0391666666666675
+      },
+      "optimizer_updates": 17500
+    },
+    {
+      "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_200000/model.zip",
+      "model_sha256": "214fa81823651712a4431d1d8d9bcea08372ff8f3a9725ddab36149b38fdacd0",
+      "steps": 200000,
+      "validation": {
+        "count": 576,
+        "passes": 209,
+        "success_rate": 0.3628472222222222,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.23516620775377037,
+        "mean_command_cost": 0.23566246635400093,
+        "mean_rms_error_deg": 9.92227105139295,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 6.585885167464114
+      },
+      "optimizer_updates": 23750
+    },
+    {
+      "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_250000/model.zip",
+      "model_sha256": "253455e6705b9730350220af2ae9ba5f48b1e186195da6d1cc542fcb8f3fed15",
+      "steps": 250000,
+      "validation": {
+        "count": 576,
+        "passes": 229,
+        "success_rate": 0.3975694444444444,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.21576689126585505,
+        "mean_command_cost": 0.21692320697729228,
+        "mean_rms_error_deg": 10.080016269882814,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 7.072707423580787
+      },
+      "optimizer_updates": 30000
+    },
+    {
+      "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_300000/model.zip",
+      "model_sha256": "1944d97efc1a9311278a675e85be84cd5cbe30b1febd07b58ccc2fcee861c509",
+      "steps": 300000,
+      "validation": {
+        "count": 576,
+        "passes": 126,
+        "success_rate": 0.21875,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.12328174241928459,
+        "mean_command_cost": 0.12407822265415007,
+        "mean_rms_error_deg": 10.342566427479161,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 7.195634920634919
+      },
+      "optimizer_updates": 36250
+    },
+    {
+      "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_350000/model.zip",
+      "model_sha256": "b5375c29a0bfc123e1391b35690ba9f410b9d4b7d9f58d7a839d59a7a5e8dee5",
+      "steps": 350000,
+      "validation": {
+        "count": 576,
+        "passes": 370,
+        "success_rate": 0.6423611111111112,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.17773591514258907,
+        "mean_command_cost": 0.1784421101826287,
+        "mean_rms_error_deg": 9.916176492649903,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 6.1378378378378375
+      },
+      "optimizer_updates": 42500
+    },
+    {
+      "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_400000/model.zip",
+      "model_sha256": "e94bb62b7e11147d4ed874ae3cc8a911e83a4100cb9843bc553862aa2c171f60",
+      "steps": 400000,
+      "validation": {
+        "count": 576,
+        "passes": 576,
+        "success_rate": 1.0,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.19586993819276977,
+        "mean_command_cost": 0.19616057630389877,
+        "mean_rms_error_deg": 9.119492728067396,
+        "max_settling_time_s": 7.9,
+        "mean_settling_time_success_only_s": 5.644097222222222
+      },
+      "optimizer_updates": 48750
+    },
+    {
+      "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_450000/model.zip",
+      "model_sha256": "0df60fc75e1f2992e34aa54f27999769299f6e2d11306e534e96cac0dbfdd613",
+      "steps": 450000,
+      "validation": {
+        "count": 576,
+        "passes": 549,
+        "success_rate": 0.953125,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.1666028487961698,
+        "mean_command_cost": 0.1677894784742945,
+        "mean_rms_error_deg": 8.923723485992802,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 5.723770491803279
+      },
+      "optimizer_updates": 55000
+    },
+    {
+      "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/checkpoints/steps_500000/model.zip",
+      "model_sha256": "a0ba4e0611eb430224dee2b4b92b70d1d94eec5a2b72d41a2a019773f7ed256a",
+      "steps": 500000,
+      "validation": {
+        "count": 576,
+        "passes": 252,
+        "success_rate": 0.4375,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.11438289527991426,
+        "mean_command_cost": 0.11470362444114916,
+        "mean_rms_error_deg": 9.080883999898063,
+        "max_settling_time_s": 7.75,
+        "mean_settling_time_success_only_s": 6.02420634920635
+      },
+      "optimizer_updates": 61250
+    }
+  ],
+  "base_parameters": {
+    "kp": 0.3371820033549353,
+    "kd": 0.9173858175799046,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "family": "PD",
+    "stage": "refine2"
+  },
+  "source_sha256": {
+    "代码/actuator_study/__init__.py": "5d327c1052b3b3c925009e523697cfb4b655296ce6915ec9ae3bf228473ed690",
+    "代码/actuator_study/analysis.py": "216b0cfb29706e6082a8ec2d4183df8c3e576122a111ce6f4f96f380403ee5ab",
+    "代码/actuator_study/baselines.py": "22cef23a41daeac2f5fe52522a9977b96061ddd8c186602cae71aa68522e0194",
+    "代码/actuator_study/cli.py": "6ae908553acf69d3000d1e0fe1dea68719a2fa60c0b1a1e23f84af50c2f9d32c",
+    "代码/actuator_study/delivery.py": "3f23058bf87f62a4f1fe92ee82b8b778bd5054248f8ee47012f4b655a8707127",
+    "代码/actuator_study/evaluation.py": "21c20717a67078b1a3fbc80756b847647c608ff46a1da7e1f6bdc96d66772bfe",
+    "代码/actuator_study/learning.py": "ea0d560d082642c9b80116c487c675afaffbc849906bfbbb308f29e9fcb0b363",
+    "代码/actuator_study/physics.py": "3f5bd200e47fe00fd11bf3ad9198043f64e22b4f94fb6d1d2b2b567acf57de40",
+    "代码/actuator_study/protocol.py": "5b0b275d02bda6efef2411f37d44b5b477bb704d0694b1e6769af1858f639515",
+    "代码/actuator_study/test_baselines.py": "70cdfaf61493ad90926722b10314b192ee2905acbc3be4d623f250fbc623788a",
+    "代码/actuator_study/verification.py": "93baf486dbd2d84cb77849b8f64226a7a2101dbcd449f879f8a0d3c619c9ec72",
+    "代码/test_evaluation_delivery.py": "5c3ea0d858ed99a0fee3953fb267477d7ad0d289b5606b0dc7e5508c3d6b32cb",
+    "代码/test_learning.py": "fd4abf3f8a01e1c15aacb710b14a77cb2ffae7f066d1713800e0761d3aa0eb62",
+    "代码/test_physics.py": "99227a44d09cbe206bbcf7a18f4db5ae1dde6170eeaf921991022905c482e423",
+    "代码/test_verification.py": "42c02817d689774e642c1539220c3f5721e7cbbfb9882af5f3a0ef4d0e2bcd59"
+  },
+  "source_sha256_after": {
+    "代码/actuator_study/__init__.py": "5d327c1052b3b3c925009e523697cfb4b655296ce6915ec9ae3bf228473ed690",
+    "代码/actuator_study/analysis.py": "216b0cfb29706e6082a8ec2d4183df8c3e576122a111ce6f4f96f380403ee5ab",
+    "代码/actuator_study/baselines.py": "22cef23a41daeac2f5fe52522a9977b96061ddd8c186602cae71aa68522e0194",
+    "代码/actuator_study/cli.py": "6ae908553acf69d3000d1e0fe1dea68719a2fa60c0b1a1e23f84af50c2f9d32c",
+    "代码/actuator_study/delivery.py": "3f23058bf87f62a4f1fe92ee82b8b778bd5054248f8ee47012f4b655a8707127",
+    "代码/actuator_study/evaluation.py": "21c20717a67078b1a3fbc80756b847647c608ff46a1da7e1f6bdc96d66772bfe",
+    "代码/actuator_study/learning.py": "ea0d560d082642c9b80116c487c675afaffbc849906bfbbb308f29e9fcb0b363",
+    "代码/actuator_study/physics.py": "3f5bd200e47fe00fd11bf3ad9198043f64e22b4f94fb6d1d2b2b567acf57de40",
+    "代码/actuator_study/protocol.py": "5b0b275d02bda6efef2411f37d44b5b477bb704d0694b1e6769af1858f639515",
+    "代码/actuator_study/test_baselines.py": "70cdfaf61493ad90926722b10314b192ee2905acbc3be4d623f250fbc623788a",
+    "代码/actuator_study/verification.py": "93baf486dbd2d84cb77849b8f64226a7a2101dbcd449f879f8a0d3c619c9ec72",
+    "代码/test_evaluation_delivery.py": "5c3ea0d858ed99a0fee3953fb267477d7ad0d289b5606b0dc7e5508c3d6b32cb",
+    "代码/test_learning.py": "fd4abf3f8a01e1c15aacb710b14a77cb2ffae7f066d1713800e0761d3aa0eb62",
+    "代码/test_physics.py": "99227a44d09cbe206bbcf7a18f4db5ae1dde6170eeaf921991022905c482e423",
+    "代码/test_verification.py": "42c02817d689774e642c1539220c3f5721e7cbbfb9882af5f3a0ef4d0e2bcd59"
+  },
+  "configuration": {
+    "rewards": {
+      "A": {
+        "error_weight": 1.0,
+        "rate_weight": 0.5,
+        "torque_weight": 0.1,
+        "violation_weight": 8.0
+      },
+      "B": {
+        "error_weight": 1.0,
+        "rate_weight": 0.5,
+        "torque_weight": 0.02,
+        "violation_weight": 12.0
+      }
+    },
+    "sac": {
+      "policy": "MlpPolicy",
+      "net_arch": [
+        128,
+        128
+      ],
+      "learning_rate": 0.0003,
+      "batch_size": 256,
+      "gamma": 0.995,
+      "tau": 0.005,
+      "buffer_size": 300000,
+      "ent_coef": "auto_0.01",
+      "target_entropy": -1.0,
+      "learning_starts": 10000,
+      "train_freq_vector_steps": 1,
+      "gradient_steps": 1,
+      "n_envs": 8,
+      "feature_dtype": "float32",
+      "device": "cpu",
+      "torch_threads": 1
+    },
+    "reward_formula": {
+      "state_scale_deg": 5.0,
+      "rate_scale_deg_s": 5.0,
+      "state_square_cap": 100.0,
+      "excess_square_cap": 25.0,
+      "physical_failure_reward": -1000.0,
+      "interval_reward": "-dt*(we*min((theta/5deg)^2,100)+ww*min((omega/5deg/s)^2,100)+wu*actual_cost/(dt*limit^2)+1[t_end>=8]*wv*(outside+min(excess_angle^2,25)+min(excess_rate^2,25)))",
+      "excess": "max(abs(state)/acceptance_tolerance-1,0)",
+      "deadline_sample_included": true
+    },
+    "feature_order": [
+      "31 chronological measured error/rate pairs",
+      "30 chronological past sent clipped total commands",
+      "elapsed/22",
+      "valid_intervals/30",
+      "residual only: proposed raw PID / 0.5",
+      "residual only: committed PID integral / 2"
+    ],
+    "feature_scales": {
+      "error_rad": 1.0471975511965976,
+      "rate_rad_s": 0.5235987755982988,
+      "command_Nm": 0.5,
+      "integral_rad_s": 2.0
+    },
+    "feature_dimensions": {
+      "direct": 94,
+      "residual": 96
+    },
+    "history_intervals": 30,
+    "prehistory_measurements": "repeat initial measurement",
+    "prehistory_commands": 0.0,
+    "prehistory_valid": 0,
+    "action_direct": "0.5*clip(action,-1,1)",
+    "action_residual": "clip(raw_PID+0.5*0.5*clip(action,-1,1),-0.5,0.5)",
+    "anti_windup": "PID commit uses the final clipped total command",
+    "training_random_stream": "SeedSequence([seed, kind_id, method_id, rank]); lag=0,delay=1; direct=0,residual=1",
+    "terminal": "physical failure or t=22; TimeLimit.truncated=False; complete terminal_observation",
+    "selection": "maximize validation passes, minimize mean actual cost, earliest checkpoint",
+    "development_steps": 150000,
+    "formal_steps": 500000,
+    "validation_every": 50000,
+    "validation_count": 576,
+    "development_seeds": {
+      "A": 9101,
+      "B": 9102
+    },
+    "formal_seeds": [
+      101,
+      202,
+      303
+    ],
+    "development_gate": {
+      "success_rate": 0.95,
+      "physical_failures": 0
+    },
+    "hidden_from_features": [
+      "true parameter",
+      "actual torque",
+      "simulator delay queue"
+    ],
+    "test_response_calibration": false,
+    "replay_buffer_persisted": false
+  },
+  "run_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303",
+  "declaration_sha256": "46cdcbd25b3b77a25e6d6433babb02a44ed3978993745a2caf2a27a2d5564bb8",
+  "training_elapsed_seconds": 419.65500000002794,
+  "validation_elapsed_seconds": 4.185999999870546,
+  "started_utc": "2026-10-17T13:26:51.289141+00:00",
+  "versions": {
+    "numpy": "1.26.4",
+    "torch": "2.10.0+cpu",
+    "stable_baselines3": "2.7.1",
+    "gymnasium": "1.2.3"
+  },
+  "replay_buffer_saved": false,
+  "test_responses_used": false,
+  "optimizer_updates": 61250,
+  "training_steps_per_second": 1191.454885560679,
+  "elapsed_seconds": 427.01600000000326,
+  "final": {
+    "model_path": "03_SAC训练/formal/delay/residual/reward_A/seed_303/final.zip",
+    "model_sha256": "346e5998cdc7ae61081079c3a3e0f99ab74a9423a4de87040843b544f30a931a",
+    "steps": 500000
+  },
+  "finished_utc": "2026-10-17T13:33:58.302350+00:00"
+}

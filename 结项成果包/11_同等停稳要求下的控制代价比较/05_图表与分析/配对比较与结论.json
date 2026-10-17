@@ -1,0 +1,1130 @@
+[
+  {
+    "axis": "single",
+    "deadline_s": 4.0,
+    "baseline_group": "pid",
+    "baseline_id": "single_pid_4s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "single_legacy_11_scale_1p25",
+      "single_legacy_22_scale_1p5",
+      "single_legacy_33_scale_2p0"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      146,
+      201,
+      166
+    ],
+    "PID_mean_cost": 0.20906525202304838,
+    "SAC_mean_cost_each_seed": [
+      0.24443124002575733,
+      0.20643548450487367,
+      0.22349713376798588
+    ],
+    "SAC_mean_cost": 0.22478795276620564,
+    "relative_cost_change_pct": 7.5204753496883825,
+    "mean_paired_cost_difference_each_seed": [
+      0.035365988002708966,
+      -0.002629767518174704,
+      0.014431881744937501
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      0.010037874506252159,
+      0.021199183558212296
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 4.0,
+    "baseline_group": "pid",
+    "baseline_id": "single_pid_4s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "single_fresh_41_selected",
+      "single_fresh_42_selected",
+      "single_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      23,
+      22,
+      7
+    ],
+    "PID_mean_cost": 0.20906525202304838,
+    "SAC_mean_cost_each_seed": [
+      0.16182885820863577,
+      0.07517131672298491,
+      0.14348947202055712
+    ],
+    "SAC_mean_cost": 0.12682988231739262,
+    "relative_cost_change_pct": -39.334786106200816,
+    "mean_paired_cost_difference_each_seed": [
+      -0.04723639381441259,
+      -0.13389393530006344,
+      -0.06557578000249124
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      -0.08999929350751014,
+      -0.07462655075923963
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": true,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 4.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "single_pid_margin_4s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "single_legacy_11_scale_1p25",
+      "single_legacy_22_scale_1p5",
+      "single_legacy_33_scale_2p0"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      146,
+      201,
+      166
+    ],
+    "PID_mean_cost": 0.2419335274740019,
+    "SAC_mean_cost_each_seed": [
+      0.24443124002575733,
+      0.20643548450487367,
+      0.22349713376798588
+    ],
+    "SAC_mean_cost": 0.22478795276620564,
+    "relative_cost_change_pct": -7.086894853644754,
+    "mean_paired_cost_difference_each_seed": [
+      0.0024977125517554426,
+      -0.03549804296912822,
+      -0.018436393706016015
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      -0.02370125393892366,
+      -0.010619773705372114
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 4.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "single_pid_margin_4s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "single_fresh_41_selected",
+      "single_fresh_42_selected",
+      "single_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      23,
+      22,
+      7
+    ],
+    "PID_mean_cost": 0.2419335274740019,
+    "SAC_mean_cost_each_seed": [
+      0.16182885820863577,
+      0.07517131672298491,
+      0.14348947202055712
+    ],
+    "SAC_mean_cost": 0.12682988231739262,
+    "relative_cost_change_pct": -47.576558056418314,
+    "mean_paired_cost_difference_each_seed": [
+      -0.08010466926536611,
+      -0.166762210751017,
+      -0.09844405545344477
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      -0.12469200273921843,
+      -0.10595992256093255
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": true,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 6.0,
+    "baseline_group": "pid",
+    "baseline_id": "single_pid_6s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "single_legacy_11_scale_1p0",
+      "single_legacy_22_scale_0p8",
+      "single_legacy_33_scale_1p5"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      256,
+      256,
+      256
+    ],
+    "PID_mean_cost": 0.06019925511271845,
+    "SAC_mean_cost_each_seed": [
+      0.2177754497088243,
+      0.15117343900686492,
+      0.20285757348866187
+    ],
+    "SAC_mean_cost": 0.190602154068117,
+    "relative_cost_change_pct": 216.61879156349895,
+    "mean_paired_cost_difference_each_seed": [
+      0.15757619459610586,
+      0.09097418389414647,
+      0.14265831837594342
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      0.12097045387344836,
+      0.14013151688933467
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": true,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 6.0,
+    "baseline_group": "pid",
+    "baseline_id": "single_pid_6s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "single_fresh_41_selected",
+      "single_fresh_42_selected",
+      "single_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      92,
+      183,
+      96
+    ],
+    "PID_mean_cost": 0.06019925511271845,
+    "SAC_mean_cost_each_seed": [
+      0.16182885820863577,
+      0.07517131672298491,
+      0.14348947202055712
+    ],
+    "SAC_mean_cost": 0.12682988231739262,
+    "relative_cost_change_pct": 110.6834745378717,
+    "mean_paired_cost_difference_each_seed": [
+      0.10162960309591734,
+      0.014972061610266468,
+      0.08329021690783867
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      0.0597603326235086,
+      0.07378781556348239
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 6.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "single_pid_margin_6s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "single_legacy_11_scale_1p0",
+      "single_legacy_22_scale_0p8",
+      "single_legacy_33_scale_1p5"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      256,
+      256,
+      256
+    ],
+    "PID_mean_cost": 0.06785070695328857,
+    "SAC_mean_cost_each_seed": [
+      0.2177754497088243,
+      0.15117343900686492,
+      0.20285757348866187
+    ],
+    "SAC_mean_cost": 0.190602154068117,
+    "relative_cost_change_pct": 180.9140282050944,
+    "mean_paired_cost_difference_each_seed": [
+      0.14992474275553572,
+      0.08332273205357633,
+      0.1350068665353733
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      0.11381849776100103,
+      0.1319839091394461
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": true,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 6.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "single_pid_margin_6s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "single_fresh_41_selected",
+      "single_fresh_42_selected",
+      "single_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      92,
+      183,
+      96
+    ],
+    "PID_mean_cost": 0.06785070695328857,
+    "SAC_mean_cost_each_seed": [
+      0.16182885820863577,
+      0.07517131672298491,
+      0.14348947202055712
+    ],
+    "SAC_mean_cost": 0.12682988231739262,
+    "relative_cost_change_pct": 86.92492386955956,
+    "mean_paired_cost_difference_each_seed": [
+      0.09397815125534723,
+      0.007320609769696338,
+      0.07563876506726855
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      0.05265773252112128,
+      0.06554439709921323
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 8.0,
+    "baseline_group": "pid",
+    "baseline_id": "single_pid_8s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "single_legacy_11_scale_0p8",
+      "single_legacy_22_scale_0p8",
+      "single_legacy_33_scale_1p0"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      256,
+      256,
+      256
+    ],
+    "PID_mean_cost": 0.02587403125931849,
+    "SAC_mean_cost_each_seed": [
+      0.16977795550960034,
+      0.15117343900686492,
+      0.17362200733899416
+    ],
+    "SAC_mean_cost": 0.16485780061848646,
+    "relative_cost_change_pct": 537.1554512175725,
+    "mean_paired_cost_difference_each_seed": [
+      0.14390392425028187,
+      0.12529940774754642,
+      0.14774797607967566
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      0.12779674184862494,
+      0.15010181144218804
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": true,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": true,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 8.0,
+    "baseline_group": "pid",
+    "baseline_id": "single_pid_8s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "single_fresh_41_selected",
+      "single_fresh_42_selected",
+      "single_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      246,
+      231,
+      100
+    ],
+    "PID_mean_cost": 0.02587403125931849,
+    "SAC_mean_cost_each_seed": [
+      0.16182885820863577,
+      0.07517131672298491,
+      0.14348947202055712
+    ],
+    "SAC_mean_cost": 0.12682988231739262,
+    "relative_cost_change_pct": 390.18214844938416,
+    "mean_paired_cost_difference_each_seed": [
+      0.1359548269493173,
+      0.04929728546366643,
+      0.11761544076123863
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      0.09132489688726707,
+      0.11047438273979349
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": true,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 8.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "single_pid_margin_8s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "single_legacy_11_scale_0p8",
+      "single_legacy_22_scale_0p8",
+      "single_legacy_33_scale_1p0"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      256,
+      256,
+      256
+    ],
+    "PID_mean_cost": 0.026745248740624575,
+    "SAC_mean_cost_each_seed": [
+      0.16977795550960034,
+      0.15117343900686492,
+      0.17362200733899416
+    ],
+    "SAC_mean_cost": 0.16485780061848646,
+    "relative_cost_change_pct": 516.4003267170084,
+    "mean_paired_cost_difference_each_seed": [
+      0.14303270676897578,
+      0.12442819026624033,
+      0.14687675859836957
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      0.12732669611793518,
+      0.14913524080220628
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": true,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": true,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "single",
+    "deadline_s": 8.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "single_pid_margin_8s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "single_fresh_41_selected",
+      "single_fresh_42_selected",
+      "single_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      246,
+      231,
+      100
+    ],
+    "PID_mean_cost": 0.026745248740624575,
+    "SAC_mean_cost_each_seed": [
+      0.16182885820863577,
+      0.07517131672298491,
+      0.14348947202055712
+    ],
+    "SAC_mean_cost": 0.12682988231739262,
+    "relative_cost_change_pct": 374.21462984842213,
+    "mean_paired_cost_difference_each_seed": [
+      0.13508360946801123,
+      0.048426067982360335,
+      0.11674422327993254
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      0.09078646163152554,
+      0.1095517251095095
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": true,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 4.0,
+    "baseline_group": "pid",
+    "baseline_id": "three_pid_4s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "three_legacy_11_scale_1p25",
+      "three_legacy_22_scale_2p0",
+      "three_legacy_33_scale_2p0"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 254,
+    "SAC_passes_each_seed": [
+      21,
+      68,
+      37
+    ],
+    "PID_mean_cost": 1.321216339618179,
+    "SAC_mean_cost_each_seed": [
+      4.022711666873572,
+      4.391920965728495,
+      3.698141203117397
+    ],
+    "SAC_mean_cost": 4.037591278573156,
+    "relative_cost_change_pct": 205.59652931176942,
+    "mean_paired_cost_difference_each_seed": [
+      2.701495327255392,
+      3.0707046261103166,
+      2.3769248634992177
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      2.599223138024467,
+      2.831226956319719
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 4.0,
+    "baseline_group": "pid",
+    "baseline_id": "three_pid_4s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "three_fresh_41_selected",
+      "three_fresh_42_selected",
+      "three_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 254,
+    "SAC_passes_each_seed": [
+      0,
+      0,
+      0
+    ],
+    "PID_mean_cost": 1.321216339618179,
+    "SAC_mean_cost_each_seed": [
+      11.607312244310396,
+      6.290603512077394,
+      13.73634948899489
+    ],
+    "SAC_mean_cost": 10.544755081794227,
+    "relative_cost_change_pct": 698.1096483291734,
+    "mean_paired_cost_difference_each_seed": [
+      10.28609590469222,
+      4.969387172459214,
+      12.415133149376711
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      8.791437069638611,
+      9.648464800777317
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 4.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "three_pid_margin_4s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "three_legacy_11_scale_1p25",
+      "three_legacy_22_scale_2p0",
+      "three_legacy_33_scale_2p0"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 255,
+    "SAC_passes_each_seed": [
+      21,
+      68,
+      37
+    ],
+    "PID_mean_cost": 1.495844271064254,
+    "SAC_mean_cost_each_seed": [
+      4.022711666873572,
+      4.391920965728495,
+      3.698141203117397
+    ],
+    "SAC_mean_cost": 4.037591278573156,
+    "relative_cost_change_pct": 169.92056303431337,
+    "mean_paired_cost_difference_each_seed": [
+      2.526867395809317,
+      2.8960766946642416,
+      2.2022969320531427
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      2.4340947617225805,
+      2.6500571500692187
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 4.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "three_pid_margin_4s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "three_fresh_41_selected",
+      "three_fresh_42_selected",
+      "three_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 255,
+    "SAC_passes_each_seed": [
+      0,
+      0,
+      0
+    ],
+    "PID_mean_cost": 1.495844271064254,
+    "SAC_mean_cost_each_seed": [
+      11.607312244310396,
+      6.290603512077394,
+      13.73634948899489
+    ],
+    "SAC_mean_cost": 10.544755081794227,
+    "relative_cost_change_pct": 604.9366893180604,
+    "mean_paired_cost_difference_each_seed": [
+      10.111467973246143,
+      4.794759241013139,
+      12.240505217930636
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      8.632873491364556,
+      9.470650377793348
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 6.0,
+    "baseline_group": "pid",
+    "baseline_id": "three_pid_6s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "three_legacy_11_scale_1p0",
+      "three_legacy_22_scale_2p0",
+      "three_legacy_33_scale_1p0"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 255,
+    "SAC_passes_each_seed": [
+      98,
+      210,
+      211
+    ],
+    "PID_mean_cost": 0.32009149850851637,
+    "SAC_mean_cost_each_seed": [
+      3.4997675044178553,
+      4.391920965728495,
+      2.978372752518581
+    ],
+    "SAC_mean_cost": 3.6233537408883105,
+    "relative_cost_change_pct": 1031.9743753806404,
+    "mean_paired_cost_difference_each_seed": [
+      3.179676005909339,
+      4.071829467219979,
+      2.658281254010064
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      3.1431337565939277,
+      3.4580235830140142
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 6.0,
+    "baseline_group": "pid",
+    "baseline_id": "three_pid_6s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "three_fresh_41_selected",
+      "three_fresh_42_selected",
+      "three_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 255,
+    "SAC_passes_each_seed": [
+      0,
+      0,
+      0
+    ],
+    "PID_mean_cost": 0.32009149850851637,
+    "SAC_mean_cost_each_seed": [
+      11.607312244310396,
+      6.290603512077394,
+      13.73634948899489
+    ],
+    "SAC_mean_cost": 10.544755081794227,
+    "relative_cost_change_pct": 3194.294016219763,
+    "mean_paired_cost_difference_each_seed": [
+      11.28722074580188,
+      5.970512013568877,
+      13.416257990486375
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      9.783165721702556,
+      10.676909551057113
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 6.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "three_pid_margin_6s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "three_legacy_11_scale_1p0",
+      "three_legacy_22_scale_2p0",
+      "three_legacy_33_scale_1p0"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 255,
+    "SAC_passes_each_seed": [
+      98,
+      210,
+      211
+    ],
+    "PID_mean_cost": 0.3685381710233572,
+    "SAC_mean_cost_each_seed": [
+      3.4997675044178553,
+      4.391920965728495,
+      2.978372752518581
+    ],
+    "SAC_mean_cost": 3.6233537408883105,
+    "relative_cost_change_pct": 883.169187285805,
+    "mean_paired_cost_difference_each_seed": [
+      3.131229333394498,
+      4.023382794705139,
+      2.6098345814952233
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      3.1022417474023927,
+      3.408348859899813
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 6.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "three_pid_margin_6s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "three_fresh_41_selected",
+      "three_fresh_42_selected",
+      "three_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 255,
+    "SAC_passes_each_seed": [
+      0,
+      0,
+      0
+    ],
+    "PID_mean_cost": 0.3685381710233572,
+    "SAC_mean_cost_each_seed": [
+      11.607312244310396,
+      6.290603512077394,
+      13.73634948899489
+    ],
+    "SAC_mean_cost": 10.544755081794227,
+    "relative_cost_change_pct": 2761.238240943547,
+    "mean_paired_cost_difference_each_seed": [
+      11.23877407328704,
+      5.9220653410540365,
+      13.367811317971533
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      9.737294103167557,
+      10.616223881735907
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": false,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 8.0,
+    "baseline_group": "pid",
+    "baseline_id": "three_pid_8s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "three_legacy_11_scale_0p8",
+      "three_legacy_22_scale_2p0",
+      "three_legacy_33_scale_0p8"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 255,
+    "SAC_passes_each_seed": [
+      233,
+      254,
+      256
+    ],
+    "PID_mean_cost": 0.12470378184172902,
+    "SAC_mean_cost_each_seed": [
+      2.7673394174589587,
+      4.391920965728495,
+      2.4015424470943296
+    ],
+    "SAC_mean_cost": 3.1869342767605944,
+    "relative_cost_change_pct": 2455.6035508252453,
+    "mean_paired_cost_difference_each_seed": [
+      2.64263563561723,
+      4.267217183886768,
+      2.2768386652526007
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      2.919059385012811,
+      3.2123823828004077
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": true,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 8.0,
+    "baseline_group": "pid",
+    "baseline_id": "three_pid_8s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "three_fresh_41_selected",
+      "three_fresh_42_selected",
+      "three_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 255,
+    "SAC_passes_each_seed": [
+      0,
+      0,
+      0
+    ],
+    "PID_mean_cost": 0.12470378184172902,
+    "SAC_mean_cost_each_seed": [
+      11.607312244310396,
+      6.290603512077394,
+      13.73634948899489
+    ],
+    "SAC_mean_cost": 10.544755081794227,
+    "relative_cost_change_pct": 8355.842257596783,
+    "mean_paired_cost_difference_each_seed": [
+      11.482608462468669,
+      6.165899730235665,
+      13.611645707153162
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      9.96396525661527,
+      10.910786611584001
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": true,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 8.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "three_pid_margin_8s",
+    "method": "legacy_sac",
+    "model_ids": [
+      "three_legacy_11_scale_0p8",
+      "three_legacy_22_scale_2p0",
+      "three_legacy_33_scale_0p8"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      233,
+      254,
+      256
+    ],
+    "PID_mean_cost": 0.13425711411412486,
+    "SAC_mean_cost_each_seed": [
+      2.7673394174589587,
+      4.391920965728495,
+      2.4015424470943296
+    ],
+    "SAC_mean_cost": 3.1869342767605944,
+    "relative_cost_change_pct": 2273.7544917370637,
+    "mean_paired_cost_difference_each_seed": [
+      2.633082303344834,
+      4.257663851614371,
+      2.267285332980205
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      2.906973998338301,
+      3.2056383552562577
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": true,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  },
+  {
+    "axis": "three",
+    "deadline_s": 8.0,
+    "baseline_group": "pid_margin",
+    "baseline_id": "three_pid_margin_8s",
+    "method": "fresh_sac",
+    "model_ids": [
+      "three_fresh_41_selected",
+      "three_fresh_42_selected",
+      "three_fresh_43_selected"
+    ],
+    "seeds": [
+      41,
+      42,
+      43
+    ],
+    "n_initial_states": 256,
+    "PID_passes": 256,
+    "SAC_passes_each_seed": [
+      0,
+      0,
+      0
+    ],
+    "PID_mean_cost": 0.13425711411412486,
+    "SAC_mean_cost_each_seed": [
+      11.607312244310396,
+      6.290603512077394,
+      13.73634948899489
+    ],
+    "SAC_mean_cost": 10.544755081794227,
+    "relative_cost_change_pct": 7754.149965439217,
+    "mean_paired_cost_difference_each_seed": [
+      11.473055130196272,
+      6.156346397963269,
+      13.602092374880765
+    ],
+    "paired_cost_difference_95pct_bootstrap_CI": [
+      9.940239248231943,
+      10.85603362105029
+    ],
+    "bootstrap_unit": "initial state; 3 fixed model outcomes retained together",
+    "all_controllers_passed_all_scenes": false,
+    "all_seed_cost_differences_negative": false,
+    "supports_lower_effort_under_identical_requirements": false,
+    "primary_deadline": true,
+    "CI_scope": "fixed models and sampled initial-state distribution; not all training randomness"
+  }
+]

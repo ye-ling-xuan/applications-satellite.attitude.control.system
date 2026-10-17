@@ -1,0 +1,6 @@
+{
+  "path": "03_SAC训练/io_retry_runner.py",
+  "sha256": "43046e764b1b1ace12d76a852f269e342fce25c047704c89986306582f4ccb37",
+  "effect": "retry PermissionError in atomic JSON replacement up to30 times with0.1s delay; no change to dynamics/reward/RNG/optimizer",
+  "retry_events": []
+}

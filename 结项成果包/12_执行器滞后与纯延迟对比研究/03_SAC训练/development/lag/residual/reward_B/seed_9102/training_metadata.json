@@ -1,0 +1,243 @@
+{
+  "status": "complete",
+  "kind": "lag",
+  "method": "residual",
+  "reward_name": "B",
+  "seed": 9102,
+  "stage": "development",
+  "requested_steps": 150000,
+  "actual_steps": 150000,
+  "best": {
+    "model_path": "03_SAC训练/development/lag/residual/reward_B/seed_9102/best.zip",
+    "model_sha256": "5627d9b2e3b6e7951c742cfd615bb1987b4e8c2e665edcdfa40f62dcc6d075b9",
+    "steps": 100000,
+    "validation": {
+      "count": 576,
+      "passes": 575,
+      "success_rate": 0.9982638888888888,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.11678470204462954,
+      "mean_command_cost": 0.1577521732599933,
+      "mean_rms_error_deg": 8.412661366122897,
+      "max_settling_time_s": 8.0,
+      "mean_settling_time_success_only_s": 6.34095652173913
+    },
+    "optimizer_updates": 11250,
+    "checkpoint_model_path": "03_SAC训练/development/lag/residual/reward_B/seed_9102/checkpoints/steps_100000/model.zip"
+  },
+  "checkpoints": [
+    {
+      "model_path": "03_SAC训练/development/lag/residual/reward_B/seed_9102/checkpoints/steps_050000/model.zip",
+      "model_sha256": "49691919887a1740842baa0a62d46b1e9a0a3f0e50369770d796e50578f4a72f",
+      "steps": 50000,
+      "validation": {
+        "count": 576,
+        "passes": 81,
+        "success_rate": 0.140625,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.16162383944103492,
+        "mean_command_cost": 0.4751041328085205,
+        "mean_rms_error_deg": 10.535588376803428,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 5.526543209876544
+      },
+      "optimizer_updates": 5000
+    },
+    {
+      "model_path": "03_SAC训练/development/lag/residual/reward_B/seed_9102/checkpoints/steps_100000/model.zip",
+      "model_sha256": "5627d9b2e3b6e7951c742cfd615bb1987b4e8c2e665edcdfa40f62dcc6d075b9",
+      "steps": 100000,
+      "validation": {
+        "count": 576,
+        "passes": 575,
+        "success_rate": 0.9982638888888888,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.11678470204462954,
+        "mean_command_cost": 0.1577521732599933,
+        "mean_rms_error_deg": 8.412661366122897,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 6.34095652173913
+      },
+      "optimizer_updates": 11250
+    },
+    {
+      "model_path": "03_SAC训练/development/lag/residual/reward_B/seed_9102/checkpoints/steps_150000/model.zip",
+      "model_sha256": "2bab09ad107a291a00653f6323eb65bbe461145b5a44183fe11742bf252d908e",
+      "steps": 150000,
+      "validation": {
+        "count": 576,
+        "passes": 403,
+        "success_rate": 0.6996527777777778,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.13050426947868063,
+        "mean_command_cost": 0.22658956412755474,
+        "mean_rms_error_deg": 8.491138164710422,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 6.881761786600497
+      },
+      "optimizer_updates": 17500
+    }
+  ],
+  "base_parameters": {
+    "kp": 0.34262433376840434,
+    "kd": 0.9367257312981386,
+    "ki": 0.00023680310190282453,
+    "integral_limit": 2.0,
+    "family": "PID"
+  },
+  "source_sha256": {
+    "代码/actuator_study/__init__.py": "5d327c1052b3b3c925009e523697cfb4b655296ce6915ec9ae3bf228473ed690",
+    "代码/actuator_study/analysis.py": "216b0cfb29706e6082a8ec2d4183df8c3e576122a111ce6f4f96f380403ee5ab",
+    "代码/actuator_study/baselines.py": "22cef23a41daeac2f5fe52522a9977b96061ddd8c186602cae71aa68522e0194",
+    "代码/actuator_study/cli.py": "6ae908553acf69d3000d1e0fe1dea68719a2fa60c0b1a1e23f84af50c2f9d32c",
+    "代码/actuator_study/delivery.py": "3f23058bf87f62a4f1fe92ee82b8b778bd5054248f8ee47012f4b655a8707127",
+    "代码/actuator_study/evaluation.py": "21c20717a67078b1a3fbc80756b847647c608ff46a1da7e1f6bdc96d66772bfe",
+    "代码/actuator_study/learning.py": "ea0d560d082642c9b80116c487c675afaffbc849906bfbbb308f29e9fcb0b363",
+    "代码/actuator_study/physics.py": "3f5bd200e47fe00fd11bf3ad9198043f64e22b4f94fb6d1d2b2b567acf57de40",
+    "代码/actuator_study/protocol.py": "5b0b275d02bda6efef2411f37d44b5b477bb704d0694b1e6769af1858f639515",
+    "代码/actuator_study/test_baselines.py": "70cdfaf61493ad90926722b10314b192ee2905acbc3be4d623f250fbc623788a",
+    "代码/actuator_study/verification.py": "93baf486dbd2d84cb77849b8f64226a7a2101dbcd449f879f8a0d3c619c9ec72",
+    "代码/test_evaluation_delivery.py": "5c3ea0d858ed99a0fee3953fb267477d7ad0d289b5606b0dc7e5508c3d6b32cb",
+    "代码/test_learning.py": "fd4abf3f8a01e1c15aacb710b14a77cb2ffae7f066d1713800e0761d3aa0eb62",
+    "代码/test_physics.py": "99227a44d09cbe206bbcf7a18f4db5ae1dde6170eeaf921991022905c482e423",
+    "代码/test_verification.py": "42c02817d689774e642c1539220c3f5721e7cbbfb9882af5f3a0ef4d0e2bcd59"
+  },
+  "source_sha256_after": {
+    "代码/actuator_study/__init__.py": "5d327c1052b3b3c925009e523697cfb4b655296ce6915ec9ae3bf228473ed690",
+    "代码/actuator_study/analysis.py": "216b0cfb29706e6082a8ec2d4183df8c3e576122a111ce6f4f96f380403ee5ab",
+    "代码/actuator_study/baselines.py": "22cef23a41daeac2f5fe52522a9977b96061ddd8c186602cae71aa68522e0194",
+    "代码/actuator_study/cli.py": "6ae908553acf69d3000d1e0fe1dea68719a2fa60c0b1a1e23f84af50c2f9d32c",
+    "代码/actuator_study/delivery.py": "3f23058bf87f62a4f1fe92ee82b8b778bd5054248f8ee47012f4b655a8707127",
+    "代码/actuator_study/evaluation.py": "21c20717a67078b1a3fbc80756b847647c608ff46a1da7e1f6bdc96d66772bfe",
+    "代码/actuator_study/learning.py": "ea0d560d082642c9b80116c487c675afaffbc849906bfbbb308f29e9fcb0b363",
+    "代码/actuator_study/physics.py": "3f5bd200e47fe00fd11bf3ad9198043f64e22b4f94fb6d1d2b2b567acf57de40",
+    "代码/actuator_study/protocol.py": "5b0b275d02bda6efef2411f37d44b5b477bb704d0694b1e6769af1858f639515",
+    "代码/actuator_study/test_baselines.py": "70cdfaf61493ad90926722b10314b192ee2905acbc3be4d623f250fbc623788a",
+    "代码/actuator_study/verification.py": "93baf486dbd2d84cb77849b8f64226a7a2101dbcd449f879f8a0d3c619c9ec72",
+    "代码/test_evaluation_delivery.py": "5c3ea0d858ed99a0fee3953fb267477d7ad0d289b5606b0dc7e5508c3d6b32cb",
+    "代码/test_learning.py": "fd4abf3f8a01e1c15aacb710b14a77cb2ffae7f066d1713800e0761d3aa0eb62",
+    "代码/test_physics.py": "99227a44d09cbe206bbcf7a18f4db5ae1dde6170eeaf921991022905c482e423",
+    "代码/test_verification.py": "42c02817d689774e642c1539220c3f5721e7cbbfb9882af5f3a0ef4d0e2bcd59"
+  },
+  "configuration": {
+    "rewards": {
+      "A": {
+        "error_weight": 1.0,
+        "rate_weight": 0.5,
+        "torque_weight": 0.1,
+        "violation_weight": 8.0
+      },
+      "B": {
+        "error_weight": 1.0,
+        "rate_weight": 0.5,
+        "torque_weight": 0.02,
+        "violation_weight": 12.0
+      }
+    },
+    "sac": {
+      "policy": "MlpPolicy",
+      "net_arch": [
+        128,
+        128
+      ],
+      "learning_rate": 0.0003,
+      "batch_size": 256,
+      "gamma": 0.995,
+      "tau": 0.005,
+      "buffer_size": 300000,
+      "ent_coef": "auto_0.01",
+      "target_entropy": -1.0,
+      "learning_starts": 10000,
+      "train_freq_vector_steps": 1,
+      "gradient_steps": 1,
+      "n_envs": 8,
+      "feature_dtype": "float32",
+      "device": "cpu",
+      "torch_threads": 1
+    },
+    "reward_formula": {
+      "state_scale_deg": 5.0,
+      "rate_scale_deg_s": 5.0,
+      "state_square_cap": 100.0,
+      "excess_square_cap": 25.0,
+      "physical_failure_reward": -1000.0,
+      "interval_reward": "-dt*(we*min((theta/5deg)^2,100)+ww*min((omega/5deg/s)^2,100)+wu*actual_cost/(dt*limit^2)+1[t_end>=8]*wv*(outside+min(excess_angle^2,25)+min(excess_rate^2,25)))",
+      "excess": "max(abs(state)/acceptance_tolerance-1,0)",
+      "deadline_sample_included": true
+    },
+    "feature_order": [
+      "31 chronological measured error/rate pairs",
+      "30 chronological past sent clipped total commands",
+      "elapsed/22",
+      "valid_intervals/30",
+      "residual only: proposed raw PID / 0.5",
+      "residual only: committed PID integral / 2"
+    ],
+    "feature_scales": {
+      "error_rad": 1.0471975511965976,
+      "rate_rad_s": 0.5235987755982988,
+      "command_Nm": 0.5,
+      "integral_rad_s": 2.0
+    },
+    "feature_dimensions": {
+      "direct": 94,
+      "residual": 96
+    },
+    "history_intervals": 30,
+    "prehistory_measurements": "repeat initial measurement",
+    "prehistory_commands": 0.0,
+    "prehistory_valid": 0,
+    "action_direct": "0.5*clip(action,-1,1)",
+    "action_residual": "clip(raw_PID+0.5*0.5*clip(action,-1,1),-0.5,0.5)",
+    "anti_windup": "PID commit uses the final clipped total command",
+    "training_random_stream": "SeedSequence([seed, kind_id, method_id, rank]); lag=0,delay=1; direct=0,residual=1",
+    "terminal": "physical failure or t=22; TimeLimit.truncated=False; complete terminal_observation",
+    "selection": "maximize validation passes, minimize mean actual cost, earliest checkpoint",
+    "development_steps": 150000,
+    "formal_steps": 500000,
+    "validation_every": 50000,
+    "validation_count": 576,
+    "development_seeds": {
+      "A": 9101,
+      "B": 9102
+    },
+    "formal_seeds": [
+      101,
+      202,
+      303
+    ],
+    "development_gate": {
+      "success_rate": 0.95,
+      "physical_failures": 0
+    },
+    "hidden_from_features": [
+      "true parameter",
+      "actual torque",
+      "simulator delay queue"
+    ],
+    "test_response_calibration": false,
+    "replay_buffer_persisted": false
+  },
+  "run_path": "03_SAC训练/development/lag/residual/reward_B/seed_9102",
+  "declaration_sha256": "46cdcbd25b3b77a25e6d6433babb02a44ed3978993745a2caf2a27a2d5564bb8",
+  "training_elapsed_seconds": 115.28099999995902,
+  "validation_elapsed_seconds": 1.38900000002468,
+  "started_utc": "2026-10-17T13:11:35.197353+00:00",
+  "versions": {
+    "numpy": "1.26.4",
+    "torch": "2.10.0+cpu",
+    "stable_baselines3": "2.7.1",
+    "gymnasium": "1.2.3"
+  },
+  "replay_buffer_saved": false,
+  "test_responses_used": false,
+  "optimizer_updates": 17500,
+  "training_steps_per_second": 1301.1684492679046,
+  "elapsed_seconds": 116.82799999997951,
+  "final": {
+    "model_path": "03_SAC训练/development/lag/residual/reward_B/seed_9102/final.zip",
+    "model_sha256": "53f9e03dc59b594cf41f17de14168dff34a37ad862966945c8552886b632207f",
+    "steps": 150000
+  },
+  "finished_utc": "2026-10-17T13:13:32.024222+00:00"
+}

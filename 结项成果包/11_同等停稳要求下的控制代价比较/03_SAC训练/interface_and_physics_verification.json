@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "axis": "single",
+      "parallel_environments": 8,
+      "parity_steps": 100,
+      "maximum_observation_error": 0.0,
+      "finite20s_terminal_verified": true,
+      "bootstrap_after20s_disabled": true,
+      "success_8s_monitor_verified_at_zero_state": true
+    },
+    {
+      "axis": "three",
+      "parallel_environments": 8,
+      "parity_steps": 100,
+      "maximum_observation_error": 0.0,
+      "finite20s_terminal_verified": true,
+      "bootstrap_after20s_disabled": true,
+      "success_8s_monitor_verified_at_zero_state": true
+    }
+  ],
+  "source_sha256": {
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "multi_algorithm_benchmark/vector_training.py": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+  },
+  "used_scenes": "development only; no formal test response read"
+}

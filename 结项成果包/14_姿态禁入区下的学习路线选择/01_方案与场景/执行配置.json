@@ -1,0 +1,72 @@
+{
+  "task": "one terminal contextual route decision, followed by fixed PID; not continuous learned feedback",
+  "dt_s": 0.05,
+  "duration_s": 22.0,
+  "deadline_s": 12.0,
+  "inertia": 1.0,
+  "limit_Nm": 2.0,
+  "forbidden_center_deg": 180.0,
+  "forbidden_half_width_deg": 20.0,
+  "sampling_boundary_guard_deg": 15.0,
+  "minimum_endpoint_separation_deg": 15.0,
+  "initial_omega_rad_s": 0.0,
+  "angle_tolerance_deg": 1.0,
+  "rate_tolerance_deg_s": 0.5,
+  "collision": "closed forbidden arc, checked over exact quadratic hold interval including interior extrema",
+  "failed_interval": "integrate complete first contact interval; later physical states frozen and cost zero",
+  "action_0": "clockwise/decreasing unwrapped angle",
+  "action_1": "counterclockwise/increasing unwrapped angle",
+  "direct_pid": "shortest wrapped current goal error, without route planning",
+  "analytic": "unique safe direction in the connected allowed arc",
+  "counts": {
+    "development": 64,
+    "validation": 128,
+    "test": 512,
+    "detour": 128,
+    "edge": 128,
+    "training": 20000
+  },
+  "split_seeds": {
+    "development": 2026101701401,
+    "validation": 2026101701402,
+    "test": 2026101701403,
+    "training": 2026101701404,
+    "detour": 2026101701405,
+    "edge": 2026101701406
+  },
+  "training_population": "20000 independent natural initial/target pairs, disjoint generator from all assessment sets",
+  "training_database": "both actions precomputed by full physical feedback rollout; online actions chosen by epsilon-greedy DQN, no oracle labels or corrections",
+  "development_decisions": 10000,
+  "formal_decisions": 20000,
+  "maximum_route_decisions": 80000,
+  "formal_seeds": [
+    101,
+    202,
+    303
+  ],
+  "development_seeds": {
+    "A": 1401,
+    "B": 1402
+  },
+  "check_every": 2000,
+  "development_gate": {
+    "validation_collision_count": 0,
+    "validation_success_fraction": 0.95
+  },
+  "primary": "paired task success and forbidden-arc avoidance versus direct target PID on natural test distribution",
+  "primary_inference": {
+    "metric": "paired task success difference, separately for each of three formal seeds",
+    "bootstrap_resamples": 20000,
+    "bootstrap_seed": 2026101701499,
+    "family_alpha": 0.05,
+    "simultaneous_intervals": 3,
+    "conclusion": "all three Bonferroni-adjusted interval lower bounds >0"
+  },
+  "reference": "analytic safe route + exactly the same fixed PID; no assumed learned superiority",
+  "cost_comparison": "secondary; do not interpret low collision-terminated costs as a benefit",
+  "regions": {
+    "natural": "uniform independent allowed endpoints, conditioned on >=15deg separation",
+    "detour": "same population conditioned on absolute canonical endpoint difference >180deg",
+    "edge": "same population conditioned on either endpoint within 5deg of guarded sampling boundary"
+  }
+}

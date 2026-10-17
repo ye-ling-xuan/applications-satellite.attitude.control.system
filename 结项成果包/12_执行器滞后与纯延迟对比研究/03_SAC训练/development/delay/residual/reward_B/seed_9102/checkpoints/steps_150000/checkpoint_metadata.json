@@ -1,0 +1,44 @@
+{
+  "model_path": "03_SAC训练/development/delay/residual/reward_B/seed_9102/checkpoints/steps_150000/model.zip",
+  "model_sha256": "ce8d32fbb73d5cfd3964696d5f4985376c9cec596f26bab545b2bc1240660d02",
+  "steps": 150000,
+  "validation": {
+    "count": 576,
+    "passes": 231,
+    "success_rate": 0.4010416666666667,
+    "physical_failures": 0,
+    "mean_actual_cost": 0.18936151026827686,
+    "mean_command_cost": 0.19126967420518443,
+    "mean_rms_error_deg": 9.81697814709917,
+    "max_settling_time_s": 8.0,
+    "mean_settling_time_success_only_s": 6.87813852813853
+  },
+  "optimizer_updates": 17500,
+  "source_sha256": {
+    "代码/actuator_study/__init__.py": "5d327c1052b3b3c925009e523697cfb4b655296ce6915ec9ae3bf228473ed690",
+    "代码/actuator_study/analysis.py": "216b0cfb29706e6082a8ec2d4183df8c3e576122a111ce6f4f96f380403ee5ab",
+    "代码/actuator_study/baselines.py": "22cef23a41daeac2f5fe52522a9977b96061ddd8c186602cae71aa68522e0194",
+    "代码/actuator_study/cli.py": "6ae908553acf69d3000d1e0fe1dea68719a2fa60c0b1a1e23f84af50c2f9d32c",
+    "代码/actuator_study/delivery.py": "3f23058bf87f62a4f1fe92ee82b8b778bd5054248f8ee47012f4b655a8707127",
+    "代码/actuator_study/evaluation.py": "21c20717a67078b1a3fbc80756b847647c608ff46a1da7e1f6bdc96d66772bfe",
+    "代码/actuator_study/learning.py": "ea0d560d082642c9b80116c487c675afaffbc849906bfbbb308f29e9fcb0b363",
+    "代码/actuator_study/physics.py": "3f5bd200e47fe00fd11bf3ad9198043f64e22b4f94fb6d1d2b2b567acf57de40",
+    "代码/actuator_study/protocol.py": "5b0b275d02bda6efef2411f37d44b5b477bb704d0694b1e6769af1858f639515",
+    "代码/actuator_study/test_baselines.py": "70cdfaf61493ad90926722b10314b192ee2905acbc3be4d623f250fbc623788a",
+    "代码/actuator_study/verification.py": "93baf486dbd2d84cb77849b8f64226a7a2101dbcd449f879f8a0d3c619c9ec72",
+    "代码/test_evaluation_delivery.py": "5c3ea0d858ed99a0fee3953fb267477d7ad0d289b5606b0dc7e5508c3d6b32cb",
+    "代码/test_learning.py": "fd4abf3f8a01e1c15aacb710b14a77cb2ffae7f066d1713800e0761d3aa0eb62",
+    "代码/test_physics.py": "99227a44d09cbe206bbcf7a18f4db5ae1dde6170eeaf921991022905c482e423",
+    "代码/test_verification.py": "42c02817d689774e642c1539220c3f5721e7cbbfb9882af5f3a0ef4d0e2bcd59"
+  },
+  "base_parameters": {
+    "kp": 0.3371820033549353,
+    "kd": 0.9173858175799046,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "family": "PD",
+    "stage": "refine2"
+  },
+  "reward_name": "B",
+  "seed": 9102
+}

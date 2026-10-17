@@ -1,0 +1,23 @@
+{
+  "timesteps": 1000000,
+  "deployment": "calibrated",
+  "validation_count": 96,
+  "success_4s": 0,
+  "success_6s": 0,
+  "success_8s": 0,
+  "mean_control_cost": 11.024284243688188,
+  "mean_rms_error_deg": 118.49645915088472,
+  "rank": [
+    0,
+    -11.024284243688188,
+    -1000000,
+    1
+  ],
+  "checkpoint": "checkpoint_1000000.zip",
+  "model_path": "03_SAC训练/formal/three/config_B/seed_41/best_model.zip",
+  "seed": 41,
+  "axis": "three",
+  "calibrated": true,
+  "model_sha256": "b744d2c5712752927f99b48083f775c3c9c20fbef56f133e55e097d926f4ce87",
+  "selection_split": "validation"
+}

@@ -1,0 +1,15 @@
+{
+  "controller": "delay_retuned_3D_PID",
+  "kind": "delay",
+  "method": "retuned",
+  "stage": "traditional",
+  "region": "ideal",
+  "diagnostic_only": false,
+  "count": 128,
+  "passes": 128,
+  "success_rate": 1.0,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.052211673972516935,
+  "mean_command_cost": 0.052211673972516935,
+  "max_settling_time_s": 7.300000000000001
+}

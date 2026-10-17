@@ -1,0 +1,55 @@
+{
+  "parameters": {
+    "kp": 0.25298221281347033,
+    "kd": 0.8798097129208117,
+    "ki": 0.0
+  },
+  "reported_feedback": "PD",
+  "validation": {
+    "count": 128,
+    "successes": 128,
+    "collisions": 0,
+    "success_rate": 1.0,
+    "safety_rate": 1.0,
+    "mean_torque_cost": 0.18143992386978672,
+    "mean_success_cost": 0.18143992386978672
+  },
+  "direct_validation": {
+    "count": 128,
+    "successes": 111,
+    "collisions": 17,
+    "success_rate": 0.8671875,
+    "safety_rate": 0.8671875,
+    "mean_torque_cost": 0.12627574099255942,
+    "mean_success_cost": 0.11832833178625572
+  },
+  "candidate_count": 750,
+  "validation_candidate_count": 40,
+  "analytic_feasibility_passed": true,
+  "source_sha256": {
+    "代码/route_study/__init__.py": "9fe31802efa70a85fe1c96e9c47c2757e8693524084e31951ab2e1b62ccdb9b1",
+    "代码/route_study/baselines.py": "4de9dd3a0ba3c43b0c31ad52f19d0b8d0393ebbcbd067d0c510c258cd6d675d1",
+    "代码/route_study/cli.py": "607827d9aefb3eca0ad98f01944f0cc9b922cec71cab13ea64c17016c3b42821",
+    "代码/route_study/delivery.py": "9ea07087cbde9e02d85c26488719c1c906a0e954dc465231fd119d608ebee9aa",
+    "代码/route_study/learning.py": "baa4410c164abe14dffa68cecea0a05e2fa965805b344a7b71734ec6bc8c7e35",
+    "代码/route_study/physics.py": "14f4056f98bf20c8d881e59c6b69250f02acc1b3cce5e79fe540aee668bc0ac9",
+    "代码/route_study/protocol.py": "50a9d27001f174bbc0f6c32fe078d3b7899db81439e9e5e5577bc347e3b43ada",
+    "代码/route_study/verify.py": "cc95af32fa677cbfa94578e55d366c7c9cc74f569e5336adadbb5851d9e9d958",
+    "代码/test_learning.py": "855330ccc33142ce766b1d8820be35269a3b0e3fe0a1712ba33ddca6f6530390",
+    "代码/test_routes.py": "b39adfc2e9717d58a4cc9ed1c28aded1c23f928227e35f5195507a318e8529cc"
+  },
+  "source_sha256_after": {
+    "代码/route_study/__init__.py": "9fe31802efa70a85fe1c96e9c47c2757e8693524084e31951ab2e1b62ccdb9b1",
+    "代码/route_study/baselines.py": "4de9dd3a0ba3c43b0c31ad52f19d0b8d0393ebbcbd067d0c510c258cd6d675d1",
+    "代码/route_study/cli.py": "607827d9aefb3eca0ad98f01944f0cc9b922cec71cab13ea64c17016c3b42821",
+    "代码/route_study/delivery.py": "9ea07087cbde9e02d85c26488719c1c906a0e954dc465231fd119d608ebee9aa",
+    "代码/route_study/learning.py": "baa4410c164abe14dffa68cecea0a05e2fa965805b344a7b71734ec6bc8c7e35",
+    "代码/route_study/physics.py": "14f4056f98bf20c8d881e59c6b69250f02acc1b3cce5e79fe540aee668bc0ac9",
+    "代码/route_study/protocol.py": "50a9d27001f174bbc0f6c32fe078d3b7899db81439e9e5e5577bc347e3b43ada",
+    "代码/route_study/verify.py": "cc95af32fa677cbfa94578e55d366c7c9cc74f569e5336adadbb5851d9e9d958",
+    "代码/test_learning.py": "855330ccc33142ce766b1d8820be35269a3b0e3fe0a1712ba33ddca6f6530390",
+    "代码/test_routes.py": "b39adfc2e9717d58a4cc9ed1c28aded1c23f928227e35f5195507a318e8529cc"
+  },
+  "elapsed_seconds": 2.812000000034459,
+  "test_responses_used": false
+}

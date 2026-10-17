@@ -1,0 +1,66 @@
+{
+  "study": "control_effort_with_identical_settling_constraints",
+  "axes": [
+    "single",
+    "three"
+  ],
+  "deadlines_s": [
+    4.0,
+    6.0,
+    8.0
+  ],
+  "primary_deadline_s": 8.0,
+  "duration_s": 20.0,
+  "success": "every sample from deadline through 20s: geodesic angle<=1deg AND rate norm<=0.5deg/s; complete; no divergence",
+  "angle_tolerance_deg": 1.0,
+  "rate_tolerance_deg_s": 0.5,
+  "cost": "sum over applied zero-order-held intervals: ||actual torque||^2 * dt",
+  "cost_is_measured_electrical_energy": false,
+  "initial_angle_component_deg": [
+    -60.0,
+    60.0
+  ],
+  "initial_rate_component_deg_s": [
+    -5.0,
+    5.0
+  ],
+  "inertia": {
+    "single": [
+      1.0
+    ],
+    "three": [
+      1.2,
+      1.0,
+      0.8
+    ]
+  },
+  "dt": {
+    "single": 0.05,
+    "three": 0.02
+  },
+  "torque_limit_each_axis_Nm": {
+    "single": 0.5,
+    "three": 2.0
+  },
+  "noise_and_external_disturbance": 0.0,
+  "split_seeds": {
+    "development": 2026101701,
+    "validation": 2026101702,
+    "test": 2026101703
+  },
+  "scene_counts": {
+    "development": 32,
+    "validation": 96,
+    "test": 256
+  },
+  "fresh_training_seeds": [
+    41,
+    42,
+    43
+  ],
+  "selection": "validation only; maximize number passing then minimize complete-horizon mean effort",
+  "reliability_gate_for_advantage": "PID and every reported SAC seed must pass all independent test scenes at the same deadline",
+  "advantage_scope": "finite tested conditions, control effort only; no equal-trajectory or equal-electricity claim",
+  "all_deadlines_and_seeds_reported": true,
+  "test_controller_responses_read_before_design": false
+}

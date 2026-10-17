@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "freeze_sha256": "41f35b44c7fede460b44ed6cbc53e9e9c956c353b8a323f177f5840580cab6da",
+  "controller": "lag_direct_development_diagnostic_seed9101_three_axis_transfer",
+  "region": "in_domain",
+  "artifact_sha256": {
+    "traces.npz": "bddcbb207281787e6a728f106ed49e291257a1fd184c9e5f244385f8dd01e170",
+    "metrics.csv": "498b40b2311ff6c21b0af3c618229bc43a003c840309efd1ceda8ec8dc83fd89",
+    "summary.json": "6b8a6c34f2ff71d89f28bd17b698d1e0e4fcac0c2cb460cf34c98066b8645793"
+  }
+}

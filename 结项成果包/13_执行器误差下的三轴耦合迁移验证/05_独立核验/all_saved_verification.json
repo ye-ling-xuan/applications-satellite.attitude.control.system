@@ -1,0 +1,260 @@
+{
+  "all_saved_trajectories_metric_cost_limit_checks": [
+    {
+      "metrics_path": "04_独立测试\\delay_direct_development_diagnostic_seed9102_three_axis_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_direct_development_diagnostic_seed9102_three_axis_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_direct_development_diagnostic_seed9102_three_axis_transfer\\out_of_domain\\metrics.csv",
+      "count": 384,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_residual_formal_seed101_three_axis_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_residual_formal_seed101_three_axis_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_residual_formal_seed101_three_axis_transfer\\out_of_domain\\metrics.csv",
+      "count": 384,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_residual_formal_seed202_three_axis_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_residual_formal_seed202_three_axis_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_residual_formal_seed202_three_axis_transfer\\out_of_domain\\metrics.csv",
+      "count": 384,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_residual_formal_seed303_three_axis_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_residual_formal_seed303_three_axis_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_residual_formal_seed303_three_axis_transfer\\out_of_domain\\metrics.csv",
+      "count": 384,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_retuned_3D_PID\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_retuned_3D_PID\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_retuned_3D_PID\\out_of_domain\\metrics.csv",
+      "count": 384,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_single_compensated_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_single_compensated_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_single_compensated_transfer\\out_of_domain\\metrics.csv",
+      "count": 384,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_single_PID_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_single_PID_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\delay_single_PID_transfer\\out_of_domain\\metrics.csv",
+      "count": 384,
+      "passed": true,
+      "actual_cost_independent": "reconstructed delayed commands"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_direct_development_diagnostic_seed9101_three_axis_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_direct_development_diagnostic_seed9101_three_axis_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_direct_development_diagnostic_seed9101_three_axis_transfer\\out_of_domain\\metrics.csv",
+      "count": 256,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_residual_formal_seed101_three_axis_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_residual_formal_seed101_three_axis_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_residual_formal_seed101_three_axis_transfer\\out_of_domain\\metrics.csv",
+      "count": 256,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_residual_formal_seed202_three_axis_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_residual_formal_seed202_three_axis_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_residual_formal_seed202_three_axis_transfer\\out_of_domain\\metrics.csv",
+      "count": 256,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_residual_formal_seed303_three_axis_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_residual_formal_seed303_three_axis_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_residual_formal_seed303_three_axis_transfer\\out_of_domain\\metrics.csv",
+      "count": 256,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_retuned_3D_PID\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_retuned_3D_PID\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_retuned_3D_PID\\out_of_domain\\metrics.csv",
+      "count": 256,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_single_compensated_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_single_compensated_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_single_compensated_transfer\\out_of_domain\\metrics.csv",
+      "count": 256,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_single_PID_transfer\\ideal\\metrics.csv",
+      "count": 128,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_single_PID_transfer\\in_domain\\metrics.csv",
+      "count": 768,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    },
+    {
+      "metrics_path": "04_独立测试\\lag_single_PID_transfer\\out_of_domain\\metrics.csv",
+      "count": 256,
+      "passed": true,
+      "actual_cost_independent": "20-node Gaussian quadrature"
+    }
+  ],
+  "expected_output_groups": 42,
+  "verified_output_groups": 42,
+  "independent_full_dynamics_scope": "representative cases only; see unit-test verification, not all saved responses",
+  "source_and_input_hashes_unchanged": true
+}

@@ -1,0 +1,295 @@
+{
+  "created_utc": "2026-10-17T13:39:39.811898+00:00",
+  "source_and_input_hashes": {
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/__init__.py": "5d327c1052b3b3c925009e523697cfb4b655296ce6915ec9ae3bf228473ed690",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/analysis.py": "216b0cfb29706e6082a8ec2d4183df8c3e576122a111ce6f4f96f380403ee5ab",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/baselines.py": "22cef23a41daeac2f5fe52522a9977b96061ddd8c186602cae71aa68522e0194",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/cli.py": "6ae908553acf69d3000d1e0fe1dea68719a2fa60c0b1a1e23f84af50c2f9d32c",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/delivery.py": "3f23058bf87f62a4f1fe92ee82b8b778bd5054248f8ee47012f4b655a8707127",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/evaluation.py": "21c20717a67078b1a3fbc80756b847647c608ff46a1da7e1f6bdc96d66772bfe",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/learning.py": "ea0d560d082642c9b80116c487c675afaffbc849906bfbbb308f29e9fcb0b363",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/physics.py": "3f5bd200e47fe00fd11bf3ad9198043f64e22b4f94fb6d1d2b2b567acf57de40",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/protocol.py": "5b0b275d02bda6efef2411f37d44b5b477bb704d0694b1e6769af1858f639515",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/test_baselines.py": "70cdfaf61493ad90926722b10314b192ee2905acbc3be4d623f250fbc623788a",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/verification.py": "93baf486dbd2d84cb77849b8f64226a7a2101dbcd449f879f8a0d3c619c9ec72",
+    "13_执行器误差下的三轴耦合迁移验证/01_实验方案/development_initial_states.json": "bf410eeeb29d802865b3200a4fa582ab08123129530c2466674166fb4f20eac7",
+    "13_执行器误差下的三轴耦合迁移验证/01_实验方案/test_initial_states.json": "557de2ebcc26a7f831b523cb3c272d5d954c104e06ac3dc00dfc1ca8c0e39793",
+    "13_执行器误差下的三轴耦合迁移验证/01_实验方案/validation_initial_states.json": "262c63beb9b4e891c90ede9867218c304c89b8206f6b79ea50f0e1b0d81e32c3",
+    "13_执行器误差下的三轴耦合迁移验证/01_实验方案/执行配置.json": "572699ecfe620a1e9078fce3902414d3db25e641098a752a8213019016450a55",
+    "13_执行器误差下的三轴耦合迁移验证/代码/test_transfer_independent.py": "4b2c1806d29d07936cf182c77c52a576d40c2e7340b925393d02f49462db19c7",
+    "13_执行器误差下的三轴耦合迁移验证/代码/test_transfer_physics.py": "184fa6aec36c7597e460bd91c906e2891e0ba8c8c3b2439a2761fc4c5c6da78a",
+    "13_执行器误差下的三轴耦合迁移验证/代码/transfer_study.py": "38f31d400ee1da478b891db0c6cac417bdab4aedf10a646cbf29a7d5f52b9aa2",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14"
+  },
+  "controllers": [
+    {
+      "id": "lag_retuned_3D_PID",
+      "kind": "lag",
+      "method": "retuned",
+      "stage": "traditional",
+      "parameters": {
+        "kp": 0.37982753810315595,
+        "kd": 1.0356560593244157,
+        "ki": 0.0005057343960176184,
+        "inertia_scaled": true
+      }
+    },
+    {
+      "id": "lag_single_PID_transfer",
+      "kind": "lag",
+      "method": "pid_transfer",
+      "stage": "traditional",
+      "parameters": {
+        "kp": 0.34262433376840434,
+        "kd": 0.9367257312981386,
+        "ki": 0.00023680310190282453,
+        "integral_limit": 2.0,
+        "family": "PID"
+      }
+    },
+    {
+      "id": "lag_single_compensated_transfer",
+      "kind": "lag",
+      "method": "compensated_transfer",
+      "stage": "traditional",
+      "parameters": {
+        "kp": 0.49234369588643334,
+        "kd": 1.3239898171451514,
+        "ki": 0.00016590258375376456,
+        "integral_limit": 2.0,
+        "nominal_parameter_s": 0.18010600126887008,
+        "actuator_feedback": 0.31099239417818336,
+        "observer_gain": 0.5528119057284873,
+        "family": "observer_augmented_PID",
+        "stage": "refine2"
+      }
+    },
+    {
+      "id": "delay_retuned_3D_PID",
+      "kind": "delay",
+      "method": "retuned",
+      "stage": "traditional",
+      "parameters": {
+        "kp": 0.46566078530042476,
+        "kd": 1.1323018429580785,
+        "ki": 0.0,
+        "inertia_scaled": true
+      }
+    },
+    {
+      "id": "delay_single_PID_transfer",
+      "kind": "delay",
+      "method": "pid_transfer",
+      "stage": "traditional",
+      "parameters": {
+        "kp": 0.3371820033549353,
+        "kd": 0.9173858175799046,
+        "ki": 0.0,
+        "integral_limit": 2.0,
+        "family": "PD",
+        "stage": "refine2"
+      }
+    },
+    {
+      "id": "delay_single_compensated_transfer",
+      "kind": "delay",
+      "method": "compensated_transfer",
+      "stage": "traditional",
+      "parameters": {
+        "kp": 0.39241205361572923,
+        "kd": 1.0233407735670488,
+        "ki": 0.0,
+        "integral_limit": 2.0,
+        "nominal_parameter_s": 0.05,
+        "family": "predicted_PD",
+        "stage": "refine2"
+      }
+    },
+    {
+      "id": "lag_direct_development_diagnostic_seed9101_three_axis_transfer",
+      "kind": "lag",
+      "method": "direct",
+      "stage": "development_diagnostic",
+      "seed": 9101,
+      "reward_name": "A",
+      "run_status": "complete",
+      "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\development\\lag\\direct\\reward_A\\seed_9101\\best.zip",
+      "model_sha256": "6bbcddb740bd89b3caaef6c58aa55bfbb758dcfa905dfb5d2acf99a7c166d1f4",
+      "base_parameters": {
+        "kp": 0.34262433376840434,
+        "kd": 0.9367257312981386,
+        "ki": 0.00023680310190282453,
+        "integral_limit": 2.0,
+        "family": "PID"
+      },
+      "metadata_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\development\\lag\\direct\\reward_A\\seed_9101\\training_metadata.json",
+      "single_axis_controller_id": "lag_direct_development_diagnostic_seed9101",
+      "source_model_best_steps": 100000,
+      "diagnostic_only": true
+    },
+    {
+      "id": "lag_residual_formal_seed101_three_axis_transfer",
+      "kind": "lag",
+      "method": "residual",
+      "stage": "formal",
+      "seed": 101,
+      "reward_name": "B",
+      "run_status": "complete",
+      "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\lag\\residual\\reward_B\\seed_101\\best.zip",
+      "model_sha256": "ee4b19ff78f7678af32c7e5b95ae60209aac78e12d266bb74ff1b678c3eeceec",
+      "base_parameters": {
+        "kp": 0.34262433376840434,
+        "kd": 0.9367257312981386,
+        "ki": 0.00023680310190282453,
+        "integral_limit": 2.0,
+        "family": "PID"
+      },
+      "metadata_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\lag\\residual\\reward_B\\seed_101\\training_metadata.json",
+      "single_axis_controller_id": "lag_residual_formal_seed101",
+      "source_model_best_steps": 450000,
+      "diagnostic_only": false
+    },
+    {
+      "id": "lag_residual_formal_seed202_three_axis_transfer",
+      "kind": "lag",
+      "method": "residual",
+      "stage": "formal",
+      "seed": 202,
+      "reward_name": "B",
+      "run_status": "complete",
+      "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\lag\\residual\\reward_B\\seed_202\\best.zip",
+      "model_sha256": "1b05c289441424f6813c56940b24313cc9091b55fc9f8f6f66a5437aa1dce3bf",
+      "base_parameters": {
+        "kp": 0.34262433376840434,
+        "kd": 0.9367257312981386,
+        "ki": 0.00023680310190282453,
+        "integral_limit": 2.0,
+        "family": "PID"
+      },
+      "metadata_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\lag\\residual\\reward_B\\seed_202\\training_metadata.json",
+      "single_axis_controller_id": "lag_residual_formal_seed202",
+      "source_model_best_steps": 200000,
+      "diagnostic_only": false
+    },
+    {
+      "id": "lag_residual_formal_seed303_three_axis_transfer",
+      "kind": "lag",
+      "method": "residual",
+      "stage": "formal",
+      "seed": 303,
+      "reward_name": "B",
+      "run_status": "complete",
+      "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\lag\\residual\\reward_B\\seed_303\\best.zip",
+      "model_sha256": "7576ad6242d33a47d686629fd2e8a40e8ea2007203d6274d4812827ed7462893",
+      "base_parameters": {
+        "kp": 0.34262433376840434,
+        "kd": 0.9367257312981386,
+        "ki": 0.00023680310190282453,
+        "integral_limit": 2.0,
+        "family": "PID"
+      },
+      "metadata_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\lag\\residual\\reward_B\\seed_303\\training_metadata.json",
+      "single_axis_controller_id": "lag_residual_formal_seed303",
+      "source_model_best_steps": 500000,
+      "diagnostic_only": false
+    },
+    {
+      "id": "delay_direct_development_diagnostic_seed9102_three_axis_transfer",
+      "kind": "delay",
+      "method": "direct",
+      "stage": "development_diagnostic",
+      "seed": 9102,
+      "reward_name": "B",
+      "run_status": "complete",
+      "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\development\\delay\\direct\\reward_B\\seed_9102\\best.zip",
+      "model_sha256": "6397fed97201603099a3de8248750d696d7a3d925bf8b8e12c6e5c3e841110a2",
+      "base_parameters": {
+        "kp": 0.3371820033549353,
+        "kd": 0.9173858175799046,
+        "ki": 0.0,
+        "integral_limit": 2.0,
+        "family": "PD",
+        "stage": "refine2"
+      },
+      "metadata_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\development\\delay\\direct\\reward_B\\seed_9102\\training_metadata.json",
+      "single_axis_controller_id": "delay_direct_development_diagnostic_seed9102",
+      "source_model_best_steps": 150000,
+      "diagnostic_only": true
+    },
+    {
+      "id": "delay_residual_formal_seed101_three_axis_transfer",
+      "kind": "delay",
+      "method": "residual",
+      "stage": "formal",
+      "seed": 101,
+      "reward_name": "A",
+      "run_status": "complete",
+      "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\delay\\residual\\reward_A\\seed_101\\best.zip",
+      "model_sha256": "3012a648e1441177bb2723fc56ee2eb062d76adf99f19020735b89f6031cbc5f",
+      "base_parameters": {
+        "kp": 0.3371820033549353,
+        "kd": 0.9173858175799046,
+        "ki": 0.0,
+        "integral_limit": 2.0,
+        "family": "PD",
+        "stage": "refine2"
+      },
+      "metadata_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\delay\\residual\\reward_A\\seed_101\\training_metadata.json",
+      "single_axis_controller_id": "delay_residual_formal_seed101",
+      "source_model_best_steps": 150000,
+      "diagnostic_only": false
+    },
+    {
+      "id": "delay_residual_formal_seed202_three_axis_transfer",
+      "kind": "delay",
+      "method": "residual",
+      "stage": "formal",
+      "seed": 202,
+      "reward_name": "A",
+      "run_status": "complete",
+      "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\delay\\residual\\reward_A\\seed_202\\best.zip",
+      "model_sha256": "213f5265d06ffca36e2410d77a199c1775e9f6061cd788c283da984c23aa965f",
+      "base_parameters": {
+        "kp": 0.3371820033549353,
+        "kd": 0.9173858175799046,
+        "ki": 0.0,
+        "integral_limit": 2.0,
+        "family": "PD",
+        "stage": "refine2"
+      },
+      "metadata_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\delay\\residual\\reward_A\\seed_202\\training_metadata.json",
+      "single_axis_controller_id": "delay_residual_formal_seed202",
+      "source_model_best_steps": 450000,
+      "diagnostic_only": false
+    },
+    {
+      "id": "delay_residual_formal_seed303_three_axis_transfer",
+      "kind": "delay",
+      "method": "residual",
+      "stage": "formal",
+      "seed": 303,
+      "reward_name": "A",
+      "run_status": "complete",
+      "model_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\delay\\residual\\reward_A\\seed_303\\best.zip",
+      "model_sha256": "e94bb62b7e11147d4ed874ae3cc8a911e83a4100cb9843bc553862aa2c171f60",
+      "base_parameters": {
+        "kp": 0.3371820033549353,
+        "kd": 0.9173858175799046,
+        "ki": 0.0,
+        "integral_limit": 2.0,
+        "family": "PD",
+        "stage": "refine2"
+      },
+      "metadata_path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\12_执行器滞后与纯延迟对比研究\\03_SAC训练\\formal\\delay\\residual\\reward_A\\seed_303\\training_metadata.json",
+      "single_axis_controller_id": "delay_residual_formal_seed303",
+      "source_model_best_steps": 400000,
+      "diagnostic_only": false
+    }
+  ],
+  "joint_three_axis_training": false,
+  "include_models": true,
+  "single_axis_freeze_sha256": "059579fc729ac5a47b7e3de65bcf55cf2f881c60d6f40f1706320401b455a09c",
+  "test_initial_sha256": "557de2ebcc26a7f831b523cb3c272d5d954c104e06ac3dc00dfc1ca8c0e39793",
+  "selection_finished_before_test": true,
+  "development_models_diagnostic_only": true
+}

@@ -1,0 +1,11 @@
+{
+  "changes": [
+    "区分20秒评估记录与物理失败后的冻结填充",
+    "明确最终Ki为0",
+    "加入物理失败回合计数",
+    "修正列表空行"
+  ],
+  "physical_failure_episode_count": 1261,
+  "controller_model_code_or_test_data_changed": false,
+  "reason": "independent result-text review after evaluation; no retuning or additional training"
+}

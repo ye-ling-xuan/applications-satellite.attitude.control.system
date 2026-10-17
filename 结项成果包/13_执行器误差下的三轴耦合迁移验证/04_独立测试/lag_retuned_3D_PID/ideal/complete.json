@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "freeze_sha256": "41f35b44c7fede460b44ed6cbc53e9e9c956c353b8a323f177f5840580cab6da",
+  "controller": "lag_retuned_3D_PID",
+  "region": "ideal",
+  "artifact_sha256": {
+    "traces.npz": "71ce1e88ab13dae8c1f359f51c13bcbe5f713ee6400a5c8854eaca24b62e576b",
+    "metrics.csv": "704ab880bd26e0defa8a4692a2fcc264d269780399e18483f801e09fa4148d6c",
+    "summary.json": "23eac52e56f4b6b57d5621b9957afb2bea94cae009839c2f38ffedef622c912b"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "axis": "single",
+    "candidate_batch_max_abs_error": 0.0,
+    "established_tuned_PID_max_abs_error": 0.0,
+    "scenes": 3,
+    "passed": true
+  },
+  {
+    "axis": "three",
+    "candidate_batch_max_abs_error": 0.0,
+    "established_tuned_PID_max_abs_error": 0.0,
+    "scenes": 3,
+    "passed": true
+  }
+]

@@ -1,0 +1,170 @@
+{
+  "config": "B",
+  "status": "frozen_before_formal_training",
+  "axes": [
+    "single",
+    "three"
+  ],
+  "seeds": [
+    41,
+    42,
+    43
+  ],
+  "steps_per_run": 1000000,
+  "n_envs": 8,
+  "torch_threads_per_process": 1,
+  "validation_interval": 100000,
+  "primary_deadline_s": 8.0,
+  "duration_s": 20.0,
+  "reward": {
+    "effort_weight": 0.3,
+    "early_angle": 0.2,
+    "ramp_angle": 3.0,
+    "hold_angle": 60.0,
+    "hold_rate": 6.0,
+    "early_rate": 0.1,
+    "reward_multiplier": "inverse_dt"
+  },
+  "development_budget": "A/B x200000 steps x2 axes =800000 total; no further configurations",
+  "development_results": [
+    {
+      "axis": "single",
+      "config": "A",
+      "seed": 901,
+      "actual_steps": 200000,
+      "best": {
+        "timesteps": 200000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 2,
+        "success_6s": 2,
+        "success_8s": 2,
+        "mean_control_cost": 0.23827084131503362,
+        "mean_rms_error_deg": 35.62440430151537,
+        "rank": [
+          2,
+          -0.23827084131503362,
+          -200000,
+          1
+        ],
+        "checkpoint": "checkpoint_0200000.zip",
+        "model_path": "03_SAC训练/development/single/config_A/seed_901/best_model.zip",
+        "seed": 901,
+        "axis": "single",
+        "calibrated": true,
+        "model_sha256": "d61aa6c72566b233183b8d0278ce2a13b23d17725636d3bf9b08d7633126cf1b",
+        "selection_split": "validation"
+      },
+      "source_unchanged": true
+    },
+    {
+      "axis": "single",
+      "config": "B",
+      "seed": 902,
+      "actual_steps": 200000,
+      "best": {
+        "timesteps": 100000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 0,
+        "success_6s": 0,
+        "success_8s": 0,
+        "mean_control_cost": 0.5110526542106352,
+        "mean_rms_error_deg": 79.50130651796177,
+        "rank": [
+          0,
+          -0.5110526542106352,
+          -100000,
+          1
+        ],
+        "checkpoint": "checkpoint_0100000.zip",
+        "model_path": "03_SAC训练/development/single/config_B/seed_902/best_model.zip",
+        "seed": 902,
+        "axis": "single",
+        "calibrated": true,
+        "model_sha256": "c3484f80d514534d5af6873bc05b76f58db509d01e11a2079eda800c8faee663",
+        "selection_split": "validation"
+      },
+      "source_unchanged": true
+    },
+    {
+      "axis": "three",
+      "config": "A",
+      "seed": 901,
+      "actual_steps": 200000,
+      "best": {
+        "timesteps": 100000,
+        "deployment": "raw",
+        "validation_count": 96,
+        "success_4s": 0,
+        "success_6s": 0,
+        "success_8s": 0,
+        "mean_control_cost": 18.938199545744087,
+        "mean_rms_error_deg": 103.98204924865433,
+        "rank": [
+          0,
+          -18.938199545744087,
+          -100000,
+          0
+        ],
+        "checkpoint": "checkpoint_0100000.zip",
+        "model_path": "03_SAC训练/development/three/config_A/seed_901/best_model.zip",
+        "seed": 901,
+        "axis": "three",
+        "calibrated": false,
+        "model_sha256": "1f4045838262b051c1bd0fc6da7c4e621c7477463317318fbd0e440d9e7f0a87",
+        "selection_split": "validation"
+      },
+      "source_unchanged": true
+    },
+    {
+      "axis": "three",
+      "config": "B",
+      "seed": 902,
+      "actual_steps": 200000,
+      "best": {
+        "timesteps": 200000,
+        "deployment": "calibrated",
+        "validation_count": 96,
+        "success_4s": 0,
+        "success_6s": 0,
+        "success_8s": 0,
+        "mean_control_cost": 30.399137089626823,
+        "mean_rms_error_deg": 115.95283887604315,
+        "rank": [
+          0,
+          -30.399137089626823,
+          -200000,
+          1
+        ],
+        "checkpoint": "checkpoint_0200000.zip",
+        "model_path": "03_SAC训练/development/three/config_B/seed_902/best_model.zip",
+        "seed": 902,
+        "axis": "three",
+        "calibrated": true,
+        "model_sha256": "7ca5df997a569f8e39be704083bffe1c09b3cd5b32a9ec679ffe5d93553b7ed5",
+        "selection_split": "validation"
+      },
+      "source_unchanged": true
+    }
+  ],
+  "selection_reason": "B chosen for intended reward scale and milder deadline weight transition; development did not establish reliable control or superiority",
+  "formal_source_changes_since_B_development": [
+    "20s is finite-task true terminal: no TimeLimit bootstrap",
+    "optimizer CSV logs and complete source snapshots added; formal source/budget checks enforced"
+  ],
+  "checkpoint_selection": "validation only; maximize success_8s, minimize full20s mean control_cost, prefer earlier checkpoint then calibrated in an exact tie",
+  "raw_and_calibrated_both_retained": true,
+  "raw_calibrated_selection_is_per_seed": true,
+  "test_used_for_selection": false,
+  "additional_training_after_test": false,
+  "environment_seed_rule": "uint32 SeedSequence([training_seed,rank]).generate_state(1)[0]",
+  "source_sha256": {
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "multi_algorithm_benchmark/vector_training.py": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+  },
+  "formal_training_source_snapshot_sha256": "c9b08bc536b4a30170e7cd782cb10350e91492c8d7d8d984e0da16bcb8ee7419"
+}

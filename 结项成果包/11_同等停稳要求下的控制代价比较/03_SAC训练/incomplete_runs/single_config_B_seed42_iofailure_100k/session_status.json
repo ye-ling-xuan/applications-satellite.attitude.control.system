@@ -1,0 +1,13 @@
+{
+  "axis": "single",
+  "seed": 42,
+  "config": "B",
+  "stage": "formal",
+  "requested_steps": 1000000,
+  "actual_steps": 100000,
+  "fresh_training": true,
+  "eligible_for_formal_results": true,
+  "status": "incomplete",
+  "error": "PermissionError(13, '拒绝访问。')",
+  "wall_time_s": 43.6325855999894
+}

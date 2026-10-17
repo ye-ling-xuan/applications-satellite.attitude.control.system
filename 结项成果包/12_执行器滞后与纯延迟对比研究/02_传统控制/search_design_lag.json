@@ -1,0 +1,28 @@
+{
+  "kind": "lag",
+  "search_seed": 202610170204,
+  "test_responses_used": false,
+  "input_hashes": {
+    "代码/actuator_study/baselines.py": "22cef23a41daeac2f5fe52522a9977b96061ddd8c186602cae71aa68522e0194",
+    "代码/actuator_study/protocol.py": "5b0b275d02bda6efef2411f37d44b5b477bb704d0694b1e6769af1858f639515",
+    "代码/actuator_study/evaluation.py": "21c20717a67078b1a3fbc80756b847647c608ff46a1da7e1f6bdc96d66772bfe",
+    "代码/actuator_study/physics.py": "3f5bd200e47fe00fd11bf3ad9198043f64e22b4f94fb6d1d2b2b567acf57de40",
+    "01_实验方案/development_initial_states.json": "649436670158e3571ea865460c68427cb3cf9f3fac051f7f43604473aff48471",
+    "01_实验方案/validation_initial_states.json": "cf28a109b293adc417173476c8019547bb4fd5343ae358d39781128aa450b0d6"
+  },
+  "primary_selection_rule": "maximize validation passes, then minimize mean_actual_cost",
+  "gain_units": {
+    "kp": "Nm/rad",
+    "kd": "Nm*s/rad",
+    "ki": "Nm/(rad*s)",
+    "actuator_feedback": "dimensionless"
+  },
+  "information": "measured [-theta,omega], own previous commands; fixed shared nominal parameter only",
+  "broad_pid": "23x23 logarithmic kp=[.05,12], kd=[.2,12], plus200 integral variants",
+  "broad_delay": "6 nominal delays x15x15 gain grid plus180 integral variants",
+  "broad_lag": "6 nominal T x11 frequencies x5 damping x3 actuator pole x2 observer gains plus180 integral variants",
+  "shortlist": "global top48 plus top3 for each controller family and nominal-parameter bin",
+  "refinement": "two validation rounds; top8 incumbents x24 local proposals, retaining all incumbent scores",
+  "validation_reused": true,
+  "no_global_optimum_claim": true
+}

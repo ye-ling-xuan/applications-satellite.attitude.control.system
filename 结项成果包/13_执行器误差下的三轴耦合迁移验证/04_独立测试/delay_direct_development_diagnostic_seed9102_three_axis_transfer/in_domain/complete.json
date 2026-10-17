@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "freeze_sha256": "41f35b44c7fede460b44ed6cbc53e9e9c956c353b8a323f177f5840580cab6da",
+  "controller": "delay_direct_development_diagnostic_seed9102_three_axis_transfer",
+  "region": "in_domain",
+  "artifact_sha256": {
+    "traces.npz": "cd6f00ee07dae532e56303a207a6c9bb29d3bcfad3622d85e5a7a9a7a3074a1d",
+    "metrics.csv": "f84fb5b3c3138df69888a76a5d8a4e8c3b840f53a90abcd3ae3bf48687c0ab8b",
+    "summary.json": "ec2f4abfc71b9f616ee541164be89fe8fe55d774411ff0ba254c228dedc46453"
+  }
+}

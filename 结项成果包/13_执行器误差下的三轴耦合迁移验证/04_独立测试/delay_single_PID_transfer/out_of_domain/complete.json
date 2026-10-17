@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "freeze_sha256": "41f35b44c7fede460b44ed6cbc53e9e9c956c353b8a323f177f5840580cab6da",
+  "controller": "delay_single_PID_transfer",
+  "region": "out_of_domain",
+  "artifact_sha256": {
+    "traces.npz": "6176533a09188129df1106b5ae6f96d60bfcaa23f8210f976998d5ef2fa6e8cd",
+    "metrics.csv": "a22e78aa309028410edf51a1a411540896fca26da20994ecbeb9bbd07f47158e",
+    "summary.json": "80c088b4a086a788e9247fe336b641983373dc193db98cf0c81e8f229cfd4c88"
+  }
+}

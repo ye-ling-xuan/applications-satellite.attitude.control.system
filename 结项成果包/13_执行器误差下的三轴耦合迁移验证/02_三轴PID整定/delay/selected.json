@@ -1,0 +1,49 @@
+{
+  "kind": "delay",
+  "parameters": {
+    "kp": 0.46566078530042476,
+    "kd": 1.1323018429580785,
+    "ki": 0.0,
+    "inertia_scaled": true
+  },
+  "validation": {
+    "candidate_id": "delay_refine2_00000",
+    "split": "validation",
+    "stage": "refine2",
+    "count": 192,
+    "passes": 192,
+    "success_rate": 1.0,
+    "physical_failures": 0,
+    "mean_actual_cost": 0.06445173912503582,
+    "mean_command_cost": 0.06445173912506166,
+    "max_settling_time_s": 7.2
+  },
+  "test_responses_used": false,
+  "source_and_input_hashes": {
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/__init__.py": "5d327c1052b3b3c925009e523697cfb4b655296ce6915ec9ae3bf228473ed690",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/analysis.py": "216b0cfb29706e6082a8ec2d4183df8c3e576122a111ce6f4f96f380403ee5ab",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/baselines.py": "22cef23a41daeac2f5fe52522a9977b96061ddd8c186602cae71aa68522e0194",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/cli.py": "6ae908553acf69d3000d1e0fe1dea68719a2fa60c0b1a1e23f84af50c2f9d32c",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/delivery.py": "3f23058bf87f62a4f1fe92ee82b8b778bd5054248f8ee47012f4b655a8707127",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/evaluation.py": "21c20717a67078b1a3fbc80756b847647c608ff46a1da7e1f6bdc96d66772bfe",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/learning.py": "ea0d560d082642c9b80116c487c675afaffbc849906bfbbb308f29e9fcb0b363",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/physics.py": "3f5bd200e47fe00fd11bf3ad9198043f64e22b4f94fb6d1d2b2b567acf57de40",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/protocol.py": "5b0b275d02bda6efef2411f37d44b5b477bb704d0694b1e6769af1858f639515",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/test_baselines.py": "70cdfaf61493ad90926722b10314b192ee2905acbc3be4d623f250fbc623788a",
+    "12_执行器滞后与纯延迟对比研究/代码/actuator_study/verification.py": "93baf486dbd2d84cb77849b8f64226a7a2101dbcd449f879f8a0d3c619c9ec72",
+    "13_执行器误差下的三轴耦合迁移验证/01_实验方案/development_initial_states.json": "bf410eeeb29d802865b3200a4fa582ab08123129530c2466674166fb4f20eac7",
+    "13_执行器误差下的三轴耦合迁移验证/01_实验方案/test_initial_states.json": "557de2ebcc26a7f831b523cb3c272d5d954c104e06ac3dc00dfc1ca8c0e39793",
+    "13_执行器误差下的三轴耦合迁移验证/01_实验方案/validation_initial_states.json": "262c63beb9b4e891c90ede9867218c304c89b8206f6b79ea50f0e1b0d81e32c3",
+    "13_执行器误差下的三轴耦合迁移验证/01_实验方案/执行配置.json": "572699ecfe620a1e9078fce3902414d3db25e641098a752a8213019016450a55",
+    "13_执行器误差下的三轴耦合迁移验证/代码/test_transfer_independent.py": "4b2c1806d29d07936cf182c77c52a576d40c2e7340b925393d02f49462db19c7",
+    "13_执行器误差下的三轴耦合迁移验证/代码/test_transfer_physics.py": "e113f2ad736b2d721c74bb6e68b8f6bf1e99b45c4e8e0f0622988ec1950f4a3c",
+    "13_执行器误差下的三轴耦合迁移验证/代码/transfer_study.py": "7793aaea2c162ff1a41f23f00557f5932a9a1025a4a042eb21cc66aaba0e1b65",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14"
+  },
+  "wall_time_s": 92.61000000004424,
+  "controller": "PD",
+  "selection_rule": "maximum validation successes then minimum mean actual cost",
+  "broad_candidates": 650,
+  "validation_candidates": 168,
+  "no_global_optimum_claim": true
+}

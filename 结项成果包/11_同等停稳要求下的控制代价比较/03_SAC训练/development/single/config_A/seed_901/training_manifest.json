@@ -1,0 +1,71 @@
+{
+  "axis": "single",
+  "seed": 901,
+  "config": "A",
+  "stage": "development",
+  "requested_steps": 200000,
+  "actual_steps": 0,
+  "fresh_training": true,
+  "eligible_for_formal_results": false,
+  "algorithm": "SAC",
+  "n_envs": 8,
+  "validation_interval": 100000,
+  "observation": "physical error_rad, 2*omega_rad_s, (8-time)/8",
+  "duration_s": 20.0,
+  "deadline_s": 8.0,
+  "dt": 0.05,
+  "max_torque": 0.5,
+  "reward": {
+    "effort_weight": 0.5,
+    "early_angle": 0.1,
+    "ramp_angle": 6.0,
+    "hold_angle": 500.0,
+    "hold_rate": 80.0,
+    "early_rate": 0.02
+  },
+  "reward_formula": "-dt*(effort_weight*sum(torque^2)+angle_weight(t)*sum(error_rad^2)+rate_weight(t)*sum(omega_rad_s^2)); divergence -1000",
+  "angle_weight": "early_angle+ramp_angle*(t/8)^4 before8s; hold_angle at/after8s",
+  "rate_weight": "early_rate before8s; hold_rate at/after8s",
+  "validation_selection": "maximize success_8s count, minimize complete-horizon mean control_cost, then prefer earlier checkpoint; compare raw/calibrated deployment",
+  "calibration": "clip(pi(error,rate,t)-pi(0,0,t),-1,1)",
+  "formal_test_used_for_selection": false,
+  "hyperparameters": {
+    "learning_rate": 0.0003,
+    "gamma": 0.999,
+    "policy_kwargs": {
+      "net_arch": [
+        64,
+        64
+      ],
+      "use_sde": false
+    },
+    "buffer_size": 200000,
+    "learning_starts": 10000,
+    "batch_size": 256,
+    "tau": 0.005,
+    "train_freq": [
+      4,
+      "step"
+    ],
+    "gradient_steps": 2,
+    "ent_coef": "auto_0.01",
+    "target_entropy": -1.0,
+    "seed": 901,
+    "device": "cpu",
+    "verbose": 0
+  },
+  "source_sha256": {
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/training.py": "77a070400b146daf9692ee34da9baf28389ee83b37ed6ae8a07cfc5bd14d3b4c",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/protocol.py": "284f5730990a3cfb7e659af3c04f9d3b562665a96dad4749d17ca89fdf6dae4b",
+    "11_同等停稳要求下的控制代价比较/代码/deadline_study/evaluation.py": "89d3439ca28637444712c664b803df9259994c3aed60aad7072ef169a52e2e5a",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "multi_algorithm_benchmark/vector_training.py": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757"
+  },
+  "versions": {
+    "python": "3.12.4",
+    "numpy": "1.26.4",
+    "torch": "2.10.0+cpu",
+    "gymnasium": "1.2.3",
+    "stable_baselines3": "2.7.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "controller": "lag_single_compensated_transfer",
+  "kind": "lag",
+  "method": "compensated_transfer",
+  "count": 192,
+  "passes": 187,
+  "success_rate": 0.9739583333333334,
+  "physical_failures": 0,
+  "mean_actual_cost": 0.03654768117683258,
+  "mean_command_cost": 0.04523144676458313,
+  "max_settling_time_s": 7.95
+}

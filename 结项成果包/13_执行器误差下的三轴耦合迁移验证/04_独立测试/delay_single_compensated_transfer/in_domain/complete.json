@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "freeze_sha256": "41f35b44c7fede460b44ed6cbc53e9e9c956c353b8a323f177f5840580cab6da",
+  "controller": "delay_single_compensated_transfer",
+  "region": "in_domain",
+  "artifact_sha256": {
+    "traces.npz": "878c1e10c32cf490851cedea0f98dd5b74df1defcbf74eb284fd08108aafd677",
+    "metrics.csv": "5fbc4b4239ea6bbd1fe772fa36b855834e2b61c79c9ded1b6a5ae09f4d9d7e80",
+    "summary.json": "7344c6630a8b76b4cdefe917a21ff3de14f02ebb75a9ef23faaa04aa59e0489e"
+  }
+}
