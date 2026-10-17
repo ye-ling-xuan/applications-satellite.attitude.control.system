@@ -1,0 +1,123 @@
+{
+  "status": "failed",
+  "test_used_for_selection": false,
+  "mode": "pretest",
+  "protocol_freeze_sha256": "9c43c62d631b339f57fc60f58adc1dfc4465c219062b1d010792eae79f7cda1b",
+  "pid_configs_sha256": "5e34cff73f7633f581438b06f6477cc0483bdd23ce2bc9dd9eaf4b244b41e77a",
+  "protocol": {
+    "frozen_input_count": 15,
+    "all_hashes_match": true,
+    "validation_and_test_initial_states_disjoint": true,
+    "v1_v2_initial_states_disjoint": true,
+    "counts": {
+      "single": {
+        "validation": 20,
+        "test": 330
+      },
+      "three": {
+        "validation": 20,
+        "test": 450
+      }
+    }
+  },
+  "pid": {
+    "candidate_count": 576,
+    "all_candidates_recomputed": true,
+    "selection_matches": true,
+    "groups": [
+      {
+        "axis": "single",
+        "mode": "nominal",
+        "candidates": 144,
+        "selected_gains": {
+          "kp": 8.0,
+          "ki": 0.0,
+          "kd": 5.0,
+          "alpha": 1.0,
+          "integral_limit": 2.0
+        },
+        "max_validation_recompute_difference": 0.0,
+        "failure_count": 0
+      },
+      {
+        "axis": "single",
+        "mode": "randomized",
+        "candidates": 144,
+        "selected_gains": {
+          "kp": 8.0,
+          "ki": 0.08,
+          "kd": 5.0,
+          "alpha": 1.0,
+          "integral_limit": 2.0
+        },
+        "max_validation_recompute_difference": 0.0,
+        "failure_count": 0
+      },
+      {
+        "axis": "three",
+        "mode": "nominal",
+        "candidates": 144,
+        "selected_gains": {
+          "kp": 8.0,
+          "ki": 0.0,
+          "kd": 4.0,
+          "alpha": 1.0,
+          "integral_limit": 5.0
+        },
+        "max_validation_recompute_difference": 0.0,
+        "failure_count": 0
+      },
+      {
+        "axis": "three",
+        "mode": "randomized",
+        "candidates": 144,
+        "selected_gains": {
+          "kp": 8.0,
+          "ki": 0.0,
+          "kd": 4.0,
+          "alpha": 1.0,
+          "integral_limit": 5.0
+        },
+        "max_validation_recompute_difference": 0.0,
+        "failure_count": 0
+      }
+    ]
+  },
+  "preservation": {
+    "prior_v1_v2_assets": {
+      "file_count": 14635,
+      "preserved": true
+    },
+    "original_v1": {
+      "checked_file_count": 123,
+      "changed_or_missing": [],
+      "preserved": true
+    },
+    "original_v2": {
+      "checked_file_count": 827,
+      "all_file_bytes_preserved": false,
+      "project_content_preserved": true,
+      "changed_project_content": [],
+      "administrative_metadata_drift": [
+        {
+          "path": "中期前任务收尾/大一立项AI在卫星姿态调整中的应用/.git/index",
+          "snapshot_sha256": "6735dcfa66f7bf51edc6a262b19f53dca4507941ac044a36629793fa6ffcc4fe",
+          "current_sha256": "58cb46168f4606ce96cd250beace1ed2efb44d0ee7e863cd71d5222d9ce3005f",
+          "snapshot_bytes": 7069,
+          "current_bytes": 7069
+        }
+      ],
+      "interpretation": "Only explicitly listed Git index metadata drift is nonblocking; original snapshot is preserved and no cause is inferred."
+    },
+    "copies_v1": {
+      "checked_file_count": 67,
+      "copies_identical": true
+    },
+    "copies_v2": {
+      "checked_file_count": 60,
+      "copies_identical": true
+    }
+  },
+  "error_type": "AssertionError",
+  "error": ""
+}

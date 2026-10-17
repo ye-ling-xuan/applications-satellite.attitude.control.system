@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "frozen_before_test": true,
+  "test_controller_responses_read": false,
+  "protocol_source": "08_惯量域随机化与泛化边界研究/研究计划.md",
+  "plan_sha256": "2bb79cd72e41daf089aaad8dedc345951bfac1a172efba6491e942703736cfe5",
+  "frozen_sha256": {
+    "protocol.json": "522530cdc38532dbb90d17e9b5fe0b838037339caa5f2bcc9c233c626c24a22d",
+    "validation_single.json": "7c8a5fe1d8ae54790afa180b0715205f40122d84eaf46bbb6599a8e22deba849",
+    "validation_nominal_pid_single.json": "9635cc4d152495266e9bcaa4df792ff81099b76c7e4707507b13bd3e71a20eaf",
+    "test_single.json": "af83ccbce04d563fbf4022c1273762458de7ffb831b993ed8566be7cf7d495b3",
+    "validation_initial_states_single.json": "8491c4ec571bd53ba73eb2b950fb48aedba2cc25f6d37edbbf416513c234b222",
+    "test_initial_states_single.json": "8e4557ec512d0d7fcf9df8189072833cf82c65ab29d0857014c96d13bb60abea",
+    "training_single_nominal.json": "4ec45a2d3a73ff3d58f741bfe7a75667ff67d744e23db228c53c071247c0e890",
+    "training_single_randomized.json": "7e379b8827f6088b062cd35460db14277f050f40640797963ebde2c096e93e7c",
+    "validation_three.json": "61cc19ecdfb91d98f7d8a4aaa3da11481819e48ef6c445904e3529b1fc542b42",
+    "validation_nominal_pid_three.json": "c7d928e5173d4a4654107700b6a4158ccc53abbf52aaed7565a70b7d848432ec",
+    "test_three.json": "74a0cc644759c774b794d3909bc4b1a421c0025866e15f5715c6d28dcfa8857a",
+    "validation_initial_states_three.json": "89292f74d94362c481c59f3fd84f10e3191fbaec3df88ad6a6cc0c422dd01509",
+    "test_initial_states_three.json": "e2f6da35e2ab7f67e032be780c95a106797a50a449f6cd9d5cc55deb19c4ddee",
+    "training_three_nominal.json": "9a263230bd443a936d57b6803054a79074c4887487465a80c20eed083793c996",
+    "training_three_randomized.json": "19627ce142fe2d6eb06a6cf135082ef25b4b2dbf6084ed88829bc9d004cb75db"
+  },
+  "protocol_source_sha256": {
+    "protocol.py": "a9bc05c8ba907747a2cfc8ca14d0230fa8cd8dcfd072ff0733331700f21dd000",
+    "scenarios.py": "6b5776b09cb4aa3a6277a6f58b5a48a5f6d593d9dd9b8a97906d118da54dc839",
+    "pid.py": "476ab276c2d2880756a602df290638340718f0410d65531d2ebdf69259739f89"
+  },
+  "counts": {
+    "validation_states_per_axis": 20,
+    "test_states_per_axis": 30,
+    "test_scenes_single": 330,
+    "test_scenes_three": 450,
+    "episodes": 10920,
+    "models": 12,
+    "pid_candidates": 576
+  }
+}

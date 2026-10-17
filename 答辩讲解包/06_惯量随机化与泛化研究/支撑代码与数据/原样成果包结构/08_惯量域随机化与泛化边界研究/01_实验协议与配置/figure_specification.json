@@ -1,0 +1,15 @@
+{
+  "declared_before_formal_test_responses": true,
+  "main_figure_count": 5,
+  "representative_traces": {
+    "axes": ["single", "three"],
+    "scalar_rhos": [0.6, 1.4],
+    "sample_id": 0,
+    "sac_seed": 11,
+    "pid_seed": 0,
+    "controllers": ["PID_N", "PID_R", "SAC_N", "SAC_R"],
+    "selection_reason": "Fixed first initial state, lowest training seed and inner held-out endpoints on both sides"
+  },
+  "statistics": "Mean and sample SD across all three training seeds. No confidence-interval or significance claim.",
+  "boundary": "At least 27/30 per seed, connected measured grid through rho=1; common requires all seeds."
+}

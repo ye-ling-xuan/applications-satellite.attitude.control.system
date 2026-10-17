@@ -1,0 +1,90 @@
+{
+  "scope": "精简副本；原件不修改；copy相对本步骤目录，source相对项目根目录",
+  "sources": [
+    {
+      "source": "结项成果包/satellite_benchmark/__init__.py",
+      "copy": "支撑代码与数据/代码/satellite_benchmark/__init__.py",
+      "sha256": "c825c34b4e0037a3c2ba20aa15390b6381a0346dacd83e0a847f8f203a7d52c1"
+    },
+    {
+      "source": "结项成果包/satellite_benchmark/config.py",
+      "copy": "支撑代码与数据/代码/satellite_benchmark/config.py",
+      "sha256": "3fb24364a558686bb1de115495c1016e31fce1404df7b05e68569f687908c151"
+    },
+    {
+      "source": "结项成果包/satellite_benchmark/controllers.py",
+      "copy": "支撑代码与数据/代码/satellite_benchmark/controllers.py",
+      "sha256": "194b7a27ac62b9e542f75040842b244c2d83a159edb9a27677d2cea476fb658f"
+    },
+    {
+      "source": "结项成果包/satellite_benchmark/env.py",
+      "copy": "支撑代码与数据/代码/satellite_benchmark/env.py",
+      "sha256": "9c94da5a71caa36d78d952ead964e6759f2755d2a1b774cb13091dc2b0468ffa"
+    },
+    {
+      "source": "结项成果包/satellite_benchmark/evaluation.py",
+      "copy": "支撑代码与数据/代码/satellite_benchmark/evaluation.py",
+      "sha256": "8cd06e0b402de9c6163a5f6d53b451b78cee0864303791d3a6984004ab6fff42"
+    },
+    {
+      "source": "结项成果包/satellite_benchmark/metrics.py",
+      "copy": "支撑代码与数据/代码/satellite_benchmark/metrics.py",
+      "sha256": "1cf16183c3d27b11ed27a0c47fc5a77e5af055a3efb38d3cabb0390a2300474e"
+    },
+    {
+      "source": "结项成果包/satellite_benchmark/plotting.py",
+      "copy": "支撑代码与数据/代码/satellite_benchmark/plotting.py",
+      "sha256": "2dcd5cf3ddd156c63556b30336f61e6c8cabcd5c7418dcb3b98879f2a8051aa9"
+    },
+    {
+      "source": "结项成果包/satellite_benchmark/training.py",
+      "copy": "支撑代码与数据/代码/satellite_benchmark/training.py",
+      "sha256": "503d1b6d1fa5eda8e953290f92e30542ef81bd89afca1c3208b6bf9edb26a2ea"
+    },
+    {
+      "source": "结项成果包/requirements-tested.txt",
+      "copy": "支撑代码与数据/代码/requirements-tested.txt",
+      "sha256": "b9efea173f92234b91f6f8f495a44ccf92c4635e481232ff9c6b24569af29591"
+    },
+    {
+      "source": "结项成果包/03_训练模型与日志/正式训练_100万步/pid_best.json",
+      "copy": "支撑代码与数据/PID整定/pid_best.json",
+      "sha256": "3844a875968bcf214c85aef49963acba039a6476cdd5472f7fa3c69afa6c89b3"
+    },
+    {
+      "source": "结项成果包/03_训练模型与日志/正式训练_100万步/pid_search_validation.csv",
+      "copy": "支撑代码与数据/PID整定/pid_search_validation.csv",
+      "sha256": "a1173250ee63f14be351897efaa6b244d5f1c35c2657dd6d587e39542bee3dc1"
+    },
+    {
+      "source": "结项成果包/03_训练模型与日志/正式训练_100万步/pid_validation_scenarios.json",
+      "copy": "支撑代码与数据/PID整定/pid_validation_scenarios.json",
+      "sha256": "186413708622e2c03095b13af86611e0e1a749d4bcd8debdefc9c02ad2c5950f"
+    },
+    {
+      "source": "结项成果包/04_实验数据与图表/summary.csv",
+      "copy": "支撑代码与数据/统计证据/summary.csv",
+      "sha256": "55fe1c6d27fb39ac8c0ab4542097dd8284105174222a37a265db95ad9c4d8adb"
+    },
+    {
+      "source": "结项成果包/04_实验数据与图表/evaluation_manifest.json",
+      "copy": "支撑代码与数据/统计证据/evaluation_manifest.json",
+      "sha256": "41cdd5035a8566c3774cbae374ec8c365fb55ef26cdb500898bbfd9cf58f8c75"
+    },
+    {
+      "source": "结项成果包/06_结项说明与报告/result_verification.json",
+      "copy": "支撑代码与数据/统计证据/result_verification.json",
+      "sha256": "f9253c08874ba000c3e33070da1ba6a85edbcf5c140d06d19aaeadc59d96a1a6"
+    },
+    {
+      "source": "结项成果包/04_实验数据与图表/raw_traces/PID_seed_0_test_00_000.npz",
+      "copy": "支撑代码与数据/固定轨迹/PID_seed_0_test_00_000.npz",
+      "sha256": "2f3f9251bf827e0f015497de7bf3b9899bad5f740e836a7c0ea11ddecd1cb782"
+    },
+    {
+      "source": "结项成果包/04_实验数据与图表/raw_traces/PID_seed_0_test_00_001.npz",
+      "copy": "支撑代码与数据/固定轨迹/PID_seed_0_test_00_001.npz",
+      "sha256": "5728449e30df9af021d4fc2fdb033f9d8e6a9424429bb1e247bbe10e75c15f75"
+    }
+  ]
+}

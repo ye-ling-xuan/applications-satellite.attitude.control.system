@@ -1,0 +1,23 @@
+{
+  "config": {
+    "kp": 4.0,
+    "ki": 0.0,
+    "kd": 3.0,
+    "integral_limit": 2.0
+  },
+  "validation_score": 79.34367386717938,
+  "selection_split": "validation",
+  "scenario_count": 10,
+  "scenario_ids": [
+    "validation_00_000",
+    "validation_00_001",
+    "validation_02_000",
+    "validation_04_001",
+    "validation_06_000",
+    "validation_07_001",
+    "validation_09_000",
+    "validation_10_001",
+    "validation_12_000",
+    "validation_14_001"
+  ]
+}

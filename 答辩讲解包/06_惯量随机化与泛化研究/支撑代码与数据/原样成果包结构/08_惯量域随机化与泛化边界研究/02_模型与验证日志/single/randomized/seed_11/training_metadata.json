@@ -1,0 +1,169 @@
+{
+  "status": "complete",
+  "axis": "single",
+  "mode": "randomized",
+  "seed": 11,
+  "requested_steps": 1000000,
+  "actual_steps": 1000000,
+  "development": false,
+  "eligible_for_final_research": true,
+  "algorithm": "SAC",
+  "label": "SAC_R",
+  "n_envs": 8,
+  "validation_interval": 100000,
+  "validation_scene_count": 20,
+  "validation_scenarios_sha256": "7c8a5fe1d8ae54790afa180b0715205f40122d84eaf46bbb6599a8e22deba849",
+  "env_config": {
+    "axis": "single",
+    "mode": "randomized",
+    "dt": 0.05,
+    "duration": 20.0,
+    "max_torque": 0.5,
+    "inertia": [
+      1.0
+    ],
+    "inertia_scale_distribution": "Uniform[0.7,1.3] per episode",
+    "initial_angle_range_deg": [
+      -60.0,
+      60.0
+    ],
+    "initial_rate_range_deg_s": [
+      -5.0,
+      5.0
+    ],
+    "independent_streams": [
+      "initial_state",
+      "inertia",
+      "noise_seed"
+    ],
+    "integrator": "exact_constant_acceleration",
+    "reward_angle_weight": 6.0,
+    "reward_omega_weight": 0.6,
+    "reward_torque_weight": 0.03,
+    "divergence_penalty": 1000.0,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "pulse_torque": 0.0,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0
+  },
+  "versions": {
+    "python": "3.12.4",
+    "numpy": "1.26.4",
+    "torch": "2.10.0+cpu",
+    "gymnasium": "1.2.3",
+    "stable_baselines3": "2.7.1"
+  },
+  "common_hyperparameters": {
+    "policy": "MlpPolicy",
+    "learning_rate": 0.0003,
+    "gamma": 0.995,
+    "policy_kwargs": {
+      "net_arch": [
+        64,
+        64
+      ],
+      "use_sde": false
+    },
+    "seed": 11,
+    "device": "cpu",
+    "verbose": 0
+  },
+  "algorithm_hyperparameters": {
+    "buffer_size": 200000,
+    "learning_starts": 20000,
+    "batch_size": 256,
+    "tau": 0.005,
+    "train_freq": [
+      4,
+      "step"
+    ],
+    "gradient_steps": 2,
+    "ent_coef": "auto_0.01",
+    "target_entropy": -1.0
+  },
+  "source_sha256": {
+    "inertia_generalization/training.py": "1907b134de6df2492ae591a6e1f41cf63e11dba97b5390291785ee22415f057a",
+    "inertia_generalization/envs.py": "ace18e179fcf2b63c748dbfb4588cace2229ae77b9038bb538447ef991a8630c",
+    "inertia_generalization/vector_training.py": "5d12caa1345ac6373e30ccafebbd23d3b05c544d8c452d445d8c21f90f301b7b",
+    "inertia_generalization/scenarios.py": "6b5776b09cb4aa3a6277a6f58b5a48a5f6d593d9dd9b8a97906d118da54dc839",
+    "inertia_generalization/protocol.py": "a9bc05c8ba907747a2cfc8ca14d0230fa8cd8dcfd072ff0733331700f21dd000",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "multi_algorithm_benchmark/vector_training.py": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757",
+    "multi_algorithm_benchmark/controllers.py": "a971deb369c45401320fa0075585f690b7bd7aa029d4a5b45a1c6f2b718f90d1",
+    "multi_algorithm_benchmark/metrics.py": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5",
+    "multi_algorithm_benchmark/improvements.py": "669b4c9c5ad7ea9330d66ba5d07c1fca72ff2bca162eba860b47c384d5a87132"
+  },
+  "selection_split": "validation",
+  "selection_policy": "calibrated",
+  "selection_score": "100*success_rate-rms_error_deg-0.2*control_cost",
+  "tie_break": [
+    "higher_score",
+    "lower_rms",
+    "lower_control_cost",
+    "earlier_checkpoint"
+  ],
+  "calibration": "clip(predict(obs)-predict(zeros),-1,1)",
+  "raw_ablation_uses_calibrated_selected_checkpoint": true,
+  "fresh_training": true,
+  "test_used_for_selection": false,
+  "rank_seed_rule": "seed + rank; SeedSequence.spawn(initial,inertia,noise_seed)",
+  "initial_state_stream_independent_of_inertia": true,
+  "vector_engine": "DummyVecEnv over V2 batch exact integration",
+  "gradient_updates": 61250,
+  "best_checkpoint_steps": 800000,
+  "best_validation_score": 93.0638981551945,
+  "best_zero_action_normalized": [
+    -0.4143339991569519
+  ],
+  "validation_checkpoint_steps": [
+    100000,
+    200000,
+    300000,
+    400000,
+    500000,
+    600000,
+    700000,
+    800000,
+    900000,
+    1000000
+  ],
+  "checkpoint_count": 10,
+  "artifacts": {
+    "best_model.zip": {
+      "sha256": "bee025ac0432fd660178bb60eac76a371076e72f46ace51f219695ca3a3969ef",
+      "bytes": 244867,
+      "timesteps": 800000
+    },
+    "final_model.zip": {
+      "sha256": "7423e858ae1946118c431d09d259950a46fa13d5165b3750cf201562045f8991",
+      "bytes": 244852,
+      "timesteps": 1000000
+    },
+    "latest_model.zip": {
+      "sha256": "a21d9b65f9c7c0218ac89e6fc9c84ac41ff75dba74316b1d786fb47fe11fb22b",
+      "bytes": 244867,
+      "timesteps": 1000000
+    },
+    "replay_buffer.pkl": {
+      "sha256": "662a539d2591f736815077cb5a0bd6ec6987e26cd7facfd38b055e8597df4498",
+      "bytes": 6401331,
+      "timesteps": 1000000
+    }
+  },
+  "model_sha256": "bee025ac0432fd660178bb60eac76a371076e72f46ace51f219695ca3a3969ef",
+  "source_sha256_after": {
+    "inertia_generalization/training.py": "1907b134de6df2492ae591a6e1f41cf63e11dba97b5390291785ee22415f057a",
+    "inertia_generalization/envs.py": "ace18e179fcf2b63c748dbfb4588cace2229ae77b9038bb538447ef991a8630c",
+    "inertia_generalization/vector_training.py": "5d12caa1345ac6373e30ccafebbd23d3b05c544d8c452d445d8c21f90f301b7b",
+    "inertia_generalization/scenarios.py": "6b5776b09cb4aa3a6277a6f58b5a48a5f6d593d9dd9b8a97906d118da54dc839",
+    "inertia_generalization/protocol.py": "a9bc05c8ba907747a2cfc8ca14d0230fa8cd8dcfd072ff0733331700f21dd000",
+    "multi_algorithm_benchmark/envs.py": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+    "multi_algorithm_benchmark/vector_training.py": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757",
+    "multi_algorithm_benchmark/controllers.py": "a971deb369c45401320fa0075585f690b7bd7aa029d4a5b45a1c6f2b718f90d1",
+    "multi_algorithm_benchmark/metrics.py": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5",
+    "multi_algorithm_benchmark/improvements.py": "669b4c9c5ad7ea9330d66ba5d07c1fca72ff2bca162eba860b47c384d5a87132"
+  },
+  "runtime_source_unchanged": true,
+  "wall_time_s": 376.6823575999879
+}

@@ -1,0 +1,99 @@
+{
+  "split": "test",
+  "samples_per_case": 50,
+  "scenario_count": 800,
+  "episode_count": 5600,
+  "controllers": [
+    {
+      "controller": "PID",
+      "model_seed": 0,
+      "path": null
+    },
+    {
+      "controller": "PPO_nominal",
+      "model_seed": 11,
+      "path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\03_训练模型与日志\\正式训练_100万步\\nominal\\seed_11\\best_model.zip"
+    },
+    {
+      "controller": "PPO_nominal",
+      "model_seed": 22,
+      "path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\03_训练模型与日志\\正式训练_100万步\\nominal\\seed_22\\best_model.zip"
+    },
+    {
+      "controller": "PPO_nominal",
+      "model_seed": 33,
+      "path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\03_训练模型与日志\\正式训练_100万步\\nominal\\seed_33\\best_model.zip"
+    },
+    {
+      "controller": "PPO_randomized",
+      "model_seed": 11,
+      "path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\03_训练模型与日志\\正式训练_100万步\\randomized\\seed_11\\best_model.zip"
+    },
+    {
+      "controller": "PPO_randomized",
+      "model_seed": 22,
+      "path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\03_训练模型与日志\\正式训练_100万步\\randomized\\seed_22\\best_model.zip"
+    },
+    {
+      "controller": "PPO_randomized",
+      "model_seed": 33,
+      "path": "D:\\applications-satellite.attitude.control.system\\结项成果包\\03_训练模型与日志\\正式训练_100万步\\randomized\\seed_33\\best_model.zip"
+    }
+  ],
+  "missing_models": [],
+  "pid_config": {
+    "kp": 4.0,
+    "ki": 0.0,
+    "kd": 3.0,
+    "integral_limit": 2.0
+  },
+  "env_base_config": {
+    "dt": 0.05,
+    "duration": 20.0,
+    "max_torque": 0.5,
+    "inertia": 1.0,
+    "deadzone": 0.0,
+    "disturbance_bias": 0.0,
+    "disturbance_amplitude": 0.0,
+    "disturbance_frequency": 0.2,
+    "noise_theta_deg": 0.0,
+    "noise_omega_deg": 0.0,
+    "pulse_torque": 0.0,
+    "pulse_start": 8.0,
+    "pulse_duration": 0.5,
+    "target_deg": 0.0,
+    "init_theta_range_deg": [
+      -60.0,
+      60.0
+    ],
+    "init_omega_range_deg_s": [
+      -5.0,
+      5.0
+    ],
+    "inertia_range": [
+      1.0,
+      1.0
+    ],
+    "disturbance_range": [
+      0.0,
+      0.0
+    ],
+    "noise_range_deg": [
+      0.0,
+      0.0
+    ],
+    "randomized": false,
+    "theta_tol_deg": 1.0,
+    "omega_tol_deg_s": 0.5,
+    "hold_seconds": 5.0,
+    "reward_angle_weight": 6.0,
+    "reward_omega_weight": 0.6,
+    "reward_torque_weight": 0.03,
+    "divergence_angle_deg": 170.0,
+    "divergence_omega_deg_s": 300.0,
+    "divergence_penalty": 1000.0
+  },
+  "selection_policy": "PID gains and PPO checkpoints selected on fixed validation scenes only",
+  "settling_policy": "Unsettled episodes have null settling time; never replaced by zero",
+  "seed_std_policy": "Sample SD across independent training seeds; PID has no seed SD"
+}

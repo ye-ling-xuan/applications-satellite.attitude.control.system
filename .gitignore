@@ -1,0 +1,3 @@
+# Local construction records, browser profiles and disposable visual checks.
+# Keep these files on disk, but exclude them from repository commits.
+/tmp/

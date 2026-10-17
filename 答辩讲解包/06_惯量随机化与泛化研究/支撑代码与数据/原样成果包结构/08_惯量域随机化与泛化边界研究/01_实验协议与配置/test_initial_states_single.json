@@ -1,0 +1,242 @@
+[
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 0,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -43.88300267968481,
+    "omega_deg_s": 4.547560151621925
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 1,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 56.37005764378081,
+    "omega_deg_s": -1.924496411606146
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 2,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -45.29315909120902,
+    "omega_deg_s": 2.055266922878028
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 3,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 0.7621793461384669,
+    "omega_deg_s": -4.803418096224709
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 4,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 22.089468509263497,
+    "omega_deg_s": 3.3818709902179585
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 5,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -50.67975225159928,
+    "omega_deg_s": 0.9214804982893607
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 6,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 10.691585064520709,
+    "omega_deg_s": -4.236148197032351
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 7,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 5.918894406214363,
+    "omega_deg_s": -3.3346624458918694
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 8,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -23.328670035789457,
+    "omega_deg_s": -1.8310419488772811
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 9,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 29.673771027185936,
+    "omega_deg_s": -2.848206464979366
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 10,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -30.786314493793974,
+    "omega_deg_s": 1.0608792391253559
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 11,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -40.27307587130211,
+    "omega_deg_s": -4.898116063392138
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 12,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 48.63184426100415,
+    "omega_deg_s": 1.23846556765701
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 13,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -37.33961298854323,
+    "omega_deg_s": -1.6502104231483985
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 14,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -10.183753231527596,
+    "omega_deg_s": 0.031758172048158784
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 15,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 33.393839286579635,
+    "omega_deg_s": 2.020383962175032
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 16,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -37.65466683109388,
+    "omega_deg_s": -3.546955970475685
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 17,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 49.123590576793504,
+    "omega_deg_s": -2.9065772020278544
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 18,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -15.581634560634498,
+    "omega_deg_s": 2.1898971530170765
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 19,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 49.60715068263528,
+    "omega_deg_s": 4.6728674423008325
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 20,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 33.84993823343865,
+    "omega_deg_s": -4.234846566238276
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 21,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 0.08249017062640007,
+    "omega_deg_s": 4.252004922824272
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 22,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 59.63455120614786,
+    "omega_deg_s": 0.9311123388081368
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 23,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 32.26938911467131,
+    "omega_deg_s": 1.5675519935652567
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 24,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 9.32473239745481,
+    "omega_deg_s": -2.989393092005732
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 25,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 27.260597989051064,
+    "omega_deg_s": 1.532108803960356
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 26,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 29.52306966164214,
+    "omega_deg_s": -2.9049189912942874
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 27,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 17.646110424464,
+    "omega_deg_s": 3.583600258331842
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 28,
+    "initial_state_seed": 2026101203,
+    "theta_deg": -34.13657713641603,
+    "omega_deg_s": -3.7319954074625814
+  },
+  {
+    "axis": "single",
+    "split": "test",
+    "sample_id": 29,
+    "initial_state_seed": 2026101203,
+    "theta_deg": 31.492825036585742,
+    "omega_deg_s": 0.991635284151001
+  }
+]

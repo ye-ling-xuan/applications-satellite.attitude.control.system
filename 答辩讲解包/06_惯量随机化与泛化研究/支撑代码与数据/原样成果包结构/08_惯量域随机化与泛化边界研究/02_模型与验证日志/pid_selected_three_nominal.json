@@ -1,0 +1,22 @@
+{
+  "axis": "three",
+  "mode": "nominal",
+  "gains": {
+    "kp": 8.0,
+    "ki": 0.0,
+    "kd": 4.0,
+    "alpha": 1.0,
+    "integral_limit": 5.0
+  },
+  "validation_stats": {
+    "success_rate": 1.0,
+    "rms_error_deg": 9.009303769022178,
+    "control_cost": 5.040078078884518,
+    "score": 89.98268061520092
+  },
+  "candidate_index": 77,
+  "candidate_count": 144,
+  "selection_split": "validation",
+  "test_used_for_selection": false,
+  "validation_scenes_sha256": "c7d928e5173d4a4654107700b6a4158ccc53abbf52aaed7565a70b7d848432ec"
+}

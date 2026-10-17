@@ -1,0 +1,31 @@
+{
+  "client_date": "2026-10-16",
+  "scope": "Original reviewed deliverables retained; new teaching pack is outside original delivery",
+  "files": [
+    {
+      "source": "结项成果包/README.md",
+      "bytes": 14171,
+      "sha256": "44c3cfc3bbfb5e027b9853eec8cca9f7f0a30486dddbb336c18998bff0d36a4b"
+    },
+    {
+      "source": "结项成果包/最终交付总说明.md",
+      "bytes": 10672,
+      "sha256": "c22cc571e1e9ff18aaba853b3a73a15eb769224072687bc28313144d60713600"
+    },
+    {
+      "source": "结项成果包/最终交付清单.json",
+      "bytes": 42584,
+      "sha256": "2e2138a3392447156d706258c01096cf54f3ca6c5dd4e5c57a1c03b7312c49c6"
+    },
+    {
+      "source": "结项成果包/最终阅读与展示包.zip",
+      "bytes": 9441951,
+      "sha256": "0fd0ce14c9119daa20c2ecdef2b10a18540007a574d139f98580420bfe956877"
+    },
+    {
+      "source": "结项成果包/08_惯量域随机化与泛化边界研究/05_研究分析与核验/技术研究冻结清单.json",
+      "bytes": 3164165,
+      "sha256": "200e8f2475475649c0681988a302b88ae504f27ee33b8f579f09daaed2e26649"
+    }
+  ]
+}
