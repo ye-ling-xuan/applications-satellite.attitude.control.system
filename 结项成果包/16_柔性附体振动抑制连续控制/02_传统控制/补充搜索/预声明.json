@@ -1,0 +1,13 @@
+{
+  "reason": "original success-first PID has physical failures; add a zero-physical-failure conservative baseline",
+  "source_hashes": {
+    "代码\\flexible_study.py": "061d29666479a4681addb2cdd777a743470fcfb4d9ebe55d22231a91be56495c",
+    "代码\\test_flexible.py": "975bcaf2fad61e2358ff282ad582146cc8d078cb078c008666b22a079d5eae03"
+  },
+  "held_out_test_used": false,
+  "random_seed": 16021,
+  "additional_random_candidates": 2400,
+  "grid_candidates": 225,
+  "ranking": "physical failures first; most passes; lowest penalized cost",
+  "validation_shortlist": 48
+}

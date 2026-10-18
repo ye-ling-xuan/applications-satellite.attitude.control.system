@@ -1,0 +1,42 @@
+{
+  "purpose": "论文主线重组；仅索引原工程及原样核心图，不重训、不更换历史结果",
+  "date": "2026-10-18",
+  "sources": [
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/新融合分析.md",
+      "sha256": "5456d33bfe52e1d034161389378da255d0c6659b33566286ab44e5bc8da538fc",
+      "bytes": 17993,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/result_summary.json",
+      "sha256": "51ff4ae913a807391fc64f0b560eda82cffddfdd17a23c05d3cbc8e17ca633c3",
+      "bytes": 14789,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/08_惯量域随机化与泛化边界研究/05_研究分析与核验/核心结论.json",
+      "sha256": "cffa2aea78cd2e9af40645cfc46715388d8acc643000ee195caae780f615ae6a",
+      "bytes": 44009,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/12_执行器滞后与纯延迟对比研究/06_结果与说明/结果摘要.json",
+      "sha256": "fee1daab30140e96612c6db0292ad874b46e85e8acb447ffd49f99b393676ae7",
+      "bytes": 3582,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/08_最终报告/最终结果.json",
+      "sha256": "e90b8896edf649f8d94dfaf22b7371450496d776e4e2d60e26836814bb330a80",
+      "bytes": 7074,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/08_最终报告/研究报告.md",
+      "sha256": "5716f18f686ef37cf54d9ed4e2c2b26fdca9ca1eb2adaa97a209896f075b579f",
+      "bytes": 3772,
+      "reference_only": true
+    }
+  ]
+}

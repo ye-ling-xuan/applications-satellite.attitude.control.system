@@ -1,0 +1,1193 @@
+{
+  "parameters": {
+    "kp": 0.2649456852206539,
+    "kd": 0.6429328040149732,
+    "ki": 0.0,
+    "feedforward": 0.5,
+    "preview_s": 0.6
+  },
+  "development": {
+    "count": 48,
+    "physical_failures": 0,
+    "mean_rms_error_deg": 0.9201807993159736,
+    "mean_objective": 9.96832049191363,
+    "mean_actual_cost": 0.06870726697470086,
+    "max_error_deg": 11.746254855782816,
+    "maximum_torque": 0.1521020453941765,
+    "maximum_slew": 0.08000000000000007
+  },
+  "validation": {
+    "count": 64,
+    "physical_failures": 0,
+    "mean_rms_error_deg": 0.7991028484747535,
+    "mean_objective": 6.180500885661136,
+    "mean_actual_cost": 0.06372067128721866,
+    "max_error_deg": 9.564468326846493,
+    "maximum_torque": 0.14503276197651246,
+    "maximum_slew": 0.08000000000000007
+  },
+  "source_sha256": "a718ae748396661f5498ee0f8bc8c9956f70f9afb3a7b3dbd9921d98cda9216f",
+  "test_responses_used": false,
+  "finalists": [
+    {
+      "parameters": {
+        "kp": 0.2649456852206539,
+        "kd": 0.6429328040149732,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.9201807993159736,
+        "mean_objective": 9.96832049191363,
+        "mean_actual_cost": 0.06870726697470086,
+        "max_error_deg": 11.746254855782816,
+        "maximum_torque": 0.1521020453941765,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.7991028484747535,
+        "mean_objective": 6.180500885661136,
+        "mean_actual_cost": 0.06372067128721866,
+        "max_error_deg": 9.564468326846493,
+        "maximum_torque": 0.14503276197651246,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.156251827344799,
+        "kd": 0.5892480701005768,
+        "ki": 0.03,
+        "feedforward": 0.8,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.9227062130911853,
+        "mean_objective": 13.180939661310523,
+        "mean_actual_cost": 0.08073298763233228,
+        "max_error_deg": 13.2432243801586,
+        "maximum_torque": 0.1578281623898902,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.7953798175758711,
+        "mean_objective": 8.070243799335213,
+        "mean_actual_cost": 0.0743387573103497,
+        "max_error_deg": 10.332634367747419,
+        "maximum_torque": 0.14855775151970602,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.1097422515783045,
+        "kd": 0.5544877063359377,
+        "ki": 0.03,
+        "feedforward": 0.8,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.0603520249827565,
+        "mean_objective": 13.32709378626202,
+        "mean_actual_cost": 0.07815792986296637,
+        "max_error_deg": 12.76833368172701,
+        "maximum_torque": 0.14982057769359305,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.9321164624779994,
+        "mean_objective": 9.215972374117271,
+        "mean_actual_cost": 0.0721148330385005,
+        "max_error_deg": 10.347869388402525,
+        "maximum_torque": 0.14260880690124478,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.1909764189715733,
+        "kd": 0.6201349121947112,
+        "ki": 0.03,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.2593528359485313,
+        "mean_objective": 14.393043138821279,
+        "mean_actual_cost": 0.05825698750735553,
+        "max_error_deg": 11.744289621490214,
+        "maximum_torque": 0.14410204539417648,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.1579193192918962,
+        "mean_objective": 11.780781862396168,
+        "mean_actual_cost": 0.053823025495343464,
+        "max_error_deg": 10.582865566159574,
+        "maximum_torque": 0.13703276197651246,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.11462011598413074,
+        "kd": 0.5336549833104623,
+        "ki": 0.01,
+        "feedforward": 0.8,
+        "preview_s": 0.5
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.2302560997643566,
+        "mean_objective": 14.487307538693107,
+        "mean_actual_cost": 0.07848142087371707,
+        "max_error_deg": 11.878629419274148,
+        "maximum_torque": 0.15087805818437955,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.1254016092525791,
+        "mean_objective": 11.301616358508905,
+        "mean_actual_cost": 0.07251518213018326,
+        "max_error_deg": 10.579406515091256,
+        "maximum_torque": 0.14200001111669247,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.20618166746295807,
+        "kd": 0.582053805222028,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.4510370431023036,
+        "mean_objective": 17.779962711635957,
+        "mean_actual_cost": 0.05910515706155409,
+        "max_error_deg": 11.68245355907518,
+        "maximum_torque": 0.14410204539417648,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.3626119951616962,
+        "mean_objective": 15.45824009223232,
+        "mean_actual_cost": 0.05455471027971768,
+        "max_error_deg": 10.443951352690855,
+        "maximum_torque": 0.13703276197651246,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.09577351790779945,
+        "kd": 0.7066172197932895,
+        "ki": 0.03,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.37008195850136,
+        "mean_objective": 17.88167833593376,
+        "mean_actual_cost": 0.060312241355547656,
+        "max_error_deg": 11.997689567798458,
+        "maximum_torque": 0.14082390979728882,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.2412949794435564,
+        "mean_objective": 14.131845266175652,
+        "mean_actual_cost": 0.05543901301738051,
+        "max_error_deg": 10.924014828247936,
+        "maximum_torque": 0.13703276197651246,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.10260217547928326,
+        "kd": 0.5403749410948916,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.508544730491745,
+        "mean_objective": 20.512834847825435,
+        "mean_actual_cost": 0.05142627433514315,
+        "max_error_deg": 13.747048172658562,
+        "maximum_torque": 0.12930478546269786,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.3797405911386136,
+        "mean_objective": 17.001278341057244,
+        "mean_actual_cost": 0.04740546481739279,
+        "max_error_deg": 13.040265669014584,
+        "maximum_torque": 0.1266195824903133,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.10411099776333664,
+        "kd": 0.38193664262090266,
+        "ki": 0.01,
+        "feedforward": 1.0,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.4051589025693676,
+        "mean_objective": 20.830505636098817,
+        "mean_actual_cost": 0.09986522817877236,
+        "max_error_deg": 13.453457056459605,
+        "maximum_torque": 0.15369544955945177,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.3216846405932743,
+        "mean_objective": 15.646161436311989,
+        "mean_actual_cost": 0.09323321224737936,
+        "max_error_deg": 10.617486634378299,
+        "maximum_torque": 0.14902493873890135,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.09571046454829393,
+        "kd": 0.5485661049166624,
+        "ki": 0.0,
+        "feedforward": 0.8,
+        "preview_s": 0.6
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.5558767042892974,
+        "mean_objective": 20.914314976599158,
+        "mean_actual_cost": 0.07953377208015902,
+        "max_error_deg": 12.221063791075908,
+        "maximum_torque": 0.15070842140681895,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.463170438015927,
+        "mean_objective": 17.89425055312755,
+        "mean_actual_cost": 0.07360747148746416,
+        "max_error_deg": 10.871037122117988,
+        "maximum_torque": 0.14340905504786683,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.1393612009919151,
+        "kd": 0.7782644155910918,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.2
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.5425283165696946,
+        "mean_objective": 23.885371806915458,
+        "mean_actual_cost": 0.06843377708763417,
+        "max_error_deg": 13.550196726311473,
+        "maximum_torque": 0.14571312994469435,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.4009250695103774,
+        "mean_objective": 16.81214408881516,
+        "mean_actual_cost": 0.06275797768537288,
+        "max_error_deg": 10.120472669152237,
+        "maximum_torque": 0.13844342816562671,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.19615409443140627,
+        "kd": 0.9532839954295761,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.9656216252415105,
+        "mean_objective": 29.611780854995825,
+        "mean_actual_cost": 0.08160078571113501,
+        "max_error_deg": 31.025520801866985,
+        "maximum_torque": 0.18379557573152894,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.8146240833090554,
+        "mean_objective": 20.44842347376584,
+        "mean_actual_cost": 0.07489422545345381,
+        "max_error_deg": 25.44648203999957,
+        "maximum_torque": 0.177952952249106,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.10454883927010111,
+        "kd": 0.817745021590642,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.1
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.787712424213484,
+        "mean_objective": 30.648151295208738,
+        "mean_actual_cost": 0.06874514297645212,
+        "max_error_deg": 13.779462423074065,
+        "maximum_torque": 0.14410204539417648,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.641102143821668,
+        "mean_objective": 23.056884721500456,
+        "mean_actual_cost": 0.06299032956221085,
+        "max_error_deg": 10.355672354605298,
+        "maximum_torque": 0.14196906206909327,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.1940188959560659,
+        "kd": 0.6831464406648762,
+        "ki": 0.01,
+        "feedforward": 0.8,
+        "preview_s": 0.0
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.4370104413704823,
+        "mean_objective": 34.92209243388848,
+        "mean_actual_cost": 0.08774694746187535,
+        "max_error_deg": 24.605212872934914,
+        "maximum_torque": 0.17564915316840607,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.2685997746414657,
+        "mean_objective": 23.497414883277365,
+        "mean_actual_cost": 0.07975826793540006,
+        "max_error_deg": 21.035633373209205,
+        "maximum_torque": 0.15693010669739532,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.2551604696994981,
+        "kd": 0.5695268731127806,
+        "ki": 0.03,
+        "feedforward": 0.8,
+        "preview_s": 0.0
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.5654135768524167,
+        "mean_objective": 35.819959339812215,
+        "mean_actual_cost": 0.08348823990619231,
+        "max_error_deg": 20.069759031309253,
+        "maximum_torque": 0.17116409777812805,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.4003770094529346,
+        "mean_objective": 23.183823100545332,
+        "mean_actual_cost": 0.07623862237562037,
+        "max_error_deg": 16.505172273584968,
+        "maximum_torque": 0.1622258140349082,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.10710978707110182,
+        "kd": 1.0324425934601325,
+        "ki": 0.1,
+        "feedforward": 0.5,
+        "preview_s": 0.3
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.5267321091870525,
+        "mean_objective": 37.46273700956787,
+        "mean_actual_cost": 0.07426153497610237,
+        "max_error_deg": 22.116872097912193,
+        "maximum_torque": 0.16547070006691578,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.3197928292322376,
+        "mean_objective": 22.226769038248218,
+        "mean_actual_cost": 0.06796590455012377,
+        "max_error_deg": 21.343508541395426,
+        "maximum_torque": 0.16366845873774766,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.09260374566586863,
+        "kd": 0.6243060071561571,
+        "ki": 0.01,
+        "feedforward": 1.0,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.7492362288773613,
+        "mean_objective": 38.05662925648908,
+        "mean_actual_cost": 0.10502231833162042,
+        "max_error_deg": 17.04357039068602,
+        "maximum_torque": 0.16367473865457602,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.5643573722226005,
+        "mean_objective": 25.950410474102753,
+        "mean_actual_cost": 0.09808187317257813,
+        "max_error_deg": 12.850771415931339,
+        "maximum_torque": 0.16467429561806804,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.11616363283479395,
+        "kd": 0.41374383836868717,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.3
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.1473127043293965,
+        "mean_objective": 38.32126240248771,
+        "mean_actual_cost": 0.04162909050145868,
+        "max_error_deg": 14.405842286799988,
+        "maximum_torque": 0.12000426709454842,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.025459273471742,
+        "mean_objective": 33.838022539061484,
+        "mean_actual_cost": 0.038284942801860455,
+        "max_error_deg": 13.14966270986146,
+        "maximum_torque": 0.11833792631988027,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.1438135062563775,
+        "kd": 0.7522387032664887,
+        "ki": 0.01,
+        "feedforward": 0.5,
+        "preview_s": 0.0
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.228705128361715,
+        "mean_objective": 43.22590322048313,
+        "mean_actual_cost": 0.066197459669022,
+        "max_error_deg": 13.380570562193535,
+        "maximum_torque": 0.14402160773195516,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.0762950976654837,
+        "mean_objective": 35.267958300282245,
+        "mean_actual_cost": 0.060432737267804106,
+        "max_error_deg": 10.38762561357362,
+        "maximum_torque": 0.13226691898440368,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.18520985222032393,
+        "kd": 0.8063894289423015,
+        "ki": 0.01,
+        "feedforward": 0.8,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.3866893641220646,
+        "mean_objective": 49.94518034675315,
+        "mean_actual_cost": 0.09381278214056683,
+        "max_error_deg": 31.86181010466313,
+        "maximum_torque": 0.18665774126053822,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.068720834785265,
+        "mean_objective": 28.02780531200277,
+        "mean_actual_cost": 0.08566897901854315,
+        "max_error_deg": 23.23258064810217,
+        "maximum_torque": 0.17592935648256253,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.20669120118831308,
+        "kd": 0.48719062232162025,
+        "ki": 0.0,
+        "feedforward": 1.0,
+        "preview_s": 0.5
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.9928504959683755,
+        "mean_objective": 50.0171414963317,
+        "mean_actual_cost": 0.10597837745055712,
+        "max_error_deg": 22.155375450602357,
+        "maximum_torque": 0.17167742723694476,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.8256949319170355,
+        "mean_objective": 35.6648773449366,
+        "mean_actual_cost": 0.09877503086889478,
+        "max_error_deg": 22.97760627147643,
+        "maximum_torque": 0.1712572794017419,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.11261241520401466,
+        "kd": 0.6599119298336148,
+        "ki": 0.1,
+        "feedforward": 0.8,
+        "preview_s": 0.5
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.114569016212365,
+        "mean_objective": 53.246502501945564,
+        "mean_actual_cost": 0.07849920613368515,
+        "max_error_deg": 16.03054439581988,
+        "maximum_torque": 0.15988893363986084,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.8521619514652004,
+        "mean_objective": 34.084601013981725,
+        "mean_actual_cost": 0.07263849181923315,
+        "max_error_deg": 14.280373583815166,
+        "maximum_torque": 0.1462608985277668,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.09776723794521447,
+        "kd": 0.738434218087662,
+        "ki": 0.1,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.4617221856497333,
+        "mean_objective": 62.75164643542894,
+        "mean_actual_cost": 0.05641664729343937,
+        "max_error_deg": 17.44822156456602,
+        "maximum_torque": 0.13940514922281802,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.244848909305096,
+        "mean_objective": 49.79304144485231,
+        "mean_actual_cost": 0.05192132925687131,
+        "max_error_deg": 19.008245551444553,
+        "maximum_torque": 0.13547349596213132,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.11652982781073652,
+        "kd": 0.7259312655027168,
+        "ki": 0.01,
+        "feedforward": 1.0,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.090639675008535,
+        "mean_objective": 64.5835690082573,
+        "mean_actual_cost": 0.10791035399129746,
+        "max_error_deg": 24.397887505751843,
+        "maximum_torque": 0.17431436933946384,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.9448292693678493,
+        "mean_objective": 50.105015256993696,
+        "mean_actual_cost": 0.10179603867051981,
+        "max_error_deg": 21.58613007949709,
+        "maximum_torque": 0.17567797536330104,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.2774426713994798,
+        "kd": 0.9685557619084194,
+        "ki": 0.1,
+        "feedforward": 0.5,
+        "preview_s": 0.3
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.8547364301669245,
+        "mean_objective": 65.53656347504842,
+        "mean_actual_cost": 0.08657348082869964,
+        "max_error_deg": 34.74118761590889,
+        "maximum_torque": 0.19351127757577175,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.543217285911949,
+        "mean_objective": 36.75951093022249,
+        "mean_actual_cost": 0.07746502633762967,
+        "max_error_deg": 32.06846347283356,
+        "maximum_torque": 0.18393445047975154,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.23710110451878627,
+        "kd": 0.7557255213696151,
+        "ki": 0.0,
+        "feedforward": 0.8,
+        "preview_s": 0.0
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.829984082004201,
+        "mean_objective": 66.73526103897281,
+        "mean_actual_cost": 0.0940191496135917,
+        "max_error_deg": 35.344238704262615,
+        "maximum_torque": 0.19283596625588972,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.4784787827968722,
+        "mean_objective": 41.296685284140594,
+        "mean_actual_cost": 0.08541107887415159,
+        "max_error_deg": 24.330152415391833,
+        "maximum_torque": 0.17164561284080546,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.22883377783968306,
+        "kd": 0.4939504877842612,
+        "ki": 0.03,
+        "feedforward": 1.0,
+        "preview_s": 0.3
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.7731676045201186,
+        "mean_objective": 68.14514548297949,
+        "mean_actual_cost": 0.10806793444885622,
+        "max_error_deg": 30.095096427410798,
+        "maximum_torque": 0.21025332552327836,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.5273653207237312,
+        "mean_objective": 43.47132652190815,
+        "mean_actual_cost": 0.09994352534992405,
+        "max_error_deg": 31.391397541053873,
+        "maximum_torque": 0.18179950812462092,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.1642857356385107,
+        "kd": 1.1529027019795588,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.5
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.5034402689947834,
+        "mean_objective": 69.1187776393086,
+        "mean_actual_cost": 0.09117267232115163,
+        "max_error_deg": 41.09435565966906,
+        "maximum_torque": 0.20056809761779903,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.024075955493573,
+        "mean_objective": 37.67135513407278,
+        "mean_actual_cost": 0.08201117840848579,
+        "max_error_deg": 31.946523605976346,
+        "maximum_torque": 0.17487295363474034,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.24758875938595132,
+        "kd": 0.5328027870917326,
+        "ki": 0.1,
+        "feedforward": 0.5,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.883505440376196,
+        "mean_objective": 70.5026475150345,
+        "mean_actual_cost": 0.047590532337754544,
+        "max_error_deg": 13.22904627141369,
+        "maximum_torque": 0.13935996920928553,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.832456700705933,
+        "mean_objective": 66.71118590651858,
+        "mean_actual_cost": 0.044120758789003844,
+        "max_error_deg": 13.345931368666772,
+        "maximum_torque": 0.12974729702041252,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.09241631941754906,
+        "kd": 0.42412841196760787,
+        "ki": 0.01,
+        "feedforward": 1.2,
+        "preview_s": 0.6
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.877267828601011,
+        "mean_objective": 71.72158585445057,
+        "mean_actual_cost": 0.12603051009650124,
+        "max_error_deg": 16.559053716482996,
+        "maximum_torque": 0.1559242278743524,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.9026181418591857,
+        "mean_objective": 71.41447927597903,
+        "mean_actual_cost": 0.11926892574543109,
+        "max_error_deg": 15.314305028442137,
+        "maximum_torque": 0.1678373531632257,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.20092100478458397,
+        "kd": 0.4970232129439264,
+        "ki": 0.1,
+        "feedforward": 0.8,
+        "preview_s": 0.6
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.4626405393993385,
+        "mean_objective": 72.4255492183733,
+        "mean_actual_cost": 0.07196079878445882,
+        "max_error_deg": 25.38022624486256,
+        "maximum_torque": 0.1673638737950744,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.1822239948961224,
+        "mean_objective": 51.61181468813886,
+        "mean_actual_cost": 0.0656099404908709,
+        "max_error_deg": 20.726500938021633,
+        "maximum_torque": 0.14573344069671607,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.13044601744964993,
+        "kd": 1.2466916166272024,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.4837120810701663,
+        "mean_objective": 73.10201134166378,
+        "mean_actual_cost": 0.09215704929525347,
+        "max_error_deg": 41.444423341913144,
+        "maximum_torque": 0.1989554088106172,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.9469979489189031,
+        "mean_objective": 40.864058822163564,
+        "mean_actual_cost": 0.0824490305731645,
+        "max_error_deg": 34.6000897299305,
+        "maximum_torque": 0.17458900741910022,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.14064393820085686,
+        "kd": 0.9768134611244012,
+        "ki": 0.1,
+        "feedforward": 0.8,
+        "preview_s": 0.1
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.7265778135385588,
+        "mean_objective": 77.50554003277448,
+        "mean_actual_cost": 0.09326519049557568,
+        "max_error_deg": 36.67817697519319,
+        "maximum_torque": 0.18054821561441048,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.3009056021901335,
+        "mean_objective": 47.71853131361521,
+        "mean_actual_cost": 0.08527982392383215,
+        "max_error_deg": 31.961913844204958,
+        "maximum_torque": 0.1749282636711965,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.12654174985521088,
+        "kd": 0.4194715844236105,
+        "ki": 0.0,
+        "feedforward": 1.2,
+        "preview_s": 0.3
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.5768603993136807,
+        "mean_objective": 78.14483514674664,
+        "mean_actual_cost": 0.12950952107653715,
+        "max_error_deg": 21.98194275627504,
+        "maximum_torque": 0.17038808622247925,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.44824075174877,
+        "mean_objective": 70.24689055359582,
+        "mean_actual_cost": 0.12200217553568923,
+        "max_error_deg": 22.51089756098363,
+        "maximum_torque": 0.17744022848324434,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.12196397832294659,
+        "kd": 0.7923529864162286,
+        "ki": 0.0,
+        "feedforward": 1.0,
+        "preview_s": 0.5
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.485697223164803,
+        "mean_objective": 80.30935893740526,
+        "mean_actual_cost": 0.1095373026533688,
+        "max_error_deg": 25.416235029264556,
+        "maximum_torque": 0.17378643371315075,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.490226590965584,
+        "mean_objective": 75.81771076941524,
+        "mean_actual_cost": 0.10354812231402233,
+        "max_error_deg": 26.656802974398094,
+        "maximum_torque": 0.18313911854604387,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.3022169881274318,
+        "kd": 0.8853395080693572,
+        "ki": 0.01,
+        "feedforward": 0.5,
+        "preview_s": 0.1
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.526573312992395,
+        "mean_objective": 82.97456642108995,
+        "mean_actual_cost": 0.08958238723179439,
+        "max_error_deg": 41.44112588277731,
+        "maximum_torque": 0.20261206819477479,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.1367782109326674,
+        "mean_objective": 59.39294301131457,
+        "mean_actual_cost": 0.08056863502811804,
+        "max_error_deg": 35.97233310237947,
+        "maximum_torque": 0.19021973675383755,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.18804349441599436,
+        "kd": 1.1506042071669216,
+        "ki": 0.03,
+        "feedforward": 0.5,
+        "preview_s": 0.0
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.533092512174671,
+        "mean_objective": 89.80459500306681,
+        "mean_actual_cost": 0.08915269765952094,
+        "max_error_deg": 39.50525616958301,
+        "maximum_torque": 0.19739162658351747,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.1744168263883488,
+        "mean_objective": 63.90549674377249,
+        "mean_actual_cost": 0.08032410006733423,
+        "max_error_deg": 35.61162999074884,
+        "maximum_torque": 0.18623032164942327,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.13331777952772958,
+        "kd": 1.0320708156107878,
+        "ki": 0.03,
+        "feedforward": 0.8,
+        "preview_s": 0.4
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 2.0470264439288965,
+        "mean_objective": 93.43581490581255,
+        "mean_actual_cost": 0.0993929556053878,
+        "max_error_deg": 32.16587473845424,
+        "maximum_torque": 0.18922121324400312,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.5261996829654192,
+        "mean_objective": 55.47591587531805,
+        "mean_actual_cost": 0.09074520182941063,
+        "max_error_deg": 24.377965980030893,
+        "maximum_torque": 0.1832460670585616,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.1128334691891141,
+        "kd": 0.8299841668093936,
+        "ki": 0.03,
+        "feedforward": 1.0,
+        "preview_s": 0.0
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.8770822425046247,
+        "mean_objective": 93.57295499356586,
+        "mean_actual_cost": 0.10953427907066025,
+        "max_error_deg": 30.644019811384496,
+        "maximum_torque": 0.18870082303555327,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.636988626666962,
+        "mean_objective": 74.0561364839434,
+        "mean_actual_cost": 0.10238510972714786,
+        "max_error_deg": 24.5241113034999,
+        "maximum_torque": 0.18202167839382682,
+        "maximum_slew": 0.08000000000000007
+      }
+    },
+    {
+      "parameters": {
+        "kp": 0.17579044400624882,
+        "kd": 0.7300996434622052,
+        "ki": 0.03,
+        "feedforward": 1.0,
+        "preview_s": 0.1
+      },
+      "development": {
+        "count": 48,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.8752909953399948,
+        "mean_objective": 94.17393912469902,
+        "mean_actual_cost": 0.1109641525142784,
+        "max_error_deg": 32.26302638121443,
+        "maximum_torque": 0.1869400017608798,
+        "maximum_slew": 0.08000000000000007
+      },
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.6855499565143024,
+        "mean_objective": 77.56108982747699,
+        "mean_actual_cost": 0.10337945332031075,
+        "max_error_deg": 31.246902637801814,
+        "maximum_torque": 0.18246418893145044,
+        "maximum_slew": 0.08000000000000007
+      }
+    }
+  ]
+}

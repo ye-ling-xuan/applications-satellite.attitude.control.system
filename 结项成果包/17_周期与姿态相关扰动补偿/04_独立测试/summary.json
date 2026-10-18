@@ -1,0 +1,108 @@
+{
+  "results": {
+    "pid": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.029620637462426064,
+      "mean_actual_cost": 0.3285909751969097,
+      "mean_full_rms_deg": 0.6265488367444916
+    },
+    "observer": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0016682032623071305,
+      "mean_actual_cost": 0.17757195737545572,
+      "mean_full_rms_deg": 0.6048142688612759
+    },
+    "harmonic": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.005631450234076363,
+      "mean_actual_cost": 0.2666232698978845,
+      "mean_full_rms_deg": 0.6100172769112093
+    },
+    "TD3_17111": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.021882796221674772,
+      "mean_actual_cost": 0.23622603302803824,
+      "mean_full_rms_deg": 0.6216148630514688
+    },
+    "TD3_17222": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.02155610685932524,
+      "mean_actual_cost": 0.23767392975019216,
+      "mean_full_rms_deg": 0.6223638364433746
+    },
+    "TD3_17333": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.016901263646311164,
+      "mean_actual_cost": 0.2469984537012235,
+      "mean_full_rms_deg": 0.6262491768129864
+    }
+  },
+  "comparisons": {
+    "TD3_17111": {
+      "all_pass": true,
+      "mean_paired_rms_improvement_deg": 0.0077378412407512935,
+      "improvement_interval_deg": [
+        0.006702569250221657,
+        0.008785025292216832
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.7189060286469483,
+      "primary_supported": true
+    },
+    "TD3_17222": {
+      "all_pass": true,
+      "mean_paired_rms_improvement_deg": 0.00806453060310082,
+      "improvement_interval_deg": [
+        0.0073360330451354,
+        0.008790790161069066
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.723312408710449,
+      "primary_supported": true
+    },
+    "TD3_17333": {
+      "all_pass": true,
+      "mean_paired_rms_improvement_deg": 0.0127193738161149,
+      "improvement_interval_deg": [
+        0.011512669244878542,
+        0.01392061264419005
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.7516897064905952,
+      "primary_supported": true
+    }
+  },
+  "files_sha256": {
+    "freeze.json": "eee40c160a2c8d43b285ebf832846d21e9bbadec0a161808b42eeea64788f282",
+    "harmonic_episodes.json": "e35f6f5f6a07e7cac4333eea86425cb681fe236a3db6852cda78f5c2bdabe3fe",
+    "harmonic_traces.npz": "afe5069f7a707cf6be7363a3d84bf9b3f944ba42d10bf708f03429a0bebb6962",
+    "observer_episodes.json": "ea3f0da7d49e18053e53df95c597d262a24fc05f65dd45321f0ff9c396a3a8fe",
+    "observer_traces.npz": "4da91e8ace96f57b21ae3ef01182c2adf62569a30428f265dab568b05ee3eb0e",
+    "pid_episodes.json": "5ca64aba495f364e1602357b24d430621b784c708f51c09328b52256cb811dd3",
+    "pid_traces.npz": "c96cfe8d866b8065d417d88c8c503f0326d32488a6d14c5ba225d4053b3a453f",
+    "TD3_17111_episodes.json": "50ee8886248dae3aca1d34bd1c13c5d898864b2a3a27b0f1a8823182fdf9a2ac",
+    "TD3_17111_traces.npz": "0f7b3abe26e0f62807d4febe7a4ba1723e99da5116d8868368d08e03f08e205d",
+    "TD3_17222_episodes.json": "8fe6954c766fa67339dcf0a5b8d8a8a576ca96ecf2593d92d6ab5d6ecc97b304",
+    "TD3_17222_traces.npz": "5e189ac9dcbc81b0192c369827fd7bb790b540087a1685afab32bb575fbcea84",
+    "TD3_17333_episodes.json": "0f4e27f7a8ac2ce325a5244524b60e71b848c9b01bc7f608101b95dcda9f0821",
+    "TD3_17333_traces.npz": "e5c3cc51ecd7db6c980b237015dbd39cea2094b8a50785ae8b61abeb682cd61d"
+  }
+}

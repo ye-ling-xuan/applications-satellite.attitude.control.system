@@ -1,0 +1,123 @@
+{
+  "study": 17,
+  "training_runs": 5,
+  "interaction_steps": 786432,
+  "formal_runs": 3,
+  "formal_checkpoints": [
+    {
+      "seed": 17111,
+      "trained_steps": 196608,
+      "selected_checkpoint": 49152
+    },
+    {
+      "seed": 17222,
+      "trained_steps": 196608,
+      "selected_checkpoint": 172032
+    },
+    {
+      "seed": 17333,
+      "trained_steps": 196608,
+      "selected_checkpoint": 147456
+    }
+  ],
+  "independent_initial_states": 128,
+  "controllers": 6,
+  "test_episodes": 768,
+  "primary_supported": true,
+  "full_original_audit_passed": false,
+  "primary_conclusion_replicated": true,
+  "independent_ODE_episodes": 768,
+  "max_independent_RMS_difference_deg": 1.5692703617597656e-07,
+  "results": {
+    "pid": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.029620637462426064,
+      "mean_actual_cost": 0.3285909751969097,
+      "mean_full_rms_deg": 0.6265488367444916
+    },
+    "observer": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0016682032623071305,
+      "mean_actual_cost": 0.17757195737545572,
+      "mean_full_rms_deg": 0.6048142688612759
+    },
+    "harmonic": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.005631450234076363,
+      "mean_actual_cost": 0.2666232698978845,
+      "mean_full_rms_deg": 0.6100172769112093
+    },
+    "TD3_17111": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.021882796221674772,
+      "mean_actual_cost": 0.23622603302803824,
+      "mean_full_rms_deg": 0.6216148630514688
+    },
+    "TD3_17222": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.02155610685932524,
+      "mean_actual_cost": 0.23767392975019216,
+      "mean_full_rms_deg": 0.6223638364433746
+    },
+    "TD3_17333": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.016901263646311164,
+      "mean_actual_cost": 0.2469984537012235,
+      "mean_full_rms_deg": 0.6262491768129864
+    }
+  },
+  "comparisons": {
+    "TD3_17111": {
+      "all_pass": true,
+      "mean_paired_rms_improvement_deg": 0.0077378412407512935,
+      "improvement_interval_deg": [
+        0.006702569250221657,
+        0.008785025292216832
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.7189060286469483,
+      "primary_supported": true
+    },
+    "TD3_17222": {
+      "all_pass": true,
+      "mean_paired_rms_improvement_deg": 0.00806453060310082,
+      "improvement_interval_deg": [
+        0.0073360330451354,
+        0.008790790161069066
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.723312408710449,
+      "primary_supported": true
+    },
+    "TD3_17333": {
+      "all_pass": true,
+      "mean_paired_rms_improvement_deg": 0.0127193738161149,
+      "improvement_interval_deg": [
+        0.011512669244878542,
+        0.01392061264419005
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.7516897064905952,
+      "primary_supported": true
+    }
+  },
+  "limitation": "Only improves on PID; disturbance observer achieves smaller error and cost. Original strict full-state threshold failed and is preserved."
+}

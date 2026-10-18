@@ -1,0 +1,2472 @@
+[
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.3573865138919414,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": 0.06593701882712644,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.3573865138919414,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": 0.06593701882712644,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.0167567021632062,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": 0.5659370188271264,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.0167567021632062,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": 0.5659370188271264,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.463753648192942,
+    "kd": 1.0936384385834355,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": -0.31208397489716466,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.463753648192942,
+    "kd": 1.0936384385834355,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": -0.31208397489716466,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.796966639406118,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": 0.08791602510283525,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.796966639406118,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": 0.08791602510283525,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.676126890434471,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": 0.5879160251028352,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.676126890434471,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": 0.5879160251028352,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.5515436573825987,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "actuator_feedback": 0.5830097885794199,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.055402839512618,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": 0.6318740376542529,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.055402839512618,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": 0.6318740376542529,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.463753648192942,
+    "kd": 1.1322845759328473,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": -0.2241679497943294,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.463753648192942,
+    "kd": 1.1322845759328473,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": -0.2241679497943294,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.8356127767555297,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": 0.1758320502056705,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.8356127767555297,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": 0.1758320502056705,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.714773027783883,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": 0.6758320502056705,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.714773027783883,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": 0.6758320502056705,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.612793657382599,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": 0.66601957715884,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.612793657382599,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": 0.66601957715884,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 3.3292433841852778,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": 0.7090062645405861,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 3.3292433841852778,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "actuator_feedback": 0.7090062645405861,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.434678788590765,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.19781105648137953,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.434678788590765,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.19781105648137953,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.09404897686203,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.6978110564813795,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.09404897686203,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.6978110564813795,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.463753648192942,
+    "kd": 1.170930713282259,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": -0.13625192469149416,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.463753648192942,
+    "kd": 1.170930713282259,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": -0.13625192469149416,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.8742589141049415,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.26374807530850597,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.8742589141049415,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.26374807530850597,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.7534191651332947,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.763748075308506,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.7534191651332947,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.763748075308506,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 1.8439457715883993,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.24902936573825984,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.6740436573825987,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.7490293657382598,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.6740436573825987,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.7490293657382598,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 2.3812867695205906,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.3135093968108791,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 3.426318092223521,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.8135093968108791,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 3.426318092223521,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.8135093968108791,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 4.408408596604655,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.894684946481477,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 4.408408596604655,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.894684946481477,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 5.148223337253404,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.662505211704203,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 5.148223337253404,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.662505211704203,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 11.593841204823553,
+    "kd": 9.499830585087311,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 1.3340446464604954,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 11.593841204823553,
+    "kd": 9.499830585087311,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 1.3340446464604954,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 6.0375,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15,
+    "actuator_feedback": 0.6499999999999999,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.1326951142114416,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.763748075308506,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.463753648192942,
+    "kd": 1.209576850631671,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": -0.048335899588658804,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.463753648192942,
+    "kd": 1.209576850631671,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": -0.048335899588658804,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.9129050514543535,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.3516641004113412,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.9129050514543535,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.3516641004113412,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.7920653024827065,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.8516641004113412,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.7920653024827065,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.8516641004113412,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 1.9051957715883994,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.33203915431767994,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 1.9051957715883994,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.33203915431767994,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.735293657382599,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.8320391543176799,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.735293657382599,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.8320391543176799,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.735,
+    "kd": 1.5731566172707194,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.042718872423573195,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.735,
+    "kd": 1.5731566172707194,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.042718872423573195,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 1.6423364193964893,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.018012529081172124,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 1.6423364193964893,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.018012529081172124,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 2.478361477558834,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.41801252908117226,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 2.478361477558834,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.41801252908117226,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 3.5233928002617643,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.9180125290811723,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 3.5233928002617643,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.9180125290811723,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 2.0603489484776616,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.15735003877489628,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 2.0603489484776616,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.15735003877489628,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 3.175049026027454,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.5573500387748962,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 4.568424122964695,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.0573500387748962,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 4.568424122964695,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.0573500387748962,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 2.194151961645755,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.12624659530863602,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 2.194151961645755,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.12624659530863602,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.0770608785992364,
+    "kd": 3.246645152263027,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.5262465953086362,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.0770608785992364,
+    "kd": 3.246645152263027,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.5262465953086362,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 4.562261640534617,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.0262465953086362,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 4.562261640534617,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.0262465953086362,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 5.877878128806207,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.2016621270781815,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 5.877878128806207,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.2016621270781815,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 4.287888626377083,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.662505211704203,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 4.287888626377083,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.662505211704203,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.3152192589205125,
+    "kd": 5.94415165563759,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.162505211704203,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.3152192589205125,
+    "kd": 5.94415165563759,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.162505211704203,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.926087703568205,
+    "kd": 3.62538341467288,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.48334028227227055,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.926087703568205,
+    "kd": 3.62538341467288,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.48334028227227055,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.637536481929421,
+    "kd": 4.882024079818456,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 0.7120595286139944,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.729227469882368,
+    "kd": 7.106143137046445,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.1120595286139943,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.729227469882368,
+    "kd": 7.106143137046445,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.1120595286139943,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 11.593841204823553,
+    "kd": 9.88629195858143,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.6120595286139943,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 11.593841204823553,
+    "kd": 9.88629195858143,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.6120595286139943,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 6.65,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.0,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 6.65,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "actuator_feedback": 1.0,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.463753648192942,
+    "kd": 1.2482229879810829,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.039580125514176556,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.463753648192942,
+    "kd": 1.2482229879810829,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.039580125514176556,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.9515511888037653,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.43958012551417647,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.9515511888037653,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.43958012551417647,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.8307114398321183,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.9395801255141765,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.8307114398321183,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.9395801255141765,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.735,
+    "kd": 1.3023674629530393,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.015048942897099682,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.735,
+    "kd": 1.3023674629530393,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.015048942897099682,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 1.9664457715883992,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.4150489428970998,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 1.9664457715883992,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.4150489428970998,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.796543657382599,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.9150489428970998,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.796543657382599,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.9150489428970998,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.735,
+    "kd": 1.6344066172707192,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.15339859052946636,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.735,
+    "kd": 1.6344066172707192,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.15339859052946636,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 2.5198443621178654,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.5533985905294663,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 2.5198443621178654,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.5533985905294663,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 1.7394111274347324,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.12251566135146508,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 1.7394111274347324,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.12251566135146508,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 2.575436185597077,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.5225156613514652,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 2.575436185597077,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.5225156613514652,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 3.6204675083000075,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.0225156613514654,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 3.6204675083000075,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.0225156613514654,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 2.157423656515905,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.2966875484686202,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 2.157423656515905,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.2966875484686202,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 3.2721237340656972,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.6966875484686201,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 3.2721237340656972,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.6966875484686201,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 2.575436185597077,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.47085943558577537,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 2.575436185597077,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.47085943558577537,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 2.348005005575717,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.25780824413579495,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 2.348005005575717,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.25780824413579495,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.0770608785992364,
+    "kd": 3.4004981961929888,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.6578082441357949,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.0770608785992364,
+    "kd": 3.4004981961929888,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.6578082441357949,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 4.7161146844645785,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.1578082441357949,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 4.7161146844645785,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.1578082441357949,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 2.874251600884353,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.47707765884772657,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 2.874251600884353,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.47707765884772657,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.0770608785992364,
+    "kd": 4.277575855040715,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.8770776588477265,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.0770608785992364,
+    "kd": 4.277575855040715,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.8770776588477265,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 6.031731172736169,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.3770776588477265,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 6.031731172736169,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.3770776588477265,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.926087703568205,
+    "kd": 3.206718844932694,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.42813151463025356,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.926087703568205,
+    "kd": 3.206718844932694,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.42813151463025356,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 4.5317292683411,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.8281315146302537,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 4.5317292683411,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.8281315146302537,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.3152192589205125,
+    "kd": 6.187992297601607,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.328131514630254,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.3152192589205125,
+    "kd": 6.187992297601607,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.328131514630254,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.926087703568205,
+    "kd": 3.869224056636897,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.704175352840338,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.926087703568205,
+    "kd": 3.869224056636897,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.704175352840338,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 5.635904621181438,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.104175352840338,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 5.635904621181438,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.104175352840338,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.3152192589205125,
+    "kd": 7.844255326862115,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.604175352840338,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.637536481929421,
+    "kd": 4.434440806852079,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.6425558080756195,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.637536481929421,
+    "kd": 4.434440806852079,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.6425558080756195,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.729227469882368,
+    "kd": 6.10253009977307,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.0425558080756194,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.729227469882368,
+    "kd": 6.10253009977307,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.0425558080756194,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.637536481929421,
+    "kd": 5.268485453312574,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.9900744107674928,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.637536481929421,
+    "kd": 5.268485453312574,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.9900744107674928,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.729227469882368,
+    "kd": 7.492604510540563,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.3900744107674927,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.729227469882368,
+    "kd": 7.492604510540563,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.3900744107674927,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 11.593841204823553,
+    "kd": 10.272753332075547,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.8900744107674927,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 11.593841204823553,
+    "kd": 10.272753332075547,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.8900744107674927,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 6.2124999999999995,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.9125000000000001,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 6.2124999999999995,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 0.9125000000000001,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 7.2625,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.35,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 7.2625,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.35,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 8.3125,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "actuator_feedback": 1.7875,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.9901973261531771,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.5274961506170119,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.7729227469882367,
+    "kd": 1.9901973261531771,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.5274961506170119,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.86935757718153,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.027496150617012,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.159384120482355,
+    "kd": 2.86935757718153,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.027496150617012,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.735,
+    "kd": 1.3636174629530393,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.09805873147651978,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.735,
+    "kd": 1.3636174629530393,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.09805873147651978,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 2.0276957715883994,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.4980587314765197,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 2.0276957715883994,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.4980587314765197,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.857793657382599,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.9980587314765197,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 2.857793657382599,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.9980587314765197,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.735,
+    "kd": 1.6956566172707193,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.2640783086353595,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 0.735,
+    "kd": 1.6956566172707193,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.2640783086353595,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 2.5810943621178657,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.6640783086353597,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.225,
+    "kd": 2.5810943621178657,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.6640783086353597,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 3.6878915431767987,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.1640783086353599,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8375000000000001,
+    "kd": 3.6878915431767987,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.1640783086353599,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 1.8364858354729756,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.22701879362175825,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 1.8364858354729756,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.22701879362175825,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 2.6725108936353204,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.6270187936217582,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 2.6725108936353204,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.6270187936217582,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 3.7175422163382503,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.1270187936217582,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 3.7175422163382503,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.1270187936217582,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 2.2544983645541476,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.43602505816234416,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 2.2544983645541476,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.43602505816234416,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 3.36919844210394,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.8360250581623443,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.9414941607648644,
+    "kd": 3.36919844210394,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.8360250581623443,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.9122412411472967,
+    "kd": 4.762573539041181,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.3360250581623445,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 2.6725108936353204,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.6450313227029301,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.1648964964589186,
+    "kd": 2.6725108936353204,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.6450313227029301,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 2.5018580495056786,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.3893698929629539,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 2.5018580495056786,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.3893698929629539,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.0770608785992364,
+    "kd": 3.554351240122951,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.789369892962954,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.0770608785992364,
+    "kd": 3.554351240122951,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.789369892962954,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 4.86996772839454,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.289369892962954,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.615591317898854,
+    "kd": 4.86996772839454,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.289369892962954,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 3.0281046448143147,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.652493190617272,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 3.0281046448143147,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.652493190617272,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.0770608785992364,
+    "kd": 4.431428898970677,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.0524931906172719,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.0770608785992364,
+    "kd": 4.431428898970677,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.0524931906172719,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 3.554351240122951,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.9156164882715898,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 3.554351240122951,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.9156164882715898,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 4.080597835431586,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.1787397859259077,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 1.8462365271595418,
+    "kd": 4.080597835431586,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.1787397859259077,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.926087703568205,
+    "kd": 3.450559486896711,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.5937578175563045,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.926087703568205,
+    "kd": 3.450559486896711,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.5937578175563045,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 4.7755699103051175,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.9937578175563044,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 4.7755699103051175,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.9937578175563044,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.3152192589205125,
+    "kd": 6.431832939565624,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.4937578175563044,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.3152192589205125,
+    "kd": 6.431832939565624,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.4937578175563044,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.926087703568205,
+    "kd": 4.113064698600914,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.9250104234084056,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 2.926087703568205,
+    "kd": 4.113064698600914,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.9250104234084056,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 5.879745263145455,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.325010423408406,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.876812839280341,
+    "kd": 5.879745263145455,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.325010423408406,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.3152192589205125,
+    "kd": 8.088095968826131,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.825010423408406,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.3152192589205125,
+    "kd": 8.088095968826131,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.825010423408406,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.637536481929421,
+    "kd": 4.820902180346197,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.8510669696907431,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.637536481929421,
+    "kd": 4.820902180346197,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 0.8510669696907431,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.729227469882368,
+    "kd": 6.488991473267188,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.2510669696907435,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.729227469882368,
+    "kd": 6.488991473267188,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.2510669696907435,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.637536481929421,
+    "kd": 5.654946826806693,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.2680892929209913,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.637536481929421,
+    "kd": 5.654946826806693,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.2680892929209913,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.729227469882368,
+    "kd": 7.879065884034681,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.6680892929209912,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.729227469882368,
+    "kd": 7.879065884034681,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.6680892929209912,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 11.593841204823553,
+    "kd": 10.659214705569665,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 2.168089292920991,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 11.593841204823553,
+    "kd": 10.659214705569665,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 2.168089292920991,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 4.637536481929421,
+    "kd": 6.488991473267188,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.6851116161512394,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 6.824999999999999,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.1749999999999998,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 6.824999999999999,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.1749999999999998,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 7.875,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.7000000000000002,
+    "observer_gain": 0.5,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 7.875,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 1.7000000000000002,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 8.925,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 2.225,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 7.35,
+    "kd": 9.974999999999998,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.3,
+    "actuator_feedback": 2.75,
+    "observer_gain": 1.0,
+    "family": "observer_augmented_PD"
+  },
+  {
+    "kp": 3.92661091703416,
+    "kd": 9.122633086768742,
+    "ki": 0.0001247058653211389,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2901155080315422,
+    "actuator_feedback": -0.08476993233033267,
+    "observer_gain": 0.45388674447290944,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 1.0327508907244771,
+    "kd": 2.077625118143589,
+    "ki": 0.0038624974948590555,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.10722501039887657,
+    "actuator_feedback": 0.8342722764315911,
+    "observer_gain": 0.3623346317871226,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 1.2104582658523297,
+    "kd": 1.8032269193472745,
+    "ki": 0.0032545752544174615,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.055674220485329315,
+    "actuator_feedback": 0.35617843306714486,
+    "observer_gain": 0.7465437552721406,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 0.5046678790137088,
+    "kd": 1.0245950592894544,
+    "ki": 0.004756037922906772,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05118750820748259,
+    "actuator_feedback": -0.11719797704256132,
+    "observer_gain": 0.8375639669282442,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 3.2695185477109243,
+    "kd": 3.835495214145336,
+    "ki": 0.01544621606457869,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.20904302724412044,
+    "actuator_feedback": 1.4486299840680958,
+    "observer_gain": 0.7969247242582578,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 2.2029223822582775,
+    "kd": 3.1018364201845863,
+    "ki": 0.0001647673919573775,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.10178690997158298,
+    "actuator_feedback": 1.9297757858435116,
+    "observer_gain": 0.37146347498490234,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 8.287433211097266,
+    "kd": 7.434402775657501,
+    "ki": 0.00015425290765059508,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.13224368761005556,
+    "actuator_feedback": 0.6377748230464153,
+    "observer_gain": 0.9848439323153123,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 5.990006666679351,
+    "kd": 3.8564087971079313,
+    "ki": 0.0004234156638865804,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.24463328005942614,
+    "actuator_feedback": 0.5132176352792497,
+    "observer_gain": 0.3728024415530025,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 1.459354843045455,
+    "kd": 2.103295378900726,
+    "ki": 0.0004294589773138459,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05733377948880457,
+    "actuator_feedback": 1.8405186222808714,
+    "observer_gain": 0.7459980886320376,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 8.002329599111384,
+    "kd": 9.46325447166065,
+    "ki": 0.03675720600519396,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.21234365646745051,
+    "actuator_feedback": 1.0449312711180074,
+    "observer_gain": 0.6543057904231648,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 2.26794911610385,
+    "kd": 2.5519986790042877,
+    "ki": 0.003341193921458195,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.08157356452437704,
+    "actuator_feedback": 1.0853215531588887,
+    "observer_gain": 0.6287064925633961,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 1.7445534199953778,
+    "kd": 1.8292311358581528,
+    "ki": 0.00047135806801849937,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.235792126041533,
+    "actuator_feedback": 1.012354779158733,
+    "observer_gain": 0.6353935461630916,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 11.089368755556224,
+    "kd": 3.5939789803897795,
+    "ki": 0.04401184641722711,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.27146703581897175,
+    "actuator_feedback": 0.0005901014230106361,
+    "observer_gain": 0.7154061643509851,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 2.472894133317189,
+    "kd": 1.9003357534492165,
+    "ki": 0.23193557101242734,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.27822525020740496,
+    "actuator_feedback": 0.16696307538520722,
+    "observer_gain": 0.4134807144812983,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 3.84701409735888,
+    "kd": 3.0102935272043916,
+    "ki": 0.010219821116065498,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1376062875448133,
+    "actuator_feedback": 1.3317059165342797,
+    "observer_gain": 0.6463037645698407,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 11.7745845836633,
+    "kd": 9.246903171559618,
+    "ki": 0.22307102560054565,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.18939150235534835,
+    "actuator_feedback": 0.9981512663690066,
+    "observer_gain": 0.8559200038898765,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 7.592017866117958,
+    "kd": 7.901057028006645,
+    "ki": 0.0002910260412862074,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.29183214132731133,
+    "actuator_feedback": 1.6680867628695948,
+    "observer_gain": 0.7634723690004093,
+    "family": "observer_augmented_PID"
+  },
+  {
+    "kp": 5.154606007748067,
+    "kd": 7.618096575887097,
+    "ki": 0.035634657152722994,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.13944920830459745,
+    "actuator_feedback": 1.8188413690947407,
+    "observer_gain": 0.933521283761382,
+    "family": "observer_augmented_PID"
+  }
+]

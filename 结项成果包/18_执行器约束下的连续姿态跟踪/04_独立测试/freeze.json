@@ -1,0 +1,133 @@
+{
+  "controllers": [
+    {
+      "name": "PID",
+      "family": "PID",
+      "parameters": {
+        "kp": 0.10647091545917937,
+        "kd": 1.1825415064102027,
+        "ki": 0.0
+      },
+      "metadata_path": "02_传统控制/PID.json",
+      "metadata_sha256": "cb60b3e396867afa0c7eda63243fe0f72d9cecbc2bc6ccaaba31d6bca8ec4ef5"
+    },
+    {
+      "name": "PID_feedforward_preview",
+      "family": "PID_feedforward_preview",
+      "parameters": {
+        "kp": 0.2649456852206539,
+        "kd": 0.6429328040149732,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "metadata_path": "02_传统控制/PID_feedforward_preview.json",
+      "metadata_sha256": "f3bed37ec65ea017a935745467854d72773b9e642b063135b87acf01a28ea342"
+    },
+    {
+      "name": "MPC_SLSQP",
+      "family": "MPC_SLSQP"
+    },
+    {
+      "name": "TD3_initial_development_only",
+      "family": "learned",
+      "algorithm": "TD3",
+      "seed": 18101,
+      "model_path": "03_训练记录/development/TD3/seed_18101/best.zip",
+      "model_sha256": "19e8574f0b5531ebbe8c8af482e31ada6d5215a2074ac04e9a0903d00649bb20",
+      "selected_steps": 0,
+      "parameters": {
+        "kp": 0.2649456852206539,
+        "kd": 0.6429328040149732,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "diagnostic": true
+    },
+    {
+      "name": "PPO_initial_development_only",
+      "family": "learned",
+      "algorithm": "PPO",
+      "seed": 18101,
+      "model_path": "03_训练记录/development/PPO/seed_18101/best.zip",
+      "model_sha256": "f7f465c387f99ff854f876e7ae209b6240a35dd2e4be01d424fa74b2a69dc1e3",
+      "selected_steps": 0,
+      "parameters": {
+        "kp": 0.2649456852206539,
+        "kd": 0.6429328040149732,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "diagnostic": true
+    },
+    {
+      "name": "PPO_symmetry_seed_111",
+      "family": "learned",
+      "algorithm": "PPO",
+      "seed": 111,
+      "revision": true,
+      "diagnostic": false,
+      "model_path": "03_追加训练/formal/PPO/seed_111/best.zip",
+      "model_sha256": "ba514d9f40ef47164e76ea4a6b42dae1c5798f859aa94a7f7b495a6934fd3aa5",
+      "selected_steps": 327680,
+      "parameters": {
+        "kp": 0.2649456852206539,
+        "kd": 0.6429328040149732,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "metadata_path": "03_追加训练/formal/PPO/seed_111/training_metadata.json",
+      "metadata_sha256": "a2b186d5abaa8e604f219ca5cb2dd96c92ed12b026d6a348f39698619117135d"
+    },
+    {
+      "name": "PPO_symmetry_seed_222",
+      "family": "learned",
+      "algorithm": "PPO",
+      "seed": 222,
+      "revision": true,
+      "diagnostic": false,
+      "model_path": "03_追加训练/formal/PPO/seed_222/best.zip",
+      "model_sha256": "fbb6c05fd5fcf4bb11efb0ff0bf5931cd822eb1255480f5f8f87d1068e1e3fcf",
+      "selected_steps": 32768,
+      "parameters": {
+        "kp": 0.2649456852206539,
+        "kd": 0.6429328040149732,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "metadata_path": "03_追加训练/formal/PPO/seed_222/training_metadata.json",
+      "metadata_sha256": "b0960b75c501cbaf877f821f254fa4805619349321e92f87035e314d305c0023"
+    },
+    {
+      "name": "PPO_symmetry_seed_333",
+      "family": "learned",
+      "algorithm": "PPO",
+      "seed": 333,
+      "revision": true,
+      "diagnostic": false,
+      "model_path": "03_追加训练/formal/PPO/seed_333/best.zip",
+      "model_sha256": "ffe72253e348e834ab2a9491d9fc322be7f342c46cb11cbb7abea1dbac44f260",
+      "selected_steps": 32768,
+      "parameters": {
+        "kp": 0.2649456852206539,
+        "kd": 0.6429328040149732,
+        "ki": 0.0,
+        "feedforward": 0.5,
+        "preview_s": 0.6
+      },
+      "metadata_path": "03_追加训练/formal/PPO/seed_333/training_metadata.json",
+      "metadata_sha256": "0f47b02835025a4eff8cbf8957174551b43177f0ea51863df5eb99049693aabe"
+    }
+  ],
+  "source_sha256": "a718ae748396661f5498ee0f8bc8c9956f70f9afb3a7b3dbd9921d98cda9216f",
+  "revision_sha256": "92f9ae3fd10b83192683237140dc527fa8e5024d5735921d692802cbb7aa64ed",
+  "declaration_sha256": "63d9a9b66238c6ec4216cf3ce3e582749993a4850a1691746d3b514aa714fe79",
+  "revision_declaration_sha256": "a5f38ee0b23ba22062afd67ef6000952c07daa1ea503a4d73118a29c5e849c7e",
+  "test_scenarios_sha256": "4bf4095d5524f86d8a3033631665894de8bf0724521c01e16ce386cc6790b3d0",
+  "formal_eligible": true,
+  "test_responses_used_for_selection": false
+}

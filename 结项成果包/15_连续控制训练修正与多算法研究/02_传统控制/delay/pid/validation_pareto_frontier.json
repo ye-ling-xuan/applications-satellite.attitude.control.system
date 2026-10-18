@@ -1,0 +1,2908 @@
+[
+  {
+    "parameters": {
+      "kp": 0.7745966692414836,
+      "kd": 1.2861172523459103,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_shortlist_00006",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12791467007840204,
+      "mean_penalized_selection_cost": 0.12791467007840204,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.12791467007840265,
+      "mean_rms_error_deg": 7.724730536434947,
+      "max_settling_time_s": 7.8500000000000005,
+      "mean_settling_time_success_only_s": 5.328776041666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7745966692414836,
+      "kd": 1.549193338482967,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_shortlist_00007",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.10934596764720772,
+      "mean_penalized_selection_cost": 0.10934596764720772,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.10934596764720772,
+      "mean_rms_error_deg": 7.961246176452278,
+      "max_settling_time_s": 6.65,
+      "mean_settling_time_success_only_s": 5.258854166666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.9937268977589416,
+      "kd": 1.549193338482967,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_shortlist_00010",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.15910089015916598,
+      "mean_penalized_selection_cost": 0.15910089015916598,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.15910089015916598,
+      "mean_rms_error_deg": 7.523916356526445,
+      "max_settling_time_s": 5.65,
+      "mean_settling_time_success_only_s": 4.000651041666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.2748481713671753,
+      "kd": 1.549193338482967,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_shortlist_00014",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.2306173305821102,
+      "mean_penalized_selection_cost": 0.2306173305821102,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.2306173305821102,
+      "mean_rms_error_deg": 7.270541509804501,
+      "max_settling_time_s": 6.7,
+      "mean_settling_time_success_only_s": 4.887760416666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.6354975030901115,
+      "kd": 1.8660818021236707,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_shortlist_00019",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.2752908906249719,
+      "mean_penalized_selection_cost": 0.2752908906249719,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.2752908906249719,
+      "mean_rms_error_deg": 7.1783616185962416,
+      "max_settling_time_s": 6.2,
+      "mean_settling_time_success_only_s": 4.167057291666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 2.0981730551846165,
+      "kd": 2.247789998649942,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_shortlist_00025",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.32504197696864107,
+      "mean_penalized_selection_cost": 0.32504197696864107,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.32504197696864107,
+      "mean_rms_error_deg": 7.123334731842731,
+      "max_settling_time_s": 7.0,
+      "mean_settling_time_success_only_s": 3.431119791666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5412840610947648,
+      "kd": 1.2256893424840145,
+      "ki": 0.0008755321117118408,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00002",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07235037695876201,
+      "mean_penalized_selection_cost": 0.07235037695876201,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07235037695876363,
+      "mean_rms_error_deg": 8.44455821064202,
+      "max_settling_time_s": 6.800000000000001,
+      "mean_settling_time_success_only_s": 5.6839843750000005
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.713675571206311,
+      "kd": 1.438325739582399,
+      "ki": 0.0011129974623103247,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00005",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.10231321392720376,
+      "mean_penalized_selection_cost": 0.10231321392720376,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.10231321392720376,
+      "mean_rms_error_deg": 8.015671993317072,
+      "max_settling_time_s": 6.3500000000000005,
+      "mean_settling_time_success_only_s": 5.197786458333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7742073260321736,
+      "kd": 1.3181789143622735,
+      "ki": 0.00072094590271149,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00016",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12509617202927228,
+      "mean_penalized_selection_cost": 0.12509617202927228,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.12509617202927237,
+      "mean_rms_error_deg": 7.7479090171685145,
+      "max_settling_time_s": 7.65,
+      "mean_settling_time_success_only_s": 4.899739583333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5622104132164373,
+      "kd": 1.1788244367393574,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00018",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07985569010306685,
+      "mean_penalized_selection_cost": 0.07985569010306685,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07985569010307005,
+      "mean_rms_error_deg": 8.288848783042813,
+      "max_settling_time_s": 6.9,
+      "mean_settling_time_success_only_s": 5.2445312500000005
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5164627459914447,
+      "kd": 1.1935492813098239,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00026",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06759653107331814,
+      "mean_penalized_selection_cost": 0.06759653107331814,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06759653107332224,
+      "mean_rms_error_deg": 8.537115548793482,
+      "max_settling_time_s": 6.9,
+      "mean_settling_time_success_only_s": 5.766536458333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5678515392065748,
+      "kd": 1.2521283332068318,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00029",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07759440419172496,
+      "mean_penalized_selection_cost": 0.07759440419172496,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07759440419172542,
+      "mean_rms_error_deg": 8.353692418658506,
+      "max_settling_time_s": 6.65,
+      "mean_settling_time_success_only_s": 5.533463541666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.741915360543574,
+      "kd": 1.3267554330785873,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00047",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.11623091479924974,
+      "mean_penalized_selection_cost": 0.11623091479924974,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.11623091479924985,
+      "mean_rms_error_deg": 7.830722320989895,
+      "max_settling_time_s": 6.65,
+      "mean_settling_time_success_only_s": 4.56953125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7647132763304437,
+      "kd": 1.4461334029980883,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00048",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.11335770821628509,
+      "mean_penalized_selection_cost": 0.11335770821628509,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1133577082162851,
+      "mean_rms_error_deg": 7.882582441211153,
+      "max_settling_time_s": 5.8500000000000005,
+      "mean_settling_time_success_only_s": 4.844921875000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6880653867427899,
+      "kd": 1.3144311687415418,
+      "ki": 0.0002842797148025517,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00055",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.10379151271877984,
+      "mean_penalized_selection_cost": 0.10379151271877984,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.10379151271878023,
+      "mean_rms_error_deg": 7.966621196403871,
+      "max_settling_time_s": 5.800000000000001,
+      "mean_settling_time_success_only_s": 4.817838541666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8939154876572456,
+      "kd": 1.4666879121152268,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00058",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.14249415571025212,
+      "mean_penalized_selection_cost": 0.14249415571025212,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.14249415571025212,
+      "mean_rms_error_deg": 7.6232268430160275,
+      "max_settling_time_s": 6.0,
+      "mean_settling_time_success_only_s": 4.193880208333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7992962791782801,
+      "kd": 1.6081809791957025,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00060",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.1113119113131112,
+      "mean_penalized_selection_cost": 0.1113119113131112,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1113119113131112,
+      "mean_rms_error_deg": 7.95646168524974,
+      "max_settling_time_s": 6.8500000000000005,
+      "mean_settling_time_success_only_s": 5.353125000000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5931694507673337,
+      "kd": 1.2045749276903281,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00063",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08654172370727418,
+      "mean_penalized_selection_cost": 0.08654172370727418,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.0865417237072778,
+      "mean_rms_error_deg": 8.184728051097807,
+      "max_settling_time_s": 7.050000000000001,
+      "mean_settling_time_success_only_s": 5.093229166666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8658558017045498,
+      "kd": 1.5001651831469138,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00068",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.13306882680823093,
+      "mean_penalized_selection_cost": 0.13306882680823093,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.13306882680823093,
+      "mean_rms_error_deg": 7.7004008462042295,
+      "max_settling_time_s": 5.4,
+      "mean_settling_time_success_only_s": 4.443619791666666
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6601235634875168,
+      "kd": 1.2844326097307617,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00074",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09874228658957974,
+      "mean_penalized_selection_cost": 0.09874228658957974,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09874228658958047,
+      "mean_rms_error_deg": 8.025648223346913,
+      "max_settling_time_s": 5.8500000000000005,
+      "mean_settling_time_success_only_s": 4.895442708333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.857415945256527,
+      "kd": 1.604767147985539,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00076",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12391414397699847,
+      "mean_penalized_selection_cost": 0.12391414397699847,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.12391414397699847,
+      "mean_rms_error_deg": 7.809461330532042,
+      "max_settling_time_s": 6.300000000000001,
+      "mean_settling_time_success_only_s": 4.954166666666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7489748121399377,
+      "kd": 1.2689546018619493,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00077",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12266349463981514,
+      "mean_penalized_selection_cost": 0.12266349463981514,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.12266349463981573,
+      "mean_rms_error_deg": 7.768129468590369,
+      "max_settling_time_s": 7.9,
+      "mean_settling_time_success_only_s": 5.347786458333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8196324027551597,
+      "kd": 1.4307162602364807,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00082",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12736090875967507,
+      "mean_penalized_selection_cost": 0.12736090875967507,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.12736090875967507,
+      "mean_rms_error_deg": 7.739196175635914,
+      "max_settling_time_s": 5.4,
+      "mean_settling_time_success_only_s": 4.43828125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.9245961106109909,
+      "kd": 1.3939607336356488,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00083",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.15711205758506627,
+      "mean_penalized_selection_cost": 0.15711205758506627,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.15711205758506633,
+      "mean_rms_error_deg": 7.530812661622647,
+      "max_settling_time_s": 7.4,
+      "mean_settling_time_success_only_s": 5.108072916666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7742988655581458,
+      "kd": 1.3196349558353309,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00084",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12496962107845166,
+      "mean_penalized_selection_cost": 0.12496962107845166,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.12496962107845178,
+      "mean_rms_error_deg": 7.749500517278068,
+      "max_settling_time_s": 7.6000000000000005,
+      "mean_settling_time_success_only_s": 4.839322916666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.856739131112545,
+      "kd": 1.6039916742960947,
+      "ki": 0.00021537841756474703,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00085",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12381814347808373,
+      "mean_penalized_selection_cost": 0.12381814347808373,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.12381814347808373,
+      "mean_rms_error_deg": 7.809771032599635,
+      "max_settling_time_s": 6.300000000000001,
+      "mean_settling_time_success_only_s": 4.95703125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6363679859613165,
+      "kd": 1.2613445166482973,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00090",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09422000423933519,
+      "mean_penalized_selection_cost": 0.09422000423933519,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09422000423933631,
+      "mean_rms_error_deg": 8.082751579718753,
+      "max_settling_time_s": 5.95,
+      "mean_settling_time_success_only_s": 4.977994791666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.955523900236517,
+      "kd": 1.3161208987597657,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00096",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.17461850452156782,
+      "mean_penalized_selection_cost": 0.17461850452156782,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.17461850452156844,
+      "mean_rms_error_deg": 7.4598148677334395,
+      "max_settling_time_s": 7.5,
+      "mean_settling_time_success_only_s": 5.587760416666668
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.0780584933970159,
+      "kd": 1.3768663856960235,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00114",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.20137397444852725,
+      "mean_penalized_selection_cost": 0.20137397444852725,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.20137397444852756,
+      "mean_rms_error_deg": 7.363004139292017,
+      "max_settling_time_s": 7.15,
+      "mean_settling_time_success_only_s": 5.39140625
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1771936926658702,
+      "kd": 1.4521305950575993,
+      "ki": 0.003145581368263198,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00121",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.21838269928813306,
+      "mean_penalized_selection_cost": 0.21838269928813306,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.21838269928813311,
+      "mean_rms_error_deg": 7.309821488601597,
+      "max_settling_time_s": 6.95,
+      "mean_settling_time_success_only_s": 5.166015625
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8608289582686978,
+      "kd": 1.2600304675086402,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00122",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.15434629461324267,
+      "mean_penalized_selection_cost": 0.15434629461324267,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.15434629461324434,
+      "mean_rms_error_deg": 7.559307626203406,
+      "max_settling_time_s": 7.800000000000001,
+      "mean_settling_time_success_only_s": 5.772395833333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8103571878747646,
+      "kd": 1.2921611860559055,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00123",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.13690448718904655,
+      "mean_penalized_selection_cost": 0.13690448718904655,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.13690448718904757,
+      "mean_rms_error_deg": 7.658238612004709,
+      "max_settling_time_s": 7.800000000000001,
+      "mean_settling_time_success_only_s": 5.474739583333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1307759255935756,
+      "kd": 1.544959152757444,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00125",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.1932439215915669,
+      "mean_penalized_selection_cost": 0.1932439215915669,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1932439215915669,
+      "mean_rms_error_deg": 7.370496210778775,
+      "max_settling_time_s": 6.8500000000000005,
+      "mean_settling_time_success_only_s": 4.716145833333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1763434444755514,
+      "kd": 1.6402669917376476,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00126",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.19349212366038457,
+      "mean_penalized_selection_cost": 0.19349212366038457,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.19349212366038457,
+      "mean_rms_error_deg": 7.3699185767792095,
+      "max_settling_time_s": 6.550000000000001,
+      "mean_settling_time_success_only_s": 3.9539062500000006
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.0316272662276578,
+      "kd": 1.418262359678671,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00128",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.1828434518744478,
+      "mean_penalized_selection_cost": 0.1828434518744478,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.18284345187444787,
+      "mean_rms_error_deg": 7.414722717059013,
+      "max_settling_time_s": 7.2,
+      "mean_settling_time_success_only_s": 5.202473958333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8333528746918278,
+      "kd": 1.3413491073928698,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00130",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.138361020586835,
+      "mean_penalized_selection_cost": 0.138361020586835,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.13836102058683528,
+      "mean_rms_error_deg": 7.646608418802445,
+      "max_settling_time_s": 7.6000000000000005,
+      "mean_settling_time_success_only_s": 5.102864583333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.091799766938819,
+      "kd": 1.6232693787642922,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00131",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.17512658358446662,
+      "mean_penalized_selection_cost": 0.17512658358446662,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.17512658358446662,
+      "mean_rms_error_deg": 7.4459036439128825,
+      "max_settling_time_s": 6.2,
+      "mean_settling_time_success_only_s": 3.8347656250000006
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.175193193707009,
+      "kd": 1.6631118746840494,
+      "ki": 0.000858886929395852,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00133",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.1907075799750502,
+      "mean_penalized_selection_cost": 0.1907075799750502,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1907075799750502,
+      "mean_rms_error_deg": 7.381016077538159,
+      "max_settling_time_s": 6.4,
+      "mean_settling_time_success_only_s": 3.745052083333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.0401179925894803,
+      "kd": 1.5980484992530093,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00134",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.16549167476327356,
+      "mean_penalized_selection_cost": 0.16549167476327356,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.16549167476327356,
+      "mean_rms_error_deg": 7.492552721929184,
+      "max_settling_time_s": 4.9,
+      "mean_settling_time_success_only_s": 3.9533854166666664
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.0704334094316978,
+      "kd": 1.5614588444990025,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00135",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.17633997333097384,
+      "mean_penalized_selection_cost": 0.17633997333097384,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.17633997333097384,
+      "mean_rms_error_deg": 7.437036671475467,
+      "max_settling_time_s": 6.75,
+      "mean_settling_time_success_only_s": 4.134895833333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.9184908642828951,
+      "kd": 1.5068165925116441,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00140",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.14495169140533415,
+      "mean_penalized_selection_cost": 0.14495169140533415,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.14495169140533415,
+      "mean_rms_error_deg": 7.609920296620096,
+      "max_settling_time_s": 5.15,
+      "mean_settling_time_success_only_s": 4.195182291666668
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.9754633253916017,
+      "kd": 1.604214325588613,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00143",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.15009278332493797,
+      "mean_penalized_selection_cost": 0.15009278332493797,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.15009278332493797,
+      "mean_rms_error_deg": 7.58704147287892,
+      "max_settling_time_s": 5.25,
+      "mean_settling_time_success_only_s": 4.2777343750000005
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.4231613469133295,
+      "kd": 1.9476025556736116,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00146",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.21657059235321763,
+      "mean_penalized_selection_cost": 0.21657059235321763,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.21657059235321763,
+      "mean_rms_error_deg": 7.311885151818902,
+      "max_settling_time_s": 5.3500000000000005,
+      "mean_settling_time_success_only_s": 3.7957031250000006
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.2145193350569858,
+      "kd": 1.638188659830923,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00147",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.20302751278049022,
+      "mean_penalized_selection_cost": 0.20302751278049022,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.20302751278049022,
+      "mean_rms_error_deg": 7.337093039023162,
+      "max_settling_time_s": 6.6000000000000005,
+      "mean_settling_time_success_only_s": 4.285026041666668
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.194768767002004,
+      "kd": 1.7777639635014642,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00148",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.1836662428878609,
+      "mean_penalized_selection_cost": 0.1836662428878609,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1836662428878609,
+      "mean_rms_error_deg": 7.420911767189879,
+      "max_settling_time_s": 5.25,
+      "mean_settling_time_success_only_s": 3.9772135416666665
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.121008840008111,
+      "kd": 1.7584562809748765,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00149",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.16926787859460787,
+      "mean_penalized_selection_cost": 0.16926787859460787,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.16926787859460787,
+      "mean_rms_error_deg": 7.491527355735715,
+      "max_settling_time_s": 5.550000000000001,
+      "mean_settling_time_success_only_s": 4.217447916666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.7043416364758004,
+      "kd": 1.7890721127150515,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00150",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.3055822989781936,
+      "mean_penalized_selection_cost": 0.3055822989781936,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.3055822989781936,
+      "mean_rms_error_deg": 7.150797696125832,
+      "max_settling_time_s": 6.800000000000001,
+      "mean_settling_time_success_only_s": 4.536718750000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.104100277012696,
+      "kd": 1.5564804068887959,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00153",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.18516150443372958,
+      "mean_penalized_selection_cost": 0.18516150443372958,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.18516150443372958,
+      "mean_rms_error_deg": 7.400035645344499,
+      "max_settling_time_s": 6.8500000000000005,
+      "mean_settling_time_success_only_s": 4.485807291666666
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.5728660141962874,
+      "kd": 2.087754623928749,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00154",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.2336693968856022,
+      "mean_penalized_selection_cost": 0.2336693968856022,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.2336693968856022,
+      "mean_rms_error_deg": 7.273711130223105,
+      "max_settling_time_s": 5.4,
+      "mean_settling_time_success_only_s": 3.8234375000000003
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.5652548268540831,
+      "kd": 2.1196586753400863,
+      "ki": 0.0006082067238942562,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00157",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.2289166364024081,
+      "mean_penalized_selection_cost": 0.2289166364024081,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.2289166364024081,
+      "mean_rms_error_deg": 7.291036108254779,
+      "max_settling_time_s": 5.4,
+      "mean_settling_time_success_only_s": 3.933072916666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.6234115071835982,
+      "kd": 1.8979631090526812,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00160",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.2677435763940154,
+      "mean_penalized_selection_cost": 0.2677435763940154,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.2677435763940154,
+      "mean_rms_error_deg": 7.189328068781791,
+      "max_settling_time_s": 6.0,
+      "mean_settling_time_success_only_s": 3.9420572916666665
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.6468772906153126,
+      "kd": 2.0961120439046583,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00161",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.24808170131034038,
+      "mean_penalized_selection_cost": 0.24808170131034038,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.24808170131034038,
+      "mean_rms_error_deg": 7.236690417546029,
+      "max_settling_time_s": 5.45,
+      "mean_settling_time_success_only_s": 3.667578125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.102868129336576,
+      "kd": 1.4948371098805995,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00168",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.19217948723586775,
+      "mean_penalized_selection_cost": 0.19217948723586775,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.19217948723586775,
+      "mean_rms_error_deg": 7.376222563257524,
+      "max_settling_time_s": 7.0,
+      "mean_settling_time_success_only_s": 4.938932291666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1553078539037527,
+      "kd": 1.4681873417349247,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00172",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.20984239024828333,
+      "mean_penalized_selection_cost": 0.20984239024828333,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.20984239024828333,
+      "mean_rms_error_deg": 7.326855120926591,
+      "max_settling_time_s": 6.95,
+      "mean_settling_time_success_only_s": 5.1078125000000005
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8541112691534436,
+      "kd": 1.2672549263762654,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00177",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.15161041672605852,
+      "mean_penalized_selection_cost": 0.15161041672605852,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.15161041672606002,
+      "mean_rms_error_deg": 7.5721754312534815,
+      "max_settling_time_s": 7.800000000000001,
+      "mean_settling_time_success_only_s": 5.726171875000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.3836850925471154,
+      "kd": 1.696417137982968,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00179",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.23757996863492084,
+      "mean_penalized_selection_cost": 0.23757996863492084,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.23757996863492084,
+      "mean_rms_error_deg": 7.246773580987629,
+      "max_settling_time_s": 6.45,
+      "mean_settling_time_success_only_s": 4.4378906250000005
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.9458734188564917,
+      "kd": 1.3210517149482244,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00180",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.17125531023217344,
+      "mean_penalized_selection_cost": 0.17125531023217344,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1712553102321738,
+      "mean_rms_error_deg": 7.472129461799784,
+      "max_settling_time_s": 7.5,
+      "mean_settling_time_success_only_s": 5.558203125000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.0114074914362017,
+      "kd": 1.5955803199347485,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00184",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.15903237417984614,
+      "mean_penalized_selection_cost": 0.15903237417984614,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.15903237417984614,
+      "mean_rms_error_deg": 7.528802781850245,
+      "max_settling_time_s": 5.0,
+      "mean_settling_time_success_only_s": 4.067317708333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.9305846808120489,
+      "kd": 1.3357360768236355,
+      "ki": 0.00029924603094533606,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00187",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.16517813796451863,
+      "mean_penalized_selection_cost": 0.16517813796451863,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.16517813796451883,
+      "mean_rms_error_deg": 7.495923583001883,
+      "max_settling_time_s": 7.550000000000001,
+      "mean_settling_time_success_only_s": 5.477213541666668
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8826902519409364,
+      "kd": 1.3661403069800195,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00189",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.1489524843657409,
+      "mean_penalized_selection_cost": 0.1489524843657409,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.14895248436574107,
+      "mean_rms_error_deg": 7.577802538821687,
+      "max_settling_time_s": 7.5,
+      "mean_settling_time_success_only_s": 5.148958333333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6636821989248513,
+      "kd": 1.3075005593396738,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine1_00191",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09819985050608156,
+      "mean_penalized_selection_cost": 0.09819985050608156,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09819985050608189,
+      "mean_rms_error_deg": 8.037904989894402,
+      "max_settling_time_s": 5.95,
+      "mean_settling_time_success_only_s": 4.9619791666666675
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.45900130023553354,
+      "kd": 1.1643753398959562,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00009",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.055190296159810935,
+      "mean_penalized_selection_cost": 0.055190296159810935,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.0551902961598161,
+      "mean_rms_error_deg": 8.844561061621123,
+      "max_settling_time_s": 7.6000000000000005,
+      "mean_settling_time_success_only_s": 6.303906250000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5205366356693836,
+      "kd": 1.1731381936418048,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00016",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06949680079577274,
+      "mean_penalized_selection_cost": 0.06949680079577274,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06949680079577499,
+      "mean_rms_error_deg": 8.48698226325611,
+      "max_settling_time_s": 6.7,
+      "mean_settling_time_success_only_s": 5.617708333333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5498800070389875,
+      "kd": 1.1871007464580574,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00021",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07624449582982012,
+      "mean_penalized_selection_cost": 0.07624449582982012,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07624449582982044,
+      "mean_rms_error_deg": 8.356398254224546,
+      "max_settling_time_s": 6.45,
+      "mean_settling_time_success_only_s": 5.391536458333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6273791575520998,
+      "kd": 1.2729224106874923,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00023",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09129391910903295,
+      "mean_penalized_selection_cost": 0.09129391910903295,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09129391910903335,
+      "mean_rms_error_deg": 8.128094704458732,
+      "max_settling_time_s": 6.1000000000000005,
+      "mean_settling_time_success_only_s": 5.097135416666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5705832432846688,
+      "kd": 1.229042719854258,
+      "ki": 0.0012384360771889845,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00026",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07950217045422356,
+      "mean_penalized_selection_cost": 0.07950217045422356,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07950217045422366,
+      "mean_rms_error_deg": 8.30664727124563,
+      "max_settling_time_s": 6.45,
+      "mean_settling_time_success_only_s": 5.409375
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5713672130977852,
+      "kd": 1.23827727589662,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00030",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07914334041676256,
+      "mean_penalized_selection_cost": 0.07914334041676256,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07914334041676269,
+      "mean_rms_error_deg": 8.319529603973441,
+      "max_settling_time_s": 6.5,
+      "mean_settling_time_success_only_s": 5.430208333333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5881203678114101,
+      "kd": 1.214513786121339,
+      "ki": 0.0012370162081072522,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00044",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08475782959300714,
+      "mean_penalized_selection_cost": 0.08475782959300714,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.084757829593009,
+      "mean_rms_error_deg": 8.213106539036657,
+      "max_settling_time_s": 7.6000000000000005,
+      "mean_settling_time_success_only_s": 5.216666666666668
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5063934040936275,
+      "kd": 1.1775120668206298,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00048",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06582304804358467,
+      "mean_penalized_selection_cost": 0.06582304804358467,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06582304804359064,
+      "mean_rms_error_deg": 8.570796272840587,
+      "max_settling_time_s": 6.95,
+      "mean_settling_time_success_only_s": 5.793229166666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5105455348856575,
+      "kd": 1.1737275120046708,
+      "ki": 0.00014057041104257106,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00049",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06701308737619599,
+      "mean_penalized_selection_cost": 0.06701308737619599,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.0670130873762009,
+      "mean_rms_error_deg": 8.541287743410832,
+      "max_settling_time_s": 6.8500000000000005,
+      "mean_settling_time_success_only_s": 5.730338541666666
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5238054263456389,
+      "kd": 1.1733806517770236,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00052",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07030269274723357,
+      "mean_penalized_selection_cost": 0.07030269274723357,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07030269274723516,
+      "mean_rms_error_deg": 8.469970538079274,
+      "max_settling_time_s": 6.65,
+      "mean_settling_time_success_only_s": 5.58515625
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.4813084457531064,
+      "kd": 1.1180422849755454,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00054",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06219568359148439,
+      "mean_penalized_selection_cost": 0.06219568359148439,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.062195683591498095,
+      "mean_rms_error_deg": 8.632633245264339,
+      "max_settling_time_s": 6.8500000000000005,
+      "mean_settling_time_success_only_s": 5.769791666666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.4818580508742058,
+      "kd": 1.1977620667471924,
+      "ki": 0.0005689056467700652,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00055",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.0592570419022278,
+      "mean_penalized_selection_cost": 0.0592570419022278,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05925704190223049,
+      "mean_rms_error_deg": 8.743760775255662,
+      "max_settling_time_s": 7.5,
+      "mean_settling_time_success_only_s": 6.215755208333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.4886943196691421,
+      "kd": 1.126348298030562,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00058",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06365142526592595,
+      "mean_penalized_selection_cost": 0.06365142526592595,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06365142526593531,
+      "mean_rms_error_deg": 8.600804826660108,
+      "max_settling_time_s": 6.800000000000001,
+      "mean_settling_time_success_only_s": 5.727864583333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.48542500434775776,
+      "kd": 1.1034875106605748,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00068",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06384506341683811,
+      "mean_penalized_selection_cost": 0.06384506341683811,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06384506341684416,
+      "mean_rms_error_deg": 8.588334984226519,
+      "max_settling_time_s": 6.7,
+      "mean_settling_time_success_only_s": 5.652604166666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.538660160988341,
+      "kd": 1.2033201309569599,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00070",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07265417552461537,
+      "mean_penalized_selection_cost": 0.07265417552461537,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07265417552461655,
+      "mean_rms_error_deg": 8.432524963396464,
+      "max_settling_time_s": 6.65,
+      "mean_settling_time_success_only_s": 5.579296875
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5700132298293595,
+      "kd": 1.1649788899455245,
+      "ki": 0.0008363965288722011,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00073",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08276185142636637,
+      "mean_penalized_selection_cost": 0.08276185142636637,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08276185142637665,
+      "mean_rms_error_deg": 8.235701755166582,
+      "max_settling_time_s": 7.9,
+      "mean_settling_time_success_only_s": 5.3328125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5357775794643539,
+      "kd": 1.150684343845718,
+      "ki": 0.0009391130287692074,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00074",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07455368395625984,
+      "mean_penalized_selection_cost": 0.07455368395625984,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07455368395626281,
+      "mean_rms_error_deg": 8.376075812569667,
+      "max_settling_time_s": 8.0,
+      "mean_settling_time_success_only_s": 5.441536458333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.529781394547218,
+      "kd": 1.1543844336299667,
+      "ki": 0.0009688135548304378,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00077",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07281544682338574,
+      "mean_penalized_selection_cost": 0.07281544682338574,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.0728154468233867,
+      "mean_rms_error_deg": 8.410343352193452,
+      "max_settling_time_s": 7.9,
+      "mean_settling_time_success_only_s": 5.475781250000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.4697496002183226,
+      "kd": 1.169684254868955,
+      "ki": 0.0010969180127520543,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00080",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.057537589807766576,
+      "mean_penalized_selection_cost": 0.057537589807766576,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05753758980777309,
+      "mean_rms_error_deg": 8.77352711729675,
+      "max_settling_time_s": 7.45,
+      "mean_settling_time_success_only_s": 6.218098958333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5220406459780901,
+      "kd": 1.1964999404838146,
+      "ki": 0.0009279308500366793,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00082",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06890751225085226,
+      "mean_penalized_selection_cost": 0.06890751225085226,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06890751225085563,
+      "mean_rms_error_deg": 8.505701174339642,
+      "max_settling_time_s": 6.8500000000000005,
+      "mean_settling_time_success_only_s": 5.737369791666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5645484961493322,
+      "kd": 1.2229970492005324,
+      "ki": 0.0008545084638088254,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00091",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07824608639173362,
+      "mean_penalized_selection_cost": 0.07824608639173362,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07824608639173374,
+      "mean_rms_error_deg": 8.328305326853261,
+      "max_settling_time_s": 6.5,
+      "mean_settling_time_success_only_s": 5.433854166666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.479028602727258,
+      "kd": 1.1467450714337835,
+      "ki": 0.0007811815020730491,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00092",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06054250940424103,
+      "mean_penalized_selection_cost": 0.06054250940424103,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.060542509404257004,
+      "mean_rms_error_deg": 8.682837381854673,
+      "max_settling_time_s": 7.1000000000000005,
+      "mean_settling_time_success_only_s": 5.961588541666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5643324811172581,
+      "kd": 1.229650749063506,
+      "ki": 0.0009300945444077129,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00095",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07786881311534312,
+      "mean_penalized_selection_cost": 0.07786881311534312,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07786881311534334,
+      "mean_rms_error_deg": 8.33733622212476,
+      "max_settling_time_s": 6.550000000000001,
+      "mean_settling_time_success_only_s": 5.470182291666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6503800287940622,
+      "kd": 1.3401661899966506,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00105",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09311021191329062,
+      "mean_penalized_selection_cost": 0.09311021191329062,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09311021191329062,
+      "mean_rms_error_deg": 8.12016512127728,
+      "max_settling_time_s": 6.300000000000001,
+      "mean_settling_time_success_only_s": 5.219661458333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5777548179456738,
+      "kd": 1.2038764339837003,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00120",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08255671493791483,
+      "mean_penalized_selection_cost": 0.08255671493791483,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08255671493791651,
+      "mean_rms_error_deg": 8.249037966541477,
+      "max_settling_time_s": 6.2,
+      "mean_settling_time_success_only_s": 5.212760416666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5689946429545967,
+      "kd": 1.226409504530651,
+      "ki": 0.001003062856815426,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00127",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07921446524828162,
+      "mean_penalized_selection_cost": 0.07921446524828162,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07921446524828168,
+      "mean_rms_error_deg": 8.31145214205192,
+      "max_settling_time_s": 6.45,
+      "mean_settling_time_success_only_s": 5.4085937500000005
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6686825915992268,
+      "kd": 1.3326472940811083,
+      "ki": 0.0010045738221334168,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00128",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09795482033524801,
+      "mean_penalized_selection_cost": 0.09795482033524801,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09795482033524812,
+      "mean_rms_error_deg": 8.045389035918715,
+      "max_settling_time_s": 6.050000000000001,
+      "mean_settling_time_success_only_s": 5.046484375
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6137700268250371,
+      "kd": 1.2634844331818698,
+      "ki": 0.001036604980448291,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00133",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.0885171258573111,
+      "mean_penalized_selection_cost": 0.0885171258573111,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08851712585731146,
+      "mean_rms_error_deg": 8.165996558792395,
+      "max_settling_time_s": 6.2,
+      "mean_settling_time_success_only_s": 5.179817708333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6177052349543658,
+      "kd": 1.2521148568302944,
+      "ki": 0.0010440829224015204,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00136",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09014427578631218,
+      "mean_penalized_selection_cost": 0.09014427578631218,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09014427578631314,
+      "mean_rms_error_deg": 8.138202100303053,
+      "max_settling_time_s": 6.95,
+      "mean_settling_time_success_only_s": 5.099739583333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5752446056449965,
+      "kd": 1.205681575195133,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00138",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08180912775700196,
+      "mean_penalized_selection_cost": 0.08180912775700196,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08180912775700315,
+      "mean_rms_error_deg": 8.26217207969898,
+      "max_settling_time_s": 6.25,
+      "mean_settling_time_success_only_s": 5.242708333333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5907169204544467,
+      "kd": 1.2283690833574685,
+      "ki": 0.0009840134360065964,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00141",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08463829581709459,
+      "mean_penalized_selection_cost": 0.08463829581709459,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08463829581709541,
+      "mean_rms_error_deg": 8.218810920210654,
+      "max_settling_time_s": 6.25,
+      "mean_settling_time_success_only_s": 5.2203125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5944153029778423,
+      "kd": 1.1755796804682184,
+      "ki": 0.0010569228990639896,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00142",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08869304668695104,
+      "mean_penalized_selection_cost": 0.08869304668695104,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08869304668696239,
+      "mean_rms_error_deg": 8.145924064327511,
+      "max_settling_time_s": 7.95,
+      "mean_settling_time_success_only_s": 5.366927083333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5978775821102111,
+      "kd": 1.2034139354697695,
+      "ki": 0.0012446798673452673,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00145",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08793922723229208,
+      "mean_penalized_selection_cost": 0.08793922723229208,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08793922723229693,
+      "mean_rms_error_deg": 8.16123757483166,
+      "max_settling_time_s": 7.800000000000001,
+      "mean_settling_time_success_only_s": 5.208723958333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5326417472413494,
+      "kd": 1.1683474588329117,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00150",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07278097369995695,
+      "mean_penalized_selection_cost": 0.07278097369995695,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07278097369995734,
+      "mean_rms_error_deg": 8.417604195328465,
+      "max_settling_time_s": 6.5,
+      "mean_settling_time_success_only_s": 5.470442708333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6336548623625425,
+      "kd": 1.2280709429772187,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00156",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09560052586046015,
+      "mean_penalized_selection_cost": 0.09560052586046015,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09560052586046323,
+      "mean_rms_error_deg": 8.057623663989377,
+      "max_settling_time_s": 7.15,
+      "mean_settling_time_success_only_s": 4.926692708333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5779029745522883,
+      "kd": 1.234446621284496,
+      "ki": 0.0012936998512328485,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00159",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.0810789870938348,
+      "mean_penalized_selection_cost": 0.0810789870938348,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08107898709383493,
+      "mean_rms_error_deg": 8.280226234625225,
+      "max_settling_time_s": 6.4,
+      "mean_settling_time_success_only_s": 5.367447916666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6150168695724119,
+      "kd": 1.2011287973269602,
+      "ki": 0.0012747488979383643,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00163",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09255657535321597,
+      "mean_penalized_selection_cost": 0.09255657535321597,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09255657535322248,
+      "mean_rms_error_deg": 8.093991216464069,
+      "max_settling_time_s": 7.800000000000001,
+      "mean_settling_time_success_only_s": 5.254947916666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5356452843875086,
+      "kd": 1.203354927930272,
+      "ki": 0.000572067349330658,
+      "integral_limit": 2.0,
+      "family": "PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00169",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07194546498188133,
+      "mean_penalized_selection_cost": 0.07194546498188133,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07194546498188296,
+      "mean_rms_error_deg": 8.445049611881648,
+      "max_settling_time_s": 6.7,
+      "mean_settling_time_success_only_s": 5.620312500000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.569735416903062,
+      "kd": 1.2046652313886348,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00171",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08044204508224252,
+      "mean_penalized_selection_cost": 0.08044204508224252,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08044204508224327,
+      "mean_rms_error_deg": 8.285523233727409,
+      "max_settling_time_s": 6.300000000000001,
+      "mean_settling_time_success_only_s": 5.287239583333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.4917509290063912,
+      "kd": 1.2272220822268576,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00178",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06042532029290613,
+      "mean_penalized_selection_cost": 0.06042532029290613,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.060425320292906766,
+      "mean_rms_error_deg": 8.732520911621835,
+      "max_settling_time_s": 7.550000000000001,
+      "mean_settling_time_success_only_s": 6.249348958333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6030675094179669,
+      "kd": 1.202635105639759,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00180",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08924375003312886,
+      "mean_penalized_selection_cost": 0.08924375003312886,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.0892437500331339,
+      "mean_rms_error_deg": 8.143281538408527,
+      "max_settling_time_s": 7.25,
+      "mean_settling_time_success_only_s": 5.045833333333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5369248487803048,
+      "kd": 1.1634965055890711,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00185",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07412049589154145,
+      "mean_penalized_selection_cost": 0.07412049589154145,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07412049589154228,
+      "mean_rms_error_deg": 8.389894470284537,
+      "max_settling_time_s": 6.45,
+      "mean_settling_time_success_only_s": 5.407552083333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5201774003631179,
+      "kd": 1.1861408777617843,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "family": "PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_pid_refine2_00190",
+      "kind": "delay",
+      "family": "pid",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06882617270394119,
+      "mean_penalized_selection_cost": 0.06882617270394119,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06882617270394442,
+      "mean_rms_error_deg": 8.506588756859179,
+      "max_settling_time_s": 6.800000000000001,
+      "mean_settling_time_success_only_s": 5.6872395833333345
+    }
+  }
+]

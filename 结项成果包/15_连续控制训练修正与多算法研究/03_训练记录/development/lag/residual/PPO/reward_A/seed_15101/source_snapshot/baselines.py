@@ -1,0 +1,489 @@
+"""Measured-state traditional controllers and non-test-only parameter search.
+
+The ordinary controller consumes ``[-theta, omega]`` in radians and rad/s,
+and returns physical torque.  Model compensation uses only these measurements,
+the controller's own commands, and a single nominal parameter shared by all
+episodes.  Neither controller accepts the actual actuator state or true lag.
+"""
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import time
+from pathlib import Path
+
+import numpy as np
+
+from .protocol import DT, INERTIA, KINDS, LIMIT, STUDY, scenes, sha256, write_json
+
+OUTPUT = STUDY / "02_传统控制"
+SEARCH_SEED = 2026101815204
+
+
+def _observations(observation):
+    value = np.asarray(observation, dtype=float)
+    if value.ndim != 2 or value.shape[1] != 2 or not np.all(np.isfinite(value)):
+        raise ValueError("observation must be a finite (n, 2) array [-theta, omega]")
+    return value
+
+
+class PIDController:
+    """PID with rate feedback and conditional integration after final clipping.
+
+    ``propose`` is side-effect free.  A residual controller must call ``commit``
+    with the final *total* raw torque and clipped command, so its integration
+    decision uses the same saturation rule as the standalone PID.
+    """
+
+    def __init__(self, parameters):
+        self.parameters = dict(parameters)
+        self.integral = np.zeros(0, dtype=float)
+        self.gains = {}
+
+    def _expand(self, key, n, default=0.):
+        candidates = getattr(self, "_candidate_parameters", None)
+        if candidates is not None:
+            if n % len(candidates):
+                raise ValueError("candidate-major batch has indivisible scene count")
+            values = np.asarray([candidate.get(key, default) for candidate in candidates], float)
+            return np.repeat(values, n // len(candidates))
+        value = np.asarray(self.parameters.get(key, default), float)
+        return np.broadcast_to(value, (n,)).copy()
+
+    def reset(self, n, initial_observation=None):
+        n = int(n)
+        if n < 1:
+            raise ValueError("controller batch must be positive")
+        self.gains = {key: self._expand(key, n) for key in ("kp", "ki", "kd")}
+        self.integral_limit = self._expand("integral_limit", n, 2.)
+        if any(np.any(~np.isfinite(value)) or np.any(value < 0.)
+               for value in (*self.gains.values(), self.integral_limit)):
+            raise ValueError("PID gains and integral limits must be finite and nonnegative")
+        if initial_observation is not None and _observations(initial_observation).shape[0] != n:
+            raise ValueError("initial observation batch differs from n")
+        self.integral = np.zeros(n, dtype=float)
+
+    def _ensure(self, observation):
+        obs = _observations(observation)
+        if len(self.integral) != len(obs):
+            self.reset(len(obs), obs)
+        return obs
+
+    def _proposed_integral(self, obs):
+        return np.clip(self.integral + DT * obs[:, 0],
+                       -self.integral_limit, self.integral_limit)
+
+    def propose(self, observation):
+        obs = self._ensure(observation)
+        return (self.gains["kp"] * obs[:, 0] - self.gains["kd"] * obs[:, 1]
+                + self.gains["ki"] * self._proposed_integral(obs))
+
+    def commit(self, observation, command, raw=None):
+        obs = self._ensure(observation)
+        command = np.broadcast_to(np.asarray(command, float), (len(obs),))
+        raw = self.propose(obs) if raw is None else np.broadcast_to(np.asarray(raw, float), command.shape)
+        if not np.all(np.isfinite(command)) or not np.all(np.isfinite(raw)):
+            raise ValueError("raw torque and command must be finite")
+        proposed = self._proposed_integral(obs)
+        increment_torque = self.gains["ki"] * (proposed - self.integral)
+        # Reject only increments that deepen saturation of the final command.
+        accept = (raw - command) * increment_torque <= 1e-15
+        self.integral = np.where(accept, proposed, self.integral)
+
+    def act(self, observation, elapsed=None):
+        raw = self.propose(observation)
+        command = np.clip(raw, -LIMIT, LIMIT)
+        self.commit(observation, command, raw)
+        return command
+
+
+class ModelCompensatedController(PIDController):
+    """Nominal-model dynamic feedback with the same deployment information.
+
+    Lag: a sampled actuator observer predicts the angular-velocity increment
+    and corrects the current actuator estimate using its measured innovation.
+    Let B=T(1-exp(-h/T)), E=exp(-h/T).  The innovation coefficient is J*E/B;
+    observer_gain=1 recovers the exact current actuator state after one interval
+    when the fixed nominal model matches.  Feedback adds -ka*a_hat.  For small
+    unsaturated continuous-time signals, gains with desired poles consisting
+    of a second-order (wn,zeta) pair and a pole -gamma/T are generated by
+    kp=J*gamma*wn^2, kd=J*(T*wn^2+2*zeta*gamma*wn),
+    ka=2*zeta*wn*T+gamma-1.  This is a search coordinate, not a stability claim
+    for saturation or parameter mismatch.
+
+    Delay: predict theta and omega at t+d_nom by integrating the already issued
+    commands that will act before the current command.  Apply PID feedback to
+    this predicted state.  This is an explicit double-integrator predictor.
+    """
+
+    def __init__(self, kind, parameters):
+        if kind not in KINDS:
+            raise ValueError(kind)
+        self.kind = kind
+        super().__init__(parameters)
+
+    def _nominal(self, n):
+        candidates = getattr(self, "_candidate_parameters", None)
+        def value(parameters):
+            return parameters.get("nominal_parameter_s", parameters.get(
+                "nominal_lag_s" if self.kind == "lag" else "nominal_delay_s", .175 if self.kind == "lag" else .15))
+        if candidates is None:
+            return np.broadcast_to(np.asarray(value(self.parameters), float), (n,)).copy()
+        return np.repeat(np.asarray([value(p) for p in candidates], float), n // len(candidates))
+
+    def reset(self, n, initial_observation=None):
+        super().reset(n, initial_observation)
+        self.nominal_parameter = self._nominal(n)
+        if np.any(~np.isfinite(self.nominal_parameter)) or np.any(self.nominal_parameter < 0.):
+            raise ValueError("nominal actuator parameter must be finite and nonnegative")
+        self.previous_command = np.zeros(n)
+        self.previous_rate = np.zeros(n)
+        self.have_previous = np.zeros(n, dtype=bool)
+        self.torque_estimate = np.zeros(n)
+        self.last_prediction = np.zeros((n, 2))
+        if self.kind == "lag":
+            if np.any(self.nominal_parameter <= 0.):
+                raise ValueError("nominal lag must be positive; use PID for the ideal actuator")
+            self.actuator_feedback = self._expand("actuator_feedback", n, 0.)
+            self.observer_gain = self._expand("observer_gain", n, 1.)
+            if (np.any(~np.isfinite(self.actuator_feedback)) or np.any(self.actuator_feedback <= -1.)
+                    or np.any(~np.isfinite(self.observer_gain)) or np.any(self.observer_gain <= 0.)
+                    or np.any(self.observer_gain > 1.)):
+                raise ValueError("finite ka > -1 and 0 < observer_gain <= 1 required")
+            self._E = np.exp(-DT / self.nominal_parameter)
+            self._B = -self.nominal_parameter * np.expm1(-DT / self.nominal_parameter)
+        else:
+            steps = self.nominal_parameter / DT
+            if not np.allclose(steps, np.rint(steps), rtol=0., atol=1e-10):
+                raise ValueError("nominal delay must be an integer number of sample intervals")
+            self.delay_steps = np.rint(steps).astype(int)
+            width = max(1, int(np.max(self.delay_steps)))
+            self._command_history = np.zeros((n, width))
+            columns = np.arange(width)[None, :]
+            active = columns >= width - self.delay_steps[:, None]
+            self._rate_weights = active * (DT / INERTIA)
+            self._angle_weights = active * ((width - columns - .5) * DT**2 / INERTIA)
+
+    def predict_state(self, observation):
+        """Return measured coordinates [-theta_pred, omega_pred] for delay."""
+        obs = self._ensure(observation)
+        if self.kind != "delay":
+            raise ValueError("explicit horizon predictor is defined for delay only")
+        angle = -obs[:, 0] + obs[:, 1] * self.delay_steps * DT
+        angle += np.sum(self._command_history * self._angle_weights, axis=1)
+        rate = obs[:, 1] + np.sum(self._command_history * self._rate_weights, axis=1)
+        return np.column_stack((-angle, rate))
+
+    def _observe_lag(self, obs):
+        predicted_rate_increment = (self.previous_command * DT
+                                   + (self.torque_estimate - self.previous_command) * self._B) / INERTIA
+        predicted_torque = self.previous_command + (self.torque_estimate - self.previous_command) * self._E
+        innovation = obs[:, 1] - self.previous_rate - predicted_rate_increment
+        updated = predicted_torque + self.observer_gain * INERTIA * self._E / self._B * innovation
+        self.torque_estimate = np.where(self.have_previous, updated, self.torque_estimate)
+
+    def act(self, observation, elapsed=None):
+        obs = self._ensure(observation)
+        if self.kind == "lag":
+            self._observe_lag(obs)
+            feedback = obs
+            raw = self.propose(feedback) - self.actuator_feedback * self.torque_estimate
+        else:
+            feedback = self.predict_state(obs)
+            raw = self.propose(feedback)
+        self.last_prediction = feedback.copy()
+        command = np.clip(raw, -LIMIT, LIMIT)
+        self.commit(feedback, command, raw)
+        if self.kind == "delay":
+            self._command_history[:, :-1] = self._command_history[:, 1:]
+            self._command_history[:, -1] = command
+        self.previous_rate = obs[:, 1].copy()
+        self.previous_command = command.copy()
+        self.have_previous[:] = True
+        return command
+
+
+class CandidateBatchPID(PIDController):
+    def __init__(self, candidates):
+        self._candidate_parameters = [dict(candidate) for candidate in candidates]
+        if not candidates:
+            raise ValueError("empty candidate batch")
+        super().__init__(candidates[0])
+
+
+class CandidateBatchCompensated(ModelCompensatedController):
+    def __init__(self, kind, candidates):
+        self._candidate_parameters = [dict(candidate) for candidate in candidates]
+        if not candidates:
+            raise ValueError("empty candidate batch")
+        super().__init__(kind, candidates[0])
+
+
+def _candidate(kp, kd, ki=0., **extra):
+    return dict(kp=float(kp), kd=float(kd), ki=float(ki), integral_limit=2., **extra)
+
+
+def _unique(candidates):
+    result, seen = [], set()
+    for candidate in candidates:
+        key = tuple((key, round(float(value), 11)) for key, value in sorted(candidate.items())
+                    if key not in ("family", "stage"))
+        if key not in seen:
+            seen.add(key)
+            result.append(candidate)
+    return result
+
+
+def broad_candidates(kind, family):
+    """A broad deterministic gain search; no responses or test scenes read."""
+    if kind not in KINDS or family not in ("pid", "model_compensated"):
+        raise ValueError((kind, family))
+    rng = np.random.default_rng(np.random.SeedSequence([SEARCH_SEED, KINDS.index(kind),
+                                                       int(family == "model_compensated")]))
+    rows = []
+    if family == "pid":
+        for kp in np.geomspace(.05, 12., 23):
+            for kd in np.geomspace(.2, 12., 23):
+                rows.append(_candidate(kp, kd, family="PD"))
+        for _ in range(200):
+            rows.append(_candidate(np.exp(rng.uniform(np.log(.05), np.log(12.))),
+                                   np.exp(rng.uniform(np.log(.2), np.log(12.))),
+                                   np.exp(rng.uniform(np.log(.0001), np.log(.4))), family="PID"))
+        rows.append(_candidate(4., 3., family="PD"))
+    elif kind == "delay":
+        for steps in range(1, 7):
+            for kp in np.geomspace(.05, 12., 15):
+                for kd in np.geomspace(.2, 12., 15):
+                    rows.append(_candidate(kp, kd, nominal_parameter_s=steps*DT, family="predicted_PD"))
+        for _ in range(180):
+            rows.append(_candidate(np.exp(rng.uniform(np.log(.08), np.log(10.))),
+                                   np.exp(rng.uniform(np.log(.3), np.log(10.))),
+                                   np.exp(rng.uniform(np.log(.0001), np.log(.25))),
+                                   nominal_parameter_s=int(rng.integers(1, 7))*DT, family="predicted_PID"))
+    else:
+        for nominal in (.05, .10, .15, .20, .25, .30):
+            for wn in np.geomspace(.35, 3.5, 11):
+                for damping in (.5, .75, 1., 1.25, 1.5):
+                    for gamma in (.6, 1., 1.5):
+                        for gain in (.5, 1.):
+                            kp = INERTIA*gamma*wn**2
+                            kd = INERTIA*(nominal*wn**2 + 2*damping*gamma*wn)
+                            ka = 2*damping*wn*nominal + gamma - 1
+                            if .05 <= kp <= 12. and .2 <= kd <= 12.:
+                                rows.append(_candidate(kp, kd, nominal_parameter_s=nominal,
+                                                       actuator_feedback=ka, observer_gain=gain,
+                                                       family="observer_augmented_PD"))
+        for _ in range(180):
+            rows.append(_candidate(np.exp(rng.uniform(np.log(.05), np.log(12.))),
+                                   np.exp(rng.uniform(np.log(.2), np.log(12.))),
+                                   np.exp(rng.uniform(np.log(.0001), np.log(.25))),
+                                   nominal_parameter_s=float(rng.uniform(.05, .30)),
+                                   actuator_feedback=float(rng.uniform(-.3, 2.)),
+                                   observer_gain=float(rng.uniform(.35, 1.)),
+                                   family="observer_augmented_PID"))
+    return _unique(rows)
+
+
+def rank(summary):
+    # Smaller is better; exactly the reverse sign of evaluation.ranking.
+    return (int(summary.get("physical_failures", 0)), -int(summary["passes"]),
+            float(summary.get("mean_penalized_selection_cost", summary["mean_actual_cost"])))
+
+
+def pareto_indexes(summaries):
+    """Retain reliable cost/speed/error tradeoffs, without selecting on tests."""
+    best_failures = min(int(row['physical_failures']) for row in summaries)
+    best_passes = max(int(row['passes']) for row in summaries
+                      if int(row['physical_failures']) == best_failures)
+    eligible = [i for i, row in enumerate(summaries)
+                if int(row['physical_failures']) == best_failures and int(row['passes']) == best_passes]
+    values = []
+    for index in eligible:
+        row = summaries[index]
+        settling = row['mean_settling_time_success_only_s']
+        values.append((row['mean_penalized_selection_cost'], row['mean_rms_error_deg'],
+                       float('inf') if settling is None else settling))
+    result = []
+    for position, index in enumerate(eligible):
+        point = values[position]
+        dominated = any(all(a <= b for a, b in zip(other, point))
+                        and any(a < b for a, b in zip(other, point))
+                        for other in values)
+        if not dominated:
+            result.append(index)
+    return result
+
+
+def _write_csv(path, rows):
+    if not rows:
+        return
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fields = list(dict.fromkeys(key for row in rows for key in row))
+    with path.open("w", encoding="utf-8-sig", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def evaluate_candidates(kind, family, candidates, split, stage, batch_size=32):
+    if split not in ("development", "validation"):
+        raise ValueError("traditional-controller tuning cannot inspect held-out test responses")
+    from .evaluation import evaluate, summary
+    shared = scenes(kind, split)
+    summaries = []
+    start = time.perf_counter()
+    for offset in range(0, len(candidates), batch_size):
+        chunk = candidates[offset:offset+batch_size]
+        controller = CandidateBatchPID(chunk) if family == "pid" else CandidateBatchCompensated(kind, chunk)
+        result = evaluate(kind, shared*len(chunk), controller, keep_traces=False)
+        for local, candidate in enumerate(chunk):
+            metrics = result["rows"][local*len(shared):(local+1)*len(shared)]
+            summaries.append(dict(candidate_id=f"{kind}_{family}_{stage}_{offset+local:05d}",
+                                  kind=kind, family=family, split=split, stage=stage,
+                                  **summary(metrics)))
+        print(f"traditional {kind} {family} {stage} {split}: "
+              f"{offset+len(chunk)}/{len(candidates)}, {time.perf_counter()-start:.1f}s", flush=True)
+    directory = OUTPUT/kind/family
+    _write_csv(directory/f"{stage}_{split}_candidates.csv",
+               [dict(**s, **{f"parameter_{key}": value for key, value in c.items()})
+                for c, s in zip(candidates, summaries)])
+    write_json(directory/f"{stage}_{split}_candidates.json", candidates)
+    return summaries
+
+
+def shortlist(candidates, summaries):
+    indexes = set(sorted(range(len(candidates)), key=lambda i: rank(summaries[i]))[:48])
+    indexes.update(pareto_indexes(summaries))
+    # Preserve integral alternatives and coverage over nominal parameters.
+    groups = {}
+    for i, candidate in enumerate(candidates):
+        nominal = candidate.get("nominal_parameter_s", 0.)
+        key = (candidate["family"], round(nominal/DT))
+        groups.setdefault(key, []).append(i)
+    for group in groups.values():
+        indexes.update(sorted(group, key=lambda i: rank(summaries[i]))[:3])
+    return [candidates[i] for i in sorted(indexes)]
+
+
+def refinement_candidates(kind, family, candidates, summaries, round_number):
+    rng = np.random.default_rng(np.random.SeedSequence([SEARCH_SEED, KINDS.index(kind),
+                                                       int(family == "model_compensated"), round_number, 99]))
+    leaders = sorted(range(len(candidates)), key=lambda i: rank(summaries[i]))[:8]
+    sigma = .18 if round_number == 1 else .075
+    rows = []
+    for index in leaders:
+        parent = candidates[index]
+        for j in range(24):
+            candidate = dict(parent)
+            candidate["kp"] *= float(np.exp(rng.normal(0., sigma)))
+            candidate["kd"] *= float(np.exp(rng.normal(0., sigma)))
+            if j % 6 == 0:
+                candidate["ki"] = 0.
+            elif candidate["ki"] > 0.:
+                candidate["ki"] *= float(np.exp(rng.normal(0., sigma)))
+            elif j % 6 == 1:
+                candidate["ki"] = float(np.exp(rng.uniform(np.log(.0001), np.log(.05))))
+            if family == "model_compensated":
+                if kind == "lag":
+                    candidate["nominal_parameter_s"] = float(np.clip(
+                        candidate["nominal_parameter_s"]*np.exp(rng.normal(0., sigma)), .025, .4))
+                    candidate["actuator_feedback"] = float(max(-.85,
+                        candidate["actuator_feedback"]+rng.normal(0., sigma)))
+                    candidate["observer_gain"] = float(np.clip(
+                        candidate["observer_gain"]+rng.normal(0., sigma/2), .15, 1.))
+                elif j % 4 == 0:
+                    steps = round(candidate["nominal_parameter_s"]/DT) + int(rng.choice((-1, 1)))
+                    candidate["nominal_parameter_s"] = float(np.clip(steps, 1, 6)*DT)
+            candidate["family"] = ("PD" if candidate["ki"] == 0 else "PID") if family == "pid" else (
+                ("observer_augmented_" if kind == "lag" else "predicted_")
+                + ("PD" if candidate["ki"] == 0 else "PID"))
+            candidate["stage"] = f"refine{round_number}"
+            rows.append(candidate)
+    existing = {json.dumps({k: v for k, v in c.items() if k not in ("family", "stage")}, sort_keys=True)
+                for c in candidates}
+    return [c for c in _unique(rows) if json.dumps(
+        {k: v for k, v in c.items() if k not in ("family", "stage")}, sort_keys=True) not in existing]
+
+
+def _input_hashes():
+    # Deliberately exclude held-out test inputs: no held-out response or initial
+    # state is used by tuning, even for bookkeeping.
+    paths = [Path(__file__), Path(__file__).with_name("protocol.py"),
+             Path(__file__).with_name("evaluation.py"), Path(__file__).with_name("physics.py")]
+    paths += [STUDY/"01_实验方案"/f"{split}_initial_states.json"
+              for split in ("development", "validation")]
+    return {path.relative_to(STUDY).as_posix(): sha256(path) for path in paths if path.exists()}
+
+
+def tune(kind, batch_size=32):
+    """Tune both families without reading or evaluating the independent test."""
+    if kind not in KINDS:
+        raise ValueError(kind)
+    from .evaluation import evaluate
+    started = time.perf_counter()
+    manifest = dict(kind=kind, search_seed=SEARCH_SEED, test_responses_used=False,
+                    input_hashes=_input_hashes(), primary_selection_rule="minimize physical failures, maximize validation passes, then minimize mean_penalized_selection_cost",
+                    gain_units=dict(kp="Nm/rad", kd="Nm*s/rad", ki="Nm/(rad*s)",
+                                    actuator_feedback="dimensionless"),
+                    information="measured [-theta,omega], own previous commands; fixed shared nominal parameter only",
+                    broad_pid="23x23 logarithmic kp=[.05,12], kd=[.2,12], plus200 integral variants",
+                    broad_delay="6 nominal delays x15x15 gain grid plus180 integral variants",
+                    broad_lag="6 nominal T x11 frequencies x5 damping x3 actuator pole x2 observer gains plus180 integral variants",
+                    shortlist="global top48, reliability-matched cost/RMS/settling Pareto candidates, plus top3 for each controller family and nominal-parameter bin",
+                    refinement="two validation rounds; top8 incumbents x24 local proposals, retaining all incumbent scores",
+                    validation_reused=True, no_global_optimum_claim=True)
+    write_json(OUTPUT/f"search_design_{kind}.json", manifest)
+    selections = {}
+    all_candidates = []
+    for family in ("pid", "model_compensated"):
+        broad = broad_candidates(kind, family)
+        development = evaluate_candidates(kind, family, broad, "development", "broad", batch_size)
+        candidates = shortlist(broad, development)
+        validation = evaluate_candidates(kind, family, candidates, "validation", "shortlist", batch_size)
+        counts = dict(broad_development=len(broad), shortlist_validation=len(candidates))
+        for round_number in (1, 2):
+            additions = refinement_candidates(kind, family, candidates, validation, round_number)
+            extra = evaluate_candidates(kind, family, additions, "validation", f"refine{round_number}", batch_size)
+            candidates.extend(additions)
+            validation.extend(extra)
+            counts[f"refine{round_number}_validation"] = len(additions)
+        best = min(range(len(candidates)), key=lambda i: rank(validation[i]))
+        parameters = candidates[best]
+        selections[family] = dict(parameters=parameters, validation=validation[best], search_counts=counts,
+                                  reported_controller=("PD" if parameters["ki"] == 0. else "PID"),
+                                  selection_rule=manifest["primary_selection_rule"])
+        frontier = pareto_indexes(validation)
+        write_json(OUTPUT/kind/family/"validation_pareto_frontier.json", [
+            dict(parameters=candidates[index], validation=validation[index]) for index in frontier])
+        selections[family]['pareto_candidates'] = len(frontier)
+        controller = PIDController(parameters) if family == "pid" else ModelCompensatedController(kind, parameters)
+        selected_rows = evaluate(kind, scenes(kind, "validation"), controller, keep_traces=False)["rows"]
+        _write_csv(OUTPUT/kind/family/"selected_validation_episodes.csv", selected_rows)
+        all_candidates += [dict(**s, **{f"parameter_{k}": v for k, v in c.items()})
+                           for c, s in zip(candidates, validation)]
+    _write_csv(OUTPUT/kind/"all_validation_candidates.csv", all_candidates)
+    after_hashes = _input_hashes()
+    if after_hashes != manifest['input_hashes']:
+        raise RuntimeError('traditional tuning inputs changed during the search')
+    result = dict(**manifest, **selections, input_hashes_after=after_hashes,
+                  input_hashes_unchanged=True, wall_time_s=time.perf_counter()-started)
+    write_json(OUTPUT/f"selected_{kind}.json", result)
+    print(json.dumps(result, ensure_ascii=False), flush=True)
+    return result
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--kind", choices=(*KINDS, "both"), default="both")
+    parser.add_argument("--batch-size", type=int, default=32)
+    args = parser.parse_args(argv)
+    if args.batch_size < 1:
+        parser.error("--batch-size must be positive")
+    for kind in KINDS if args.kind == "both" else (args.kind,):
+        tune(kind, args.batch_size)
+
+
+if __name__ == "__main__":
+    main()

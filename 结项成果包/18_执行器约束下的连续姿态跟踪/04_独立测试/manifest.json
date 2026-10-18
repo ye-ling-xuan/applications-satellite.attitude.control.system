@@ -1,0 +1,61 @@
+{
+  "freeze_sha256": "1b0ce5ed5a8d95c247a9e97704abafb2c2116151ae86aafe8385b705a04a7bba",
+  "outputs": [
+    {
+      "name": "PID",
+      "results_path": "04_独立测试/PID/results.json",
+      "results_sha256": "5a2dbd42a698b7c45fb2e3b55c8cfb3c52e0c4399888d61644ce0fe4aa0da606",
+      "trace_path": "04_独立测试/PID/traces.npz",
+      "trace_sha256": "a359960417f5380c800a4c764bffa5c73566b6cf468bc86e71a799fee67c1b8b"
+    },
+    {
+      "name": "PID_feedforward_preview",
+      "results_path": "04_独立测试/PID_feedforward_preview/results.json",
+      "results_sha256": "5c7cff7bee99405c50237ef9ce9a3aa1a92c45ec33122d13ef5ca78b842a4783",
+      "trace_path": "04_独立测试/PID_feedforward_preview/traces.npz",
+      "trace_sha256": "54910df08e78f8d5028cdc35ee3afba6116fd1325af46d9f883b9cf8a618cd35"
+    },
+    {
+      "name": "MPC_SLSQP",
+      "results_path": "04_独立测试/MPC_SLSQP/results.json",
+      "results_sha256": "071f69982f3f14ae82fa2dbd8af97004454da65dc19d269156062911334e8474",
+      "trace_path": "04_独立测试/MPC_SLSQP/traces.npz",
+      "trace_sha256": "de5f1913938032bf6c31caca5d720d2406a11bd70c43dd35c50a66d147ebe73f"
+    },
+    {
+      "name": "TD3_initial_development_only",
+      "results_path": "04_独立测试/TD3_initial_development_only/results.json",
+      "results_sha256": "5c7cff7bee99405c50237ef9ce9a3aa1a92c45ec33122d13ef5ca78b842a4783",
+      "trace_path": "04_独立测试/TD3_initial_development_only/traces.npz",
+      "trace_sha256": "54910df08e78f8d5028cdc35ee3afba6116fd1325af46d9f883b9cf8a618cd35"
+    },
+    {
+      "name": "PPO_initial_development_only",
+      "results_path": "04_独立测试/PPO_initial_development_only/results.json",
+      "results_sha256": "5c7cff7bee99405c50237ef9ce9a3aa1a92c45ec33122d13ef5ca78b842a4783",
+      "trace_path": "04_独立测试/PPO_initial_development_only/traces.npz",
+      "trace_sha256": "54910df08e78f8d5028cdc35ee3afba6116fd1325af46d9f883b9cf8a618cd35"
+    },
+    {
+      "name": "PPO_symmetry_seed_111",
+      "results_path": "04_独立测试/PPO_symmetry_seed_111/results.json",
+      "results_sha256": "b61c70ac71c0a79a5f81f0dcb63f742063002eb63de8ae5276a177ab60fe86f5",
+      "trace_path": "04_独立测试/PPO_symmetry_seed_111/traces.npz",
+      "trace_sha256": "dee093d8020cf17c076487c4918869f4e698ab4dbd5e575ade75c7fd8982bc97"
+    },
+    {
+      "name": "PPO_symmetry_seed_222",
+      "results_path": "04_独立测试/PPO_symmetry_seed_222/results.json",
+      "results_sha256": "a46e6b05d1dae1d0d6a80122da265216291f83c86ffdaa8e3dc4d145813ae837",
+      "trace_path": "04_独立测试/PPO_symmetry_seed_222/traces.npz",
+      "trace_sha256": "b49f415e3ae35c62c3d37e6845683866c31774eef23f3692add6ae3bcd560f1a"
+    },
+    {
+      "name": "PPO_symmetry_seed_333",
+      "results_path": "04_独立测试/PPO_symmetry_seed_333/results.json",
+      "results_sha256": "99ef26949d37c11a588cb2fcbfe49ca3afaa793a7c35c20adba108fa2de1c5fd",
+      "trace_path": "04_独立测试/PPO_symmetry_seed_333/traces.npz",
+      "trace_sha256": "b699a5724f4e250a4936c4c6921e1cff53d7d85cb8228e6202126b1dec4902e3"
+    }
+  ]
+}

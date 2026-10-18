@@ -1,0 +1,162 @@
+{
+  "algorithms": {
+    "SAC": {
+      "batch_size": 256,
+      "tau": 0.005,
+      "buffer_size": 200000,
+      "learning_starts": 4096,
+      "train_freq_vector_steps": 1,
+      "gradient_steps": 1,
+      "ent_coef": "auto_0.0005",
+      "target_entropy": -1.0,
+      "initial_log_std": -3.0
+    },
+    "TD3": {
+      "batch_size": 256,
+      "tau": 0.005,
+      "buffer_size": 200000,
+      "learning_starts": 4096,
+      "train_freq_vector_steps": 1,
+      "gradient_steps": 1,
+      "exploration_std": 0.1,
+      "policy_delay": 2,
+      "target_policy_noise": 0.1,
+      "target_noise_clip": 0.2
+    },
+    "PPO": {
+      "n_steps": 128,
+      "batch_size": 256,
+      "n_epochs": 10,
+      "gae_lambda": 0.95,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "initial_log_std": -2.3,
+      "normalize_advantage": true,
+      "target_kl": null
+    }
+  },
+  "common": {
+    "net_arch": [
+      128,
+      128
+    ],
+    "learning_rate": 0.0003,
+    "gamma": 0.999,
+    "n_envs": 8,
+    "torch_threads": 1,
+    "device": "cpu",
+    "zero_actor_mean": true,
+    "feature_dtype": "float32"
+  },
+  "rewards": {
+    "A": {
+      "torque_weight": 1.0,
+      "error_weight": 0.01,
+      "rate_weight": 0.002,
+      "violation_weight": 5.0
+    },
+    "B": {
+      "torque_weight": 1.0,
+      "error_weight": 0.03,
+      "rate_weight": 0.006,
+      "violation_weight": 10.0
+    }
+  },
+  "protocol_training": {
+    "algorithms": [
+      "SAC",
+      "TD3",
+      "PPO"
+    ],
+    "rewards": [
+      "A",
+      "B"
+    ],
+    "sanity_steps": 98304,
+    "development_steps": 196608,
+    "formal_steps": 393216,
+    "validate_every": 24576,
+    "n_envs": 8,
+    "formal_seeds": [
+      111,
+      222,
+      333
+    ],
+    "sanity_kind": "ideal",
+    "primary_mode": "residual",
+    "development_gate_success_rate": 0.95,
+    "development_gate_physical_failures": 0,
+    "reward_B_condition": "all three algorithms complete A; no A model has zero physical failures, >=95% validation success AND lower mean actual cost than selected PID",
+    "formal_selection": "eligible means >=95% passes, zero physical failures, selected checkpoint steps > 0; most passes then lowest penalized selection cost then earliest checkpoint then fixed algorithm order as exact tie break; step-zero PID fallback is not a learned success",
+    "primary_cost_requirement": "PID and every formal seed pass every in-domain test; all corrected paired cost confidence intervals below zero",
+    "primary_success_requirement": "every seed paired success improvement interval above zero; no additional physical failures",
+    "family_alpha": 0.05,
+    "intervals_upper_bound": 12,
+    "emphasized_cost_reduction": 0.05,
+    "held_out_tests_used_to_choose": false,
+    "observed_variables": [
+      "measured error",
+      "measured angular velocity",
+      "past sent commands",
+      "own PID state",
+      "elapsed time"
+    ],
+    "hidden_variables": [
+      "actual torque",
+      "true lag/delay parameter",
+      "simulator command queue"
+    ]
+  },
+  "feature_dimensions": {
+    "direct": 40,
+    "residual": 42
+  },
+  "feature_order": [
+    "13 chronological measured error/rate pairs",
+    "12 chronological clipped total sent commands",
+    "elapsed/22",
+    "valid_intervals/12",
+    "residual only: proposed raw PID/0.5",
+    "residual only: committed PID integral/2"
+  ],
+  "feature_scales": {
+    "error_rad": 1.0471975511965976,
+    "rate_rad_s": 0.5235987755982988,
+    "command_Nm": 0.5,
+    "integral_rad_s": 2.0
+  },
+  "prehistory": "repeat initial measurement; zero commands; zero valid count",
+  "residual_action": "clip(raw_PID+0.25*clip(action,-1,1),-0.5,0.5)",
+  "direct_action": "0.5*clip(action,-1,1)",
+  "anti_windup": "conditional integration uses final total command and final total raw torque",
+  "test_response_calibration": false,
+  "replay_buffer_saved": false,
+  "reward": {
+    "cost": "wu*actual_tau_square_integral/(dt*limit^2)+we*min((error/60deg)^2,100)+ww*min((rate/30deg_s)^2,100)+1[t_end>=8]*wv*(outside+min(max(angle_ratio-1,0)^2,25)+min(max(rate_ratio-1,0)^2,25))",
+    "interval": "-dt*cost+gamma*potential_next-potential_current",
+    "potential": "-4*min((error/60deg)^2,100)-0.1*min((rate/30deg_s)^2,100)",
+    "final_potential": 0.0,
+    "failure": "each remaining interval costs the maximum legal ordinary rate cost plus one",
+    "failure_rate_costs": {
+      "A": 258.2,
+      "B": 515.6
+    },
+    "ordinary_rate_cost_bounds": {
+      "A": 257.2,
+      "B": 514.6
+    },
+    "terminal": "440 samples only; no time-limit bootstrap; failures remain absorbing until sample 440",
+    "shaping_property": "discounted shaping sums to minus the common initial potential; terminal potential is exactly zero"
+  },
+  "model_selection": "fewest physical failures, most passes, lowest penalized_selection_cost, earliest checkpoint",
+  "initialization": "actor deterministic mean exactly zero; initial checkpoint retained and evaluated; zero residual is exactly the selected PID",
+  "ideal_sanity": "direct continuous action, lag physical plant with T=0, initial angle +/-20deg and rate +/-2deg/s",
+  "hidden_from_features": [
+    "actual torque",
+    "true actuator parameter",
+    "simulator delay queue"
+  ],
+  "optimizer_step_count_definition": "actual calls to each Torch optimizer.step; SB3 _n_updates is retained separately"
+}

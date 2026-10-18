@@ -1,0 +1,89 @@
+{
+  "dt": 0.05,
+  "duration": 22.0,
+  "deadline": 8.0,
+  "torque_limit": 0.5,
+  "inertia": 1.0,
+  "angle_tolerance": 1.0,
+  "rate_tolerance": 0.5,
+  "history_intervals": 12,
+  "in_domain": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "out_of_domain": {
+    "lag": [
+      0.4,
+      0.5
+    ],
+    "delay": [
+      0.35,
+      0.4,
+      0.5
+    ]
+  },
+  "counts": {
+    "development": 48,
+    "validation": 64,
+    "test": 128
+  },
+  "split_seeds": {
+    "development": 202610181501,
+    "validation": 202610181502,
+    "test": 202610181503
+  },
+  "training": {
+    "algorithms": [
+      "SAC",
+      "TD3",
+      "PPO"
+    ],
+    "rewards": [
+      "A",
+      "B"
+    ],
+    "sanity_steps": 98304,
+    "development_steps": 196608,
+    "formal_steps": 393216,
+    "validate_every": 24576,
+    "n_envs": 8,
+    "formal_seeds": [
+      111,
+      222,
+      333
+    ],
+    "sanity_kind": "ideal",
+    "primary_mode": "residual",
+    "development_gate_success_rate": 0.95,
+    "development_gate_physical_failures": 0,
+    "reward_B_condition": "all three algorithms complete A; no A model has zero physical failures, >=95% validation success AND lower mean actual cost than selected PID",
+    "formal_selection": "eligible means >=95% passes, zero physical failures, selected checkpoint steps > 0; most passes then lowest penalized selection cost then earliest checkpoint then fixed algorithm order as exact tie break; step-zero PID fallback is not a learned success",
+    "primary_cost_requirement": "PID and every formal seed pass every in-domain test; all corrected paired cost confidence intervals below zero",
+    "primary_success_requirement": "every seed paired success improvement interval above zero; no additional physical failures",
+    "family_alpha": 0.05,
+    "intervals_upper_bound": 12,
+    "emphasized_cost_reduction": 0.05,
+    "held_out_tests_used_to_choose": false,
+    "observed_variables": [
+      "measured error",
+      "measured angular velocity",
+      "past sent commands",
+      "own PID state",
+      "elapsed time"
+    ],
+    "hidden_variables": [
+      "actual torque",
+      "true lag/delay parameter",
+      "simulator command queue"
+    ]
+  },
+  "physical_failure": "absorbing frozen state; clock and reward continue until the complete 440-step horizon",
+  "deployment_weights_frozen": true,
+  "online_weight_updates": false,
+  "primary_comparisons": "one selected algorithm per actuator; 3 fresh formal seeds; 12 intervals reserved for success/cost across two kinds",
+  "previous_studies_read_only": true
+}

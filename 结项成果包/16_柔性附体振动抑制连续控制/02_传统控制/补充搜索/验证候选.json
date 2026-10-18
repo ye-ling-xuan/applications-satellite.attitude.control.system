@@ -1,0 +1,1586 @@
+[
+  {
+    "index": 671,
+    "settings": {
+      "method": "PID",
+      "kp": 0.5863854653490321,
+      "kd": 1.4673256618174884,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8375,
+      "failed": 0.0,
+      "cost": 0.01023764981337082,
+      "rms_angle_deg": 3.6763709878870685,
+      "peak_relative_deg": 0.9602384032636879,
+      "residual_relative_rms_deg": 0.01268579087096742,
+      "count": 240,
+      "passes": 201,
+      "physical_failures": 0,
+      "selection_cost": 0.9008308637455863
+    },
+    "validation": {
+      "success": 0.821875,
+      "failed": 0.0,
+      "cost": 0.01118786852974433,
+      "rms_angle_deg": 3.8375718037032414,
+      "peak_relative_deg": 1.0133788799110341,
+      "residual_relative_rms_deg": 0.01254539270321799,
+      "count": 320,
+      "passes": 263,
+      "physical_failures": 0,
+      "selection_cost": 0.9873551040085268
+    }
+  },
+  {
+    "index": 3780,
+    "settings": {
+      "method": "PID",
+      "kp": 0.4883055510973939,
+      "kd": 1.3857934832119179,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8333333333333334,
+      "failed": 0.0,
+      "cost": 0.007590765129345839,
+      "rms_angle_deg": 3.885815795917751,
+      "peak_relative_deg": 0.8318579860919931,
+      "residual_relative_rms_deg": 0.01235889478166247,
+      "count": 240,
+      "passes": 200,
+      "physical_failures": 0,
+      "selection_cost": 0.9216599817396094
+    },
+    "validation": {
+      "success": 0.81875,
+      "failed": 0.0,
+      "cost": 0.008300883246357815,
+      "rms_angle_deg": 4.058655937593443,
+      "peak_relative_deg": 0.8777550893063587,
+      "residual_relative_rms_deg": 0.012252137136322977,
+      "count": 320,
+      "passes": 262,
+      "physical_failures": 0,
+      "selection_cost": 1.0024031325909941
+    }
+  },
+  {
+    "index": 2948,
+    "settings": {
+      "method": "PID",
+      "kp": 0.5449847761096287,
+      "kd": 1.5676628352697404,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8333333333333334,
+      "failed": 0.0,
+      "cost": 0.008381480393274117,
+      "rms_angle_deg": 3.86083507357413,
+      "peak_relative_deg": 0.8732226078832007,
+      "residual_relative_rms_deg": 0.011893469645507552,
+      "count": 240,
+      "passes": 200,
+      "physical_failures": 0,
+      "selection_cost": 0.9224646603591556
+    },
+    "validation": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.009165184704736647,
+      "rms_angle_deg": 4.029773093963889,
+      "peak_relative_deg": 0.9213374004320837,
+      "residual_relative_rms_deg": 0.011854029761661443,
+      "count": 320,
+      "passes": 264,
+      "physical_failures": 0,
+      "selection_cost": 0.9687523379413701
+    }
+  },
+  {
+    "index": 2365,
+    "settings": {
+      "method": "PID",
+      "kp": 0.5970965921639882,
+      "kd": 1.697872380201103,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8333333333333334,
+      "failed": 0.0,
+      "cost": 0.009291301384739156,
+      "rms_angle_deg": 3.815833125369662,
+      "peak_relative_deg": 0.916026525068269,
+      "residual_relative_rms_deg": 0.011977336313148484,
+      "count": 240,
+      "passes": 200,
+      "physical_failures": 0,
+      "selection_cost": 0.9231473050628021
+    },
+    "validation": {
+      "success": 0.828125,
+      "failed": 0.0,
+      "cost": 0.010158578284199396,
+      "rms_angle_deg": 3.98084817440066,
+      "peak_relative_deg": 0.9665274187385329,
+      "residual_relative_rms_deg": 0.011969357630762577,
+      "count": 320,
+      "passes": 265,
+      "physical_failures": 0,
+      "selection_cost": 0.9523735197972716
+    }
+  },
+  {
+    "index": 38,
+    "settings": {
+      "method": "PID",
+      "kp": 0.5947245175959724,
+      "kd": 1.57987932713414,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8333333333333334,
+      "failed": 0.0,
+      "cost": 0.009835850656973618,
+      "rms_angle_deg": 3.736063005808185,
+      "peak_relative_deg": 0.9422315498844493,
+      "residual_relative_rms_deg": 0.012168967848522548,
+      "count": 240,
+      "passes": 200,
+      "physical_failures": 0,
+      "selection_cost": 0.9234805825443938
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.010751331845170613,
+      "rms_angle_deg": 3.8987644763721634,
+      "peak_relative_deg": 0.9943753581715971,
+      "residual_relative_rms_deg": 0.012094422569055949,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.935685744911054
+    }
+  },
+  {
+    "index": 1599,
+    "settings": {
+      "method": "PID",
+      "kp": 0.60935639931726,
+      "kd": 1.610675538312079,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8333333333333334,
+      "failed": 0.0,
+      "cost": 0.010127344892856667,
+      "rms_angle_deg": 3.7216990790748525,
+      "peak_relative_deg": 0.9552183399428983,
+      "residual_relative_rms_deg": 0.012172044422634287,
+      "count": 240,
+      "passes": 200,
+      "physical_failures": 0,
+      "selection_cost": 0.923683128175399
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.01106941259870813,
+      "rms_angle_deg": 3.8833109978638176,
+      "peak_relative_deg": 1.0080871446398978,
+      "residual_relative_rms_deg": 0.012104860022093702,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9359603260161979
+    }
+  },
+  {
+    "index": 440,
+    "settings": {
+      "method": "PID",
+      "kp": 0.620071216840454,
+      "kd": 1.5754446929673636,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8333333333333334,
+      "failed": 0.0,
+      "cost": 0.010684735242147412,
+      "rms_angle_deg": 3.671269406537122,
+      "peak_relative_deg": 0.980014916972021,
+      "residual_relative_rms_deg": 0.012361292174574854,
+      "count": 240,
+      "passes": 200,
+      "physical_failures": 0,
+      "selection_cost": 0.9240747111548138
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.01167650676246541,
+      "rms_angle_deg": 3.830868476675806,
+      "peak_relative_deg": 1.0342974907225444,
+      "residual_relative_rms_deg": 0.012264916511549744,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9363354494660058
+    }
+  },
+  {
+    "index": 3626,
+    "settings": {
+      "method": "PID",
+      "kp": 0.6208324736228115,
+      "kd": 1.6238408413970182,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8291666666666667,
+      "failed": 0.0,
+      "cost": 0.01041985221841429,
+      "rms_angle_deg": 3.703134151879977,
+      "peak_relative_deg": 0.9681325867346866,
+      "residual_relative_rms_deg": 0.012210569896554257,
+      "count": 240,
+      "passes": 199,
+      "physical_failures": 0,
+      "selection_cost": 0.9467890501810386
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.01138838326048502,
+      "rms_angle_deg": 3.8636835106284266,
+      "peak_relative_deg": 1.0217271252806037,
+      "residual_relative_rms_deg": 0.012142658219623473,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9361861352979861
+    }
+  },
+  {
+    "index": 84,
+    "settings": {
+      "method": "PID",
+      "kp": 0.6424195423845626,
+      "kd": 1.7217308002831726,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8291666666666667,
+      "failed": 0.0,
+      "cost": 0.010554271280153401,
+      "rms_angle_deg": 3.719809552290523,
+      "peak_relative_deg": 0.972866232257471,
+      "residual_relative_rms_deg": 0.012199792074494082,
+      "count": 240,
+      "passes": 199,
+      "physical_failures": 0,
+      "selection_cost": 0.946939590412678
+    },
+    "validation": {
+      "success": 0.834375,
+      "failed": 0.0,
+      "cost": 0.011535843752778514,
+      "rms_angle_deg": 3.879960524842707,
+      "peak_relative_deg": 1.026719749425234,
+      "residual_relative_rms_deg": 0.012171427830978618,
+      "count": 320,
+      "passes": 267,
+      "physical_failures": 0,
+      "selection_cost": 0.9191850272928432
+    }
+  },
+  {
+    "index": 766,
+    "settings": {
+      "method": "PID",
+      "kp": 0.6465958657223823,
+      "kd": 1.6680898343894168,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8291666666666667,
+      "failed": 0.0,
+      "cost": 0.01099615034908109,
+      "rms_angle_deg": 3.6733157872395363,
+      "peak_relative_deg": 0.9927394984555643,
+      "residual_relative_rms_deg": 0.012276478231256167,
+      "count": 240,
+      "passes": 199,
+      "physical_failures": 0,
+      "selection_cost": 0.947251612092977
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.012016929212009978,
+      "rms_angle_deg": 3.8318911589961404,
+      "peak_relative_deg": 1.0477202364695484,
+      "residual_relative_rms_deg": 0.01221586330627192,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9366312327623687
+    }
+  },
+  {
+    "index": 1053,
+    "settings": {
+      "method": "PID",
+      "kp": 0.7352309117974748,
+      "kd": 1.9222348662217985,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8291666666666667,
+      "failed": 0.0,
+      "cost": 0.01238695438586528,
+      "rms_angle_deg": 3.647667246245239,
+      "peak_relative_deg": 1.0445805464081546,
+      "residual_relative_rms_deg": 0.012905232214718978,
+      "count": 240,
+      "passes": 199,
+      "physical_failures": 0,
+      "selection_cost": 0.9483322630983685
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.013534713394919207,
+      "rms_angle_deg": 3.802172127942325,
+      "peak_relative_deg": 1.1024626132225879,
+      "residual_relative_rms_deg": 0.012917419322009804,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9378951551829878
+    }
+  },
+  {
+    "index": 144,
+    "settings": {
+      "method": "PID",
+      "kp": 0.5630804468668669,
+      "kd": 1.3883278181958043,
+      "ki": 0.0009696468605462572
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.009973003324750606,
+      "rms_angle_deg": 3.674494371017284,
+      "peak_relative_deg": 0.9474374650117147,
+      "residual_relative_rms_deg": 0.01313913245087286,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9689107912701744
+    },
+    "validation": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.010898409369359716,
+      "rms_angle_deg": 3.8365920194561682,
+      "peak_relative_deg": 0.999869592232012,
+      "residual_relative_rms_deg": 0.012963640198154488,
+      "count": 320,
+      "passes": 264,
+      "physical_failures": 0,
+      "selection_cost": 0.9698871843094032
+    }
+  },
+  {
+    "index": 1328,
+    "settings": {
+      "method": "PID",
+      "kp": 0.5728761185510161,
+      "kd": 1.322558260217006,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.010770111780800307,
+      "rms_angle_deg": 3.608478957272416,
+      "peak_relative_deg": 0.9810867197445242,
+      "residual_relative_rms_deg": 0.014080463723069155,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9694301783040962
+    },
+    "validation": {
+      "success": 0.809375,
+      "failed": 0.0,
+      "cost": 0.011765495177442483,
+      "rms_angle_deg": 3.7680212009862495,
+      "peak_relative_deg": 1.0351898310803023,
+      "residual_relative_rms_deg": 0.013849365884094755,
+      "count": 320,
+      "passes": 259,
+      "physical_failures": 0,
+      "selection_cost": 1.055966181943665
+    }
+  },
+  {
+    "index": 621,
+    "settings": {
+      "method": "PID",
+      "kp": 0.6326876791012012,
+      "kd": 1.3554437301196203,
+      "ki": 0.001253390195762131
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.012786832143022783,
+      "rms_angle_deg": 3.49643532055337,
+      "peak_relative_deg": 1.065206333146151,
+      "residual_relative_rms_deg": 0.014469021582644641,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9707362192161442
+    },
+    "validation": {
+      "success": 0.821875,
+      "failed": 0.0,
+      "cost": 0.01396229938312954,
+      "rms_angle_deg": 3.649815286885908,
+      "peak_relative_deg": 1.1235479942030504,
+      "residual_relative_rms_deg": 0.014222523084395724,
+      "count": 320,
+      "passes": 263,
+      "physical_failures": 0,
+      "selection_cost": 0.9890359897334278
+    }
+  },
+  {
+    "index": 814,
+    "settings": {
+      "method": "PID",
+      "kp": 0.7330331752564554,
+      "kd": 1.8699760554125484,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.012625465230415307,
+      "rms_angle_deg": 3.6192279292126233,
+      "peak_relative_deg": 1.0556901989776226,
+      "residual_relative_rms_deg": 0.012777862421910988,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9712849816771854
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.013794134235271021,
+      "rms_angle_deg": 3.772970295552663,
+      "peak_relative_deg": 1.1142033076340976,
+      "residual_relative_rms_deg": 0.012767717999025933,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9380817381467565
+    }
+  },
+  {
+    "index": 1683,
+    "settings": {
+      "method": "PID",
+      "kp": 0.6780500991489593,
+      "kd": 1.397330619010935,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.0142018637257721,
+      "rms_angle_deg": 3.435866545738126,
+      "peak_relative_deg": 1.1202890297008616,
+      "residual_relative_rms_deg": 0.014456451678989334,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9716527366826758
+    },
+    "validation": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.015503173498423917,
+      "rms_angle_deg": 3.5857311164547965,
+      "peak_relative_deg": 1.1813722776859046,
+      "residual_relative_rms_deg": 0.014212468396402455,
+      "count": 320,
+      "passes": 264,
+      "physical_failures": 0,
+      "selection_cost": 0.9730146735996854
+    }
+  },
+  {
+    "index": 164,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8215149269235265,
+      "kd": 2.0832872034428718,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.014266924986900147,
+      "rms_angle_deg": 3.578468899188413,
+      "peak_relative_deg": 1.1101096573104696,
+      "residual_relative_rms_deg": 0.013931621977308217,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.97256732551811
+    },
+    "validation": {
+      "success": 0.828125,
+      "failed": 0.0,
+      "cost": 0.015583710692138486,
+      "rms_angle_deg": 3.7282012575527643,
+      "peak_relative_deg": 1.1716735205006379,
+      "residual_relative_rms_deg": 0.013968243361944072,
+      "count": 320,
+      "passes": 265,
+      "physical_failures": 0,
+      "selection_cost": 0.9565501036428422
+    }
+  },
+  {
+    "index": 2297,
+    "settings": {
+      "method": "PID",
+      "kp": 0.7947781094201137,
+      "kd": 1.7761216775887354,
+      "ki": 0.0018976927630783656
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.015498862823942838,
+      "rms_angle_deg": 3.4429233049446295,
+      "peak_relative_deg": 1.166100232205559,
+      "residual_relative_rms_deg": 0.013066477160516305,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9733011266095698
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.01692189418201879,
+      "rms_angle_deg": 3.589336562427016,
+      "peak_relative_deg": 1.2303719550811907,
+      "residual_relative_rms_deg": 0.01298190400872204,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9403372175279247
+    }
+  },
+  {
+    "index": 1731,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8129362140605033,
+      "kd": 1.8442204064498922,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.015619989550060383,
+      "rms_angle_deg": 3.455318819360584,
+      "peak_relative_deg": 1.1683698770853472,
+      "residual_relative_rms_deg": 0.013179167071324353,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9733839560931303
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.017054428610622667,
+      "rms_angle_deg": 3.601668622977281,
+      "peak_relative_deg": 1.2328554768899558,
+      "residual_relative_rms_deg": 0.01311797491140582,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.940433678150119
+    }
+  },
+  {
+    "index": 1344,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8473753121800844,
+      "kd": 1.7852293082893151,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.017451538197964137,
+      "rms_angle_deg": 3.36647688914812,
+      "peak_relative_deg": 1.232898379086421,
+      "residual_relative_rms_deg": 0.013372440803596519,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9746709740702204
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.01904582731151381,
+      "rms_angle_deg": 3.509197303605299,
+      "peak_relative_deg": 1.3006022486532456,
+      "residual_relative_rms_deg": 0.013270135160485332,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9418704805067
+    }
+  },
+  {
+    "index": 756,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8369550026670458,
+      "kd": 1.7111394969593814,
+      "ki": 0.0036964239547585954
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.017771234151298883,
+      "rms_angle_deg": 3.3369950086246,
+      "peak_relative_deg": 1.2454074884532778,
+      "residual_relative_rms_deg": 0.013433131835500472,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9748977291716379
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.01939341313347724,
+      "rms_angle_deg": 3.478950106583402,
+      "peak_relative_deg": 1.313551989109865,
+      "residual_relative_rms_deg": 0.013299608879519656,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9421202129788975
+    }
+  },
+  {
+    "index": 1972,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8537760218795983,
+      "kd": 1.7323750733252432,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.018213435085366356,
+      "rms_angle_deg": 3.328451979887676,
+      "peak_relative_deg": 1.2593012395069645,
+      "residual_relative_rms_deg": 0.013481307770958986,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9752079398194203
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.01987302823798121,
+      "rms_angle_deg": 3.469843204609215,
+      "peak_relative_deg": 1.328192922435584,
+      "residual_relative_rms_deg": 0.013351380269370794,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.942467233274909
+    }
+  },
+  {
+    "index": 1608,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8688760110959776,
+      "kd": 1.790010853671454,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.018281197732381748,
+      "rms_angle_deg": 3.3362167009401964,
+      "peak_relative_deg": 1.2601158923869131,
+      "residual_relative_rms_deg": 0.01349977603918989,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9752531039504959
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.019943726312705422,
+      "rms_angle_deg": 3.4775131236914247,
+      "peak_relative_deg": 1.329183609038323,
+      "residual_relative_rms_deg": 0.0133922809671529,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9425192355931549
+    }
+  },
+  {
+    "index": 528,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8703878274451127,
+      "kd": 1.7509673711591687,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.01872521402128977,
+      "rms_angle_deg": 3.313508897305829,
+      "peak_relative_deg": 1.2754847319269416,
+      "residual_relative_rms_deg": 0.01355073384687493,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9755664713669149
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.020426179931739823,
+      "rms_angle_deg": 3.454065625285503,
+      "peak_relative_deg": 1.3452141507327604,
+      "residual_relative_rms_deg": 0.013424249737622318,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9428671699326946
+    }
+  },
+  {
+    "index": 1711,
+    "settings": {
+      "method": "PID",
+      "kp": 0.9276042735939583,
+      "kd": 1.7936976709343524,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.020716664382033723,
+      "rms_angle_deg": 3.2548960879459403,
+      "peak_relative_deg": 1.3374435898574708,
+      "residual_relative_rms_deg": 0.013843821337627758,
+      "count": 240,
+      "passes": 198,
+      "physical_failures": 0,
+      "selection_cost": 0.9769654574602128
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.022592142874598882,
+      "rms_angle_deg": 3.392308256629936,
+      "peak_relative_deg": 1.4100821012061073,
+      "residual_relative_rms_deg": 0.013719319376274828,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9444342698389038
+    }
+  },
+  {
+    "index": 3745,
+    "settings": {
+      "method": "PID",
+      "kp": 0.5529801090094161,
+      "kd": 1.3025378158878345,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.010200625458570497,
+      "rms_angle_deg": 3.642552462840887,
+      "peak_relative_deg": 0.955437116380232,
+      "residual_relative_rms_deg": 0.014071618859509078,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 0.9919017771257764
+    },
+    "validation": {
+      "success": 0.815625,
+      "failed": 0.0,
+      "cost": 0.011144762825366689,
+      "rms_angle_deg": 3.8040996555814544,
+      "peak_relative_deg": 1.0082092682348236,
+      "residual_relative_rms_deg": 0.013840793597250161,
+      "count": 320,
+      "passes": 261,
+      "physical_failures": 0,
+      "selection_cost": 1.0212350287751586
+    }
+  },
+  {
+    "index": 1104,
+    "settings": {
+      "method": "PID",
+      "kp": 0.5730004696519069,
+      "kd": 1.281796783313084,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.011093323295017965,
+      "rms_angle_deg": 3.581040502271292,
+      "peak_relative_deg": 0.9935430908880047,
+      "residual_relative_rms_deg": 0.014739964951099438,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 0.9924212087505745
+    },
+    "validation": {
+      "success": 0.815625,
+      "failed": 0.0,
+      "cost": 0.01211664541621489,
+      "rms_angle_deg": 3.739629650810591,
+      "peak_relative_deg": 1.0481944394461906,
+      "residual_relative_rms_deg": 0.01447925309256531,
+      "count": 320,
+      "passes": 261,
+      "physical_failures": 0,
+      "selection_cost": 1.0218590097660367
+    }
+  },
+  {
+    "index": 2906,
+    "settings": {
+      "method": "PID",
+      "kp": 0.6933356912545336,
+      "kd": 1.4079283892400252,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.014729018756303724,
+      "rms_angle_deg": 3.4139817370854812,
+      "peak_relative_deg": 1.1398996162169994,
+      "residual_relative_rms_deg": 0.014496133359536678,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 0.9948929575096269
+    },
+    "validation": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.016077042272346204,
+      "rms_angle_deg": 3.562625856222836,
+      "peak_relative_deg": 1.2019392876280477,
+      "residual_relative_rms_deg": 0.01425121798538243,
+      "count": 320,
+      "passes": 264,
+      "physical_failures": 0,
+      "selection_cost": 0.9734045941371072
+    }
+  },
+  {
+    "index": 3523,
+    "settings": {
+      "method": "PID",
+      "kp": 0.7081460744856937,
+      "kd": 1.4482730803182575,
+      "ki": 0.000289540660525056
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.01495192382784034,
+      "rms_angle_deg": 3.4098647333928986,
+      "peak_relative_deg": 1.1485737228244048,
+      "residual_relative_rms_deg": 0.014152448986392122,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 0.995018340197285
+    },
+    "validation": {
+      "success": 0.821875,
+      "failed": 0.0,
+      "cost": 0.016320558176093465,
+      "rms_angle_deg": 3.557904297813876,
+      "peak_relative_deg": 1.211177875897373,
+      "residual_relative_rms_deg": 0.013925573746436095,
+      "count": 320,
+      "passes": 263,
+      "physical_failures": 0,
+      "selection_cost": 0.9908607776380917
+    }
+  },
+  {
+    "index": 2456,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8112240444904287,
+      "kd": 2.050077911461743,
+      "ki": 0.005605861507230742
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.014179020202340563,
+      "rms_angle_deg": 3.5628662478306534,
+      "peak_relative_deg": 1.1090506789958847,
+      "residual_relative_rms_deg": 0.013796868294556983,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 0.9952698489227348
+    },
+    "validation": {
+      "success": 0.828125,
+      "failed": 0.0,
+      "cost": 0.015488300177484085,
+      "rms_angle_deg": 3.7121885016574736,
+      "peak_relative_deg": 1.1705531944342775,
+      "residual_relative_rms_deg": 0.013831426973058919,
+      "count": 320,
+      "passes": 265,
+      "physical_failures": 0,
+      "selection_cost": 0.9564805267247236
+    }
+  },
+  {
+    "index": 3773,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8627434833458005,
+      "kd": 2.0095320908624843,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.016204876295508066,
+      "rms_angle_deg": 3.465090326320388,
+      "peak_relative_deg": 1.182421916603766,
+      "residual_relative_rms_deg": 0.01385404862431875,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 0.9968557070882802
+    },
+    "validation": {
+      "success": 0.828125,
+      "failed": 0.0,
+      "cost": 0.017685099771358993,
+      "rms_angle_deg": 3.610436642118837,
+      "peak_relative_deg": 1.2479147951474274,
+      "residual_relative_rms_deg": 0.013844532265249296,
+      "count": 320,
+      "passes": 265,
+      "physical_failures": 0,
+      "selection_cost": 0.958065901281096
+    }
+  },
+  {
+    "index": 2923,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8818746885697373,
+      "kd": 1.9760182046563388,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.017168731930113423,
+      "rms_angle_deg": 3.4160103887961824,
+      "peak_relative_deg": 1.2167847740695368,
+      "residual_relative_rms_deg": 0.013846581635232617,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 0.9975423479354785
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.018730682440950063,
+      "rms_angle_deg": 3.5594393519337992,
+      "peak_relative_deg": 1.2840339358917763,
+      "residual_relative_rms_deg": 0.013816080719299318,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9416464726914656
+    }
+  },
+  {
+    "index": 3065,
+    "settings": {
+      "method": "PID",
+      "kp": 0.9284207998350721,
+      "kd": 1.9452440379975489,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.0192326434339803,
+      "rms_angle_deg": 3.3303154334069194,
+      "peak_relative_deg": 1.2859565979034262,
+      "residual_relative_rms_deg": 0.01402269543061668,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 0.9990139166781874
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.02098245138230477,
+      "rms_angle_deg": 3.469986487843685,
+      "peak_relative_deg": 1.356560113919158,
+      "residual_relative_rms_deg": 0.013963481358251961,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9432739350782746
+    }
+  },
+  {
+    "index": 2430,
+    "settings": {
+      "method": "PID",
+      "kp": 0.9059345398399568,
+      "kd": 1.7316617776470342,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.020456967463218255,
+      "rms_angle_deg": 3.253457382496073,
+      "peak_relative_deg": 1.330632183579081,
+      "residual_relative_rms_deg": 0.013803909269338352,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 0.9996056551068374
+    },
+    "validation": {
+      "success": 0.83125,
+      "failed": 0.0,
+      "cost": 0.022304263660689033,
+      "rms_angle_deg": 3.3913571995761616,
+      "peak_relative_deg": 1.4028744030380806,
+      "residual_relative_rms_deg": 0.013656764632229063,
+      "count": 320,
+      "passes": 266,
+      "physical_failures": 0,
+      "selection_cost": 0.9442245790234681
+    }
+  },
+  {
+    "index": 2609,
+    "settings": {
+      "method": "PID",
+      "kp": 0.9578690800861706,
+      "kd": 1.950019581065376,
+      "ki": 0.000243254779972934
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.020384531638167645,
+      "rms_angle_deg": 3.291370741122386,
+      "peak_relative_deg": 1.3221312535236018,
+      "residual_relative_rms_deg": 0.014204296589067668,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 0.9998351054201983
+    },
+    "validation": {
+      "success": 0.828125,
+      "failed": 0.0,
+      "cost": 0.022240181311162524,
+      "rms_angle_deg": 3.429150555057764,
+      "peak_relative_deg": 1.3943118866938176,
+      "residual_relative_rms_deg": 0.014138143916094059,
+      "count": 320,
+      "passes": 265,
+      "physical_failures": 0,
+      "selection_cost": 0.9613586461229197
+    }
+  },
+  {
+    "index": 933,
+    "settings": {
+      "method": "PID",
+      "kp": 0.9897777050661266,
+      "kd": 1.9217071464234454,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.02201813856953567,
+      "rms_angle_deg": 3.2360405293132337,
+      "peak_relative_deg": 1.3731609659595079,
+      "residual_relative_rms_deg": 0.014309566242250233,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 1.0010011027427925
+    },
+    "validation": {
+      "success": 0.828125,
+      "failed": 0.0,
+      "cost": 0.02400491419451269,
+      "rms_angle_deg": 3.3715914583467352,
+      "peak_relative_deg": 1.4472441089208072,
+      "residual_relative_rms_deg": 0.014223492457341785,
+      "count": 320,
+      "passes": 265,
+      "physical_failures": 0,
+      "selection_cost": 0.9626350562670384
+    }
+  },
+  {
+    "index": 188,
+    "settings": {
+      "method": "PID",
+      "kp": 1.0319278095777304,
+      "kd": 1.943469839620015,
+      "ki": 0.0020046832154547527
+    },
+    "development": {
+      "success": 0.8208333333333333,
+      "failed": 0.0,
+      "cost": 0.023631125899012215,
+      "rms_angle_deg": 3.191763431649087,
+      "peak_relative_deg": 1.4202567342533001,
+      "residual_relative_rms_deg": 0.01459672114839054,
+      "count": 240,
+      "passes": 197,
+      "physical_failures": 0,
+      "selection_cost": 1.002153318084787
+    },
+    "validation": {
+      "success": 0.828125,
+      "failed": 0.0,
+      "cost": 0.025737754119980007,
+      "rms_angle_deg": 3.325305326083263,
+      "peak_relative_deg": 1.4960928366483865,
+      "residual_relative_rms_deg": 0.014509929929582537,
+      "count": 320,
+      "passes": 265,
+      "physical_failures": 0,
+      "selection_cost": 0.9638920606577731
+    }
+  },
+  {
+    "index": 41,
+    "settings": {
+      "method": "PID",
+      "kp": 0.7392015975205193,
+      "kd": 1.4475788374923848,
+      "ki": 0.006255274705752431
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.01636749359709232,
+      "rms_angle_deg": 3.351391232532318,
+      "peak_relative_deg": 1.1986384922568163,
+      "residual_relative_rms_deg": 0.014506460456447278,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0188287188094531
+    },
+    "validation": {
+      "success": 0.821875,
+      "failed": 0.0,
+      "cost": 0.01786134820511862,
+      "rms_angle_deg": 3.496416749523644,
+      "peak_relative_deg": 1.2636403718940956,
+      "residual_relative_rms_deg": 0.014265347368445527,
+      "count": 320,
+      "passes": 263,
+      "physical_failures": 0,
+      "selection_cost": 0.9919164509186945
+    }
+  },
+  {
+    "index": 486,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8858425381787005,
+      "kd": 2.303226434000386,
+      "ki": 0.010743165389381358
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.015148582394207582,
+      "rms_angle_deg": 3.5664003215908187,
+      "peak_relative_deg": 1.1319318243039864,
+      "residual_relative_rms_deg": 0.015673542105717395,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0188517348347337
+    },
+    "validation": {
+      "success": 0.815625,
+      "failed": 0.0,
+      "cost": 0.016538911107969,
+      "rms_angle_deg": 3.713674271203729,
+      "peak_relative_deg": 1.194791763606084,
+      "residual_relative_rms_deg": 0.015774291097498908,
+      "count": 320,
+      "passes": 261,
+      "physical_failures": 0,
+      "selection_cost": 1.0258349693619895
+    }
+  },
+  {
+    "index": 77,
+    "settings": {
+      "method": "PID",
+      "kp": 0.880285716640937,
+      "kd": 2.0780211132572597,
+      "ki": 0.012382762390527494
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.016457649059497738,
+      "rms_angle_deg": 3.456266863388962,
+      "peak_relative_deg": 1.1892982722223913,
+      "residual_relative_rms_deg": 0.014338415798847053,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0197712019581762
+    },
+    "validation": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.017959905439699324,
+      "rms_angle_deg": 3.6005786389286514,
+      "peak_relative_deg": 1.255263523473176,
+      "residual_relative_rms_deg": 0.014360100821823363,
+      "count": 320,
+      "passes": 264,
+      "physical_failures": 0,
+      "selection_cost": 0.9754426907218473
+    }
+  },
+  {
+    "index": 2852,
+    "settings": {
+      "method": "PID",
+      "kp": 0.7831671683837598,
+      "kd": 1.494468696012615,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.01767352461131304,
+      "rms_angle_deg": 3.3111472684375913,
+      "peak_relative_deg": 1.2431469481586295,
+      "residual_relative_rms_deg": 0.014377388217716872,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0198277435742196
+    },
+    "validation": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.019282112237132214,
+      "rms_angle_deg": 3.453792490259302,
+      "peak_relative_deg": 1.3103513682211905,
+      "residual_relative_rms_deg": 0.014144981778626187,
+      "count": 320,
+      "passes": 264,
+      "physical_failures": 0,
+      "selection_cost": 0.9758280428651238
+    }
+  },
+  {
+    "index": 2300,
+    "settings": {
+      "method": "PID",
+      "kp": 0.781840243499942,
+      "kd": 1.4408325718012351,
+      "ki": 0.002056078015633179
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.01827192903701396,
+      "rms_angle_deg": 3.2835282177387435,
+      "peak_relative_deg": 1.2621841952617912,
+      "residual_relative_rms_deg": 0.015014773830247194,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0200596101264838
+    },
+    "validation": {
+      "success": 0.81875,
+      "failed": 0.0,
+      "cost": 0.01993172768973911,
+      "rms_angle_deg": 3.4252146800129877,
+      "peak_relative_deg": 1.3300631112426837,
+      "residual_relative_rms_deg": 0.014750141591240856,
+      "count": 320,
+      "passes": 262,
+      "physical_failures": 0,
+      "selection_cost": 1.0103521330778753
+    }
+  },
+  {
+    "index": 1600,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8372835229085915,
+      "kd": 1.629482906917958,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.018567821295264155,
+      "rms_angle_deg": 3.2992774592786476,
+      "peak_relative_deg": 1.2722880001387087,
+      "residual_relative_rms_deg": 0.01374523891301585,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0210934005282117
+    },
+    "validation": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.020257715252373337,
+      "rms_angle_deg": 3.4401508332513195,
+      "peak_relative_deg": 1.3415473993526887,
+      "residual_relative_rms_deg": 0.013568456295131374,
+      "count": 320,
+      "passes": 264,
+      "physical_failures": 0,
+      "selection_cost": 0.976673367531794
+    }
+  },
+  {
+    "index": 3540,
+    "settings": {
+      "method": "PID",
+      "kp": 0.9624697806247713,
+      "kd": 2.1622335990762642,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.018689877329709583,
+      "rms_angle_deg": 3.393197904767874,
+      "peak_relative_deg": 1.2583877794109732,
+      "residual_relative_rms_deg": 0.015164704052987508,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0215223832055302
+    },
+    "validation": {
+      "success": 0.821875,
+      "failed": 0.0,
+      "cost": 0.02040035457441037,
+      "rms_angle_deg": 3.5338914528976746,
+      "peak_relative_deg": 1.327891724169654,
+      "residual_relative_rms_deg": 0.015178586312225498,
+      "count": 320,
+      "passes": 263,
+      "physical_failures": 0,
+      "selection_cost": 0.9943883132439788
+    }
+  },
+  {
+    "index": 1554,
+    "settings": {
+      "method": "PID",
+      "kp": 0.8743746843589247,
+      "kd": 1.5621778274875293,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.021041088429720065,
+      "rms_angle_deg": 3.2136866782156184,
+      "peak_relative_deg": 1.3499061259630514,
+      "residual_relative_rms_deg": 0.01446193426643431,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0223179575272898
+    },
+    "validation": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.02294174299984105,
+      "rms_angle_deg": 3.350944809306302,
+      "peak_relative_deg": 1.422540749222253,
+      "residual_relative_rms_deg": 0.014234313990904102,
+      "count": 320,
+      "passes": 264,
+      "physical_failures": 0,
+      "selection_cost": 0.9783607855907436
+    }
+  },
+  {
+    "index": 1460,
+    "settings": {
+      "method": "PID",
+      "kp": 1.0051244363818188,
+      "kd": 2.025891096620559,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.02158635452944205,
+      "rms_angle_deg": 3.266710895096112,
+      "peak_relative_deg": 1.3557305921957787,
+      "residual_relative_rms_deg": 0.01473842569418693,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0235857422940475
+    },
+    "validation": {
+      "success": 0.825,
+      "failed": 0.0,
+      "cost": 0.023529057024494076,
+      "rms_angle_deg": 3.402947741583451,
+      "peak_relative_deg": 1.4291476502202551,
+      "residual_relative_rms_deg": 0.014689840801195068,
+      "count": 320,
+      "passes": 264,
+      "physical_failures": 0,
+      "selection_cost": 0.979467561819041
+    }
+  },
+  {
+    "index": 2675,
+    "settings": {
+      "method": "PID",
+      "kp": 1.0854258037240263,
+      "kd": 1.9678328313059743,
+      "ki": 0.00014471752492589408
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.02569944272339776,
+      "rms_angle_deg": 3.1438861007737473,
+      "peak_relative_deg": 1.478607416015201,
+      "residual_relative_rms_deg": 0.014954880721886213,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0265222562590213
+    },
+    "validation": {
+      "success": 0.828125,
+      "failed": 0.0,
+      "cost": 0.027971123088937462,
+      "rms_angle_deg": 3.2751814192136544,
+      "peak_relative_deg": 1.5564232342804853,
+      "residual_relative_rms_deg": 0.014866575440875737,
+      "count": 320,
+      "passes": 265,
+      "physical_failures": 0,
+      "selection_cost": 0.9655123599633946
+    }
+  },
+  {
+    "index": 3598,
+    "settings": {
+      "method": "PID",
+      "kp": 2.139166694595139,
+      "kd": 2.0480473037774787,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.8166666666666667,
+      "failed": 0.0,
+      "cost": 0.08201462776565992,
+      "rms_angle_deg": 2.5608725540928865,
+      "peak_relative_deg": 2.747432577087719,
+      "residual_relative_rms_deg": 0.01731357076910293,
+      "count": 240,
+      "passes": 196,
+      "physical_failures": 0,
+      "selection_cost": 1.0676903445433044
+    },
+    "validation": {
+      "success": 0.81875,
+      "failed": 0.003125,
+      "cost": 0.08694715496264836,
+      "rms_angle_deg": 2.675603264735948,
+      "peak_relative_deg": 2.8460878870032498,
+      "residual_relative_rms_deg": 0.04827223925319993,
+      "count": 320,
+      "passes": 262,
+      "physical_failures": 1,
+      "selection_cost": 1.0609572297140675
+    }
+  }
+]

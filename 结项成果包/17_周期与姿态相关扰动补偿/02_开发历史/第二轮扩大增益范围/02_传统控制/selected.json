@@ -1,0 +1,98 @@
+{
+  "pid": {
+    "parameters": {
+      "kp": 45.71070776630067,
+      "kd": 20.036099011412567,
+      "ki": 0.0
+    },
+    "development": {
+      "count": 32,
+      "passes": 32,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.032049625383057403,
+      "mean_actual_cost": 0.3098450154119658,
+      "mean_full_rms_deg": 0.773001479249573
+    },
+    "validation": {
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.03181794047968987,
+      "mean_actual_cost": 0.3087751881232602,
+      "mean_full_rms_deg": 0.7614244629994316
+    },
+    "development_candidates": 1596,
+    "validation_candidates": 24,
+    "harmonic": null
+  },
+  "observer": {
+    "parameters": {
+      "kp": 39.06688523870246,
+      "kd": 21.37413982230007,
+      "ki": 0.019398972766870453,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    "development": {
+      "count": 32,
+      "passes": 32,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0018519671336909376,
+      "mean_actual_cost": 0.22003372993084364,
+      "mean_full_rms_deg": 0.7618438740292217
+    },
+    "validation": {
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0017759112756198733,
+      "mean_actual_cost": 0.21826094029835874,
+      "mean_full_rms_deg": 0.7502349214302436
+    },
+    "development_candidates": 540,
+    "validation_candidates": 24,
+    "harmonic": null
+  },
+  "harmonic": {
+    "parameters": {
+      "kp": 45.71070776630067,
+      "kd": 20.036099011412567,
+      "ki": 0.0
+    },
+    "development": {
+      "count": 32,
+      "passes": 32,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.006057678151345644,
+      "mean_actual_cost": 0.30942272610964044,
+      "mean_full_rms_deg": 0.7707309621085361
+    },
+    "validation": {
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.00584080267953904,
+      "mean_actual_cost": 0.3081199206621334,
+      "mean_full_rms_deg": 0.7587415229932049
+    },
+    "development_candidates": 36,
+    "validation_candidates": 24,
+    "harmonic": [
+      0.03542513699140524,
+      0.00016019665373521487,
+      0.008936093652814912,
+      0.003967537048856529
+    ]
+  },
+  "source_sha256": {
+    "代码/disturbance_study.py": "e40dfb6de4fac0df4e8847289822dcb9aebaea060fa175832f4ac8285811a635",
+    "代码/test_disturbance_study.py": "58efec3ee89ede5a78ffc827e375c0e1ce9d43c1a9d1e51ac5c56c33a99a8093"
+  },
+  "heldout_used": false
+}

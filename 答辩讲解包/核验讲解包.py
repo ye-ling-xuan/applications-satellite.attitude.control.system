@@ -1,260 +1,192 @@
-"""Read-only integrity and key-table review for the seven-step teaching pack.
-
-Default: verify this pack only. --check-originals additionally verifies the
-original files. --seal creates a new reviewed manifest once, without touching
-the original delivery. No option trains or selects a model.
-"""
+"""Read-only evidence, metric and link checks; --seal writes a NEW version manifest."""
 from __future__ import annotations
 import argparse
-from collections import defaultdict
-import csv
 import hashlib
 from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
-from statistics import mean
 from urllib.parse import unquote, urlsplit
+import zipfile
 
 PACK = Path(__file__).resolve().parent
 PROJECT = PACK.parent
-MANIFEST = PACK / "讲解包清单.json"
-RECORD = PACK / "核验结果.json"
-SKIP = {"__pycache__", "_构建临时"}
+MANIFEST = PACK / '讲解包清单_柔性附件论文版.json'
+RECORD = PACK / '核验结果_柔性附件论文版.json'
+BASE = PROJECT / '结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核'
+SUPPLEMENT = BASE / '10_补充实验与论文复核'
 
 
 def sha(path):
     digest = hashlib.sha256()
-    with path.open("rb") as stream:
-        for part in iter(lambda: stream.read(2**20), b""):
-            digest.update(part)
+    with path.open('rb') as stream:
+        for block in iter(lambda: stream.read(2**20), b''):
+            digest.update(block)
     return digest.hexdigest()
 
 
 def read(path):
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding='utf-8'))
 
 
-def save(path, value):
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
-
-
-def require(value, message):
-    if not value:
+def require(condition, message):
+    if not condition:
         raise ValueError(message)
 
 
-def pack_files():
-    return sorted(p for p in PACK.rglob("*") if p.is_file() and p not in {MANIFEST, RECORD}
-                  and not any(part in SKIP for part in p.relative_to(PACK).parts))
+def files():
+    return sorted(p for p in PACK.rglob('*') if p.is_file() and p not in {MANIFEST, RECORD}
+                  and '__pycache__' not in p.parts)
 
 
-def steps():
-    result = sorted(p for p in PACK.iterdir() if p.is_dir() and re.match(r"^0[1-7]_", p.name))
-    require(len(result) == 7, "Expected exactly seven research steps")
-    return result
-
-
-def copy_check(check_originals=False):
-    copied = {}
-    locations = {}
-    counts = {}
-    for step in steps():
-        for name in ("本步讲解.md", "答辩与论文用稿.md", "支撑代码与数据/来源清单.json"):
-            require((step / name).is_file(), f"Missing step component: {step.name}/{name}")
-        listing = read(step / "支撑代码与数据/来源清单.json")["sources"]
-        counts[step.name] = len(listing)
-        for item in listing:
-            target = (step / item["copy"]).resolve()
-            require(target.is_relative_to(step), "Copy path outside research step")
-            require(target.is_file(), "Missing copied evidence: " + str(target))
-            require(sha(target) == item["sha256"], "Copied evidence SHA mismatch: " + str(target))
-            if "bytes" in item:
-                require(target.stat().st_size == item["bytes"], "Copied evidence byte count mismatch")
-            if check_originals:
-                original = (PROJECT / item["source"]).resolve()
-                require(original.is_relative_to(PROJECT), "Source outside project")
-                require(sha(original) == item["sha256"], "Original source SHA mismatch: " + item["source"])
-            relative = target.relative_to(PACK).as_posix()
-            require(relative not in copied, "Copy registered more than once: " + relative)
-            copied[relative] = item
-            locations.setdefault(item["source"], target)
-    return {"registered_copies": len(copied), "by_step": counts, "original_sources_checked": check_originals}, copied, locations
+def source_check():
+    steps = sorted(p for p in PACK.iterdir() if p.is_dir() and re.match(r'^\d{2}_', p.name))
+    require([p.name[:2] for p in steps] == [f'{i:02}' for i in range(1,9)], 'Expected exactly steps 01 to 08')
+    copies, references, copied_paths = 0, 0, set()
+    for step in steps:
+        for name in ('本步讲解.md', '答辩与论文用稿.md', '支撑代码与数据/材料说明.md', '支撑代码与数据/来源清单.json'):
+            require((step/name).is_file(), 'Missing component: '+str(step/name))
+        require('## 论文正文' in (step/'答辩与论文用稿.md').read_text(encoding='utf-8'), 'Missing paper section')
+        for item in read(step/'支撑代码与数据/来源清单.json')['sources']:
+            source = (PROJECT/item['source']).resolve()
+            require(source.is_relative_to(PROJECT), 'Source outside project')
+            require(source.is_file(), 'Missing source '+str(source))
+            require(sha(source)==item['sha256'] and source.stat().st_size==item['bytes'], 'Source changed '+str(source))
+            if item.get('reference_only'):
+                references += 1
+            else:
+                target = (step/item['copy']).resolve()
+                require(target.is_relative_to(step), 'Copy outside step')
+                require(target.is_file() and sha(target)==item['sha256'], 'Copy differs '+str(target))
+                copied_paths.add(target)
+                copies += 1
+    return dict(steps=len(steps), registered_copies=copies, registered_references=references), copied_paths
 
 
 class Links(HTMLParser):
     def __init__(self):
         super().__init__()
         self.urls = []
-
     def handle_starttag(self, tag, attrs):
-        self.urls += [value for key, value in attrs if key in {"href", "src"} and value]
+        self.urls.extend(value for key,value in attrs if key in {'href','src'} and value)
 
 
 def link_check(copied):
-    # Original source excerpts keep their historical links. Authored reading
-    # material and the generated HTML must have usable local destinations.
-    authored = [p for p in pack_files() if p.suffix in {".md", ".html"}
-                and p.relative_to(PACK).as_posix() not in copied]
-    total = 0
-    outside = []
+    count, external_project = 0, 0
     missing = []
-    for source in authored:
-        content = source.read_text(encoding="utf-8-sig")
-        if source.suffix == ".html":
-            parser = Links()
-            parser.feed(content)
-            urls = parser.urls
+    for source in files():
+        if source in copied or source.suffix not in {'.md','.html','.svg'}:
+            continue
+        text = source.read_text(encoding='utf-8-sig')
+        if source.suffix in {'.html','.svg'}:
+            parser=Links();parser.feed(text);urls=parser.urls
         else:
-            urls = re.findall(r"\[[^\]]*\]\(([^)]+)\)", content)
+            urls=re.findall(r'\[[^\]]*\]\(([^)]+)\)',text)
         for url in urls:
-            url = url.strip().strip("<>")
-            parts = urlsplit(url)
-            if parts.scheme or not parts.path or url.startswith("//"):
+            parts=urlsplit(url.strip().strip('<>'))
+            if parts.scheme or not parts.path or url.startswith('//'):
                 continue
-            target = (source.parent / unquote(parts.path)).resolve()
-            total += 1
+            count+=1
+            target=(source.parent/unquote(parts.path)).resolve()
             if not target.exists():
-                missing.append({"source": source.relative_to(PACK).as_posix(), "link": url})
-            elif not target.is_relative_to(PACK):
-                outside.append({"source": source.relative_to(PACK).as_posix(), "link": url})
-    require(not missing, "Broken authored reading links: " + json.dumps(missing, ensure_ascii=False))
-    return {"authored_documents": len(authored), "local_links_checked": total, "missing": [],
-            "references_to_full_project": outside,
-            "original_copied_text_links": "Historical links retained in source copies; use step material notes for current evidence layout"}
+                missing.append([source.relative_to(PACK).as_posix(),url])
+            external_project+=not target.is_relative_to(PACK)
+    require(not missing,'Broken links: '+json.dumps(missing,ensure_ascii=False))
+    page=(PACK/'按顺序阅读.html').read_text(encoding='utf-8')
+    require('<math' in page and 'MathJax' not in page,'Offline math missing')
+    require(all(f'id="step-{n}"' in page for n in range(1,9)), 'HTML step missing')
+    return dict(local_links=count, references_to_full_project=external_project, broken_links=0, offline_math=True)
 
 
-def table(locations, original):
-    require(original in locations, "Full supporting CSV not selected: " + original)
-    with locations[original].open(encoding="utf-8-sig", newline="") as stream:
-        return list(csv.DictReader(stream))
+def numerical_check():
+    import numpy as np
+    summary=read(SUPPLEMENT/'结果摘要.json')
+    require(summary['verification']['passed'],'Supplement physics audit failed')
+    total=0;details=[]
+    limits=np.deg2rad([1,.5,.1,.5])
+    for group,methods in summary['results'].items():
+        for method,reported in methods.items():
+            path=SUPPLEMENT/'02_新独立测试'/group/method/'responses.npz'
+            with np.load(path) as data:
+                states=data['state'];commands=data['command'];failure=data['failed_trace'][:,-1]
+                bounds=np.deg2rad([170,300,10])
+                exceeded=np.any(np.abs(states[:,:,:3])>bounds[None,None,:],axis=(1,2))
+                require(np.array_equal(exceeded,failure),'Model range failure differs')
+                require(np.max(np.abs(commands))<=.5+1e-12,'Torque bound differs')
+                success=np.all(np.abs(states[:,160:,:]) <= limits[None,None,:]+1e-12,axis=(1,2)) & ~failure
+                cost=np.sum(commands**2*.05,axis=1)
+                require(states.shape==(640,441,4) and commands.shape==(640,440),'Trajectory shape changed')
+                require(np.array_equal(success,data['success']),'True state acceptance differs')
+                np.testing.assert_allclose(cost,data['cost'],atol=1e-12,rtol=1e-12)
+                require(int(success.sum())==reported['passes'],'Pass count differs')
+                require(int(failure.sum())==reported['physical_failures'],'Failure count differs')
+                require(abs(float(cost.mean())-reported['cost'])<1e-12,'Mean effort differs')
+                total+=len(success)
+                details.append(dict(group=group,method=method,passes=int(success.sum()),count=len(success)))
+    require(total==17280 and total==summary['new_test_episodes'],'Episode total differs')
+    require(summary['new_training_steps']==0 and not summary['old_models_changed'],'Unexpected training/model edits')
+    freeze=read(SUPPLEMENT/'01_方案与冻结/freeze.json')
+    for field,root in [('source_sha256',SUPPLEMENT),('old_inputs_sha256',BASE),('scenario_and_noise_sha256',SUPPLEMENT)]:
+        for relative,digest in freeze[field].items():
+            require(sha(root/relative)==digest,'Frozen input changed: '+relative)
+    require(all(x['all_three_seeds_beat_both_PID_references'] for x in summary['claims'].values()), 'Main superiority flag differs')
+    old=read(BASE/'08_最终报告/最终结果.json')
+    require(old['training_steps']==4718592 and old['total_test_episodes_including_post_hoc']==6400,'Original flexible totals differ')
+    return dict(recomputed_episodes=total,scope='All new trajectories: true-state acceptance, bound-failure flags and full-window torque-square integral; physical audit read and frozen inputs hashed. No retraining.',details=details)
 
 
-def true(value):
-    require(value in {"True", "False", "true", "false", "1", "0"}, "Unknown boolean in CSV")
-    return value.lower() in {"true", "1"}
+def original_check():
+    baseline=read(PACK/'原成果保全基线.json')
+    for item in baseline['files']:
+        path=PROJECT/item['source']
+        require(path.stat().st_size==item['bytes'] and sha(path)==item['sha256'],'Original baseline changed: '+str(path))
+    counts={}
+    for relative in ('最终交付清单.json','08_惯量域随机化与泛化边界研究/05_研究分析与核验/技术研究冻结清单.json'):
+        listing=read(PROJECT/'结项成果包'/relative)
+        for item in listing['files']:
+            path=PROJECT/'结项成果包'/item['relative']
+            require(path.stat().st_size==item['bytes'] and sha(path)==item['sha256'],'Original frozen file changed: '+str(path))
+        counts[relative]=len(listing['files'])
+    return dict(passed=True,baseline=len(baseline['files']),files_rehashed=counts)
 
 
-def rate(rows):
-    require(bool(rows), "Empty comparison group")
-    return sum(true(row["success"]) for row in rows) / len(rows)
-
-
-def numeric_check(locations):
-    v1 = table(locations, "结项成果包/04_实验数据与图表/episode_metrics.csv")
-    v2 = table(locations, "结项成果包/07_单轴三轴多算法对比/results/episode_metrics.csv")
-    v3 = table(locations, "结项成果包/08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/episode_metrics.csv")
-    require([len(v1), len(v2), len(v3)] == [5600, 7560, 10920], "Formal episode totals differ")
-    require(len({r["scenario_id"] for r in v1}) == 800, "V1 scene total differs")
-    v1_nominal = {}
-    for label in ("PID", "PPO_nominal", "PPO_randomized"):
-        rows = [r for r in v1 if r["controller"] == label and r["family"] == "nominal"]
-        require(rate(rows) == 1, "V1 nominal success differs")
-        v1_nominal[label] = {"n": len(rows), "success_percent": 100 * rate(rows), "control_cost": mean(float(r["control_cost"]) for r in rows)}
-    expected_v2 = {
-        "single": {"baseline_PID": 66.7, "tuned_PID": 71.1, "improved_PID": 71.1,
-                   "PPO_calibrated": 68.9, "SAC_calibrated": 68.5, "TD3_calibrated": 64.1},
-        "three": {"baseline_PID": 23.9, "tuned_PID": 71.1, "improved_PID": 72.8,
-                  "PPO_calibrated": 55.9, "SAC_calibrated": 63.0, "TD3_calibrated": 24.8},
-    }
-    v2_rates = []
-    for axis, groups in expected_v2.items():
-        for label, expected in groups.items():
-            rows = [r for r in v2 if r["axis"] == axis and r["controller"] == label]
-            require(round(100 * rate(rows), 1) == expected, f"V2 success differs: {axis}/{label}")
-            v2_rates.append({"axis": axis, "controller": label, "n": len(rows), "success_percent": round(100 * rate(rows), 1)})
-    v3_groups = defaultdict(list)
-    for row in v3:
-        if row["domain"] == "out_of_domain" and row["experiment"] == "scalar":
-            v3_groups[(row["axis"], row["controller"])].append(row)
-    v3_main = []
-    v3_costs = []
-    for axis in ("single", "three"):
-        for label in ("PID_N", "PID_R", "SAC_N", "SAC_R"):
-            rows = v3_groups[(axis, label)]
-            expected = 98.9 if (axis, label) == ("single", "SAC_R") else 84.4 if (axis, label) == ("three", "SAC_R") else 100.0
-            require(round(100 * rate(rows), 1) == expected, f"V3 domain success differs: {axis}/{label}")
-            v3_main.append({"axis": axis, "controller": label, "n": len(rows),
-                            "successful": sum(true(r["success"]) for r in rows),
-                            "success_percent": round(100 * rate(rows), 1)})
-        pid = v3_groups[(axis, "PID_N")]
-        sac = v3_groups[(axis, "SAC_N")]
-        pid_cost = mean(float(r["control_cost"]) for r in pid)
-        sac_cost = mean(float(r["control_cost"]) for r in sac)
-        reduction = 100 * (1 - sac_cost / pid_cost)
-        require(round(reduction, 1) == (54.7 if axis == "single" else 28.7), "V3 cost reduction differs")
-        v3_costs.append({"axis": axis, "pid_cost": pid_cost, "sac_cost": sac_cost,
-                         "reduction_percent": round(reduction, 1),
-                         "pid_settling_s": mean(float(r["settling_time_s"]) for r in pid),
-                         "sac_settling_s": mean(float(r["settling_time_s"]) for r in sac),
-                         "pid_rms_deg": mean(float(r["rms_error_deg"]) for r in pid),
-                         "sac_rms_deg": mean(float(r["rms_error_deg"]) for r in sac)})
-    pairs = table(locations, "结项成果包/07_单轴三轴多算法对比/results/policy_calibration_pairs.csv")
-    require(len(pairs) == 3240, "V2 calibration pair count differs")
-    recovered = [r for r in pairs if r["axis"] == "three" and r["algorithm"] == "SAC"]
-    require(sum(true(r["success_recovered"]) for r in recovered) == 340, "V2 SAC recovery count differs")
-    require(sum(true(r["success_lost"]) for r in recovered) == 0, "V2 SAC lost success count differs")
-    return {"formal_episode_counts": {"V1": len(v1), "V2": len(v2), "V3": len(v3), "total": len(v1) + len(v2) + len(v3)},
-            "V1_nominal": v1_nominal, "V2_success": v2_rates, "V2_calibration_pairs": len(pairs),
-            "V3_out_of_domain": v3_main, "V3_out_of_domain_tradeoff": v3_costs,
-            "scope": "Recomputed from complete copied CSVs, including all successes and failures; no training or physical replay"}
-
-
-def originals_check():
-    baseline = read(PACK / "原成果保全基线.json")
-    for item in baseline["files"]:
-        path = PROJECT / item["source"]
-        require(path.stat().st_size == item["bytes"] and sha(path) == item["sha256"], "Original baseline differs: " + item["source"])
-    counts = {}
-    for name in ("最终交付清单.json", "08_惯量域随机化与泛化边界研究/05_研究分析与核验/技术研究冻结清单.json"):
-        listing = read(PROJECT / "结项成果包" / name)
-        for item in listing["files"]:
-            path = PROJECT / "结项成果包" / item["relative"]
-            require(path.stat().st_size == item["bytes"] and sha(path) == item["sha256"], "Original reviewed file differs: " + item["relative"])
-        counts[name] = len(listing["files"])
-    return {"status": "passed", "baseline_files": len(baseline["files"]), "original_manifest_files_rehashed": counts,
-            "originals_modified": False}
-
-
-def check(seal=False, check_originals=False):
-    if seal:
-        require(not MANIFEST.exists(), "Reviewed pack manifest already exists; refusing to overwrite")
-        save(RECORD, {"status": "pending", "scope": "Assembly checks have not yet completed"})
-    source_status, copied, locations = copy_check(check_originals)
-    data = numeric_check(locations)
-    if seal:
-        require(not MANIFEST.exists(), "Reviewed pack manifest already exists; refusing to overwrite")
-        rows = [{"relative": p.relative_to(PACK).as_posix(), "bytes": p.stat().st_size, "sha256": sha(p)} for p in pack_files()]
-        save(MANIFEST, {"client_date": "2026-10-16", "file_count": len(rows), "files": rows,
-                        "exclusions": ["this manifest", "核验结果.json (avoid circular self-hash)", "__pycache__", "temporary construction files"],
-                        "new_research_run": False, "school_submission_claimed": False})
-    links = link_check(copied)
-    listing = read(MANIFEST)
-    bound = set()
-    for item in listing["files"]:
-        target = (PACK / item["relative"]).resolve()
-        require(target.is_relative_to(PACK), "Manifest path outside teaching pack")
-        require(target.stat().st_size == item["bytes"] and sha(target) == item["sha256"], "Pack manifest differs: " + item["relative"])
-        bound.add(target)
-    require(bound == {p.resolve() for p in pack_files()}, "Pack manifest membership differs")
-    result = {"status": "passed", "client_date": "2026-10-16", "files": len(bound),
-              "total_bytes": sum(item["bytes"] for item in listing["files"]), "manifest_sha256": sha(MANIFEST),
-              "copies": source_status, "links": links, "recomputed_key_numbers": data,
-              "new_training_or_experiments": False, "default_writes_files": False}
-    if check_originals:
-        result["original_preservation"] = originals_check()
-    if seal:
-        save(RECORD, result)
-    return result
+def archive_check():
+    index=read(PACK/'版本记录/重组前资料索引.json')
+    path=PACK/'版本记录'/index['archive']
+    require(sha(path)==index['archive_sha256'],'Archive changed')
+    with zipfile.ZipFile(path) as archive:
+        require(archive.testzip() is None,'Archive CRC failure')
+        require(not any(re.match(r'^(10_|11_)',p) for p in archive.namelist()),'Deleted steps retained in archive')
+        require('按顺序阅读.html' not in archive.namelist(),'Old reading HTML retained')
+        for item in index['files']:
+            raw=archive.read(item['relative'])
+            require(len(raw)==item['bytes'] and hashlib.sha256(raw).hexdigest()==item['sha256'],'Archived content differs')
+    return dict(files=index['file_count'],sha256=index['archive_sha256'],old_steps_10_11_included=False)
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--seal", action="store_true", help="One-time assembly manifest, after review")
-    parser.add_argument("--check-originals", action="store_true", help="Additionally read and hash original project evidence")
-    args = parser.parse_args()
-    print(json.dumps(check(args.seal, args.check_originals), ensure_ascii=False, indent=2))
+    parser=argparse.ArgumentParser();parser.add_argument('--seal',action='store_true');parser.add_argument('--check-originals',action='store_true');args=parser.parse_args()
+    if args.seal:
+        require(not MANIFEST.exists(),'Version manifest already exists; do not overwrite it')
+        RECORD.write_text(json.dumps(dict(status='pending',scope='First-version checks are running; no pass claimed yet'),ensure_ascii=False,indent=2),encoding='utf-8')
+    sources,copied=source_check()
+    result=dict(status='passed',sources=sources,links=link_check(copied),numbers=numerical_check(),archive=archive_check())
+    if args.check_originals:
+        result['originals']=original_check()
+    if args.seal:
+        rows=[dict(relative=p.relative_to(PACK).as_posix(),bytes=p.stat().st_size,sha256=sha(p)) for p in files()]
+        require(all(x['bytes']<100*1024**2 for x in rows),'File exceeds GitHub 100MiB threshold')
+        listing=dict(version='柔性附件论文版_20261018',files=rows,file_count=len(rows),scope='Eight-step teaching/paper package; full sources referenced in the same project',excluded=['this manifest','核验结果_柔性附件论文版.json','__pycache__'])
+        MANIFEST.write_text(json.dumps(listing,ensure_ascii=False,indent=2),encoding='utf-8')
+    listing=read(MANIFEST)
+    require({x['relative'] for x in listing['files']}=={p.relative_to(PACK).as_posix() for p in files()},'Unmanifested or missing file')
+    for item in listing['files']:
+        path=PACK/item['relative']
+        require(path.stat().st_size==item['bytes'] and sha(path)==item['sha256'],'Sealed file changed: '+item['relative'])
+    result['manifest_files']=listing['file_count']
+    RECORD.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+    print(json.dumps({key:result[key] for key in ('status','sources','links','manifest_files')},ensure_ascii=False))
 
 
-if __name__ == "__main__":
+if __name__=='__main__':
     main()

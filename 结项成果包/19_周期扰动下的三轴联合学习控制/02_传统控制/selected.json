@@ -1,0 +1,114 @@
+{
+  "pid": {
+    "parameters": {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0
+    },
+    "development": {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.053890702581546886,
+      "mean_actual_cost": 1.1386557287520143,
+      "mean_full_rms_deg": 1.5178261733444014
+    },
+    "validation": {
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.054782490900918156,
+      "mean_actual_cost": 1.158141453451762,
+      "mean_full_rms_deg": 1.5500419925356699
+    },
+    "harmonic": null,
+    "development_candidates": 857,
+    "validation_candidates": 24
+  },
+  "observer": {
+    "parameters": {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    "development": {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0031418071758232725,
+      "mean_actual_cost": 0.6193078037569015,
+      "mean_full_rms_deg": 1.4668310800619224
+    },
+    "validation": {
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.003085360553775942,
+      "mean_actual_cost": 0.6293264128049328,
+      "mean_full_rms_deg": 1.497147253274014
+    },
+    "harmonic": null,
+    "development_candidates": 120,
+    "validation_candidates": 24
+  },
+  "harmonic": {
+    "parameters": {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0
+    },
+    "development": {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.010908339498727236,
+      "mean_actual_cost": 0.8999008602072781,
+      "mean_full_rms_deg": 1.4734712194384987
+    },
+    "validation": {
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01106605596513173,
+      "mean_actual_cost": 0.9173613153735948,
+      "mean_full_rms_deg": 1.5050943776201917
+    },
+    "harmonic": [
+      [
+        0.03645603259406935,
+        -2.7337449052684468e-05,
+        0.009356304085132765,
+        0.0039014808161882877
+      ],
+      [
+        0.035145635260082,
+        -1.876007204209499e-06,
+        0.009119563768384636,
+        0.003809276588076194
+      ],
+      [
+        0.03378664662832098,
+        -7.05658716915504e-05,
+        0.009785769541099358,
+        0.004047287301662035
+      ]
+    ],
+    "development_candidates": 10,
+    "validation_candidates": 10
+  },
+  "source_sha256": {
+    "代码/joint_study.py": "91ecb776b653cc6b6390e513e27a6fba8a600d71e89248760e5c672ca6616457",
+    "代码/physics.py": "5b57a630034f59dbc5b9a919f5c696486048e7f0f983f42714774a95a3917d9a",
+    "代码/test_joint_study.py": "fa659ff50d92dd06222981cafef3ba396a916718b9c360e5cc23e332b561bb34",
+    "代码/test_physics.py": "0db850545f670273ce3f376b94ee9b3fa497439c74ae0c3d3f40b8f6962b92c3"
+  },
+  "test_used": false
+}

@@ -1,0 +1,33 @@
+{
+  "index": 84,
+  "settings": {
+    "method": "PID",
+    "kp": 0.6424195423845626,
+    "kd": 1.7217308002831726,
+    "ki": 0.0
+  },
+  "development": {
+    "success": 0.8291666666666667,
+    "failed": 0.0,
+    "cost": 0.010554271280153401,
+    "rms_angle_deg": 3.719809552290523,
+    "peak_relative_deg": 0.972866232257471,
+    "residual_relative_rms_deg": 0.012199792074494082,
+    "count": 240,
+    "passes": 199,
+    "physical_failures": 0,
+    "selection_cost": 0.946939590412678
+  },
+  "validation": {
+    "success": 0.834375,
+    "failed": 0.0,
+    "cost": 0.011535843752778514,
+    "rms_angle_deg": 3.879960524842707,
+    "peak_relative_deg": 1.026719749425234,
+    "residual_relative_rms_deg": 0.012171427830978618,
+    "count": 320,
+    "passes": 267,
+    "physical_failures": 0,
+    "selection_cost": 0.9191850272928432
+  }
+}

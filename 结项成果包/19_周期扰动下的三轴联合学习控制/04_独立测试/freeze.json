@@ -1,0 +1,24 @@
+{
+  "source_sha256": {
+    "代码/joint_study.py": "91ecb776b653cc6b6390e513e27a6fba8a600d71e89248760e5c672ca6616457",
+    "代码/physics.py": "5b57a630034f59dbc5b9a919f5c696486048e7f0f983f42714774a95a3917d9a",
+    "代码/test_joint_study.py": "fa659ff50d92dd06222981cafef3ba396a916718b9c360e5cc23e332b561bb34",
+    "代码/test_physics.py": "0db850545f670273ce3f376b94ee9b3fa497439c74ae0c3d3f40b8f6962b92c3"
+  },
+  "models": {
+    "03_训练/formal/A/seed_19111/best.zip": "7b34c435011a981aa3c2cfb14f40170234bcc2fc799714bfda666d1bea5362e0",
+    "03_训练/formal/A/seed_19222/best.zip": "eef5c4ed10b54181d58b7ebe38cc3cefe9edf8a35791788e43eeface50cd2194",
+    "03_训练/formal/A/seed_19333/best.zip": "a067fabcd19402c16adac68ee88b00f80faf73c8a9009e1d65b50819052131b2"
+  },
+  "scenario_sha256": "559361d7f3c29235fc934316b93bfdca639c320d23a17d2bc794978acfa00636",
+  "baseline_sha256": "65b0ea2d84d3140980a420af86f2f11205d06e54f0da0a6e3145c6111ac8ddc1",
+  "controllers": [
+    "pid",
+    "observer",
+    "harmonic",
+    "TD3_19111",
+    "TD3_19222",
+    "TD3_19333"
+  ],
+  "weights_frozen": true
+}

@@ -1,0 +1,104 @@
+{
+  "pid": {
+    "parameters": {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0
+    },
+    "development": {
+      "count": 32,
+      "passes": 32,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.02996316173520615,
+      "mean_actual_cost": 0.379322551676347,
+      "mean_full_rms_deg": 0.7890681717607592
+    },
+    "validation": {
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.029761643716652946,
+      "mean_actual_cost": 0.37649835159813555,
+      "mean_full_rms_deg": 0.7768774475237646
+    },
+    "development_candidates": 2271,
+    "validation_candidates": 24,
+    "harmonic": null
+  },
+  "observer": {
+    "parameters": {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    "development": {
+      "count": 32,
+      "passes": 32,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0017622679042119816,
+      "mean_actual_cost": 0.20638388700105165,
+      "mean_full_rms_deg": 0.7626066228878859
+    },
+    "validation": {
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0016646932641166815,
+      "mean_actual_cost": 0.20548436724617394,
+      "mean_full_rms_deg": 0.7509160823942894
+    },
+    "harmonic": null,
+    "development_candidates": 540,
+    "validation_candidates": 24,
+    "retained_earlier_selected_candidates": 3,
+    "selection_used_heldout": false
+  },
+  "harmonic": {
+    "parameters": {
+      "kp": 45.71070776630067,
+      "kd": 20.036099011412567,
+      "ki": 0.0
+    },
+    "development": {
+      "count": 32,
+      "passes": 32,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.006057908706759818,
+      "mean_actual_cost": 0.3094227731407178,
+      "mean_full_rms_deg": 0.7707310385049584
+    },
+    "validation": {
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0058407340050928985,
+      "mean_actual_cost": 0.30811999969614706,
+      "mean_full_rms_deg": 0.7587415907649135
+    },
+    "harmonic": [
+      0.03542099233090972,
+      0.00015807975448655504,
+      0.008934852332364431,
+      0.003966314844186389
+    ],
+    "development_candidates": 36,
+    "validation_candidates": 24,
+    "retained_earlier_selected_candidates": 2,
+    "selection_used_heldout": false
+  },
+  "source_sha256": {
+    "代码/disturbance_study.py": "6c081586f3808c47456510081e3b884531079dd260ca9d2352df5edd74b25be6",
+    "代码/test_disturbance_study.py": "58efec3ee89ede5a78ffc827e375c0e1ce9d43c1a9d1e51ac5c56c33a99a8093"
+  },
+  "heldout_used": false,
+  "retained_prior_development_candidates": true,
+  "retained_candidates_evidence_sha256": "06df38145280c136fbc67b3160064ac5290de965f5c947835a1de215a7f9d685"
+}

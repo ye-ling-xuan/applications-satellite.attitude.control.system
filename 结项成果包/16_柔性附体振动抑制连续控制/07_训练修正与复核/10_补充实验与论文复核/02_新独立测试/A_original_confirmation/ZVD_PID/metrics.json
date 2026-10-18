@@ -1,0 +1,74 @@
+{
+  "success": 0.99375,
+  "failed": 0.0,
+  "cost": 0.00890155694814306,
+  "rms_angle_deg": 4.5197463590902585,
+  "peak_relative_deg": 0.5836021770313969,
+  "residual_relative_rms_deg": 0.00577701714991849,
+  "count": 640,
+  "passes": 636,
+  "physical_failures": 0,
+  "selection_cost": 0.04314890677066891,
+  "frequency_results": {
+    "0.4": {
+      "success": 0.96875,
+      "failed": 0.0,
+      "cost": 0.009202535591152977,
+      "rms_angle_deg": 4.52027612471603,
+      "peak_relative_deg": 1.0941986487600035,
+      "residual_relative_rms_deg": 0.016383667340299706,
+      "count": 128,
+      "passes": 124,
+      "physical_failures": 0,
+      "selection_cost": 0.18043928470378223
+    },
+    "0.5": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.009002346751959493,
+      "rms_angle_deg": 4.519950135658235,
+      "peak_relative_deg": 0.6635861305190993,
+      "residual_relative_rms_deg": 0.00506154822798671,
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "selection_cost": 0.009002346751959493
+    },
+    "0.6": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.008862646304109534,
+      "rms_angle_deg": 4.519678261850171,
+      "peak_relative_deg": 0.46229115107615043,
+      "residual_relative_rms_deg": 0.0027948162874441157,
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "selection_cost": 0.008862646304109534
+    },
+    "0.7": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.008765568716253218,
+      "rms_angle_deg": 4.519482250244041,
+      "peak_relative_deg": 0.3706488407240037,
+      "residual_relative_rms_deg": 0.002119062867098589,
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "selection_cost": 0.008765568716253218
+    },
+    "0.8": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.008674687377240087,
+      "rms_angle_deg": 4.519345022982816,
+      "peak_relative_deg": 0.32728611407772806,
+      "residual_relative_rms_deg": 0.0025259910267633216,
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "selection_cost": 0.008674687377240087
+    }
+  }
+}

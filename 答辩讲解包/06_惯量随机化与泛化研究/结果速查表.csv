@@ -1,9 +1,0 @@
-﻿axis,controller,region,successful_episodes,episodes,success_rate,settling_time_successful_only_s,rms_all_episodes_deg,control_cost_all_episodes
-single,PID_N,strict_scalar_out_of_domain_rho_0.5_0.6_1.4_1.5,120,120,1.0,3.2625,6.384462047752093,0.42739911877083486
-single,PID_R,strict_scalar_out_of_domain_rho_0.5_0.6_1.4_1.5,120,120,1.0,3.269166666666667,6.384398634040319,0.4270055157804959
-single,SAC_N,strict_scalar_out_of_domain_rho_0.5_0.6_1.4_1.5,360,360,1.0,4.2636111111111115,7.077821966956813,0.1934177481087458
-single,SAC_R,strict_scalar_out_of_domain_rho_0.5_0.6_1.4_1.5,356,360,0.9888888888888889,5.288342696629214,7.647803177456018,0.18898746854172205
-three,PID_N,strict_scalar_out_of_domain_rho_0.5_0.6_1.4_1.5,120,120,1.0,3.234,9.16328489845958,5.104369731407137
-three,PID_R,strict_scalar_out_of_domain_rho_0.5_0.6_1.4_1.5,120,120,1.0,3.234,9.16328489845958,5.104369731407137
-three,SAC_N,strict_scalar_out_of_domain_rho_0.5_0.6_1.4_1.5,360,360,1.0,6.1945,11.701739922350976,3.641218134702015
-three,SAC_R,strict_scalar_out_of_domain_rho_0.5_0.6_1.4_1.5,304,360,0.8444444444444444,5.325855263157895,11.811189361504258,3.874292212776424

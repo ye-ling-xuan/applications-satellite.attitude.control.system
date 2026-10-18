@@ -1,0 +1,81 @@
+{
+  "dt_s": 0.05,
+  "duration_s": 32.0,
+  "deadline_s": 8.0,
+  "inertia": 1.0,
+  "actuator_time_constant_s": 0.15,
+  "command_limit_Nm": 0.5,
+  "acceptance": {
+    "angle_deg": 2.0,
+    "angular_velocity_deg_s": 1.0,
+    "sustained_interval_s": [
+      8.0,
+      32.0
+    ]
+  },
+  "physical_failure": {
+    "angle_deg": 90.0,
+    "angular_velocity_deg_s": 60.0,
+    "frozen_until_horizon": true
+  },
+  "disturbance": "A1*sin(phi)+A2*sin(2*phi+0.4)+c_theta*sin(2*theta)+c_rate*tanh(omega/0.05)",
+  "phase": "phi_dot=frequency; phase and frequency are measured, disturbance coefficients hidden",
+  "coefficient_ranges": {
+    "A1": [
+      0.025,
+      0.045
+    ],
+    "A2": [
+      0.005,
+      0.015
+    ],
+    "c_theta": [
+      0.015,
+      0.025
+    ],
+    "c_rate": [
+      0.003,
+      0.007
+    ]
+  },
+  "practical_scope": "Illustrative periodic mechanical and attitude-dependent disturbance rejection; no claim that these numbers describe a flight satellite or a complete reaction wheel model.",
+  "algorithms": [
+    "SAC",
+    "TD3"
+  ],
+  "development_steps": 98304,
+  "formal_steps": 196608,
+  "formal_seeds": [
+    17111,
+    17222,
+    17333
+  ],
+  "validation_every": 24576,
+  "counts": {
+    "development": 32,
+    "validation": 48,
+    "test": 128
+  },
+  "split_seeds": {
+    "development": 202610181701,
+    "validation": 202610181702,
+    "test": 202610181703
+  },
+  "baselines": [
+    "independently tuned PID",
+    "disturbance observer plus PID",
+    "measured-phase harmonic regression plus PID"
+  ],
+  "selection": "minimize physical failures, maximize sustained passes, minimize steady-state RMS angle error; then actual torque-square integral",
+  "primary": "all three fresh learned seeds and PID pass all held-out scenarios; paired RMS reduction confidence lower bounds >0 and mean actual torque-square cost not over 110% PID",
+  "correction": {
+    "alpha": 0.05,
+    "comparisons": 3,
+    "confidence": 0.9833333333333333
+  },
+  "independent_test_used_to_choose": false,
+  "weights_frozen_during_test": true,
+  "traditional_comparison": "Full observer and harmonic alternatives are reported separately; no superiority to all traditional methods is implied.",
+  "zero_residual_is_PID": true,
+  "interaction_budget": 786432
+}

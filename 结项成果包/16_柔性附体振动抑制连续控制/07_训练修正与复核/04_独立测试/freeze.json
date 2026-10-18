@@ -1,0 +1,98 @@
+{
+  "source_hashes": {
+    "代码\\flexible_study.py": "6aae327fd60514f2c0659ca29c8c4b9e9d75d523d52d432cfa2be0112bd33088",
+    "代码\\test_flexible.py": "5fdd9aec2745d015a52a6f0b8cf2ab564ab2528d159bce3284fe11d0afccfe8c"
+  },
+  "test_scenarios_sha256": "9f4ac50aaa20ff70dc6b0eeeb25542bc9e209be3f58a67a13c4f72a21cefd83a",
+  "baseline_sha256": "25549c0c5f13541f5126c29fb40259289a504f9ef63902985abc4cd3e715456c",
+  "controllers": [
+    {
+      "name": "PID",
+      "settings": {
+        "method": "PID",
+        "kp": 2.4801245960665232,
+        "kd": 1.784632299598744,
+        "ki": 0.0
+      }
+    },
+    {
+      "name": "ZVD_PID",
+      "settings": {
+        "method": "ZVD_PID",
+        "kp": 0.6798697775845328,
+        "kd": 1.248607230739573,
+        "ki": 0.002823082581150911
+      }
+    },
+    {
+      "name": "LQR",
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000036,
+          1.6270901393277613,
+          -1.7281761201378552,
+          -0.5727909711866275
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          100.0,
+          10.0
+        ],
+        "r": 10.0
+      }
+    },
+    {
+      "name": "PID_safe",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      }
+    },
+    {
+      "name": "PID_PPO_111",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "model": "03_学习训练\\formal\\PPO\\seed_111\\best.zip",
+      "model_sha256": "682a94d472f441cd66602b0b8c724b585ec4c9c400239f46633ebe6997ec6151",
+      "algorithm": "PPO",
+      "seed": 111,
+      "selected_steps": 262144
+    },
+    {
+      "name": "PID_PPO_222",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "model": "03_学习训练\\formal\\PPO\\seed_222\\best.zip",
+      "model_sha256": "0361b8166d5f021b51a4cb44d3d5a7ba71d515a377fd7a46b014eb7ab3881d27",
+      "algorithm": "PPO",
+      "seed": 222,
+      "selected_steps": 393216
+    },
+    {
+      "name": "PID_PPO_333",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "model": "03_学习训练\\formal\\PPO\\seed_333\\best.zip",
+      "model_sha256": "188b3d8f83c1644655db4b4b849977237cf06527602a8f263d82ae471124d03e",
+      "algorithm": "PPO",
+      "seed": 333,
+      "selected_steps": 327680
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "model_path": "03_训练记录/development/lag/residual/TD3/reward_A/seed_15101/checkpoints/steps_000000/model.zip",
+  "model_sha256": "00a2b8cd3f7ba0b02956ddad4275d247577547a734666363b3b4f4b5fe0eb6fc",
+  "steps": 0,
+  "validation": {
+    "count": 384,
+    "passes": 384,
+    "success_rate": 1.0,
+    "physical_failures": 0,
+    "mean_actual_cost": 0.039792612907677764,
+    "mean_penalized_selection_cost": 0.039792612907677764,
+    "cost_comparison_eligible": true,
+    "mean_command_cost": 0.047163132023415356,
+    "mean_rms_error_deg": 9.003187667082523,
+    "max_settling_time_s": 7.550000000000001,
+    "mean_settling_time_success_only_s": 6.302083333333333,
+    "mean_deadline_violation": 0.0
+  },
+  "optimizer_updates": 0,
+  "optimizer_step_counts": {
+    "actor": 0,
+    "critic": 0
+  },
+  "actor_statistics": {
+    "deterministic_action_mean": 0.0,
+    "deterministic_action_std": 0.0,
+    "deterministic_action_abs_max": 0.0,
+    "deterministic_action_abs_mean": 0.0,
+    "external_exploration_std": 0.1
+  },
+  "source_sha256": {
+    "代码/continuous_study/__init__.py": "24785bfbde8a719ccc31365fdd19165ab692a607a727f6ddf24e20be18e0371e",
+    "代码/continuous_study/baselines.py": "20f75fc64c8ad42ccab90aae1fce086109c3e86d91c0578a694b9b6677034e7d",
+    "代码/continuous_study/evaluation.py": "ef92ec99996c6e696a3d59d1c99b5645d72d6853641e364fc797556166d6f53d",
+    "代码/continuous_study/learning.py": "a67b7561337bd4905382d67f6920f0cf361acae5e68e3bc053c1b1b22952d327",
+    "代码/continuous_study/physics.py": "e3a25b255828029410e0e08e12121841cd1b6b53ca40ed9f7ec6b51192fb3d39",
+    "代码/continuous_study/protocol.py": "3c61fecf9002ee51dea2c7570dae31f0c480db9b27a45f2be5fc7a76279327fe",
+    "代码/continuous_study/test_baselines.py": "824ee8ce6ac3a44712bf20d1bfb473202dbe9564fc20c18129b37147c5de6405",
+    "代码/continuous_study/test_evaluation.py": "f6cf0f9da78c8193c6d3c3bff3f58e0afaa66774a4e1540a713c446458a6d7c7",
+    "代码/continuous_study/verification.py": "f2d9d59017d699aafb00dbd73221b8befd44cd6e5cf92c190bc1f729132365fa"
+  },
+  "base_parameters": {
+    "kp": 0.4135397865687245,
+    "kd": 1.0626452401066053,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "family": "PD",
+    "stage": "refine2"
+  },
+  "reward_name": "A",
+  "algorithm": "TD3",
+  "seed": 15101
+}

@@ -1,0 +1,3297 @@
+{
+  "all_development": [
+    {
+      "index": 0,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.000000000000007,
+          1.627090139327755,
+          -1.7281761201378072,
+          -0.5727909711866197
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          1.0,
+          0.1
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.023381628482028256,
+        "rms_angle_deg": 3.195063548909238,
+        "peak_relative_deg": 1.2177562934299828,
+        "residual_relative_rms_deg": 0.002210069614873489,
+        "count": 240,
+        "passes": 240,
+        "physical_failures": 0,
+        "selection_cost": 0.023381628482028256
+      },
+      "validation": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.02546614968002983,
+        "rms_angle_deg": 3.3331705495318453,
+        "peak_relative_deg": 1.2823368478552122,
+        "residual_relative_rms_deg": 0.002336964924942639,
+        "count": 320,
+        "passes": 320,
+        "physical_failures": 0,
+        "selection_cost": 0.02546614968002983
+      }
+    },
+    {
+      "index": 1,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.3162277660168351,
+          0.8212226166263775,
+          -0.18799075473929788,
+          -0.049335749393451866
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          1.0,
+          0.1
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.7958333333333333,
+        "failed": 0.0,
+        "cost": 0.005225567263712745,
+        "rms_angle_deg": 4.049178313687735,
+        "peak_relative_deg": 0.6462159925221369,
+        "residual_relative_rms_deg": 0.012382175670101565,
+        "count": 240,
+        "passes": 191,
+        "physical_failures": 0,
+        "selection_cost": 1.1255496055515564
+      },
+      "validation": {
+        "success": 0.76875,
+        "failed": 0.0,
+        "cost": 0.005710496789633031,
+        "rms_angle_deg": 4.239107438242421,
+        "peak_relative_deg": 0.6818596484267152,
+        "residual_relative_rms_deg": 0.012176249935628115,
+        "count": 320,
+        "passes": 246,
+        "physical_failures": 0,
+        "selection_cost": 1.274491111262848
+      }
+    },
+    {
+      "index": 2,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.09999999999999874,
+          0.4505186502774531,
+          0.0016388141649811964,
+          0.08112933522092039
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          1.0,
+          0.1
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.2833333333333333,
+        "failed": 0.0,
+        "cost": 0.0010702391504358723,
+        "rms_angle_deg": 5.394558763880047,
+        "peak_relative_deg": 0.2683689713168261,
+        "residual_relative_rms_deg": 0.03143855535278365,
+        "count": 240,
+        "passes": 68,
+        "physical_failures": 0,
+        "selection_cost": 3.9417014617773107
+      }
+    },
+    {
+      "index": 3,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000016,
+          1.9808317494143957,
+          -8.076711680656329,
+          -2.723616376462674
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          10.0,
+          1.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.8375,
+        "failed": 0.0,
+        "cost": 0.014757470063313422,
+        "rms_angle_deg": 3.6093688009122156,
+        "peak_relative_deg": 0.6713718653739028,
+        "residual_relative_rms_deg": 0.0074049050826150015,
+        "count": 240,
+        "passes": 201,
+        "physical_failures": 0,
+        "selection_cost": 0.9046600244250284
+      },
+      "validation": {
+        "success": 0.825,
+        "failed": 0.0,
+        "cost": 0.016088240910829426,
+        "rms_angle_deg": 3.772051546580137,
+        "peak_relative_deg": 0.7081721170457176,
+        "residual_relative_rms_deg": 0.007675015867519582,
+        "count": 320,
+        "passes": 264,
+        "physical_failures": 0,
+        "selection_cost": 0.9740249405342094
+      }
+    },
+    {
+      "index": 4,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.3162277660168379,
+          0.862785922762688,
+          -1.2889840070112073,
+          -0.8637841087918712
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          10.0,
+          1.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.8416666666666667,
+        "failed": 0.0,
+        "cost": 0.00461288831715891,
+        "rms_angle_deg": 4.18906047963647,
+        "peak_relative_deg": 0.4924621701917991,
+        "residual_relative_rms_deg": 0.006188540200749657,
+        "count": 240,
+        "passes": 202,
+        "physical_failures": 0,
+        "selection_cost": 0.8738939388498835
+      },
+      "validation": {
+        "success": 0.825,
+        "failed": 0.0,
+        "cost": 0.005038536558268239,
+        "rms_angle_deg": 4.388231923779391,
+        "peak_relative_deg": 0.5198639227058436,
+        "residual_relative_rms_deg": 0.006522590751246277,
+        "count": 320,
+        "passes": 264,
+        "physical_failures": 0,
+        "selection_cost": 0.9656133989438006
+      }
+    },
+    {
+      "index": 5,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.09999999999999906,
+          0.4539625160086267,
+          -0.15330563445547046,
+          -0.16168432603004917
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          10.0,
+          1.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.2625,
+        "failed": 0.0,
+        "cost": 0.0010500744950467382,
+        "rms_angle_deg": 5.425255053479513,
+        "peak_relative_deg": 0.2463930880346621,
+        "residual_relative_rms_deg": 0.014894466229996524,
+        "count": 240,
+        "passes": 63,
+        "physical_failures": 0,
+        "selection_cost": 4.0562802473089965
+      }
+    },
+    {
+      "index": 6,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.9999999999999976,
+          2.917458161490445,
+          -30.898053082075744,
+          -9.01349731947953
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          100.0,
+          10.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.6875,
+        "failed": 0.0,
+        "cost": 0.007190549357131591,
+        "rms_angle_deg": 4.463239540911576,
+        "peak_relative_deg": 0.2730699922670134,
+        "residual_relative_rms_deg": 0.014718995422456083,
+        "count": 240,
+        "passes": 165,
+        "physical_failures": 0,
+        "selection_cost": 1.7230537386950395
+      },
+      "validation": {
+        "success": 0.68125,
+        "failed": 0.0,
+        "cost": 0.007856314821406614,
+        "rms_angle_deg": 4.675780967836576,
+        "peak_relative_deg": 0.28853254208918033,
+        "residual_relative_rms_deg": 0.01549354185262659,
+        "count": 320,
+        "passes": 218,
+        "physical_failures": 0,
+        "selection_cost": 1.7576553645230466
+      }
+    },
+    {
+      "index": 7,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.31622776601683955,
+          1.0377642124238546,
+          -6.520093127647888,
+          -3.2811271205430605
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          100.0,
+          10.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.5625,
+        "failed": 0.0,
+        "cost": 0.00289665028697496,
+        "rms_angle_deg": 4.685184501979682,
+        "peak_relative_deg": 0.26152046365872966,
+        "residual_relative_rms_deg": 0.014568342135918342,
+        "count": 240,
+        "passes": 135,
+        "physical_failures": 0,
+        "selection_cost": 2.4069016012407207
+      },
+      "validation": {
+        "success": 0.54375,
+        "failed": 0.0,
+        "cost": 0.003163419058760457,
+        "rms_angle_deg": 4.914277641531171,
+        "peak_relative_deg": 0.27641179416691175,
+        "residual_relative_rms_deg": 0.015378538572888418,
+        "count": 320,
+        "passes": 174,
+        "physical_failures": 0,
+        "selection_cost": 2.5100015055686558
+      }
+    },
+    {
+      "index": 8,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.1000000000000012,
+          0.47162560556615496,
+          -0.9665381323110435,
+          -1.0090913591586965
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          100.0,
+          10.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.1875,
+        "failed": 0.0,
+        "cost": 0.0009554240010149653,
+        "rms_angle_deg": 5.570248328161186,
+        "peak_relative_deg": 0.18732244959197436,
+        "residual_relative_rms_deg": 0.015219011368651345,
+        "count": 240,
+        "passes": 45,
+        "physical_failures": 0,
+        "selection_cost": 4.468767284520036
+      }
+    },
+    {
+      "index": 9,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.9999999999999809,
+          4.815224903338615,
+          -103.89476928639773,
+          -28.935856147290984
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          1000.0,
+          100.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.0,
+        "failed": 0.0,
+        "cost": 5.425101031807271,
+        "rms_angle_deg": 7.996295229770549,
+        "peak_relative_deg": 0.09759184717812557,
+        "residual_relative_rms_deg": 0.014368350745018361,
+        "count": 240,
+        "passes": 0,
+        "physical_failures": 0,
+        "selection_cost": 5.5
+      }
+    },
+    {
+      "index": 10,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.3162277660168389,
+          1.5579025051625104,
+          -27.757331326971126,
+          -10.127010476558691
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          1000.0,
+          100.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.1625,
+        "failed": 0.0,
+        "cost": 0.0012369890556512022,
+        "rms_angle_deg": 5.878814710656446,
+        "peak_relative_deg": 0.10499429207874686,
+        "residual_relative_rms_deg": 0.01594838200166991,
+        "count": 240,
+        "passes": 39,
+        "physical_failures": 0,
+        "selection_cost": 4.606273082157882
+      }
+    },
+    {
+      "index": 11,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.09999999999999928,
+          0.5604886639150424,
+          -5.528790658021748,
+          -3.550706386055631
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          1000.0,
+          100.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.09166666666666666,
+        "failed": 0.0,
+        "cost": 0.0006237415935167284,
+        "rms_angle_deg": 6.206097433153753,
+        "peak_relative_deg": 0.09920127336079328,
+        "residual_relative_rms_deg": 0.014690138383067175,
+        "count": 240,
+        "passes": 22,
+        "physical_failures": 0,
+        "selection_cost": 4.995838792499168
+      }
+    },
+    {
+      "index": 12,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168376,
+          3.251487195078216,
+          -1.9625033320650043,
+          -0.050621307675638993
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1.0,
+          0.1
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.9875,
+        "failed": 0.0,
+        "cost": 0.08246715410770927,
+        "rms_angle_deg": 2.5817236547998155,
+        "peak_relative_deg": 2.488125522957428,
+        "residual_relative_rms_deg": 0.0017274691755479225,
+        "count": 240,
+        "passes": 237,
+        "physical_failures": 0,
+        "selection_cost": 0.14865104932888873
+      },
+      "validation": {
+        "success": 0.984375,
+        "failed": 0.0,
+        "cost": 0.0872847133425551,
+        "rms_angle_deg": 2.6954003771272825,
+        "peak_relative_deg": 2.5901165610011825,
+        "residual_relative_rms_deg": 0.0017798092118232974,
+        "count": 320,
+        "passes": 315,
+        "physical_failures": 0,
+        "selection_cost": 0.17001767305829335
+      }
+    },
+    {
+      "index": 13,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.9999999999999977,
+          1.5259807103305532,
+          -0.1423496266545456,
+          0.14181835931935471
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1.0,
+          0.1
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.6083333333333333,
+        "failed": 0.0,
+        "cost": 0.02738589260221192,
+        "rms_angle_deg": 3.052679212666215,
+        "peak_relative_deg": 1.5803608988380078,
+        "residual_relative_rms_deg": 0.0294053621082512,
+        "count": 240,
+        "passes": 146,
+        "physical_failures": 0,
+        "selection_cost": 2.1630133834303815
+      },
+      "validation": {
+        "success": 0.625,
+        "failed": 0.0,
+        "cost": 0.029828792613954203,
+        "rms_angle_deg": 3.1822597242287203,
+        "peak_relative_deg": 1.660578211414179,
+        "residual_relative_rms_deg": 0.028672379229611994,
+        "count": 320,
+        "passes": 200,
+        "physical_failures": 0,
+        "selection_cost": 2.0734341331079214
+      }
+    },
+    {
+      "index": 14,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.3162277660168387,
+          0.8119550863310672,
+          0.05009189002695702,
+          0.18233179845231987
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1.0,
+          0.1
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.43333333333333335,
+        "failed": 0.0,
+        "cost": 0.005385291526734968,
+        "rms_angle_deg": 4.015518666275938,
+        "peak_relative_deg": 0.7028979687965979,
+        "residual_relative_rms_deg": 0.07971459218991471,
+        "count": 240,
+        "passes": 104,
+        "physical_failures": 0,
+        "selection_cost": 3.117321047392937
+      },
+      "validation": {
+        "success": 0.396875,
+        "failed": 0.0,
+        "cost": 0.005889088797009288,
+        "rms_angle_deg": 4.203089228532778,
+        "peak_relative_deg": 0.7415829953005362,
+        "residual_relative_rms_deg": 0.07673814950600795,
+        "count": 320,
+        "passes": 127,
+        "physical_failures": 0,
+        "selection_cost": 3.3179257389841226
+      }
+    },
+    {
+      "index": 15,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168383,
+          3.955650793495391,
+          -9.945513631304005,
+          -1.5780027198157143
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          10.0,
+          1.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.9916666666666667,
+        "failed": 0.0,
+        "cost": 0.055734835422557735,
+        "rms_angle_deg": 2.877639500392375,
+        "peak_relative_deg": 1.5638333243471219,
+        "residual_relative_rms_deg": 0.00330553326438733,
+        "count": 240,
+        "passes": 238,
+        "physical_failures": 0,
+        "selection_cost": 0.10048828870057848
+      },
+      "validation": {
+        "success": 0.990625,
+        "failed": 0.0,
+        "cost": 0.05919924022153629,
+        "rms_angle_deg": 3.0028141389294145,
+        "peak_relative_deg": 1.6404015490066164,
+        "residual_relative_rms_deg": 0.003414212654320313,
+        "count": 320,
+        "passes": 317,
+        "physical_failures": 0,
+        "selection_cost": 0.10953326454591092
+      }
+    },
+    {
+      "index": 16,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000002,
+          1.6270901393277495,
+          -1.7281761201378145,
+          -0.5727909711866195
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          10.0,
+          1.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.023381628482028002,
+        "rms_angle_deg": 3.195063548909244,
+        "peak_relative_deg": 1.2177562934299764,
+        "residual_relative_rms_deg": 0.0022100696148735543,
+        "count": 240,
+        "passes": 240,
+        "physical_failures": 0,
+        "selection_cost": 0.023381628482028002
+      },
+      "validation": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.02546614968002956,
+        "rms_angle_deg": 3.3331705495318515,
+        "peak_relative_deg": 1.2823368478552053,
+        "residual_relative_rms_deg": 0.002336964924942707,
+        "count": 320,
+        "passes": 320,
+        "physical_failures": 0,
+        "selection_cost": 0.02546614968002956
+      }
+    },
+    {
+      "index": 17,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.31622776601683766,
+          0.8212226166263819,
+          -0.18799075473929902,
+          -0.049335749393449736
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          10.0,
+          1.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.7958333333333333,
+        "failed": 0.0,
+        "cost": 0.005225567263712799,
+        "rms_angle_deg": 4.049178313687727,
+        "peak_relative_deg": 0.646215992522141,
+        "residual_relative_rms_deg": 0.012382175670101685,
+        "count": 240,
+        "passes": 191,
+        "physical_failures": 0,
+        "selection_cost": 1.1255496055515564
+      },
+      "validation": {
+        "success": 0.76875,
+        "failed": 0.0,
+        "cost": 0.0057104967896330905,
+        "rms_angle_deg": 4.239107438242413,
+        "peak_relative_deg": 0.6818596484267199,
+        "residual_relative_rms_deg": 0.012176249935628224,
+        "count": 320,
+        "passes": 246,
+        "physical_failures": 0,
+        "selection_cost": 1.274491111262848
+      }
+    },
+    {
+      "index": 18,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168371,
+          5.642403740021491,
+          -35.41176212230513,
+          -6.79797462541456
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          100.0,
+          10.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.7958333333333333,
+        "failed": 0.0,
+        "cost": 0.028222124268107936,
+        "rms_angle_deg": 3.482718017876954,
+        "peak_relative_deg": 0.6936750684675597,
+        "residual_relative_rms_deg": 0.009544336940215097,
+        "count": 240,
+        "passes": 191,
+        "physical_failures": 0,
+        "selection_cost": 1.143066735920189
+      },
+      "validation": {
+        "success": 0.7875,
+        "failed": 0.0,
+        "cost": 0.030036480496851425,
+        "rms_angle_deg": 3.638660709290277,
+        "peak_relative_deg": 0.731034075687641,
+        "residual_relative_rms_deg": 0.009876402378012185,
+        "count": 320,
+        "passes": 252,
+        "physical_failures": 0,
+        "selection_cost": 1.1900003091424713
+      }
+    },
+    {
+      "index": 19,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000018,
+          1.980831749414401,
+          -8.076711680656372,
+          -2.7236163764626724
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          100.0,
+          10.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.8375,
+        "failed": 0.0,
+        "cost": 0.014757470063313372,
+        "rms_angle_deg": 3.6093688009122187,
+        "peak_relative_deg": 0.6713718653739016,
+        "residual_relative_rms_deg": 0.007404905082614928,
+        "count": 240,
+        "passes": 201,
+        "physical_failures": 0,
+        "selection_cost": 0.9046600244250282
+      },
+      "validation": {
+        "success": 0.825,
+        "failed": 0.0,
+        "cost": 0.01608824091082937,
+        "rms_angle_deg": 3.7720515465801383,
+        "peak_relative_deg": 0.7081721170457165,
+        "residual_relative_rms_deg": 0.007675015867519503,
+        "count": 320,
+        "passes": 264,
+        "physical_failures": 0,
+        "selection_cost": 0.9740249405342094
+      }
+    },
+    {
+      "index": 20,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.3162277660168399,
+          0.8627859227626924,
+          -1.2889840070112175,
+          -0.8637841087918712
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          100.0,
+          10.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.8416666666666667,
+        "failed": 0.0,
+        "cost": 0.00461288831715894,
+        "rms_angle_deg": 4.189060479636465,
+        "peak_relative_deg": 0.4924621701918011,
+        "residual_relative_rms_deg": 0.00618854020074958,
+        "count": 240,
+        "passes": 202,
+        "physical_failures": 0,
+        "selection_cost": 0.8738939388498835
+      },
+      "validation": {
+        "success": 0.825,
+        "failed": 0.0,
+        "cost": 0.0050385365582682725,
+        "rms_angle_deg": 4.388231923779385,
+        "peak_relative_deg": 0.5198639227058457,
+        "residual_relative_rms_deg": 0.006522590751246195,
+        "count": 320,
+        "passes": 264,
+        "physical_failures": 0,
+        "selection_cost": 0.9656133989438007
+      }
+    },
+    {
+      "index": 21,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.1622776601684244,
+          9.001683432821856,
+          -112.7935486081699,
+          -25.0280208150288
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1000.0,
+          100.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.0,
+        "failed": 0.0,
+        "cost": 5.372430360483126,
+        "rms_angle_deg": 4.989443297758872,
+        "peak_relative_deg": 0.26112524884977667,
+        "residual_relative_rms_deg": 0.01764879082334567,
+        "count": 240,
+        "passes": 0,
+        "physical_failures": 0,
+        "selection_cost": 5.5
+      }
+    },
+    {
+      "index": 22,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000062,
+          2.9174581614904262,
+          -30.8980530820758,
+          -9.013497319479566
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1000.0,
+          100.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.6875,
+        "failed": 0.0,
+        "cost": 0.00719054935713172,
+        "rms_angle_deg": 4.463239540911562,
+        "peak_relative_deg": 0.2730699922670155,
+        "residual_relative_rms_deg": 0.01471899542245626,
+        "count": 240,
+        "passes": 165,
+        "physical_failures": 0,
+        "selection_cost": 1.7230537386950397
+      },
+      "validation": {
+        "success": 0.68125,
+        "failed": 0.0,
+        "cost": 0.007856314821406753,
+        "rms_angle_deg": 4.675780967836562,
+        "peak_relative_deg": 0.2885325420891824,
+        "residual_relative_rms_deg": 0.015493541852626774,
+        "count": 320,
+        "passes": 218,
+        "physical_failures": 0,
+        "selection_cost": 1.7576553645230466
+      }
+    },
+    {
+      "index": 23,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.31622776601683755,
+          1.0377642124238469,
+          -6.520093127647878,
+          -3.2811271205430663
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1000.0,
+          100.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.5625,
+        "failed": 0.0,
+        "cost": 0.002896650286974945,
+        "rms_angle_deg": 4.6851845019796885,
+        "peak_relative_deg": 0.26152046365872833,
+        "residual_relative_rms_deg": 0.01456834213591849,
+        "count": 240,
+        "passes": 135,
+        "physical_failures": 0,
+        "selection_cost": 2.4069016012407207
+      },
+      "validation": {
+        "success": 0.54375,
+        "failed": 0.0,
+        "cost": 0.0031634190587604403,
+        "rms_angle_deg": 4.914277641531176,
+        "peak_relative_deg": 0.2764117941669103,
+        "residual_relative_rms_deg": 0.015378538572888567,
+        "count": 320,
+        "passes": 174,
+        "physical_failures": 0,
+        "selection_cost": 2.5100015055686558
+      }
+    },
+    {
+      "index": 24,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          10.000000000000004,
+          7.25703826928277,
+          -1.3254490230052185,
+          0.44538381046504927
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          1.0,
+          0.1
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.42916666666666664,
+        "failed": 0.04583333333333333,
+        "cost": 0.16413547015148822,
+        "rms_angle_deg": 2.463173743608058,
+        "peak_relative_deg": 4.137070063987291,
+        "residual_relative_rms_deg": 0.5670003792744022,
+        "count": 240,
+        "passes": 103,
+        "physical_failures": 11,
+        "selection_cost": 3.191849816738992
+      }
+    },
+    {
+      "index": 25,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168378,
+          3.037095511645661,
+          0.1582540790468381,
+          0.36118335530669277
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          1.0,
+          0.1
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.5458333333333333,
+        "failed": 0.020833333333333332,
+        "cost": 0.09405173958120056,
+        "rms_angle_deg": 2.516901174488211,
+        "peak_relative_deg": 3.354360038412003,
+        "residual_relative_rms_deg": 0.27089949900706556,
+        "count": 240,
+        "passes": 131,
+        "physical_failures": 5,
+        "selection_cost": 2.532651757552882
+      },
+      "validation": {
+        "success": 0.54375,
+        "failed": 0.028125,
+        "cost": 0.09878338860327222,
+        "rms_angle_deg": 2.638097761436162,
+        "peak_relative_deg": 3.4525191664021704,
+        "residual_relative_rms_deg": 0.3425040825969539,
+        "count": 320,
+        "passes": 174,
+        "physical_failures": 9,
+        "selection_cost": 2.5493904353968295
+      }
+    },
+    {
+      "index": 26,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000142,
+          1.5029207242358062,
+          0.20508609128849806,
+          0.3241741125808946
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          1.0,
+          0.1
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.25416666666666665,
+        "failed": 0.0,
+        "cost": 0.02852370063777899,
+        "rms_angle_deg": 3.0190863387654607,
+        "peak_relative_deg": 1.767547485724017,
+        "residual_relative_rms_deg": 0.15087636471025778,
+        "count": 240,
+        "passes": 61,
+        "physical_failures": 0,
+        "selection_cost": 4.102707094367615
+      }
+    },
+    {
+      "index": 27,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          9.999999999999982,
+          8.415898752122487,
+          -10.360109241584373,
+          0.17669307829699443
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          10.0,
+          1.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.8833333333333333,
+        "failed": 0.0,
+        "cost": 0.12523269802436152,
+        "rms_angle_deg": 2.4930552872319773,
+        "peak_relative_deg": 2.782210363155569,
+        "residual_relative_rms_deg": 0.007465286170187585,
+        "count": 240,
+        "passes": 212,
+        "physical_failures": 0,
+        "selection_cost": 0.746939007528415
+      },
+      "validation": {
+        "success": 0.878125,
+        "failed": 0.0,
+        "cost": 0.13140536672392603,
+        "rms_angle_deg": 2.602963243031013,
+        "peak_relative_deg": 2.882581131643667,
+        "residual_relative_rms_deg": 0.007648426799297998,
+        "count": 320,
+        "passes": 281,
+        "physical_failures": 0,
+        "selection_cost": 0.7805664610791668
+      }
+    },
+    {
+      "index": 28,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.1622776601683817,
+          3.2514871950782216,
+          -1.9625033320650216,
+          -0.05062130767563078
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          10.0,
+          1.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.9875,
+        "failed": 0.0,
+        "cost": 0.08246715410770923,
+        "rms_angle_deg": 2.5817236547998155,
+        "peak_relative_deg": 2.4881255229574304,
+        "residual_relative_rms_deg": 0.0017274691755478464,
+        "count": 240,
+        "passes": 237,
+        "physical_failures": 0,
+        "selection_cost": 0.14865104932888867
+      },
+      "validation": {
+        "success": 0.984375,
+        "failed": 0.0,
+        "cost": 0.08728471334255505,
+        "rms_angle_deg": 2.6954003771272825,
+        "peak_relative_deg": 2.590116561001184,
+        "residual_relative_rms_deg": 0.0017798092118232194,
+        "count": 320,
+        "passes": 315,
+        "physical_failures": 0,
+        "selection_cost": 0.1700176730582933
+      }
+    },
+    {
+      "index": 29,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.9999999999999976,
+          1.5259807103305594,
+          -0.14234962665454995,
+          0.14181835931935466
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          10.0,
+          1.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.6083333333333333,
+        "failed": 0.0,
+        "cost": 0.027385892602211796,
+        "rms_angle_deg": 3.052679212666218,
+        "peak_relative_deg": 1.580360898838004,
+        "residual_relative_rms_deg": 0.029405362108250763,
+        "count": 240,
+        "passes": 146,
+        "physical_failures": 0,
+        "selection_cost": 2.1630133834303815
+      },
+      "validation": {
+        "success": 0.625,
+        "failed": 0.0,
+        "cost": 0.029828792613954068,
+        "rms_angle_deg": 3.182259724228723,
+        "peak_relative_deg": 1.660578211414175,
+        "residual_relative_rms_deg": 0.028672379229611567,
+        "count": 320,
+        "passes": 200,
+        "physical_failures": 0,
+        "selection_cost": 2.0734341331079214
+      }
+    },
+    {
+      "index": 30,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          10.000000000000027,
+          11.374002088397619,
+          -39.47983236029703,
+          -2.685254111964017
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          100.0,
+          10.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.9583333333333334,
+        "failed": 0.0,
+        "cost": 0.0787480258306134,
+        "rms_angle_deg": 2.837666546381561,
+        "peak_relative_deg": 1.6067738263618987,
+        "residual_relative_rms_deg": 0.004602013223354507,
+        "count": 240,
+        "passes": 230,
+        "physical_failures": 0,
+        "selection_cost": 0.3020033396864921
+      },
+      "validation": {
+        "success": 0.9375,
+        "failed": 0.0,
+        "cost": 0.08309762148187046,
+        "rms_angle_deg": 2.960126757751284,
+        "peak_relative_deg": 1.6842839208408371,
+        "residual_relative_rms_deg": 0.0047642743202472426,
+        "count": 320,
+        "passes": 300,
+        "physical_failures": 0,
+        "selection_cost": 0.4181206455161983
+      }
+    },
+    {
+      "index": 31,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.1622776601683746,
+          3.955650793495386,
+          -9.945513631304006,
+          -1.5780027198157294
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          100.0,
+          10.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.9916666666666667,
+        "failed": 0.0,
+        "cost": 0.055734835422557555,
+        "rms_angle_deg": 2.8776395003923767,
+        "peak_relative_deg": 1.5638333243471174,
+        "residual_relative_rms_deg": 0.003305533264387332,
+        "count": 240,
+        "passes": 238,
+        "physical_failures": 0,
+        "selection_cost": 0.10048828870057831
+      },
+      "validation": {
+        "success": 0.990625,
+        "failed": 0.0,
+        "cost": 0.05919924022153611,
+        "rms_angle_deg": 3.0028141389294163,
+        "peak_relative_deg": 1.6404015490066115,
+        "residual_relative_rms_deg": 0.0034142126543203165,
+        "count": 320,
+        "passes": 317,
+        "physical_failures": 0,
+        "selection_cost": 0.10953326454591075
+      }
+    },
+    {
+      "index": 32,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000036,
+          1.6270901393277613,
+          -1.7281761201378552,
+          -0.5727909711866275
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          100.0,
+          10.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.02338162848202794,
+        "rms_angle_deg": 3.1950635489092463,
+        "peak_relative_deg": 1.2177562934299724,
+        "residual_relative_rms_deg": 0.0022100696148735334,
+        "count": 240,
+        "passes": 240,
+        "physical_failures": 0,
+        "selection_cost": 0.02338162848202794
+      },
+      "validation": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.025466149680029488,
+        "rms_angle_deg": 3.3331705495318547,
+        "peak_relative_deg": 1.2823368478552013,
+        "residual_relative_rms_deg": 0.002336964924942684,
+        "count": 320,
+        "passes": 320,
+        "physical_failures": 0,
+        "selection_cost": 0.025466149680029488
+      }
+    },
+    {
+      "index": 33,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          9.999999999999964,
+          17.346281222776803,
+          -124.80145362813424,
+          -17.47808387804863
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          1000.0,
+          100.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.0,
+        "failed": 0.0,
+        "cost": 5.307000926711057,
+        "rms_angle_deg": 3.5966555755164884,
+        "peak_relative_deg": 0.6868691247554175,
+        "residual_relative_rms_deg": 0.009169846140933429,
+        "count": 240,
+        "passes": 0,
+        "physical_failures": 0,
+        "selection_cost": 5.5
+      }
+    },
+    {
+      "index": 34,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168364,
+          5.642403740021511,
+          -35.411762122304964,
+          -6.797974625414543
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          1000.0,
+          100.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.7958333333333333,
+        "failed": 0.0,
+        "cost": 0.02822212426810782,
+        "rms_angle_deg": 3.4827180178769552,
+        "peak_relative_deg": 0.6936750684675593,
+        "residual_relative_rms_deg": 0.009544336940214863,
+        "count": 240,
+        "passes": 191,
+        "physical_failures": 0,
+        "selection_cost": 1.1430667359201887
+      },
+      "validation": {
+        "success": 0.7875,
+        "failed": 0.0,
+        "cost": 0.030036480496851297,
+        "rms_angle_deg": 3.638660709290278,
+        "peak_relative_deg": 0.7310340756876407,
+        "residual_relative_rms_deg": 0.009876402378011944,
+        "count": 320,
+        "passes": 252,
+        "physical_failures": 0,
+        "selection_cost": 1.1900003091424713
+      }
+    },
+    {
+      "index": 35,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000018,
+          1.9808317494143974,
+          -8.076711680656357,
+          -2.7236163764626693
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          1000.0,
+          100.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.8375,
+        "failed": 0.0,
+        "cost": 0.014757470063313403,
+        "rms_angle_deg": 3.609368800912217,
+        "peak_relative_deg": 0.6713718653739024,
+        "residual_relative_rms_deg": 0.007404905082614986,
+        "count": 240,
+        "passes": 201,
+        "physical_failures": 0,
+        "selection_cost": 0.9046600244250284
+      },
+      "validation": {
+        "success": 0.825,
+        "failed": 0.0,
+        "cost": 0.016088240910829405,
+        "rms_angle_deg": 3.772051546580137,
+        "peak_relative_deg": 0.7081721170457174,
+        "residual_relative_rms_deg": 0.0076750158675195634,
+        "count": 320,
+        "passes": 264,
+        "physical_failures": 0,
+        "selection_cost": 0.9740249405342094
+      }
+    },
+    {
+      "index": 36,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          31.622776601683604,
+          19.05095121365924,
+          0.04826155271497559,
+          0.508291540063669
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          1.0,
+          0.1
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.05,
+        "failed": 0.11666666666666667,
+        "cost": 0.26266380404502165,
+        "rms_angle_deg": 2.471453874879858,
+        "peak_relative_deg": 5.040745999865975,
+        "residual_relative_rms_deg": 1.726079904042331,
+        "count": 240,
+        "passes": 12,
+        "physical_failures": 28,
+        "selection_cost": 5.2253471204153525
+      }
+    },
+    {
+      "index": 37,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          10.000000000000032,
+          6.962232261926188,
+          0.7597327879017384,
+          0.43535891662119086
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          1.0,
+          0.1
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.17916666666666667,
+        "failed": 0.10416666666666667,
+        "cost": 0.18550642845060816,
+        "rms_angle_deg": 2.51094345954507,
+        "peak_relative_deg": 4.709176407437685,
+        "residual_relative_rms_deg": 1.3312822349252211,
+        "count": 240,
+        "passes": 43,
+        "physical_failures": 25,
+        "selection_cost": 4.526976721204062
+      }
+    },
+    {
+      "index": 38,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.1622776601683675,
+          2.999010251631474,
+          0.5198670895093265,
+          0.43266529577019985
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          1.0,
+          0.1
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.3375,
+        "failed": 0.0375,
+        "cost": 0.09636372088147074,
+        "rms_angle_deg": 2.5271883999769296,
+        "peak_relative_deg": 3.6014229437806677,
+        "residual_relative_rms_deg": 0.4958540759266282,
+        "count": 240,
+        "passes": 81,
+        "physical_failures": 9,
+        "selection_cost": 3.657873257840976
+      }
+    },
+    {
+      "index": 39,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          31.62277660168339,
+          20.37256192842148,
+          -8.147497001978373,
+          1.2831892051431515
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          10.0,
+          1.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.225,
+        "failed": 0.04583333333333333,
+        "cost": 0.19936616756687323,
+        "rms_angle_deg": 2.4398799624577445,
+        "peak_relative_deg": 4.264541141823009,
+        "residual_relative_rms_deg": 0.5861705119984111,
+        "count": 240,
+        "passes": 54,
+        "physical_failures": 11,
+        "selection_cost": 4.276439199300465
+      }
+    },
+    {
+      "index": 40,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          10.000000000000007,
+          7.257038269282773,
+          -1.3254490230052292,
+          0.44538381046505027
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          10.0,
+          1.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.42916666666666664,
+        "failed": 0.04583333333333333,
+        "cost": 0.16413547015148808,
+        "rms_angle_deg": 2.463173743608058,
+        "peak_relative_deg": 4.137070063987289,
+        "residual_relative_rms_deg": 0.5670003792744013,
+        "count": 240,
+        "passes": 103,
+        "physical_failures": 11,
+        "selection_cost": 3.191849816738992
+      }
+    },
+    {
+      "index": 41,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.1622776601683737,
+          3.0370955116456613,
+          0.15825407904683564,
+          0.361183355306693
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          10.0,
+          1.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.5458333333333333,
+        "failed": 0.020833333333333332,
+        "cost": 0.09405173958120032,
+        "rms_angle_deg": 2.516901174488212,
+        "peak_relative_deg": 3.354360038411997,
+        "residual_relative_rms_deg": 0.27089949900706495,
+        "count": 240,
+        "passes": 131,
+        "physical_failures": 5,
+        "selection_cost": 2.532651757552882
+      },
+      "validation": {
+        "success": 0.54375,
+        "failed": 0.028125,
+        "cost": 0.098783388603272,
+        "rms_angle_deg": 2.638097761436163,
+        "peak_relative_deg": 3.4525191664021646,
+        "residual_relative_rms_deg": 0.3425040825969532,
+        "count": 320,
+        "passes": 174,
+        "physical_failures": 9,
+        "selection_cost": 2.5493904353968295
+      }
+    },
+    {
+      "index": 42,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          31.62277660168389,
+          24.57549360612985,
+          -37.86371398516355,
+          2.305694565938925
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          100.0,
+          10.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.8833333333333333,
+        "failed": 0.0,
+        "cost": 0.1499969471486836,
+        "rms_angle_deg": 2.485966309628173,
+        "peak_relative_deg": 2.818529626627006,
+        "residual_relative_rms_deg": 0.008118009186052925,
+        "count": 240,
+        "passes": 212,
+        "physical_failures": 0,
+        "selection_cost": 0.767507440711329
+      },
+      "validation": {
+        "success": 0.878125,
+        "failed": 0.0,
+        "cost": 0.15770221986042202,
+        "rms_angle_deg": 2.5954523629709163,
+        "peak_relative_deg": 2.9184001320182373,
+        "residual_relative_rms_deg": 0.008274144868884812,
+        "count": 320,
+        "passes": 281,
+        "physical_failures": 0,
+        "selection_cost": 0.8025605315451539
+      }
+    },
+    {
+      "index": 43,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          9.999999999999996,
+          8.415898752122501,
+          -10.360109241584325,
+          0.17669307829700287
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          100.0,
+          10.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.8833333333333333,
+        "failed": 0.0,
+        "cost": 0.12523269802436154,
+        "rms_angle_deg": 2.4930552872319773,
+        "peak_relative_deg": 2.7822103631555715,
+        "residual_relative_rms_deg": 0.007465286170187597,
+        "count": 240,
+        "passes": 212,
+        "physical_failures": 0,
+        "selection_cost": 0.746939007528415
+      },
+      "validation": {
+        "success": 0.878125,
+        "failed": 0.0,
+        "cost": 0.13140536672392605,
+        "rms_angle_deg": 2.602963243031012,
+        "peak_relative_deg": 2.8825811316436702,
+        "residual_relative_rms_deg": 0.007648426799298012,
+        "count": 320,
+        "passes": 281,
+        "physical_failures": 0,
+        "selection_cost": 0.7805664610791668
+      }
+    },
+    {
+      "index": 44,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168385,
+          3.251487195078228,
+          -1.9625033320650715,
+          -0.05062130767563815
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          100.0,
+          10.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.9875,
+        "failed": 0.0,
+        "cost": 0.08246715410770905,
+        "rms_angle_deg": 2.581723654799817,
+        "peak_relative_deg": 2.488125522957423,
+        "residual_relative_rms_deg": 0.0017274691755478,
+        "count": 240,
+        "passes": 237,
+        "physical_failures": 0,
+        "selection_cost": 0.1486510493288885
+      },
+      "validation": {
+        "success": 0.984375,
+        "failed": 0.0,
+        "cost": 0.08728471334255486,
+        "rms_angle_deg": 2.6954003771272843,
+        "peak_relative_deg": 2.5901165610011767,
+        "residual_relative_rms_deg": 0.0017798092118231784,
+        "count": 320,
+        "passes": 315,
+        "physical_failures": 0,
+        "selection_cost": 0.1700176730582931
+      }
+    },
+    {
+      "index": 45,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          31.622776601684564,
+          34.7815309643957,
+          -133.15639771686577,
+          -4.292813665732638
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          1000.0,
+          100.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.0,
+        "failed": 0.0,
+        "cost": 5.277092062756978,
+        "rms_angle_deg": 2.8749024364964026,
+        "peak_relative_deg": 1.6226314409463845,
+        "residual_relative_rms_deg": 0.005496345928293539,
+        "count": 240,
+        "passes": 0,
+        "physical_failures": 0,
+        "selection_cost": 5.5
+      }
+    },
+    {
+      "index": 46,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          9.999999999999979,
+          11.374002088397546,
+          -39.47983236029706,
+          -2.685254111964042
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          1000.0,
+          100.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.9583333333333334,
+        "failed": 0.0,
+        "cost": 0.07874802583061334,
+        "rms_angle_deg": 2.837666546381562,
+        "peak_relative_deg": 1.6067738263618951,
+        "residual_relative_rms_deg": 0.004602013223354605,
+        "count": 240,
+        "passes": 230,
+        "physical_failures": 0,
+        "selection_cost": 0.3020033396864921
+      },
+      "validation": {
+        "success": 0.9375,
+        "failed": 0.0,
+        "cost": 0.08309762148187043,
+        "rms_angle_deg": 2.960126757751285,
+        "peak_relative_deg": 1.6842839208408336,
+        "residual_relative_rms_deg": 0.004764274320247344,
+        "count": 320,
+        "passes": 300,
+        "physical_failures": 0,
+        "selection_cost": 0.41812064551619843
+      }
+    },
+    {
+      "index": 47,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.1622776601684066,
+          3.9556507934954026,
+          -9.945513631304053,
+          -1.5780027198157072
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          1000.0,
+          100.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.9916666666666667,
+        "failed": 0.0,
+        "cost": 0.05573483542255815,
+        "rms_angle_deg": 2.877639500392372,
+        "peak_relative_deg": 1.563833324347129,
+        "residual_relative_rms_deg": 0.003305533264387394,
+        "count": 240,
+        "passes": 238,
+        "physical_failures": 0,
+        "selection_cost": 0.1004882887005789
+      },
+      "validation": {
+        "success": 0.990625,
+        "failed": 0.0,
+        "cost": 0.059199240221536734,
+        "rms_angle_deg": 3.002814138929411,
+        "peak_relative_deg": 1.6404015490066235,
+        "residual_relative_rms_deg": 0.003414212654320378,
+        "count": 320,
+        "passes": 317,
+        "physical_failures": 0,
+        "selection_cost": 0.10953326454591136
+      }
+    }
+  ],
+  "validation": [
+    {
+      "index": 32,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000036,
+          1.6270901393277613,
+          -1.7281761201378552,
+          -0.5727909711866275
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          100.0,
+          10.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.02338162848202794,
+        "rms_angle_deg": 3.1950635489092463,
+        "peak_relative_deg": 1.2177562934299724,
+        "residual_relative_rms_deg": 0.0022100696148735334,
+        "count": 240,
+        "passes": 240,
+        "physical_failures": 0,
+        "selection_cost": 0.02338162848202794
+      },
+      "validation": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.025466149680029488,
+        "rms_angle_deg": 3.3331705495318547,
+        "peak_relative_deg": 1.2823368478552013,
+        "residual_relative_rms_deg": 0.002336964924942684,
+        "count": 320,
+        "passes": 320,
+        "physical_failures": 0,
+        "selection_cost": 0.025466149680029488
+      }
+    },
+    {
+      "index": 16,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000002,
+          1.6270901393277495,
+          -1.7281761201378145,
+          -0.5727909711866195
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          10.0,
+          1.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.023381628482028002,
+        "rms_angle_deg": 3.195063548909244,
+        "peak_relative_deg": 1.2177562934299764,
+        "residual_relative_rms_deg": 0.0022100696148735543,
+        "count": 240,
+        "passes": 240,
+        "physical_failures": 0,
+        "selection_cost": 0.023381628482028002
+      },
+      "validation": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.02546614968002956,
+        "rms_angle_deg": 3.3331705495318515,
+        "peak_relative_deg": 1.2823368478552053,
+        "residual_relative_rms_deg": 0.002336964924942707,
+        "count": 320,
+        "passes": 320,
+        "physical_failures": 0,
+        "selection_cost": 0.02546614968002956
+      }
+    },
+    {
+      "index": 0,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.000000000000007,
+          1.627090139327755,
+          -1.7281761201378072,
+          -0.5727909711866197
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          1.0,
+          0.1
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.023381628482028256,
+        "rms_angle_deg": 3.195063548909238,
+        "peak_relative_deg": 1.2177562934299828,
+        "residual_relative_rms_deg": 0.002210069614873489,
+        "count": 240,
+        "passes": 240,
+        "physical_failures": 0,
+        "selection_cost": 0.023381628482028256
+      },
+      "validation": {
+        "success": 1.0,
+        "failed": 0.0,
+        "cost": 0.02546614968002983,
+        "rms_angle_deg": 3.3331705495318453,
+        "peak_relative_deg": 1.2823368478552122,
+        "residual_relative_rms_deg": 0.002336964924942639,
+        "count": 320,
+        "passes": 320,
+        "physical_failures": 0,
+        "selection_cost": 0.02546614968002983
+      }
+    },
+    {
+      "index": 31,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.1622776601683746,
+          3.955650793495386,
+          -9.945513631304006,
+          -1.5780027198157294
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          100.0,
+          10.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.9916666666666667,
+        "failed": 0.0,
+        "cost": 0.055734835422557555,
+        "rms_angle_deg": 2.8776395003923767,
+        "peak_relative_deg": 1.5638333243471174,
+        "residual_relative_rms_deg": 0.003305533264387332,
+        "count": 240,
+        "passes": 238,
+        "physical_failures": 0,
+        "selection_cost": 0.10048828870057831
+      },
+      "validation": {
+        "success": 0.990625,
+        "failed": 0.0,
+        "cost": 0.05919924022153611,
+        "rms_angle_deg": 3.0028141389294163,
+        "peak_relative_deg": 1.6404015490066115,
+        "residual_relative_rms_deg": 0.0034142126543203165,
+        "count": 320,
+        "passes": 317,
+        "physical_failures": 0,
+        "selection_cost": 0.10953326454591075
+      }
+    },
+    {
+      "index": 15,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168383,
+          3.955650793495391,
+          -9.945513631304005,
+          -1.5780027198157143
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          10.0,
+          1.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.9916666666666667,
+        "failed": 0.0,
+        "cost": 0.055734835422557735,
+        "rms_angle_deg": 2.877639500392375,
+        "peak_relative_deg": 1.5638333243471219,
+        "residual_relative_rms_deg": 0.00330553326438733,
+        "count": 240,
+        "passes": 238,
+        "physical_failures": 0,
+        "selection_cost": 0.10048828870057848
+      },
+      "validation": {
+        "success": 0.990625,
+        "failed": 0.0,
+        "cost": 0.05919924022153629,
+        "rms_angle_deg": 3.0028141389294145,
+        "peak_relative_deg": 1.6404015490066164,
+        "residual_relative_rms_deg": 0.003414212654320313,
+        "count": 320,
+        "passes": 317,
+        "physical_failures": 0,
+        "selection_cost": 0.10953326454591092
+      }
+    },
+    {
+      "index": 47,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.1622776601684066,
+          3.9556507934954026,
+          -9.945513631304053,
+          -1.5780027198157072
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          1000.0,
+          100.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.9916666666666667,
+        "failed": 0.0,
+        "cost": 0.05573483542255815,
+        "rms_angle_deg": 2.877639500392372,
+        "peak_relative_deg": 1.563833324347129,
+        "residual_relative_rms_deg": 0.003305533264387394,
+        "count": 240,
+        "passes": 238,
+        "physical_failures": 0,
+        "selection_cost": 0.1004882887005789
+      },
+      "validation": {
+        "success": 0.990625,
+        "failed": 0.0,
+        "cost": 0.059199240221536734,
+        "rms_angle_deg": 3.002814138929411,
+        "peak_relative_deg": 1.6404015490066235,
+        "residual_relative_rms_deg": 0.003414212654320378,
+        "count": 320,
+        "passes": 317,
+        "physical_failures": 0,
+        "selection_cost": 0.10953326454591136
+      }
+    },
+    {
+      "index": 44,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168385,
+          3.251487195078228,
+          -1.9625033320650715,
+          -0.05062130767563815
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          100.0,
+          10.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.9875,
+        "failed": 0.0,
+        "cost": 0.08246715410770905,
+        "rms_angle_deg": 2.581723654799817,
+        "peak_relative_deg": 2.488125522957423,
+        "residual_relative_rms_deg": 0.0017274691755478,
+        "count": 240,
+        "passes": 237,
+        "physical_failures": 0,
+        "selection_cost": 0.1486510493288885
+      },
+      "validation": {
+        "success": 0.984375,
+        "failed": 0.0,
+        "cost": 0.08728471334255486,
+        "rms_angle_deg": 2.6954003771272843,
+        "peak_relative_deg": 2.5901165610011767,
+        "residual_relative_rms_deg": 0.0017798092118231784,
+        "count": 320,
+        "passes": 315,
+        "physical_failures": 0,
+        "selection_cost": 0.1700176730582931
+      }
+    },
+    {
+      "index": 28,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.1622776601683817,
+          3.2514871950782216,
+          -1.9625033320650216,
+          -0.05062130767563078
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          10.0,
+          1.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.9875,
+        "failed": 0.0,
+        "cost": 0.08246715410770923,
+        "rms_angle_deg": 2.5817236547998155,
+        "peak_relative_deg": 2.4881255229574304,
+        "residual_relative_rms_deg": 0.0017274691755478464,
+        "count": 240,
+        "passes": 237,
+        "physical_failures": 0,
+        "selection_cost": 0.14865104932888867
+      },
+      "validation": {
+        "success": 0.984375,
+        "failed": 0.0,
+        "cost": 0.08728471334255505,
+        "rms_angle_deg": 2.6954003771272825,
+        "peak_relative_deg": 2.590116561001184,
+        "residual_relative_rms_deg": 0.0017798092118232194,
+        "count": 320,
+        "passes": 315,
+        "physical_failures": 0,
+        "selection_cost": 0.1700176730582933
+      }
+    },
+    {
+      "index": 12,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168376,
+          3.251487195078216,
+          -1.9625033320650043,
+          -0.050621307675638993
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1.0,
+          0.1
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.9875,
+        "failed": 0.0,
+        "cost": 0.08246715410770927,
+        "rms_angle_deg": 2.5817236547998155,
+        "peak_relative_deg": 2.488125522957428,
+        "residual_relative_rms_deg": 0.0017274691755479225,
+        "count": 240,
+        "passes": 237,
+        "physical_failures": 0,
+        "selection_cost": 0.14865104932888873
+      },
+      "validation": {
+        "success": 0.984375,
+        "failed": 0.0,
+        "cost": 0.0872847133425551,
+        "rms_angle_deg": 2.6954003771272825,
+        "peak_relative_deg": 2.5901165610011825,
+        "residual_relative_rms_deg": 0.0017798092118232974,
+        "count": 320,
+        "passes": 315,
+        "physical_failures": 0,
+        "selection_cost": 0.17001767305829335
+      }
+    },
+    {
+      "index": 30,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          10.000000000000027,
+          11.374002088397619,
+          -39.47983236029703,
+          -2.685254111964017
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          100.0,
+          10.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.9583333333333334,
+        "failed": 0.0,
+        "cost": 0.0787480258306134,
+        "rms_angle_deg": 2.837666546381561,
+        "peak_relative_deg": 1.6067738263618987,
+        "residual_relative_rms_deg": 0.004602013223354507,
+        "count": 240,
+        "passes": 230,
+        "physical_failures": 0,
+        "selection_cost": 0.3020033396864921
+      },
+      "validation": {
+        "success": 0.9375,
+        "failed": 0.0,
+        "cost": 0.08309762148187046,
+        "rms_angle_deg": 2.960126757751284,
+        "peak_relative_deg": 1.6842839208408371,
+        "residual_relative_rms_deg": 0.0047642743202472426,
+        "count": 320,
+        "passes": 300,
+        "physical_failures": 0,
+        "selection_cost": 0.4181206455161983
+      }
+    },
+    {
+      "index": 46,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          9.999999999999979,
+          11.374002088397546,
+          -39.47983236029706,
+          -2.685254111964042
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          1000.0,
+          100.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.9583333333333334,
+        "failed": 0.0,
+        "cost": 0.07874802583061334,
+        "rms_angle_deg": 2.837666546381562,
+        "peak_relative_deg": 1.6067738263618951,
+        "residual_relative_rms_deg": 0.004602013223354605,
+        "count": 240,
+        "passes": 230,
+        "physical_failures": 0,
+        "selection_cost": 0.3020033396864921
+      },
+      "validation": {
+        "success": 0.9375,
+        "failed": 0.0,
+        "cost": 0.08309762148187043,
+        "rms_angle_deg": 2.960126757751285,
+        "peak_relative_deg": 1.6842839208408336,
+        "residual_relative_rms_deg": 0.004764274320247344,
+        "count": 320,
+        "passes": 300,
+        "physical_failures": 0,
+        "selection_cost": 0.41812064551619843
+      }
+    },
+    {
+      "index": 27,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          9.999999999999982,
+          8.415898752122487,
+          -10.360109241584373,
+          0.17669307829699443
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          10.0,
+          1.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.8833333333333333,
+        "failed": 0.0,
+        "cost": 0.12523269802436152,
+        "rms_angle_deg": 2.4930552872319773,
+        "peak_relative_deg": 2.782210363155569,
+        "residual_relative_rms_deg": 0.007465286170187585,
+        "count": 240,
+        "passes": 212,
+        "physical_failures": 0,
+        "selection_cost": 0.746939007528415
+      },
+      "validation": {
+        "success": 0.878125,
+        "failed": 0.0,
+        "cost": 0.13140536672392603,
+        "rms_angle_deg": 2.602963243031013,
+        "peak_relative_deg": 2.882581131643667,
+        "residual_relative_rms_deg": 0.007648426799297998,
+        "count": 320,
+        "passes": 281,
+        "physical_failures": 0,
+        "selection_cost": 0.7805664610791668
+      }
+    },
+    {
+      "index": 43,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          9.999999999999996,
+          8.415898752122501,
+          -10.360109241584325,
+          0.17669307829700287
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          100.0,
+          10.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.8833333333333333,
+        "failed": 0.0,
+        "cost": 0.12523269802436154,
+        "rms_angle_deg": 2.4930552872319773,
+        "peak_relative_deg": 2.7822103631555715,
+        "residual_relative_rms_deg": 0.007465286170187597,
+        "count": 240,
+        "passes": 212,
+        "physical_failures": 0,
+        "selection_cost": 0.746939007528415
+      },
+      "validation": {
+        "success": 0.878125,
+        "failed": 0.0,
+        "cost": 0.13140536672392605,
+        "rms_angle_deg": 2.602963243031012,
+        "peak_relative_deg": 2.8825811316436702,
+        "residual_relative_rms_deg": 0.007648426799298012,
+        "count": 320,
+        "passes": 281,
+        "physical_failures": 0,
+        "selection_cost": 0.7805664610791668
+      }
+    },
+    {
+      "index": 42,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          31.62277660168389,
+          24.57549360612985,
+          -37.86371398516355,
+          2.305694565938925
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          100.0,
+          10.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.8833333333333333,
+        "failed": 0.0,
+        "cost": 0.1499969471486836,
+        "rms_angle_deg": 2.485966309628173,
+        "peak_relative_deg": 2.818529626627006,
+        "residual_relative_rms_deg": 0.008118009186052925,
+        "count": 240,
+        "passes": 212,
+        "physical_failures": 0,
+        "selection_cost": 0.767507440711329
+      },
+      "validation": {
+        "success": 0.878125,
+        "failed": 0.0,
+        "cost": 0.15770221986042202,
+        "rms_angle_deg": 2.5954523629709163,
+        "peak_relative_deg": 2.9184001320182373,
+        "residual_relative_rms_deg": 0.008274144868884812,
+        "count": 320,
+        "passes": 281,
+        "physical_failures": 0,
+        "selection_cost": 0.8025605315451539
+      }
+    },
+    {
+      "index": 4,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.3162277660168379,
+          0.862785922762688,
+          -1.2889840070112073,
+          -0.8637841087918712
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          10.0,
+          1.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.8416666666666667,
+        "failed": 0.0,
+        "cost": 0.00461288831715891,
+        "rms_angle_deg": 4.18906047963647,
+        "peak_relative_deg": 0.4924621701917991,
+        "residual_relative_rms_deg": 0.006188540200749657,
+        "count": 240,
+        "passes": 202,
+        "physical_failures": 0,
+        "selection_cost": 0.8738939388498835
+      },
+      "validation": {
+        "success": 0.825,
+        "failed": 0.0,
+        "cost": 0.005038536558268239,
+        "rms_angle_deg": 4.388231923779391,
+        "peak_relative_deg": 0.5198639227058436,
+        "residual_relative_rms_deg": 0.006522590751246277,
+        "count": 320,
+        "passes": 264,
+        "physical_failures": 0,
+        "selection_cost": 0.9656133989438006
+      }
+    },
+    {
+      "index": 20,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.3162277660168399,
+          0.8627859227626924,
+          -1.2889840070112175,
+          -0.8637841087918712
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          100.0,
+          10.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.8416666666666667,
+        "failed": 0.0,
+        "cost": 0.00461288831715894,
+        "rms_angle_deg": 4.189060479636465,
+        "peak_relative_deg": 0.4924621701918011,
+        "residual_relative_rms_deg": 0.00618854020074958,
+        "count": 240,
+        "passes": 202,
+        "physical_failures": 0,
+        "selection_cost": 0.8738939388498835
+      },
+      "validation": {
+        "success": 0.825,
+        "failed": 0.0,
+        "cost": 0.0050385365582682725,
+        "rms_angle_deg": 4.388231923779385,
+        "peak_relative_deg": 0.5198639227058457,
+        "residual_relative_rms_deg": 0.006522590751246195,
+        "count": 320,
+        "passes": 264,
+        "physical_failures": 0,
+        "selection_cost": 0.9656133989438007
+      }
+    },
+    {
+      "index": 19,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000018,
+          1.980831749414401,
+          -8.076711680656372,
+          -2.7236163764626724
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          100.0,
+          10.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.8375,
+        "failed": 0.0,
+        "cost": 0.014757470063313372,
+        "rms_angle_deg": 3.6093688009122187,
+        "peak_relative_deg": 0.6713718653739016,
+        "residual_relative_rms_deg": 0.007404905082614928,
+        "count": 240,
+        "passes": 201,
+        "physical_failures": 0,
+        "selection_cost": 0.9046600244250282
+      },
+      "validation": {
+        "success": 0.825,
+        "failed": 0.0,
+        "cost": 0.01608824091082937,
+        "rms_angle_deg": 3.7720515465801383,
+        "peak_relative_deg": 0.7081721170457165,
+        "residual_relative_rms_deg": 0.007675015867519503,
+        "count": 320,
+        "passes": 264,
+        "physical_failures": 0,
+        "selection_cost": 0.9740249405342094
+      }
+    },
+    {
+      "index": 3,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000016,
+          1.9808317494143957,
+          -8.076711680656329,
+          -2.723616376462674
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          10.0,
+          1.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.8375,
+        "failed": 0.0,
+        "cost": 0.014757470063313422,
+        "rms_angle_deg": 3.6093688009122156,
+        "peak_relative_deg": 0.6713718653739028,
+        "residual_relative_rms_deg": 0.0074049050826150015,
+        "count": 240,
+        "passes": 201,
+        "physical_failures": 0,
+        "selection_cost": 0.9046600244250284
+      },
+      "validation": {
+        "success": 0.825,
+        "failed": 0.0,
+        "cost": 0.016088240910829426,
+        "rms_angle_deg": 3.772051546580137,
+        "peak_relative_deg": 0.7081721170457176,
+        "residual_relative_rms_deg": 0.007675015867519582,
+        "count": 320,
+        "passes": 264,
+        "physical_failures": 0,
+        "selection_cost": 0.9740249405342094
+      }
+    },
+    {
+      "index": 35,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000018,
+          1.9808317494143974,
+          -8.076711680656357,
+          -2.7236163764626693
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          1000.0,
+          100.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.8375,
+        "failed": 0.0,
+        "cost": 0.014757470063313403,
+        "rms_angle_deg": 3.609368800912217,
+        "peak_relative_deg": 0.6713718653739024,
+        "residual_relative_rms_deg": 0.007404905082614986,
+        "count": 240,
+        "passes": 201,
+        "physical_failures": 0,
+        "selection_cost": 0.9046600244250284
+      },
+      "validation": {
+        "success": 0.825,
+        "failed": 0.0,
+        "cost": 0.016088240910829405,
+        "rms_angle_deg": 3.772051546580137,
+        "peak_relative_deg": 0.7081721170457174,
+        "residual_relative_rms_deg": 0.0076750158675195634,
+        "count": 320,
+        "passes": 264,
+        "physical_failures": 0,
+        "selection_cost": 0.9740249405342094
+      }
+    },
+    {
+      "index": 1,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.3162277660168351,
+          0.8212226166263775,
+          -0.18799075473929788,
+          -0.049335749393451866
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          1.0,
+          0.1
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.7958333333333333,
+        "failed": 0.0,
+        "cost": 0.005225567263712745,
+        "rms_angle_deg": 4.049178313687735,
+        "peak_relative_deg": 0.6462159925221369,
+        "residual_relative_rms_deg": 0.012382175670101565,
+        "count": 240,
+        "passes": 191,
+        "physical_failures": 0,
+        "selection_cost": 1.1255496055515564
+      },
+      "validation": {
+        "success": 0.76875,
+        "failed": 0.0,
+        "cost": 0.005710496789633031,
+        "rms_angle_deg": 4.239107438242421,
+        "peak_relative_deg": 0.6818596484267152,
+        "residual_relative_rms_deg": 0.012176249935628115,
+        "count": 320,
+        "passes": 246,
+        "physical_failures": 0,
+        "selection_cost": 1.274491111262848
+      }
+    },
+    {
+      "index": 17,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.31622776601683766,
+          0.8212226166263819,
+          -0.18799075473929902,
+          -0.049335749393449736
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          10.0,
+          1.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.7958333333333333,
+        "failed": 0.0,
+        "cost": 0.005225567263712799,
+        "rms_angle_deg": 4.049178313687727,
+        "peak_relative_deg": 0.646215992522141,
+        "residual_relative_rms_deg": 0.012382175670101685,
+        "count": 240,
+        "passes": 191,
+        "physical_failures": 0,
+        "selection_cost": 1.1255496055515564
+      },
+      "validation": {
+        "success": 0.76875,
+        "failed": 0.0,
+        "cost": 0.0057104967896330905,
+        "rms_angle_deg": 4.239107438242413,
+        "peak_relative_deg": 0.6818596484267199,
+        "residual_relative_rms_deg": 0.012176249935628224,
+        "count": 320,
+        "passes": 246,
+        "physical_failures": 0,
+        "selection_cost": 1.274491111262848
+      }
+    },
+    {
+      "index": 34,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168364,
+          5.642403740021511,
+          -35.411762122304964,
+          -6.797974625414543
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          1000.0,
+          100.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.7958333333333333,
+        "failed": 0.0,
+        "cost": 0.02822212426810782,
+        "rms_angle_deg": 3.4827180178769552,
+        "peak_relative_deg": 0.6936750684675593,
+        "residual_relative_rms_deg": 0.009544336940214863,
+        "count": 240,
+        "passes": 191,
+        "physical_failures": 0,
+        "selection_cost": 1.1430667359201887
+      },
+      "validation": {
+        "success": 0.7875,
+        "failed": 0.0,
+        "cost": 0.030036480496851297,
+        "rms_angle_deg": 3.638660709290278,
+        "peak_relative_deg": 0.7310340756876407,
+        "residual_relative_rms_deg": 0.009876402378011944,
+        "count": 320,
+        "passes": 252,
+        "physical_failures": 0,
+        "selection_cost": 1.1900003091424713
+      }
+    },
+    {
+      "index": 18,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168371,
+          5.642403740021491,
+          -35.41176212230513,
+          -6.79797462541456
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          100.0,
+          10.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.7958333333333333,
+        "failed": 0.0,
+        "cost": 0.028222124268107936,
+        "rms_angle_deg": 3.482718017876954,
+        "peak_relative_deg": 0.6936750684675597,
+        "residual_relative_rms_deg": 0.009544336940215097,
+        "count": 240,
+        "passes": 191,
+        "physical_failures": 0,
+        "selection_cost": 1.143066735920189
+      },
+      "validation": {
+        "success": 0.7875,
+        "failed": 0.0,
+        "cost": 0.030036480496851425,
+        "rms_angle_deg": 3.638660709290277,
+        "peak_relative_deg": 0.731034075687641,
+        "residual_relative_rms_deg": 0.009876402378012185,
+        "count": 320,
+        "passes": 252,
+        "physical_failures": 0,
+        "selection_cost": 1.1900003091424713
+      }
+    },
+    {
+      "index": 6,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.9999999999999976,
+          2.917458161490445,
+          -30.898053082075744,
+          -9.01349731947953
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          100.0,
+          10.0
+        ],
+        "r": 0.1
+      },
+      "development": {
+        "success": 0.6875,
+        "failed": 0.0,
+        "cost": 0.007190549357131591,
+        "rms_angle_deg": 4.463239540911576,
+        "peak_relative_deg": 0.2730699922670134,
+        "residual_relative_rms_deg": 0.014718995422456083,
+        "count": 240,
+        "passes": 165,
+        "physical_failures": 0,
+        "selection_cost": 1.7230537386950395
+      },
+      "validation": {
+        "success": 0.68125,
+        "failed": 0.0,
+        "cost": 0.007856314821406614,
+        "rms_angle_deg": 4.675780967836576,
+        "peak_relative_deg": 0.28853254208918033,
+        "residual_relative_rms_deg": 0.01549354185262659,
+        "count": 320,
+        "passes": 218,
+        "physical_failures": 0,
+        "selection_cost": 1.7576553645230466
+      }
+    },
+    {
+      "index": 22,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          1.0000000000000062,
+          2.9174581614904262,
+          -30.8980530820758,
+          -9.013497319479566
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1000.0,
+          100.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.6875,
+        "failed": 0.0,
+        "cost": 0.00719054935713172,
+        "rms_angle_deg": 4.463239540911562,
+        "peak_relative_deg": 0.2730699922670155,
+        "residual_relative_rms_deg": 0.01471899542245626,
+        "count": 240,
+        "passes": 165,
+        "physical_failures": 0,
+        "selection_cost": 1.7230537386950397
+      },
+      "validation": {
+        "success": 0.68125,
+        "failed": 0.0,
+        "cost": 0.007856314821406753,
+        "rms_angle_deg": 4.675780967836562,
+        "peak_relative_deg": 0.2885325420891824,
+        "residual_relative_rms_deg": 0.015493541852626774,
+        "count": 320,
+        "passes": 218,
+        "physical_failures": 0,
+        "selection_cost": 1.7576553645230466
+      }
+    },
+    {
+      "index": 13,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.9999999999999977,
+          1.5259807103305532,
+          -0.1423496266545456,
+          0.14181835931935471
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1.0,
+          0.1
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.6083333333333333,
+        "failed": 0.0,
+        "cost": 0.02738589260221192,
+        "rms_angle_deg": 3.052679212666215,
+        "peak_relative_deg": 1.5803608988380078,
+        "residual_relative_rms_deg": 0.0294053621082512,
+        "count": 240,
+        "passes": 146,
+        "physical_failures": 0,
+        "selection_cost": 2.1630133834303815
+      },
+      "validation": {
+        "success": 0.625,
+        "failed": 0.0,
+        "cost": 0.029828792613954203,
+        "rms_angle_deg": 3.1822597242287203,
+        "peak_relative_deg": 1.660578211414179,
+        "residual_relative_rms_deg": 0.028672379229611994,
+        "count": 320,
+        "passes": 200,
+        "physical_failures": 0,
+        "selection_cost": 2.0734341331079214
+      }
+    },
+    {
+      "index": 29,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.9999999999999976,
+          1.5259807103305594,
+          -0.14234962665454995,
+          0.14181835931935466
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          10.0,
+          1.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.6083333333333333,
+        "failed": 0.0,
+        "cost": 0.027385892602211796,
+        "rms_angle_deg": 3.052679212666218,
+        "peak_relative_deg": 1.580360898838004,
+        "residual_relative_rms_deg": 0.029405362108250763,
+        "count": 240,
+        "passes": 146,
+        "physical_failures": 0,
+        "selection_cost": 2.1630133834303815
+      },
+      "validation": {
+        "success": 0.625,
+        "failed": 0.0,
+        "cost": 0.029828792613954068,
+        "rms_angle_deg": 3.182259724228723,
+        "peak_relative_deg": 1.660578211414175,
+        "residual_relative_rms_deg": 0.028672379229611567,
+        "count": 320,
+        "passes": 200,
+        "physical_failures": 0,
+        "selection_cost": 2.0734341331079214
+      }
+    },
+    {
+      "index": 7,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.31622776601683955,
+          1.0377642124238546,
+          -6.520093127647888,
+          -3.2811271205430605
+        ],
+        "q_diag": [
+          0.1,
+          0.03,
+          100.0,
+          10.0
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.5625,
+        "failed": 0.0,
+        "cost": 0.00289665028697496,
+        "rms_angle_deg": 4.685184501979682,
+        "peak_relative_deg": 0.26152046365872966,
+        "residual_relative_rms_deg": 0.014568342135918342,
+        "count": 240,
+        "passes": 135,
+        "physical_failures": 0,
+        "selection_cost": 2.4069016012407207
+      },
+      "validation": {
+        "success": 0.54375,
+        "failed": 0.0,
+        "cost": 0.003163419058760457,
+        "rms_angle_deg": 4.914277641531171,
+        "peak_relative_deg": 0.27641179416691175,
+        "residual_relative_rms_deg": 0.015378538572888418,
+        "count": 320,
+        "passes": 174,
+        "physical_failures": 0,
+        "selection_cost": 2.5100015055686558
+      }
+    },
+    {
+      "index": 23,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.31622776601683755,
+          1.0377642124238469,
+          -6.520093127647878,
+          -3.2811271205430663
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1000.0,
+          100.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.5625,
+        "failed": 0.0,
+        "cost": 0.002896650286974945,
+        "rms_angle_deg": 4.6851845019796885,
+        "peak_relative_deg": 0.26152046365872833,
+        "residual_relative_rms_deg": 0.01456834213591849,
+        "count": 240,
+        "passes": 135,
+        "physical_failures": 0,
+        "selection_cost": 2.4069016012407207
+      },
+      "validation": {
+        "success": 0.54375,
+        "failed": 0.0,
+        "cost": 0.0031634190587604403,
+        "rms_angle_deg": 4.914277641531176,
+        "peak_relative_deg": 0.2764117941669103,
+        "residual_relative_rms_deg": 0.015378538572888567,
+        "count": 320,
+        "passes": 174,
+        "physical_failures": 0,
+        "selection_cost": 2.5100015055686558
+      }
+    },
+    {
+      "index": 25,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.162277660168378,
+          3.037095511645661,
+          0.1582540790468381,
+          0.36118335530669277
+        ],
+        "q_diag": [
+          10.0,
+          3.0,
+          1.0,
+          0.1
+        ],
+        "r": 1.0
+      },
+      "development": {
+        "success": 0.5458333333333333,
+        "failed": 0.020833333333333332,
+        "cost": 0.09405173958120056,
+        "rms_angle_deg": 2.516901174488211,
+        "peak_relative_deg": 3.354360038412003,
+        "residual_relative_rms_deg": 0.27089949900706556,
+        "count": 240,
+        "passes": 131,
+        "physical_failures": 5,
+        "selection_cost": 2.532651757552882
+      },
+      "validation": {
+        "success": 0.54375,
+        "failed": 0.028125,
+        "cost": 0.09878338860327222,
+        "rms_angle_deg": 2.638097761436162,
+        "peak_relative_deg": 3.4525191664021704,
+        "residual_relative_rms_deg": 0.3425040825969539,
+        "count": 320,
+        "passes": 174,
+        "physical_failures": 9,
+        "selection_cost": 2.5493904353968295
+      }
+    },
+    {
+      "index": 41,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          3.1622776601683737,
+          3.0370955116456613,
+          0.15825407904683564,
+          0.361183355306693
+        ],
+        "q_diag": [
+          100.0,
+          30.0,
+          10.0,
+          1.0
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.5458333333333333,
+        "failed": 0.020833333333333332,
+        "cost": 0.09405173958120032,
+        "rms_angle_deg": 2.516901174488212,
+        "peak_relative_deg": 3.354360038411997,
+        "residual_relative_rms_deg": 0.27089949900706495,
+        "count": 240,
+        "passes": 131,
+        "physical_failures": 5,
+        "selection_cost": 2.532651757552882
+      },
+      "validation": {
+        "success": 0.54375,
+        "failed": 0.028125,
+        "cost": 0.098783388603272,
+        "rms_angle_deg": 2.638097761436163,
+        "peak_relative_deg": 3.4525191664021646,
+        "residual_relative_rms_deg": 0.3425040825969532,
+        "count": 320,
+        "passes": 174,
+        "physical_failures": 9,
+        "selection_cost": 2.5493904353968295
+      }
+    },
+    {
+      "index": 14,
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.3162277660168387,
+          0.8119550863310672,
+          0.05009189002695702,
+          0.18233179845231987
+        ],
+        "q_diag": [
+          1.0,
+          0.3,
+          1.0,
+          0.1
+        ],
+        "r": 10.0
+      },
+      "development": {
+        "success": 0.43333333333333335,
+        "failed": 0.0,
+        "cost": 0.005385291526734968,
+        "rms_angle_deg": 4.015518666275938,
+        "peak_relative_deg": 0.7028979687965979,
+        "residual_relative_rms_deg": 0.07971459218991471,
+        "count": 240,
+        "passes": 104,
+        "physical_failures": 0,
+        "selection_cost": 3.117321047392937
+      },
+      "validation": {
+        "success": 0.396875,
+        "failed": 0.0,
+        "cost": 0.005889088797009288,
+        "rms_angle_deg": 4.203089228532778,
+        "peak_relative_deg": 0.7415829953005362,
+        "residual_relative_rms_deg": 0.07673814950600795,
+        "count": 320,
+        "passes": 127,
+        "physical_failures": 0,
+        "selection_cost": 3.3179257389841226
+      }
+    }
+  ],
+  "selected": {
+    "index": 32,
+    "settings": {
+      "method": "LQR",
+      "gain": [
+        1.0000000000000036,
+        1.6270901393277613,
+        -1.7281761201378552,
+        -0.5727909711866275
+      ],
+      "q_diag": [
+        10.0,
+        3.0,
+        100.0,
+        10.0
+      ],
+      "r": 10.0
+    },
+    "development": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.02338162848202794,
+      "rms_angle_deg": 3.1950635489092463,
+      "peak_relative_deg": 1.2177562934299724,
+      "residual_relative_rms_deg": 0.0022100696148735334,
+      "count": 240,
+      "passes": 240,
+      "physical_failures": 0,
+      "selection_cost": 0.02338162848202794
+    },
+    "validation": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.025466149680029488,
+      "rms_angle_deg": 3.3331705495318547,
+      "peak_relative_deg": 1.2823368478552013,
+      "residual_relative_rms_deg": 0.002336964924942684,
+      "count": 320,
+      "passes": 320,
+      "physical_failures": 0,
+      "selection_cost": 0.025466149680029488
+    }
+  }
+}

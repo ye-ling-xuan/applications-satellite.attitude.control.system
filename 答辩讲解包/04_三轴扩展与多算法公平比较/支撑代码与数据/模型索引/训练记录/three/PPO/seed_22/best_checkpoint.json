@@ -1,8 +1,0 @@
-{
-  "timesteps": 800000,
-  "success_rate": 0.0,
-  "rms_error_deg": 9.541519756402929,
-  "control_cost": 5.823654469577541,
-  "score": -10.706250650318436,
-  "selection_split": "validation"
-}

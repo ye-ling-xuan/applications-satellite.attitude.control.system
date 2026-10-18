@@ -1,0 +1,3320 @@
+[
+  {
+    "parameters": {
+      "kp": 0.5236734265669766,
+      "kd": 1.1563646777244643,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.05,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00000",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06551576466701596,
+      "mean_penalized_selection_cost": 0.06551576466701596,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06551576466701996,
+      "mean_rms_error_deg": 8.55288772550267,
+      "max_settling_time_s": 6.7,
+      "mean_settling_time_success_only_s": 5.62421875
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1457522371020323,
+      "kd": 1.549193338482967,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.05,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00002",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.18111704977328627,
+      "mean_penalized_selection_cost": 0.18111704977328627,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.18111704977328627,
+      "mean_rms_error_deg": 7.414964047546941,
+      "max_settling_time_s": 7.050000000000001,
+      "mean_settling_time_success_only_s": 4.891927083333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.694750624360169,
+      "kd": 2.0754698290532416,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.05,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00004",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.23735026946661086,
+      "mean_penalized_selection_cost": 0.23735026946661086,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.23735026946661086,
+      "mean_rms_error_deg": 7.2500300752496685,
+      "max_settling_time_s": 5.0,
+      "mean_settling_time_success_only_s": 3.468359375
+    }
+  },
+  {
+    "parameters": {
+      "kp": 2.5068069568284925,
+      "kd": 2.780527713557331,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.05,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00006",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.30127419035915387,
+      "mean_penalized_selection_cost": 0.30127419035915387,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.30127419035915387,
+      "mean_rms_error_deg": 7.161874878646894,
+      "max_settling_time_s": 6.4,
+      "mean_settling_time_success_only_s": 3.752994791666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5236734265669766,
+      "kd": 1.1563646777244643,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00007",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.0605356755394022,
+      "mean_penalized_selection_cost": 0.0605356755394022,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.060535675539423184,
+      "mean_rms_error_deg": 8.656720715314448,
+      "max_settling_time_s": 6.800000000000001,
+      "mean_settling_time_success_only_s": 5.749609375000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7745966692414836,
+      "kd": 1.549193338482967,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00008",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09274051262481363,
+      "mean_penalized_selection_cost": 0.09274051262481363,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09274051262481364,
+      "mean_rms_error_deg": 8.139768714613087,
+      "max_settling_time_s": 6.550000000000001,
+      "mean_settling_time_success_only_s": 5.396614583333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1457522371020323,
+      "kd": 1.549193338482967,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00009",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.16640923466907756,
+      "mean_penalized_selection_cost": 0.16640923466907756,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.16640923466907762,
+      "mean_rms_error_deg": 7.477164905307398,
+      "max_settling_time_s": 7.300000000000001,
+      "mean_settling_time_success_only_s": 5.0640624999999995
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.694750624360169,
+      "kd": 2.0754698290532416,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00011",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.21531532907643144,
+      "mean_penalized_selection_cost": 0.21531532907643144,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.21531532907643144,
+      "mean_rms_error_deg": 7.299951537367742,
+      "max_settling_time_s": 5.800000000000001,
+      "mean_settling_time_success_only_s": 3.511588541666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 2.5068069568284925,
+      "kd": 2.780527713557331,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00013",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.26864857301561323,
+      "mean_penalized_selection_cost": 0.26864857301561323,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.26864857301561323,
+      "mean_rms_error_deg": 7.201425772038031,
+      "max_settling_time_s": 5.300000000000001,
+      "mean_settling_time_success_only_s": 3.68984375
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1457522371020323,
+      "kd": 1.549193338482967,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00016",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.15261525272409135,
+      "mean_penalized_selection_cost": 0.15261525272409135,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.15261525272409152,
+      "mean_rms_error_deg": 7.545998475325401,
+      "max_settling_time_s": 7.5,
+      "mean_settling_time_success_only_s": 5.2425781250000005
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1457522371020323,
+      "kd": 2.0754698290532416,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00017",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.11592066057282817,
+      "mean_penalized_selection_cost": 0.11592066057282817,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.11592066057282817,
+      "mean_rms_error_deg": 7.908390950111536,
+      "max_settling_time_s": 6.800000000000001,
+      "mean_settling_time_success_only_s": 5.318098958333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.694750624360169,
+      "kd": 2.0754698290532416,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00018",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.1953190779693068,
+      "mean_penalized_selection_cost": 0.1953190779693068,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1953190779693068,
+      "mean_rms_error_deg": 7.356666371827321,
+      "max_settling_time_s": 6.2,
+      "mean_settling_time_success_only_s": 3.6907552083333335
+    }
+  },
+  {
+    "parameters": {
+      "kp": 2.5068069568284925,
+      "kd": 2.780527713557331,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00020",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.24002976256253242,
+      "mean_penalized_selection_cost": 0.24002976256253242,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.24002976256253242,
+      "mean_rms_error_deg": 7.248504678321829,
+      "max_settling_time_s": 5.1000000000000005,
+      "mean_settling_time_success_only_s": 3.691015625
+    }
+  },
+  {
+    "parameters": {
+      "kp": 3.7079680210628037,
+      "kd": 2.780527713557331,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00022",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.3882042502399856,
+      "mean_penalized_selection_cost": 0.3882042502399856,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.3882042502399856,
+      "mean_rms_error_deg": 7.0891571410711265,
+      "max_settling_time_s": 7.3500000000000005,
+      "mean_settling_time_success_only_s": 4.074479166666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 3.7079680210628037,
+      "kd": 3.72510082181591,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00023",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.2869509318591852,
+      "mean_penalized_selection_cost": 0.2869509318591852,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.2869509318591852,
+      "mean_rms_error_deg": 7.180441774972107,
+      "max_settling_time_s": 5.800000000000001,
+      "mean_settling_time_success_only_s": 3.6958333333333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1457522371020323,
+      "kd": 1.549193338482967,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00026",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.13990452193283184,
+      "mean_penalized_selection_cost": 0.13990452193283184,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.13990452193283268,
+      "mean_rms_error_deg": 7.620868828909779,
+      "max_settling_time_s": 7.75,
+      "mean_settling_time_success_only_s": 5.418489583333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.694750624360169,
+      "kd": 2.0754698290532416,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00028",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.17740071028919738,
+      "mean_penalized_selection_cost": 0.17740071028919738,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.17740071028919738,
+      "mean_rms_error_deg": 7.420630502686232,
+      "max_settling_time_s": 6.550000000000001,
+      "mean_settling_time_success_only_s": 3.8977864583333335
+    }
+  },
+  {
+    "parameters": {
+      "kp": 2.5068069568284925,
+      "kd": 2.0754698290532416,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00030",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.28751091250560273,
+      "mean_penalized_selection_cost": 0.28751091250560273,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.28751091250560273,
+      "mean_rms_error_deg": 7.158795572413029,
+      "max_settling_time_s": 6.800000000000001,
+      "mean_settling_time_success_only_s": 4.610807291666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 3.7079680210628037,
+      "kd": 2.780527713557331,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00032",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.3392952039694075,
+      "mean_penalized_selection_cost": 0.3392952039694075,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.3392952039694075,
+      "mean_rms_error_deg": 7.1025086161759745,
+      "max_settling_time_s": 6.300000000000001,
+      "mean_settling_time_success_only_s": 4.0203125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 3.7079680210628037,
+      "kd": 3.72510082181591,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00033",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.25366134680951874,
+      "mean_penalized_selection_cost": 0.25366134680951874,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.25366134680951874,
+      "mean_rms_error_deg": 7.2278158136976485,
+      "max_settling_time_s": 4.8500000000000005,
+      "mean_settling_time_success_only_s": 3.72109375
+    }
+  },
+  {
+    "parameters": {
+      "kp": 5.484677153847974,
+      "kd": 4.99055487382304,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00037",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.29300096353728367,
+      "mean_penalized_selection_cost": 0.29300096353728367,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.29300096353728367,
+      "mean_rms_error_deg": 7.174660920130704,
+      "max_settling_time_s": 4.800000000000001,
+      "mean_settling_time_success_only_s": 3.645572916666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 8.1127138397811,
+      "kd": 4.99055487382304,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00038",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.4497864709691177,
+      "mean_penalized_selection_cost": 0.4497864709691177,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.4497864709691177,
+      "mean_rms_error_deg": 7.076495935369732,
+      "max_settling_time_s": 7.65,
+      "mean_settling_time_success_only_s": 3.4841145833333336
+    }
+  },
+  {
+    "parameters": {
+      "kp": 8.1127138397811,
+      "kd": 6.68589633944402,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00039",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.3370821821209882,
+      "mean_penalized_selection_cost": 0.3370821821209882,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.33708218212098845,
+      "mean_rms_error_deg": 7.134361285364737,
+      "max_settling_time_s": 5.800000000000001,
+      "mean_settling_time_success_only_s": 3.5940104166666664
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1457522371020323,
+      "kd": 1.549193338482967,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00041",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12833093500836334,
+      "mean_penalized_selection_cost": 0.12833093500836334,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.12833093500836537,
+      "mean_rms_error_deg": 7.701497197200408,
+      "max_settling_time_s": 8.0,
+      "mean_settling_time_success_only_s": 5.598697916666666
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.694750624360169,
+      "kd": 2.0754698290532416,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00043",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.16151883960268273,
+      "mean_penalized_selection_cost": 0.16151883960268273,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.16151883960268273,
+      "mean_rms_error_deg": 7.491467940179217,
+      "max_settling_time_s": 6.8500000000000005,
+      "mean_settling_time_success_only_s": 4.129557291666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 2.5068069568284925,
+      "kd": 2.0754698290532416,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00045",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.25707029713937707,
+      "mean_penalized_selection_cost": 0.25707029713937707,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.25707029713937707,
+      "mean_rms_error_deg": 7.19811092250021,
+      "max_settling_time_s": 6.5,
+      "mean_settling_time_success_only_s": 4.749609375000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 2.5068069568284925,
+      "kd": 2.780527713557331,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00046",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.19394570476782888,
+      "mean_penalized_selection_cost": 0.19394570476782888,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.19394570476782888,
+      "mean_rms_error_deg": 7.364206340845399,
+      "max_settling_time_s": 4.7,
+      "mean_settling_time_success_only_s": 3.8268229166666665
+    }
+  },
+  {
+    "parameters": {
+      "kp": 3.7079680210628037,
+      "kd": 2.780527713557331,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00048",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.2993511940112387,
+      "mean_penalized_selection_cost": 0.2993511940112387,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.2993511940112387,
+      "mean_rms_error_deg": 7.132655677123014,
+      "max_settling_time_s": 5.95,
+      "mean_settling_time_success_only_s": 4.11796875
+    }
+  },
+  {
+    "parameters": {
+      "kp": 3.7079680210628037,
+      "kd": 3.72510082181591,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00049",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.22645017983027457,
+      "mean_penalized_selection_cost": 0.22645017983027457,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.22645017983027457,
+      "mean_rms_error_deg": 7.281915203789439,
+      "max_settling_time_s": 4.9,
+      "mean_settling_time_success_only_s": 3.772395833333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 5.484677153847974,
+      "kd": 3.72510082181591,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00051",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.34174468771664124,
+      "mean_penalized_selection_cost": 0.34174468771664124,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.34174468771664124,
+      "mean_rms_error_deg": 7.097240921292852,
+      "max_settling_time_s": 5.5,
+      "mean_settling_time_success_only_s": 3.5897135416666672
+    }
+  },
+  {
+    "parameters": {
+      "kp": 5.484677153847974,
+      "kd": 4.99055487382304,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00052",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.26075840496238784,
+      "mean_penalized_selection_cost": 0.26075840496238784,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.26075840496238784,
+      "mean_rms_error_deg": 7.223605166070146,
+      "max_settling_time_s": 4.800000000000001,
+      "mean_settling_time_success_only_s": 3.6990885416666672
+    }
+  },
+  {
+    "parameters": {
+      "kp": 8.1127138397811,
+      "kd": 4.99055487382304,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00053",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.3903413789567038,
+      "mean_penalized_selection_cost": 0.3903413789567038,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.39034137897456617,
+      "mean_rms_error_deg": 7.078890527951631,
+      "max_settling_time_s": 5.4,
+      "mean_settling_time_success_only_s": 3.374479166666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7745966692414836,
+      "kd": 1.549193338482967,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00054",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06726082751173014,
+      "mean_penalized_selection_cost": 0.06726082751173014,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06726082751174826,
+      "mean_rms_error_deg": 8.551697911520309,
+      "max_settling_time_s": 7.0,
+      "mean_settling_time_success_only_s": 5.845312500000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.694750624360169,
+      "kd": 2.0754698290532416,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00056",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.14756817283210358,
+      "mean_penalized_selection_cost": 0.14756817283210358,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.14756817283210363,
+      "mean_rms_error_deg": 7.568852322008631,
+      "max_settling_time_s": 7.15,
+      "mean_settling_time_success_only_s": 4.398307291666668
+    }
+  },
+  {
+    "parameters": {
+      "kp": 2.5068069568284925,
+      "kd": 2.0754698290532416,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00058",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.2311277482947959,
+      "mean_penalized_selection_cost": 0.2311277482947959,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.2311277482947959,
+      "mean_rms_error_deg": 7.24585938755843,
+      "max_settling_time_s": 6.75,
+      "mean_settling_time_success_only_s": 4.94140625
+    }
+  },
+  {
+    "parameters": {
+      "kp": 2.5068069568284925,
+      "kd": 2.780527713557331,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00059",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.17614077392040636,
+      "mean_penalized_selection_cost": 0.17614077392040636,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.17614077392040636,
+      "mean_rms_error_deg": 7.432844907875801,
+      "max_settling_time_s": 4.8500000000000005,
+      "mean_settling_time_success_only_s": 3.953515625
+    }
+  },
+  {
+    "parameters": {
+      "kp": 3.7079680210628037,
+      "kd": 2.780527713557331,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00061",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.2668001670351935,
+      "mean_penalized_selection_cost": 0.2668001670351935,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.2668001670351935,
+      "mean_rms_error_deg": 7.174595580938273,
+      "max_settling_time_s": 6.2,
+      "mean_settling_time_success_only_s": 4.331770833333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 3.7079680210628037,
+      "kd": 3.72510082181591,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00062",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.20510787401962097,
+      "mean_penalized_selection_cost": 0.20510787401962097,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.20510787401962097,
+      "mean_rms_error_deg": 7.342595562128956,
+      "max_settling_time_s": 4.8500000000000005,
+      "mean_settling_time_success_only_s": 3.8502604166666665
+    }
+  },
+  {
+    "parameters": {
+      "kp": 5.484677153847974,
+      "kd": 3.72510082181591,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00065",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.30443679880431046,
+      "mean_penalized_selection_cost": 0.30443679880431046,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.30443679880431046,
+      "mean_rms_error_deg": 7.132074894711863,
+      "max_settling_time_s": 5.800000000000001,
+      "mean_settling_time_success_only_s": 3.8121093750000004
+    }
+  },
+  {
+    "parameters": {
+      "kp": 2.33650692463874,
+      "kd": 2.1293179601038315,
+      "ki": 0.0006298646643376773,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PID"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00066",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.2574309068244469,
+      "mean_penalized_selection_cost": 0.2574309068244469,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.2574309068244469,
+      "mean_rms_error_deg": 7.196588377429961,
+      "max_settling_time_s": 6.3500000000000005,
+      "mean_settling_time_success_only_s": 4.527604166666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 3.147189992131742,
+      "kd": 3.2167395914742225,
+      "ki": 0.0015967324097084664,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PID"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00067",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.19704589849970588,
+      "mean_penalized_selection_cost": 0.19704589849970588,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.19704589849970588,
+      "mean_rms_error_deg": 7.356490496723094,
+      "max_settling_time_s": 4.7,
+      "mean_settling_time_success_only_s": 3.8102864583333336
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8800548520829304,
+      "kd": 1.366752128051,
+      "ki": 0.0007112316471344256,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.05,
+      "family": "predicted_PID"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00071",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.13708103735176266,
+      "mean_penalized_selection_cost": 0.13708103735176266,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.13708103735176316,
+      "mean_rms_error_deg": 7.653465588434749,
+      "max_settling_time_s": 7.7,
+      "mean_settling_time_success_only_s": 5.303776041666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.6026857543978512,
+      "kd": 2.3541696485310193,
+      "ki": 0.018834258903238685,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PID"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00075",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.1608782884807929,
+      "mean_penalized_selection_cost": 0.1608782884807929,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.16087828848094557,
+      "mean_rms_error_deg": 7.540733807755767,
+      "max_settling_time_s": 6.0,
+      "mean_settling_time_success_only_s": 4.582291666666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 5.451040553090242,
+      "kd": 3.751163426110379,
+      "ki": 0.09368196579137734,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PID"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00076",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.3005176178163493,
+      "mean_penalized_selection_cost": 0.3005176178163493,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.3005176178164388,
+      "mean_rms_error_deg": 7.136843280186933,
+      "max_settling_time_s": 5.8500000000000005,
+      "mean_settling_time_success_only_s": 3.809635416666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 4.566501073814044,
+      "kd": 4.370761854555832,
+      "ki": 0.013641022899984034,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PID"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00078",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.27316378790002904,
+      "mean_penalized_selection_cost": 0.27316378790002904,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.27316378790002904,
+      "mean_rms_error_deg": 7.199367252003518,
+      "max_settling_time_s": 4.800000000000001,
+      "mean_settling_time_success_only_s": 3.7063802083333335
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.0283565290433934,
+      "kd": 1.6744105054825946,
+      "ki": 0.0008408204829768702,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PID"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_shortlist_00079",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "shortlist",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12141423256294188,
+      "mean_penalized_selection_cost": 0.12141423256294188,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.12141423256294193,
+      "mean_rms_error_deg": 7.783400943558996,
+      "max_settling_time_s": 5.550000000000001,
+      "mean_settling_time_success_only_s": 4.5902343750000005
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5306052168807476,
+      "kd": 1.206967866840385,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.05,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00008",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06486067820911562,
+      "mean_penalized_selection_cost": 0.06486067820911562,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06486067820912372,
+      "mean_rms_error_deg": 8.585164607880131,
+      "max_settling_time_s": 6.9,
+      "mean_settling_time_success_only_s": 5.789973958333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.573071792573451,
+      "kd": 1.3081834091410312,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00012",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.05938492640796847,
+      "mean_penalized_selection_cost": 0.05938492640796847,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05938492640798645,
+      "mean_rms_error_deg": 8.720759020683545,
+      "max_settling_time_s": 7.300000000000001,
+      "mean_settling_time_success_only_s": 6.073177083333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.49423294571279175,
+      "kd": 1.1867201817120137,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00016",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.049324388267988635,
+      "mean_penalized_selection_cost": 0.049324388267988635,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.04932438826812935,
+      "mean_rms_error_deg": 8.97272956212913,
+      "max_settling_time_s": 7.550000000000001,
+      "mean_settling_time_success_only_s": 6.313411458333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6885326404035935,
+      "kd": 1.3049879179352473,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00017",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08902336254511124,
+      "mean_penalized_selection_cost": 0.08902336254511124,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08902336254511596,
+      "mean_rms_error_deg": 8.142089741213107,
+      "max_settling_time_s": 7.2,
+      "mean_settling_time_success_only_s": 5.0542968749999995
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5924618254758833,
+      "kd": 1.2291831927933645,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00022",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07208162582079371,
+      "mean_penalized_selection_cost": 0.07208162582079371,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07208162582079551,
+      "mean_rms_error_deg": 8.419556286746248,
+      "max_settling_time_s": 6.45,
+      "mean_settling_time_success_only_s": 5.442447916666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8094483118474012,
+      "kd": 1.486418709136462,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00024",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.0870881373603634,
+      "mean_penalized_selection_cost": 0.0870881373603634,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08708813736036454,
+      "mean_rms_error_deg": 8.17370670620677,
+      "max_settling_time_s": 6.2,
+      "mean_settling_time_success_only_s": 5.179947916666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6892658477264069,
+      "kd": 1.346358182282257,
+      "ki": 0.0009067114269615604,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00032",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07375784428206315,
+      "mean_penalized_selection_cost": 0.07375784428206315,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07375784428206537,
+      "mean_rms_error_deg": 8.384543628067291,
+      "max_settling_time_s": 7.95,
+      "mean_settling_time_success_only_s": 5.478776041666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.700753163472147,
+      "kd": 1.390980102180167,
+      "ki": 0.0009961396339537617,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00045",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07977863522747401,
+      "mean_penalized_selection_cost": 0.07977863522747401,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07977863522747412,
+      "mean_rms_error_deg": 8.293828371137872,
+      "max_settling_time_s": 6.45,
+      "mean_settling_time_success_only_s": 5.393619791666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5596631459948848,
+      "kd": 1.280295870580575,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.05,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00054",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06825355898568998,
+      "mean_penalized_selection_cost": 0.06825355898568998,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06825355898569259,
+      "mean_rms_error_deg": 8.53659952769382,
+      "max_settling_time_s": 7.050000000000001,
+      "mean_settling_time_success_only_s": 5.861458333333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6963732461522611,
+      "kd": 1.2842294455129832,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.05,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00058",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09977209970299368,
+      "mean_penalized_selection_cost": 0.09977209970299368,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09977209970299605,
+      "mean_rms_error_deg": 8.002397961748695,
+      "max_settling_time_s": 7.15,
+      "mean_settling_time_success_only_s": 4.888671875000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6737348069436992,
+      "kd": 1.3661591148503638,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00060",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08243338301594917,
+      "mean_penalized_selection_cost": 0.08243338301594917,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.0824333830159492,
+      "mean_rms_error_deg": 8.261104266514456,
+      "max_settling_time_s": 6.4,
+      "mean_settling_time_success_only_s": 5.357552083333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8777923971816199,
+      "kd": 1.4961755970771369,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00075",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08362553835647901,
+      "mean_penalized_selection_cost": 0.08362553835647901,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08362553835649977,
+      "mean_rms_error_deg": 8.212929709183669,
+      "max_settling_time_s": 7.75,
+      "mean_settling_time_success_only_s": 5.317317708333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7855503871514454,
+      "kd": 1.5182965567546465,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00078",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06997257979367529,
+      "mean_penalized_selection_cost": 0.06997257979367529,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06997257979368406,
+      "mean_rms_error_deg": 8.481710339498116,
+      "max_settling_time_s": 6.800000000000001,
+      "mean_settling_time_success_only_s": 5.686848958333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.582337319492744,
+      "kd": 1.3218074760339296,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00081",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.04913185928156502,
+      "mean_penalized_selection_cost": 0.04913185928156502,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.049131859281910086,
+      "mean_rms_error_deg": 9.005247981600284,
+      "max_settling_time_s": 7.7,
+      "mean_settling_time_success_only_s": 6.415494791666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.9364167253870315,
+      "kd": 1.5706158400857972,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00090",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.0877633057548416,
+      "mean_penalized_selection_cost": 0.0877633057548416,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.0877633057548512,
+      "mean_rms_error_deg": 8.153906128128755,
+      "max_settling_time_s": 7.45,
+      "mean_settling_time_success_only_s": 5.166276041666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.0211698921695445,
+      "kd": 1.499137138128981,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00100",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12251202015003367,
+      "mean_penalized_selection_cost": 0.12251202015003367,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1225120201500343,
+      "mean_rms_error_deg": 7.753859707227311,
+      "max_settling_time_s": 7.95,
+      "mean_settling_time_success_only_s": 5.377994791666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8340100261514366,
+      "kd": 1.5182346619019884,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00108",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08942990493674968,
+      "mean_penalized_selection_cost": 0.08942990493674968,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08942990493675045,
+      "mean_rms_error_deg": 8.141843605599036,
+      "max_settling_time_s": 6.15,
+      "mean_settling_time_success_only_s": 5.147786458333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7119126641188172,
+      "kd": 1.3825986070675282,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00110",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07028624179994887,
+      "mean_penalized_selection_cost": 0.07028624179994887,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07028624179995163,
+      "mean_rms_error_deg": 8.454440803322163,
+      "max_settling_time_s": 6.6000000000000005,
+      "mean_settling_time_success_only_s": 5.552083333333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7557681734506931,
+      "kd": 1.3766424031137963,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00117",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07760661868312736,
+      "mean_penalized_selection_cost": 0.07760661868312736,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07760661868314957,
+      "mean_rms_error_deg": 8.309172856898448,
+      "max_settling_time_s": 7.9,
+      "mean_settling_time_success_only_s": 5.418489583333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7518222240252737,
+      "kd": 1.4277233856648002,
+      "ki": 0.00012822238894310005,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00121",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08046476249277597,
+      "mean_penalized_selection_cost": 0.08046476249277597,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.080464762492777,
+      "mean_rms_error_deg": 8.27535784570234,
+      "max_settling_time_s": 6.3500000000000005,
+      "mean_settling_time_success_only_s": 5.319010416666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8880051241985052,
+      "kd": 1.5261853904289455,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00124",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.10655389684862974,
+      "mean_penalized_selection_cost": 0.10655389684862974,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1065538968486301,
+      "mean_rms_error_deg": 7.92611018415462,
+      "max_settling_time_s": 5.75,
+      "mean_settling_time_success_only_s": 4.767708333333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7013784269733534,
+      "kd": 1.3796295682690882,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00128",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06875986318490938,
+      "mean_penalized_selection_cost": 0.06875986318490938,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06875986318491396,
+      "mean_rms_error_deg": 8.486934098897,
+      "max_settling_time_s": 6.65,
+      "mean_settling_time_success_only_s": 5.607031250000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1970527197086984,
+      "kd": 1.6291568963111098,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00131",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.14165232537999906,
+      "mean_penalized_selection_cost": 0.14165232537999906,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1416523253799993,
+      "mean_rms_error_deg": 7.608582571190496,
+      "max_settling_time_s": 7.550000000000001,
+      "mean_settling_time_success_only_s": 5.080859375
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8069153902358027,
+      "kd": 1.4878407539247602,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00138",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08658985957055136,
+      "mean_penalized_selection_cost": 0.08658985957055136,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08658985957055228,
+      "mean_rms_error_deg": 8.18197979546323,
+      "max_settling_time_s": 6.2,
+      "mean_settling_time_success_only_s": 5.197526041666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7874495470143141,
+      "kd": 1.4871332724370918,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00141",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08338525925257044,
+      "mean_penalized_selection_cost": 0.08338525925257044,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08338525925257068,
+      "mean_rms_error_deg": 8.23536920409338,
+      "max_settling_time_s": 6.3500000000000005,
+      "mean_settling_time_success_only_s": 5.304296875
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8881500229371004,
+      "kd": 1.5195657707062205,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00147",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.10700997825126694,
+      "mean_penalized_selection_cost": 0.10700997825126694,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.10700997825126735,
+      "mean_rms_error_deg": 7.919987243679276,
+      "max_settling_time_s": 5.7,
+      "mean_settling_time_success_only_s": 4.748828125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7483694234964372,
+      "kd": 1.4482181794069633,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00149",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.085626367361115,
+      "mean_penalized_selection_cost": 0.085626367361115,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08562636736111506,
+      "mean_rms_error_deg": 8.20708580359014,
+      "max_settling_time_s": 6.3500000000000005,
+      "mean_settling_time_success_only_s": 5.278906250000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6905555695678851,
+      "kd": 1.374555906773142,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00156",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07254559245235187,
+      "mean_penalized_selection_cost": 0.07254559245235187,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07254559245235286,
+      "mean_rms_error_deg": 8.416155558517813,
+      "max_settling_time_s": 6.6000000000000005,
+      "mean_settling_time_success_only_s": 5.521875000000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.8497328498613776,
+      "kd": 1.6042104991760575,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00159",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09520832662107605,
+      "mean_penalized_selection_cost": 0.09520832662107605,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09520832662107605,
+      "mean_rms_error_deg": 8.089327779904433,
+      "max_settling_time_s": 6.300000000000001,
+      "mean_settling_time_success_only_s": 5.229427083333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.957318475027453,
+      "kd": 1.8555275427435698,
+      "ki": 0.0011897909561099467,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00163",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.099665368108196,
+      "mean_penalized_selection_cost": 0.099665368108196,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09966536810819603,
+      "mean_rms_error_deg": 8.07730787563692,
+      "max_settling_time_s": 6.95,
+      "mean_settling_time_success_only_s": 5.532682291666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.0227906382870078,
+      "kd": 1.9061626363817101,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00164",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.1168772866622108,
+      "mean_penalized_selection_cost": 0.1168772866622108,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.11687728666221081,
+      "mean_rms_error_deg": 7.900154219046378,
+      "max_settling_time_s": 6.800000000000001,
+      "mean_settling_time_success_only_s": 5.299479166666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.1672966548950507,
+      "kd": 2.046380284811066,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00173",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.09279837300089684,
+      "mean_penalized_selection_cost": 0.09279837300089684,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.09279837300089692,
+      "mean_rms_error_deg": 8.138430099780079,
+      "max_settling_time_s": 6.5,
+      "mean_settling_time_success_only_s": 5.397526041666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.4098145667746835,
+      "kd": 1.9084150288784367,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00174",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12704981472133406,
+      "mean_penalized_selection_cost": 0.12704981472133406,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.1270498147213341,
+      "mean_rms_error_deg": 7.716691396225836,
+      "max_settling_time_s": 7.300000000000001,
+      "mean_settling_time_success_only_s": 4.537630208333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.4346351943964417,
+      "kd": 1.846625815524556,
+      "ki": 0.00019684313066986527,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00181",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.13406790543804228,
+      "mean_penalized_selection_cost": 0.13406790543804228,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.13406790543804245,
+      "mean_rms_error_deg": 7.65702889186874,
+      "max_settling_time_s": 7.6000000000000005,
+      "mean_settling_time_success_only_s": 4.959114583333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.4153549506515566,
+      "kd": 1.7490314288610862,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00182",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.13876804181897154,
+      "mean_penalized_selection_cost": 0.13876804181897154,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.13876804181897232,
+      "mean_rms_error_deg": 7.6209770296399775,
+      "max_settling_time_s": 7.75,
+      "mean_settling_time_success_only_s": 5.359895833333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.099886510849529,
+      "kd": 1.7224551207063017,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00185",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.10079711239272093,
+      "mean_penalized_selection_cost": 0.10079711239272093,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.10079711239272326,
+      "mean_rms_error_deg": 7.982685568036885,
+      "max_settling_time_s": 7.0,
+      "mean_settling_time_success_only_s": 4.897395833333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.271359259198129,
+      "kd": 1.6770918700983473,
+      "ki": 0.00656957162008482,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PID",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00187",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.12587774440505362,
+      "mean_penalized_selection_cost": 0.12587774440505362,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.12587774440505414,
+      "mean_rms_error_deg": 7.718775183076825,
+      "max_settling_time_s": 8.0,
+      "mean_settling_time_success_only_s": 5.548828125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 1.2826429164439122,
+      "kd": 1.651703232115453,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD",
+      "stage": "refine1"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine1_00188",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine1",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.140669933906885,
+      "mean_penalized_selection_cost": 0.140669933906885,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.14066993390688573,
+      "mean_rms_error_deg": 7.610875921169341,
+      "max_settling_time_s": 7.75,
+      "mean_settling_time_success_only_s": 5.370312500000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5548592510507692,
+      "kd": 1.255293033642936,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00003",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.04733457546420423,
+      "mean_penalized_selection_cost": 0.04733457546420423,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.047334575465021754,
+      "mean_rms_error_deg": 9.0436444021379,
+      "max_settling_time_s": 7.65,
+      "mean_settling_time_success_only_s": 6.397135416666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6265575961963269,
+      "kd": 1.3999928799092949,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00011",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.05278351313663363,
+      "mean_penalized_selection_cost": 0.05278351313663363,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05278351313676775,
+      "mean_rms_error_deg": 8.912217838391227,
+      "max_settling_time_s": 7.65,
+      "mean_settling_time_success_only_s": 6.348307291666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.638409638404363,
+      "kd": 1.3773840213728659,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00022",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.055232060670533344,
+      "mean_penalized_selection_cost": 0.055232060670533344,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05523206067071318,
+      "mean_rms_error_deg": 8.828878354979208,
+      "max_settling_time_s": 7.4,
+      "mean_settling_time_success_only_s": 6.172786458333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.46628044222093407,
+      "kd": 1.1614137140793321,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00026",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.04510426533316505,
+      "mean_penalized_selection_cost": 0.04510426533316505,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.045104265333329396,
+      "mean_rms_error_deg": 9.109398640133827,
+      "max_settling_time_s": 7.800000000000001,
+      "mean_settling_time_success_only_s": 6.512760416666668
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5107306482770115,
+      "kd": 1.222057273364831,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00029",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.05110601510582641,
+      "mean_penalized_selection_cost": 0.05110601510582641,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05110601510589835,
+      "mean_rms_error_deg": 8.929392323901466,
+      "max_settling_time_s": 7.550000000000001,
+      "mean_settling_time_success_only_s": 6.3015625
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5119022934784243,
+      "kd": 1.175134148344129,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00042",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.0530736580844541,
+      "mean_penalized_selection_cost": 0.0530736580844541,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.053073658084601544,
+      "mean_rms_error_deg": 8.851329838835097,
+      "max_settling_time_s": 7.25,
+      "mean_settling_time_success_only_s": 6.073697916666666
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.47611378085005013,
+      "kd": 1.1747957229486359,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.2,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00044",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.04330972100195831,
+      "mean_penalized_selection_cost": 0.04330972100195831,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.04330972100228129,
+      "mean_rms_error_deg": 9.16980213198783,
+      "max_settling_time_s": 7.9,
+      "mean_settling_time_success_only_s": 6.58203125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5478304853540339,
+      "kd": 1.1889068924530262,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00045",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.059488393785814504,
+      "mean_penalized_selection_cost": 0.059488393785814504,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.059488393785850115,
+      "mean_rms_error_deg": 8.679620893808584,
+      "max_settling_time_s": 6.8500000000000005,
+      "mean_settling_time_success_only_s": 5.792838541666666
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5591528373749882,
+      "kd": 1.3170274455640207,
+      "ki": 0.0007389297067482287,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00055",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.048953846321804904,
+      "mean_penalized_selection_cost": 0.048953846321804904,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.04895384632190444,
+      "mean_rms_error_deg": 9.009257468225508,
+      "max_settling_time_s": 7.800000000000001,
+      "mean_settling_time_success_only_s": 6.4906250000000005
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7731538609274959,
+      "kd": 1.414518502472026,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00063",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07841509935010893,
+      "mean_penalized_selection_cost": 0.07841509935010893,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.078415099350119,
+      "mean_rms_error_deg": 8.299624269605532,
+      "max_settling_time_s": 7.65,
+      "mean_settling_time_success_only_s": 5.338802083333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.629083937518394,
+      "kd": 1.391139251277313,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00071",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.05702456250728217,
+      "mean_penalized_selection_cost": 0.05702456250728217,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05702456250733575,
+      "mean_rms_error_deg": 8.785358111327222,
+      "max_settling_time_s": 7.4,
+      "mean_settling_time_success_only_s": 6.168619791666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7657085089727486,
+      "kd": 1.4611023365181437,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00080",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07494478708787587,
+      "mean_penalized_selection_cost": 0.07494478708787587,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07494478708787657,
+      "mean_rms_error_deg": 8.37330147810208,
+      "max_settling_time_s": 6.550000000000001,
+      "mean_settling_time_success_only_s": 5.481770833333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6689749137012114,
+      "kd": 1.368790695898171,
+      "ki": 0.0008242199636840708,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00098",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06414924118142337,
+      "mean_penalized_selection_cost": 0.06414924118142337,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06414924118144961,
+      "mean_rms_error_deg": 8.588764609549179,
+      "max_settling_time_s": 6.9,
+      "mean_settling_time_success_only_s": 5.794921875
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6476711157672398,
+      "kd": 1.3392280184822434,
+      "ki": 0.0008553798298851724,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00106",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.062034314971175376,
+      "mean_penalized_selection_cost": 0.062034314971175376,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.062034314971219105,
+      "mean_rms_error_deg": 8.633666717677613,
+      "max_settling_time_s": 7.800000000000001,
+      "mean_settling_time_success_only_s": 5.847135416666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6352887105750971,
+      "kd": 1.3283889864581275,
+      "ki": 0.0007717463938020786,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00110",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06048882876402523,
+      "mean_penalized_selection_cost": 0.06048882876402523,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06048882876408752,
+      "mean_rms_error_deg": 8.670220815306346,
+      "max_settling_time_s": 7.0,
+      "mean_settling_time_success_only_s": 5.895572916666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5982420885687697,
+      "kd": 1.3431501564163133,
+      "ki": 0.002529190021218286,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00121",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06818387216270591,
+      "mean_penalized_selection_cost": 0.06818387216270591,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06818387216270823,
+      "mean_rms_error_deg": 8.531061740317428,
+      "max_settling_time_s": 7.1000000000000005,
+      "mean_settling_time_success_only_s": 5.931250000000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6100713463013124,
+      "kd": 1.205242962332359,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00123",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07730525116012099,
+      "mean_penalized_selection_cost": 0.07730525116012099,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.0773052511601454,
+      "mean_rms_error_deg": 8.317205037795219,
+      "max_settling_time_s": 7.9,
+      "mean_settling_time_success_only_s": 5.397526041666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6441660036424708,
+      "kd": 1.285183480656464,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.05,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00124",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.08743413032364987,
+      "mean_penalized_selection_cost": 0.08743413032364987,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.08743413032365101,
+      "mean_rms_error_deg": 8.175898306173812,
+      "max_settling_time_s": 6.15,
+      "mean_settling_time_success_only_s": 5.133723958333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5517704505734101,
+      "kd": 1.226612233147435,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00125",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.0634172281288393,
+      "mean_penalized_selection_cost": 0.0634172281288393,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06341722812885224,
+      "mean_rms_error_deg": 8.607826443308523,
+      "max_settling_time_s": 6.9,
+      "mean_settling_time_success_only_s": 5.788671875000001
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7212395539121367,
+      "kd": 1.4178462447011615,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00150",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06538196413270747,
+      "mean_penalized_selection_cost": 0.06538196413270747,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06538196413273266,
+      "mean_rms_error_deg": 8.567346452278434,
+      "max_settling_time_s": 6.8500000000000005,
+      "mean_settling_time_success_only_s": 5.750520833333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.7746474286074881,
+      "kd": 1.449246712554958,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00154",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07150637421547591,
+      "mean_penalized_selection_cost": 0.07150637421547591,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07150637421547952,
+      "mean_rms_error_deg": 8.435102790602,
+      "max_settling_time_s": 7.7,
+      "mean_settling_time_success_only_s": 5.54296875
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6626549997380038,
+      "kd": 1.3954285301287108,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00158",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.058003866430909844,
+      "mean_penalized_selection_cost": 0.058003866430909844,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.058003866431035805,
+      "mean_rms_error_deg": 8.753754190343944,
+      "max_settling_time_s": 7.25,
+      "mean_settling_time_success_only_s": 6.059635416666667
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6441161540976037,
+      "kd": 1.3110646840285152,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.25,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00160",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.0626112196744274,
+      "mean_penalized_selection_cost": 0.0626112196744274,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06261121967445783,
+      "mean_rms_error_deg": 8.61473966324617,
+      "max_settling_time_s": 7.7,
+      "mean_settling_time_success_only_s": 5.763020833333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.6209356544143907,
+      "kd": 1.3009543402190402,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.30000000000000004,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00162",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.05551864583033526,
+      "mean_penalized_selection_cost": 0.05551864583033526,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05551864583061261,
+      "mean_rms_error_deg": 8.798168460340449,
+      "max_settling_time_s": 7.15,
+      "mean_settling_time_success_only_s": 6.033072916666668
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.540728373301873,
+      "kd": 1.2001447188932621,
+      "ki": 0.0006524764311245718,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00169",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06230102431887429,
+      "mean_penalized_selection_cost": 0.06230102431887429,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06230102431889175,
+      "mean_rms_error_deg": 8.624292926435999,
+      "max_settling_time_s": 6.9,
+      "mean_settling_time_success_only_s": 5.7867187499999995
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.4726003517613653,
+      "kd": 1.1503659165233893,
+      "ki": 0.000643722065669217,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.05,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00172",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.054353670630318394,
+      "mean_penalized_selection_cost": 0.054353670630318394,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05435367063036072,
+      "mean_rms_error_deg": 8.835077030702815,
+      "max_settling_time_s": 7.3500000000000005,
+      "mean_settling_time_success_only_s": 6.1640625
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.60030789270414,
+      "kd": 1.2687141969317797,
+      "ki": 0.0006434102025224013,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00173",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.07188141841858282,
+      "mean_penalized_selection_cost": 0.07188141841858282,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.07188141841858386,
+      "mean_rms_error_deg": 8.432004407748522,
+      "max_settling_time_s": 6.6000000000000005,
+      "mean_settling_time_success_only_s": 5.545703125
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.48911718616342664,
+      "kd": 1.2235673134962384,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00174",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.0509053996954954,
+      "mean_penalized_selection_cost": 0.0509053996954954,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05090539969550467,
+      "mean_rms_error_deg": 8.9577541061671,
+      "max_settling_time_s": 7.800000000000001,
+      "mean_settling_time_success_only_s": 6.447005208333334
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.47704945893888134,
+      "kd": 1.182549381921436,
+      "ki": 0.0005065320347666553,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00179",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.05001042491222372,
+      "mean_penalized_selection_cost": 0.05001042491222372,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05001042491226604,
+      "mean_rms_error_deg": 8.964296526697963,
+      "max_settling_time_s": 7.65,
+      "mean_settling_time_success_only_s": 6.388020833333333
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.5867460578147984,
+      "kd": 1.279615608443466,
+      "ki": 0.0007056161244328282,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00182",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.06848473075987775,
+      "mean_penalized_selection_cost": 0.06848473075987775,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.06848473075988226,
+      "mean_rms_error_deg": 8.506672137573625,
+      "max_settling_time_s": 6.8500000000000005,
+      "mean_settling_time_success_only_s": 5.712760416666668
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.51909769465195,
+      "kd": 1.2697383231453294,
+      "ki": 0.0007241329601773798,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.15000000000000002,
+      "family": "predicted_PID",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00184",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.051010012430889366,
+      "mean_penalized_selection_cost": 0.051010012430889366,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.05101001243090377,
+      "mean_rms_error_deg": 8.949431287882897,
+      "max_settling_time_s": 7.800000000000001,
+      "mean_settling_time_success_only_s": 6.458072916666666
+    }
+  },
+  {
+    "parameters": {
+      "kp": 0.4961180940187579,
+      "kd": 1.2298189512000874,
+      "ki": 0.0,
+      "integral_limit": 2.0,
+      "nominal_parameter_s": 0.1,
+      "family": "predicted_PD",
+      "stage": "refine2"
+    },
+    "validation": {
+      "candidate_id": "delay_model_compensated_refine2_00186",
+      "kind": "delay",
+      "family": "model_compensated",
+      "split": "validation",
+      "stage": "refine2",
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.05204612309837,
+      "mean_penalized_selection_cost": 0.05204612309837,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.052046123098380546,
+      "mean_rms_error_deg": 8.923955030521839,
+      "max_settling_time_s": 7.7,
+      "mean_settling_time_success_only_s": 6.399348958333334
+    }
+  }
+]

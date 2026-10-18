@@ -1,0 +1,22 @@
+{
+  "source_sha256": {
+    "代码/disturbance_study.py": "6c081586f3808c47456510081e3b884531079dd260ca9d2352df5edd74b25be6",
+    "代码/test_disturbance_study.py": "58efec3ee89ede5a78ffc827e375c0e1ce9d43c1a9d1e51ac5c56c33a99a8093"
+  },
+  "models": {
+    "03_训练/formal/TD3/seed_17111/best.zip": "a1258b50d9e28a32150ea22db1a2593d1d4d452f614a77ffdf077fea66645517",
+    "03_训练/formal/TD3/seed_17222/best.zip": "d7d1ea2567493b0164cfa5552bbd44a854af822e345af672e9fa1c88eb7aaa25",
+    "03_训练/formal/TD3/seed_17333/best.zip": "7e81fcd88e15967fed1a5b70932122e9de38fd66c26e564ab9abb4635f105e3e"
+  },
+  "scenario_sha256": "ef67a820df9a7f62179619ccc2182f210c8218016be08534342b7469813ef59b",
+  "baseline_sha256": "4f8d7434a0cd1799eacdf729e06d389599e3255eb5a88d1e414e377ad10b9bb2",
+  "controllers": [
+    "pid",
+    "observer",
+    "harmonic",
+    "TD3_17111",
+    "TD3_17222",
+    "TD3_17333"
+  ],
+  "weights_frozen": true
+}

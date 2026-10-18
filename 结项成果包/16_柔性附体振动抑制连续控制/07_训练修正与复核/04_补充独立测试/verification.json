@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "controllers": [
+    {
+      "name": "LQR_refined",
+      "episodes": 640,
+      "transitions": 281600,
+      "max_state_residual": 2.220446049250313e-16,
+      "responses_sha256": "affc4e308aece32a2be9f60c4d84cbae1af102b2c9bbb35fbf297efb2435dc93",
+      "metrics_sha256": "5b80ed87b4e2e5a43f709f754c0505341d2df230f2fc872ce2d3531fd4292497"
+    },
+    {
+      "name": "ZVD_PID_refined",
+      "episodes": 640,
+      "transitions": 281600,
+      "max_state_residual": 2.220446049250313e-16,
+      "responses_sha256": "88ffac31710fc9c6f9c273e65e1af8fb126fd87c028a859d84a172a869839454",
+      "metrics_sha256": "1443caea3e98104989b47f88342b975152899f406b7a2c0ee080b885ad0346a8"
+    }
+  ],
+  "episodes": 1280,
+  "freeze_sha256": "efb45584a6f6f2f5b71707a337bf37eb1e752aa313711b86d54a511bc3ceaa9f",
+  "full_physics_replay": true
+}

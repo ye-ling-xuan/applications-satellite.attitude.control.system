@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="530" viewBox="0 0 1200 530" role="img" aria-labelledby="title desc">
+<title id="title">双惯量、单柔性模态等效模型</title>
+<desc id="desc">控制力矩只作用于本体。本体与附件等效惯量通过线性扭转弹簧和黏性阻尼连接，两者的相对角为q等于phi减theta。内部力矩大小相等、方向相反。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#245c95"/></marker></defs>
+<rect width="1200" height="530" rx="20" fill="#f5f8fc"/>
+<g font-family="Microsoft YaHei, SimHei, sans-serif" fill="#172b43">
+<text x="52" y="54" font-size="29" font-weight="700">本体与附件如何相互影响</text>
+<text x="52" y="91" font-size="18" fill="#4d617a">双惯量集中参数模型 · 只保留一个主要柔性振动模态 · 非实际结构尺寸图</text>
+<rect x="62" y="170" width="292" height="192" rx="18" fill="#e3eefb" stroke="#245c95" stroke-width="3"/>
+<text x="208" y="226" text-anchor="middle" font-size="25" font-weight="700">卫星本体</text>
+<text x="208" y="268" text-anchor="middle" font-size="23">Jb = 0.7 kg·m²</text>
+<text x="208" y="309" text-anchor="middle" font-size="23">角度 θ，角速度 θ̇</text>
+<rect x="846" y="170" width="292" height="192" rx="18" fill="#e4f1e9" stroke="#427e5b" stroke-width="3"/>
+<text x="992" y="226" text-anchor="middle" font-size="25" font-weight="700">附件等效惯量</text>
+<text x="992" y="268" text-anchor="middle" font-size="23">Jf = 0.3 kg·m²</text>
+<text x="992" y="309" text-anchor="middle" font-size="23">角度 φ，角速度 φ̇</text>
+<path d="M 355 226 H 424 L 442 204 L 470 248 L 498 204 L 526 248 L 554 204 L 582 248 L 610 204 L 638 248 L 656 226 H 845" fill="none" stroke="#567087" stroke-width="4"/>
+<text x="600" y="185" text-anchor="middle" font-size="20">弹簧：刚度 k</text>
+<path d="M 355 319 H 530 M 530 291 V 347 M 530 291 H 631 M 530 347 H 631 M 615 298 V 340 M 615 319 H 845" fill="none" stroke="#567087" stroke-width="4"/>
+<text x="600" y="390" text-anchor="middle" font-size="20">阻尼器：系数 c</text>
+<path d="M 100 146 C 96 112 305 112 315 153" fill="none" stroke="#245c95" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="208" y="137" text-anchor="middle" font-size="20" fill="#245c95">控制力矩 u</text>
+<text x="600" y="280" text-anchor="middle" font-size="25" font-weight="700">q = φ − θ</text>
+<rect x="61" y="428" width="1077" height="64" rx="11" fill="#fff" stroke="#d3dce8"/>
+<text x="82" y="453" font-size="18">本体受到：u + kq + c·q̇</text>
+<text x="674" y="453" font-size="18">附件受到：−kq − c·q̇</text>
+<text x="82" y="479" font-size="17" fill="#566b82">内部作用与反作用相抵消；只有外部控制力矩改变系统总角动量。</text>
+</g></svg>

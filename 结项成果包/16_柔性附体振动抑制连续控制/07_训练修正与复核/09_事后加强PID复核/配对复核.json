@@ -1,0 +1,29 @@
+[
+  {
+    "seed": 111,
+    "mean_success_difference": 0.0734375,
+    "lower": 0.037500000000000006,
+    "upper": 0.12031249999999999,
+    "confidence": 0.9988095238095238,
+    "post_hoc": true,
+    "learned_physical_failures": 0
+  },
+  {
+    "seed": 222,
+    "mean_success_difference": 0.0734375,
+    "lower": 0.037500000000000006,
+    "upper": 0.11733723958333259,
+    "confidence": 0.9988095238095238,
+    "post_hoc": true,
+    "learned_physical_failures": 0
+  },
+  {
+    "seed": 333,
+    "mean_success_difference": 0.0734375,
+    "lower": 0.037500000000000006,
+    "upper": 0.11875,
+    "confidence": 0.9988095238095238,
+    "post_hoc": true,
+    "learned_physical_failures": 0
+  }
+]

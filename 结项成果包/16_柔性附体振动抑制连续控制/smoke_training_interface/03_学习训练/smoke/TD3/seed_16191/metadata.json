@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "algorithm": "TD3",
+  "seed": 16191,
+  "stage": "smoke",
+  "requested_steps": 2112,
+  "source_hashes": {},
+  "baseline_sha256": "24ab1fce6d087d72430a135d7a482a9149b7e610d768b26c238a6392e1356e92",
+  "snapshots": [
+    {
+      "steps": 0,
+      "validation": {
+        "success": 0.771875,
+        "failed": 0.0,
+        "cost": 0.004865781874804497,
+        "rms_angle_deg": 4.3710407734151975,
+        "peak_relative_deg": 0.6521447171425321,
+        "residual_relative_rms_deg": 0.01608846846762943,
+        "count": 320,
+        "passes": 247,
+        "physical_failures": 0,
+        "selection_cost": 1.2573738392944338
+      }
+    },
+    {
+      "steps": 2112,
+      "validation": {
+        "success": 0.778125,
+        "failed": 0.0,
+        "cost": 0.0048353812091874475,
+        "rms_angle_deg": 4.391577364242517,
+        "peak_relative_deg": 0.6493429656826487,
+        "residual_relative_rms_deg": 0.01564267692568143,
+        "count": 320,
+        "passes": 249,
+        "physical_failures": 0,
+        "selection_cost": 1.223036016081925
+      }
+    }
+  ],
+  "actual_steps": 2112,
+  "best": {
+    "steps": 2112,
+    "validation": {
+      "success": 0.778125,
+      "failed": 0.0,
+      "cost": 0.0048353812091874475,
+      "rms_angle_deg": 4.391577364242517,
+      "peak_relative_deg": 0.6493429656826487,
+      "residual_relative_rms_deg": 0.01564267692568143,
+      "count": 320,
+      "passes": 249,
+      "physical_failures": 0,
+      "selection_cost": 1.223036016081925
+    }
+  },
+  "elapsed_s": 0.5368595123291016,
+  "gradient_updates": 8,
+  "best_model_sha256": "eae56b0390ad3cc355fdfbb243773698338e74ce57832cb2d6542c477d07c091"
+}

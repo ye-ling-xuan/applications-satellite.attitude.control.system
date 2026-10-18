@@ -1,0 +1,84 @@
+{
+  "purpose": "论文主线重组；仅索引原工程及原样核心图，不重训、不更换历史结果",
+  "date": "2026-10-18",
+  "sources": [
+    {
+      "source": "satellite1PID/week3搭建单轴卫星PID最小仿真系统/satellite.py",
+      "sha256": "d46a06ccc208edaf835bbbeb456d4dd4807b29c1fc0a950d6299dbee68d9e170",
+      "bytes": 1887,
+      "reference_only": true
+    },
+    {
+      "source": "satellite1PID/week4系统扩展：对单轴PID加入干扰噪声等实际影响/satellite.py",
+      "sha256": "2ee2a10bd9d8b0a11751cd28238aaaffc16d790d910464d18e18f33555f3fb30",
+      "bytes": 2076,
+      "reference_only": true
+    },
+    {
+      "source": "satellite1PID/week5：三轴卫星姿态控制/satellite3d.py",
+      "sha256": "be049d50fffde2f187c8db1ef3e2647e6abc5a369f75043b6c8e428ceee7933a",
+      "bytes": 3810,
+      "reference_only": true
+    },
+    {
+      "source": "satellite1PID/week5：三轴卫星姿态控制/本周内容介绍.markdown",
+      "sha256": "3dd7c5fc0716c89accca6f3573f5e576f5342205fc73fc1a7c2cd5c40bc34530",
+      "bytes": 771,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/satellite_benchmark/env.py",
+      "sha256": "9c94da5a71caa36d78d952ead964e6759f2755d2a1b774cb13091dc2b0468ffa",
+      "bytes": 7176,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/satellite_benchmark/controllers.py",
+      "sha256": "194b7a27ac62b9e542f75040842b244c2d83a159edb9a27677d2cea476fb658f",
+      "bytes": 2135,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/03_训练模型与日志/正式训练/pid_best.json",
+      "sha256": "3844a875968bcf214c85aef49963acba039a6476cdd5472f7fa3c69afa6c89b3",
+      "bytes": 488,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/03_训练模型与日志/正式训练/pid_search_validation.csv",
+      "sha256": "a1173250ee63f14be351897efaa6b244d5f1c35c2657dd6d587e39542bee3dc1",
+      "bytes": 10754,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/04_实验数据与图表/summary.csv",
+      "sha256": "55fe1c6d27fb39ac8c0ab4542097dd8284105174222a37a265db95ad9c4d8adb",
+      "bytes": 7276,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/05_三轴拓展演示/README.md",
+      "sha256": "17c262ca1ed01e9bef973b1f78ce6890f1f40b88a9adc4bcb4bf6de758fc130e",
+      "bytes": 4274,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/05_三轴拓展演示/run_three_axis.py",
+      "sha256": "422e6c3d79ef30591faa2e1ccd28ef6c22f65649f3ba0254708343fd61df6a33",
+      "bytes": 16773,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/multi_algorithm_benchmark/envs.py",
+      "sha256": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+      "bytes": 13898,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/multi_algorithm_benchmark/controllers.py",
+      "sha256": "a971deb369c45401320fa0075585f690b7bd7aa029d4a5b45a1c6f2b718f90d1",
+      "bytes": 5995,
+      "reference_only": true
+    }
+  ]
+}

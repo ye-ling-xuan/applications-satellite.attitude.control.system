@@ -1,0 +1,25 @@
+{
+  "source_sha256": "92f9ae3fd10b83192683237140dc527fa8e5024d5735921d692802cbb7aa64ed",
+  "base_source_sha256": "a718ae748396661f5498ee0f8bc8c9956f70f9afb3a7b3dbd9921d98cda9216f",
+  "algorithm": "PPO",
+  "seed": 18202,
+  "steps": 524288,
+  "formal_seeds": [
+    111,
+    222,
+    333
+  ],
+  "formal_steps": 524288,
+  "checkpoint": 32768,
+  "residual_limit": 0.05,
+  "learning_rate": 3e-05,
+  "n_steps": 256,
+  "n_epochs": 5,
+  "gae_lambda": 0.98,
+  "target_kl": 0.01,
+  "actor": "Tanh MLP 128x128; all actor linear biases fixed zero; final weights zero initialized",
+  "input": "same as initial development, except final elapsed feature replaced by zero for odd physical symmetry",
+  "test_responses_used": false,
+  "selection": "unchanged: fewest physical failures, lowest mean_objective, earliest checkpoint",
+  "mpc": "same convex QP and 30-step preview, SLSQP maxiter120 ftol1e-9; constraint residual and optimizer failures retained"
+}

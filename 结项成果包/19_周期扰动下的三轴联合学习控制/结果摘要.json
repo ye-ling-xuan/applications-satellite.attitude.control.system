@@ -1,0 +1,291 @@
+{
+  "study": 19,
+  "training_runs": 5,
+  "interaction_steps": 2097152,
+  "formal_runs": 3,
+  "formal_checkpoints": [
+    {
+      "seed": 19111,
+      "actual_steps": 524288,
+      "selected_checkpoint": 524288,
+      "validation": {
+        "steps": 524288,
+        "count": 48,
+        "passes": 43,
+        "physical_failures": 0,
+        "success_rate": 0.8958333333333334,
+        "mean_steady_rms_deg": 0.10587109147110224,
+        "mean_actual_cost": 1.0275533622154474,
+        "mean_full_rms_deg": 1.5501024064285474
+      }
+    },
+    {
+      "seed": 19222,
+      "actual_steps": 524288,
+      "selected_checkpoint": 229376,
+      "validation": {
+        "steps": 229376,
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.08765571382322151,
+        "mean_actual_cost": 1.033089504056129,
+        "mean_full_rms_deg": 1.548473723170196
+      }
+    },
+    {
+      "seed": 19333,
+      "actual_steps": 524288,
+      "selected_checkpoint": 229376,
+      "validation": {
+        "steps": 229376,
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.0804407734959034,
+        "mean_actual_cost": 0.9329450069294613,
+        "mean_full_rms_deg": 1.5472708342431771
+      }
+    }
+  ],
+  "joint_network": true,
+  "real_Euler_coupling": true,
+  "single_axis_transfer": false,
+  "independent_initial_states": 128,
+  "controllers": 6,
+  "test_episodes": 768,
+  "primary_supported": false,
+  "results": {
+    "pid": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.05426531267432955,
+      "mean_actual_cost": 1.1161268676719613,
+      "mean_full_rms_deg": 1.5000969808219455
+    },
+    "observer": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.003122036262196509,
+      "mean_actual_cost": 0.6064603593983742,
+      "mean_full_rms_deg": 1.4428496870696095
+    },
+    "harmonic": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01130675798830214,
+      "mean_actual_cost": 0.8844503927334524,
+      "mean_full_rms_deg": 1.4533607733450307
+    },
+    "TD3_19111": {
+      "count": 128,
+      "passes": 113,
+      "physical_failures": 0,
+      "success_rate": 0.8828125,
+      "mean_steady_rms_deg": 0.1068629847807798,
+      "mean_actual_cost": 1.014054843564661,
+      "mean_full_rms_deg": 1.4991120357157415
+    },
+    "TD3_19222": {
+      "count": 128,
+      "passes": 124,
+      "physical_failures": 0,
+      "success_rate": 0.96875,
+      "mean_steady_rms_deg": 0.09108367395643124,
+      "mean_actual_cost": 0.9907787542962225,
+      "mean_full_rms_deg": 1.5000300280008316
+    },
+    "TD3_19333": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.08103813257143713,
+      "mean_actual_cost": 0.8962122986602146,
+      "mean_full_rms_deg": 1.4956804609239893
+    }
+  },
+  "comparisons": {
+    "TD3_19111": {
+      "all_pass": false,
+      "improvement_interval_deg": [
+        -0.05528255748720669,
+        -0.049843147562306025
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.9085480091342985,
+      "primary_supported": false
+    },
+    "TD3_19222": {
+      "all_pass": false,
+      "improvement_interval_deg": [
+        -0.0396609106047029,
+        -0.0339139007294638
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.8876936690564646,
+      "primary_supported": false
+    },
+    "TD3_19333": {
+      "all_pass": true,
+      "improvement_interval_deg": [
+        -0.02895373806440884,
+        -0.02455228245058374
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.8029663335043186,
+      "primary_supported": false
+    }
+  },
+  "verification": {
+    "passed": true,
+    "episodes": 768,
+    "controllers": 6,
+    "all_traces_and_commands_replayed": true,
+    "all_metrics_independently_reconstructed": true,
+    "max_replay_error": 0.0,
+    "max_quaternion_norm_error": 2.220446049250313e-16,
+    "max_independent_interval_cost_error": 2.6020852139652106e-17,
+    "physical_numerical_checks": "test_physics.py: independent32s DOP853,conservation,convergence",
+    "scope": "all frozen traces/actions/metrics and pretraining independent numerical tests"
+  },
+  "independent_closed_loop_verification": {
+    "passed": true,
+    "episodes": 768,
+    "records": {
+      "pid": {
+        "episodes": 128,
+        "passes": 128,
+        "max_attitude_angle_difference_deg": 5.230184096927104e-08,
+        "max_rate_difference_rad_s": 9.529690092602294e-09,
+        "max_torque_difference_Nm": 1.028694659871432e-07,
+        "max_cost_difference": 4.7470049224784816e-08,
+        "mean_independent_RMS_deg": 0.05426531221100502,
+        "mean_independent_cost": 1.1161268418820587
+      },
+      "observer": {
+        "episodes": 128,
+        "passes": 128,
+        "max_attitude_angle_difference_deg": 1.9718906785204382e-08,
+        "max_rate_difference_rad_s": 1.8328274280221546e-09,
+        "max_torque_difference_Nm": 1.9952181684601555e-08,
+        "max_cost_difference": 8.523207251087683e-09,
+        "mean_independent_RMS_deg": 0.003122036176237575,
+        "mean_independent_cost": 0.6064603540910594
+      },
+      "harmonic": {
+        "episodes": 128,
+        "passes": 128,
+        "max_attitude_angle_difference_deg": 3.067793832856047e-08,
+        "max_rate_difference_rad_s": 5.255151596002261e-09,
+        "max_torque_difference_Nm": 5.744470978064076e-08,
+        "max_cost_difference": 2.5605556785990302e-08,
+        "mean_independent_RMS_deg": 0.011306757402756976,
+        "mean_independent_cost": 0.8844503755746991
+      },
+      "TD3_19111": {
+        "episodes": 128,
+        "passes": 113,
+        "max_attitude_angle_difference_deg": 4.150077773656946e-07,
+        "max_rate_difference_rad_s": 1.9731055594203115e-07,
+        "max_torque_difference_Nm": 2.8084467268013613e-06,
+        "max_cost_difference": 1.6514062894934511e-07,
+        "mean_independent_RMS_deg": 0.10686298472410868,
+        "mean_independent_cost": 1.014054832311882
+      },
+      "TD3_19222": {
+        "episodes": 128,
+        "passes": 124,
+        "max_attitude_angle_difference_deg": 8.404154112420792e-07,
+        "max_rate_difference_rad_s": 1.0769453835288677e-07,
+        "max_torque_difference_Nm": 1.9834477015673313e-06,
+        "max_cost_difference": 8.957075769977507e-08,
+        "mean_independent_RMS_deg": 0.09108367381431864,
+        "mean_independent_cost": 0.9907787406170724
+      },
+      "TD3_19333": {
+        "episodes": 128,
+        "passes": 128,
+        "max_attitude_angle_difference_deg": 1.0804251804330534e-07,
+        "max_rate_difference_rad_s": 1.694420814594977e-08,
+        "max_torque_difference_Nm": 1.7322772818961774e-07,
+        "max_cost_difference": 4.994211522113545e-08,
+        "mean_independent_RMS_deg": 0.08103813255953708,
+        "mean_independent_cost": 0.8962122902205811
+      }
+    },
+    "independent_comparisons": {
+      "TD3_19111": {
+        "improvement_interval_deg": [
+          -0.05528255788124726,
+          -0.04984314789464141
+        ],
+        "cost_ratio": 0.9085480200457695,
+        "primary_supported": false
+      },
+      "TD3_19222": {
+        "improvement_interval_deg": [
+          -0.039660911035335145,
+          -0.0339139009858305
+        ],
+        "cost_ratio": 0.887693677312142,
+        "primary_supported": false
+      },
+      "TD3_19333": {
+        "improvement_interval_deg": [
+          -0.0289537385237522,
+          -0.0245522829313524
+        ],
+        "cost_ratio": 0.8029663444966088,
+        "primary_supported": false
+      }
+    },
+    "primary_conclusion_replicated": true,
+    "max_angle_difference_deg": 8.404154112420792e-07,
+    "max_rate_difference_rad_s": 1.9731055594203115e-07,
+    "max_torque_difference_Nm": 2.8084467268013613e-06,
+    "max_cost_difference": 1.6514062894934511e-07,
+    "source_unchanged": true,
+    "verifier_sha256": "bcf04891a783720ceb2e5b3a92f56c24fa9ee48b14f58bb82fcdb5dc41c64eb8"
+  },
+  "original_strict_state_check_applicable": false,
+  "initialization": "actor final-layer weights multiplied by 0.01 and bias zero; near-zero but not identically zero residual",
+  "step_zero_selected": false,
+  "weights_updated_during_test": false,
+  "interpretation": "All three joint TD3 models reduce actual torque-square cost at higher RMS; two fail some acceptance tests. No superiority over tuned PID; DOB+PID is better.",
+  "aggregate_markdown_lines": [
+    "## 19. 周期扰动下的三轴联合学习控制",
+    "",
+    "在真实Euler耦合、四元数姿态和一阶执行器滞后下，一个联合TD3网络同时输出三维连续补偿。两个开发配置＋三个从零训练的正式种子，共5次训练、2,097,152步；没有逐轴套用单轴模型，也没有选择第0步PID模型。",
+    "",
+    "|方法|128场景成功数|8–32秒总姿态角RMS（°）|三轴实际力矩平方积分之和（N²·m²·s）|",
+    "|---|---:|---:|---:|",
+    "|整定四元数PID|128/128|0.054265|1.116127|",
+    "|扰动观测器＋PID|128/128|0.003122|0.606460|",
+    "|谐波前馈＋PID|128/128|0.011307|0.884450|",
+    "|联合TD3补偿＋PID（种子19111）|113/128|0.106863|1.014055|",
+    "|联合TD3补偿＋PID（种子19222）|124/128|0.091084|0.990779|",
+    "|联合TD3补偿＋PID（种子19333）|128/128|0.081038|0.896212|",
+    "",
+    "三个正式模型的RMS均高于整定PID，预声明优势条件全部不成立。成本虽低9.1%–19.7%，其中两个模型成功率也下降，因此三轴研究不支持“学习补偿更优”。扰动观测器＋PID明显更有效。",
+    "",
+    "|正式种子|PID减去学习控制RMS的98.333%配对区间（°）|代价相对PID降低|预声明主结论|",
+    "|---|---:|---:|---|",
+    "|19111|[-0.055283, -0.049843]|9.1%|不成立|",
+    "|19222|[-0.039661, -0.033914]|11.2%|不成立|",
+    "|19333|[-0.028954, -0.024552]|19.7%|不成立|",
+    "",
+    "768回合记录/控制器/指标完整核验通过；另对全部768回合独立自适应积分闭环复核，所有验收与统计结论一致。最大瞬态总姿态角差异8.404e-07°、回合积分代价差异1.651e-07。该独立复核单独实现物理积分方程，沿用冻结控制器代码。",
+    "",
+    "[完整研究报告](../19_周期扰动下的三轴联合学习控制/06_报告/研究报告.html)",
+    ""
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "learning_increment_beyond_identical_feedforward_base": false,
+  "more_conservative_six_claim_intervals": {
+    "PPO_symmetry_seed_111": {
+      "PID": {
+        "confidence": 0.9916666666666667,
+        "difference_interval": [
+          2.6375325521192634,
+          3.39378708875267
+        ],
+        "reference_mean": 3.9380713519204322,
+        "candidate_mean": 0.952625907274973,
+        "relative_reduction": 0.7580983628418979
+      },
+      "PID_feedforward_preview": {
+        "confidence": 0.9916666666666667,
+        "difference_interval": [
+          -0.0032143849543749903,
+          0.11833038653912115
+        ],
+        "reference_mean": 1.0198059883578334,
+        "candidate_mean": 0.952625907274973,
+        "relative_reduction": 0.06587535457703941
+      }
+    },
+    "PPO_symmetry_seed_222": {
+      "PID": {
+        "confidence": 0.9916666666666667,
+        "difference_interval": [
+          2.5984218067176967,
+          3.3729566791469487
+        ],
+        "reference_mean": 3.9380713519204322,
+        "candidate_mean": 0.9842788918676229,
+        "relative_reduction": 0.7500606759225854
+      },
+      "PID_feedforward_preview": {
+        "confidence": 0.9916666666666667,
+        "difference_interval": [
+          -0.018016101661403813,
+          0.07484064478919814
+        ],
+        "reference_mean": 1.0198059883578334,
+        "candidate_mean": 0.9842788918676229,
+        "relative_reduction": 0.03483711303501846
+      }
+    },
+    "PPO_symmetry_seed_333": {
+      "PID": {
+        "confidence": 0.9916666666666667,
+        "difference_interval": [
+          2.602630494713721,
+          3.3477823797150075
+        ],
+        "reference_mean": 3.9380713519204322,
+        "candidate_mean": 0.9931154608680414,
+        "relative_reduction": 0.7478167935215951
+      },
+      "PID_feedforward_preview": {
+        "confidence": 0.9916666666666667,
+        "difference_interval": [
+          -0.054537947389126026,
+          0.0822647599072981
+        ],
+        "reference_mean": 1.0198059883578334,
+        "candidate_mean": 0.9931154608680414,
+        "relative_reduction": 0.026172161954815643
+      }
+    }
+  },
+  "explanation": "Six simultaneous intervals use Bonferroni 99.1667%; stricter than the original three primary 98.3333% intervals."
+}

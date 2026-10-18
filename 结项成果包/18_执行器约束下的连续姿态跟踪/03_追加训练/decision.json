@@ -1,0 +1,26 @@
+{
+  "formal_eligible": true,
+  "selected": {
+    "algorithm": "PPO",
+    "reward_name": "dense_tracking",
+    "best": {
+      "steps": 163840,
+      "model_path": "03_追加训练/development/PPO/seed_18202/best.zip",
+      "model_sha256": "9a11dff6f04038bbdc9bcc001066954311159d22b4d818c0d4056af44fc84c79",
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.639263926971633,
+        "mean_objective": 5.875983237759747,
+        "mean_actual_cost": 0.07002394246858348,
+        "max_error_deg": 9.942154175976336,
+        "maximum_torque": 0.1485922522837547,
+        "maximum_slew": 0.08000000000000007
+      },
+      "optimizer_updates": 400,
+      "checkpoint_model_path": "03_追加训练/development/PPO/seed_18202/checkpoints/steps_163840/model.zip"
+    }
+  },
+  "source_sha256": "92f9ae3fd10b83192683237140dc527fa8e5024d5735921d692802cbb7aa64ed",
+  "test_responses_used": false
+}

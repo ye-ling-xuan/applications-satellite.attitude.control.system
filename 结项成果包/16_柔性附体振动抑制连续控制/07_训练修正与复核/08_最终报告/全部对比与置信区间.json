@@ -1,0 +1,499 @@
+{
+  "family_comparisons": 36,
+  "comparisons": [
+    {
+      "controller": "PID_PPO_111",
+      "seed": 111,
+      "baseline": "PID",
+      "selected_steps": 262144,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.08750000000000001,
+        "lower": 0.05,
+        "upper": 0.128125,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": -0.12305892624377889,
+        "lower": -0.14849853532371626,
+        "upper": -0.09793539817739753,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": 0.924011751431445
+    },
+    {
+      "controller": "PID_PPO_111",
+      "seed": 111,
+      "baseline": "PID_safe",
+      "selected_steps": 262144,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.19062500000000002,
+        "lower": 0.1515625,
+        "upper": 0.22986219618055662,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": -0.0016266616928747625,
+        "lower": -0.0021434366695084373,
+        "upper": -0.001149850686033255,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": 0.1384782108430973
+    },
+    {
+      "controller": "PID_PPO_111",
+      "seed": 111,
+      "baseline": "ZVD_PID",
+      "selected_steps": 262144,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.015625,
+        "lower": 0.003125,
+        "upper": 0.0328125,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": 0.0009692161880244793,
+        "lower": 0.0005236464208890792,
+        "upper": 0.0014534596873297108,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": -0.10591577563074384
+    },
+    {
+      "controller": "PID_PPO_111",
+      "seed": 111,
+      "baseline": "LQR",
+      "selected_steps": 262144,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": true,
+      "success": {
+        "mean_difference": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": -0.016667946637542265,
+        "lower": -0.020679938950342553,
+        "upper": -0.012692868030243665,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": 0.6222173130552441
+    },
+    {
+      "controller": "PID_PPO_111",
+      "seed": 111,
+      "baseline": "ZVD_PID_refined",
+      "selected_steps": 262144,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.018750000000000003,
+        "lower": 0.004687500000000001,
+        "upper": 0.0375,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": 0.0024081403428661513,
+        "lower": 0.0017212507299969374,
+        "upper": 0.0031222763646335952,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": -0.3122630829697006
+    },
+    {
+      "controller": "PID_PPO_111",
+      "seed": 111,
+      "baseline": "LQR_refined",
+      "selected_steps": 262144,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": true,
+      "success": {
+        "mean_difference": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": 0.004556477355024674,
+        "lower": 0.0034576612193723292,
+        "upper": 0.005743075240305516,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": -0.818986114571717
+    },
+    {
+      "controller": "PID_PPO_222",
+      "seed": 222,
+      "baseline": "PID",
+      "selected_steps": 393216,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.08750000000000001,
+        "lower": 0.05,
+        "upper": 0.128125,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": -0.118695772161241,
+        "lower": -0.1430621274402672,
+        "upper": -0.09465799190557901,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": 0.891250165022146
+    },
+    {
+      "controller": "PID_PPO_222",
+      "seed": 222,
+      "baseline": "PID_safe",
+      "selected_steps": 393216,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.19062500000000002,
+        "lower": 0.1515625,
+        "upper": 0.22986219618055662,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": 0.002736492389663142,
+        "lower": 0.002006347704243328,
+        "upper": 0.003473163670660418,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": -0.2329584398318274
+    },
+    {
+      "controller": "PID_PPO_222",
+      "seed": 222,
+      "baseline": "ZVD_PID",
+      "selected_steps": 393216,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.015625,
+        "lower": 0.003125,
+        "upper": 0.0328125,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": 0.005332370270562384,
+        "lower": 0.003993082912327376,
+        "upper": 0.006722213417033603,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": -0.5827204911920736
+    },
+    {
+      "controller": "PID_PPO_222",
+      "seed": 222,
+      "baseline": "LQR",
+      "selected_steps": 393216,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": true,
+      "success": {
+        "mean_difference": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": -0.01230479255500436,
+        "lower": -0.015210414763683976,
+        "upper": -0.009449081344273346,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": 0.45934002116567374
+    },
+    {
+      "controller": "PID_PPO_222",
+      "seed": 222,
+      "baseline": "ZVD_PID_refined",
+      "selected_steps": 393216,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.018750000000000003,
+        "lower": 0.004687500000000001,
+        "upper": 0.0375,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": 0.006771294425404056,
+        "lower": 0.005093240285714533,
+        "upper": 0.008546632532187747,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": -0.8780324117055587
+    },
+    {
+      "controller": "PID_PPO_222",
+      "seed": 222,
+      "baseline": "LQR_refined",
+      "selected_steps": 393216,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": true,
+      "success": {
+        "mean_difference": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": 0.00891963143756258,
+        "lower": 0.006756647220312764,
+        "upper": 0.011189095860240712,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": -1.6032240973183893
+    },
+    {
+      "controller": "PID_PPO_333",
+      "seed": 333,
+      "baseline": "PID",
+      "selected_steps": 327680,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.08750000000000001,
+        "lower": 0.05,
+        "upper": 0.128125,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": -0.12562939351975907,
+        "lower": -0.15189400367431702,
+        "upper": -0.09994844306151775,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": 0.9433126021878584
+    },
+    {
+      "controller": "PID_PPO_333",
+      "seed": 333,
+      "baseline": "PID_safe",
+      "selected_steps": 327680,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.19062500000000002,
+        "lower": 0.1515625,
+        "upper": 0.22986219618055662,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": -0.004197128968854941,
+        "lower": -0.005277022101407951,
+        "upper": -0.0031191504878121156,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": 0.3573028816198438
+    },
+    {
+      "controller": "PID_PPO_333",
+      "seed": 333,
+      "baseline": "ZVD_PID",
+      "selected_steps": 327680,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.015625,
+        "lower": 0.003125,
+        "upper": 0.0328125,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": -0.001601251087955699,
+        "lower": -0.0021481127282382616,
+        "upper": -0.001090417895558003,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": 0.17498443903014593
+    },
+    {
+      "controller": "PID_PPO_333",
+      "seed": 333,
+      "baseline": "LQR",
+      "selected_steps": 327680,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": true,
+      "success": {
+        "mean_difference": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": -0.019238413913522445,
+        "lower": -0.023901889261896587,
+        "upper": -0.014647572815871599,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": 0.7181732983086654
+    },
+    {
+      "controller": "PID_PPO_333",
+      "seed": 333,
+      "baseline": "ZVD_PID_refined",
+      "selected_steps": 327680,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": false,
+      "success": {
+        "mean_difference": 0.018750000000000003,
+        "lower": 0.004687500000000001,
+        "upper": 0.0375,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": -0.00016232693311402695,
+        "lower": -0.00047844068969582634,
+        "upper": 0.00012644953149933995,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": 0.0210489013787597
+    },
+    {
+      "controller": "PID_PPO_333",
+      "seed": 333,
+      "baseline": "LQR_refined",
+      "selected_steps": 327680,
+      "learned_checkpoint": true,
+      "no_more_physical_failures": true,
+      "both_all_pass": true,
+      "success": {
+        "mean_difference": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "cost": {
+        "mean_difference": 0.001986010079044496,
+        "lower": 0.0015626221529740623,
+        "upper": 0.002447943800084129,
+        "confidence": 0.9986111111111111,
+        "repeats": 20000,
+        "resampling_unit": "independent initial-state group"
+      },
+      "mean_cost_reduction_fraction": -0.35696757635441223
+    }
+  ],
+  "claims": {
+    "PID": {
+      "success_advantage": true,
+      "cost_advantage": false
+    },
+    "PID_safe": {
+      "success_advantage": true,
+      "cost_advantage": false
+    },
+    "ZVD_PID": {
+      "success_advantage": true,
+      "cost_advantage": false
+    },
+    "LQR": {
+      "success_advantage": false,
+      "cost_advantage": true
+    },
+    "ZVD_PID_refined": {
+      "success_advantage": true,
+      "cost_advantage": false
+    },
+    "LQR_refined": {
+      "success_advantage": false,
+      "cost_advantage": false
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "task": "Joint three-axis quaternion attitude stabilization with unknown continuous disturbance",
+  "dt": 0.05,
+  "duration": 32.0,
+  "deadline": 8.0,
+  "actuator_lag": 0.15,
+  "inertia": [
+    1.2,
+    1.0,
+    0.8
+  ],
+  "limit_per_axis": 0.5,
+  "coupled_Euler_dynamics": true,
+  "joint_network": true,
+  "single_axis_transfer": false,
+  "acceptance": {
+    "angle_deg": 2.0,
+    "rate_norm_deg_s": 1.0,
+    "interval": [
+      8.0,
+      32.0
+    ]
+  },
+  "disturbance": "per-axis A1sin(phi)+A2sin(2phi+.4)+ctheta*sin(2*rotation_vector_component)+crate*tanh(omega/.05)",
+  "observed": [
+    "body rotation-vector error",
+    "body rate",
+    "measured phase/frequency",
+    "own PID integral and past sent command",
+    "time"
+  ],
+  "hidden": [
+    "true coefficients",
+    "disturbance",
+    "actual actuator torque"
+  ],
+  "counts": {
+    "development": 24,
+    "validation": 48,
+    "test": 128
+  },
+  "split_seeds": {
+    "development": 202610181901,
+    "validation": 202610181902,
+    "test": 202610181903
+  },
+  "baselines": [
+    "quaternion PID with known gyroscopic feedforward",
+    "disturbance observer plus PID",
+    "measured-phase harmonic feedforward plus PID"
+  ],
+  "algorithm": "TD3 based on separate single-axis development; no universal-best claim",
+  "development": {
+    "configs": {
+      "A": [
+        128,
+        128
+      ],
+      "B": [
+        256,
+        128
+      ]
+    },
+    "steps_each": 262144
+  },
+  "formal": {
+    "seeds": [
+      19111,
+      19222,
+      19333
+    ],
+    "steps_each": 524288
+  },
+  "training": {
+    "environments": 32,
+    "batch_size": 256,
+    "gradient_steps": 4,
+    "gamma": 0.999,
+    "learning_rate": 0.0003,
+    "action_noise": 0.15,
+    "residual_limit_Nm": 0.12,
+    "steady_reward_angle_scale_deg": 0.03
+  },
+  "validate_every": 32768,
+  "selection": "fewest failures,most passes,smallest steady attitude RMS,then actual torque-square cost",
+  "gate": "zero physical failures and >=95% validation passes; both development attempts retained",
+  "primary": "PID and each seed pass every heldout; each Bonferroni98.333% paired RMS-improvement interval above0; each mean cost<=110%PID",
+  "heldout_used_to_select": false,
+  "weights_frozen_during_test": true,
+  "practical_scope": "Engineering illustrative periodic/attitude-dependent disturbances, not a flight satellite or complete orbit/reaction-wheel model"
+}

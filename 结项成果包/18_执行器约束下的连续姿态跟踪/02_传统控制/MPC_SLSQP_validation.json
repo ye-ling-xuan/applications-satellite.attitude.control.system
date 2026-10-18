@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "count": 64,
+    "physical_failures": 0,
+    "mean_rms_error_deg": 1.236317161144463,
+    "mean_objective": 79.98996880769218,
+    "mean_actual_cost": 0.10112090529507765,
+    "max_error_deg": 39.2599358366087,
+    "maximum_torque": 0.25,
+    "maximum_slew": 0.08000000000000007
+  },
+  "max_constraint_residual": 8.885187724461119e-12,
+  "optimizer_unsuccessful_calls": 0,
+  "max_iterations": 73,
+  "source_sha256": "92f9ae3fd10b83192683237140dc527fa8e5024d5735921d692802cbb7aa64ed",
+  "test_responses_used": false
+}

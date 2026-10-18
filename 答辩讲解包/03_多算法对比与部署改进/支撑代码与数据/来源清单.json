@@ -1,0 +1,342 @@
+{
+  "purpose": "论文主线重组；仅索引原工程及原样核心图，不重训、不更换历史结果",
+  "date": "2026-10-18",
+  "sources": [
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/新融合分析.md",
+      "sha256": "5456d33bfe52e1d034161389378da255d0c6659b33566286ab44e5bc8da538fc",
+      "bytes": 17993,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/实验约定.md",
+      "sha256": "af23f989371a9784af4b6337425d95171ce55694644777a2a5f8961fa7f37e0a",
+      "bytes": 6411,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/result_summary.json",
+      "sha256": "51ff4ae913a807391fc64f0b560eda82cffddfdd17a23c05d3cbc8e17ca633c3",
+      "bytes": 14789,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/核验记录.json",
+      "sha256": "23619ce6a93dc155434096a4fb633d865f9d0984a836e36276815a20d0000ba2",
+      "bytes": 28240,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/results/episode_metrics.csv",
+      "sha256": "31d504ff804e464ec4ba40356e83acc53f26ce3552b89ae6c1d33aec0bace9f7",
+      "bytes": 2375894,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/results/summary.csv",
+      "sha256": "b084cb471da368ecc5aac3d885c788413551e777fff06ee984a8ecb16dd7d035",
+      "bytes": 37218,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/results/evaluation_manifest.json",
+      "sha256": "0b1d79914cf50f92499d15480698febef6630eabcf700f99243f6d517173387d",
+      "bytes": 32596,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/results/paired_improvements.csv",
+      "sha256": "3474aca7963e6af0b6dd4a0c59492f185563d8814e0464d7676f446b8b16a39d",
+      "bytes": 183392,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/results/policy_calibration_pairs.csv",
+      "sha256": "473947c7655ceb14ad766c822d70934061fe46dc5b75dcb2724a942666ce902c",
+      "bytes": 2094918,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/pid_configs.json",
+      "sha256": "37a73446379a5ac731aec43237aa6a8842aa6914b4e49df1bb6bbe4a870c4073",
+      "bytes": 818,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/policy_calibration_manifest.json",
+      "sha256": "923f44f98058e4fd438877e00409f18575a0e5eadcec8c2e789c17432cddd6e8",
+      "bytes": 10507,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/开发核验/PID验证选择复核.json",
+      "sha256": "fe4d1a9de1e946b4dc4ce332f36c92c4dd16447f5e3a57550cbba594ebdc1f15",
+      "bytes": 4248,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/multi_algorithm_benchmark/envs.py",
+      "sha256": "5ea1ea78c5296bc43728b43d6e9132b4cb6429bf6b225a14d650d69fc12e5a14",
+      "bytes": 13898,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/multi_algorithm_benchmark/controllers.py",
+      "sha256": "a971deb369c45401320fa0075585f690b7bd7aa029d4a5b45a1c6f2b718f90d1",
+      "bytes": 5995,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/multi_algorithm_benchmark/training.py",
+      "sha256": "8be006acd733ae9dbf3844408f7a140fe5f605b93102135fc5db67931300cf50",
+      "bytes": 7819,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/multi_algorithm_benchmark/vector_training.py",
+      "sha256": "6d571a29b70bb45ca764a75c97d53bf4040251eb0a49031347ffcd4f73043757",
+      "bytes": 15675,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/multi_algorithm_benchmark/improvements.py",
+      "sha256": "669b4c9c5ad7ea9330d66ba5d07c1fca72ff2bca162eba860b47c384d5a87132",
+      "bytes": 3373,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/multi_algorithm_benchmark/metrics.py",
+      "sha256": "61f43c91f26782904ab43bb122b73ff39c358bf42003a77e217596b6462930a5",
+      "bytes": 4448,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/PPO/seed_11/training_metadata.json",
+      "sha256": "16b0e23479ef39f6a0ea0ca14f46702ed62523f4cfbdcfb228c5e455305cdedf",
+      "bytes": 2969,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/PPO/seed_22/training_metadata.json",
+      "sha256": "2e9c24539746a006c4106d5b7c8599811fc12243ab27041d88cbb531db9e9cef",
+      "bytes": 2966,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/PPO/seed_33/training_metadata.json",
+      "sha256": "92d7b65ae59f793234412524701717dd540e7db5ca3f3fe2dd641d365efae2bd",
+      "bytes": 2967,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/SAC/seed_11/training_metadata.json",
+      "sha256": "7f4a9ca9197d07d320a5ff367f05a76b3b1215feef12a7f817af49cbebce373e",
+      "bytes": 3069,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/SAC/seed_22/training_metadata.json",
+      "sha256": "965808e5f31055208a22a8969a382812facdbbf4ad7efa9f947543ec64f3e91c",
+      "bytes": 3069,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/SAC/seed_33/training_metadata.json",
+      "sha256": "884b630d872ea63100dd370487b05279eea95f0992ace5cb01bb79aa7c30c00e",
+      "bytes": 3070,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/TD3/seed_11/training_metadata.json",
+      "sha256": "6656e54694af472a4f6b56dbe3a4381ce8e779e79e553bea3386568fe52e89d7",
+      "bytes": 3207,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/TD3/seed_22/training_metadata.json",
+      "sha256": "b9b0096de78daee0298cb4799f039eaa7194442c0eabf11b13b8d24902e2621f",
+      "bytes": 3206,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/TD3/seed_33/training_metadata.json",
+      "sha256": "c50e562a6522e38e017a5bf97506c24a3716805ae18ef8f517e36c00e6b2f4ea",
+      "bytes": 3208,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/PPO/seed_11/training_metadata.json",
+      "sha256": "58e043a3e8c792384a6138f10d51608a41adb70bf4d241afcdb90355c855d467",
+      "bytes": 2734,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/PPO/seed_22/training_metadata.json",
+      "sha256": "54dcc5fa13a3b7472bc86e01676b71266613b1b3594ed3c3f093c161bf7140ab",
+      "bytes": 2733,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/PPO/seed_33/training_metadata.json",
+      "sha256": "d942eb29114f79a743c9fd6f8ea4622282d7069e41ba572723225c5394eefb4b",
+      "bytes": 2734,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/SAC/seed_11/training_metadata.json",
+      "sha256": "28fe423c3986efd99aebae3f25fe500f1b5d6bf98b128b9bf1196f5fc515cffd",
+      "bytes": 2835,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/SAC/seed_22/training_metadata.json",
+      "sha256": "4b1047d542c8918ba43716a62ec1a64056fae8181130bfc030d1858898b47cab",
+      "bytes": 2834,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/SAC/seed_33/training_metadata.json",
+      "sha256": "f92b58a30c16d795a626f9b8a6a2852e2084e4bcc4d6c0dfb4a51581d40b3ac2",
+      "bytes": 2833,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/TD3/seed_11/training_metadata.json",
+      "sha256": "8a1969000ad877c54d47e8f00e5d78cd84abb2c5ff451ba6e71a0b411f75d9fb",
+      "bytes": 2974,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/TD3/seed_22/training_metadata.json",
+      "sha256": "45149fb790cece085c36e28a9c1fae55e17c18efc3030d730ba15f505bcb8c75",
+      "bytes": 2973,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/TD3/seed_33/training_metadata.json",
+      "sha256": "11602e07cb3d31590cf4853b048c6e7fc517c114a2eb19eb4868a8306580ff5f",
+      "bytes": 2973,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/PPO/seed_11/validation_history.csv",
+      "sha256": "e36dd37721192694f3ced461e7a0896346faebbf46fba0ceaa7c6ffcd32505fa",
+      "bytes": 823,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/PPO/seed_22/validation_history.csv",
+      "sha256": "d20104e7460e474f76cb159c3ad5ce065ccd0e8dcafa6f34cadcff9c5df76fcc",
+      "bytes": 824,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/PPO/seed_33/validation_history.csv",
+      "sha256": "6391bf3e130e455c93af869b941f5b4be65d1954701eb1f33f438b7bff7866e1",
+      "bytes": 827,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/SAC/seed_11/validation_history.csv",
+      "sha256": "29cbfb37429a33a6e11e873cc1a23ede3c4ddabb37d4103badca05b7fab1fbd1",
+      "bytes": 753,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/SAC/seed_22/validation_history.csv",
+      "sha256": "aa79eec44428ee1e0a0d80e2d02e3f3ebcf6ffbf591d486c5155be2910b656cc",
+      "bytes": 749,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/SAC/seed_33/validation_history.csv",
+      "sha256": "2227b93fd3febda893a9b2c8c88b41de53bd1d0735cbd2914515833b7fa988cd",
+      "bytes": 752,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/TD3/seed_11/validation_history.csv",
+      "sha256": "f80727d4a23d86b0c18a383dfbe99a381fa2457b37bcc4d3b12371a416c30811",
+      "bytes": 753,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/TD3/seed_22/validation_history.csv",
+      "sha256": "b200f8dcbfc992ddc7d2f9b2d7bcdcffdfd0cadae6c142b86c30c5638789a962",
+      "bytes": 750,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/single/TD3/seed_33/validation_history.csv",
+      "sha256": "4660c23e95fd695d28dbdc205b4d3b3c8d80e2012ad4c1e1cbddeab2918d6892",
+      "bytes": 754,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/PPO/seed_11/validation_history.csv",
+      "sha256": "7ca2ef79e76f7fd19c7846722e1ae0527c053d73c39d416a869fb8960cb37229",
+      "bytes": 819,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/PPO/seed_22/validation_history.csv",
+      "sha256": "a4f443b73685828ea497a9b5ad0bdbd547e376b5bf333d479827aff269da89d2",
+      "bytes": 822,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/PPO/seed_33/validation_history.csv",
+      "sha256": "836c6bb035230a4b61219e3980a285aabe0b60a43d4b95684fd55ec634be0d64",
+      "bytes": 823,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/SAC/seed_11/validation_history.csv",
+      "sha256": "de92188e5328ab1446307d33caca396ac08babc06b2bd7d3ba9dda31116a5f70",
+      "bytes": 750,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/SAC/seed_22/validation_history.csv",
+      "sha256": "d829d880a1ed2bdf36eceecf2775473d5354accd0f23ad6abebf93b1b8ce8748",
+      "bytes": 745,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/SAC/seed_33/validation_history.csv",
+      "sha256": "395ee6264d2a1df5521ce89f87d5699ca5172158197646289e48a7f79f204428",
+      "bytes": 748,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/TD3/seed_11/validation_history.csv",
+      "sha256": "758d2105b695d7fad9f5656064d93f0dac3f7bb9bc271372a1201db1fd42bf7a",
+      "bytes": 746,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/TD3/seed_22/validation_history.csv",
+      "sha256": "f2cd1263c1f0515a44b6bc0fd3d90dbf872a7dcc1c3ff4d365b6fe08a1cb2b1d",
+      "bytes": 745,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/models/three/TD3/seed_33/validation_history.csv",
+      "sha256": "68aae7b1bc6bcede578ab0f940e19bef630f1612e1f59dddf1c97c1c2849c4d4",
+      "bytes": 741,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/results/figures/04_paired_pid_improvement.png",
+      "copy": "图表/01_PID配对改进.png",
+      "sha256": "d2c8436c0dedaf946e967f2f6b19a510b09b703a9daeb61a9f567ea72c7e7b88",
+      "bytes": 222097
+    },
+    {
+      "source": "结项成果包/07_单轴三轴多算法对比/results/figures/07_policy_calibration.png",
+      "copy": "图表/02_同模型偏置修正.png",
+      "sha256": "3c16e82b2366608961749a8ae3d8a17c2b4cded182f47d68901b33cad672a015",
+      "bytes": 159853
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "LQR_refined": {
+    "index": 526,
+    "settings": {
+      "method": "LQR",
+      "gain": [
+        0.37134873110136646,
+        1.1129648228613274,
+        -1.1580413020360945,
+        -0.9698115023044206
+      ],
+      "q_diag": [
+        0.18762548012810046,
+        0.5572183663210045,
+        0.10388552388380191,
+        2.8998415954054053
+      ],
+      "r": 1.3605920469607238
+    },
+    "development": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.005045286256541762,
+      "rms_angle_deg": 4.150584753374056,
+      "peak_relative_deg": 0.5322045863577586,
+      "residual_relative_rms_deg": 0.003907868727194777,
+      "count": 240,
+      "passes": 240,
+      "physical_failures": 0,
+      "selection_cost": 0.005045286256541762
+    },
+    "validation": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.005514498030129664,
+      "rms_angle_deg": 4.3452188886358325,
+      "peak_relative_deg": 0.5617529713519083,
+      "residual_relative_rms_deg": 0.004142748158193865,
+      "count": 320,
+      "passes": 320,
+      "physical_failures": 0,
+      "selection_cost": 0.005514498030129664
+    }
+  },
+  "ZVD_PID_refined": {
+    "index": 1799,
+    "settings": {
+      "method": "ZVD_PID",
+      "kp": 0.5841048727249352,
+      "kd": 1.1394467863958684,
+      "ki": 0.0
+    },
+    "development": {
+      "success": 0.9833333333333333,
+      "failed": 0.0,
+      "cost": 0.006877113790544215,
+      "rms_angle_deg": 4.2650825768924365,
+      "peak_relative_deg": 0.508891350929442,
+      "residual_relative_rms_deg": 0.006024491741575327,
+      "count": 240,
+      "passes": 236,
+      "physical_failures": 0,
+      "selection_cost": 0.09823395291217005
+    },
+    "validation": {
+      "success": 0.9875,
+      "failed": 0.0,
+      "cost": 0.00750019141548067,
+      "rms_angle_deg": 4.454420278893192,
+      "peak_relative_deg": 0.5240681686370696,
+      "residual_relative_rms_deg": 0.005898573818320009,
+      "count": 320,
+      "passes": 316,
+      "physical_failures": 0,
+      "selection_cost": 0.0760331328745425
+    }
+  }
+}

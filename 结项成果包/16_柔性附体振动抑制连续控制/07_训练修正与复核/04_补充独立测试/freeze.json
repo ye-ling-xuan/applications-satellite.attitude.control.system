@@ -1,0 +1,40 @@
+{
+  "controllers": [
+    {
+      "name": "LQR_refined",
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.37134873110136646,
+          1.1129648228613274,
+          -1.1580413020360945,
+          -0.9698115023044206
+        ],
+        "q_diag": [
+          0.18762548012810046,
+          0.5572183663210045,
+          0.10388552388380191,
+          2.8998415954054053
+        ],
+        "r": 1.3605920469607238
+      }
+    },
+    {
+      "name": "ZVD_PID_refined",
+      "settings": {
+        "method": "ZVD_PID",
+        "kp": 0.5841048727249352,
+        "kd": 1.1394467863958684,
+        "ki": 0.0
+      }
+    }
+  ],
+  "selected_sha256": "b9192f0f3709e4254b24faefcb18d03b361ca5a081b08570912009103d09dfac",
+  "test_scenarios_sha256": "9f4ac50aaa20ff70dc6b0eeeb25542bc9e209be3f58a67a13c4f72a21cefd83a",
+  "production_source_hashes": {
+    "代码\\flexible_study.py": "6aae327fd60514f2c0659ca29c8c4b9e9d75d523d52d432cfa2be0112bd33088",
+    "代码\\test_flexible.py": "5fdd9aec2745d015a52a6f0b8cf2ab564ab2528d159bce3284fe11d0afccfe8c"
+  },
+  "evaluator_sha256": "03c2b99f30a8af2f7026d6f3041c265607a7cc414ff06c7a88e6d92765f9044c",
+  "core_freeze_sha256": "0c940360d48069a696ef33df0abe6adec03bbbecacb76ec3c506b20024f9b607"
+}

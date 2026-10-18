@@ -1,0 +1,86 @@
+{
+  "PID": {
+    "success": 0.9125,
+    "failed": 0.0421875,
+    "cost": 0.1331789623380228,
+    "rms_angle_deg": 2.7658784145501794,
+    "peak_relative_deg": 3.7324801606453675,
+    "residual_relative_rms_deg": 0.4397721211327183,
+    "count": 640,
+    "passes": 584,
+    "physical_failures": 27,
+    "selection_cost": 0.5972630969213764
+  },
+  "ZVD_PID": {
+    "success": 0.984375,
+    "failed": 0.0,
+    "cost": 0.00915081990621942,
+    "rms_angle_deg": 4.6632758447887745,
+    "peak_relative_deg": 0.602895655084318,
+    "residual_relative_rms_deg": 0.0062580089150088515,
+    "count": 640,
+    "passes": 630,
+    "physical_failures": 0,
+    "selection_cost": 0.09476829852028942
+  },
+  "LQR": {
+    "success": 1.0,
+    "failed": 0.0,
+    "cost": 0.026787982731786165,
+    "rms_angle_deg": 3.5777420717943555,
+    "peak_relative_deg": 1.3580677998020754,
+    "residual_relative_rms_deg": 0.0024767169166749247,
+    "count": 640,
+    "passes": 640,
+    "physical_failures": 0,
+    "selection_cost": 0.026787982731786165
+  },
+  "PID_safe": {
+    "success": 0.809375,
+    "failed": 0.0,
+    "cost": 0.011746697787118662,
+    "rms_angle_deg": 4.166603471653383,
+    "peak_relative_deg": 1.0733311046790892,
+    "residual_relative_rms_deg": 0.013388090699778959,
+    "count": 640,
+    "passes": 518,
+    "physical_failures": 0,
+    "selection_cost": 1.0568064597131985
+  },
+  "PID_PPO_111": {
+    "success": 1.0,
+    "failed": 0.0,
+    "cost": 0.0101200360942439,
+    "rms_angle_deg": 4.258278326835908,
+    "peak_relative_deg": 0.965234828640107,
+    "residual_relative_rms_deg": 0.005015708577498869,
+    "count": 640,
+    "passes": 640,
+    "physical_failures": 0,
+    "selection_cost": 0.0101200360942439
+  },
+  "PID_PPO_222": {
+    "success": 1.0,
+    "failed": 0.0,
+    "cost": 0.014483190176781804,
+    "rms_angle_deg": 3.9874534525095284,
+    "peak_relative_deg": 1.1317891092346957,
+    "residual_relative_rms_deg": 0.005361983836304496,
+    "count": 640,
+    "passes": 640,
+    "physical_failures": 0,
+    "selection_cost": 0.014483190176781804
+  },
+  "PID_PPO_333": {
+    "success": 1.0,
+    "failed": 0.0,
+    "cost": 0.007549568818263722,
+    "rms_angle_deg": 4.466483704943789,
+    "peak_relative_deg": 0.726522351438099,
+    "residual_relative_rms_deg": 0.0035016995765417254,
+    "count": 640,
+    "passes": 640,
+    "physical_failures": 0,
+    "selection_cost": 0.007549568818263722
+  }
+}

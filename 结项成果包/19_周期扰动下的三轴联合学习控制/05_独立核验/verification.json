@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "episodes": 768,
+  "controllers": 6,
+  "all_traces_and_commands_replayed": true,
+  "all_metrics_independently_reconstructed": true,
+  "max_replay_error": 0.0,
+  "max_quaternion_norm_error": 2.220446049250313e-16,
+  "max_independent_interval_cost_error": 2.6020852139652106e-17,
+  "physical_numerical_checks": "test_physics.py: independent32s DOP853,conservation,convergence",
+  "scope": "all frozen traces/actions/metrics and pretraining independent numerical tests"
+}

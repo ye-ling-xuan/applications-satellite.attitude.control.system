@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "full_trace_physics_replayed": true,
+  "total_episodes": 4480,
+  "checks": [
+    {
+      "name": "PID",
+      "episodes": 640,
+      "transitions": 281600,
+      "max_state_residual": 6.661338147750939e-16
+    },
+    {
+      "name": "ZVD_PID",
+      "episodes": 640,
+      "transitions": 281600,
+      "max_state_residual": 2.220446049250313e-16
+    },
+    {
+      "name": "LQR",
+      "episodes": 640,
+      "transitions": 281600,
+      "max_state_residual": 2.220446049250313e-16
+    },
+    {
+      "name": "PID_safe",
+      "episodes": 640,
+      "transitions": 281600,
+      "max_state_residual": 1.6653345369377348e-16
+    },
+    {
+      "name": "PID_PPO_111",
+      "episodes": 640,
+      "transitions": 281600,
+      "max_state_residual": 2.220446049250313e-16
+    },
+    {
+      "name": "PID_PPO_222",
+      "episodes": 640,
+      "transitions": 281600,
+      "max_state_residual": 2.220446049250313e-16
+    },
+    {
+      "name": "PID_PPO_333",
+      "episodes": 640,
+      "transitions": 281600,
+      "max_state_residual": 2.220446049250313e-16
+    }
+  ],
+  "source_hashes": {
+    "代码\\flexible_study.py": "6aae327fd60514f2c0659ca29c8c4b9e9d75d523d52d432cfa2be0112bd33088",
+    "代码\\test_flexible.py": "5fdd9aec2745d015a52a6f0b8cf2ab564ab2528d159bce3284fe11d0afccfe8c"
+  },
+  "manifest_sha256": "ad2b81ed12f319d88e7d04d305c1c4fef55956c021f29b302ea14329b3642188"
+}

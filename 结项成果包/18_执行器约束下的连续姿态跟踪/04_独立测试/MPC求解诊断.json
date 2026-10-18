@@ -1,0 +1,8 @@
+{
+  "method": "SLSQP same convex QP",
+  "max_constraint_residual": 2.065048479438225e-11,
+  "optimizer_unsuccessful_calls": 0,
+  "max_iterations_observed": 74,
+  "total_calls": 38400,
+  "physical_command_constraints_always_enforced": true
+}

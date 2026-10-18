@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "episodes": 640,
+  "transitions": 281600,
+  "max_state_residual": 6.661338147750939e-16,
+  "responses_sha256": "569576edf522024c503fc73732238b66975b4704971fc21f65cbccf4d3dd5582",
+  "selected_sha256": "cfca178bd25ecf688c8790cb34fed60ec6e669fe77b4f8c9cac98e8524f09283",
+  "script_sha256": "eff9929fc143e617b1b863a1cbdc1eaa88f9550aefed9fd221f2d3ee64048d80",
+  "selection_test_separated_in_code": true,
+  "post_hoc": true
+}

@@ -1,0 +1,71 @@
+{
+  "status": "complete",
+  "algorithm": "SAC",
+  "seed": 17011,
+  "requested_steps": 98304,
+  "actual_steps": 98304,
+  "source_sha256": {
+    "代码/disturbance_study.py": "6c081586f3808c47456510081e3b884531079dd260ca9d2352df5edd74b25be6",
+    "代码/test_disturbance_study.py": "58efec3ee89ede5a78ffc827e375c0e1ce9d43c1a9d1e51ac5c56c33a99a8093"
+  },
+  "best": {
+    "steps": 49152,
+    "count": 48,
+    "passes": 48,
+    "physical_failures": 0,
+    "success_rate": 1.0,
+    "mean_steady_rms_deg": 0.02407572354749085,
+    "mean_actual_cost": 0.3050550855409119,
+    "mean_full_rms_deg": 0.7781247047835486
+  },
+  "checkpoints": [
+    {
+      "steps": 24576,
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.03095173921311287,
+      "mean_actual_cost": 0.33600533165643265,
+      "mean_full_rms_deg": 0.7844622252664911
+    },
+    {
+      "steps": 49152,
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.02407572354749085,
+      "mean_actual_cost": 0.3050550855409119,
+      "mean_full_rms_deg": 0.7781247047835486
+    },
+    {
+      "steps": 73728,
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.028122512054924692,
+      "mean_actual_cost": 0.3114181181457391,
+      "mean_full_rms_deg": 0.7756484426087403
+    },
+    {
+      "steps": 98304,
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.027743632015346572,
+      "mean_actual_cost": 0.3243450886721913,
+      "mean_full_rms_deg": 0.7750012635892173
+    }
+  ],
+  "model_sha256": "a190ee1a48b6a5bb0c93b20bed4191476f833867ba2ab2c118192b0988b79d50",
+  "wall_time_s": 51.97127579996595,
+  "parameters": {
+    "kp": 50.0,
+    "kd": 20.0,
+    "ki": 0.0
+  },
+  "heldout_used": false
+}

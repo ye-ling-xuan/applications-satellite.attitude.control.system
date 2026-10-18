@@ -1,0 +1,41 @@
+{
+  "freeze_sha256": "0c940360d48069a696ef33df0abe6adec03bbbecacb76ec3c506b20024f9b607",
+  "controllers": [
+    {
+      "name": "PID",
+      "responses_sha256": "c51b11e1e312252396b77ed610ea53b8c96095e24c22a9413b78ada2ea5f1376",
+      "metrics_sha256": "5c42192ffaad1ab958c4eda41256b1270cad66834a7196123cd72a77ae4de07b"
+    },
+    {
+      "name": "ZVD_PID",
+      "responses_sha256": "bd93f47068234137afc7258e3af9b3a8f77f46ac28c64bb1ea7377c9c34b11b9",
+      "metrics_sha256": "6bb46fcfb48b5dcc0c02265024265fef321b7667d40a576a2dfb26f41d5bea8f"
+    },
+    {
+      "name": "LQR",
+      "responses_sha256": "5b35691e0e193b3abf91c745f5d3cff21c8c587ae76a2eeb4b5cc38b7f13c7eb",
+      "metrics_sha256": "ec544f58abce79134f78ce187e59b1333e9917b8b2b3461058b585bff3a0df8d"
+    },
+    {
+      "name": "PID_safe",
+      "responses_sha256": "9ccf61d8366a05faaf120313a2545f7710bf1368271def094b69c0a76982c09c",
+      "metrics_sha256": "479c9684668dd0ee773d9b5f8e05f4627086854300329f14d51fb7bccf635bd1"
+    },
+    {
+      "name": "PID_PPO_111",
+      "responses_sha256": "8716c32f57e28ae5b8ca8f066614286c1a3f5f899a795bd720cde84e839e4736",
+      "metrics_sha256": "13cf81486364a871eaad264a7a2c099b1bf45eece0c1a41d3926f541b03fc362"
+    },
+    {
+      "name": "PID_PPO_222",
+      "responses_sha256": "57868c650db0ecc998fcba7e21c87cb72c16cda5fca5363397f6ae4280eeb0a8",
+      "metrics_sha256": "ad5e28dc9dada2999ec0be2f20ca85acaefa30d40c97d06f7f80d59391e59eab"
+    },
+    {
+      "name": "PID_PPO_333",
+      "responses_sha256": "20d5de1180d6d6230289ad4fc3e388ea17043cb5dfdc550468083d747994ec4e",
+      "metrics_sha256": "12ba68f5f3cb7007ee773b667a2b1c9e83665611f3f0f5d618602e1f2d958274"
+    }
+  ],
+  "total_episodes": 4480
+}

@@ -1,0 +1,14 @@
+{
+  "seed": 16022,
+  "held_out_test_used": false,
+  "methods": [
+    "LQR_refined",
+    "ZVD_PID_refined"
+  ],
+  "ranking": "fewest physical failures; most passes; lowest penalized cost",
+  "lqr_extra_random": 500,
+  "lqr_extra_grid": 75,
+  "zvd_extra_local": 750,
+  "primary_family_comparisons_after_addition": 36,
+  "learner_base_unchanged": true
+}

@@ -1,0 +1,252 @@
+{
+  "methods": {
+    "PID": {
+      "success": 0.9125,
+      "failed": 0.0421875,
+      "cost": 0.1331789623380228,
+      "rms_angle_deg": 2.7658784145501794,
+      "peak_relative_deg": 3.7324801606453675,
+      "residual_relative_rms_deg": 0.4397721211327183,
+      "count": 640,
+      "passes": 584,
+      "physical_failures": 27,
+      "selection_cost": 0.5972630969213764
+    },
+    "ZVD_PID": {
+      "success": 0.984375,
+      "failed": 0.0,
+      "cost": 0.00915081990621942,
+      "rms_angle_deg": 4.6632758447887745,
+      "peak_relative_deg": 0.602895655084318,
+      "residual_relative_rms_deg": 0.0062580089150088515,
+      "count": 640,
+      "passes": 630,
+      "physical_failures": 0,
+      "selection_cost": 0.09476829852028942
+    },
+    "LQR": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.026787982731786165,
+      "rms_angle_deg": 3.5777420717943555,
+      "peak_relative_deg": 1.3580677998020754,
+      "residual_relative_rms_deg": 0.0024767169166749247,
+      "count": 640,
+      "passes": 640,
+      "physical_failures": 0,
+      "selection_cost": 0.026787982731786165
+    },
+    "PID_safe": {
+      "success": 0.809375,
+      "failed": 0.0,
+      "cost": 0.011746697787118662,
+      "rms_angle_deg": 4.166603471653383,
+      "peak_relative_deg": 1.0733311046790892,
+      "residual_relative_rms_deg": 0.013388090699778959,
+      "count": 640,
+      "passes": 518,
+      "physical_failures": 0,
+      "selection_cost": 1.0568064597131985
+    },
+    "PID_PPO_111": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.0101200360942439,
+      "rms_angle_deg": 4.258278326835908,
+      "peak_relative_deg": 0.965234828640107,
+      "residual_relative_rms_deg": 0.005015708577498869,
+      "count": 640,
+      "passes": 640,
+      "physical_failures": 0,
+      "selection_cost": 0.0101200360942439
+    },
+    "PID_PPO_222": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.014483190176781804,
+      "rms_angle_deg": 3.9874534525095284,
+      "peak_relative_deg": 1.1317891092346957,
+      "residual_relative_rms_deg": 0.005361983836304496,
+      "count": 640,
+      "passes": 640,
+      "physical_failures": 0,
+      "selection_cost": 0.014483190176781804
+    },
+    "PID_PPO_333": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.007549568818263722,
+      "rms_angle_deg": 4.466483704943789,
+      "peak_relative_deg": 0.726522351438099,
+      "residual_relative_rms_deg": 0.0035016995765417254,
+      "count": 640,
+      "passes": 640,
+      "physical_failures": 0,
+      "selection_cost": 0.007549568818263722
+    },
+    "LQR_refined": {
+      "success": 1.0,
+      "failed": 0.0,
+      "cost": 0.0055635587392192255,
+      "rms_angle_deg": 4.650894004046444,
+      "peak_relative_deg": 0.5852194882591121,
+      "residual_relative_rms_deg": 0.00435912207826445,
+      "count": 640,
+      "passes": 640,
+      "physical_failures": 0,
+      "selection_cost": 0.0055635587392192255
+    },
+    "ZVD_PID_refined": {
+      "success": 0.98125,
+      "failed": 0.0,
+      "cost": 0.007711895751377748,
+      "rms_angle_deg": 4.779220486241382,
+      "peak_relative_deg": 0.5522308269222498,
+      "residual_relative_rms_deg": 0.006697934852564004,
+      "count": 640,
+      "passes": 628,
+      "physical_failures": 0,
+      "selection_cost": 0.11052829516548582
+    }
+  },
+  "claims": {
+    "PID": {
+      "success_advantage": true,
+      "cost_advantage": false
+    },
+    "PID_safe": {
+      "success_advantage": true,
+      "cost_advantage": false
+    },
+    "ZVD_PID": {
+      "success_advantage": true,
+      "cost_advantage": false
+    },
+    "LQR": {
+      "success_advantage": false,
+      "cost_advantage": true
+    },
+    "ZVD_PID_refined": {
+      "success_advantage": true,
+      "cost_advantage": false
+    },
+    "LQR_refined": {
+      "success_advantage": false,
+      "cost_advantage": false
+    }
+  },
+  "formal_models": [
+    {
+      "name": "PID_PPO_111",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "model": "03_学习训练\\formal\\PPO\\seed_111\\best.zip",
+      "model_sha256": "682a94d472f441cd66602b0b8c724b585ec4c9c400239f46633ebe6997ec6151",
+      "algorithm": "PPO",
+      "seed": 111,
+      "selected_steps": 262144
+    },
+    {
+      "name": "PID_PPO_222",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "model": "03_学习训练\\formal\\PPO\\seed_222\\best.zip",
+      "model_sha256": "0361b8166d5f021b51a4cb44d3d5a7ba71d515a377fd7a46b014eb7ab3881d27",
+      "algorithm": "PPO",
+      "seed": 222,
+      "selected_steps": 393216
+    },
+    {
+      "name": "PID_PPO_333",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "model": "03_学习训练\\formal\\PPO\\seed_333\\best.zip",
+      "model_sha256": "188b3d8f83c1644655db4b4b849977237cf06527602a8f263d82ae471124d03e",
+      "algorithm": "PPO",
+      "seed": 333,
+      "selected_steps": 327680
+    }
+  ],
+  "training": [
+    {
+      "algorithm": "PPO",
+      "stage": "development",
+      "seed": 16203,
+      "actual_steps": 524288,
+      "selected_steps": 262144,
+      "gradient_updates": 2560,
+      "status": "complete"
+    },
+    {
+      "algorithm": "SAC",
+      "stage": "development",
+      "seed": 16202,
+      "actual_steps": 524288,
+      "selected_steps": 0,
+      "gradient_updates": 65280,
+      "status": "complete"
+    },
+    {
+      "algorithm": "TD3",
+      "stage": "development",
+      "seed": 16201,
+      "actual_steps": 524288,
+      "selected_steps": 0,
+      "gradient_updates": 65280,
+      "status": "complete"
+    },
+    {
+      "algorithm": "PPO",
+      "stage": "formal",
+      "seed": 111,
+      "actual_steps": 1048576,
+      "selected_steps": 262144,
+      "gradient_updates": 5120,
+      "status": "complete"
+    },
+    {
+      "algorithm": "PPO",
+      "stage": "formal",
+      "seed": 222,
+      "actual_steps": 1048576,
+      "selected_steps": 393216,
+      "gradient_updates": 5120,
+      "status": "complete"
+    },
+    {
+      "algorithm": "PPO",
+      "stage": "formal",
+      "seed": 333,
+      "actual_steps": 1048576,
+      "selected_steps": 327680,
+      "gradient_updates": 5120,
+      "status": "complete"
+    }
+  ],
+  "training_steps": 4718592,
+  "held_out_episodes": 5760,
+  "independent_initial_states": 128,
+  "frequencies_per_initial": 5,
+  "full_physics_audit_passed": true,
+  "post_hoc_pid_verification": {
+    "passes": 593,
+    "count": 640,
+    "success": 0.9265625,
+    "physical_failures": 27,
+    "post_hoc": true,
+    "selection_uses_test_outcomes": false
+  },
+  "total_test_episodes_including_post_hoc": 6400
+}

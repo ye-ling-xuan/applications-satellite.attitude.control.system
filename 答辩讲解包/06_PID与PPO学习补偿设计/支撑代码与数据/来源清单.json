@@ -1,0 +1,167 @@
+{
+  "sources": [
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/代码/flexible_study.py",
+      "sha256": "6aae327fd60514f2c0659ca29c8c4b9e9d75d523d52d432cfa2be0112bd33088",
+      "bytes": 37044,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/代码/test_flexible.py",
+      "sha256": "5fdd9aec2745d015a52a6f0b8cf2ab564ab2528d159bce3284fe11d0afccfe8c",
+      "bytes": 7159,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/02_传统控制/selected.json",
+      "sha256": "25549c0c5f13541f5126c29fb40259289a504f9ef63902985abc4cd3e715456c",
+      "bytes": 3968,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development_decision.json",
+      "sha256": "02c467c66f77dae27a3ae6eda9f11a59f2c47721fdbb26a442e4f7836391f4f9",
+      "bytes": 17336,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/04_独立测试/freeze.json",
+      "sha256": "0c940360d48069a696ef33df0abe6adec03bbbecacb76ec3c506b20024f9b607",
+      "bytes": 2675,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/补充传统控制优化.py",
+      "sha256": "eac390f82bcbc752e2021e0d83a7e6b1ad29d0a83642a177be54d2019cc6acf0",
+      "bytes": 3672,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/事后加强PID复核.py",
+      "sha256": "eff9929fc143e617b1b863a1cbdc1eaa88f9550aefed9fd221f2d3ee64048d80",
+      "bytes": 5834,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/08_最终报告/最终结果.json",
+      "sha256": "e90b8896edf649f8d94dfaf22b7371450496d776e4e2d60e26836814bb330a80",
+      "bytes": 7074,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/PPO/seed_16203/metadata.json",
+      "sha256": "e4fb3f817e7f2b99716463300ed18b0691a57e0e4878e9d628e6dbd773ca35c9",
+      "bytes": 5058,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/SAC/seed_16202/metadata.json",
+      "sha256": "dff706df89c4dd556869677a982a2dc744198e64e23fa02f95c0bfdb8bc72851",
+      "bytes": 5059,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/TD3/seed_16201/metadata.json",
+      "sha256": "c559601d0197ba0b04082268f9c73be91aad9072174c9e8fd911cb859bff77c3",
+      "bytes": 5057,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_111/metadata.json",
+      "sha256": "2e23753d199ec99622aad5fa2e79dcba0985dfb3c827102b11a3ade69f4507d9",
+      "bytes": 8610,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_222/metadata.json",
+      "sha256": "8371118b2fa710584994ceed91948ae3a5ec517e9f20d5c0ef99ca59e176b6b9",
+      "bytes": 8609,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_333/metadata.json",
+      "sha256": "c8646a084e35206913f4aac8db8e68c9f957b332b117f9b75084aeaffdb7ba86",
+      "bytes": 8610,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/PPO/seed_16203/best.zip",
+      "sha256": "6d3785f2957e33aec9ecc15fa097252790fcb88289cd5f277be1f5e72577c03e",
+      "bytes": 142627,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/SAC/seed_16202/best.zip",
+      "sha256": "1a269726740009f6d615c8007326257b2dd3b778260b70849ff4d1ff21021d5d",
+      "bytes": 123613,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/TD3/seed_16201/best.zip",
+      "sha256": "980cbb80735cba0587fa697fc3a2e862d7be51ad728f8d838f7f17d5929be909",
+      "bytes": 141951,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_111/best.zip",
+      "sha256": "682a94d472f441cd66602b0b8c724b585ec4c9c400239f46633ebe6997ec6151",
+      "bytes": 142627,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_222/best.zip",
+      "sha256": "0361b8166d5f021b51a4cb44d3d5a7ba71d515a377fd7a46b014eb7ab3881d27",
+      "bytes": 142627,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_333/best.zip",
+      "sha256": "188b3d8f83c1644655db4b4b849977237cf06527602a8f263d82ae471124d03e",
+      "bytes": 142631,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/PPO/seed_16203/final.zip",
+      "sha256": "6cb6ef85dd93f0e520e0c6ba7032cf1fbc7ef945207e0d2963f94b9b3389f94e",
+      "bytes": 142620,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/SAC/seed_16202/final.zip",
+      "sha256": "236088cd2ded700d7c09b5d308978c64ff745dc0c3cdae160935611c6cf5121e",
+      "bytes": 255365,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/TD3/seed_16201/final.zip",
+      "sha256": "eefda3c2a033b4af034fe708bfd77c9a0f49010e0e305f03244f3b8a6a002857",
+      "bytes": 272204,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_111/final.zip",
+      "sha256": "c0b67d157aa3ee31f3aa1649ecd82724dd6e58a03204584037fc30f7e6c2d8fc",
+      "bytes": 142620,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_222/final.zip",
+      "sha256": "4770e17293eb48cc427c8f40061f585201e16026890ae16d043a25feacfd58c1",
+      "bytes": 142620,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_333/final.zip",
+      "sha256": "2fa1bae4552fc6f21046df7af622f1788a09de5a6be606e326e106d4515ffec1",
+      "bytes": 142624,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/08_最终报告/固定初态响应.png",
+      "sha256": "f2572d8b0c26e8440f023055af3c40166d567ae252bf081e258405cdb710b877",
+      "bytes": 362750,
+      "copy": "支撑代码与数据/参考图/原始固定初态响应.png"
+    }
+  ],
+  "note": "项目相对路径；reference_only为原件引用。讲解用新图不冒充实验原图。"
+}

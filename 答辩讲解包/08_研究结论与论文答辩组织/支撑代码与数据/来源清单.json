@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/08_最终报告/最终结果.json",
+      "bytes": 7074,
+      "sha256": "e90b8896edf649f8d94dfaf22b7371450496d776e4e2d60e26836814bb330a80",
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/04_统计/paired_statistics.json",
+      "bytes": 69200,
+      "sha256": "280c5e5a58162d616589d72f4c5de571f980c86f07782cfcc9115f9c75582fa3",
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/结果摘要.json",
+      "bytes": 84214,
+      "sha256": "f2c98aef80461a6da080467b88422bd18e020cb9fcbf60fadbeead975f396301",
+      "reference_only": true
+    }
+  ]
+}

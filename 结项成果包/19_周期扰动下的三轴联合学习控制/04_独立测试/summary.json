@@ -1,0 +1,105 @@
+{
+  "results": {
+    "pid": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.05426531267432955,
+      "mean_actual_cost": 1.1161268676719613,
+      "mean_full_rms_deg": 1.5000969808219455
+    },
+    "observer": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.003122036262196509,
+      "mean_actual_cost": 0.6064603593983742,
+      "mean_full_rms_deg": 1.4428496870696095
+    },
+    "harmonic": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01130675798830214,
+      "mean_actual_cost": 0.8844503927334524,
+      "mean_full_rms_deg": 1.4533607733450307
+    },
+    "TD3_19111": {
+      "count": 128,
+      "passes": 113,
+      "physical_failures": 0,
+      "success_rate": 0.8828125,
+      "mean_steady_rms_deg": 0.1068629847807798,
+      "mean_actual_cost": 1.014054843564661,
+      "mean_full_rms_deg": 1.4991120357157415
+    },
+    "TD3_19222": {
+      "count": 128,
+      "passes": 124,
+      "physical_failures": 0,
+      "success_rate": 0.96875,
+      "mean_steady_rms_deg": 0.09108367395643124,
+      "mean_actual_cost": 0.9907787542962225,
+      "mean_full_rms_deg": 1.5000300280008316
+    },
+    "TD3_19333": {
+      "count": 128,
+      "passes": 128,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.08103813257143713,
+      "mean_actual_cost": 0.8962122986602146,
+      "mean_full_rms_deg": 1.4956804609239893
+    }
+  },
+  "comparisons": {
+    "TD3_19111": {
+      "all_pass": false,
+      "improvement_interval_deg": [
+        -0.05528255748720669,
+        -0.049843147562306025
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.9085480091342985,
+      "primary_supported": false
+    },
+    "TD3_19222": {
+      "all_pass": false,
+      "improvement_interval_deg": [
+        -0.0396609106047029,
+        -0.0339139007294638
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.8876936690564646,
+      "primary_supported": false
+    },
+    "TD3_19333": {
+      "all_pass": true,
+      "improvement_interval_deg": [
+        -0.02895373806440884,
+        -0.02455228245058374
+      ],
+      "confidence": 0.9833333333333333,
+      "cost_ratio": 0.8029663335043186,
+      "primary_supported": false
+    }
+  },
+  "files_sha256": {
+    "freeze.json": "3b1aed9c9d319fa82d0614ee507038a9a1d43a66796b96b5e95dfb3f2f2827c4",
+    "harmonic_episodes.json": "b70586ee78c46149c45ef52906a9db1f3429865a281a07af79411bc0c8bff049",
+    "harmonic_traces.npz": "bbe4a75879c37aaa144fdd66c9a3f80cd683464cf2fc6a3c62a209e8542af665",
+    "observer_episodes.json": "2428db80a7fb368780a2f11ffd8f98708c740ff896c3c2f2da7ba84a12294d13",
+    "observer_traces.npz": "b5ca223a82e8f6a9944d2251713278e70ac6a4bf64c9e831b61dfaba1132634e",
+    "pid_episodes.json": "d1e08eb551708c382848d39392109daa0d9c7c7fbc9e37740b2d44ea70e6c057",
+    "pid_traces.npz": "379ca36c1d4f44e9145a6b125a2669f8c614fed57ef739fb297b5bc1e68ab85a",
+    "TD3_19111_episodes.json": "a6eff64eff9e8eb38f08c4a77738131448b5075ba3777eca6ae30a5046724b45",
+    "TD3_19111_traces.npz": "7cc177be0d66c1f4617c19c2e7cc66884cc24f4a1e3b98b83806ae05cf074117",
+    "TD3_19222_episodes.json": "7e9b6fda337d9276623f9a3cfc5d0ac43aa0535fa10d94772ae6e5987a24bbd8",
+    "TD3_19222_traces.npz": "c352ea5030575c220fd07332b7f26307f224e6a3fa73f93fbea9ba8f3376acef",
+    "TD3_19333_episodes.json": "0c8279c63a97f827189b33e6d4d72eff5f11e5c13e160a4b3703c0d409d92d2f",
+    "TD3_19333_traces.npz": "70c18966361469db3d7de286cfbe8491ab815ad9d266b2ebe6e20b7b2d1c5fbc"
+  }
+}

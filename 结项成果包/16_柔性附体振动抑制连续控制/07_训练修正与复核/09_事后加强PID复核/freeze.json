@@ -1,0 +1,15 @@
+{
+  "settings": {
+    "method": "PID",
+    "kp": 2.4386782774043816,
+    "kd": 1.7198638416404861,
+    "ki": 0.0
+  },
+  "selected_sha256": "cfca178bd25ecf688c8790cb34fed60ec6e669fe77b4f8c9cac98e8524f09283",
+  "test_initial_sha256": "9f4ac50aaa20ff70dc6b0eeeb25542bc9e209be3f58a67a13c4f72a21cefd83a",
+  "production_source_hashes": {
+    "代码\\flexible_study.py": "6aae327fd60514f2c0659ca29c8c4b9e9d75d523d52d432cfa2be0112bd33088",
+    "代码\\test_flexible.py": "5fdd9aec2745d015a52a6f0b8cf2ab564ab2528d159bce3284fe11d0afccfe8c"
+  },
+  "post_hoc": true
+}

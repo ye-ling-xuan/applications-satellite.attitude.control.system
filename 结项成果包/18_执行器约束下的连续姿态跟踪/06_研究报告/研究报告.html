@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>执行器约束下的连续姿态跟踪</title>
+<style>body{max-width:1100px;margin:36px auto;padding:0 22px;font:17px/1.85 "Microsoft YaHei",sans-serif;color:#243746}h1{font-size:29px}h2{font-size:22px;margin-top:32px}table{border-collapse:collapse;width:100%;font-size:15px}td,th{border:1px solid #ccd6df;padding:9px;text-align:left}th{background:#edf3f7}img{width:100%;margin:15px 0}.finding{padding:16px;background:#edf4f9;border-left:5px solid #557db1}code{background:#f0f3f5}</style>
+<h1>执行器约束下的连续姿态跟踪</h1><p class="finding">未证明三个正式种子均相对同一前馈PID基底获得稳定学习增量。</p>
+<p>卫星持续跟随随时间变化的扫描指令。执行器力矩既不能超过±0.25 N·m，每秒也最多变化0.08 N·m；突然改变指令不会让真实力矩瞬间改变。这是连续控制任务，AI每0.1秒输出一次连续力矩补偿。</p>
+<p>所有方法都能获得相同的姿态、角速度、实际力矩和未来3秒已知扫描指令。AI基本反馈使用已经整定的“PID＋模型前馈和预览”，关闭AI时严格恢复这一基底。</p>
+<table><tr><th>方法</th><th>平均角度RMS误差 / °</th><th>平均力矩平方积分 / N²·m²·s</th><th>物理失败</th></tr><tr><td>PID</td><td>3.9381</td><td>0.08551</td><td>0/128</td></tr><tr><td>PID_feedforward_preview</td><td>1.0198</td><td>0.07516</td><td>0/128</td></tr><tr><td>MPC_SLSQP</td><td>3.0287</td><td>0.11492</td><td>10/128</td></tr><tr><td>PPO_symmetry_seed_111</td><td>0.9526</td><td>0.07889</td><td>0/128</td></tr><tr><td>PPO_symmetry_seed_222</td><td>0.9843</td><td>0.07786</td><td>0/128</td></tr><tr><td>PPO_symmetry_seed_333</td><td>0.9931</td><td>0.07917</td><td>0/128</td></tr></table>
+<img src="控制器对比.png" alt="控制器对比"><ul><li>种子111：相对同一前馈PID的RMS误差降低6.59%；误差差值99.1667%区间[-0.00321, 0.11833]°；力矩平方积分变化+4.97%。</li><li>种子222：相对同一前馈PID的RMS误差降低3.48%；误差差值99.1667%区间[-0.01802, 0.07484]°；力矩平方积分变化+3.59%。</li><li>种子333：相对同一前馈PID的RMS误差降低2.62%；误差差值99.1667%区间[-0.05454, 0.08226]°；力矩平方积分变化+5.35%。</li></ul>
+<p>RMS越低表示持续跟踪越准确；力矩平方积分越低表示本研究定义的力矩使用代价越低。它不是实测电能。跟踪误差改善和代价上升可以同时发生，不能称为所有指标全面优越。</p>
+<h2>训练做了什么改进</h2><p>原TD3、PPO开发均未在固定综合验证目标上超越零补偿，原始尝试完整保留。后续追加声明采用较小补偿、低学习率、较长rollout，并利用物理反号对称性约束PPO演员：所有姿态、角速度和力矩同时反号时，输出补偿也反号。此结构从训练起保持一致，没有测试时修改动作，也没有PID动作标签。</p>
+<p>AI是否增加作用，应看它相对同一前馈PID基底的比较。只比较普通PID，会把模型前馈和预览带来的收益也混算到AI上。本页同时报告两种比较。</p>
+<h2>范围和局限</h2><p>这是单轴、理想传感器反馈、固定执行器约束的仿真。传统PID、前馈和预览经过开发与验证整定。MPC求解的是固定3秒预测时域和固定权重的凸二次规划；完整保存求解残差，但尚未进行全面的预测时域、终端代价和权重优化。因此结果只能比较本次实现，不能声称AI优于充分优化的所有MPC。</p>
+<p>测试为128条独立扫描轨迹，每条30秒；模型冻结后才打开测试响应。1024回合、307200个区间完成全量物理、指令和指标回放，并以独立ODE积分检查代表区间。</p>
+<p><a href="研究报告.md">完整报告</a> · <a href="开发过程说明.md">开发过程说明</a> · <a href="AI增量核验结论.json">学习增量与区间</a> · <a href="../05_独立核验/verification.json">全量核验</a></p>
+<img src="中位数改善样例.png" alt="中位数改善样例"></html>

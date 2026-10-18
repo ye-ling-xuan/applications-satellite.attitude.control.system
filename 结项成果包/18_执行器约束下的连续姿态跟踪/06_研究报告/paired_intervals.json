@@ -1,0 +1,130 @@
+{
+  "advantage_vs_PID": true,
+  "comparisons": {
+    "PPO_symmetry_seed_111": {
+      "PID": {
+        "reference_mean": 3.9380713519204322,
+        "candidate_mean": 0.952625907274973,
+        "absolute_reduction": 2.9854454446454595,
+        "relative_reduction": 0.7580983628418979,
+        "difference_interval": [
+          2.6629651198030775,
+          3.3571891064598667
+        ],
+        "confidence": 0.9833333333333333,
+        "candidate_failures": 0,
+        "reference_failures": 0
+      },
+      "PID_feedforward_preview": {
+        "reference_mean": 1.0198059883578334,
+        "candidate_mean": 0.952625907274973,
+        "absolute_reduction": 0.0671800810828605,
+        "relative_reduction": 0.06587535457703941,
+        "difference_interval": [
+          0.003186588104016417,
+          0.11495324279007696
+        ],
+        "confidence": 0.9833333333333333,
+        "candidate_failures": 0,
+        "reference_failures": 0
+      },
+      "MPC_SLSQP": {
+        "reference_mean": 3.028671808531327,
+        "candidate_mean": 0.952625907274973,
+        "absolute_reduction": 2.076045901256354,
+        "relative_reduction": 0.6854641349414075,
+        "difference_interval": [
+          0.7749268261279624,
+          3.5785616998151495
+        ],
+        "confidence": 0.9833333333333333,
+        "candidate_failures": 0,
+        "reference_failures": 10
+      }
+    },
+    "PPO_symmetry_seed_222": {
+      "PID": {
+        "reference_mean": 3.9380713519204322,
+        "candidate_mean": 0.9842788918676229,
+        "absolute_reduction": 2.953792460052809,
+        "relative_reduction": 0.7500606759225854,
+        "difference_interval": [
+          2.6247952741339278,
+          3.3329788089702794
+        ],
+        "confidence": 0.9833333333333333,
+        "candidate_failures": 0,
+        "reference_failures": 0
+      },
+      "PID_feedforward_preview": {
+        "reference_mean": 1.0198059883578334,
+        "candidate_mean": 0.9842788918676229,
+        "absolute_reduction": 0.03552709649021064,
+        "relative_reduction": 0.03483711303501846,
+        "difference_interval": [
+          -0.01306654515873785,
+          0.07230386019767379
+        ],
+        "confidence": 0.9833333333333333,
+        "candidate_failures": 0,
+        "reference_failures": 0
+      },
+      "MPC_SLSQP": {
+        "reference_mean": 3.028671808531327,
+        "candidate_mean": 0.9842788918676229,
+        "absolute_reduction": 2.0443929166637043,
+        "relative_reduction": 0.675013024159616,
+        "difference_interval": [
+          0.7362465881150521,
+          3.5565867138000984
+        ],
+        "confidence": 0.9833333333333333,
+        "candidate_failures": 0,
+        "reference_failures": 10
+      }
+    },
+    "PPO_symmetry_seed_333": {
+      "PID": {
+        "reference_mean": 3.9380713519204322,
+        "candidate_mean": 0.9931154608680414,
+        "absolute_reduction": 2.9449558910523908,
+        "relative_reduction": 0.7478167935215951,
+        "difference_interval": [
+          2.6281460478752585,
+          3.3090398948891853
+        ],
+        "confidence": 0.9833333333333333,
+        "candidate_failures": 0,
+        "reference_failures": 0
+      },
+      "PID_feedforward_preview": {
+        "reference_mean": 1.0198059883578334,
+        "candidate_mean": 0.9931154608680414,
+        "absolute_reduction": 0.026690527489792108,
+        "relative_reduction": 0.026172161954815643,
+        "difference_interval": [
+          -0.0457282545745574,
+          0.079056985811416
+        ],
+        "confidence": 0.9833333333333333,
+        "candidate_failures": 0,
+        "reference_failures": 0
+      },
+      "MPC_SLSQP": {
+        "reference_mean": 3.028671808531327,
+        "candidate_mean": 0.9931154608680414,
+        "absolute_reduction": 2.0355563476632854,
+        "relative_reduction": 0.6720953858154655,
+        "difference_interval": [
+          0.736568329106586,
+          3.5326903225850668
+        ],
+        "confidence": 0.9833333333333333,
+        "candidate_failures": 0,
+        "reference_failures": 10
+      }
+    }
+  },
+  "primary_confidence": 0.9833333333333333,
+  "secondary_intervals": "exploratory; same per-reference correction, no global superiority claim"
+}

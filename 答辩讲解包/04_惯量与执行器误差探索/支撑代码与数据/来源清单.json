@@ -1,0 +1,126 @@
+{
+  "purpose": "论文主线重组；仅索引原工程及原样核心图，不重训、不更换历史结果",
+  "date": "2026-10-18",
+  "sources": [
+    {
+      "source": "结项成果包/08_惯量域随机化与泛化边界研究/01_实验协议与配置/protocol.json",
+      "sha256": "522530cdc38532dbb90d17e9b5fe0b838037339caa5f2bcc9c233c626c24a22d",
+      "bytes": 3733,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/08_惯量域随机化与泛化边界研究/05_研究分析与核验/核心结论.json",
+      "sha256": "cffa2aea78cd2e9af40645cfc46715388d8acc643000ee195caae780f615ae6a",
+      "bytes": 44009,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/08_惯量域随机化与泛化边界研究/05_研究分析与核验/研究分析.md",
+      "sha256": "540fb6c165c218870182c9ce1a95d5bda5b4034a7f4762008c56da341f6f2057",
+      "bytes": 11370,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/08_惯量域随机化与泛化边界研究/05_研究分析与核验/独立核验记录.json",
+      "sha256": "0cbc4b3922472cc10048d4640552abbb5b5ed3b774cbf2440371d4e8b78de05d",
+      "bytes": 32316,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/12_执行器滞后与纯延迟对比研究/研究计划.md",
+      "sha256": "1167296add0fc8e3e7ed5cfe5a1cfcdc4459bee334e018f16720ad69863acda2",
+      "bytes": 21603,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/12_执行器滞后与纯延迟对比研究/代码/actuator_study/physics.py",
+      "sha256": "3f5bd200e47fe00fd11bf3ad9198043f64e22b4f94fb6d1d2b2b567acf57de40",
+      "bytes": 11826,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/12_执行器滞后与纯延迟对比研究/代码/actuator_study/learning.py",
+      "sha256": "ea0d560d082642c9b80116c487c675afaffbc849906bfbbb308f29e9fcb0b363",
+      "bytes": 33134,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/12_执行器滞后与纯延迟对比研究/代码/actuator_study/protocol.py",
+      "sha256": "5b0b275d02bda6efef2411f37d44b5b477bb704d0694b1e6769af1858f639515",
+      "bytes": 5057,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/12_执行器滞后与纯延迟对比研究/06_结果与说明/研究结果说明.md",
+      "sha256": "40942539b887771f06e171cff9d0a5e6d58a54f7c57f8e0ea938dd05121c37e0",
+      "bytes": 6740,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/12_执行器滞后与纯延迟对比研究/06_结果与说明/结果摘要.json",
+      "sha256": "fee1daab30140e96612c6db0292ad874b46e85e8acb447ffd49f99b393676ae7",
+      "bytes": 3582,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/12_执行器滞后与纯延迟对比研究/05_独立核验/核验结果.json",
+      "sha256": "235e1bdfdeb6c6bf562c6cb47b4ede6983c01216c67d1e6a744cedfbace18a89",
+      "bytes": 86629,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/12_执行器滞后与纯延迟对比研究/05_独立核验/奖励设计诊断.md",
+      "sha256": "14ab567befb8440b99bd05f9edf36cb1c55044b1ddee270560a2dbdb851126a3",
+      "bytes": 3047,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/15_连续控制训练修正与多算法研究/06_结果与说明/研究结果说明.md",
+      "sha256": "77f1a5a7ab6d76a3f5cd96158cf7cb1f1bd943145ba3d64500f91a59d9c8f813",
+      "bytes": 7410,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/15_连续控制训练修正与多算法研究/06_结果与说明/结果摘要.json",
+      "sha256": "3a67764fde8adf87479290e5c7df3ea138fbce2a8140def8feb5975c102119c8",
+      "bytes": 892,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/15_连续控制训练修正与多算法研究/06_结果与说明/训练效果与局限.md",
+      "sha256": "a81cb980d637a2d7a7209f88d75f40538f1872cb70caa307f821b9f3c16e77ea",
+      "bytes": 2045,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/15_连续控制训练修正与多算法研究/05_独立核验/核验结果.json",
+      "sha256": "814c9bffae1de68b822c31dcf083a851fc4273124119b90b75023939443202d3",
+      "bytes": 72669,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/08_惯量域随机化与泛化边界研究/01_实验协议与配置/training_single_nominal.json",
+      "sha256": "4ec45a2d3a73ff3d58f741bfe7a75667ff67d744e23db228c53c071247c0e890",
+      "bytes": 563,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/08_惯量域随机化与泛化边界研究/01_实验协议与配置/training_single_randomized.json",
+      "sha256": "7e379b8827f6088b062cd35460db14277f050f40640797963ebde2c096e93e7c",
+      "bytes": 566,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/08_惯量域随机化与泛化边界研究/01_实验协议与配置/training_three_nominal.json",
+      "sha256": "9a263230bd443a936d57b6803054a79074c4887487465a80c20eed083793c996",
+      "bytes": 562,
+      "reference_only": true
+    },
+    {
+      "source": "结项成果包/08_惯量域随机化与泛化边界研究/01_实验协议与配置/training_three_randomized.json",
+      "sha256": "19627ce142fe2d6eb06a6cf135082ef25b4b2dbf6084ed88829bc9d004cb75db",
+      "bytes": 565,
+      "reference_only": true
+    }
+  ]
+}

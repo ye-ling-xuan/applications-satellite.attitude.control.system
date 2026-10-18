@@ -1,0 +1,12 @@
+{
+  "success": 0.9125,
+  "failed": 0.0421875,
+  "cost": 0.1331789623380228,
+  "rms_angle_deg": 2.7658784145501794,
+  "peak_relative_deg": 3.7324801606453675,
+  "residual_relative_rms_deg": 0.4397721211327183,
+  "count": 640,
+  "passes": 584,
+  "physical_failures": 27,
+  "selection_cost": 0.5972630969213764
+}

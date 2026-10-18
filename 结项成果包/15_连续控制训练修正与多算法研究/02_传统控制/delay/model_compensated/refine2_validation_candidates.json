@@ -1,0 +1,1730 @@
+[
+  {
+    "kp": 0.5475465468566469,
+    "kd": 1.5922190007203778,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6312513880715682,
+    "kd": 1.4642778266312928,
+    "ki": 0.005880985155487241,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6175403406369867,
+    "kd": 1.3375117545324076,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5548592510507692,
+    "kd": 1.255293033642936,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5253283484530891,
+    "kd": 1.386502152036177,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5938044926892545,
+    "kd": 1.460631616034669,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5318394482930534,
+    "kd": 1.3916877813514459,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5930676018080808,
+    "kd": 1.3647004479771674,
+    "ki": 0.00021606688963646237,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5291465611722609,
+    "kd": 1.3441752579168553,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5857401753430082,
+    "kd": 1.4213383702921243,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5690622517786229,
+    "kd": 1.5603673472872748,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6265575961963269,
+    "kd": 1.3999928799092949,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5507821122659348,
+    "kd": 1.3422855480217037,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.536557823692488,
+    "kd": 1.3296099547837752,
+    "ki": 0.0006733718341958608,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5742081648985965,
+    "kd": 1.5492459457626473,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6084458934438737,
+    "kd": 1.3092744559046672,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6594147931879959,
+    "kd": 1.2541218824623113,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5697164014842486,
+    "kd": 1.3560641003543326,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5623786387320522,
+    "kd": 1.3710336952367788,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5246764628066624,
+    "kd": 1.262025226490461,
+    "ki": 0.004667094890739643,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5860099837438467,
+    "kd": 1.3156019487831194,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5585778966404013,
+    "kd": 1.5121490733689527,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.638409638404363,
+    "kd": 1.3773840213728659,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5141894025865728,
+    "kd": 1.3275192152004198,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5136790276205249,
+    "kd": 1.240559498148054,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.45625036671979646,
+    "kd": 1.1156348018508686,
+    "ki": 0.008969826234397568,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.46628044222093407,
+    "kd": 1.1614137140793321,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5125249055012505,
+    "kd": 1.323394938506218,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.4694437738133462,
+    "kd": 1.4187288954451605,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5107306482770115,
+    "kd": 1.222057273364831,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5103293107066692,
+    "kd": 1.11256328724272,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5181895037873763,
+    "kd": 1.2960958373343519,
+    "ki": 0.04894055655625908,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.513715094244472,
+    "kd": 1.0483886494973178,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.47908576269457465,
+    "kd": 1.2871071790838238,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.45992652370058257,
+    "kd": 1.1919503786992085,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5410649830043948,
+    "kd": 1.1332869506286718,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.43529100869164883,
+    "kd": 1.2329450618396245,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5048194450943257,
+    "kd": 1.206980212248842,
+    "ki": 0.002829870113051682,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5022186727571958,
+    "kd": 1.1022266887482683,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5217097956786321,
+    "kd": 1.2826160163903486,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5292723975539493,
+    "kd": 1.0924085344841081,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.48769748387681144,
+    "kd": 1.08310291012659,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5119022934784243,
+    "kd": 1.175134148344129,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5135307508502239,
+    "kd": 1.379804712818559,
+    "ki": 0.0014818520697761032,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.47611378085005013,
+    "kd": 1.1747957229486359,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5478304853540339,
+    "kd": 1.1889068924530262,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5366164831651581,
+    "kd": 1.091215259594198,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5216195734626482,
+    "kd": 1.3328711960814987,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6500429810268192,
+    "kd": 1.5630447256317552,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6504675374106028,
+    "kd": 1.5010334111330716,
+    "ki": 0.034730459683768915,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6181701314851138,
+    "kd": 1.5630711205633068,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6253482556299519,
+    "kd": 1.4955082312410524,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6543291090455376,
+    "kd": 1.3800207296979339,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6599490895748619,
+    "kd": 1.6114196774058756,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6105071908287397,
+    "kd": 1.6067207038677223,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5591528373749882,
+    "kd": 1.3170274455640207,
+    "ki": 0.0007389297067482287,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5538688152298187,
+    "kd": 1.4257660011137085,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.598221191254305,
+    "kd": 1.4527136923319097,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6568666802303178,
+    "kd": 1.5961268641420534,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.66575792234698,
+    "kd": 1.3156010115173253,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6906231505774258,
+    "kd": 1.7332799058036252,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6411919974990767,
+    "kd": 1.5152395417773825,
+    "ki": 0.003387225421609159,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6292084847297175,
+    "kd": 1.444825484000006,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7731538609274959,
+    "kd": 1.414518502472026,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6454572560898214,
+    "kd": 1.4814778447091177,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6387720412272634,
+    "kd": 1.6126636521053608,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6628980973910147,
+    "kd": 1.568048638134844,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6406779609144791,
+    "kd": 1.5634784530566013,
+    "ki": 0.030512656489139242,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6239797380374842,
+    "kd": 1.541802217491711,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6700433666965326,
+    "kd": 1.6747395752057574,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6133708648677333,
+    "kd": 1.4930962194116097,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.629083937518394,
+    "kd": 1.391139251277313,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6470273671871439,
+    "kd": 1.3885020004410598,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6448437097265227,
+    "kd": 1.4801418174558254,
+    "ki": 0.000450338498575138,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6997640390193182,
+    "kd": 1.6210431320085021,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7190723670738375,
+    "kd": 1.650926758703904,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6251254285116086,
+    "kd": 1.821989510322,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6614539521890842,
+    "kd": 1.5024041411503275,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7241826110468167,
+    "kd": 1.4761709236565974,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5755525000096242,
+    "kd": 1.5894079061510276,
+    "ki": 0.0028032596958454986,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7657085089727486,
+    "kd": 1.4611023365181437,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6246768390355798,
+    "kd": 1.732055472176144,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5895738195689709,
+    "kd": 1.6229493610431391,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6768069942462585,
+    "kd": 1.5183481999238129,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7551396086216791,
+    "kd": 1.7905228871442227,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7275403830160472,
+    "kd": 1.5656816269325564,
+    "ki": 0.00022335358907995005,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6365997369500785,
+    "kd": 1.6083287986330275,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5809569906207994,
+    "kd": 1.525893046895263,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.8029673976992417,
+    "kd": 1.3623435708103848,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6617970792969874,
+    "kd": 1.4823078657679851,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6145063504188184,
+    "kd": 1.4984632219807434,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7660496931718148,
+    "kd": 1.6601950612447365,
+    "ki": 0.0022451586685543843,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.66561480118459,
+    "kd": 1.432184125988214,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6626811734841316,
+    "kd": 1.5302764890890321,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6567700850875645,
+    "kd": 1.423304383242207,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6410663537980303,
+    "kd": 1.6854114513535947,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6095542773801218,
+    "kd": 1.5147067687992957,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6423703668165953,
+    "kd": 1.5595840616509864,
+    "ki": 0.0007670650263390822,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6689749137012114,
+    "kd": 1.368790695898171,
+    "ki": 0.0008242199636840708,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5766048666618836,
+    "kd": 1.422447383838742,
+    "ki": 0.0007267055770850191,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6357084017241397,
+    "kd": 1.4972734873184232,
+    "ki": 0.0006944487099157234,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6169114315443308,
+    "kd": 1.6975102299484728,
+    "ki": 0.0007421705367841759,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6580198623787938,
+    "kd": 1.469121354764666,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.534400492898364,
+    "kd": 1.391597993271735,
+    "ki": 0.0007363670246657997,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5970659141136812,
+    "kd": 1.3809761332971662,
+    "ki": 0.0008575779892306916,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6753192971520284,
+    "kd": 1.301445822402162,
+    "ki": 0.0007846913753408243,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6476711157672398,
+    "kd": 1.3392280184822434,
+    "ki": 0.0008553798298851724,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5972327794457933,
+    "kd": 1.359546943483441,
+    "ki": 0.0007201212043347723,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7114359048325297,
+    "kd": 1.310569660734623,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.565925349714841,
+    "kd": 1.3859661250872115,
+    "ki": 0.0007135144091509736,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6352887105750971,
+    "kd": 1.3283889864581275,
+    "ki": 0.0007717463938020786,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6272777414351437,
+    "kd": 1.5715590241588053,
+    "ki": 0.0007334823632764506,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5389283570223705,
+    "kd": 1.3753458280501163,
+    "ki": 0.0008023814600017314,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6600861952810932,
+    "kd": 1.3410488775679628,
+    "ki": 0.0007199644244729916,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6736545141682522,
+    "kd": 1.5011126465809734,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5966561308746061,
+    "kd": 1.269560892646074,
+    "ki": 0.000859339199909779,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6226430408743532,
+    "kd": 1.3284717155815438,
+    "ki": 0.0007664840051387323,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.2,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.604154175488408,
+    "kd": 1.3739941927914572,
+    "ki": 0.000706519932408357,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.653480291257637,
+    "kd": 1.40025387797124,
+    "ki": 0.0007327237325038933,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6743559619892053,
+    "kd": 1.4126843525335946,
+    "ki": 0.0007334216391908481,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5412255880606338,
+    "kd": 1.4669264439771612,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5982420885687697,
+    "kd": 1.3431501564163133,
+    "ki": 0.002529190021218286,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5527812425597705,
+    "kd": 1.267929849621176,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6100713463013124,
+    "kd": 1.205242962332359,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6441660036424708,
+    "kd": 1.285183480656464,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5517704505734101,
+    "kd": 1.226612233147435,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.4818265405514668,
+    "kd": 1.3805496558575772,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.4700926983595297,
+    "kd": 1.273661450633183,
+    "ki": 0.0013184487242897506,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5504667736542869,
+    "kd": 1.3770602288212006,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.48531116452906375,
+    "kd": 1.2295962033241126,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5434113369894421,
+    "kd": 1.3285802921048215,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5398643655884863,
+    "kd": 1.3069472325309313,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.537195930836724,
+    "kd": 1.4114212746131325,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5632075224005195,
+    "kd": 1.337178533851605,
+    "ki": 0.00029400473028253973,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5524526906613983,
+    "kd": 1.4115543066930827,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5100571248482717,
+    "kd": 1.3392960393702589,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.47885886868231486,
+    "kd": 1.302801545557509,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6076710711687056,
+    "kd": 1.4267317027876285,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5477170359312645,
+    "kd": 1.2919336614705168,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5641780625527478,
+    "kd": 1.5109003288011162,
+    "ki": 0.004040131289971746,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5719660131103126,
+    "kd": 1.3405561600687514,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5264328827511934,
+    "kd": 1.2972393500841648,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5049150285833439,
+    "kd": 1.2407581316374348,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5203297382126449,
+    "kd": 1.3008914724448608,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.8168535796793015,
+    "kd": 1.5740969974363728,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7059340481643562,
+    "kd": 1.5086025618071248,
+    "ki": 0.041212020234708206,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7109897739579021,
+    "kd": 1.5844509696763147,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7221679851230872,
+    "kd": 1.5666109894488116,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.669984369566691,
+    "kd": 1.6203642767819777,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7205415398116951,
+    "kd": 1.5890638685208007,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7212395539121367,
+    "kd": 1.4178462447011615,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7145808699828284,
+    "kd": 1.611800243743126,
+    "ki": 0.004511393939009689,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6482804508887482,
+    "kd": 1.4570139436973337,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6487395849559623,
+    "kd": 1.700476732750992,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7746474286074881,
+    "kd": 1.449246712554958,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7284672501582524,
+    "kd": 1.435074483825276,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.665675070746372,
+    "kd": 1.5156567521686453,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6370821587573132,
+    "kd": 1.551163053703036,
+    "ki": 0.009870359261442562,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6626549997380038,
+    "kd": 1.3954285301287108,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6267886372433059,
+    "kd": 1.2857171955233555,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6441161540976037,
+    "kd": 1.3110646840285152,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7279959963393662,
+    "kd": 1.5105194998884386,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6209356544143907,
+    "kd": 1.3009543402190402,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.6643511217156628,
+    "kd": 1.5135122801172343,
+    "ki": 0.005312371825561297,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7753808003110438,
+    "kd": 1.2844538254499223,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.25,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7070570419881624,
+    "kd": 1.42293935187305,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7184592175909922,
+    "kd": 1.480382399676491,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.7747463231995025,
+    "kd": 1.3388269398904982,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.30000000000000004,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5842451903344891,
+    "kd": 1.2768954906898207,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.540728373301873,
+    "kd": 1.2001447188932621,
+    "ki": 0.0006524764311245718,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5376510650344694,
+    "kd": 1.4592633575372673,
+    "ki": 0.000579129429609516,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5203084205511844,
+    "kd": 1.2529725472512294,
+    "ki": 0.0006733887940886175,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.4726003517613653,
+    "kd": 1.1503659165233893,
+    "ki": 0.000643722065669217,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.60030789270414,
+    "kd": 1.2687141969317797,
+    "ki": 0.0006434102025224013,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.48911718616342664,
+    "kd": 1.2235673134962384,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.4816277688366146,
+    "kd": 1.2263762128042648,
+    "ki": 0.0006571849644447595,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5013197773291695,
+    "kd": 1.380663748875099,
+    "ki": 0.0006313695234565003,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5348505845183024,
+    "kd": 1.2315007143683254,
+    "ki": 0.000728489048796651,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5902373484342741,
+    "kd": 1.2555257096222074,
+    "ki": 0.0007357808125331987,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.47704945893888134,
+    "kd": 1.182549381921436,
+    "ki": 0.0005065320347666553,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5568630292218266,
+    "kd": 1.1286157315599552,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.05,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.540911740046925,
+    "kd": 1.240267890623829,
+    "ki": 0.0006762199648003874,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5867460578147984,
+    "kd": 1.279615608443466,
+    "ki": 0.0007056161244328282,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.541692209234994,
+    "kd": 1.3489313064046895,
+    "ki": 0.000683313749566047,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.51909769465195,
+    "kd": 1.2697383231453294,
+    "ki": 0.0007241329601773798,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5674755751496099,
+    "kd": 1.1161491320048786,
+    "ki": 0.000611204969968718,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.4961180940187579,
+    "kd": 1.2298189512000874,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PD",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5178614587348094,
+    "kd": 1.4411103597948858,
+    "ki": 0.0006975233118149506,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5525314449854023,
+    "kd": 1.3064233589393637,
+    "ki": 0.0006453595847961261,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.15000000000000002,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.48533736589187315,
+    "kd": 1.2845168706365475,
+    "ki": 0.0005071593476640872,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5630276869889829,
+    "kd": 1.1534306473563731,
+    "ki": 0.0006783169279147063,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  },
+  {
+    "kp": 0.5494985246666395,
+    "kd": 1.098935963523093,
+    "ki": 0.0006362939962747831,
+    "integral_limit": 2.0,
+    "nominal_parameter_s": 0.1,
+    "family": "predicted_PID",
+    "stage": "refine2"
+  }
+]

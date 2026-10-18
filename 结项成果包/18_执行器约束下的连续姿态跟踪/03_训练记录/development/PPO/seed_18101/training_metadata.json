@@ -1,0 +1,145 @@
+{
+  "status": "complete",
+  "algorithm": "PPO",
+  "seed": 18101,
+  "stage": "development",
+  "requested_steps": 131072,
+  "actual_steps": 131072,
+  "source_sha256": "a718ae748396661f5498ee0f8bc8c9956f70f9afb3a7b3dbd9921d98cda9216f",
+  "base_parameters": {
+    "kp": 0.2649456852206539,
+    "kd": 0.6429328040149732,
+    "ki": 0.0,
+    "feedforward": 0.5,
+    "preview_s": 0.6
+  },
+  "checkpoints": [
+    {
+      "steps": 0,
+      "model_path": "03_训练记录/development/PPO/seed_18101/checkpoints/steps_000000/model.zip",
+      "model_sha256": "f7f465c387f99ff854f876e7ae209b6240a35dd2e4be01d424fa74b2a69dc1e3",
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.7991028484747535,
+        "mean_objective": 6.180500885661136,
+        "mean_actual_cost": 0.06372067128721866,
+        "max_error_deg": 9.564468326846493,
+        "maximum_torque": 0.14503276197651246,
+        "maximum_slew": 0.08000000000000007
+      },
+      "optimizer_updates": 0
+    },
+    {
+      "steps": 32768,
+      "model_path": "03_训练记录/development/PPO/seed_18101/checkpoints/steps_032768/model.zip",
+      "model_sha256": "d80a2ce8305a1c3fad5bf05282c4ce09d4fb351cc016528ba6677b973437c181",
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.6757365303658992,
+        "mean_objective": 11.94640295613479,
+        "mean_actual_cost": 0.071493614713962,
+        "max_error_deg": 21.427062422622033,
+        "maximum_torque": 0.1670225130934546,
+        "maximum_slew": 0.08000000000000007
+      },
+      "optimizer_updates": 320
+    },
+    {
+      "steps": 65536,
+      "model_path": "03_训练记录/development/PPO/seed_18101/checkpoints/steps_065536/model.zip",
+      "model_sha256": "ddf1ea246905dde5848c1c363ef3027b2a490a0977c3399f6906ffd69fb86661",
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 0.6968402425008202,
+        "mean_objective": 13.21901474736405,
+        "mean_actual_cost": 0.07330098892958187,
+        "max_error_deg": 20.63560612281606,
+        "maximum_torque": 0.1698746437252783,
+        "maximum_slew": 0.08000000000000007
+      },
+      "optimizer_updates": 640
+    },
+    {
+      "steps": 98304,
+      "model_path": "03_训练记录/development/PPO/seed_18101/checkpoints/steps_098304/model.zip",
+      "model_sha256": "a6ce02bdf62c328115d59b1fbde912fb948ef1cbd36cf40b0daecfb1375905de",
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.260601676783172,
+        "mean_objective": 20.050737827006824,
+        "mean_actual_cost": 0.06632966056168854,
+        "max_error_deg": 20.920058628671764,
+        "maximum_torque": 0.16822647732366677,
+        "maximum_slew": 0.08000000000000007
+      },
+      "optimizer_updates": 960
+    },
+    {
+      "steps": 131072,
+      "model_path": "03_训练记录/development/PPO/seed_18101/checkpoints/steps_131072/model.zip",
+      "model_sha256": "dad913ca8b395e7739ceca9258673c89c0d460becb391b505228226c4c80d359",
+      "validation": {
+        "count": 64,
+        "physical_failures": 0,
+        "mean_rms_error_deg": 1.4295865225022921,
+        "mean_objective": 31.009645789843763,
+        "mean_actual_cost": 0.06668167088780282,
+        "max_error_deg": 29.816868189613867,
+        "maximum_torque": 0.17899044181237692,
+        "maximum_slew": 0.08000000000000007
+      },
+      "optimizer_updates": 1280
+    }
+  ],
+  "best": {
+    "steps": 0,
+    "model_path": "03_训练记录/development/PPO/seed_18101/best.zip",
+    "model_sha256": "f7f465c387f99ff854f876e7ae209b6240a35dd2e4be01d424fa74b2a69dc1e3",
+    "validation": {
+      "count": 64,
+      "physical_failures": 0,
+      "mean_rms_error_deg": 0.7991028484747535,
+      "mean_objective": 6.180500885661136,
+      "mean_actual_cost": 0.06372067128721866,
+      "max_error_deg": 9.564468326846493,
+      "maximum_torque": 0.14503276197651246,
+      "maximum_slew": 0.08000000000000007
+    },
+    "optimizer_updates": 0,
+    "checkpoint_model_path": "03_训练记录/development/PPO/seed_18101/checkpoints/steps_000000/model.zip"
+  },
+  "started_utc": "2026-10-17T15:44:36.998939+00:00",
+  "replay_buffer_saved": false,
+  "test_responses_used": false,
+  "trained_checkpoint_improved_initial": false,
+  "versions": {
+    "torch": "2.10.0+cpu",
+    "stable_baselines3": "2.7.1",
+    "gymnasium": "1.2.3",
+    "numpy": "1.26.4"
+  },
+  "initial": {
+    "steps": 0,
+    "model_path": "03_训练记录/development/PPO/seed_18101/checkpoints/steps_000000/model.zip",
+    "model_sha256": "f7f465c387f99ff854f876e7ae209b6240a35dd2e4be01d424fa74b2a69dc1e3",
+    "validation": {
+      "count": 64,
+      "physical_failures": 0,
+      "mean_rms_error_deg": 0.7991028484747535,
+      "mean_objective": 6.180500885661136,
+      "mean_actual_cost": 0.06372067128721866,
+      "max_error_deg": 9.564468326846493,
+      "maximum_torque": 0.14503276197651246,
+      "maximum_slew": 0.08000000000000007
+    },
+    "optimizer_updates": 0
+  },
+  "optimizer_updates": 1280,
+  "elapsed_seconds": 20.93699999997625,
+  "source_sha256_after": "a718ae748396661f5498ee0f8bc8c9956f70f9afb3a7b3dbd9921d98cda9216f",
+  "finished_utc": "2026-10-17T15:45:04.158309+00:00"
+}

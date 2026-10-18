@@ -1,0 +1,2253 @@
+{
+  "candidates": [
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.0
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.5
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.0
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.5
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 1.0
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.0
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.5
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 1.0
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.0
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.5
+    },
+    {
+      "kp": 50.0,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.025,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.025,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.075,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.075,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.075,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.15,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.15,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.15,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.3,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.3,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 0.2,
+      "filter_time": 0.3,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.025,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.025,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.075,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.075,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.075,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.15,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.15,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.15,
+      "predict": 1.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.3,
+      "predict": 0.0
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.3,
+      "predict": 0.5
+    },
+    {
+      "kp": 46.91172785435415,
+      "kd": 21.508613320885487,
+      "ki": 1.0,
+      "filter_time": 0.3,
+      "predict": 1.0
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.025,
+      "predict": 0.0
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.025,
+      "predict": 0.5
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.075,
+      "predict": 0.0
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.075,
+      "predict": 0.5
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.075,
+      "predict": 1.0
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.15,
+      "predict": 0.0
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.15,
+      "predict": 0.5
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.15,
+      "predict": 1.0
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.3,
+      "predict": 0.0
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.3,
+      "predict": 0.5
+    },
+    {
+      "kp": 42.462168669250154,
+      "kd": 22.294543745161707,
+      "ki": 0.1140459839659245,
+      "filter_time": 0.3,
+      "predict": 1.0
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.025,
+      "predict": 0.0
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.025,
+      "predict": 0.5
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.075,
+      "predict": 0.0
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.075,
+      "predict": 0.5
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.075,
+      "predict": 1.0
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.15,
+      "predict": 0.0
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.15,
+      "predict": 0.5
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.15,
+      "predict": 1.0
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.3,
+      "predict": 0.0
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.3,
+      "predict": 0.5
+    },
+    {
+      "kp": 37.62795703811321,
+      "kd": 15.039843300023563,
+      "ki": 0.24214195354687978,
+      "filter_time": 0.3,
+      "predict": 1.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.5
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.5
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 1.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.5
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 1.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.5
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 1.0
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.0
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.5
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.0
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.5
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 1.0
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.0
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.5
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 1.0
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.0
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.5
+    },
+    {
+      "kp": 32.130844755623876,
+      "kd": 30.27787265724937,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 1.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.5
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.5
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 1.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.5
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 1.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.0
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.5
+    },
+    {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 1.0
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.0
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 0.5
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.0
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 0.5
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.075,
+      "predict": 1.0
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.0
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 0.5
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.15,
+      "predict": 1.0
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.0
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 0.5
+    },
+    {
+      "kp": 25.0,
+      "kd": 10.0,
+      "ki": 0.0,
+      "filter_time": 0.3,
+      "predict": 1.0
+    }
+  ],
+  "development": [
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.014277123033623315,
+      "mean_actual_cost": 1.1504845992316863,
+      "mean_full_rms_deg": 1.515743936462122
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.012779741807104235,
+      "mean_actual_cost": 1.143142217680067,
+      "mean_full_rms_deg": 1.51563872549729
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01159581120065224,
+      "mean_actual_cost": 1.1358358920844005,
+      "mean_full_rms_deg": 1.515539154336509
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.015236699739651235,
+      "mean_actual_cost": 1.1534297088959737,
+      "mean_full_rms_deg": 1.5158129395433069
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.014101688840064096,
+      "mean_actual_cost": 1.1519802447707745,
+      "mean_full_rms_deg": 1.5157158927002736
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.013252382443941918,
+      "mean_actual_cost": 1.1505255999075177,
+      "mean_full_rms_deg": 1.5156234145600997
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.016310088077545755,
+      "mean_actual_cost": 1.1511179082672367,
+      "mean_full_rms_deg": 1.5159182012437589
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01515950918878532,
+      "mean_actual_cost": 1.152482868603841,
+      "mean_full_rms_deg": 1.5158136815825698
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.014267456961770536,
+      "mean_actual_cost": 1.15394254516356,
+      "mean_full_rms_deg": 1.5157147643462208
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01896897089431698,
+      "mean_actual_cost": 1.1464844389090099,
+      "mean_full_rms_deg": 1.5161241441239008
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01751682915074958,
+      "mean_actual_cost": 1.1484311397128197,
+      "mean_full_rms_deg": 1.5160162923707172
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.016225892680048135,
+      "mean_actual_cost": 1.1503641942976084,
+      "mean_full_rms_deg": 1.5159124713137893
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.00953232430436369,
+      "mean_actual_cost": 0.9086779809974518,
+      "mean_full_rms_deg": 1.4734410058747678
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.007743506982671834,
+      "mean_actual_cost": 0.904846189933881,
+      "mean_full_rms_deg": 1.4733956674123154
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.006349147968443756,
+      "mean_actual_cost": 0.9011293399584729,
+      "mean_full_rms_deg": 1.4733550834700537
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.010786885686690962,
+      "mean_actual_cost": 0.9100711049728868,
+      "mean_full_rms_deg": 1.4734725009680905
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.009051678432523212,
+      "mean_actual_cost": 0.9098121770965527,
+      "mean_full_rms_deg": 1.4734280493464598
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.007640608413601239,
+      "mean_actual_cost": 0.9095859839734203,
+      "mean_full_rms_deg": 1.4733878678756056
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.012612578245347781,
+      "mean_actual_cost": 0.9081355782794613,
+      "mean_full_rms_deg": 1.4735276858488817
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.010757363083220409,
+      "mean_actual_cost": 0.9095395762322142,
+      "mean_full_rms_deg": 1.4734742242765144
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.009120073023958565,
+      "mean_actual_cost": 0.9108638156970352,
+      "mean_full_rms_deg": 1.4734244971967545
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.016493604969806275,
+      "mean_actual_cost": 0.9048901312420151,
+      "mean_full_rms_deg": 1.4736575235231928
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.014466719942431651,
+      "mean_actual_cost": 0.9064830447026614,
+      "mean_full_rms_deg": 1.473592860949445
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01253118909054772,
+      "mean_actual_cost": 0.9079670619490825,
+      "mean_full_rms_deg": 1.4735314608832422
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01125605028446206,
+      "mean_actual_cost": 0.9084283363623912,
+      "mean_full_rms_deg": 1.4734831604906802
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.009800021352542527,
+      "mean_actual_cost": 0.9045778595892514,
+      "mean_full_rms_deg": 1.4734377926667008
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.008759529499268613,
+      "mean_actual_cost": 0.9008820731387458,
+      "mean_full_rms_deg": 1.4733973355019934
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.012330670117264483,
+      "mean_actual_cost": 0.9098276729706255,
+      "mean_full_rms_deg": 1.4735145963254623
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.010855415564764154,
+      "mean_actual_cost": 0.909558260300722,
+      "mean_full_rms_deg": 1.473470173949332
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.009723230723858734,
+      "mean_actual_cost": 0.9093161457747799,
+      "mean_full_rms_deg": 1.473429931613851
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.013952339722348698,
+      "mean_actual_cost": 0.9079017696906853,
+      "mean_full_rms_deg": 1.473569834887905
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.012304854646595309,
+      "mean_actual_cost": 0.9092986044667629,
+      "mean_full_rms_deg": 1.4735163264414108
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.010914976442822827,
+      "mean_actual_cost": 0.9106159510609807,
+      "mean_full_rms_deg": 1.4734666993878056
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.017528416683366316,
+      "mean_actual_cost": 0.904679368560331,
+      "mean_full_rms_deg": 1.4736996777689368
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01564381722355222,
+      "mean_actual_cost": 0.9062382226146094,
+      "mean_full_rms_deg": 1.4736348017643455
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.013875796048404767,
+      "mean_actual_cost": 0.9077283789232554,
+      "mean_full_rms_deg": 1.4735734591067609
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.02457874361069157,
+      "mean_actual_cost": 0.9073916674540872,
+      "mean_full_rms_deg": 1.4737975986843104
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.023945213762126983,
+      "mean_actual_cost": 0.9035613409427112,
+      "mean_full_rms_deg": 1.4737520718140351
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.023571481335837117,
+      "mean_actual_cost": 0.8999457538902186,
+      "mean_full_rms_deg": 1.4737121385058047
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.025075126772965306,
+      "mean_actual_cost": 0.9088135335682072,
+      "mean_full_rms_deg": 1.4738287165166577
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.024397577128058897,
+      "mean_actual_cost": 0.908512878274968,
+      "mean_full_rms_deg": 1.473784525255616
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.023936058815846192,
+      "mean_actual_cost": 0.9082959706237723,
+      "mean_full_rms_deg": 1.4737443997156767
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.025927367537770866,
+      "mean_actual_cost": 0.9069527236210259,
+      "mean_full_rms_deg": 1.4738843651903508
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.02505952945155668,
+      "mean_actual_cost": 0.9082914109466871,
+      "mean_full_rms_deg": 1.4738303755095679
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.024421833227212558,
+      "mean_actual_cost": 0.9095512752258786,
+      "mean_full_rms_deg": 1.4737809805584483
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0280792790939039,
+      "mean_actual_cost": 0.9037860725468758,
+      "mean_full_rms_deg": 1.4740152678505967
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.02690025876742706,
+      "mean_actual_cost": 0.905285863061747,
+      "mean_full_rms_deg": 1.4739496827417664
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.025880342641800794,
+      "mean_actual_cost": 0.9067773406950991,
+      "mean_full_rms_deg": 1.473887981416895
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.010016173502975937,
+      "mean_actual_cost": 0.7294740313761507,
+      "mean_full_rms_deg": 1.4638297177425006
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.008204000806151019,
+      "mean_actual_cost": 0.7274899609472945,
+      "mean_full_rms_deg": 1.4638161158997463
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.006888564342873618,
+      "mean_actual_cost": 0.7256089312193073,
+      "mean_full_rms_deg": 1.4638081501139446
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.011368842387678995,
+      "mean_actual_cost": 0.7301056031219552,
+      "mean_full_rms_deg": 1.4638415581242779
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.00940726639087166,
+      "mean_actual_cost": 0.7302822792669671,
+      "mean_full_rms_deg": 1.4638253484563661
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.00779194950804334,
+      "mean_actual_cost": 0.7305188245126336,
+      "mean_full_rms_deg": 1.4638147120965932
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.013485712372781344,
+      "mean_actual_cost": 0.7288435551258505,
+      "mean_full_rms_deg": 1.4638732354108435
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.011356892822694663,
+      "mean_actual_cost": 0.7298230537676117,
+      "mean_full_rms_deg": 1.4638440514666513
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.009433401458905382,
+      "mean_actual_cost": 0.7308396864218695,
+      "mean_full_rms_deg": 1.4638203107649792
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01783568980630631,
+      "mean_actual_cost": 0.7269556582294087,
+      "mean_full_rms_deg": 1.463973705776419
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.015564544400765568,
+      "mean_actual_cost": 0.727923922757169,
+      "mean_full_rms_deg": 1.4639264104836958
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01339053405390559,
+      "mean_actual_cost": 0.728896281613344,
+      "mean_full_rms_deg": 1.4638845778887475
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.011160621496074623,
+      "mean_actual_cost": 0.9657918894347125,
+      "mean_full_rms_deg": 1.5151248079673625
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.008962301793960466,
+      "mean_actual_cost": 0.9617834925334144,
+      "mean_full_rms_deg": 1.5149895845336445
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.007324477327774276,
+      "mean_actual_cost": 0.9578566456960141,
+      "mean_full_rms_deg": 1.5148628377090423
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.012793773547263172,
+      "mean_actual_cost": 0.9679422928619941,
+      "mean_full_rms_deg": 1.5152207567493814
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.010403698310202186,
+      "mean_actual_cost": 0.9656594372158223,
+      "mean_full_rms_deg": 1.515077083069486
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.008387863923450404,
+      "mean_actual_cost": 0.963481320313501,
+      "mean_full_rms_deg": 1.514942012454113
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.015328915761855591,
+      "mean_actual_cost": 0.9684343983206799,
+      "mean_full_rms_deg": 1.515379463743941
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.012780669118126378,
+      "mean_actual_cost": 0.9674831808157164,
+      "mean_full_rms_deg": 1.51522227287282
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.010433364243141474,
+      "mean_actual_cost": 0.9665728246578315,
+      "mean_full_rms_deg": 1.5150740415172723
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.020475772215698854,
+      "mean_actual_cost": 0.9675890330489588,
+      "mean_full_rms_deg": 1.5156679745008486
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.017802740404596108,
+      "mean_actual_cost": 0.9674956531284611,
+      "mean_full_rms_deg": 1.5155114578229565
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.015207676374179644,
+      "mean_actual_cost": 0.9673931891712438,
+      "mean_full_rms_deg": 1.5153607499920396
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.009051859891556971,
+      "mean_actual_cost": 0.6218570068688248,
+      "mean_full_rms_deg": 1.4668408371358368
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.00607184678937137,
+      "mean_actual_cost": 0.620565200390972,
+      "mean_full_rms_deg": 1.466832320273
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0031418071758232725,
+      "mean_actual_cost": 0.6193078037569015,
+      "mean_full_rms_deg": 1.4668310800619224
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.011040715873042789,
+      "mean_actual_cost": 0.6223455066328142,
+      "mean_full_rms_deg": 1.4668509909687042
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.00807010179591903,
+      "mean_actual_cost": 0.6222132572666027,
+      "mean_full_rms_deg": 1.4668372478486222
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.005133754861350758,
+      "mean_actual_cost": 0.6220808523628782,
+      "mean_full_rms_deg": 1.4668312580402232
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.013982606400691931,
+      "mean_actual_cost": 0.6217710193849824,
+      "mean_full_rms_deg": 1.4668835365539987
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.011029017681145762,
+      "mean_actual_cost": 0.6221634580641267,
+      "mean_full_rms_deg": 1.466853827541916
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.008098438713222699,
+      "mean_actual_cost": 0.6225751063079622,
+      "mean_full_rms_deg": 1.4668315284940485
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.019645381632646054,
+      "mean_actual_cost": 0.6208042782960737,
+      "mean_full_rms_deg": 1.4670019734341462
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01674391990700474,
+      "mean_actual_cost": 0.6212385519132787,
+      "mean_full_rms_deg": 1.4669462443457713
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.013856297397431471,
+      "mean_actual_cost": 0.6216846100580956,
+      "mean_full_rms_deg": 1.4668982659684424
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.010233051388023502,
+      "mean_actual_cost": 0.47640439532415374,
+      "mean_full_rms_deg": 1.6189051587134953
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.007651624377222233,
+      "mean_actual_cost": 0.47730165582649836,
+      "mean_full_rms_deg": 1.6189670387837616
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.005562030719089208,
+      "mean_actual_cost": 0.4781806143360434,
+      "mean_full_rms_deg": 1.6190350882862397
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01205613976333249,
+      "mean_actual_cost": 0.47526991844464356,
+      "mean_full_rms_deg": 1.6188629392124365
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.009394696426388918,
+      "mean_actual_cost": 0.4777771223654535,
+      "mean_full_rms_deg": 1.6189260068491942
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.007059032276639011,
+      "mean_actual_cost": 0.48031693440167006,
+      "mean_full_rms_deg": 1.6189899809734996
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.014838368856568517,
+      "mean_actual_cost": 0.47296745621248876,
+      "mean_full_rms_deg": 1.6188398111095808
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.012047269381910475,
+      "mean_actual_cost": 0.47531196362171757,
+      "mean_full_rms_deg": 1.6188695371053583
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.009414193242494949,
+      "mean_actual_cost": 0.4776843770373673,
+      "mean_full_rms_deg": 1.6189127220704727
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.02042244726714559,
+      "mean_actual_cost": 0.4708946758523478,
+      "mean_full_rms_deg": 1.6188909366816044
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.017558834035149816,
+      "mean_actual_cost": 0.47238635526100126,
+      "mean_full_rms_deg": 1.6188826136220025
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.014747166015126295,
+      "mean_actual_cost": 0.4739564997253993,
+      "mean_full_rms_deg": 1.6188787377281486
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.009051859891556971,
+      "mean_actual_cost": 0.6218570068688248,
+      "mean_full_rms_deg": 1.4668408371358368
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.00607184678937137,
+      "mean_actual_cost": 0.620565200390972,
+      "mean_full_rms_deg": 1.466832320273
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0031418071758232725,
+      "mean_actual_cost": 0.6193078037569015,
+      "mean_full_rms_deg": 1.4668310800619224
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.011040715873042789,
+      "mean_actual_cost": 0.6223455066328142,
+      "mean_full_rms_deg": 1.4668509909687042
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.00807010179591903,
+      "mean_actual_cost": 0.6222132572666027,
+      "mean_full_rms_deg": 1.4668372478486222
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.005133754861350758,
+      "mean_actual_cost": 0.6220808523628782,
+      "mean_full_rms_deg": 1.4668312580402232
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.013982606400691931,
+      "mean_actual_cost": 0.6217710193849824,
+      "mean_full_rms_deg": 1.4668835365539987
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.011029017681145762,
+      "mean_actual_cost": 0.6221634580641267,
+      "mean_full_rms_deg": 1.466853827541916
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.008098438713222699,
+      "mean_actual_cost": 0.6225751063079622,
+      "mean_full_rms_deg": 1.4668315284940485
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.019645381632646054,
+      "mean_actual_cost": 0.6208042782960737,
+      "mean_full_rms_deg": 1.4670019734341462
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01674391990700474,
+      "mean_actual_cost": 0.6212385519132787,
+      "mean_full_rms_deg": 1.4669462443457713
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.013856297397431471,
+      "mean_actual_cost": 0.6216846100580956,
+      "mean_full_rms_deg": 1.4668982659684424
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01351091217573589,
+      "mean_actual_cost": 0.86316071532113,
+      "mean_full_rms_deg": 1.5146266968855986
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.009048042098858235,
+      "mean_actual_cost": 0.8599420794362426,
+      "mean_full_rms_deg": 1.5144120569761939
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.004644141081256564,
+      "mean_actual_cost": 0.8568395276499025,
+      "mean_full_rms_deg": 1.5142166887824915
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.016487031380416454,
+      "mean_actual_cost": 0.8650770446732189,
+      "mean_full_rms_deg": 1.5147842366652309
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01204034519803908,
+      "mean_actual_cost": 0.8626614973967385,
+      "mean_full_rms_deg": 1.5145454183556055
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.007636862551777858,
+      "mean_actual_cost": 0.8603286810378469,
+      "mean_full_rms_deg": 1.5143252924414583
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.020885339216246062,
+      "mean_actual_cost": 0.8662030042614148,
+      "mean_full_rms_deg": 1.5150552628037595
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.01646895449482098,
+      "mean_actual_cost": 0.8647473509859519,
+      "mean_full_rms_deg": 1.514787945097285
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.012084057280875296,
+      "mean_actual_cost": 0.8633065846836333,
+      "mean_full_rms_deg": 1.514537716467455
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.029331325264542574,
+      "mean_actual_cost": 0.8662420923350034,
+      "mean_full_rms_deg": 1.5155664608646318
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.024999736218952445,
+      "mean_actual_cost": 0.8656221645957191,
+      "mean_full_rms_deg": 1.5152886675719888
+    },
+    {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.02068836854806488,
+      "mean_actual_cost": 0.8650368435733432,
+      "mean_full_rms_deg": 1.515027010177113
+    }
+  ],
+  "validation": [
+    {
+      "index": 74,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.003085360553775942,
+        "mean_actual_cost": 0.6293264128049328,
+        "mean_full_rms_deg": 1.497147253274014
+      }
+    },
+    {
+      "index": 98,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.003085360553775942,
+        "mean_actual_cost": 0.6293264128049328,
+        "mean_full_rms_deg": 1.497147253274014
+      }
+    },
+    {
+      "index": 110,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.004546304762081812,
+        "mean_actual_cost": 0.8679919675105238,
+        "mean_full_rms_deg": 1.5469717015859425
+      }
+    },
+    {
+      "index": 77,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.005043780557251525,
+        "mean_actual_cost": 0.6323724403899331,
+        "mean_full_rms_deg": 1.4971452461382553
+      }
+    },
+    {
+      "index": 101,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.005043780557251525,
+        "mean_actual_cost": 0.6323724403899331,
+        "mean_full_rms_deg": 1.4971452461382553
+      }
+    },
+    {
+      "index": 86,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.005566170325763224,
+        "mean_actual_cost": 0.48742244003147533,
+        "mean_full_rms_deg": 1.6542462694560152
+      }
+    },
+    {
+      "index": 73,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.005969740907798647,
+        "mean_actual_cost": 0.6308799087329463,
+        "mean_full_rms_deg": 1.4971369972032205
+      }
+    },
+    {
+      "index": 97,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.005969740907798647,
+        "mean_actual_cost": 0.6308799087329463,
+        "mean_full_rms_deg": 1.4971369972032205
+      }
+    },
+    {
+      "index": 14,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.0063964972163901195,
+        "mean_actual_cost": 0.9183788218628717,
+        "mean_full_rms_deg": 1.5050200019749294
+      }
+    },
+    {
+      "index": 50,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.007072293353754332,
+        "mean_actual_cost": 0.7398461265157881,
+        "mean_full_rms_deg": 1.4939821449903328
+      }
+    },
+    {
+      "index": 89,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.0070299331369665236,
+        "mean_actual_cost": 0.4899364921966054,
+        "mean_full_rms_deg": 1.6541964486072391
+      }
+    },
+    {
+      "index": 62,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.007357017275429464,
+        "mean_actual_cost": 0.9747371323034466,
+        "mean_full_rms_deg": 1.5474596693783234
+      }
+    },
+    {
+      "index": 113,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.007482396879734642,
+        "mean_actual_cost": 0.8718382995420498,
+        "mean_full_rms_deg": 1.5470890997547333
+      }
+    },
+    {
+      "index": 17,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.007638518656435204,
+        "mean_actual_cost": 0.9270977653297306,
+        "mean_full_rms_deg": 1.5050572429957458
+      }
+    },
+    {
+      "index": 85,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.007609553888975655,
+        "mean_actual_cost": 0.48675712962242806,
+        "mean_full_rms_deg": 1.6541624357389308
+      }
+    },
+    {
+      "index": 13,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.007725403286564521,
+        "mean_actual_cost": 0.9223345602040623,
+        "mean_full_rms_deg": 1.5050622640905102
+      }
+    },
+    {
+      "index": 53,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.00795760548645421,
+        "mean_actual_cost": 0.7451039386209058,
+        "mean_full_rms_deg": 1.493990480002526
+      }
+    },
+    {
+      "index": 76,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.0079344226210922,
+        "mean_actual_cost": 0.6327533935443287,
+        "mean_full_rms_deg": 1.4971360642288454
+      }
+    },
+    {
+      "index": 100,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.0079344226210922,
+        "mean_actual_cost": 0.6327533935443287,
+        "mean_full_rms_deg": 1.4971360642288454
+      }
+    },
+    {
+      "index": 80,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.007960480807235541,
+        "mean_actual_cost": 0.6331654120720503,
+        "mean_full_rms_deg": 1.4971313553161825
+      }
+    },
+    {
+      "index": 104,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.007960480807235541,
+        "mean_actual_cost": 0.6331654120720503,
+        "mean_full_rms_deg": 1.4971313553161825
+      }
+    },
+    {
+      "index": 49,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.008358786030627808,
+        "mean_actual_cost": 0.7421335615960297,
+        "mean_full_rms_deg": 1.4939855850414687
+      }
+    },
+    {
+      "index": 65,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.00840535520782895,
+        "mean_actual_cost": 0.9806349078861966,
+        "mean_full_rms_deg": 1.5475518624420126
+      }
+    },
+    {
+      "index": 26,
+      "summary": {
+        "count": 48,
+        "passes": 48,
+        "physical_failures": 0,
+        "success_rate": 1.0,
+        "mean_steady_rms_deg": 0.008926008230514225,
+        "mean_actual_cost": 0.9180848986060356,
+        "mean_full_rms_deg": 1.5050691893282149
+      }
+    }
+  ],
+  "selected": {
+    "parameters": {
+      "kp": 35.984283650057584,
+      "kd": 20.0,
+      "ki": 0.0,
+      "filter_time": 0.025,
+      "predict": 1.0
+    },
+    "development": {
+      "count": 24,
+      "passes": 24,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.0031418071758232725,
+      "mean_actual_cost": 0.6193078037569015,
+      "mean_full_rms_deg": 1.4668310800619224
+    },
+    "validation": {
+      "count": 48,
+      "passes": 48,
+      "physical_failures": 0,
+      "success_rate": 1.0,
+      "mean_steady_rms_deg": 0.003085360553775942,
+      "mean_actual_cost": 0.6293264128049328,
+      "mean_full_rms_deg": 1.497147253274014
+    },
+    "harmonic": null,
+    "development_candidates": 120,
+    "validation_candidates": 24
+  },
+  "source_sha256": {
+    "代码/joint_study.py": "91ecb776b653cc6b6390e513e27a6fba8a600d71e89248760e5c672ca6616457",
+    "代码/physics.py": "5b57a630034f59dbc5b9a919f5c696486048e7f0f983f42714774a95a3917d9a",
+    "代码/test_joint_study.py": "fa659ff50d92dd06222981cafef3ba396a916718b9c360e5cc23e332b561bb34",
+    "代码/test_physics.py": "0db850545f670273ce3f376b94ee9b3fa497439c74ae0c3d3f40b8f6962b92c3"
+  },
+  "test_used": false
+}

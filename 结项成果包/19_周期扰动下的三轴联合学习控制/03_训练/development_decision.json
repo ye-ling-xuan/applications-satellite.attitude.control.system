@@ -1,0 +1,17 @@
+{
+  "config": "A",
+  "seed": 19011,
+  "validation": {
+    "steps": 262144,
+    "count": 48,
+    "passes": 48,
+    "physical_failures": 0,
+    "success_rate": 1.0,
+    "mean_steady_rms_deg": 0.09647792472025425,
+    "mean_actual_cost": 0.9178159751737939,
+    "mean_full_rms_deg": 1.5464692330410479
+  },
+  "gate": true,
+  "both_completed": true,
+  "test_used": false
+}

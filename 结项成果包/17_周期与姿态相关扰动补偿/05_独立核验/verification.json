@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "verification_scope": "frozen sources/models/responses, exact controller replay, all independently integrated closed-loop acceptance/primary statistical conclusions",
+  "full_original_audit_passed": false,
+  "original_strict_state_check_passed": false,
+  "original_failure_preserved": true,
+  "original_tolerance": 2e-07,
+  "strict_state_threshold_relaxed": false,
+  "controllers": 6,
+  "episodes": 768,
+  "all_command_and_physics_replays": true,
+  "all_metrics_independently_reconstructed": true,
+  "independent_adaptive_ODE_episodes": 768,
+  "max_replay_error": 0.0,
+  "max_independent_ODE_error": 2.3027825786350875e-05,
+  "max_angle_difference_rad": 2.5798382121203223e-07,
+  "max_rate_difference_rad_s": 2.1699678104218634e-06,
+  "max_torque_difference_Nm": 2.3027825786350875e-05,
+  "max_independent_cost_error": 4.5694487058600686e-06,
+  "max_independent_RMS_error_deg": 1.5692703617597656e-07,
+  "independent_closed_loop": {
+    "pid": {
+      "episodes": 128,
+      "independent_passes": 128,
+      "max_angle_error_rad": 2.555698991475166e-07,
+      "max_rate_error_rad_s": 2.1699678104218634e-06,
+      "max_torque_error_Nm": 2.3027825786350875e-05,
+      "max_cost_difference": 4.5694487058600686e-06,
+      "max_RMS_difference_deg": 1.2639270169714778e-07,
+      "mean_independent_RMS_deg": 0.02962057930233309,
+      "mean_independent_cost": 0.3285889191108202
+    },
+    "observer": {
+      "episodes": 128,
+      "independent_passes": 128,
+      "max_angle_error_rad": 9.039859908549497e-08,
+      "max_rate_error_rad_s": 4.350536348075515e-07,
+      "max_torque_error_Nm": 4.609100691461282e-06,
+      "max_cost_difference": 6.755511167133577e-07,
+      "max_RMS_difference_deg": 2.149994227703539e-08,
+      "mean_independent_RMS_deg": 0.001668190999030254,
+      "mean_independent_cost": 0.17757154895875674
+    },
+    "harmonic": {
+      "episodes": 128,
+      "independent_passes": 128,
+      "max_angle_error_rad": 1.2712044758717359e-07,
+      "max_rate_error_rad_s": 9.809718200461288e-07,
+      "max_torque_error_Nm": 1.0619469474809629e-05,
+      "max_cost_difference": 2.566197181530505e-06,
+      "max_RMS_difference_deg": 1.5692703617597656e-07,
+      "mean_independent_RMS_deg": 0.00563140154977139,
+      "mean_independent_cost": 0.26662214619593033
+    },
+    "TD3_17111": {
+      "episodes": 128,
+      "independent_passes": 128,
+      "max_angle_error_rad": 1.5977771138705327e-07,
+      "max_rate_error_rad_s": 9.171556229793654e-07,
+      "max_torque_error_Nm": 7.832076100555696e-06,
+      "max_cost_difference": 7.856288871121997e-07,
+      "max_RMS_difference_deg": 1.1827543586889755e-08,
+      "mean_independent_RMS_deg": 0.021882789971611853,
+      "mean_independent_cost": 0.23622571541062207
+    },
+    "TD3_17222": {
+      "episodes": 128,
+      "independent_passes": 128,
+      "max_angle_error_rad": 1.6330842502604304e-07,
+      "max_rate_error_rad_s": 1.0050245755136022e-06,
+      "max_torque_error_Nm": 1.0123126447936226e-05,
+      "max_cost_difference": 1.7610378851840025e-06,
+      "max_RMS_difference_deg": 7.835695117058838e-09,
+      "mean_independent_RMS_deg": 0.02155610507386214,
+      "mean_independent_cost": 0.23767360611567723
+    },
+    "TD3_17333": {
+      "episodes": 128,
+      "independent_passes": 128,
+      "max_angle_error_rad": 2.5798382121203223e-07,
+      "max_rate_error_rad_s": 1.2856826605515265e-06,
+      "max_torque_error_Nm": 1.3616308838948488e-05,
+      "max_cost_difference": 1.5197227429819549e-06,
+      "max_RMS_difference_deg": 4.664938782483752e-09,
+      "mean_independent_RMS_deg": 0.016901264998822,
+      "mean_independent_cost": 0.24699809703319708
+    }
+  },
+  "independent_primary_comparisons": {
+    "TD3_17111": {
+      "improvement_interval_deg": [
+        0.006702513540543511,
+        0.008784973542663563
+      ],
+      "cost_ratio": 0.718909560461935,
+      "primary_supported": true,
+      "confidence": 0.9833333333333333
+    },
+    "TD3_17222": {
+      "improvement_interval_deg": [
+        0.007335974987520759,
+        0.008790736487773742
+      ],
+      "cost_ratio": 0.7233159497856323,
+      "primary_supported": true,
+      "confidence": 0.9833333333333333
+    },
+    "TD3_17333": {
+      "improvement_interval_deg": [
+        0.011512606234485908,
+        0.013920553024308162
+      ],
+      "cost_ratio": 0.7516933246001952,
+      "primary_supported": true,
+      "confidence": 0.9833333333333333
+    }
+  },
+  "primary_conclusion_replicated": true,
+  "limitation": "The original mixed-unit 2e-7 full-state numerical check did not pass. The independent adaptive ODE nevertheless reproduces all128cases per controller, all acceptance decisions and all prespecified paired primary conclusions. This is metric/conclusion replication, not a claim that the original strict numerical audit passed.",
+  "scope": "All768independent closed-loop episodes; original failed checks and original raw responses retained.",
+  "supplementary_verifier_sha256": "e3f7ff839ece005538f1e755b131447c77171013eb8b644ac1d393f93938d4e5",
+  "source_unchanged": true
+}

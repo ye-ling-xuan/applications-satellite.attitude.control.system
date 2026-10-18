@@ -1,0 +1,24 @@
+[
+  {
+    "kind": "lag",
+    "algorithm": null,
+    "formal_models": 0,
+    "all_in_domain_pass": false,
+    "cost_advantage_supported": false,
+    "emphasized_cost_advantage": false,
+    "success_advantage_supported": false,
+    "mean_cost_reduction": null,
+    "formal_seeds": []
+  },
+  {
+    "kind": "delay",
+    "algorithm": null,
+    "formal_models": 0,
+    "all_in_domain_pass": false,
+    "cost_advantage_supported": false,
+    "emphasized_cost_advantage": false,
+    "success_advantage_supported": false,
+    "mean_cost_reduction": null,
+    "formal_seeds": []
+  }
+]

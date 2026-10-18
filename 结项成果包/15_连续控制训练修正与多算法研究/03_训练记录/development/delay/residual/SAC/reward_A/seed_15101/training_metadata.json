@@ -1,0 +1,622 @@
+{
+  "status": "complete",
+  "kind": "delay",
+  "algorithm": "SAC",
+  "mode": "residual",
+  "stage": "development",
+  "seed": 15101,
+  "reward_name": "A",
+  "requested_steps": 196608,
+  "actual_steps": 196608,
+  "optimizer_updates": 24064,
+  "optimizer_step_counts": {
+    "actor": 24064,
+    "critic": 24064,
+    "entropy": 24064
+  },
+  "best": {
+    "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/best.zip",
+    "model_sha256": "1a32f54bd55cfedd646acc75a826cc66d00c011821e3c88c7ed80283d812be5d",
+    "steps": 0,
+    "validation": {
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.055190296159810935,
+      "mean_penalized_selection_cost": 0.055190296159810935,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.0551902961598161,
+      "mean_rms_error_deg": 8.844561061621123,
+      "max_settling_time_s": 7.6000000000000005,
+      "mean_settling_time_success_only_s": 6.303906250000001,
+      "mean_deadline_violation": 0.0
+    },
+    "optimizer_updates": 0,
+    "optimizer_step_counts": {
+      "actor": 0,
+      "critic": 0,
+      "entropy": 0
+    },
+    "actor_statistics": {
+      "deterministic_action_mean": 0.0,
+      "deterministic_action_std": 0.0,
+      "deterministic_action_abs_max": 0.0,
+      "deterministic_action_abs_mean": 0.0,
+      "exploration_std_mean": 0.049787070602178574,
+      "exploration_std_min": 0.049787066876888275,
+      "exploration_std_max": 0.049787066876888275
+    },
+    "checkpoint_model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_000000/model.zip"
+  },
+  "checkpoints": [
+    {
+      "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_000000/model.zip",
+      "model_sha256": "1a32f54bd55cfedd646acc75a826cc66d00c011821e3c88c7ed80283d812be5d",
+      "steps": 0,
+      "validation": {
+        "count": 384,
+        "passes": 384,
+        "success_rate": 1.0,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.055190296159810935,
+        "mean_penalized_selection_cost": 0.055190296159810935,
+        "cost_comparison_eligible": true,
+        "mean_command_cost": 0.0551902961598161,
+        "mean_rms_error_deg": 8.844561061621123,
+        "max_settling_time_s": 7.6000000000000005,
+        "mean_settling_time_success_only_s": 6.303906250000001,
+        "mean_deadline_violation": 0.0
+      },
+      "optimizer_updates": 0,
+      "optimizer_step_counts": {
+        "actor": 0,
+        "critic": 0,
+        "entropy": 0
+      },
+      "actor_statistics": {
+        "deterministic_action_mean": 0.0,
+        "deterministic_action_std": 0.0,
+        "deterministic_action_abs_max": 0.0,
+        "deterministic_action_abs_mean": 0.0,
+        "exploration_std_mean": 0.049787070602178574,
+        "exploration_std_min": 0.049787066876888275,
+        "exploration_std_max": 0.049787066876888275
+      }
+    },
+    {
+      "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_024576/model.zip",
+      "model_sha256": "2d593c28d144b7c1ca091b4f7332e1fabbc3bef4740ced6ebc652f086e5ae21e",
+      "steps": 24576,
+      "validation": {
+        "count": 384,
+        "passes": 0,
+        "success_rate": 0.0,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.8957417747039041,
+        "mean_penalized_selection_cost": 0.8957417747039041,
+        "cost_comparison_eligible": false,
+        "mean_command_cost": 0.9028647865883919,
+        "mean_rms_error_deg": 14.981756705838785,
+        "max_settling_time_s": null,
+        "mean_settling_time_success_only_s": null,
+        "mean_deadline_violation": 121.12396762741668
+      },
+      "optimizer_updates": 2560,
+      "optimizer_step_counts": {
+        "actor": 2560,
+        "critic": 2560,
+        "entropy": 2560
+      },
+      "actor_statistics": {
+        "deterministic_action_mean": -0.3275895118713379,
+        "deterministic_action_std": 0.9095044136047363,
+        "deterministic_action_abs_max": 1.0,
+        "deterministic_action_abs_mean": 0.954190731048584,
+        "exploration_std_mean": 1.0849964618682861,
+        "exploration_std_min": 0.08649758994579315,
+        "exploration_std_max": 7.389056205749512
+      }
+    },
+    {
+      "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_049152/model.zip",
+      "model_sha256": "08a09c60abcff8e42f0bcb013af3c4886438d7972821c89eedb6c1ee518be795",
+      "steps": 49152,
+      "validation": {
+        "count": 384,
+        "passes": 0,
+        "success_rate": 0.0,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.7098711616296184,
+        "mean_penalized_selection_cost": 0.7098711616296184,
+        "cost_comparison_eligible": false,
+        "mean_command_cost": 0.7151295264399821,
+        "mean_rms_error_deg": 14.696287281609969,
+        "max_settling_time_s": null,
+        "mean_settling_time_success_only_s": null,
+        "mean_deadline_violation": 118.60836544203043
+      },
+      "optimizer_updates": 5632,
+      "optimizer_step_counts": {
+        "actor": 5632,
+        "critic": 5632,
+        "entropy": 5632
+      },
+      "actor_statistics": {
+        "deterministic_action_mean": -0.37690067291259766,
+        "deterministic_action_std": 0.8814001679420471,
+        "deterministic_action_abs_max": 1.0,
+        "deterministic_action_abs_mean": 0.9467970728874207,
+        "exploration_std_mean": 1.9747405052185059,
+        "exploration_std_min": 0.05260458588600159,
+        "exploration_std_max": 7.389056205749512
+      }
+    },
+    {
+      "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_073728/model.zip",
+      "model_sha256": "c4fe603dbb62be70ba8b227e0f94e62ee8d7d6fa55c6e62af2a536cdf64671dd",
+      "steps": 73728,
+      "validation": {
+        "count": 384,
+        "passes": 16,
+        "success_rate": 0.041666666666666664,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.7737074448914115,
+        "mean_penalized_selection_cost": 0.7737074448914115,
+        "cost_comparison_eligible": false,
+        "mean_command_cost": 0.7796735531877067,
+        "mean_rms_error_deg": 11.660343894803958,
+        "max_settling_time_s": 7.9,
+        "mean_settling_time_success_only_s": 6.978125,
+        "mean_deadline_violation": 74.24712787969399
+      },
+      "optimizer_updates": 8704,
+      "optimizer_step_counts": {
+        "actor": 8704,
+        "critic": 8704,
+        "entropy": 8704
+      },
+      "actor_statistics": {
+        "deterministic_action_mean": -0.03909529373049736,
+        "deterministic_action_std": 0.9282395839691162,
+        "deterministic_action_abs_max": 1.0,
+        "deterministic_action_abs_mean": 0.9223988652229309,
+        "exploration_std_mean": 2.725313186645508,
+        "exploration_std_min": 0.050770748406648636,
+        "exploration_std_max": 7.389056205749512
+      }
+    },
+    {
+      "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_098304/model.zip",
+      "model_sha256": "7fb60d2b4e569422d66af63d4cd661b4bab2a0e9e54fff88db5d8abd2914e9a0",
+      "steps": 98304,
+      "validation": {
+        "count": 384,
+        "passes": 0,
+        "success_rate": 0.0,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.9502626044389731,
+        "mean_penalized_selection_cost": 0.9502626044389731,
+        "cost_comparison_eligible": false,
+        "mean_command_cost": 0.9560697553716234,
+        "mean_rms_error_deg": 8.985094454985225,
+        "max_settling_time_s": null,
+        "mean_settling_time_success_only_s": null,
+        "mean_deadline_violation": 7.2050825607251126
+      },
+      "optimizer_updates": 11776,
+      "optimizer_step_counts": {
+        "actor": 11776,
+        "critic": 11776,
+        "entropy": 11776
+      },
+      "actor_statistics": {
+        "deterministic_action_mean": 0.018169229850172997,
+        "deterministic_action_std": 0.9502682089805603,
+        "deterministic_action_abs_max": 1.0,
+        "deterministic_action_abs_mean": 0.9471637606620789,
+        "exploration_std_mean": 2.6380815505981445,
+        "exploration_std_min": 0.09807667136192322,
+        "exploration_std_max": 7.389056205749512
+      }
+    },
+    {
+      "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_122880/model.zip",
+      "model_sha256": "1275f1eef36332097b3a3f0dfc0dee508b55219fef3e422c176f9a8c058bd0f2",
+      "steps": 122880,
+      "validation": {
+        "count": 384,
+        "passes": 113,
+        "success_rate": 0.2942708333333333,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.9062288603353137,
+        "mean_penalized_selection_cost": 0.9062288603353137,
+        "cost_comparison_eligible": false,
+        "mean_command_cost": 0.9114865678020957,
+        "mean_rms_error_deg": 9.492854295607675,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 6.229646017699116,
+        "mean_deadline_violation": 4.684144765601444
+      },
+      "optimizer_updates": 14848,
+      "optimizer_step_counts": {
+        "actor": 14848,
+        "critic": 14848,
+        "entropy": 14848
+      },
+      "actor_statistics": {
+        "deterministic_action_mean": 0.0589362271130085,
+        "deterministic_action_std": 0.9511701464653015,
+        "deterministic_action_abs_max": 1.0,
+        "deterministic_action_abs_mean": 0.9500948786735535,
+        "exploration_std_mean": 1.5648902654647827,
+        "exploration_std_min": 0.09031001478433609,
+        "exploration_std_max": 7.389056205749512
+      }
+    },
+    {
+      "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_147456/model.zip",
+      "model_sha256": "271bf1aaa380cd24535ab61e654c202a9a0f75469560794d91fc127d739c9f70",
+      "steps": 147456,
+      "validation": {
+        "count": 384,
+        "passes": 166,
+        "success_rate": 0.4322916666666667,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.9045075685247497,
+        "mean_penalized_selection_cost": 0.9045075685247497,
+        "cost_comparison_eligible": false,
+        "mean_command_cost": 0.9110289491716405,
+        "mean_rms_error_deg": 9.365903445583982,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 6.941265060240964,
+        "mean_deadline_violation": 3.3872517347186517
+      },
+      "optimizer_updates": 17920,
+      "optimizer_step_counts": {
+        "actor": 17920,
+        "critic": 17920,
+        "entropy": 17920
+      },
+      "actor_statistics": {
+        "deterministic_action_mean": -0.05073215439915657,
+        "deterministic_action_std": 0.8675990700721741,
+        "deterministic_action_abs_max": 1.0,
+        "deterministic_action_abs_mean": 0.8139317631721497,
+        "exploration_std_mean": 1.655042052268982,
+        "exploration_std_min": 0.11057566851377487,
+        "exploration_std_max": 7.389056205749512
+      }
+    },
+    {
+      "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_172032/model.zip",
+      "model_sha256": "fc23097f5b3dafc3802bc4b3554217a524f33e317b2536b44b4d18163468e944",
+      "steps": 172032,
+      "validation": {
+        "count": 384,
+        "passes": 68,
+        "success_rate": 0.17708333333333334,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.7332071296335725,
+        "mean_penalized_selection_cost": 0.7332071296335725,
+        "cost_comparison_eligible": false,
+        "mean_command_cost": 0.7353460911136483,
+        "mean_rms_error_deg": 8.568583930617619,
+        "max_settling_time_s": 8.0,
+        "mean_settling_time_success_only_s": 7.2250000000000005,
+        "mean_deadline_violation": 1.2593969078536074
+      },
+      "optimizer_updates": 20992,
+      "optimizer_step_counts": {
+        "actor": 20992,
+        "critic": 20992,
+        "entropy": 20992
+      },
+      "actor_statistics": {
+        "deterministic_action_mean": 0.05054586008191109,
+        "deterministic_action_std": 0.9017914533615112,
+        "deterministic_action_abs_max": 0.9999864101409912,
+        "deterministic_action_abs_mean": 0.8816221356391907,
+        "exploration_std_mean": 0.7029523849487305,
+        "exploration_std_min": 0.14410895109176636,
+        "exploration_std_max": 4.289496421813965
+      }
+    },
+    {
+      "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_196608/model.zip",
+      "model_sha256": "4312629ddfe6816207d5e5b64a5ed292ec3e42c514c69e697353c82dd2b53b5a",
+      "steps": 196608,
+      "validation": {
+        "count": 384,
+        "passes": 0,
+        "success_rate": 0.0,
+        "physical_failures": 0,
+        "mean_actual_cost": 0.7068011908796494,
+        "mean_penalized_selection_cost": 0.7068011908796494,
+        "cost_comparison_eligible": false,
+        "mean_command_cost": 0.7074675614364075,
+        "mean_rms_error_deg": 9.623147961646717,
+        "max_settling_time_s": null,
+        "mean_settling_time_success_only_s": null,
+        "mean_deadline_violation": 8.031185500520925
+      },
+      "optimizer_updates": 24064,
+      "optimizer_step_counts": {
+        "actor": 24064,
+        "critic": 24064,
+        "entropy": 24064
+      },
+      "actor_statistics": {
+        "deterministic_action_mean": -0.21706485748291016,
+        "deterministic_action_std": 0.7726948261260986,
+        "deterministic_action_abs_max": 0.9996787309646606,
+        "deterministic_action_abs_mean": 0.756814181804657,
+        "exploration_std_mean": 0.3725229799747467,
+        "exploration_std_min": 0.17087873816490173,
+        "exploration_std_max": 0.9833870530128479
+      }
+    }
+  ],
+  "base_parameters": {
+    "kp": 0.45900130023553354,
+    "kd": 1.1643753398959562,
+    "ki": 0.0,
+    "integral_limit": 2.0,
+    "family": "PD",
+    "stage": "refine2"
+  },
+  "source_sha256": {
+    "代码/continuous_study/__init__.py": "24785bfbde8a719ccc31365fdd19165ab692a607a727f6ddf24e20be18e0371e",
+    "代码/continuous_study/baselines.py": "20f75fc64c8ad42ccab90aae1fce086109c3e86d91c0578a694b9b6677034e7d",
+    "代码/continuous_study/evaluation.py": "ef92ec99996c6e696a3d59d1c99b5645d72d6853641e364fc797556166d6f53d",
+    "代码/continuous_study/learning.py": "a67b7561337bd4905382d67f6920f0cf361acae5e68e3bc053c1b1b22952d327",
+    "代码/continuous_study/physics.py": "e3a25b255828029410e0e08e12121841cd1b6b53ca40ed9f7ec6b51192fb3d39",
+    "代码/continuous_study/protocol.py": "3c61fecf9002ee51dea2c7570dae31f0c480db9b27a45f2be5fc7a76279327fe",
+    "代码/continuous_study/test_baselines.py": "824ee8ce6ac3a44712bf20d1bfb473202dbe9564fc20c18129b37147c5de6405",
+    "代码/continuous_study/test_evaluation.py": "f6cf0f9da78c8193c6d3c3bff3f58e0afaa66774a4e1540a713c446458a6d7c7",
+    "代码/continuous_study/verification.py": "f2d9d59017d699aafb00dbd73221b8befd44cd6e5cf92c190bc1f729132365fa"
+  },
+  "source_sha256_after": {
+    "代码/continuous_study/__init__.py": "24785bfbde8a719ccc31365fdd19165ab692a607a727f6ddf24e20be18e0371e",
+    "代码/continuous_study/baselines.py": "20f75fc64c8ad42ccab90aae1fce086109c3e86d91c0578a694b9b6677034e7d",
+    "代码/continuous_study/evaluation.py": "ef92ec99996c6e696a3d59d1c99b5645d72d6853641e364fc797556166d6f53d",
+    "代码/continuous_study/learning.py": "a67b7561337bd4905382d67f6920f0cf361acae5e68e3bc053c1b1b22952d327",
+    "代码/continuous_study/physics.py": "e3a25b255828029410e0e08e12121841cd1b6b53ca40ed9f7ec6b51192fb3d39",
+    "代码/continuous_study/protocol.py": "3c61fecf9002ee51dea2c7570dae31f0c480db9b27a45f2be5fc7a76279327fe",
+    "代码/continuous_study/test_baselines.py": "824ee8ce6ac3a44712bf20d1bfb473202dbe9564fc20c18129b37147c5de6405",
+    "代码/continuous_study/test_evaluation.py": "f6cf0f9da78c8193c6d3c3bff3f58e0afaa66774a4e1540a713c446458a6d7c7",
+    "代码/continuous_study/verification.py": "f2d9d59017d699aafb00dbd73221b8befd44cd6e5cf92c190bc1f729132365fa"
+  },
+  "configuration": {
+    "algorithms": {
+      "SAC": {
+        "batch_size": 256,
+        "tau": 0.005,
+        "buffer_size": 200000,
+        "learning_starts": 4096,
+        "train_freq_vector_steps": 1,
+        "gradient_steps": 1,
+        "ent_coef": "auto_0.0005",
+        "target_entropy": -1.0,
+        "initial_log_std": -3.0
+      },
+      "TD3": {
+        "batch_size": 256,
+        "tau": 0.005,
+        "buffer_size": 200000,
+        "learning_starts": 4096,
+        "train_freq_vector_steps": 1,
+        "gradient_steps": 1,
+        "exploration_std": 0.1,
+        "policy_delay": 2,
+        "target_policy_noise": 0.1,
+        "target_noise_clip": 0.2
+      },
+      "PPO": {
+        "n_steps": 128,
+        "batch_size": 256,
+        "n_epochs": 10,
+        "gae_lambda": 0.95,
+        "clip_range": 0.2,
+        "ent_coef": 0.0,
+        "vf_coef": 0.5,
+        "max_grad_norm": 0.5,
+        "initial_log_std": -2.3,
+        "normalize_advantage": true,
+        "target_kl": null
+      }
+    },
+    "common": {
+      "net_arch": [
+        128,
+        128
+      ],
+      "learning_rate": 0.0003,
+      "gamma": 0.999,
+      "n_envs": 8,
+      "torch_threads": 1,
+      "device": "cpu",
+      "zero_actor_mean": true,
+      "feature_dtype": "float32"
+    },
+    "rewards": {
+      "A": {
+        "torque_weight": 1.0,
+        "error_weight": 0.01,
+        "rate_weight": 0.002,
+        "violation_weight": 5.0
+      },
+      "B": {
+        "torque_weight": 1.0,
+        "error_weight": 0.03,
+        "rate_weight": 0.006,
+        "violation_weight": 10.0
+      }
+    },
+    "protocol_training": {
+      "algorithms": [
+        "SAC",
+        "TD3",
+        "PPO"
+      ],
+      "rewards": [
+        "A",
+        "B"
+      ],
+      "sanity_steps": 98304,
+      "development_steps": 196608,
+      "formal_steps": 393216,
+      "validate_every": 24576,
+      "n_envs": 8,
+      "formal_seeds": [
+        111,
+        222,
+        333
+      ],
+      "sanity_kind": "ideal",
+      "primary_mode": "residual",
+      "development_gate_success_rate": 0.95,
+      "development_gate_physical_failures": 0,
+      "reward_B_condition": "all three algorithms complete A; no A model has zero physical failures, >=95% validation success AND lower mean actual cost than selected PID",
+      "formal_selection": "eligible means >=95% passes, zero physical failures, selected checkpoint steps > 0; most passes then lowest penalized selection cost then earliest checkpoint then fixed algorithm order as exact tie break; step-zero PID fallback is not a learned success",
+      "primary_cost_requirement": "PID and every formal seed pass every in-domain test; all corrected paired cost confidence intervals below zero",
+      "primary_success_requirement": "every seed paired success improvement interval above zero; no additional physical failures",
+      "family_alpha": 0.05,
+      "intervals_upper_bound": 12,
+      "emphasized_cost_reduction": 0.05,
+      "held_out_tests_used_to_choose": false,
+      "observed_variables": [
+        "measured error",
+        "measured angular velocity",
+        "past sent commands",
+        "own PID state",
+        "elapsed time"
+      ],
+      "hidden_variables": [
+        "actual torque",
+        "true lag/delay parameter",
+        "simulator command queue"
+      ]
+    },
+    "feature_dimensions": {
+      "direct": 40,
+      "residual": 42
+    },
+    "feature_order": [
+      "13 chronological measured error/rate pairs",
+      "12 chronological clipped total sent commands",
+      "elapsed/22",
+      "valid_intervals/12",
+      "residual only: proposed raw PID/0.5",
+      "residual only: committed PID integral/2"
+    ],
+    "feature_scales": {
+      "error_rad": 1.0471975511965976,
+      "rate_rad_s": 0.5235987755982988,
+      "command_Nm": 0.5,
+      "integral_rad_s": 2.0
+    },
+    "prehistory": "repeat initial measurement; zero commands; zero valid count",
+    "residual_action": "clip(raw_PID+0.25*clip(action,-1,1),-0.5,0.5)",
+    "direct_action": "0.5*clip(action,-1,1)",
+    "anti_windup": "conditional integration uses final total command and final total raw torque",
+    "test_response_calibration": false,
+    "replay_buffer_saved": false,
+    "reward": {
+      "cost": "wu*actual_tau_square_integral/(dt*limit^2)+we*min((error/60deg)^2,100)+ww*min((rate/30deg_s)^2,100)+1[t_end>=8]*wv*(outside+min(max(angle_ratio-1,0)^2,25)+min(max(rate_ratio-1,0)^2,25))",
+      "interval": "-dt*cost+gamma*potential_next-potential_current",
+      "potential": "-4*min((error/60deg)^2,100)-0.1*min((rate/30deg_s)^2,100)",
+      "final_potential": 0.0,
+      "failure": "each remaining interval costs the maximum legal ordinary rate cost plus one",
+      "failure_rate_costs": {
+        "A": 258.2,
+        "B": 515.6
+      },
+      "ordinary_rate_cost_bounds": {
+        "A": 257.2,
+        "B": 514.6
+      },
+      "terminal": "440 samples only; no time-limit bootstrap; failures remain absorbing until sample 440",
+      "shaping_property": "discounted shaping sums to minus the common initial potential; terminal potential is exactly zero"
+    },
+    "model_selection": "fewest physical failures, most passes, lowest penalized_selection_cost, earliest checkpoint",
+    "initialization": "actor deterministic mean exactly zero; initial checkpoint retained and evaluated; zero residual is exactly the selected PID",
+    "ideal_sanity": "direct continuous action, lag physical plant with T=0, initial angle +/-20deg and rate +/-2deg/s",
+    "hidden_from_features": [
+      "actual torque",
+      "true actuator parameter",
+      "simulator delay queue"
+    ],
+    "optimizer_step_count_definition": "actual calls to each Torch optimizer.step; SB3 _n_updates is retained separately"
+  },
+  "declaration_sha256": "ca5825d0efc12f3f076aec81f64436a1bcdefe6bb24998ab8306df5dec443f26",
+  "run_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101",
+  "training_elapsed_seconds": 159.3289999999688,
+  "validation_elapsed_seconds": 2.75,
+  "replay_buffer_saved": false,
+  "test_responses_used": false,
+  "trained_checkpoint_improved_initial": false,
+  "started_utc": "2026-10-17T15:31:54.660400+00:00",
+  "versions": {
+    "numpy": "1.26.4",
+    "torch": "2.10.0+cpu",
+    "stable_baselines3": "2.7.1",
+    "gymnasium": "1.2.3"
+  },
+  "initial": {
+    "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/checkpoints/steps_000000/model.zip",
+    "model_sha256": "1a32f54bd55cfedd646acc75a826cc66d00c011821e3c88c7ed80283d812be5d",
+    "steps": 0,
+    "validation": {
+      "count": 384,
+      "passes": 384,
+      "success_rate": 1.0,
+      "physical_failures": 0,
+      "mean_actual_cost": 0.055190296159810935,
+      "mean_penalized_selection_cost": 0.055190296159810935,
+      "cost_comparison_eligible": true,
+      "mean_command_cost": 0.0551902961598161,
+      "mean_rms_error_deg": 8.844561061621123,
+      "max_settling_time_s": 7.6000000000000005,
+      "mean_settling_time_success_only_s": 6.303906250000001,
+      "mean_deadline_violation": 0.0
+    },
+    "optimizer_updates": 0,
+    "optimizer_step_counts": {
+      "actor": 0,
+      "critic": 0,
+      "entropy": 0
+    },
+    "actor_statistics": {
+      "deterministic_action_mean": 0.0,
+      "deterministic_action_std": 0.0,
+      "deterministic_action_abs_max": 0.0,
+      "deterministic_action_abs_mean": 0.0,
+      "exploration_std_mean": 0.049787070602178574,
+      "exploration_std_min": 0.049787066876888275,
+      "exploration_std_max": 0.049787066876888275
+    }
+  },
+  "initial_zero_residual_validation": {
+    "count": 384,
+    "passes": 384,
+    "success_rate": 1.0,
+    "physical_failures": 0,
+    "mean_actual_cost": 0.055190296159810935,
+    "mean_penalized_selection_cost": 0.055190296159810935,
+    "cost_comparison_eligible": true,
+    "mean_command_cost": 0.0551902961598161,
+    "mean_rms_error_deg": 8.844561061621123,
+    "max_settling_time_s": 7.6000000000000005,
+    "mean_settling_time_success_only_s": 6.303906250000001,
+    "mean_deadline_violation": 0.0
+  },
+  "elapsed_seconds": 165.03200000000652,
+  "training_steps_per_second": 1233.97498258345,
+  "final": {
+    "model_path": "03_训练记录/development/delay/residual/SAC/reward_A/seed_15101/final.zip",
+    "model_sha256": "4312629ddfe6816207d5e5b64a5ed292ec3e42c514c69e697353c82dd2b53b5a",
+    "steps": 196608
+  },
+  "finished_utc": "2026-10-17T15:34:39.696450+00:00"
+}

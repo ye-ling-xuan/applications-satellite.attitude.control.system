@@ -1,0 +1,70 @@
+{
+  "dt_s": 0.05,
+  "horizon_s": 22.0,
+  "deadline_s": 8.0,
+  "command_limit_Nm": 0.5,
+  "hub_inertia": 0.7,
+  "appendage_inertia": 0.3,
+  "frequency_training_Hz": [
+    0.4,
+    0.8
+  ],
+  "damping_training": [
+    0.01,
+    0.04
+  ],
+  "evaluation_frequencies_Hz": [
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "tolerance_deg_or_deg_s": [
+    1.0,
+    0.5,
+    0.1,
+    0.5
+  ],
+  "fail_relative_angle_deg": 10.0,
+  "fail_hub_angle_deg": 170.0,
+  "fail_hub_rate_deg_s": 300.0,
+  "counts": {
+    "development": 48,
+    "validation": 64,
+    "test": 128
+  },
+  "split_seeds": {
+    "development": 202610181601,
+    "validation": 202610181602,
+    "test": 202610181603
+  },
+  "formal_seeds": [
+    111,
+    222,
+    333
+  ],
+  "development_algorithms": [
+    "TD3",
+    "SAC",
+    "PPO"
+  ],
+  "development_steps": 524288,
+  "formal_steps": 1048576,
+  "validation_every": 65536,
+  "bonferroni_comparisons": 24,
+  "bootstrap_repeats": 20000,
+  "residual_origin_zero": true,
+  "potential_shaping_gamma": 0.999,
+  "primary_split": "test",
+  "true_parameters_in_policy": false,
+  "visible_states": [
+    "hub_angle",
+    "hub_rate",
+    "relative_angle",
+    "relative_rate",
+    "own_integral",
+    "previous_sent_command",
+    "elapsed_time"
+  ]
+}

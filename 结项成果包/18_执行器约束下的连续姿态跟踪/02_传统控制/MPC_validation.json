@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "count": 64,
+    "physical_failures": 2,
+    "mean_rms_error_deg": 1.412806200490919,
+    "mean_objective": 97.94330166318511,
+    "mean_actual_cost": 0.09748128646506192,
+    "max_error_deg": 55.08754945882031,
+    "maximum_torque": 0.23405467957299633,
+    "maximum_slew": 0.08000000000000007
+  },
+  "solver_residual": 0.02151250206307201,
+  "source_sha256": "a718ae748396661f5498ee0f8bc8c9956f70f9afb3a7b3dbd9921d98cda9216f",
+  "test_responses_used": false
+}

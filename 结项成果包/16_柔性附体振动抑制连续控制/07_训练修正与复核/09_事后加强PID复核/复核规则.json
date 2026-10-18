@@ -1,0 +1,12 @@
+{
+  "post_hoc": true,
+  "main_test_already_seen": true,
+  "learner_parameters_changed": false,
+  "candidate_count": 3825,
+  "validation_shortlist": 48,
+  "selection": "development most passes, then penalized cost, then index; top48 validation same rule",
+  "selection_uses_test_outcomes": false,
+  "original_candidates_sha256": "03f63350589c21a4f60420880ecdd1eb19ac3f54421fb7112767ea16036d7127",
+  "additional_candidates_sha256": "28474633ee2e44a801ea9d4d6597f3d7507eef4a46d2833a6b2e28b46002b573",
+  "script_sha256": "eff9929fc143e617b1b863a1cbdc1eaa88f9550aefed9fd221f2d3ee64048d80"
+}

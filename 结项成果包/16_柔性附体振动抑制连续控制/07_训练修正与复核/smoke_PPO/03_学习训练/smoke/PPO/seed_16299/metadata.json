@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "algorithm": "PPO",
+  "seed": 16299,
+  "stage": "smoke",
+  "requested_steps": 4096,
+  "source_hashes": {},
+  "baseline_sha256": "25549c0c5f13541f5126c29fb40259289a504f9ef63902985abc4cd3e715456c",
+  "snapshots": [
+    {
+      "steps": 0,
+      "validation": {
+        "success": 0.834375,
+        "failed": 0.0,
+        "cost": 0.011535843752778514,
+        "rms_angle_deg": 3.879960524842707,
+        "peak_relative_deg": 1.026719749425234,
+        "residual_relative_rms_deg": 0.012171427830978618,
+        "count": 320,
+        "passes": 267,
+        "physical_failures": 0,
+        "selection_cost": 0.9191850272928432
+      }
+    },
+    {
+      "steps": 4096,
+      "validation": {
+        "success": 0.840625,
+        "failed": 0.0,
+        "cost": 0.011504575621489387,
+        "rms_angle_deg": 3.890889369775718,
+        "peak_relative_deg": 1.020417945576791,
+        "residual_relative_rms_deg": 0.011745514652750127,
+        "count": 320,
+        "passes": 269,
+        "physical_failures": 0,
+        "selection_cost": 0.8849261344287962
+      }
+    }
+  ],
+  "actual_steps": 4096,
+  "best": {
+    "steps": 4096,
+    "validation": {
+      "success": 0.840625,
+      "failed": 0.0,
+      "cost": 0.011504575621489387,
+      "rms_angle_deg": 3.890889369775718,
+      "peak_relative_deg": 1.020417945576791,
+      "residual_relative_rms_deg": 0.011745514652750127,
+      "count": 320,
+      "passes": 269,
+      "physical_failures": 0,
+      "selection_cost": 0.8849261344287962
+    }
+  },
+  "elapsed_s": 0.9407799243927002,
+  "gradient_updates": 20,
+  "best_model_sha256": "04083e2e38902eaa518113c424d3513105ee063fd120781d9531024a9f5380ad"
+}

@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "task": "Frozen-controller prospective flexible appendage confirmation and stress tests",
+  "new_training_steps": 0,
+  "new_parameter_searches": 0,
+  "old_results_seen": true,
+  "selection": "all nine previously fixed controllers; no test-driven selection or changes",
+  "groups": [
+    "A_original_confirmation",
+    "B_initial_vibration",
+    "C_vibration_and_noise"
+  ],
+  "initial_seed": {
+    "A_original_confirmation": 2026101816101,
+    "B_initial_vibration": 2026101816102,
+    "C_vibration_and_noise": 2026101816103
+  },
+  "noise_seed": 2026101816104,
+  "initial_states_per_group": 128,
+  "frequencies_Hz": [
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "frequency_and_damping_constant_within_episode": true,
+  "dt_s": 0.05,
+  "horizon_s": 22.0,
+  "deadline_s": 8.0,
+  "inertias": [
+    0.7,
+    0.3
+  ],
+  "command_limit_Nm": 0.5,
+  "initial_distributions": {
+    "theta_deg": [
+      -30,
+      30
+    ],
+    "omega_deg_s": [
+      -2,
+      2
+    ],
+    "damping": [
+      0.01,
+      0.04
+    ],
+    "A_q_deg": 0,
+    "A_qdot_deg_s": 0,
+    "BC_q_deg": [
+      -0.05,
+      0.05
+    ],
+    "BC_qdot_deg_s": [
+      -0.2,
+      0.2
+    ]
+  },
+  "observation_noise": {
+    "group": "C only",
+    "distribution": "independent zero-mean Gaussian per scene, component and sample",
+    "component_order": [
+      "theta",
+      "omega",
+      "relative_angle",
+      "relative_rate"
+    ],
+    "std_deg_or_deg_s": [
+      0.01,
+      0.02,
+      0.005,
+      0.02
+    ],
+    "same_sample_for_all_methods": true,
+    "noise_at_initial_sample": true,
+    "noise_in_true_physics_or_acceptance": false,
+    "assumed_sensor_scenario": true,
+    "calibrated_to_real_sensor": false
+  },
+  "acceptance": {
+    "all_samples_between_s": [
+      8,
+      22
+    ],
+    "true_state_tolerances_deg_or_deg_s": [
+      1,
+      0.5,
+      0.1,
+      0.5
+    ],
+    "failure_bounds_deg_or_deg_s": [
+      170,
+      300,
+      10
+    ],
+    "absorption": "failure freezes state, zero subsequent torque"
+  },
+  "methods": [
+    "PID",
+    "PID_safe",
+    "PID_strengthened",
+    "ZVD_PID",
+    "ZVD_PID_refined",
+    "LQR_refined",
+    "PID_PPO_111",
+    "PID_PPO_222",
+    "PID_PPO_333"
+  ],
+  "policy_inputs": "measured four states, own integral, previous sent command, elapsed time; no frequency/damping",
+  "primary": {
+    "metric": "PPO minus reference success fraction",
+    "references": [
+      "PID_strengthened",
+      "PID_safe"
+    ],
+    "training_seeds": [
+      111,
+      222,
+      333
+    ],
+    "comparisons": 18,
+    "familywise_alpha": 0.05,
+    "interval": "two-sided paired cluster percentile bootstrap; simultaneous Bonferroni",
+    "clusters": "128 independent initial states; each cluster contains all five frequencies",
+    "repetitions": 200000,
+    "bootstrap_seed": 2026101816190,
+    "superiority": "each of three seeds has lower CI>0 against BOTH references, evaluated separately for each group",
+    "zero_physical_failure_claim": "reported separately, not silently inferred from success fraction"
+  },
+  "secondary": {
+    "metrics": [
+      "cost",
+      "residual_relative_rms_deg"
+    ],
+    "references": [
+      "PID",
+      "PID_safe",
+      "PID_strengthened",
+      "ZVD_PID",
+      "ZVD_PID_refined",
+      "LQR_refined"
+    ],
+    "comparisons": 108,
+    "familywise_alpha": 0.05,
+    "interval": "same paired clusters; separate simultaneous Bonferroni family",
+    "repetitions": 200000,
+    "bootstrap_seed": 2026101816190,
+    "cost_advantage_requires": "both methods succeed in all 640 episodes and cost-difference upper CI<0",
+    "other_metrics": "full-angle RMS, peak relative angle and frequency summaries descriptive"
+  },
+  "total_episodes": 17280,
+  "formal_results_unchanged": true,
+  "scope": "single-axis two-inertia one-mode numerical model; ideal torque source; measured flexure assumed; no flight/hardware validation"
+}

@@ -1,0 +1,17 @@
+{
+  "algorithm": "TD3",
+  "seed": 17012,
+  "validation": {
+    "steps": 98304,
+    "count": 48,
+    "passes": 48,
+    "physical_failures": 0,
+    "success_rate": 1.0,
+    "mean_steady_rms_deg": 0.023172794458430304,
+    "mean_actual_cost": 0.2987556501631071,
+    "mean_full_rms_deg": 0.7761937535186186
+  },
+  "gate": true,
+  "both_algorithms_completed": true,
+  "test_used": false
+}

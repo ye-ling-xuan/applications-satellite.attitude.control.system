@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "episodes": 1024,
+  "physical_intervals": 307200,
+  "max_all_interval_state_error": 7.119305145408816e-15,
+  "max_independent_solve_ivp_error": 2.7755575615628914e-17,
+  "checks": [
+    {
+      "name": "PID",
+      "episodes": 128,
+      "all_interval_physics_and_command_replay": true,
+      "metrics_recomputed": true
+    },
+    {
+      "name": "PID_feedforward_preview",
+      "episodes": 128,
+      "all_interval_physics_and_command_replay": true,
+      "metrics_recomputed": true
+    },
+    {
+      "name": "MPC_SLSQP",
+      "episodes": 128,
+      "all_interval_physics_and_command_replay": true,
+      "metrics_recomputed": true
+    },
+    {
+      "name": "TD3_initial_development_only",
+      "episodes": 128,
+      "all_interval_physics_and_command_replay": true,
+      "metrics_recomputed": true
+    },
+    {
+      "name": "PPO_initial_development_only",
+      "episodes": 128,
+      "all_interval_physics_and_command_replay": true,
+      "metrics_recomputed": true
+    },
+    {
+      "name": "PPO_symmetry_seed_111",
+      "episodes": 128,
+      "all_interval_physics_and_command_replay": true,
+      "metrics_recomputed": true
+    },
+    {
+      "name": "PPO_symmetry_seed_222",
+      "episodes": 128,
+      "all_interval_physics_and_command_replay": true,
+      "metrics_recomputed": true
+    },
+    {
+      "name": "PPO_symmetry_seed_333",
+      "episodes": 128,
+      "all_interval_physics_and_command_replay": true,
+      "metrics_recomputed": true
+    }
+  ],
+  "limitations": "reference function and controller code reused for action replay; physics and metric formulas independently reconstructed; no hardware validation",
+  "revision_source_verified": true,
+  "base_source_verified": true,
+  "mpc_numerics": {
+    "method": "SLSQP same convex QP",
+    "max_constraint_residual": 2.065048479438225e-11,
+    "optimizer_unsuccessful_calls": 0,
+    "max_iterations_observed": 74,
+    "total_calls": 38400,
+    "physical_command_constraints_always_enforced": true
+  }
+}
