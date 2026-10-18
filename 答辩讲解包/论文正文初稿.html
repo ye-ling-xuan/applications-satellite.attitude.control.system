@@ -1,0 +1,421 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>论文正文初稿：公式阅读版</title><style>*{box-sizing:border-box}body{margin:0;background:#edf2f6;color:#203448;font:17px/1.85 "Microsoft YaHei",system-ui,sans-serif}header,main{max-width:1100px;margin:24px auto;padding:24px 40px;background:white;border:1px solid #d5e0e9;border-radius:10px}header{font-size:15px}header p{margin:6px 0}a{color:#155c91}h1,h2,h3{line-height:1.5}h1{font-size:29px}h2{font-size:24px;color:#1d5278;margin-top:40px;border-bottom:1px solid #d5e0e9;padding-bottom:8px}h3{font-size:20px;margin-top:28px}table{border-collapse:collapse;font-size:14px;display:block;overflow:auto;line-height:1.7;margin:20px 0}td,th{border:1px solid #d5e0e9;padding:9px 11px;text-align:left}th{background:#edf4f9}blockquote{background:#edf5fa;border-left:4px solid #4181ac;padding:12px 20px;margin:20px 0}blockquote p{margin:0}math[display="block"]{overflow-x:auto;overflow-y:hidden;padding:16px 0;max-width:100%;font-size:1.08em}img{max-width:100%;height:auto}pre{overflow:auto;background:#f1f4f7;padding:16px}code{font-size:.92em}@media(max-width:720px){header,main{margin:12px;padding:18px}h1{font-size:25px}h2{font-size:22px}}@media print{body{background:white;font-size:11pt}header{display:none}main{max-width:none;border:0;margin:0;padding:0}h2,h3{break-after:avoid}math[display="block"],tr{break-inside:avoid}}</style></head><body><header><p><a href="论文正文初稿.md">Markdown编辑原稿</a> · <a href="按顺序阅读.html">按研究顺序阅读</a> · <a href="论文大纲与证据对照.md">论文大纲与证据对照</a></p><p>公式已转换为原生MathML，可离线阅读。此页由Markdown原稿生成，修改原稿后可运行“生成阅读本.py”更新。</p></header><main><h1>基于PPO学习补偿的卫星姿态控制与柔性附件振动抑制仿真研究</h1>
+<blockquote>
+<p>论文正文初稿：已按研究逻辑整理正文段落，尚需按学校格式编辑、补齐文献综述与正式引用。不是已完成送审的论文。</p>
+</blockquote>
+<h2>摘要</h2>
+<p>针对卫星本体姿态稳定与柔性附件振动抑制的联合任务，本文研究在传统反馈基础上加入PPO连续力矩补偿的方法。先建立单轴及三轴刚体姿态模型，完成统一条件下的PID与强化学习对比，并简述惯量及执行器误差探索。在此基础上建立单轴双惯量单模态柔性模型，采用四维测量状态均为零时补偿为零的结构，在固定时域、力矩上限及本体和附件四项持续约束下评价性能。冻结三个独立训练种子的PPO模型及六种传统控制器，新增原分布确认、初始小振动、初振与假定小测量噪声三组共17,280回合测试。三个PPO在每组均通过640/640回合，补充搜索PID分别通过597、571、580回合，成组配对统计支持相对PID的成功率改善。优化LQR也全部成功，且力矩平方积分更低。结果验证了学习补偿在本模型与范围内相对所比较PID的任务收益，并明确其不构成对所有传统方法的普遍优势。全部新增轨迹经独立物理及指标核验，尚未进行三轴柔性或硬件验证。</p>
+<p><strong>关键词：</strong> 卫星姿态控制；柔性附件；PPO；学习补偿；振动抑制；仿真验证</p>
+<h2>01 研究问题与论文主线</h2>
+<h3>研究目标</h3>
+<p>卫星姿态机动不仅要求姿态误差减小，还要求角速度在规定窗口内持续满足约束。当卫星带有柔性附件时，姿态机动产生的控制力矩还可能激发结构振动，单纯依据本体角度的评价不足以描述任务完成情况。本文围绕这一问题，研究刚体姿态控制基线、神经策略部署误差及单轴柔性附件条件下的反馈与学习补偿。</p>
+<h3>研究路线</h3>
+<p>本文首先建立单轴和完整三轴刚体模型，统一控制器可用信息、力矩约束、场景和持续停稳判据，比较PID、PPO、SAC与TD3。随后分析PID整定及零观测动作偏置修正的影响，并用SAC代表学习方法概述惯量变化、执行器一阶滞后和纯延迟条件下的探索。前期结果未证明学习方法在这些设置中具有稳定优势，促使后续研究进一步聚焦具体的控制不足。</p>
+<p>本文最终采用双惯量弹簧—阻尼模型描述单轴本体与柔性附件的相互作用，构建PID与PPO的连续力矩补偿方法，结合多次独立训练、共同测试和独立数值复核，评价任务完成率、振动响应及控制代价。同时保留输入整形和LQR参考，以限定学习收益的范围。前期三轴工作为刚体模型，柔性主要结论不外推为三轴柔性系统结论。</p>
+<h2>02 刚体姿态建模与PID控制</h2>
+<h3>单轴动力学及反馈控制</h3>
+<p>单轴刚体模型采用角度θ与角速度ω作为状态，满足θ̇=ω、Jω̇=u+d，其中J为转动惯量，u为实际控制力矩，d为外部扰动力矩。在采样区间内保持净力矩不变，采用恒角加速度的精确位置和速度更新。控制器使用角度误差、测得角速度及可选积分状态生成反馈力矩，并按共同执行器上限限幅。PID的积分限幅与条件积分用于抑制饱和累积；入选增益为Ki=0时，实际控制律属于PD。</p>
+<p>第一版正式单轴实验取J=1kg·m²、采样周期0.05秒、仿真时长20秒和±0.5N·m力矩限制。验证集搜索120组候选后选择Kp=4、Ki=0、Kd=3。正常工况50个测试回合全部满足持续停稳要求，平均稳定时间为3.367秒。该结果用于验证基础模型和反馈能力，不替代后续不同协议下的PID整定结果。</p>
+<h3>三轴耦合动力学及姿态表示</h3>
+<p>三轴模型采用机体系欧拉方程Iω̇=τ+d−ω×(Iω)，其中I在主惯量轴系中为对角矩阵。项−ω×(Iω)描述角动量在旋转坐标系中的变化，保留三个转动方向之间的刚体耦合。姿态使用标量在前的单位四元数q表示，运动学为q̇=½q⊗(0,ω)。统一环境对四元数和角速度进行RK4积分，并在每步归一化四元数。</p>
+<p>控制误差采用当前姿态到目标姿态的本体系最短修正旋转向量，并统一处理q与−q的等价性。控制器接收三维修正误差及三维角速度，不将四元数四个分量分别解释为四个独立控制轴。原week5实现已包含上述欧拉耦合和四元数结构，后续工作进一步统一了积分、控制误差和评价实现。</p>
+<h3>模型验证及评价约束</h3>
+<p>模型验证包括零误差平衡、四元数模长、符号等价性、重置和输入限幅等检查。统一刚体实验规定20秒内无发散，末5秒每个采样点的角度误差与角速度分别不超过1°与0.5°/s；三轴采用相应向量范数。力矩平方积分用于描述控制代价，不解释为实际电能。不同模型版本、力矩上限或场景配置下的统计量分别报告。</p>
+<h2>03 多算法对比与部署改进</h2>
+<h3>同条件多算法比较</h3>
+<p>第二版刚体实验在单轴和三轴共同环境中比较PID、PPO、SAC与TD3。各学习方法在同一轴数任务内使用相同动力学、观测、输入约束、奖励、随机化范围和请求交互预算，均采用11、22、33三个独立训练种子。两任务共形成18份从零训练记录。单模型请求预算为100万步，其中PPO因完整采样批次实际执行1,001,472步，SAC和TD3各执行1,000,000步；不同算法的计算开销不视为相等。</p>
+<p>PID参数和模型检查点在固定验证场景中选择，测试用于报告性能。每轴20组初态在9种工况间复用形成180场景，每种学习算法合并三个训练种子的540回合进行描述，统计解释保留场景复用关系。评价采用20秒完整时域及末5秒每点角误差、角速度约束，原始部署与修正部署共7,560回合，另行保存的历史模型复测不混入算法排名。</p>
+<h3>PID整定及部署处理</h3>
+<p>验证整定将单轴PID成功率由66.7%提高至71.1%，三轴由23.9%提高至71.1%；扩展角速度滤波候选后三轴为72.8%。三轴主要收益发生于整定阶段，滤波相对同增益整定版仅增加3个成功场景，并伴随控制代价增加。入选Ki均为0，单轴滤波系数为1，因此不能将总体收益归因于积分保护或单轴滤波。</p>
+<p>针对标称目标静止处的非零策略输出，本文对同一模型采用a_cal(o)=clip[π(o)−π(0),−1,1]进行部署后处理。该处理不更新网络权重，原始与修正动作按相同模型、种子和场景配对。三轴PPO、SAC、TD3成功率分别由0%提高至55.9%、63.0%和24.8%，仍低于本次PID的72.8%。部分瞬态指标未改善，表明平衡点偏置修正不能代替完整控制性能评价。</p>
+<h3>代表算法的选择范围</h3>
+<p>修正后SAC在本批三轴学习方法中取得最高成功率，故后续刚体参数与执行器探索采用SAC作为代表算法。该选择只依据本批任务和验证结果，不构成SAC对所有任务及预算的普遍优越性结论，也不约束后续柔性任务必须采用同一学习方法。</p>
+<h2>04 惯量与执行器误差探索</h2>
+<h3>不确定参数下的探索设置</h3>
+<p>在刚体统一比较基础上，本文采用SAC作为学习方法的代表，分别研究惯量变化、执行器一阶滞后与纯延迟。惯量专项在标称惯量及ρ∈[0.7,1.3]随机惯量条件下分别训练单轴和三轴策略，各采用三个训练种子，模型和部署偏置在测试前冻结。执行器专项固定惯量，分别采用Tτ̇a+τa=u与τa(t)=u(t−d)描述实际力矩，区分直接SAC与PID上叠加SAC补偿，并向控制器提供规定长度的历史观测和指令。</p>
+<h3>结果与问题定位</h3>
+<p>惯量专项的严格域外倍率为0.5、0.6、1.4和1.5。单轴校准标称SAC与随机化SAC的成功率分别为100%和98.9%，三轴分别为100%和84.4%；标称整定PID在对应测试中全部完成。校准标称SAC的力矩平方积分虽降低，但响应更慢且全程误差较大，不能解释为同等性能下的节能优势。</p>
+<p>原执行器专项规定从第8秒起至第22秒持续停稳。在一阶滞后训练范围内，PID与三个PID＋SAC正式种子均完成1536/1536回合，但后者控制代价更高；纯延迟中三个补偿种子的成功率为71.0%至100%，未达到统一可靠性与代价优势要求。直接SAC未通过开发门槛，仅作为诊断资料。后续独立修正版保留固定失效时窗和零补偿检查点，SAC开发仍选择初始零补偿，未证明有效学习增量。</p>
+<p>上述结果支持在本次模型和训练预算下未获得稳定优势，而不构成算法不可能成功的理论结论。各任务分别训练模型，“采用一种代表算法”不等于跨任务共享同一权重。正文将相关探索浓缩为统一对照表，完整训练和核验记录保留在原研究工程中，随后将主要研究聚焦于柔性附件的本体与相对振动联合停稳目标。</p>
+<h2>05 柔性附件动力学与控制目标</h2>
+<h3>1. 建模假设与广义坐标</h3>
+<p>研究对象为本体绕固定轴转动并带动柔性附件的等效系统，设本体及附件等效转角分别为θ、φ，定义相对变形q＝φ−θ。假设转动惯量Jb、Jf在每回合内恒定；附件仅保留一个线性扭转柔性模态；内部力矩服从线性弹性及黏性阻尼关系；外部控制力矩u仅作用于本体。</p>
+<p>令弹性势能V＝k(φ−θ)²/2，耗散函数D＝c(φ̇−θ̇)²/2，动能T＝Jbθ̇²/2＋Jfφ̇²/2。依据角动量定律，或等价地由含耗散项的拉格朗日方程，得到：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>J</mi><mi>b</mi></msub><mover><mi>&#x003B8;</mi><mo>&#x000A8;</mo></mover><mo>&#x0003D;</mo><mi>u</mi><mo>&#x0002B;</mo><mi>k</mi><mi>q</mi><mo>&#x0002B;</mo><mi>c</mi><mover><mi>q</mi><mo>&#x002D9;</mo></mover><mo>&#x0002C;</mo><mspace width="2em" /><msub><mi>J</mi><mi>f</mi></msub><mover><mi>&#x003D5;</mi><mo>&#x000A8;</mo></mover><mo>&#x0003D;</mo><mo>&#x02212;</mo><mi>k</mi><mi>q</mi><mo>&#x02212;</mo><mi>c</mi><mover><mi>q</mi><mo>&#x002D9;</mo></mover><mo>&#x0002E;</mo></mrow></math>
+<p>内部力矩大小相等、方向相反。引入q后：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover><mi>&#x003B8;</mi><mo>&#x000A8;</mo></mover><mo>&#x0003D;</mo><mfrac><mrow><mi>u</mi><mo>&#x0002B;</mo><mi>k</mi><mi>q</mi><mo>&#x0002B;</mo><mi>c</mi><mover><mi>q</mi><mo>&#x002D9;</mo></mover></mrow><mrow><msub><mi>J</mi><mi>b</mi></msub></mrow></mfrac><mo>&#x0002C;</mo><mspace width="2em" /><mover><mi>q</mi><mo>&#x000A8;</mo></mover><mo>&#x0003D;</mo><mo>&#x02212;</mo><mfrac><mrow><mi>u</mi></mrow><mrow><msub><mi>J</mi><mi>b</mi></msub></mrow></mfrac><mo>&#x02212;</mo><mrow><mo stretchy="true" fence="true" form="prefix">&#x00028;</mo><mfrac><mn>1</mn><mrow><msub><mi>J</mi><mi>b</mi></msub></mrow></mfrac><mo>&#x0002B;</mo><mfrac><mn>1</mn><mrow><msub><mi>J</mi><mi>f</mi></msub></mrow></mfrac><mo stretchy="true" fence="true" form="postfix">&#x00029;</mo></mrow><mo stretchy="false">&#x00028;</mo><mi>k</mi><mi>q</mi><mo>&#x0002B;</mo><mi>c</mi><mover><mi>q</mi><mo>&#x002D9;</mo></mover><mo stretchy="false">&#x00029;</mo><mo>&#x0002E;</mo></mrow></math>
+<p>这里线性弹性近似针对相对变形，不以本体绝对姿态角必须接近零作为额外前提；但大变形、几何非线性、多轴运动及高阶模态均未建模。</p>
+<h3>2. 固有频率、阻尼比与参数换算</h3>
+<p>定义约化惯量μ＝JbJf/(Jb＋Jf)，则无外力时相对振动方程为：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover><mi>q</mi><mo>&#x000A8;</mo></mover><mo>&#x0002B;</mo><mn>2</mn><mi>&#x003B6;</mi><msub><mi>&#x003C9;</mi><mi>n</mi></msub><mover><mi>q</mi><mo>&#x002D9;</mo></mover><mo>&#x0002B;</mo><msubsup><mi>&#x003C9;</mi><mi>n</mi><mn>2</mn></msubsup><mi>q</mi><mo>&#x0003D;</mo><mn>0</mn><mo>&#x0002C;</mo><mspace width="2em" /><msub><mi>&#x003C9;</mi><mi>n</mi></msub><mo>&#x0003D;</mo><mn>2</mn><mi>&#x003C0;</mi><mi>f</mi><mo>&#x0002C;</mo><mspace width="2em" /><mi>k</mi><mo>&#x0003D;</mo><mi>&#x003BC;</mi><msubsup><mi>&#x003C9;</mi><mi>n</mi><mn>2</mn></msubsup><mo>&#x0002C;</mo><mspace width="2em" /><mi>c</mi><mo>&#x0003D;</mo><mn>2</mn><mi>&#x003BC;</mi><mi>&#x003B6;</mi><msub><mi>&#x003C9;</mi><mi>n</mi></msub><mo>&#x0002E;</mo></mrow></math>
+<p>本体和附件同时自由运动，所以相对振动频率由两个惯量共同决定。若把本体固定而仅研究附件转动，会得到另一系统的频率，不能混用。欠阻尼振动频率为ωd＝ωn√(1−ζ²)，也应与无阻尼固有频率区分。</p>
+<p>本研究取Jb＝0.7 kg·m²、Jf＝0.3 kg·m²，柔性频率f∈[0.4,0.8] Hz，阻尼比ζ∈[0.01,0.04]。这些数值用于构造可重复的参数不确定性仿真，未通过具体帆板有限元或实物数据辨识。</p>
+<h3>3. 状态空间表示</h3>
+<p>令x＝[θ，θ̇，q，q̇]ᵀ，得到：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover><mi>x</mi><mo>&#x002D9;</mo></mover><mo>&#x0003D;</mo><mi>A</mi><mi>x</mi><mo>&#x0002B;</mo><mi>B</mi><mi>u</mi><mo>&#x0002C;</mo><mspace width="1em" /><mi>A</mi><mo>&#x0003D;</mo><mo>&#x0005B;</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mi>k</mi><mo>&#x0002F;</mo><msub><mi>J</mi><mi>b</mi></msub></mtd><mtd><mi>c</mi><mo>&#x0002F;</mo><msub><mi>J</mi><mi>b</mi></msub></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mo>&#x02212;</mo><msubsup><mi>&#x003C9;</mi><mi>n</mi><mn>2</mn></msubsup></mtd><mtd><mo>&#x02212;</mo><mn>2</mn><mi>&#x003B6;</mi><msub><mi>&#x003C9;</mi><mi>n</mi></msub></mtd></mtr></mtable><mo>&#x0005D;</mo><mo>&#x0002C;</mo><mspace width="1em" /><mi>B</mi><mo>&#x0003D;</mo><mo>&#x0005B;</mo><mtable><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn><mo>&#x0002F;</mo><msub><mi>J</mi><mi>b</mi></msub></mtd></mtr><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mo>&#x02212;</mo><mn>1</mn><mo>&#x0002F;</mo><msub><mi>J</mi><mi>b</mi></msub></mtd></mtr></mtable><mo>&#x0005D;</mo><mo>&#x0002E;</mo></mrow></math>
+<p>在本模型中，u与两条加速度方程同时出现，并不意味着设置了两个执行器；这是由q＝φ−θ的坐标变换导致的。</p>
+<p>对每个采样间隔Δt＝0.05 s，使用零阶保持：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>x</mi><mrow><mi>j</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></msub><mo>&#x0003D;</mo><msub><mi>A</mi><mi>d</mi></msub><msub><mi>x</mi><mi>j</mi></msub><mo>&#x0002B;</mo><msub><mi>B</mi><mi>d</mi></msub><msub><mi>u</mi><mi>j</mi></msub><mo>&#x0002C;</mo><mspace width="2em" /><mi>exp</mi><mspace width="negativethinmathspace" /><mrow><mo stretchy="true" fence="true" form="prefix">&#x00028;</mo><mo>&#x0005B;</mo><mtable><mtr><mtd><mi>A</mi></mtd><mtd><mi>B</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>&#x0005D;</mo><mi>&#x00394;</mi><mi>t</mi><mo stretchy="true" fence="true" form="postfix">&#x00029;</mo></mrow><mo>&#x0003D;</mo><mo>&#x0005B;</mo><mtable><mtr><mtd><msub><mi>A</mi><mi>d</mi></msub></mtd><mtd><msub><mi>B</mi><mi>d</mi></msub></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>&#x0005D;</mo><mo>&#x0002E;</mo></mrow></math>
+<p>原仿真代码采用解析的刚体—振动坐标分离，独立轨迹核验采用上述物理状态矩阵指数，避免仅调用同一推进函数进行自我比较。参数在回合内固定，使每一回合内部为线性时不变系统；不同回合之间的A不同。</p>
+<h3>4. 解析推进的物理含义</h3>
+<p>令ρ＝Jf/(Jb＋Jf)，定义惯量加权平均角m＝θ＋ρq，则：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover><mi>m</mi><mo>&#x000A8;</mo></mover><mo>&#x0003D;</mo><mfrac><mrow><mi>u</mi></mrow><mrow><msub><mi>J</mi><mi>b</mi></msub><mo>&#x0002B;</mo><msub><mi>J</mi><mi>f</mi></msub></mrow></mfrac><mo>&#x0002C;</mo><mspace width="2em" /><mover><mi>q</mi><mo>&#x000A8;</mo></mover><mo>&#x0002B;</mo><mn>2</mn><mi>&#x003B6;</mi><msub><mi>&#x003C9;</mi><mi>n</mi></msub><mover><mi>q</mi><mo>&#x002D9;</mo></mover><mo>&#x0002B;</mo><msubsup><mi>&#x003C9;</mi><mi>n</mi><mn>2</mn></msubsup><mi>q</mi><mo>&#x0003D;</mo><mo>&#x02212;</mo><mfrac><mrow><mi>u</mi></mrow><mrow><msub><mi>J</mi><mi>b</mi></msub></mrow></mfrac><mo>&#x0002E;</mo></mrow></math>
+<p>第一条是总惯量对应的整体运动；第二条是受控制输入激励的相对振动。给定常值输入时，相对振动的特解为qeq＝−u/(Jbωn²)，其齐次解为衰减正弦。分别推进m和q，再用θ＝m−ρq重构本体状态，即得到代码的解析零阶保持实现。</p>
+<h3>5. 物理一致性检查</h3>
+<p>模型满足总角动量关系：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mi>d</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo stretchy="false">&#x00028;</mo><msub><mi>J</mi><mi>b</mi></msub><mover><mi>&#x003B8;</mi><mo>&#x002D9;</mo></mover><mo>&#x0002B;</mo><msub><mi>J</mi><mi>f</mi></msub><mover><mi>&#x003D5;</mi><mo>&#x002D9;</mo></mover><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>u</mi><mo>&#x0002E;</mo></mrow></math>
+<p>机械能满足：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>E</mi><mo>&#x0003D;</mo><mstyle displaystyle="false" scriptlevel="0"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><msub><mi>J</mi><mi>b</mi></msub><msup><mover><mi>&#x003B8;</mi><mo>&#x002D9;</mo></mover><mn>2</mn></msup><mo>&#x0002B;</mo><mstyle displaystyle="false" scriptlevel="0"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><msub><mi>J</mi><mi>f</mi></msub><msup><mover><mi>&#x003D5;</mi><mo>&#x002D9;</mo></mover><mn>2</mn></msup><mo>&#x0002B;</mo><mstyle displaystyle="false" scriptlevel="0"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>k</mi><msup><mi>q</mi><mn>2</mn></msup><mo>&#x0002C;</mo><mspace width="2em" /><mover><mi>E</mi><mo>&#x002D9;</mo></mover><mo>&#x0003D;</mo><mi>u</mi><mover><mi>&#x003B8;</mi><mo>&#x002D9;</mo></mover><mo>&#x02212;</mo><mi>c</mi><msup><mover><mi>q</mi><mo>&#x002D9;</mo></mover><mn>2</mn></msup><mo>&#x0002E;</mo></mrow></math>
+<p>因此无外力矩时总角动量守恒，正阻尼不会产生机械能。这些关系提供模型方程符号与物理方向的检查依据。当前材料中的等式推导不应冒充新的实物测试或新增数值测试记录。</p>
+<h3>6. 任务与验收定义</h3>
+<p>每回合22 s、440次控制，力矩限制|u|≤0.5 N·m。初态为θ(0)∈[−30°,30°]、θ̇(0)∈[−2°,2°]/s，q(0)＝q̇(0)＝0。频率和阻尼每回合变化，在回合内保持常数。</p>
+<p>定义允许状态集：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="script">S</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x0007B;</mo><mi>x</mi><mi>:</mi><mo stretchy="false">&#x0007C;</mo><mi>&#x003B8;</mi><mo stretchy="false">&#x0007C;</mo><mo>&#x02264;</mo><msup><mn>1</mn><mo>&#x02218;</mo></msup><mo>&#x0002C;</mo><mtext>&#x000A0;</mtext><mo stretchy="false">&#x0007C;</mo><mover><mi>&#x003B8;</mi><mo>&#x002D9;</mo></mover><mo stretchy="false">&#x0007C;</mo><mo>&#x02264;</mo><msup><mn>0.5</mn><mo>&#x02218;</mo></msup><mo>&#x0002F;</mo><mi>s</mi><mo>&#x0002C;</mo><mtext>&#x000A0;</mtext><mo stretchy="false">&#x0007C;</mo><mi>q</mi><mo stretchy="false">&#x0007C;</mo><mo>&#x02264;</mo><msup><mn>0.1</mn><mo>&#x02218;</mo></msup><mo>&#x0002C;</mo><mtext>&#x000A0;</mtext><mo stretchy="false">&#x0007C;</mo><mover><mi>q</mi><mo>&#x002D9;</mo></mover><mo stretchy="false">&#x0007C;</mo><mo>&#x02264;</mo><msup><mn>0.5</mn><mo>&#x02218;</mo></msup><mo>&#x0002F;</mo><mi>s</mi><mo stretchy="false">&#x0007D;</mo><mo>&#x0002E;</mo></mrow></math>
+<p>只有8 s至22 s间全部采样状态均属于S，且整回合未触发失败，才记为任务成功。|q|＞10°、|θ|＞170°或|θ̇|＞300°/s触发失败。失败后进入冻结状态、输出为零，回合时钟和失败惩罚仍持续至固定终点。这里的越界是建模与运行规则，不等同于真实结构损伤。</p>
+<p>主要评价应首先报告成功率和越界次数，再在任务达标条件下比较本体误差、残余变形与力矩平方积分：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>C</mi><mi>u</mi></msub><mo>&#x0003D;</mo><munderover><mo>&#x02211;</mo><mrow><mi>j</mi><mo>&#x0003D;</mo><mn>0</mn></mrow><mrow><mn>439</mn></mrow></munderover><msubsup><mi>u</mi><mi>j</mi><mn>2</mn></msubsup><mi>&#x00394;</mi><mi>t</mi><mo>&#x0002E;</mo></mrow></math>
+<p>Cu的单位为(N·m)²·s，并非电能或推进剂消耗。未全部完成任务的方法即使Cu较小，也不能据此单独判为控制更优。</p>
+<h2>06 PID与PPO学习补偿设计</h2>
+<h3>1. PID基底与限幅</h3>
+<p>令真实状态为x＝[θ，θ̇，q，q̇]ᵀ，四维测量状态记为x̂＝[θ̂，ω̂，q̂，v̂]ᵀ。原无噪主实验中x̂＝x；含噪补充测试中x̂＝x＋n，其中n为测量噪声。所有控制计算均使用测量状态，真实状态只用于物理推进、越界与验收。</p>
+<p>令参考角度为r＝0，测量误差e＝r−θ̂。离散积分候选为Ĩj＝clip(Ij＋ejΔt,−Imax,Imax)，代码Imax＝deg2rad(120)的数值，对应2π/3 rad·s的积分限幅。若候选输出已经超过力矩上限，且候选输出与误差同号，则保持旧积分；否则接收候选积分。随后计算：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>u</mi><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">I</mi><mi mathvariant="normal">D</mi></mrow><mo>&#x0002C;</mo><mi>j</mi></mrow></msub><mo>&#x0003D;</mo><msub><mi>K</mi><mi>p</mi></msub><msub><mi>e</mi><mi>j</mi></msub><mo>&#x02212;</mo><msub><mi>K</mi><mi>d</mi></msub><msub><mover><mi>&#x003C9;</mi><mo stretchy="false">&#x0005E;</mo></mover><mi>j</mi></msub><mo>&#x0002B;</mo><msub><mi>K</mi><mi>i</mi></msub><msub><mi>I</mi><mi>j</mi></msub><mo>&#x0002E;</mo></mrow></math>
+<p>微分项使用角速度反馈，不对离散角度误差做数值差分。对于固定零目标，两者在连续时间表达中对应相同阻尼方向；对于输入整形产生的变化参考，代码仍对测量角速度进行反馈，不能擅自改写成包含参考导数的PID。</p>
+<p>本研究学习控制组合的固定基底参数为Kp＝0.6424195423845626、Kd＝1.7217308002831726、Ki＝0。该选定参数实质为PD，材料中使用“PID框架”是为保持控制器家族和程序接口的统一，不能声称该基底具有积分补偿效果。理论单位分别为N·m/rad、N·m·s/rad、N·m/(rad·s)。</p>
+<h3>2. 连续学习补偿</h3>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>u</mi><mi>j</mi></msub><mo>&#x0003D;</mo><mo>clip</mo><mrow><mo stretchy="true" fence="true" form="prefix">&#x00028;</mo><msub><mi>u</mi><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">I</mi><mi mathvariant="normal">D</mi></mrow><mo>&#x0002C;</mo><mi>j</mi></mrow></msub><mo>&#x0002B;</mo><mn>0.25</mn><mspace width="0.167em" /><mi>g</mi><mo stretchy="false">&#x00028;</mo><msub><mover><mi>x</mi><mo stretchy="false">&#x0005E;</mo></mover><mi>j</mi></msub><mo stretchy="false">&#x00029;</mo><msub><mi>a</mi><mi>j</mi></msub><mo>&#x0002C;</mo><mo>&#x02212;</mo><mn>0.5</mn><mo>&#x0002C;</mo><mn>0.5</mn><mo stretchy="true" fence="true" form="postfix">&#x00029;</mo></mrow><mo>&#x0002C;</mo><mspace width="1em" /><mi>g</mi><mo stretchy="false">&#x00028;</mo><mover><mi>x</mi><mo stretchy="false">&#x0005E;</mo></mover><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mo>min</mo><mo stretchy="false">&#x0007B;</mo><mn>1</mn><mo>&#x0002C;</mo><mo fence="false" stretchy="false">&#x02016;</mo><mover><mi>x</mi><mo stretchy="false">&#x0005E;</mo></mover><mo>&#x02298;</mo><mi>s</mi><msub><mo fence="false" stretchy="false">&#x02016;</mo><mn>2</mn></msub><mo stretchy="false">&#x0007D;</mo><mo>&#x0002C;</mo></mrow></math>
+<p>其中a∈[−1,1]为发送至控制器的策略动作，s＝[30°，10°/s，1°，5°/s]ᵀ，逐元素比值为无量纲。0.25的单位为N·m。真实状态与测量状态在归一化前均使用弧度和弧度每秒。补偿幅值门控g与网络输入使用同一测量状态，含噪测试中不额外获得隐藏的真实状态。</p>
+<p>g(0)＝0保证四维测量状态均为零时补偿严格为零，限制网络静态偏置的影响；仅角度误差为零不具备这一保证。含噪时真实平衡状态可能对应非零测量，因而仍可能产生补偿。该结构没有构成Lyapunov稳定性证明，也不保证饱和条件下始终达标。PPO训练中策略分布允许探索，发送至有界动作空间前做限幅；正式测试采用deterministic=True，不额外抽取探索动作。</p>
+<p>网络输入为：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>o</mi><mi>j</mi></msub><mo>&#x0003D;</mo><mrow><mo stretchy="true" fence="true" form="prefix">[</mo><mo>&#x02212;</mo><mfrac><mrow><mover><mi>&#x003B8;</mi><mo stretchy="false">&#x0005E;</mo></mover></mrow><mrow><msup><mn>30</mn><mo>&#x02218;</mo></msup></mrow></mfrac><mo>&#x0002C;</mo><mfrac><mrow><mover><mi>&#x003C9;</mi><mo stretchy="false">&#x0005E;</mo></mover></mrow><mrow><msup><mn>10</mn><mo>&#x02218;</mo></msup><mo>&#x0002F;</mo><mi>s</mi></mrow></mfrac><mo>&#x0002C;</mo><mfrac><mrow><mover><mi>q</mi><mo stretchy="false">&#x0005E;</mo></mover></mrow><mrow><msup><mn>1</mn><mo>&#x02218;</mo></msup></mrow></mfrac><mo>&#x0002C;</mo><mfrac><mrow><mover><mi>v</mi><mo stretchy="false">&#x0005E;</mo></mover></mrow><mrow><msup><mn>5</mn><mo>&#x02218;</mo></msup><mo>&#x0002F;</mo><mi>s</mi></mrow></mfrac><mo>&#x0002C;</mo><mfrac><mrow><mi>I</mi></mrow><mrow><msub><mi>I</mi><mi>s</mi></msub></mrow></mfrac><mo>&#x0002C;</mo><mfrac><mrow><msub><mi>u</mi><mrow><mi>j</mi><mo>&#x02212;</mo><mn>1</mn></mrow></msub></mrow><mrow><mn>0.5</mn><mspace width="0.167em" /><mrow><mi mathvariant="normal">N</mi><mspace width="0.167em" /><mi mathvariant="normal">m</mi></mrow></mrow></mfrac><mo>&#x0002C;</mo><mfrac><mrow><mi>j</mi></mrow><mrow><mn>440</mn></mrow></mfrac><mo stretchy="true" fence="true" form="postfix">]</mo></mrow><mo>&#x0002E;</mo></mrow></math>
+<p>Is在程序中取deg2rad(60)的数值，对应π/3 rad·s的积分尺度。上一拍命令是限幅后实际发送的控制命令，不是额外隐藏标签。真实频率、阻尼、刚度不输入网络。网络是前馈MLP，而非循环策略或在线辨识器；测试时固定权重，不能描述为“自训练”。</p>
+<h3>3. 奖励函数与有限时域处理</h3>
+<p>令z＝x⊘s，归一化运行代价为：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>L</mi><mo stretchy="false">&#x00028;</mo><mi>x</mi><mo>&#x0002C;</mo><mi>u</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mn>2</mn><msubsup><mi>z</mi><mn>1</mn><mn>2</mn></msubsup><mo>&#x0002B;</mo><mn>0.05</mn><msubsup><mi>z</mi><mn>2</mn><mn>2</mn></msubsup><mo>&#x0002B;</mo><mn>0.5</mn><msubsup><mi>z</mi><mn>3</mn><mn>2</mn></msubsup><mo>&#x0002B;</mo><mn>0.05</mn><msubsup><mi>z</mi><mn>4</mn><mn>2</mn></msubsup><mo>&#x0002B;</mo><mn>0.15</mn><mo stretchy="false">&#x00028;</mo><mi>u</mi><mo>&#x0002F;</mo><mn>0.5</mn><msup><mo stretchy="false">&#x00029;</mo><mn>2</mn></msup><mo>&#x0002E;</mo></mrow></math>
+<p>以v表示8 s后状态不在允许集合的指示变量，活跃状态的基础奖励为rbase＝−Δt[min(L,30)＋10v]；失败状态每一步取rbase＝−50Δt。失败状态不提前终止，剩余时域持续惩罚；仅到440步才结束回合。</p>
+<p>再定义非负状态罚函数P(x)＝0.2 min(2z₁²＋0.05z₂²＋0.5z₃²＋0.05z₄²,30)，等价势函数Φ(x)＝−P(x)，加入：</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>r</mi><mi>j</mi></msub><mo>&#x0003D;</mo><msub><mi>r</mi><mrow><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo>&#x0002C;</mo><mi>j</mi></mrow></msub><mo>&#x0002B;</mo><mi>P</mi><mo stretchy="false">&#x00028;</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="false">&#x00029;</mo><mo>&#x02212;</mo><mi>&#x003B3;</mi><mi>P</mi><mo stretchy="false">&#x00028;</mo><msub><mi>x</mi><mrow><mi>j</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></msub><mo stretchy="false">&#x00029;</mo><mo>&#x0002C;</mo><mspace width="2em" /><mi>&#x003B3;</mi><mo>&#x0003D;</mo><mn>0.999</mn><mo>&#x0002E;</mo></mrow></math>
+<p>在回合终点将后继势函数置零，使有限折扣回报中的塑形项望远镜相消后只剩初始状态常数。时间比例输入网络，使有限时域中的剩余时间可见。此设计用于改善学习信号，不替代正式验收条件；本研究也没有凭奖励数值证明闭环稳定性或所有状态的最优性。</p>
+<p>由于失败运行代价50高于任一活跃状态的运行代价上界40，不能通过触发失败以减小基础运行罚。用于模型选择的selection_cost另将失败/未达标回合代价至少记为0.5²×22＝5.5，避免低力矩失败轨迹在同成功数条件下占优；这一项只用于选择，不是真实能耗。</p>
+<h3>4. PPO设置与开发选择</h3>
+<p>采用Stable-Baselines3的PPO实现，前馈网络两层、各64单元。主要配置为学习率10⁻⁴、8个并行环境、每个环境每轮256步、batch size＝256、每轮10个优化epoch、γ＝0.999、GAE λ＝0.95、clip range＝0.1、熵系数0、初始log standard deviation＝−2。</p>
+<p>策略均值输出层的权重和偏置初始化为零。因此零步确定性策略输出零补偿，可与同一PID基底逐一对应；训练时仍有随机探索噪声，不等于完全没有动作探索。</p>
+<p>开发比较SAC、TD3、PPO，各524,288步，种子分别16202、16201、16203。SAC/TD3的网络同为[64,64]，学习率3×10⁻⁴、batch size＝128、γ＝0.999等，具体完整配置以代码为准。环境与总交互步数相同不等于计算量、样本复用次数或超参数搜索充分程度相同，所以不得作普遍算法排名。</p>
+<p>候选需满足最佳检查点非零步、验证成功率至少95%、无越界等失败，再按验证成功数和选择代价选择算法。SAC和TD3在本预算下的最佳检查点均为零步；PPO在262,144步达到320/320验证成功而被选中。此处的320由64个验证初态在5个频率上展开，五次试验共享初态，不能视为320个完全独立初态。</p>
+<h3>5. 正式训练、检查点与局限</h3>
+<p>选择PPO后，以111、222、333三个新种子独立从零训练，各1,048,576步，而非从开发最佳模型继续微调。每65,536步验证，按以下排序保留best.zip：失败数升序、成功数降序、selection_cost升序、步数升序。模型训练到预算末尾仍保存final.zip，故检查点选择与完整训练记录可分别复核。</p>
+<table>
+<thead>
+<tr>
+<th>种子</th>
+<th style="text-align: right;">实际交互步数</th>
+<th style="text-align: right;">验证选中步数</th>
+<th style="text-align: right;">最佳验证成功数</th>
+<th style="text-align: right;">末模型验证成功数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>111</td>
+<td style="text-align: right;">1,048,576</td>
+<td style="text-align: right;">262,144</td>
+<td style="text-align: right;">320/320</td>
+<td style="text-align: right;">162/320</td>
+</tr>
+<tr>
+<td>222</td>
+<td style="text-align: right;">1,048,576</td>
+<td style="text-align: right;">393,216</td>
+<td style="text-align: right;">320/320</td>
+<td style="text-align: right;">185/320</td>
+</tr>
+<tr>
+<td>333</td>
+<td style="text-align: right;">1,048,576</td>
+<td style="text-align: right;">327,680</td>
+<td style="text-align: right;">320/320</td>
+<td style="text-align: right;">214/320</td>
+</tr>
+</tbody>
+</table>
+<p>三个末模型均退化，表明当前训练过程仍不稳定。可以报告经预设验证规则选中的模型具有相应测试表现，不应写成“训练稳定收敛”或“训练越久性能越好”。修正后六次完整训练的总交互步数为4,718,592。</p>
+<h3>6. 对照与因果解释范围</h3>
+<p>同基底消融中，补偿动作固定为零时严格回到同一套保守PID参数；这回答“在该基底上增加补偿”的增量效果。成功率优先整定PID及追加整定PID用于检查基底选择是否使对照偏弱。ZVD输入整形加PID减少对模态的激励，使用标称f＝0.6 Hz、ζ＝0.025设置整形时序，不逐回合读取真实参数。LQR依据标称模型设计u＝−Kx，使用与学习模型相同的四个物理状态。</p>
+<p>各方法都能够访问同样状态和同样初态信息，但控制结构利用信息的方式不同。普通PID没有显式利用q和q̇，而PPO与LQR能够利用。因此“增加柔性状态反馈”和“使用强化学习算法”的作用应通过传统完整状态对照及补充消融加以区分，不能将全部改善归为强化学习独有优势。</p>
+<p>额外补充实验及新的复核应在第07步单独注明方案、冻结时间和实际结果。本方法说明不预告未完成实验的结果，也不把新增复核与原主测试混成一次先验实验。</p>
+<h2>07 柔性附件对比实验与独立核验</h2>
+<h3>对比方案与测试约束</h3>
+<p>柔性附件实验以本体姿态稳定及附件相对振动抑制为联合目标，采用固定22 s时域、0.05 s采样周期及±0.5 N·m力矩限制。在8—22 s区间内，所有采样点须同时满足本体角误差1°、本体角速度0.5°/s、附件相对角度0.1°及相对角速度0.5°/s的绝对值上限。控制代价采用完整时域内实际施加力矩的平方积分，不解释为电能。</p>
+<p>原研究保留6份完整训练记录、4,718,592交互步和6,400回合测试。本次在冻结三个PPO模型及六种传统方法后，增加A原分布独立确认、B初始小振动和C初始小振动与测量噪声三组测试。每组包含128个独立初态及五种0.4—0.8 Hz模态频率，共640场景，新增测试共17,280回合。B、C组相对初角和相对初速分别均匀分布于±0.05°和±0.2°/s；C组测量噪声为独立零均值高斯噪声，四状态标准差分别为0.01°、0.02°/s、0.005°和0.02°/s，场景噪声在不同控制器间复用。真实状态用于动力学与验收，加噪测量用于控制。各组初态独立抽取，组间差异不作单因素因果解释。</p>
+<h3>成功率与多种子结果</h3>
+<p>三个PPO模型在A、B、C各组均完成640/640回合任务，未出现预设模型范围越界。补充搜索PID分别完成597、571、580回合，同一PID基底分别完成515、509、521回合。为避免把初态在不同频率上的复用当作独立样本，采用以128个初态为簇的配对bootstrap，重采样200,000次。对18项预声明主要比较进行Bonferroni校正后，三份PPO模型相对补充搜索PID及同一PID基底的成功率差区间下界均为正。</p>
+<table>
+<thead>
+<tr>
+<th>测试组</th>
+<th style="text-align: right;">PPO相对补充搜索PID的成功率差</th>
+<th style="text-align: right;">99.7222%配对区间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A：原分布全新样本</td>
+<td style="text-align: right;">6.719个百分点</td>
+<td style="text-align: right;">[3.750, 10.000]个百分点</td>
+</tr>
+<tr>
+<td>B：增加初始小振动</td>
+<td style="text-align: right;">10.781个百分点</td>
+<td style="text-align: right;">[6.719, 15.469]个百分点</td>
+</tr>
+<tr>
+<td>C：初始小振动与测量噪声</td>
+<td style="text-align: right;">9.375个百分点</td>
+<td style="text-align: right;">[5.625, 13.594]个百分点</td>
+</tr>
+</tbody>
+</table>
+<h3>A：原分布全新样本：完整对照结果</h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th style="text-align: right;">通过/640</th>
+<th style="text-align: right;">越界回合</th>
+<th style="text-align: right;">平均力矩平方积分（N²·m²·s）</th>
+<th style="text-align: right;">残余相对角度RMS（°）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原成功率优先整定PID</td>
+<td style="text-align: right;">588/640</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">0.125503</td>
+<td style="text-align: right;">0.439077</td>
+</tr>
+<tr>
+<td>学习补偿使用的同一PID基底</td>
+<td style="text-align: right;">515/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.011584</td>
+<td style="text-align: right;">0.012918</td>
+</tr>
+<tr>
+<td>补充搜索PID</td>
+<td style="text-align: right;">597/640</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">0.126755</td>
+<td style="text-align: right;">0.437938</td>
+</tr>
+<tr>
+<td>ZVD输入整形＋PID</td>
+<td style="text-align: right;">636/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.008902</td>
+<td style="text-align: right;">0.005777</td>
+</tr>
+<tr>
+<td>优化ZVD输入整形＋PID</td>
+<td style="text-align: right;">632/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.007527</td>
+<td style="text-align: right;">0.006211</td>
+</tr>
+<tr>
+<td>优化LQR</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.005526</td>
+<td style="text-align: right;">0.004280</td>
+</tr>
+<tr>
+<td>PID＋PPO（种子111）</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.009743</td>
+<td style="text-align: right;">0.004980</td>
+</tr>
+<tr>
+<td>PID＋PPO（种子222）</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.013875</td>
+<td style="text-align: right;">0.005229</td>
+</tr>
+<tr>
+<td>PID＋PPO（种子333）</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.007635</td>
+<td style="text-align: right;">0.003351</td>
+</tr>
+</tbody>
+</table>
+<h3>B：增加初始小振动：完整对照结果</h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th style="text-align: right;">通过/640</th>
+<th style="text-align: right;">越界回合</th>
+<th style="text-align: right;">平均力矩平方积分（N²·m²·s）</th>
+<th style="text-align: right;">残余相对角度RMS（°）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原成功率优先整定PID</td>
+<td style="text-align: right;">573/640</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0.142345</td>
+<td style="text-align: right;">0.645019</td>
+</tr>
+<tr>
+<td>学习补偿使用的同一PID基底</td>
+<td style="text-align: right;">509/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.012966</td>
+<td style="text-align: right;">0.014030</td>
+</tr>
+<tr>
+<td>补充搜索PID</td>
+<td style="text-align: right;">571/640</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0.143936</td>
+<td style="text-align: right;">0.646770</td>
+</tr>
+<tr>
+<td>ZVD输入整形＋PID</td>
+<td style="text-align: right;">628/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.010094</td>
+<td style="text-align: right;">0.006602</td>
+</tr>
+<tr>
+<td>优化ZVD输入整形＋PID</td>
+<td style="text-align: right;">626/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.008499</td>
+<td style="text-align: right;">0.007058</td>
+</tr>
+<tr>
+<td>优化LQR</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.006123</td>
+<td style="text-align: right;">0.004532</td>
+</tr>
+<tr>
+<td>PID＋PPO（种子111）</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.010850</td>
+<td style="text-align: right;">0.005379</td>
+</tr>
+<tr>
+<td>PID＋PPO（种子222）</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.015831</td>
+<td style="text-align: right;">0.005630</td>
+</tr>
+<tr>
+<td>PID＋PPO（种子333）</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.008317</td>
+<td style="text-align: right;">0.003555</td>
+</tr>
+</tbody>
+</table>
+<h3>C：初始小振动与测量噪声：完整对照结果</h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th style="text-align: right;">通过/640</th>
+<th style="text-align: right;">越界回合</th>
+<th style="text-align: right;">平均力矩平方积分（N²·m²·s）</th>
+<th style="text-align: right;">残余相对角度RMS（°）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原成功率优先整定PID</td>
+<td style="text-align: right;">574/640</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">0.133627</td>
+<td style="text-align: right;">0.566121</td>
+</tr>
+<tr>
+<td>学习补偿使用的同一PID基底</td>
+<td style="text-align: right;">521/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.011939</td>
+<td style="text-align: right;">0.013660</td>
+</tr>
+<tr>
+<td>补充搜索PID</td>
+<td style="text-align: right;">580/640</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">0.134988</td>
+<td style="text-align: right;">0.582821</td>
+</tr>
+<tr>
+<td>ZVD输入整形＋PID</td>
+<td style="text-align: right;">624/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.009339</td>
+<td style="text-align: right;">0.006929</td>
+</tr>
+<tr>
+<td>优化ZVD输入整形＋PID</td>
+<td style="text-align: right;">623/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.007857</td>
+<td style="text-align: right;">0.007310</td>
+</tr>
+<tr>
+<td>优化LQR</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.005636</td>
+<td style="text-align: right;">0.004579</td>
+</tr>
+<tr>
+<td>PID＋PPO（种子111）</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.010032</td>
+<td style="text-align: right;">0.005700</td>
+</tr>
+<tr>
+<td>PID＋PPO（种子222）</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.014650</td>
+<td style="text-align: right;">0.005965</td>
+</tr>
+<tr>
+<td>PID＋PPO（种子333）</td>
+<td style="text-align: right;">640/640</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.007644</td>
+<td style="text-align: right;">0.004183</td>
+</tr>
+</tbody>
+</table>
+<h3>传统方法与结论边界</h3>
+<p>优化LQR在三组均完成640/640回合，其平均力矩平方积分分别为0.005526、0.006123和0.005636 N²·m²·s，低于各组全部PPO模型。PPO种子333的残余相对角度RMS低于LQR，而其余两个种子没有相同优势，故不能据此宣称算法整体超过LQR。PPO与LQR均利用柔性状态，普通PID的反馈结构仅包含本体状态，控制结构与状态利用程度的差异也参与了性能差异。</p>
+<p>结果表明，在单轴双惯量单模态仿真及本次频率、阻尼、初态和噪声范围内，PPO学习补偿提高了相对所比较PID的联合任务成功率，该收益在全新初态及轻度条件变化下得到确认。研究未证明相对所有传统方法的优势，亦未覆盖训练频率范围外、真实传感器、执行器动态、多模态附件或三轴柔性耦合。</p>
+<h3>独立数值核验</h3>
+<p>新增17,280回合的7,603,200次状态转移均经独立状态空间矩阵指数核验，最大单步差约2.22×10⁻¹⁶，按记录指令整段重放最大差约1.56×10⁻¹⁴。测量、策略动作、任务判定、模型范围越界及力矩代价均复算一致。该核验独立建立物理推进方法，策略复算仍使用原冻结实现，不等同于对学习算法的独立实现或硬件试验。</p>
+<h2>08 研究结论与论文答辩组织</h2>
+<h3>研究结论</h3>
+<p>本文首先建立单轴及三轴刚体姿态控制模型，在统一条件下比较PID与深度强化学习，检验PID整定及策略部署偏置修正的影响。惯量随机化与执行器误差探索在本次训练配置和预算下未获得预期收益，为最终任务选择提供了经验依据。</p>
+<p>针对本体姿态稳定及柔性附件振动抑制的联合任务，本文建立单轴双惯量单模态模型，在既有PD反馈上增加PPO连续力矩补偿。三个正式种子的冻结模型在原分布新样本、初始小振动及假定小测量噪声三组中均完成640/640回合任务，相对补充搜索PID与同一PD基底的成功率改善得到成组配对统计支持。完整轨迹的物理推进、动作、验收和代价均经复核。</p>
+<p>优化LQR同样达到全部任务成功，并取得更低力矩平方积分；PPO种子间在代价与残余振动上也存在差异。因此，本文的实证贡献是验证学习补偿相对所比较PID结构的任务收益及适用边界，而非证明强化学习对传统控制方法的普遍优越性。任务设计、测量原点处的补偿约束及验证流程属于针对具体问题的方案与工程改进，不构成对PPO学习规则的理论创新。</p>
+<h3>局限与后续工作</h3>
+<p>本研究限于理想力矩源、可测柔性状态、单模态线性近似和给定频率范围；噪声条件未经硬件标定，未覆盖三轴柔性耦合及训练范围外测试。方法间训练与调参预算不等，普通PID未利用完整柔性状态，故学习与控制结构的作用尚不能完全分离。后续可研究状态估计、多模态与三轴柔性动力学、执行器非理想性及硬件在环验证；这些方向不列为本次已完成成果。</p>
+<h2>参考文献与图表</h2>
+<p>正式参考文献、图表安排和原始证据入口见<a href="%E8%AE%BA%E6%96%87%E5%A4%A7%E7%BA%B2%E4%B8%8E%E8%AF%81%E6%8D%AE%E5%AF%B9%E7%85%A7.md">论文大纲与证据对照</a>。各研究段落可按该表合并为六章，不把本阅读顺序的八步直接当作学校要求的章数。</p></main></body></html>

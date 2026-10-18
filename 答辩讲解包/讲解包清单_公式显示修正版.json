@@ -1,0 +1,307 @@
+{
+  "version": "公式显示修正版_20261018",
+  "files": [
+    {
+      "relative": "01_研究问题与论文主线/支撑代码与数据/材料说明.md",
+      "bytes": 1196,
+      "sha256": "207d5c3c835567d95bbbbe5983a272810425aa1b57c4cdc050cb867354835abb"
+    },
+    {
+      "relative": "01_研究问题与论文主线/支撑代码与数据/来源清单.json",
+      "bytes": 1756,
+      "sha256": "5072a67d9ef84936c40d4d8afcf14743f414211b4d557ebed528b99a7b2e635b"
+    },
+    {
+      "relative": "01_研究问题与论文主线/本步讲解.md",
+      "bytes": 5270,
+      "sha256": "940ac0758a3c20ba93245c7eaaf2aab44220bc62fccfcde9b0380bfb04bc03e7"
+    },
+    {
+      "relative": "01_研究问题与论文主线/答辩与论文用稿.md",
+      "bytes": 2771,
+      "sha256": "e72a484d68a5531b689234580ef52c83406ff1ca187d2c06ffcdf07ef7f4f779"
+    },
+    {
+      "relative": "02_刚体姿态建模与PID控制/支撑代码与数据/材料说明.md",
+      "bytes": 1275,
+      "sha256": "f7715dbcb0ec9de55b2252acaac93d9fe243a4e05245772da8fb57756c551439"
+    },
+    {
+      "relative": "02_刚体姿态建模与PID控制/支撑代码与数据/来源清单.json",
+      "bytes": 3207,
+      "sha256": "a90c2c15c57446263ec9ba1e9568316ff8ad3eb6a9377f627d0f656eb76271fa"
+    },
+    {
+      "relative": "02_刚体姿态建模与PID控制/本步讲解.md",
+      "bytes": 5064,
+      "sha256": "170b23cc8117e82afdcf8099cab688a054847b676cbb982b6e4ef1d61d9324f5"
+    },
+    {
+      "relative": "02_刚体姿态建模与PID控制/答辩与论文用稿.md",
+      "bytes": 3723,
+      "sha256": "dd9ef77798f4388c6ca933ee86fea8b6b59f662f4e9c0c08b7f68e39664c7287"
+    },
+    {
+      "relative": "03_多算法对比与部署改进/图表/01_PID配对改进.png",
+      "bytes": 222097,
+      "sha256": "d2c8436c0dedaf946e967f2f6b19a510b09b703a9daeb61a9f567ea72c7e7b88"
+    },
+    {
+      "relative": "03_多算法对比与部署改进/图表/02_同模型偏置修正.png",
+      "bytes": 159853,
+      "sha256": "3c16e82b2366608961749a8ae3d8a17c2b4cded182f47d68901b33cad672a015"
+    },
+    {
+      "relative": "03_多算法对比与部署改进/支撑代码与数据/材料说明.md",
+      "bytes": 1458,
+      "sha256": "982ee1c9b92590fcc8779e6f68b0190c0b5b9e57d0df37a3ed81e08678a0128c"
+    },
+    {
+      "relative": "03_多算法对比与部署改进/支撑代码与数据/来源清单.json",
+      "bytes": 14679,
+      "sha256": "77c79fa33232769fbad721543f05e049fe83d13620f59f7245fd19002e275e24"
+    },
+    {
+      "relative": "03_多算法对比与部署改进/本步讲解.md",
+      "bytes": 6047,
+      "sha256": "a05b0e3c657dbef70d73c626e1ca3814281aeaef00b3cce58e6aedc8f3dd065b"
+    },
+    {
+      "relative": "03_多算法对比与部署改进/答辩与论文用稿.md",
+      "bytes": 3692,
+      "sha256": "4de4fbaf335d0d56bb2d44752f9b8d0439859018c83f0216cc94c339d3d1333b"
+    },
+    {
+      "relative": "04_惯量与执行器误差探索/支撑代码与数据/材料说明.md",
+      "bytes": 1621,
+      "sha256": "9ef684e9a36e2272ed175f7007b6ba2c529812c092718f4686347d38c6f70933"
+    },
+    {
+      "relative": "04_惯量与执行器误差探索/支撑代码与数据/来源清单.json",
+      "bytes": 5612,
+      "sha256": "ca5d9e947e67a9ead4982b09e35cd09d2bb81e0bb102a421edbd6a5e7a2e3144"
+    },
+    {
+      "relative": "04_惯量与执行器误差探索/本步讲解.md",
+      "bytes": 5417,
+      "sha256": "389df142932b63aae6541f3686aabe64e05088270a1e64dfebdf50915c910b57"
+    },
+    {
+      "relative": "04_惯量与执行器误差探索/答辩与论文用稿.md",
+      "bytes": 3303,
+      "sha256": "922ab778ca11c9c635fa8db3e14f4bdcfe039f2316ad0fefcd03c2d2fae38e16"
+    },
+    {
+      "relative": "05_柔性附件动力学与控制目标/图表/双惯量模型示意.svg",
+      "bytes": 2929,
+      "sha256": "367cd4627a10afd730d930631f7b69b16d535f1be3c7953c6cb6be995ef5ca35"
+    },
+    {
+      "relative": "05_柔性附件动力学与控制目标/支撑代码与数据/材料说明.md",
+      "bytes": 2018,
+      "sha256": "343716ae28264d226c0afaaa07d87f6aa9602bef7651694612aed5fdbab889c9"
+    },
+    {
+      "relative": "05_柔性附件动力学与控制目标/支撑代码与数据/来源清单.json",
+      "bytes": 2114,
+      "sha256": "7792d36254eec8817bf0186e796c8cefa5bbe99befd90bbbc9df1180de5eabfa"
+    },
+    {
+      "relative": "05_柔性附件动力学与控制目标/本步讲解.md",
+      "bytes": 7563,
+      "sha256": "8d20472324913e071c16dfb6ce848d7a0f6239b30cb83610edd0cbe393724834"
+    },
+    {
+      "relative": "05_柔性附件动力学与控制目标/答辩与论文用稿.md",
+      "bytes": 6238,
+      "sha256": "7048ad25282ce8bd8f87c7fd571b50adfd441acc85a888da7d6b9294e6f3da60"
+    },
+    {
+      "relative": "06_PID与PPO学习补偿设计/图表/PD与PPO连续补偿控制结构.svg",
+      "bytes": 5394,
+      "sha256": "fee5ae1919f3081169206eef7986abdd1ba70b43a77744d693afd332bcd0456e"
+    },
+    {
+      "relative": "06_PID与PPO学习补偿设计/图表/训练检查点与末模型退化.png",
+      "bytes": 202170,
+      "sha256": "0fece5930d8ea472589334f56b97dd66543a0f838ac5288dc3de7c8ce0abbd5f"
+    },
+    {
+      "relative": "06_PID与PPO学习补偿设计/支撑代码与数据/参考图/原始固定初态响应.png",
+      "bytes": 362750,
+      "sha256": "f2572d8b0c26e8440f023055af3c40166d567ae252bf081e258405cdb710b877"
+    },
+    {
+      "relative": "06_PID与PPO学习补偿设计/支撑代码与数据/材料说明.md",
+      "bytes": 3695,
+      "sha256": "3c7d486cf795972866cd5c6c6f3163ae7e5ff26956daed90d25fd14a978fb9c4"
+    },
+    {
+      "relative": "06_PID与PPO学习补偿设计/支撑代码与数据/来源清单.json",
+      "bytes": 8224,
+      "sha256": "12080ef62eb8e23d437a3ba7596c9d62e071a92afd6a3284705f6af7ceb1e3be"
+    },
+    {
+      "relative": "06_PID与PPO学习补偿设计/支撑代码与数据/生成训练检查点图.py",
+      "bytes": 2750,
+      "sha256": "8fa6b0eb651d66ab7535d54fbf5de1fadce480a32c383ae7c97c285a297d1daa"
+    },
+    {
+      "relative": "06_PID与PPO学习补偿设计/本步讲解.md",
+      "bytes": 9076,
+      "sha256": "dd351112cb7908b98f4f63539c5e1feb7d9083184a843c45e03b1e16270dadab"
+    },
+    {
+      "relative": "06_PID与PPO学习补偿设计/答辩与论文用稿.md",
+      "bytes": 9199,
+      "sha256": "3c3d004b1e04b178e5337998f40e0e5fba6c04695c298a69e54e22b44a02544c"
+    },
+    {
+      "relative": "07_柔性附件对比实验与独立核验/图表/三个种子与配对区间.png",
+      "bytes": 104217,
+      "sha256": "9868a5b9f957600df3bae783a257ff68c5c3e1e6b980c1664a27d79a158fe7e7"
+    },
+    {
+      "relative": "07_柔性附件对比实验与独立核验/图表/初始振动与噪声.png",
+      "bytes": 143682,
+      "sha256": "dbf4aef538dfd5170e3a3450a4ebda440ad3b92168444fca0cd7b9d713867ea3"
+    },
+    {
+      "relative": "07_柔性附件对比实验与独立核验/图表/原分布独立确认.png",
+      "bytes": 160583,
+      "sha256": "ca36b67b44ffb8c0eea370b30ad453180d1b9b0f8409e9780cdb8719a15ce71c"
+    },
+    {
+      "relative": "07_柔性附件对比实验与独立核验/图表/频率分组.png",
+      "bytes": 165008,
+      "sha256": "7755233036bd97487a2d268052a9469f4fc1ecf60b6b29db7e13ed7595aa66c4"
+    },
+    {
+      "relative": "07_柔性附件对比实验与独立核验/支撑代码与数据/材料说明.md",
+      "bytes": 1951,
+      "sha256": "3631e7eaa7d8b9416d5a6650e4f32fa6dcb0d170b7eaa8d3e416bdf6c54e1011"
+    },
+    {
+      "relative": "07_柔性附件对比实验与独立核验/支撑代码与数据/来源清单.json",
+      "bytes": 27859,
+      "sha256": "2daca8db4178383743d8945efe01325451492dfd0be627165e0edd470a8f6cf8"
+    },
+    {
+      "relative": "07_柔性附件对比实验与独立核验/本步讲解.md",
+      "bytes": 9248,
+      "sha256": "7f94fad2251bb98b587b553de466e9ecf5ae58a54c2d6682804af1d84ea623b9"
+    },
+    {
+      "relative": "07_柔性附件对比实验与独立核验/答辩与论文用稿.md",
+      "bytes": 6984,
+      "sha256": "ee2373aea8a9120eb2f2558e0b6599c80b28613a63ea87113a5db14de50ac2d6"
+    },
+    {
+      "relative": "08_研究结论与论文答辩组织/支撑代码与数据/材料说明.md",
+      "bytes": 716,
+      "sha256": "bdcbb19e38025b65874e79a3c7ff1477a756f0290f9d89bd1585c3122a8d743a"
+    },
+    {
+      "relative": "08_研究结论与论文答辩组织/支撑代码与数据/来源清单.json",
+      "bytes": 934,
+      "sha256": "341f1b79ebfa4eeb4eac82071ebff32109a6632a43e9dfd10b39e5004d393afb"
+    },
+    {
+      "relative": "08_研究结论与论文答辩组织/本步讲解.md",
+      "bytes": 5266,
+      "sha256": "24e36833418f621a0791097bd8001a620d157cfe9c52e39612fce9e2b293fc72"
+    },
+    {
+      "relative": "08_研究结论与论文答辩组织/答辩与论文用稿.md",
+      "bytes": 3018,
+      "sha256": "bec9bdab3972f61d572be84946ac895a84ea97e42443c8d1156416f46422b3a5"
+    },
+    {
+      "relative": "README.md",
+      "bytes": 2616,
+      "sha256": "fccb551fd75a2d2b4705393321f23f98a46e7d7a5b516dcc8b8327e348c4d49e"
+    },
+    {
+      "relative": "公式显示修正说明.md",
+      "bytes": 893,
+      "sha256": "632e5acddca26ae7b25c3f696655b66039701ecee991df3d25aa623e701e12ce"
+    },
+    {
+      "relative": "原成果保全基线.json",
+      "bytes": 1137,
+      "sha256": "f54b90717de12a4a238bf451c0ec19d09b652ec70027fa61b25601904f5c5502"
+    },
+    {
+      "relative": "按顺序阅读.html",
+      "bytes": 77600,
+      "sha256": "1a6041605c31c4ed5859e4b05ecaa5ec8c38bf895bc4b6ac05bf9f0f6a5afdc8"
+    },
+    {
+      "relative": "本次整理说明.md",
+      "bytes": 2347,
+      "sha256": "aac8c9fabf6b65e132a2fdf1c8e130b312f303828c62f5cf7d63581e606f5a83"
+    },
+    {
+      "relative": "核验结果_柔性附件论文版.json",
+      "bytes": 4779,
+      "sha256": "b5fa0cbac4b80f7280477e97002ffa36d3cfce698f5edc158ec5095d6d9039d8"
+    },
+    {
+      "relative": "核验讲解包.py",
+      "bytes": 11928,
+      "sha256": "8f4dab78bac0f512e735df4ee5ea26114bf287c17224d14464274da87ddbe195"
+    },
+    {
+      "relative": "版本记录/重组前01至09资料_20261018.zip",
+      "bytes": 17631744,
+      "sha256": "df064246e462ac2ff5fd239b11d269691dd74168780c349aac21a595252796c3"
+    },
+    {
+      "relative": "版本记录/重组前资料索引.json",
+      "bytes": 138061,
+      "sha256": "4b0d0ad512d4d14b0cbef4f14d8961930f7fe789fcf50f1d55e66bd7efa2d7fc"
+    },
+    {
+      "relative": "生成阅读本.py",
+      "bytes": 8770,
+      "sha256": "0dcf3bfc2bacf04880a7a9192e6b00349f1a952c21f8b1026be34efb156e457d"
+    },
+    {
+      "relative": "讲解包清单_柔性附件论文版.json",
+      "bytes": 11448,
+      "sha256": "15d8d22f67a9bcecb9ae604c5ea708b31bfce1918b3470f3fe828e293dae382e"
+    },
+    {
+      "relative": "论文大纲与证据对照.md",
+      "bytes": 4680,
+      "sha256": "158c5eb6806e47222046d05512f97150e89ce4cb45376fc786ebf36cded55359"
+    },
+    {
+      "relative": "论文正文初稿.html",
+      "bytes": 49300,
+      "sha256": "8b7cfa261a676e93ba58c7884bffaa64a327609135f4f16251903eba6c394447"
+    },
+    {
+      "relative": "论文正文初稿.md",
+      "bytes": 29157,
+      "sha256": "b84715601c23e9f7224c12911ea4f6c15563d7a414ae011245dfacf901d09428"
+    },
+    {
+      "relative": "运行与复核说明.md",
+      "bytes": 2453,
+      "sha256": "3327da71a91e03e3a8522e5cb417f2ffcf935d4e353120ccc7989f9bfc680394"
+    },
+    {
+      "relative": "附录_非主线研究记录/周期扰动补充记录.md",
+      "bytes": 689,
+      "sha256": "070a0b87967e1c196beb714593d8a82a8365ee457446ed5158aa668d679758b0"
+    }
+  ],
+  "file_count": 59,
+  "scope": "Eight-step teaching/paper package with Markdown math delimiter repair and offline manuscript; original version records retained",
+  "excluded": [
+    "this manifest",
+    "核验结果_公式显示修正版.json",
+    "__pycache__"
+  ]
+}

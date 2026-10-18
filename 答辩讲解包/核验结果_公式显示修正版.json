@@ -1,0 +1,193 @@
+{
+  "status": "passed",
+  "sources": {
+    "steps": 8,
+    "registered_copies": 7,
+    "registered_references": 207
+  },
+  "links": {
+    "local_links": 106,
+    "references_to_full_project": 18,
+    "broken_links": 0,
+    "offline_math": true
+  },
+  "formulas": {
+    "markdown_documents": 4,
+    "display_blocks": 31,
+    "manuscript_mathml_blocks": 15
+  },
+  "numbers": {
+    "recomputed_episodes": 17280,
+    "scope": "All new trajectories: true-state acceptance, bound-failure flags and full-window torque-square integral; physical audit read and frozen inputs hashed. No retraining.",
+    "details": [
+      {
+        "group": "A_original_confirmation",
+        "method": "PID",
+        "passes": 588,
+        "count": 640
+      },
+      {
+        "group": "A_original_confirmation",
+        "method": "PID_safe",
+        "passes": 515,
+        "count": 640
+      },
+      {
+        "group": "A_original_confirmation",
+        "method": "PID_strengthened",
+        "passes": 597,
+        "count": 640
+      },
+      {
+        "group": "A_original_confirmation",
+        "method": "ZVD_PID",
+        "passes": 636,
+        "count": 640
+      },
+      {
+        "group": "A_original_confirmation",
+        "method": "ZVD_PID_refined",
+        "passes": 632,
+        "count": 640
+      },
+      {
+        "group": "A_original_confirmation",
+        "method": "LQR_refined",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "A_original_confirmation",
+        "method": "PID_PPO_111",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "A_original_confirmation",
+        "method": "PID_PPO_222",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "A_original_confirmation",
+        "method": "PID_PPO_333",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "B_initial_vibration",
+        "method": "PID",
+        "passes": 573,
+        "count": 640
+      },
+      {
+        "group": "B_initial_vibration",
+        "method": "PID_safe",
+        "passes": 509,
+        "count": 640
+      },
+      {
+        "group": "B_initial_vibration",
+        "method": "PID_strengthened",
+        "passes": 571,
+        "count": 640
+      },
+      {
+        "group": "B_initial_vibration",
+        "method": "ZVD_PID",
+        "passes": 628,
+        "count": 640
+      },
+      {
+        "group": "B_initial_vibration",
+        "method": "ZVD_PID_refined",
+        "passes": 626,
+        "count": 640
+      },
+      {
+        "group": "B_initial_vibration",
+        "method": "LQR_refined",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "B_initial_vibration",
+        "method": "PID_PPO_111",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "B_initial_vibration",
+        "method": "PID_PPO_222",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "B_initial_vibration",
+        "method": "PID_PPO_333",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "C_vibration_and_noise",
+        "method": "PID",
+        "passes": 574,
+        "count": 640
+      },
+      {
+        "group": "C_vibration_and_noise",
+        "method": "PID_safe",
+        "passes": 521,
+        "count": 640
+      },
+      {
+        "group": "C_vibration_and_noise",
+        "method": "PID_strengthened",
+        "passes": 580,
+        "count": 640
+      },
+      {
+        "group": "C_vibration_and_noise",
+        "method": "ZVD_PID",
+        "passes": 624,
+        "count": 640
+      },
+      {
+        "group": "C_vibration_and_noise",
+        "method": "ZVD_PID_refined",
+        "passes": 623,
+        "count": 640
+      },
+      {
+        "group": "C_vibration_and_noise",
+        "method": "LQR_refined",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "C_vibration_and_noise",
+        "method": "PID_PPO_111",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "C_vibration_and_noise",
+        "method": "PID_PPO_222",
+        "passes": 640,
+        "count": 640
+      },
+      {
+        "group": "C_vibration_and_noise",
+        "method": "PID_PPO_333",
+        "passes": 640,
+        "count": 640
+      }
+    ]
+  },
+  "archive": {
+    "files": 500,
+    "sha256": "df064246e462ac2ff5fd239b11d269691dd74168780c349aac21a595252796c3",
+    "old_steps_10_11_included": false
+  },
+  "manifest_files": 59
+}

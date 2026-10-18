@@ -11,8 +11,8 @@ import zipfile
 
 PACK = Path(__file__).resolve().parent
 PROJECT = PACK.parent
-MANIFEST = PACK / '讲解包清单_柔性附件论文版.json'
-RECORD = PACK / '核验结果_柔性附件论文版.json'
+MANIFEST = PACK / '讲解包清单_公式显示修正版.json'
+RECORD = PACK / '核验结果_公式显示修正版.json'
 BASE = PROJECT / '结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核'
 SUPPLEMENT = BASE / '10_补充实验与论文复核'
 
@@ -98,6 +98,28 @@ def link_check(copied):
     return dict(local_links=count, references_to_full_project=external_project, broken_links=0, offline_math=True)
 
 
+def formula_check(copied):
+    blocks = 0
+    documents = 0
+    for source in files():
+        if source in copied or source.suffix != '.md':
+            continue
+        text = source.read_text(encoding='utf-8-sig')
+        require('\ufffd' not in text, 'Invalid character in '+str(source))
+        require(not re.search(r'^\s*\\[\[\]]\s*$', text, re.M), 'Legacy display delimiter in '+str(source))
+        delimiters = re.findall(r'^\$\$\s*$', text, re.M)
+        require(len(delimiters)%2 == 0, 'Unpaired display delimiter in '+str(source))
+        blocks += len(delimiters)//2
+        documents += bool(delimiters)
+    draft = (PACK/'论文正文初稿.md').read_text(encoding='utf-8')
+    page = (PACK/'论文正文初稿.html').read_text(encoding='utf-8')
+    expected = len(re.findall(r'^\$\$\s*$', draft, re.M))//2
+    actual = len(re.findall(r'<math\b[^>]*\bdisplay="block"', page))
+    require(expected > 0 and actual == expected, 'Manuscript formula rendering differs')
+    require('MATHEQUATIONPLACEHOLDER' not in page and '\ufffd' not in page, 'Unrendered manuscript content')
+    return dict(markdown_documents=documents, display_blocks=blocks, manuscript_mathml_blocks=actual)
+
+
 def numerical_check():
     import numpy as np
     summary=read(SUPPLEMENT/'结果摘要.json')
@@ -170,13 +192,13 @@ def main():
         require(not MANIFEST.exists(),'Version manifest already exists; do not overwrite it')
         RECORD.write_text(json.dumps(dict(status='pending',scope='First-version checks are running; no pass claimed yet'),ensure_ascii=False,indent=2),encoding='utf-8')
     sources,copied=source_check()
-    result=dict(status='passed',sources=sources,links=link_check(copied),numbers=numerical_check(),archive=archive_check())
+    result=dict(status='passed',sources=sources,links=link_check(copied),formulas=formula_check(copied),numbers=numerical_check(),archive=archive_check())
     if args.check_originals:
         result['originals']=original_check()
     if args.seal:
         rows=[dict(relative=p.relative_to(PACK).as_posix(),bytes=p.stat().st_size,sha256=sha(p)) for p in files()]
         require(all(x['bytes']<100*1024**2 for x in rows),'File exceeds GitHub 100MiB threshold')
-        listing=dict(version='柔性附件论文版_20261018',files=rows,file_count=len(rows),scope='Eight-step teaching/paper package; full sources referenced in the same project',excluded=['this manifest','核验结果_柔性附件论文版.json','__pycache__'])
+        listing=dict(version='公式显示修正版_20261018',files=rows,file_count=len(rows),scope='Eight-step teaching/paper package with Markdown math delimiter repair and offline manuscript; original version records retained',excluded=['this manifest',RECORD.name,'__pycache__'])
         MANIFEST.write_text(json.dumps(listing,ensure_ascii=False,indent=2),encoding='utf-8')
     listing=read(MANIFEST)
     require({x['relative'] for x in listing['files']}=={p.relative_to(PACK).as_posix() for p in files()},'Unmanifested or missing file')
