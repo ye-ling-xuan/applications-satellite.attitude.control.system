@@ -1,0 +1,17 @@
+{
+  "episodes": 17280,
+  "transitions": 7603200,
+  "controller_groups": 27,
+  "passed": true,
+  "all_27_controller_group_results_checked": true,
+  "max_state_transition_residual": 2.220446049250313e-16,
+  "max_full_recorded_command_replay_error": 1.5641628888386078e-14,
+  "max_policy_action_error": 0.0,
+  "measurement_consistent_groups": 27,
+  "true_state_acceptance_groups": 27,
+  "units": {
+    "state_errors": "源核验代码对各状态分量原始数值的最大值：角度rad、角速度rad/s；不是同量纲范数",
+    "max_policy_action_error": "归一化策略动作，无量纲；命令力矩另有assert_allclose，未保存力矩误差最大值"
+  },
+  "cost_check": "verify调用independent_metrics复算cost，assert_allclose(atol=3e-12)，总体passed=true；未保存独立代价差最大值"
+}

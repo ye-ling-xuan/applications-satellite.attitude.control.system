@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="700.636875pt" height="757.654531pt" viewBox="0 0 700.636875 757.654531" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-19T22:46:55.793566</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.8.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 757.654531 
+L 700.636875 757.654531 
+L 700.636875 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 78.876 264.403931 
+L 355.086 264.403931 
+Q 363.6792 264.403931 363.6792 261.128687 
+L 363.6792 59.935139 
+Q 363.6792 56.659895 355.086 56.659895 
+L 78.876 56.659895 
+Q 70.2828 56.659895 70.2828 59.935139 
+L 70.2828 261.128687 
+Q 70.2828 264.403931 78.876 264.403931 
+z
+" clip-path="url(#p2e0d25be9e)" style="fill: #edf4fa; stroke: #c5d4df; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 391.914 264.403931 
+L 668.124 264.403931 
+Q 676.7172 264.403931 676.7172 261.128687 
+L 676.7172 59.935139 
+Q 676.7172 56.659895 668.124 56.659895 
+L 391.914 56.659895 
+Q 383.3208 56.659895 383.3208 59.935139 
+L 383.3208 261.128687 
+Q 383.3208 264.403931 391.914 264.403931 
+z
+" clip-path="url(#p2e0d25be9e)" style="fill: #eef6ef; stroke: #c5d4df; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #183e5a; font: 700 14px 'Microsoft YaHei'; text-anchor: start" x="94.221" y="83.993418" transform="rotate(-0 94.221 83.993418)">柔性对象与参数范围</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(94.221 116.738711)">本体惯量：0.7 kg·m²；附件：0.3 kg·m²</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(94.221 137.057711)">模态频率：0.4～0.8 Hz</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(94.221 157.307336)">阻尼比：0.01～0.04</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(94.221 177.556961)">频率、阻尼在回合内保持不变</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #183e5a; font: 700 14px 'Microsoft YaHei'; text-anchor: start" x="407.259" y="83.993418" transform="rotate(-0 407.259 83.993418)">四项持续验收（真实状态）</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(407.259 116.854961)">本体角误差：|θ| ≤ 1°</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(407.259 138.102086)">本体角速度：|ω| ≤ 0.5°/s</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(407.259 159.349211)">附件相对角度：|q| ≤ 0.1°</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(407.259 180.596336)">附件相对角速度：|v| ≤ 0.5°/s</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_4">
+    <path d="M 66.6 427.667037 
+L 680.4 427.667037 
+L 680.4 315.372963 
+L 66.6 315.372963 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 66.6 427.667037 
+L 66.6 315.372963 
+L 289.8 315.372963 
+L 289.8 427.667037 
+z
+" clip-path="url(#pf759b30d66)" style="fill: #e2ebf4; stroke: #e2ebf4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 289.8 427.667037 
+L 289.8 315.372963 
+L 680.4 315.372963 
+L 680.4 427.667037 
+z
+" clip-path="url(#pf759b30d66)" style="fill: #d5eee4; stroke: #d5eee4; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m1bc76721c1" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m1bc76721c1" x="66.6" y="427.667037" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font: 12px 'Microsoft YaHei'; text-anchor: middle" x="66.6" y="444.259537" transform="rotate(-0 66.6 444.259537)">0秒</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m1bc76721c1" x="289.8" y="427.667037" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font: 12px 'Microsoft YaHei'; text-anchor: middle" x="289.8" y="444.259537" transform="rotate(-0 289.8 444.259537)">8秒</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m1bc76721c1" x="680.4" y="427.667037" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font: 12px 'Microsoft YaHei'; text-anchor: middle" x="680.4" y="444.259537" transform="rotate(-0 680.4 444.259537)">22秒</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_7">
+    <path d="M 66.6 427.667037 
+L 66.6 315.372963 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 66.6 427.667037 
+L 680.4 427.667037 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_8">
+    <text style="font: 12px 'Microsoft YaHei'; text-anchor: middle" x="178.2" y="360.290593" transform="rotate(-0 178.2 360.290593)">机动及减振</text>
+   </g>
+   <g id="text_9">
+    <text style="font: 700 12px 'Microsoft YaHei'; text-anchor: middle" x="485.1" y="360.290593" transform="rotate(-0 485.1 360.290593)">每个采样点四项均达标</text>
+   </g>
+   <g id="text_10">
+    <text style="font: 13px 'Microsoft YaHei'; text-anchor: middle" x="373.5" y="309.372963" transform="rotate(-0 373.5 309.372963)">采样0.05秒；每回合440步；控制力矩限幅±0.5 N·m</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_9">
+    <path d="M 78.876 665.324966 
+L 355.086 665.324966 
+Q 363.6792 665.324966 363.6792 662.049722 
+L 363.6792 488.929692 
+Q 363.6792 485.654449 355.086 485.654449 
+L 78.876 485.654449 
+Q 70.2828 485.654449 70.2828 488.929692 
+L 70.2828 662.049722 
+Q 70.2828 665.324966 78.876 665.324966 
+z
+" clip-path="url(#p0e310b7acc)" style="fill: #edf4fa; stroke: #c5d4df; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 391.914 665.324966 
+L 668.124 665.324966 
+Q 676.7172 665.324966 676.7172 662.049722 
+L 676.7172 488.929692 
+Q 676.7172 485.654449 668.124 485.654449 
+L 391.914 485.654449 
+Q 383.3208 485.654449 383.3208 488.929692 
+L 383.3208 662.049722 
+Q 383.3208 665.324966 391.914 665.324966 
+z
+" clip-path="url(#p0e310b7acc)" style="fill: #fff3df; stroke: #c5d4df; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_11">
+    <text style="fill: #183e5a; font: 700 14px 'Microsoft YaHei'; text-anchor: start" x="94.221" y="512.987972" transform="rotate(-0 94.221 512.987972)">三组独立抽取初态</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(94.221 545.31139)">A：原分布全新样本</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(94.221 565.561015)">B：增加初始小振动</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(94.221 585.81064)">C：初始小振动＋假定高斯测量噪声</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(94.221 606.060265)">不同控制器复用相同场景和规定噪声</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #183e5a; font: 700 14px 'Microsoft YaHei'; text-anchor: start" x="407.259" y="512.987972" transform="rotate(-0 407.259 512.987972)">测试规模与分组统计</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(407.259 545.31139)">每组128初态 × 5种频率＝640场景</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(407.259 565.561015)">3组 × 9控制器 × 640＝17,280回合</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(407.259 585.81064)">统计按128初态成组，复用5频率</text>
+    <text style="fill: #233a4c; font: 12px 'Microsoft YaHei'" transform="translate(407.259 606.060265)">18项主要比较；配对重采样200,000次</text>
+   </g>
+  </g>
+  <g id="text_15">
+   <text style="font: 700 18px 'Microsoft YaHei'; text-anchor: middle" x="363.6" y="21.58875" transform="rotate(-0 363.6 21.58875)">柔性附件实验设置与持续停稳判据</text>
+  </g>
+  <g id="text_16">
+   <text style="font: 11px 'Microsoft YaHei'" transform="translate(7.2 734.433719)">这是测试设计图，不是性能结果。组间初态独立抽取，不将组间差异作单因素因果解释。</text>
+   <text style="font: 11px 'Microsoft YaHei'" transform="translate(7.2 747.72)">控制代价为完整22秒的力矩平方积分，单位(N·m)²·s；不等于实际电能。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2e0d25be9e">
+   <rect x="66.6" y="38.88" width="613.8" height="233.945986"/>
+  </clipPath>
+  <clipPath id="pf759b30d66">
+   <rect x="66.6" y="315.372963" width="613.8" height="112.294074"/>
+  </clipPath>
+  <clipPath id="p0e310b7acc">
+   <rect x="66.6" y="470.214014" width="613.8" height="233.945986"/>
+  </clipPath>
+ </defs>
+</svg>

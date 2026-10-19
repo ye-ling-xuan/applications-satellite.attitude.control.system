@@ -1,0 +1,83 @@
+{
+  "scope": "仅重绘冻结的研究结果，未新增训练或测试。",
+  "inputs": [
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/02_新独立测试/summary.json",
+      "local_copy": "制图输入/summary.json",
+      "sha256": "591e3224688bf2d4534900ff20d071121ebab4deb178f27d247b9a74932f7999",
+      "bytes": 68307
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/04_统计/paired_statistics.json",
+      "local_copy": "制图输入/paired_statistics.json",
+      "sha256": "280c5e5a58162d616589d72f4c5de571f980c86f07782cfcc9115f9c75582fa3",
+      "bytes": 69200
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/03_独立核验/verification.json",
+      "local_copy": "制图输入/verification.json",
+      "sha256": "80165de70a2931049e86c57e4214125958535269d80f5e510d126fb1ef5bf832",
+      "bytes": 11150
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/01_方案与冻结/freeze.json",
+      "local_copy": "制图输入/freeze.json",
+      "sha256": "804ffd48e5a2de33ebba8382b733b8f33edfd1c31a0e7dcfcc8d32a138dd8e06",
+      "bytes": 5276
+    },
+    {
+      "source": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/代码/supplement.py",
+      "local_copy": "制图输入/supplement.py",
+      "sha256": "b55ee93f6c6306bd825d4c8b680bf351018f775859c27e38614b0f1a47a46658",
+      "bytes": 35794
+    }
+  ],
+  "outputs": [
+    {
+      "file": "结题报告配图/05_完整图表版/图08_三组测试全部控制器成功率.png",
+      "bytes": 618432,
+      "sha256": "85a7c75904a27d79989e60b082acec1e31cfb5097203203580e70f9ebe8de0ed"
+    },
+    {
+      "file": "结题报告配图/05_完整图表版/图08_三组测试全部控制器成功率.svg",
+      "bytes": 194098,
+      "sha256": "66927c9735cfe586e645c0613c529e0f07b7e5194db815a1edf97ddeb3ffe30a"
+    },
+    {
+      "file": "结题报告配图/05_完整图表版/图09_三组测试控制代价.png",
+      "bytes": 601081,
+      "sha256": "3adab51581c2375080cc4d30a0ad9835389756370e4ee495563753ed3fddfc0a"
+    },
+    {
+      "file": "结题报告配图/05_完整图表版/图09_三组测试控制代价.svg",
+      "bytes": 199453,
+      "sha256": "765414c94f7dc48dfe53ff4e90ae544c8eff258e1206e66191a680d6adf36fa4"
+    },
+    {
+      "file": "结题报告配图/05_完整图表版/图10_成功率差与配对区间.png",
+      "bytes": 506656,
+      "sha256": "3b2145e6da688688c5faa7c6d32910ae716a7c70f2aae802704659e9b987eaf9"
+    },
+    {
+      "file": "结题报告配图/05_完整图表版/图10_成功率差与配对区间.svg",
+      "bytes": 209129,
+      "sha256": "84394600d60f9b3e30c3534adbe67325f629c54ba14a324611c337bd04a4069a"
+    },
+    {
+      "file": "结题报告配图/05_完整图表版/图11_独立数值核验结果.png",
+      "bytes": 515907,
+      "sha256": "3ce083197d766ca4400cc7e24c033b2738f69084126e6d7c0f756d6a0d4a51ec"
+    },
+    {
+      "file": "结题报告配图/05_完整图表版/图11_独立数值核验结果.svg",
+      "bytes": 232589,
+      "sha256": "1f424c66b08b4958882350f996fae7acdc01313e0459843bdec3611d5a319083"
+    }
+  ],
+  "plots": {
+    "08": "summary.json：passes/count/success/physical_failures，全部27种方法组组合",
+    "09": "summary.json：cost，完整0—22s平均实际命令力矩平方积分；未全成功者斜线",
+    "10": "paired_statistics.json：primary_success原始mean_difference/lower/upper乘100；全部18比较",
+    "11": "verification.json的覆盖/最大值/状态，以及supplement.py verify和independent_metrics范围"
+  }
+}

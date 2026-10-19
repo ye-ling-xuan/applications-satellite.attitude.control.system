@@ -1,0 +1,450 @@
+{
+  "date": "2026-10-19",
+  "version": "完整11图版",
+  "scope": "现有记录制图与报告排版；未新增训练、调参或测试；原答辩讲解包与成果包未修改。",
+  "report": [
+    {
+      "path": "结题报告内容_20261019.md",
+      "bytes": 14221,
+      "sha256": "e1ea0f3b6426992558c67b42f8fbf452a63c8b78dbe568105aa491423b51f758"
+    },
+    {
+      "path": "结题报告内容_20261019.html",
+      "bytes": 20591,
+      "sha256": "66b0be9a62442d2d9b8c7682823ed1b5f0f0cc917eb59389211ea9af1e0fed86"
+    }
+  ],
+  "figure_count": 11,
+  "figures": [
+    {
+      "figure": 1,
+      "title": "柔性附件阶段的训练与测试数量",
+      "report_section": "四、项目成果：六次训练、交互步数及两批测试数量",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图01_柔性训练与测试数量.png",
+        "bytes": 284005,
+        "sha256": "9cee3166157642af333dfff23680a8f186d4df8d3fc23bb1fe407e17e4f33734",
+        "pixels": [
+          2385,
+          1751
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图01_柔性训练与测试数量.svg",
+        "bytes": 16815,
+        "sha256": "22aa88e48b28da41402c1f01cc412846a52e3d279d74dcd67627ca616f1107de"
+      },
+      "data_sources": [
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/SAC/seed_16202/metadata.json",
+          "bytes": 5059,
+          "sha256": "dff706df89c4dd556869677a982a2dc744198e64e23fa02f95c0bfdb8bc72851"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/TD3/seed_16201/metadata.json",
+          "bytes": 5057,
+          "sha256": "c559601d0197ba0b04082268f9c73be91aad9072174c9e8fd911cb859bff77c3"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/PPO/seed_16203/metadata.json",
+          "bytes": 5058,
+          "sha256": "e4fb3f817e7f2b99716463300ed18b0691a57e0e4878e9d628e6dbd773ca35c9"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_111/metadata.json",
+          "bytes": 8610,
+          "sha256": "2e23753d199ec99622aad5fa2e79dcba0985dfb3c827102b11a3ade69f4507d9"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_222/metadata.json",
+          "bytes": 8609,
+          "sha256": "8371118b2fa710584994ceed91948ae3a5ec517e9f20d5c0ef99ca59e176b6b9"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_333/metadata.json",
+          "bytes": 8610,
+          "sha256": "c8646a084e35206913f4aac8db8e68c9f957b332b117f9b75084aeaffdb7ba86"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/08_最终报告/最终结果.json",
+          "bytes": 7074,
+          "sha256": "e90b8896edf649f8d94dfaf22b7371450496d776e4e2d60e26836814bb330a80"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/结果摘要.json",
+          "bytes": 84214,
+          "sha256": "f2c98aef80461a6da080467b88422bd18e020cb9fcbf60fadbeead975f396301"
+        }
+      ]
+    },
+    {
+      "figure": 2,
+      "title": "双惯量柔性附件等效模型",
+      "report_section": "五、2：单轴双惯量柔性附件模型",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图02_双惯量柔性附件模型.png",
+        "bytes": 161750,
+        "sha256": "cd4fb18045400ba80e7b17bb2f01da68f7355f12cd3563e94eeb048d775fb2c2",
+        "pixels": [
+          2400,
+          1060
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图02_双惯量柔性附件模型.svg",
+        "bytes": 2929,
+        "sha256": "367cd4627a10afd730d930631f7b69b16d535f1be3c7953c6cb6be995ef5ca35"
+      },
+      "data_sources": [
+        {
+          "path": "答辩讲解包/05_柔性附件动力学与控制目标/图表/双惯量模型示意.svg",
+          "bytes": 2929,
+          "sha256": "367cd4627a10afd730d930631f7b69b16d535f1be3c7953c6cb6be995ef5ca35"
+        }
+      ]
+    },
+    {
+      "figure": 3,
+      "title": "PD反馈与PPO连续力矩补偿控制结构",
+      "report_section": "五、2：PD反馈与PPO连续力矩补偿设计",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图03_PD与PPO补偿控制结构.png",
+        "bytes": 257947,
+        "sha256": "4807877e006f127d37fb2ce54f7b8e368d4935188cab159cfe0f459578ca7fec",
+        "pixels": [
+          3000,
+          1460
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图03_PD与PPO补偿控制结构.svg",
+        "bytes": 5394,
+        "sha256": "fee5ae1919f3081169206eef7986abdd1ba70b43a77744d693afd332bcd0456e"
+      },
+      "data_sources": [
+        {
+          "path": "答辩讲解包/06_PID与PPO学习补偿设计/图表/PD与PPO连续补偿控制结构.svg",
+          "bytes": 5394,
+          "sha256": "fee5ae1919f3081169206eef7986abdd1ba70b43a77744d693afd332bcd0456e"
+        }
+      ]
+    },
+    {
+      "figure": 4,
+      "title": "算法开发与正式训练的验证曲线",
+      "report_section": "五、2：算法开发、正式训练和验证选模",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图04_算法开发与正式训练验证曲线.png",
+        "bytes": 413749,
+        "sha256": "d1b88ddd7ccde40370566aa616490551c81bb22a23b35514b88330120badde88",
+        "pixels": [
+          2371,
+          1963
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图04_算法开发与正式训练验证曲线.svg",
+        "bytes": 39810,
+        "sha256": "490a95e3d8b777fdeca349df9b82980fcc9acfe5dbad82d8cb2d0823aa527dc3"
+      },
+      "data_sources": [
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/SAC/seed_16202/metadata.json",
+          "bytes": 5059,
+          "sha256": "dff706df89c4dd556869677a982a2dc744198e64e23fa02f95c0bfdb8bc72851"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/TD3/seed_16201/metadata.json",
+          "bytes": 5057,
+          "sha256": "c559601d0197ba0b04082268f9c73be91aad9072174c9e8fd911cb859bff77c3"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/development/PPO/seed_16203/metadata.json",
+          "bytes": 5058,
+          "sha256": "e4fb3f817e7f2b99716463300ed18b0691a57e0e4878e9d628e6dbd773ca35c9"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_111/metadata.json",
+          "bytes": 8610,
+          "sha256": "2e23753d199ec99622aad5fa2e79dcba0985dfb3c827102b11a3ade69f4507d9"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_222/metadata.json",
+          "bytes": 8609,
+          "sha256": "8371118b2fa710584994ceed91948ae3a5ec517e9f20d5c0ef99ca59e176b6b9"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/03_学习训练/formal/PPO/seed_333/metadata.json",
+          "bytes": 8610,
+          "sha256": "c8646a084e35206913f4aac8db8e68c9f957b332b117f9b75084aeaffdb7ba86"
+        }
+      ]
+    },
+    {
+      "figure": 5,
+      "title": "参数范围与测试验收设计",
+      "report_section": "五、2：物理参数、三组测试与持续验收规则",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图05_参数范围与测试验收设计.png",
+        "bytes": 424461,
+        "sha256": "f7c37292e4b87bdb1cbc0ba733d1b099c0eb8f91727da91b94b6e92ddfaebfa8",
+        "pixels": [
+          2140,
+          2315
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图05_参数范围与测试验收设计.svg",
+        "bytes": 10269,
+        "sha256": "04a74ac155e52371603f03229b003becb8c7b572bb5ff8f215b1eab8275c449e"
+      },
+      "data_sources": [
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/01_实验方案/执行配置.json",
+          "bytes": 1322,
+          "sha256": "64265388fa30c8f593c3f51b3d027165ea37457c937a9c0faff05c3f803d99a3"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/01_方案与冻结/预声明.json",
+          "bytes": 4053,
+          "sha256": "5f3431259e1f3cecd24785a16f5e07b7f89d192d8777a6723c09adf0f7d4ae50"
+        }
+      ]
+    },
+    {
+      "figure": 6,
+      "title": "刚体单轴与三轴多算法及部署修正对比",
+      "report_section": "五、3：单轴/三轴刚体多算法及部署修正",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图06_刚体多算法与部署修正.png",
+        "bytes": 469476,
+        "sha256": "6aabccea3e6ff181bb55b11e46593bcbfec51ea07e5941761737866f389547e7",
+        "pixels": [
+          3792,
+          2472
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图06_刚体多算法与部署修正.svg",
+        "bytes": 46186,
+        "sha256": "3d49dbfcdc867bc68236c788fe9dd2e362b10a7d0a9bc8082fea468818c7e3e0"
+      },
+      "data_sources": [
+        {
+          "path": "结项成果包/07_单轴三轴多算法对比/results/episode_metrics.csv",
+          "bytes": 2375894,
+          "sha256": "31d504ff804e464ec4ba40356e83acc53f26ce3552b89ae6c1d33aec0bace9f7"
+        },
+        {
+          "path": "结项成果包/07_单轴三轴多算法对比/result_summary.json",
+          "bytes": 14789,
+          "sha256": "51ff4ae913a807391fc64f0b560eda82cffddfdd17a23c05d3cbc8e17ca633c3"
+        },
+        {
+          "path": "结项成果包/07_单轴三轴多算法对比/实验约定.md",
+          "bytes": 6411,
+          "sha256": "af23f989371a9784af4b6337425d95171ce55694644777a2a5f8961fa7f37e0a"
+        }
+      ]
+    },
+    {
+      "figure": 7,
+      "title": "惯量及执行器误差探索的完整结果",
+      "report_section": "五、3：惯量随机化、一阶滞后与纯延迟探索",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图07_惯量与执行器探索结果.png",
+        "bytes": 622597,
+        "sha256": "9a6a72c09bc0472b4a7a87aba379497210c30e642928c65ce1654025e0e85d77",
+        "pixels": [
+          3888,
+          2640
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图07_惯量与执行器探索结果.svg",
+        "bytes": 48593,
+        "sha256": "6d17592c9f1fdf6fac0307f07800a6f11d684b7c39482ea140a9fc5067dab519"
+      },
+      "data_sources": [
+        {
+          "path": "结项成果包/08_惯量域随机化与泛化边界研究/03_测试数据与配对结果/episode_metrics.csv",
+          "bytes": 4152145,
+          "sha256": "cd57c2820472977afb4de00c0463cca88225a4f70ad03ef6f27acf4537974eae"
+        },
+        {
+          "path": "结项成果包/08_惯量域随机化与泛化边界研究/05_研究分析与核验/核心结论.json",
+          "bytes": 44009,
+          "sha256": "cffa2aea78cd2e9af40645cfc46715388d8acc643000ee195caae780f615ae6a"
+        },
+        {
+          "path": "结项成果包/08_惯量域随机化与泛化边界研究/01_实验协议与配置/protocol.json",
+          "bytes": 3733,
+          "sha256": "522530cdc38532dbb90d17e9b5fe0b838037339caa5f2bcc9c233c626c24a22d"
+        },
+        {
+          "path": "结项成果包/12_执行器滞后与纯延迟对比研究/04_独立测试/episode_metrics.csv",
+          "bytes": 8845265,
+          "sha256": "591829446642f1856a82baba115a3e001445b332eb286f4f396152d73c6b1378"
+        },
+        {
+          "path": "结项成果包/12_执行器滞后与纯延迟对比研究/06_结果与说明/分组汇总.csv",
+          "bytes": 6054,
+          "sha256": "03b125b8ac7931f6890116bb9bad308f2e594a9488919ed1dded2859628c4c61"
+        },
+        {
+          "path": "结项成果包/12_执行器滞后与纯延迟对比研究/01_实验方案/执行配置.json",
+          "bytes": 1480,
+          "sha256": "b22d51115eede41221c3fa8592a36d660436476f7b7ca8d63264a4e6a14451ca"
+        },
+        {
+          "path": "结项成果包/12_执行器滞后与纯延迟对比研究/06_结果与说明/研究结果说明.md",
+          "bytes": 6740,
+          "sha256": "40942539b887771f06e171cff9d0a5e6d58a54f7c57f8e0ea938dd05121c37e0"
+        }
+      ]
+    },
+    {
+      "figure": 8,
+      "title": "三组测试的全部控制器成功率与越界情况",
+      "report_section": "五、3：三组九方法全部测试结果与越界",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图08_三组测试全部控制器成功率.png",
+        "bytes": 618432,
+        "sha256": "85a7c75904a27d79989e60b082acec1e31cfb5097203203580e70f9ebe8de0ed",
+        "pixels": [
+          2393,
+          3379
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图08_三组测试全部控制器成功率.svg",
+        "bytes": 194098,
+        "sha256": "66927c9735cfe586e645c0613c529e0f07b7e5194db815a1edf97ddeb3ffe30a"
+      },
+      "data_sources": [
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/02_新独立测试/summary.json",
+          "bytes": 68307,
+          "sha256": "591e3224688bf2d4534900ff20d071121ebab4deb178f27d247b9a74932f7999"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/01_方案与冻结/freeze.json",
+          "bytes": 5276,
+          "sha256": "804ffd48e5a2de33ebba8382b733b8f33edfd1c31a0e7dcfcc8d32a138dd8e06"
+        }
+      ]
+    },
+    {
+      "figure": 9,
+      "title": "三组测试全部控制器的完整时域控制代价",
+      "report_section": "五、3：三组全部方法的平均力矩平方积分",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图09_三组测试控制代价.png",
+        "bytes": 601081,
+        "sha256": "3adab51581c2375080cc4d30a0ad9835389756370e4ee495563753ed3fddfc0a",
+        "pixels": [
+          2279,
+          3375
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图09_三组测试控制代价.svg",
+        "bytes": 199453,
+        "sha256": "765414c94f7dc48dfe53ff4e90ae544c8eff258e1206e66191a680d6adf36fa4"
+      },
+      "data_sources": [
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/02_新独立测试/summary.json",
+          "bytes": 68307,
+          "sha256": "591e3224688bf2d4534900ff20d071121ebab4deb178f27d247b9a74932f7999"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/01_方案与冻结/freeze.json",
+          "bytes": 5276,
+          "sha256": "804ffd48e5a2de33ebba8382b733b8f33edfd1c31a0e7dcfcc8d32a138dd8e06"
+        }
+      ]
+    },
+    {
+      "figure": 10,
+      "title": "全部主要比较的成功率差与配对区间",
+      "report_section": "五、3：十八项主要比较的配对校正区间",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图10_成功率差与配对区间.png",
+        "bytes": 506656,
+        "sha256": "3b2145e6da688688c5faa7c6d32910ae716a7c70f2aae802704659e9b987eaf9",
+        "pixels": [
+          2814,
+          2533
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图10_成功率差与配对区间.svg",
+        "bytes": 209129,
+        "sha256": "84394600d60f9b3e30c3534adbe67325f629c54ba14a324611c337bd04a4069a"
+      },
+      "data_sources": [
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/04_统计/paired_statistics.json",
+          "bytes": 69200,
+          "sha256": "280c5e5a58162d616589d72f4c5de571f980c86f07782cfcc9115f9c75582fa3"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/01_方案与冻结/freeze.json",
+          "bytes": 5276,
+          "sha256": "804ffd48e5a2de33ebba8382b733b8f33edfd1c31a0e7dcfcc8d32a138dd8e06"
+        }
+      ]
+    },
+    {
+      "figure": 11,
+      "title": "独立物理推进与指标复算的核验结果",
+      "report_section": "五、3：独立轨迹重放与指标复算",
+      "png": {
+        "path": "结题报告配图/05_完整图表版/图11_独立数值核验结果.png",
+        "bytes": 515907,
+        "sha256": "3ce083197d766ca4400cc7e24c033b2738f69084126e6d7c0f756d6a0d4a51ec",
+        "pixels": [
+          2743,
+          2343
+        ]
+      },
+      "svg": {
+        "path": "结题报告配图/05_完整图表版/图11_独立数值核验结果.svg",
+        "bytes": 232589,
+        "sha256": "1f424c66b08b4958882350f996fae7acdc01313e0459843bdec3611d5a319083"
+      },
+      "data_sources": [
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/03_独立核验/verification.json",
+          "bytes": 11150,
+          "sha256": "80165de70a2931049e86c57e4214125958535269d80f5e510d126fb1ef5bf832"
+        },
+        {
+          "path": "结项成果包/16_柔性附体振动抑制连续控制/07_训练修正与复核/10_补充实验与论文复核/代码/supplement.py",
+          "bytes": 35794,
+          "sha256": "b55ee93f6c6306bd825d4c8b680bf351018f775859c27e38614b0f1a47a46658"
+        }
+      ]
+    }
+  ],
+  "source_record_files": [
+    {
+      "path": "结题报告配图/06_绘图代码与数据/训练与方案/来源与哈希.json",
+      "bytes": 2674,
+      "sha256": "c1b34cfa912eeb6274316719564e0b54291da1818e57fd89f643b8314126a48d"
+    },
+    {
+      "path": "结题报告配图/06_绘图代码与数据/前期结果/来源与核对记录.json",
+      "bytes": 3461,
+      "sha256": "d1696abf2783452aa7d1edd97435871f5ca1a5e9a230889c7aefdbdf49069b1a"
+    },
+    {
+      "path": "结题报告配图/06_绘图代码与数据/柔性结果/来源与导出清单.json",
+      "bytes": 4001,
+      "sha256": "1678623c243799581a543c9df0ebad7ebfedc86d5e2cbb41dadd5659a929fdfa"
+    }
+  ],
+  "verified_source_file_count": 31,
+  "historical_selection_manifest": "结题报告配图/配图来源清单.json"
+}

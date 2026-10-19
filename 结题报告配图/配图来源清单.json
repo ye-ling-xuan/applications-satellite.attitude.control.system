@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-19",
+  "source_package": "答辩讲解包",
+  "items": [
+    {
+      "source": "答辩讲解包/05_柔性附件动力学与控制目标/图表/双惯量模型示意.svg",
+      "copied_file": "03_SVG原图/图1_本体与柔性附件双惯量模型.svg",
+      "source_sha256": "367cd4627a10afd730d930631f7b69b16d535f1be3c7953c6cb6be995ef5ca35",
+      "copy_sha256": "367cd4627a10afd730d930631f7b69b16d535f1be3c7953c6cb6be995ef5ca35",
+      "bytes": 2929,
+      "png_export": "01_正文用图/图1_本体与柔性附件双惯量模型.png",
+      "png_export_method": "原始SVG由Edge离线渲染，2倍像素，无内容修改",
+      "png_export_pixels": [
+        2400,
+        1060
+      ],
+      "png_export_sha256": "cd4fb18045400ba80e7b17bb2f01da68f7355f12cd3563e94eeb048d775fb2c2",
+      "png_export_bytes": 161750
+    },
+    {
+      "source": "答辩讲解包/06_PID与PPO学习补偿设计/图表/PD与PPO连续补偿控制结构.svg",
+      "copied_file": "03_SVG原图/图2_PD反馈与PPO连续力矩补偿结构.svg",
+      "source_sha256": "fee5ae1919f3081169206eef7986abdd1ba70b43a77744d693afd332bcd0456e",
+      "copy_sha256": "fee5ae1919f3081169206eef7986abdd1ba70b43a77744d693afd332bcd0456e",
+      "bytes": 5394,
+      "png_export": "01_正文用图/图2_PD反馈与PPO连续力矩补偿结构.png",
+      "png_export_method": "原始SVG由Edge离线渲染，2倍像素，无内容修改",
+      "png_export_pixels": [
+        3000,
+        1460
+      ],
+      "png_export_sha256": "4807877e006f127d37fb2ce54f7b8e368d4935188cab159cfe0f459578ca7fec",
+      "png_export_bytes": 257947
+    },
+    {
+      "source": "答辩讲解包/07_柔性附件对比实验与独立核验/图表/原分布独立确认.png",
+      "copied_file": "01_正文用图/图3_原分布全新样本成功率与控制代价.png",
+      "source_sha256": "ca36b67b44ffb8c0eea370b30ad453180d1b9b0f8409e9780cdb8719a15ce71c",
+      "copy_sha256": "ca36b67b44ffb8c0eea370b30ad453180d1b9b0f8409e9780cdb8719a15ce71c",
+      "bytes": 160583,
+      "copy_pixels": [
+        2720,
+        1190
+      ]
+    },
+    {
+      "source": "答辩讲解包/07_柔性附件对比实验与独立核验/图表/初始振动与噪声.png",
+      "copied_file": "01_正文用图/图4_三组测试场景持续停稳成功率.png",
+      "source_sha256": "dbf4aef538dfd5170e3a3450a4ebda440ad3b92168444fca0cd7b9d713867ea3",
+      "copy_sha256": "dbf4aef538dfd5170e3a3450a4ebda440ad3b92168444fca0cd7b9d713867ea3",
+      "bytes": 143682,
+      "copy_pixels": [
+        3060,
+        1190
+      ]
+    },
+    {
+      "source": "答辩讲解包/07_柔性附件对比实验与独立核验/图表/三个种子与配对区间.png",
+      "copied_file": "02_补充备选/补充图A_三个训练种子成功率差与配对区间.png",
+      "source_sha256": "9868a5b9f957600df3bae783a257ff68c5c3e1e6b980c1664a27d79a158fe7e7",
+      "copy_sha256": "9868a5b9f957600df3bae783a257ff68c5c3e1e6b980c1664a27d79a158fe7e7",
+      "bytes": 104217,
+      "copy_pixels": [
+        2550,
+        1020
+      ]
+    },
+    {
+      "source": "答辩讲解包/06_PID与PPO学习补偿设计/图表/训练检查点与末模型退化.png",
+      "copied_file": "02_补充备选/补充图B_验证检查点与训练末期退化.png",
+      "source_sha256": "0fece5930d8ea472589334f56b97dd66543a0f838ac5288dc3de7c8ce0abbd5f",
+      "copy_sha256": "0fece5930d8ea472589334f56b97dd66543a0f838ac5288dc3de7c8ce0abbd5f",
+      "bytes": 202170,
+      "copy_pixels": [
+        2192,
+        800
+      ]
+    }
+  ],
+  "panel_crops": [
+    {
+      "source_copy": "01_正文用图/图3_原分布全新样本成功率与控制代价.png",
+      "file": "04_分面板插入版/图3a_原分布成功率.png",
+      "crop_box_left_top_right_bottom": [
+        0,
+        45,
+        1360,
+        1190
+      ],
+      "scope": "图3左面板；保留全部9种方法和成功率坐标",
+      "sha256": "6979f7af5af3e7dc5dda714d51c3e10bdcee6e9f2529015c36f4ca974f420a07"
+    },
+    {
+      "source_copy": "01_正文用图/图3_原分布全新样本成功率与控制代价.png",
+      "file": "04_分面板插入版/图3b_原分布力矩平方积分.png",
+      "crop_box_left_top_right_bottom": [
+        1360,
+        45,
+        2720,
+        1190
+      ],
+      "scope": "图3右面板；保留全部9种方法、斜线说明及代价坐标",
+      "sha256": "a39a7688bb13e6a819bb0e4fd32e87ad73817738db0260dd7fe81696b966d74e"
+    },
+    {
+      "source_copy": "01_正文用图/图4_三组测试场景持续停稳成功率.png",
+      "file": "04_分面板插入版/图4a_A组原分布新样本.png",
+      "crop_box_left_top_right_bottom": [
+        0,
+        45,
+        1020,
+        1190
+      ],
+      "scope": "图4左面板A组；保留全部9种方法和成功率坐标",
+      "sha256": "df63807e08975ffce89a415ca272b3dcc9e0a0494d05ee6937ec6506069bab54"
+    },
+    {
+      "source_copy": "01_正文用图/图4_三组测试场景持续停稳成功率.png",
+      "file": "04_分面板插入版/图4b_B组初始小振动.png",
+      "crop_box_left_top_right_bottom": [
+        1020,
+        45,
+        2040,
+        1190
+      ],
+      "scope": "图4中面板B组；保留全部9种方法和成功率坐标",
+      "sha256": "dbdc2e00032b078fe106811bd72215f6bb42db76ff4f101d20cbd58b17c32a5b"
+    },
+    {
+      "source_copy": "01_正文用图/图4_三组测试场景持续停稳成功率.png",
+      "file": "04_分面板插入版/图4c_C组初始小振动与测量噪声.png",
+      "crop_box_left_top_right_bottom": [
+        2040,
+        45,
+        3060,
+        1190
+      ],
+      "scope": "图4右面板C组；保留全部9种方法和成功率坐标",
+      "sha256": "11e15a3bb6d93a706277d2bbea0da165a246e9eb15e1421c4a723656136b14a6"
+    }
+  ],
+  "content_scope": "选图、原样复制、SVG转PNG及面板裁切；未更改科学数据或实验结果；原始答辩讲解包未修改"
+}

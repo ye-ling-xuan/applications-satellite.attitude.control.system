@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="730" viewBox="0 0 1500 730" role="img" aria-labelledby="title desc">
+<title id="title">PD与PPO连续力矩补偿控制结构</title>
+<desc id="desc">本体和附件测量状态同时进入固定PD、PPO和状态相关幅值门控。PD与学习补偿相加，经统一力矩限幅进入双惯量对象。真实状态独立用于验收，传感噪声只加入控制器测量。PPO还使用自身积分、上一拍命令和时间，测试时权重固定。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#334d69"/></marker></defs>
+<rect width="1500" height="730" rx="20" fill="#f6f8fc"/>
+<g font-family="Microsoft YaHei, SimHei, sans-serif" fill="#172b43">
+<text x="44" y="50" font-size="29" font-weight="700">固定PD反馈与PPO连续力矩补偿</text>
+<text x="44" y="88" font-size="18" fill="#566b82">控制周期0.05 s · 原主实验无噪声 · 含噪补充测试中，反馈、网络和幅值门控共同使用测量状态</text>
+<rect x="234" y="132" width="245" height="102" rx="13" fill="#e4eefb" stroke="#2b659e" stroke-width="2"/>
+<text x="356" y="172" text-anchor="middle" font-size="23" font-weight="700">固定PD基底</text>
+<text x="356" y="208" text-anchor="middle" font-size="19">uPD = −Kp θ̂ − Kd ω̂</text>
+<rect x="234" y="326" width="245" height="102" rx="13" fill="#fdf0de" stroke="#b07a2f" stroke-width="2"/>
+<text x="356" y="366" text-anchor="middle" font-size="23" font-weight="700">PPO策略</text>
+<text x="356" y="402" text-anchor="middle" font-size="19">7维输入 → a ∈ [−1, 1]</text>
+<rect x="561" y="326" width="242" height="102" rx="13" fill="#fdf0de" stroke="#b07a2f" stroke-width="2"/>
+<text x="682" y="366" text-anchor="middle" font-size="22" font-weight="700">状态相关幅值</text>
+<text x="682" y="402" text-anchor="middle" font-size="19">Δu = 0.25 g(x̂) a</text>
+<circle cx="858" cy="183" r="23" fill="white" stroke="#334d69" stroke-width="2"/>
+<text x="858" y="191" text-anchor="middle" font-size="29">+</text>
+<rect x="921" y="132" width="186" height="102" rx="13" fill="#e8edf5" stroke="#567087" stroke-width="2"/>
+<text x="1014" y="172" text-anchor="middle" font-size="23" font-weight="700">统一力矩限幅</text>
+<text x="1014" y="208" text-anchor="middle" font-size="20">±0.5 N·m</text>
+<rect x="1169" y="132" width="242" height="102" rx="13" fill="#e4f1e9" stroke="#427e5b" stroke-width="2"/>
+<text x="1290" y="172" text-anchor="middle" font-size="23" font-weight="700">双惯量柔性对象</text>
+<text x="1290" y="208" text-anchor="middle" font-size="19">本体 + 单柔性模态</text>
+<path d="M 100 278 H 160 V 183 H 234" fill="none" stroke="#334d69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 160 278 V 377 H 234" fill="none" stroke="#334d69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 160 278 V 476 H 682 V 428" fill="none" stroke="#72879c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="69" y="254" font-size="20">测量 x̂</text>
+<circle cx="160" cy="278" r="5" fill="#334d69"/>
+<path d="M 479 183 H 835" fill="none" stroke="#334d69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 479 377 H 561" fill="none" stroke="#334d69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 803 377 H 858 V 207" fill="none" stroke="#334d69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 881 183 H 921" fill="none" stroke="#334d69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 1107 183 H 1169" fill="none" stroke="#334d69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="509" y="357" font-size="18">a</text>
+<text x="810" y="357" font-size="18">Δu</text>
+<text x="1129" y="164" font-size="20">u</text>
+<rect x="1097" y="350" width="314" height="103" rx="13" fill="white" stroke="#427e5b" stroke-width="2"/>
+<text x="1254" y="389" text-anchor="middle" font-size="22" font-weight="700">独立真值验收</text>
+<text x="1254" y="426" text-anchor="middle" font-size="18">8—22 s每个采样点检查四项约束</text>
+<rect x="640" y="549" width="284" height="98" rx="13" fill="#eef2f8" stroke="#567087" stroke-width="2"/>
+<text x="782" y="588" text-anchor="middle" font-size="22" font-weight="700">测量：x̂ = x + n</text>
+<text x="782" y="623" text-anchor="middle" font-size="18">无噪主实验 n = 0</text>
+<path d="M 1411 183 H 1455 V 598 H 924" fill="none" stroke="#334d69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 1455 401 H 1411" fill="none" stroke="#334d69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 640 598 H 100 V 278" fill="none" stroke="#334d69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="1455" cy="401" r="5" fill="#334d69"/>
+<text x="1357" y="281" font-size="20" fill="#427e5b">真实状态 x</text>
+<text x="262" y="516" font-size="17" fill="#566b82">x̂ = [θ̂, ω̂, q̂, v̂]；g(x̂) = min(1, ‖x̂/s‖₂)</text>
+<text x="44" y="688" font-size="18">PPO另用：自身积分、上一拍发送命令、已用时间。测试不更新权重；四维测量状态全零时补偿为零。</text>
+<text x="44" y="716" font-size="16" fill="#566b82">本图是现有控制实现的说明图。Ki = 0，所以图中基底明确写为PD；真实状态未直接送入含噪控制器。</text>
+</g></svg>

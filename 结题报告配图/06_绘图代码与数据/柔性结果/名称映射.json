@@ -1,0 +1,119 @@
+{
+  "labels": {
+    "PID": "原整定PD",
+    "PID_safe": "同一PD基底",
+    "PID_strengthened": "补充搜索PD",
+    "ZVD_PID": "ZVD＋PID",
+    "ZVD_PID_refined": "优化ZVD＋PD",
+    "LQR_refined": "优化LQR",
+    "PID_PPO_111": "PD＋PPO（111）",
+    "PID_PPO_222": "PD＋PPO（222）",
+    "PID_PPO_333": "PD＋PPO（333）"
+  },
+  "controllers": [
+    {
+      "name": "PID",
+      "settings": {
+        "method": "PID",
+        "kp": 2.4801245960665232,
+        "kd": 1.784632299598744,
+        "ki": 0.0
+      }
+    },
+    {
+      "name": "PID_safe",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      }
+    },
+    {
+      "name": "PID_strengthened",
+      "settings": {
+        "method": "PID",
+        "kp": 2.4386782774043816,
+        "kd": 1.7198638416404861,
+        "ki": 0.0
+      }
+    },
+    {
+      "name": "ZVD_PID",
+      "settings": {
+        "method": "ZVD_PID",
+        "kp": 0.6798697775845328,
+        "kd": 1.248607230739573,
+        "ki": 0.002823082581150911
+      }
+    },
+    {
+      "name": "ZVD_PID_refined",
+      "settings": {
+        "method": "ZVD_PID",
+        "kp": 0.5841048727249352,
+        "kd": 1.1394467863958684,
+        "ki": 0.0
+      }
+    },
+    {
+      "name": "LQR_refined",
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.37134873110136646,
+          1.1129648228613274,
+          -1.1580413020360945,
+          -0.9698115023044206
+        ],
+        "q_diag": [
+          0.18762548012810046,
+          0.5572183663210045,
+          0.10388552388380191,
+          2.8998415954054053
+        ],
+        "r": 1.3605920469607238
+      }
+    },
+    {
+      "name": "PID_PPO_111",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "seed": 111,
+      "model": "03_学习训练\\formal\\PPO\\seed_111\\best.zip",
+      "selected_steps": 262144,
+      "old_training_steps": 1048576
+    },
+    {
+      "name": "PID_PPO_222",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "seed": 222,
+      "model": "03_学习训练\\formal\\PPO\\seed_222\\best.zip",
+      "selected_steps": 393216,
+      "old_training_steps": 1048576
+    },
+    {
+      "name": "PID_PPO_333",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "seed": 333,
+      "model": "03_学习训练\\formal\\PPO\\seed_333\\best.zip",
+      "selected_steps": 327680,
+      "old_training_steps": 1048576
+    }
+  ],
+  "note": "保留原始源码键；积分增益为0的所选PID标为PD；PPO标号为训练随机种子。"
+}

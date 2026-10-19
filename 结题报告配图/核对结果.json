@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-19",
+  "report_image_count": 11,
+  "caption_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "png_count": 11,
+  "svg_count": 11,
+  "source_hashes_verified": 31,
+  "local_links_checked": 101,
+  "missing_links": [],
+  "png_decode": "11张均通过",
+  "utf8_replacement_characters": 0,
+  "experiment_actions": "未重新训练、调参或测试。仅验证文件、链接和来源哈希。"
+}

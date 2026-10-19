@@ -1,0 +1,448 @@
+{
+  "figure06": [
+    {
+      "count": 180,
+      "passes": 120,
+      "success_rate": 0.6666666666666666,
+      "mean_cost": 0.3570116321457588,
+      "mean_rms_error_deg": 6.446155209816951,
+      "mean_settling_time_success_only_s": 4.75375,
+      "axis": "single",
+      "controller": "baseline_PID",
+      "per_seed_success_rates": {}
+    },
+    {
+      "count": 180,
+      "passes": 128,
+      "success_rate": 0.7111111111111111,
+      "mean_cost": 0.11702762999601125,
+      "mean_rms_error_deg": 8.142502189179817,
+      "mean_settling_time_success_only_s": 8.533203125000002,
+      "axis": "single",
+      "controller": "tuned_PID",
+      "per_seed_success_rates": {}
+    },
+    {
+      "count": 180,
+      "passes": 128,
+      "success_rate": 0.7111111111111111,
+      "mean_cost": 0.11702762999601125,
+      "mean_rms_error_deg": 8.142502189179817,
+      "mean_settling_time_success_only_s": 8.533203125000002,
+      "axis": "single",
+      "controller": "improved_PID",
+      "per_seed_success_rates": {}
+    },
+    {
+      "count": 540,
+      "passes": 372,
+      "success_rate": 0.6888888888888889,
+      "mean_cost": 0.4060585023649895,
+      "mean_rms_error_deg": 6.443926610976486,
+      "mean_settling_time_success_only_s": 4.68010752688172,
+      "axis": "single",
+      "controller": "PPO",
+      "per_seed_success_rates": {
+        "11": 0.7222222222222222,
+        "22": 0.6444444444444445,
+        "33": 0.7
+      }
+    },
+    {
+      "count": 540,
+      "passes": 245,
+      "success_rate": 0.4537037037037037,
+      "mean_cost": 0.3497021446322608,
+      "mean_rms_error_deg": 6.887780909376674,
+      "mean_settling_time_success_only_s": 5.1342857142857135,
+      "axis": "single",
+      "controller": "SAC",
+      "per_seed_success_rates": {
+        "11": 0.0,
+        "22": 0.6944444444444444,
+        "33": 0.6666666666666666
+      }
+    },
+    {
+      "count": 540,
+      "passes": 209,
+      "success_rate": 0.387037037037037,
+      "mean_cost": 0.3749459793333701,
+      "mean_rms_error_deg": 6.9375014686001135,
+      "mean_settling_time_success_only_s": 6.445454545454545,
+      "axis": "single",
+      "controller": "TD3",
+      "per_seed_success_rates": {
+        "11": 0.7166666666666667,
+        "22": 0.4444444444444444,
+        "33": 0.0
+      }
+    },
+    {
+      "count": 540,
+      "passes": 372,
+      "success_rate": 0.6888888888888889,
+      "mean_cost": 0.3965583468556889,
+      "mean_rms_error_deg": 6.476603311163956,
+      "mean_settling_time_success_only_s": 4.700940860215054,
+      "axis": "single",
+      "controller": "PPO_calibrated",
+      "per_seed_success_rates": {
+        "11": 0.7222222222222222,
+        "22": 0.6444444444444445,
+        "33": 0.7
+      }
+    },
+    {
+      "count": 540,
+      "passes": 370,
+      "success_rate": 0.6851851851851852,
+      "mean_cost": 0.3150559165546852,
+      "mean_rms_error_deg": 7.013924551968191,
+      "mean_settling_time_success_only_s": 5.332972972972973,
+      "axis": "single",
+      "controller": "SAC_calibrated",
+      "per_seed_success_rates": {
+        "11": 0.6944444444444444,
+        "22": 0.6944444444444444,
+        "33": 0.6666666666666666
+      }
+    },
+    {
+      "count": 540,
+      "passes": 346,
+      "success_rate": 0.6407407407407407,
+      "mean_cost": 0.2347120313895672,
+      "mean_rms_error_deg": 9.061020721893918,
+      "mean_settling_time_success_only_s": 6.804046242774567,
+      "axis": "single",
+      "controller": "TD3_calibrated",
+      "per_seed_success_rates": {
+        "11": 0.7833333333333333,
+        "22": 0.5944444444444444,
+        "33": 0.5444444444444444
+      }
+    },
+    {
+      "count": 180,
+      "passes": 43,
+      "success_rate": 0.2388888888888889,
+      "mean_cost": 11.639414262137752,
+      "mean_rms_error_deg": 11.6007529274579,
+      "mean_settling_time_success_only_s": 11.567441860465117,
+      "axis": "three",
+      "controller": "baseline_PID",
+      "per_seed_success_rates": {}
+    },
+    {
+      "count": 180,
+      "passes": 128,
+      "success_rate": 0.7111111111111111,
+      "mean_cost": 1.3435330206018545,
+      "mean_rms_error_deg": 11.445852284042601,
+      "mean_settling_time_success_only_s": 6.91,
+      "axis": "three",
+      "controller": "tuned_PID",
+      "per_seed_success_rates": {}
+    },
+    {
+      "count": 180,
+      "passes": 131,
+      "success_rate": 0.7277777777777777,
+      "mean_cost": 1.7577478163009441,
+      "mean_rms_error_deg": 11.280763056226062,
+      "mean_settling_time_success_only_s": 7.167786259541985,
+      "axis": "three",
+      "controller": "improved_PID",
+      "per_seed_success_rates": {}
+    },
+    {
+      "count": 540,
+      "passes": 0,
+      "success_rate": 0.0,
+      "mean_cost": 3.3142052297845854,
+      "mean_rms_error_deg": 10.415697578526084,
+      "mean_settling_time_success_only_s": null,
+      "axis": "three",
+      "controller": "PPO",
+      "per_seed_success_rates": {
+        "11": 0.0,
+        "22": 0.0,
+        "33": 0.0
+      }
+    },
+    {
+      "count": 540,
+      "passes": 0,
+      "success_rate": 0.0,
+      "mean_cost": 5.11581655776495,
+      "mean_rms_error_deg": 10.974954918754385,
+      "mean_settling_time_success_only_s": null,
+      "axis": "three",
+      "controller": "SAC",
+      "per_seed_success_rates": {
+        "11": 0.0,
+        "22": 0.0,
+        "33": 0.0
+      }
+    },
+    {
+      "count": 540,
+      "passes": 0,
+      "success_rate": 0.0,
+      "mean_cost": 5.179993654302689,
+      "mean_rms_error_deg": 13.06335768115146,
+      "mean_settling_time_success_only_s": null,
+      "axis": "three",
+      "controller": "TD3",
+      "per_seed_success_rates": {
+        "11": 0.0,
+        "22": 0.0,
+        "33": 0.0
+      }
+    },
+    {
+      "count": 540,
+      "passes": 302,
+      "success_rate": 0.5592592592592592,
+      "mean_cost": 3.282907497970415,
+      "mean_rms_error_deg": 10.322680721594523,
+      "mean_settling_time_success_only_s": 6.404105960264901,
+      "axis": "three",
+      "controller": "PPO_calibrated",
+      "per_seed_success_rates": {
+        "11": 0.6,
+        "22": 0.5555555555555556,
+        "33": 0.5222222222222223
+      }
+    },
+    {
+      "count": 540,
+      "passes": 340,
+      "success_rate": 0.6296296296296297,
+      "mean_cost": 4.516632698203168,
+      "mean_rms_error_deg": 10.348817942748136,
+      "mean_settling_time_success_only_s": 5.619,
+      "axis": "three",
+      "controller": "SAC_calibrated",
+      "per_seed_success_rates": {
+        "11": 0.5555555555555556,
+        "22": 0.6666666666666666,
+        "33": 0.6666666666666666
+      }
+    },
+    {
+      "count": 540,
+      "passes": 134,
+      "success_rate": 0.24814814814814815,
+      "mean_cost": 4.173838213693323,
+      "mean_rms_error_deg": 13.529676532993085,
+      "mean_settling_time_success_only_s": 9.51044776119403,
+      "axis": "three",
+      "controller": "TD3_calibrated",
+      "per_seed_success_rates": {
+        "11": 0.18888888888888888,
+        "22": 0.0,
+        "33": 0.5555555555555556
+      }
+    }
+  ],
+  "figure07_inertia": [
+    {
+      "count": 120,
+      "passes": 120,
+      "success_rate": 1.0,
+      "mean_cost": 0.427399118770835,
+      "mean_rms_error_deg": 6.384462047752093,
+      "mean_settling_time_success_only_s": 3.2625000000000006,
+      "axis": "single",
+      "controller": "PID_N",
+      "per_seed_success_rates": {}
+    },
+    {
+      "count": 360,
+      "passes": 360,
+      "success_rate": 1.0,
+      "mean_cost": 0.19341774810874582,
+      "mean_rms_error_deg": 7.077821966956814,
+      "mean_settling_time_success_only_s": 4.2636111111111115,
+      "axis": "single",
+      "controller": "SAC_N",
+      "per_seed_success_rates": {
+        "11": 1.0,
+        "22": 1.0,
+        "33": 1.0
+      }
+    },
+    {
+      "count": 360,
+      "passes": 356,
+      "success_rate": 0.9888888888888889,
+      "mean_cost": 0.18898746854172205,
+      "mean_rms_error_deg": 7.647803177456018,
+      "mean_settling_time_success_only_s": 5.288342696629214,
+      "axis": "single",
+      "controller": "SAC_R",
+      "per_seed_success_rates": {
+        "11": 1.0,
+        "22": 1.0,
+        "33": 0.9666666666666667
+      }
+    },
+    {
+      "count": 120,
+      "passes": 120,
+      "success_rate": 1.0,
+      "mean_cost": 5.104369731407137,
+      "mean_rms_error_deg": 9.16328489845958,
+      "mean_settling_time_success_only_s": 3.234,
+      "axis": "three",
+      "controller": "PID_N",
+      "per_seed_success_rates": {}
+    },
+    {
+      "count": 360,
+      "passes": 360,
+      "success_rate": 1.0,
+      "mean_cost": 3.6412181347020147,
+      "mean_rms_error_deg": 11.701739922350976,
+      "mean_settling_time_success_only_s": 6.1945,
+      "axis": "three",
+      "controller": "SAC_N",
+      "per_seed_success_rates": {
+        "11": 1.0,
+        "22": 1.0,
+        "33": 1.0
+      }
+    },
+    {
+      "count": 360,
+      "passes": 304,
+      "success_rate": 0.8444444444444444,
+      "mean_cost": 3.8742922127764245,
+      "mean_rms_error_deg": 11.81118936150426,
+      "mean_settling_time_success_only_s": 5.325855263157894,
+      "axis": "three",
+      "controller": "SAC_R",
+      "per_seed_success_rates": {
+        "11": 1.0,
+        "22": 1.0,
+        "33": 0.5333333333333333
+      }
+    }
+  ],
+  "figure07_actuator": [
+    {
+      "count": 1536,
+      "passes": 1536,
+      "success_rate": 1.0,
+      "mean_cost": 0.02669627491358777,
+      "mean_rms_error_deg": 8.842856250786022,
+      "mean_settling_time_success_only_s": 6.5154296875,
+      "kind": "lag",
+      "controller": "lag_pid"
+    },
+    {
+      "count": 1536,
+      "passes": 1536,
+      "success_rate": 1.0,
+      "mean_cost": 0.07530650120396622,
+      "mean_rms_error_deg": 7.75579771707667,
+      "mean_settling_time_success_only_s": 4.63779296875,
+      "kind": "lag",
+      "controller": "lag_residual_formal_seed101"
+    },
+    {
+      "count": 1536,
+      "passes": 1536,
+      "success_rate": 1.0,
+      "mean_cost": 0.1037489780913099,
+      "mean_rms_error_deg": 7.270459317755415,
+      "mean_settling_time_success_only_s": 5.353483072916667,
+      "kind": "lag",
+      "controller": "lag_residual_formal_seed202"
+    },
+    {
+      "count": 1536,
+      "passes": 1536,
+      "success_rate": 1.0,
+      "mean_cost": 0.10675165607851834,
+      "mean_rms_error_deg": 7.37187184464721,
+      "mean_settling_time_success_only_s": 4.968294270833334,
+      "kind": "lag",
+      "controller": "lag_residual_formal_seed303"
+    },
+    {
+      "count": 1536,
+      "passes": 1536,
+      "success_rate": 1.0,
+      "mean_cost": 0.03112472295777929,
+      "mean_rms_error_deg": 8.859870479755555,
+      "mean_settling_time_success_only_s": 6.507942708333334,
+      "kind": "delay",
+      "controller": "delay_pid"
+    },
+    {
+      "count": 1536,
+      "passes": 1412,
+      "success_rate": 0.9192708333333334,
+      "mean_cost": 0.2755673083916543,
+      "mean_rms_error_deg": 8.009944889855129,
+      "mean_settling_time_success_only_s": 4.964376770538244,
+      "kind": "delay",
+      "controller": "delay_residual_formal_seed101"
+    },
+    {
+      "count": 1536,
+      "passes": 1091,
+      "success_rate": 0.7102864583333334,
+      "mean_cost": 0.18884810011059464,
+      "mean_rms_error_deg": 7.25745585580177,
+      "mean_settling_time_success_only_s": 4.282263978001834,
+      "kind": "delay",
+      "controller": "delay_residual_formal_seed202"
+    },
+    {
+      "count": 1536,
+      "passes": 1536,
+      "success_rate": 1.0,
+      "mean_cost": 0.18453546345792846,
+      "mean_rms_error_deg": 8.118703588018485,
+      "mean_settling_time_success_only_s": 5.515234375000001,
+      "kind": "delay",
+      "controller": "delay_residual_formal_seed303"
+    }
+  ],
+  "comparisons": [
+    {
+      "axis": "single",
+      "metric": "mean_cost",
+      "nominal_SAC_over_PID_percent": 45.25459684264196
+    },
+    {
+      "axis": "three",
+      "metric": "mean_cost",
+      "nominal_SAC_over_PID_percent": 71.33531319836875
+    },
+    {
+      "axis": "single",
+      "metric": "mean_settling_time_success_only_s",
+      "nominal_SAC_over_PID_percent": 130.68539804171988
+    },
+    {
+      "axis": "three",
+      "metric": "mean_settling_time_success_only_s",
+      "nominal_SAC_over_PID_percent": 191.5429808286951
+    },
+    {
+      "axis": "single",
+      "metric": "mean_rms_error_deg",
+      "nominal_SAC_over_PID_percent": 110.86011497944212
+    },
+    {
+      "axis": "three",
+      "metric": "mean_rms_error_deg",
+      "nominal_SAC_over_PID_percent": 127.70245661922102
+    }
+  ]
+}

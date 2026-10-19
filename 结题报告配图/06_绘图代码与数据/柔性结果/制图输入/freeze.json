@@ -1,0 +1,138 @@
+{
+  "frozen_at_UTC": "2026-10-18T02:57:43.920220+00:00",
+  "protocol_sha256": "5f3431259e1f3cecd24785a16f5e07b7f89d192d8777a6723c09adf0f7d4ae50",
+  "source_sha256": {
+    "代码/supplement.py": "b55ee93f6c6306bd825d4c8b680bf351018f775859c27e38614b0f1a47a46658",
+    "代码/test_supplement.py": "4a1425c6713f89cae2889062d61645072cff0c440bdad2d0652ab2f87ff52eee"
+  },
+  "old_inputs_sha256": {
+    "代码/flexible_study.py": "6aae327fd60514f2c0659ca29c8c4b9e9d75d523d52d432cfa2be0112bd33088",
+    "代码/test_flexible.py": "5fdd9aec2745d015a52a6f0b8cf2ab564ab2528d159bce3284fe11d0afccfe8c",
+    "02_传统控制/selected.json": "25549c0c5f13541f5126c29fb40259289a504f9ef63902985abc4cd3e715456c",
+    "02_补充传统优化/selected.json": "b9192f0f3709e4254b24faefcb18d03b361ca5a081b08570912009103d09dfac",
+    "09_事后加强PID复核/selected.json": "cfca178bd25ecf688c8790cb34fed60ec6e669fe77b4f8c9cac98e8524f09283",
+    "01_实验方案/执行配置.json": "64265388fa30c8f593c3f51b3d027165ea37457c937a9c0faff05c3f803d99a3",
+    "01_实验方案/development.json": "1c740d182adf316d5382150bb132ad464e07fb9b9026c1d626a41d0caee42082",
+    "01_实验方案/validation.json": "984e9001ba28e77d675a7f5f60ab4cb7b5472fb7e0985cec6d05c97bde7d8f32",
+    "01_实验方案/test.json": "9f4ac50aaa20ff70dc6b0eeeb25542bc9e209be3f58a67a13c4f72a21cefd83a",
+    "03_学习训练/formal/PPO/seed_111/metadata.json": "2e23753d199ec99622aad5fa2e79dcba0985dfb3c827102b11a3ade69f4507d9",
+    "03_学习训练/formal/PPO/seed_111/best.zip": "682a94d472f441cd66602b0b8c724b585ec4c9c400239f46633ebe6997ec6151",
+    "03_学习训练/formal/PPO/seed_222/metadata.json": "8371118b2fa710584994ceed91948ae3a5ec517e9f20d5c0ef99ca59e176b6b9",
+    "03_学习训练/formal/PPO/seed_222/best.zip": "0361b8166d5f021b51a4cb44d3d5a7ba71d515a377fd7a46b014eb7ab3881d27",
+    "03_学习训练/formal/PPO/seed_333/metadata.json": "c8646a084e35206913f4aac8db8e68c9f957b332b117f9b75084aeaffdb7ba86",
+    "03_学习训练/formal/PPO/seed_333/best.zip": "188b3d8f83c1644655db4b4b849977237cf06527602a8f263d82ae471124d03e"
+  },
+  "scenario_and_noise_sha256": {
+    "01_方案与冻结/A_original_confirmation.json": "915b176b76278d1f51be5cc785c95ef46e3dd4147edffa67bfacafcc2a67452c",
+    "01_方案与冻结/B_initial_vibration.json": "e3f8e7e16f4ada8253935f42082deaa7f91c311af8fede346cf97c95bcc0908a",
+    "01_方案与冻结/C_vibration_and_noise.json": "4ea8b10e2b7d894bd196b8f39c01872c6572275096e08b3270d31d5ab60ceae7",
+    "01_方案与冻结/C_共享测量噪声.npz": "8460918e0aee982d14501431b524aa68f35119bd910bca85101c57a52a4824ee",
+    "01_方案与冻结/预声明.json": "5f3431259e1f3cecd24785a16f5e07b7f89d192d8777a6723c09adf0f7d4ae50"
+  },
+  "controllers": [
+    {
+      "name": "PID",
+      "settings": {
+        "method": "PID",
+        "kp": 2.4801245960665232,
+        "kd": 1.784632299598744,
+        "ki": 0.0
+      }
+    },
+    {
+      "name": "PID_safe",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      }
+    },
+    {
+      "name": "PID_strengthened",
+      "settings": {
+        "method": "PID",
+        "kp": 2.4386782774043816,
+        "kd": 1.7198638416404861,
+        "ki": 0.0
+      }
+    },
+    {
+      "name": "ZVD_PID",
+      "settings": {
+        "method": "ZVD_PID",
+        "kp": 0.6798697775845328,
+        "kd": 1.248607230739573,
+        "ki": 0.002823082581150911
+      }
+    },
+    {
+      "name": "ZVD_PID_refined",
+      "settings": {
+        "method": "ZVD_PID",
+        "kp": 0.5841048727249352,
+        "kd": 1.1394467863958684,
+        "ki": 0.0
+      }
+    },
+    {
+      "name": "LQR_refined",
+      "settings": {
+        "method": "LQR",
+        "gain": [
+          0.37134873110136646,
+          1.1129648228613274,
+          -1.1580413020360945,
+          -0.9698115023044206
+        ],
+        "q_diag": [
+          0.18762548012810046,
+          0.5572183663210045,
+          0.10388552388380191,
+          2.8998415954054053
+        ],
+        "r": 1.3605920469607238
+      }
+    },
+    {
+      "name": "PID_PPO_111",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "seed": 111,
+      "model": "03_学习训练\\formal\\PPO\\seed_111\\best.zip",
+      "selected_steps": 262144,
+      "old_training_steps": 1048576
+    },
+    {
+      "name": "PID_PPO_222",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "seed": 222,
+      "model": "03_学习训练\\formal\\PPO\\seed_222\\best.zip",
+      "selected_steps": 393216,
+      "old_training_steps": 1048576
+    },
+    {
+      "name": "PID_PPO_333",
+      "settings": {
+        "method": "PID",
+        "kp": 0.6424195423845626,
+        "kd": 1.7217308002831726,
+        "ki": 0.0
+      },
+      "seed": 333,
+      "model": "03_学习训练\\formal\\PPO\\seed_333\\best.zip",
+      "selected_steps": 327680,
+      "old_training_steps": 1048576
+    }
+  ],
+  "test_not_started_when_frozen": true
+}

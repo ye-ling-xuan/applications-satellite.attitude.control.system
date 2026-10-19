@@ -1,0 +1,1784 @@
+{
+  "training_runs": [
+    {
+      "stage": "development",
+      "algorithm": "SAC",
+      "seed": 16202,
+      "steps": 524288,
+      "best_steps": 0,
+      "snapshots": [
+        {
+          "steps": 0,
+          "validation": {
+            "success": 0.834375,
+            "failed": 0.0,
+            "cost": 0.011535843752778514,
+            "rms_angle_deg": 3.879960524842707,
+            "peak_relative_deg": 1.026719749425234,
+            "residual_relative_rms_deg": 0.012171427830978618,
+            "count": 320,
+            "passes": 267,
+            "physical_failures": 0,
+            "selection_cost": 0.9191850272928432
+          }
+        },
+        {
+          "steps": 65536,
+          "validation": {
+            "success": 0.715625,
+            "failed": 0.0,
+            "cost": 0.0074804029343805535,
+            "rms_angle_deg": 4.4753673801366585,
+            "peak_relative_deg": 0.5722690694963142,
+            "residual_relative_rms_deg": 0.03503612146247491,
+            "count": 320,
+            "passes": 229,
+            "physical_failures": 0,
+            "selection_cost": 1.5684895402274088
+          }
+        },
+        {
+          "steps": 131072,
+          "validation": {
+            "success": 0.58125,
+            "failed": 0.0,
+            "cost": 0.00754784012337271,
+            "rms_angle_deg": 4.988099785547979,
+            "peak_relative_deg": 0.4705560412124165,
+            "residual_relative_rms_deg": 0.0197985485093769,
+            "count": 320,
+            "passes": 186,
+            "physical_failures": 0,
+            "selection_cost": 2.3049395774966115
+          }
+        },
+        {
+          "steps": 196608,
+          "validation": {
+            "success": 0.459375,
+            "failed": 0.0,
+            "cost": 0.0028821503518290715,
+            "rms_angle_deg": 5.536570316949008,
+            "peak_relative_deg": 0.3587939759030282,
+            "residual_relative_rms_deg": 0.02344279898410257,
+            "count": 320,
+            "passes": 147,
+            "physical_failures": 0,
+            "selection_cost": 2.9738694684429623
+          }
+        },
+        {
+          "steps": 262144,
+          "validation": {
+            "success": 0.409375,
+            "failed": 0.0,
+            "cost": 0.008650805787202199,
+            "rms_angle_deg": 5.74438787338554,
+            "peak_relative_deg": 0.3858123151378415,
+            "residual_relative_rms_deg": 0.04296413516697398,
+            "count": 320,
+            "passes": 131,
+            "physical_failures": 0,
+            "selection_cost": 3.248758724429912
+          }
+        },
+        {
+          "steps": 327680,
+          "validation": {
+            "success": 0.259375,
+            "failed": 0.0,
+            "cost": 0.004397257901357508,
+            "rms_angle_deg": 5.958707999700936,
+            "peak_relative_deg": 0.395961096557684,
+            "residual_relative_rms_deg": 0.024527277592035775,
+            "count": 320,
+            "passes": 83,
+            "physical_failures": 0,
+            "selection_cost": 4.0735551085404635
+          }
+        },
+        {
+          "steps": 393216,
+          "validation": {
+            "success": 0.440625,
+            "failed": 0.0,
+            "cost": 0.005901997574569528,
+            "rms_angle_deg": 4.908845100490376,
+            "peak_relative_deg": 0.3444072187400574,
+            "residual_relative_rms_deg": 0.013203421610190919,
+            "count": 320,
+            "passes": 141,
+            "physical_failures": 0,
+            "selection_cost": 3.0777546055198313
+          }
+        },
+        {
+          "steps": 458752,
+          "validation": {
+            "success": 0.50625,
+            "failed": 0.0,
+            "cost": 0.004713471971299273,
+            "rms_angle_deg": 4.952627430575769,
+            "peak_relative_deg": 0.3377881350463458,
+            "residual_relative_rms_deg": 0.01261373633380409,
+            "count": 320,
+            "passes": 162,
+            "physical_failures": 0,
+            "selection_cost": 2.7168686985675015
+          }
+        },
+        {
+          "steps": 524288,
+          "validation": {
+            "success": 0.825,
+            "failed": 0.0,
+            "cost": 0.008324172159409091,
+            "rms_angle_deg": 4.4743672916092745,
+            "peak_relative_deg": 0.40166402221553915,
+            "residual_relative_rms_deg": 0.006243497549769426,
+            "count": 320,
+            "passes": 264,
+            "physical_failures": 0,
+            "selection_cost": 0.9681530062514444
+          }
+        }
+      ],
+      "best": {
+        "steps": 0,
+        "validation": {
+          "success": 0.834375,
+          "failed": 0.0,
+          "cost": 0.011535843752778514,
+          "rms_angle_deg": 3.879960524842707,
+          "peak_relative_deg": 1.026719749425234,
+          "residual_relative_rms_deg": 0.012171427830978618,
+          "count": 320,
+          "passes": 267,
+          "physical_failures": 0,
+          "selection_cost": 0.9191850272928432
+        }
+      }
+    },
+    {
+      "stage": "development",
+      "algorithm": "TD3",
+      "seed": 16201,
+      "steps": 524288,
+      "best_steps": 0,
+      "snapshots": [
+        {
+          "steps": 0,
+          "validation": {
+            "success": 0.834375,
+            "failed": 0.0,
+            "cost": 0.011535843752778514,
+            "rms_angle_deg": 3.879960524842707,
+            "peak_relative_deg": 1.026719749425234,
+            "residual_relative_rms_deg": 0.012171427830978618,
+            "count": 320,
+            "passes": 267,
+            "physical_failures": 0,
+            "selection_cost": 0.9191850272928432
+          }
+        },
+        {
+          "steps": 65536,
+          "validation": {
+            "success": 0.346875,
+            "failed": 0.0,
+            "cost": 0.01719000779514217,
+            "rms_angle_deg": 4.896533317354348,
+            "peak_relative_deg": 0.4657909873078706,
+            "residual_relative_rms_deg": 0.03278342727916603,
+            "count": 320,
+            "passes": 111,
+            "physical_failures": 0,
+            "selection_cost": 3.5926995568680176
+          }
+        },
+        {
+          "steps": 131072,
+          "validation": {
+            "success": 0.434375,
+            "failed": 0.0,
+            "cost": 0.003878325362230227,
+            "rms_angle_deg": 5.5453473650797225,
+            "peak_relative_deg": 0.34241761343172644,
+            "residual_relative_rms_deg": 0.014853369946181513,
+            "count": 320,
+            "passes": 139,
+            "physical_failures": 0,
+            "selection_cost": 3.111507594370478
+          }
+        },
+        {
+          "steps": 196608,
+          "validation": {
+            "success": 0.459375,
+            "failed": 0.0,
+            "cost": 0.0023952937826529326,
+            "rms_angle_deg": 5.652427158947792,
+            "peak_relative_deg": 0.30950737241986903,
+            "residual_relative_rms_deg": 0.023877693030932172,
+            "count": 320,
+            "passes": 147,
+            "physical_failures": 0,
+            "selection_cost": 2.974039604668749
+          }
+        },
+        {
+          "steps": 262144,
+          "validation": {
+            "success": 0.175,
+            "failed": 0.0,
+            "cost": 0.007824149630376712,
+            "rms_angle_deg": 6.989840696524384,
+            "peak_relative_deg": 0.4238482472565813,
+            "residual_relative_rms_deg": 0.09254850694790537,
+            "count": 320,
+            "passes": 56,
+            "physical_failures": 0,
+            "selection_cost": 4.537581104201903
+          }
+        },
+        {
+          "steps": 327680,
+          "validation": {
+            "success": 0.196875,
+            "failed": 0.0,
+            "cost": 0.0014171035316069068,
+            "rms_angle_deg": 7.265604314039007,
+            "peak_relative_deg": 0.26737735455176,
+            "residual_relative_rms_deg": 0.029588689533109853,
+            "count": 320,
+            "passes": 63,
+            "physical_failures": 0,
+            "selection_cost": 4.417279703525504
+          }
+        },
+        {
+          "steps": 393216,
+          "validation": {
+            "success": 0.178125,
+            "failed": 0.0,
+            "cost": 0.0014338460117916546,
+            "rms_angle_deg": 7.330497721425774,
+            "peak_relative_deg": 0.2790740813674119,
+            "residual_relative_rms_deg": 0.030717742897830275,
+            "count": 320,
+            "passes": 57,
+            "physical_failures": 0,
+            "selection_cost": 4.520428046673793
+          }
+        },
+        {
+          "steps": 458752,
+          "validation": {
+            "success": 0.128125,
+            "failed": 0.0,
+            "cost": 0.0017220855513394012,
+            "rms_angle_deg": 7.407526242502146,
+            "peak_relative_deg": 0.2789436549471662,
+            "residual_relative_rms_deg": 0.036570146824587216,
+            "count": 320,
+            "passes": 41,
+            "physical_failures": 0,
+            "selection_cost": 4.795398484122787
+          }
+        },
+        {
+          "steps": 524288,
+          "validation": {
+            "success": 0.115625,
+            "failed": 0.0,
+            "cost": 0.005621851833965253,
+            "rms_angle_deg": 7.299110820643878,
+            "peak_relative_deg": 0.3207595983016692,
+            "residual_relative_rms_deg": 0.08683254529200946,
+            "count": 320,
+            "passes": 37,
+            "physical_failures": 0,
+            "selection_cost": 4.864121919789193
+          }
+        }
+      ],
+      "best": {
+        "steps": 0,
+        "validation": {
+          "success": 0.834375,
+          "failed": 0.0,
+          "cost": 0.011535843752778514,
+          "rms_angle_deg": 3.879960524842707,
+          "peak_relative_deg": 1.026719749425234,
+          "residual_relative_rms_deg": 0.012171427830978618,
+          "count": 320,
+          "passes": 267,
+          "physical_failures": 0,
+          "selection_cost": 0.9191850272928432
+        }
+      }
+    },
+    {
+      "stage": "development",
+      "algorithm": "PPO",
+      "seed": 16203,
+      "steps": 524288,
+      "best_steps": 262144,
+      "snapshots": [
+        {
+          "steps": 0,
+          "validation": {
+            "success": 0.834375,
+            "failed": 0.0,
+            "cost": 0.011535843752778514,
+            "rms_angle_deg": 3.879960524842707,
+            "peak_relative_deg": 1.026719749425234,
+            "residual_relative_rms_deg": 0.012171427830978618,
+            "count": 320,
+            "passes": 267,
+            "physical_failures": 0,
+            "selection_cost": 0.9191850272928432
+          }
+        },
+        {
+          "steps": 65536,
+          "validation": {
+            "success": 0.859375,
+            "failed": 0.0,
+            "cost": 0.011693115328130253,
+            "rms_angle_deg": 3.8587554211109563,
+            "peak_relative_deg": 1.0224992735074254,
+            "residual_relative_rms_deg": 0.009963658060149237,
+            "count": 320,
+            "passes": 275,
+            "physical_failures": 0,
+            "selection_cost": 0.7823675732029114
+          }
+        },
+        {
+          "steps": 131072,
+          "validation": {
+            "success": 0.81875,
+            "failed": 0.0,
+            "cost": 0.010747271899929422,
+            "rms_angle_deg": 3.912906304929271,
+            "peak_relative_deg": 1.001655735693641,
+            "residual_relative_rms_deg": 0.013504714033630311,
+            "count": 320,
+            "passes": 262,
+            "physical_failures": 0,
+            "selection_cost": 1.004284582817091
+          }
+        },
+        {
+          "steps": 196608,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.009609339057304872,
+            "rms_angle_deg": 3.981181509236707,
+            "peak_relative_deg": 0.883879417279851,
+            "residual_relative_rms_deg": 0.003888617616572452,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.009609339057304872
+          }
+        },
+        {
+          "steps": 262144,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.009498643792779362,
+            "rms_angle_deg": 3.974652732557675,
+            "peak_relative_deg": 0.8693704414692615,
+            "residual_relative_rms_deg": 0.0034733677474662354,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.009498643792779362
+          }
+        },
+        {
+          "steps": 327680,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.009762760287202844,
+            "rms_angle_deg": 3.9666434749108106,
+            "peak_relative_deg": 0.85631329751398,
+            "residual_relative_rms_deg": 0.0025982863534195653,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.009762760287202844
+          }
+        },
+        {
+          "steps": 393216,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.01122967631714423,
+            "rms_angle_deg": 3.8962126178404644,
+            "peak_relative_deg": 0.9051496710918954,
+            "residual_relative_rms_deg": 0.0023565239347749355,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.01122967631714423
+          }
+        },
+        {
+          "steps": 458752,
+          "validation": {
+            "success": 0.9625,
+            "failed": 0.0,
+            "cost": 0.010760860854588859,
+            "rms_angle_deg": 3.9575451421576604,
+            "peak_relative_deg": 0.8103701476802996,
+            "residual_relative_rms_deg": 0.002741578435734582,
+            "count": 320,
+            "passes": 308,
+            "physical_failures": 0,
+            "selection_cost": 0.21604133396962996
+          }
+        },
+        {
+          "steps": 524288,
+          "validation": {
+            "success": 0.928125,
+            "failed": 0.0,
+            "cost": 0.011416616542407717,
+            "rms_angle_deg": 3.936922870355282,
+            "peak_relative_deg": 0.8129992859671482,
+            "residual_relative_rms_deg": 0.003801612714957229,
+            "count": 320,
+            "passes": 297,
+            "physical_failures": 0,
+            "selection_cost": 0.404738992046318
+          }
+        }
+      ],
+      "best": {
+        "steps": 262144,
+        "validation": {
+          "success": 1.0,
+          "failed": 0.0,
+          "cost": 0.009498643792779362,
+          "rms_angle_deg": 3.974652732557675,
+          "peak_relative_deg": 0.8693704414692615,
+          "residual_relative_rms_deg": 0.0034733677474662354,
+          "count": 320,
+          "passes": 320,
+          "physical_failures": 0,
+          "selection_cost": 0.009498643792779362
+        }
+      }
+    },
+    {
+      "stage": "formal",
+      "algorithm": "PPO",
+      "seed": 111,
+      "steps": 1048576,
+      "best_steps": 262144,
+      "snapshots": [
+        {
+          "steps": 0,
+          "validation": {
+            "success": 0.834375,
+            "failed": 0.0,
+            "cost": 0.011535843752778514,
+            "rms_angle_deg": 3.879960524842707,
+            "peak_relative_deg": 1.026719749425234,
+            "residual_relative_rms_deg": 0.012171427830978618,
+            "count": 320,
+            "passes": 267,
+            "physical_failures": 0,
+            "selection_cost": 0.9191850272928432
+          }
+        },
+        {
+          "steps": 65536,
+          "validation": {
+            "success": 0.8875,
+            "failed": 0.0,
+            "cost": 0.01099290624002217,
+            "rms_angle_deg": 3.8966236833900942,
+            "peak_relative_deg": 0.9730049083222226,
+            "residual_relative_rms_deg": 0.008570381524591764,
+            "count": 320,
+            "passes": 284,
+            "physical_failures": 0,
+            "selection_cost": 0.6274133439220773
+          }
+        },
+        {
+          "steps": 131072,
+          "validation": {
+            "success": 0.903125,
+            "failed": 0.0,
+            "cost": 0.011124238225838657,
+            "rms_angle_deg": 3.8814254425048356,
+            "peak_relative_deg": 0.9951122282783984,
+            "residual_relative_rms_deg": 0.008714424316335064,
+            "count": 320,
+            "passes": 289,
+            "physical_failures": 0,
+            "selection_cost": 0.5416912222947532
+          }
+        },
+        {
+          "steps": 196608,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.010482369284645044,
+            "rms_angle_deg": 3.916838418529994,
+            "peak_relative_deg": 0.9360465445773191,
+            "residual_relative_rms_deg": 0.003950739798929759,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.010482369284645044
+          }
+        },
+        {
+          "steps": 262144,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.00969625823819682,
+            "rms_angle_deg": 3.9858951661144104,
+            "peak_relative_deg": 0.9178983875624105,
+            "residual_relative_rms_deg": 0.004790287087828615,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.00969625823819682
+          }
+        },
+        {
+          "steps": 327680,
+          "validation": {
+            "success": 0.984375,
+            "failed": 0.0,
+            "cost": 0.009780237968143935,
+            "rms_angle_deg": 4.0023682437886885,
+            "peak_relative_deg": 0.7984189116864775,
+            "residual_relative_rms_deg": 0.002335354165107035,
+            "count": 320,
+            "passes": 315,
+            "physical_failures": 0,
+            "selection_cost": 0.09536051355255276
+          }
+        },
+        {
+          "steps": 393216,
+          "validation": {
+            "success": 0.9125,
+            "failed": 0.0,
+            "cost": 0.010032220775875851,
+            "rms_angle_deg": 4.035680041895274,
+            "peak_relative_deg": 0.7354456731256349,
+            "residual_relative_rms_deg": 0.0030633563852194945,
+            "count": 320,
+            "passes": 292,
+            "physical_failures": 0,
+            "selection_cost": 0.48933426138493274
+          }
+        },
+        {
+          "steps": 458752,
+          "validation": {
+            "success": 0.859375,
+            "failed": 0.0,
+            "cost": 0.010773632849677287,
+            "rms_angle_deg": 4.0271444382439885,
+            "peak_relative_deg": 0.7579614622034377,
+            "residual_relative_rms_deg": 0.00392948422045199,
+            "count": 320,
+            "passes": 275,
+            "physical_failures": 0,
+            "selection_cost": 0.7807962300061604
+          }
+        },
+        {
+          "steps": 524288,
+          "validation": {
+            "success": 0.7875,
+            "failed": 0.0,
+            "cost": 0.012069838379888584,
+            "rms_angle_deg": 4.042047733727114,
+            "peak_relative_deg": 0.7581277122927329,
+            "residual_relative_rms_deg": 0.005994075492702327,
+            "count": 320,
+            "passes": 252,
+            "physical_failures": 0,
+            "selection_cost": 1.1748598148930425
+          }
+        },
+        {
+          "steps": 589824,
+          "validation": {
+            "success": 0.771875,
+            "failed": 0.0,
+            "cost": 0.013173952013508062,
+            "rms_angle_deg": 3.986064293380962,
+            "peak_relative_deg": 0.7877961381726469,
+            "residual_relative_rms_deg": 0.006460861920523109,
+            "count": 320,
+            "passes": 247,
+            "physical_failures": 0,
+            "selection_cost": 1.2609983622853431
+          }
+        },
+        {
+          "steps": 655360,
+          "validation": {
+            "success": 0.696875,
+            "failed": 0.0,
+            "cost": 0.01649457687920487,
+            "rms_angle_deg": 3.998260365297793,
+            "peak_relative_deg": 0.815318664590882,
+            "residual_relative_rms_deg": 0.009901328178953627,
+            "count": 320,
+            "passes": 223,
+            "physical_failures": 0,
+            "selection_cost": 1.6728206309467075
+          }
+        },
+        {
+          "steps": 720896,
+          "validation": {
+            "success": 0.671875,
+            "failed": 0.0,
+            "cost": 0.016478013812499945,
+            "rms_angle_deg": 4.124057572404348,
+            "peak_relative_deg": 0.8129199510159714,
+            "residual_relative_rms_deg": 0.011800876292664625,
+            "count": 320,
+            "passes": 215,
+            "physical_failures": 0,
+            "selection_cost": 1.8097479299522425
+          }
+        },
+        {
+          "steps": 786432,
+          "validation": {
+            "success": 0.64375,
+            "failed": 0.0,
+            "cost": 0.01848104873112381,
+            "rms_angle_deg": 4.159130357332837,
+            "peak_relative_deg": 0.8747909033829873,
+            "residual_relative_rms_deg": 0.01244170053193256,
+            "count": 320,
+            "passes": 206,
+            "physical_failures": 0,
+            "selection_cost": 1.9642949625985824
+          }
+        },
+        {
+          "steps": 851968,
+          "validation": {
+            "success": 0.69375,
+            "failed": 0.0,
+            "cost": 0.019141081090874142,
+            "rms_angle_deg": 4.104604658942195,
+            "peak_relative_deg": 0.9250790650468369,
+            "residual_relative_rms_deg": 0.009176000959358704,
+            "count": 320,
+            "passes": 222,
+            "physical_failures": 0,
+            "selection_cost": 1.6907159075030762
+          }
+        },
+        {
+          "steps": 917504,
+          "validation": {
+            "success": 0.665625,
+            "failed": 0.0,
+            "cost": 0.018669275351221332,
+            "rms_angle_deg": 4.200825030775405,
+            "peak_relative_deg": 0.9110843436464794,
+            "residual_relative_rms_deg": 0.010355825257088383,
+            "count": 320,
+            "passes": 213,
+            "physical_failures": 0,
+            "selection_cost": 1.8442900600979413
+          }
+        },
+        {
+          "steps": 983040,
+          "validation": {
+            "success": 0.603125,
+            "failed": 0.0,
+            "cost": 0.022204194425387576,
+            "rms_angle_deg": 4.487259601772341,
+            "peak_relative_deg": 0.9400807062919467,
+            "residual_relative_rms_deg": 0.015742357338262437,
+            "count": 320,
+            "passes": 193,
+            "physical_failures": 0,
+            "selection_cost": 2.1874154673955983
+          }
+        },
+        {
+          "steps": 1048576,
+          "validation": {
+            "success": 0.50625,
+            "failed": 0.0,
+            "cost": 0.02080501636365127,
+            "rms_angle_deg": 4.883786679627535,
+            "peak_relative_deg": 0.9279723498938148,
+            "residual_relative_rms_deg": 0.01858351970049615,
+            "count": 320,
+            "passes": 162,
+            "physical_failures": 0,
+            "selection_cost": 2.7187369756563413
+          }
+        }
+      ],
+      "best": {
+        "steps": 262144,
+        "validation": {
+          "success": 1.0,
+          "failed": 0.0,
+          "cost": 0.00969625823819682,
+          "rms_angle_deg": 3.9858951661144104,
+          "peak_relative_deg": 0.9178983875624105,
+          "residual_relative_rms_deg": 0.004790287087828615,
+          "count": 320,
+          "passes": 320,
+          "physical_failures": 0,
+          "selection_cost": 0.00969625823819682
+        }
+      }
+    },
+    {
+      "stage": "formal",
+      "algorithm": "PPO",
+      "seed": 222,
+      "steps": 1048576,
+      "best_steps": 393216,
+      "snapshots": [
+        {
+          "steps": 0,
+          "validation": {
+            "success": 0.834375,
+            "failed": 0.0,
+            "cost": 0.011535843752778514,
+            "rms_angle_deg": 3.879960524842707,
+            "peak_relative_deg": 1.026719749425234,
+            "residual_relative_rms_deg": 0.012171427830978618,
+            "count": 320,
+            "passes": 267,
+            "physical_failures": 0,
+            "selection_cost": 0.9191850272928432
+          }
+        },
+        {
+          "steps": 65536,
+          "validation": {
+            "success": 0.840625,
+            "failed": 0.0,
+            "cost": 0.011504319270081753,
+            "rms_angle_deg": 3.893200620202324,
+            "peak_relative_deg": 1.0194659141923814,
+            "residual_relative_rms_deg": 0.011976679317885135,
+            "count": 320,
+            "passes": 269,
+            "physical_failures": 0,
+            "selection_cost": 0.8849599549514927
+          }
+        },
+        {
+          "steps": 131072,
+          "validation": {
+            "success": 0.859375,
+            "failed": 0.0,
+            "cost": 0.011433493212642601,
+            "rms_angle_deg": 3.838437205478975,
+            "peak_relative_deg": 1.0518972135246114,
+            "residual_relative_rms_deg": 0.012284066108070953,
+            "count": 320,
+            "passes": 275,
+            "physical_failures": 0,
+            "selection_cost": 0.7814426015109949
+          }
+        },
+        {
+          "steps": 196608,
+          "validation": {
+            "success": 0.803125,
+            "failed": 0.0,
+            "cost": 0.012014077820380022,
+            "rms_angle_deg": 3.8056155983417392,
+            "peak_relative_deg": 1.0801962721281555,
+            "residual_relative_rms_deg": 0.01395059865889498,
+            "count": 320,
+            "passes": 257,
+            "physical_failures": 0,
+            "selection_cost": 1.0902330631232962
+          }
+        },
+        {
+          "steps": 262144,
+          "validation": {
+            "success": 0.78125,
+            "failed": 0.0,
+            "cost": 0.013840075475210342,
+            "rms_angle_deg": 3.713984277647166,
+            "peak_relative_deg": 1.149330644635062,
+            "residual_relative_rms_deg": 0.01593510839641284,
+            "count": 320,
+            "passes": 250,
+            "physical_failures": 0,
+            "selection_cost": 1.2115227214282076
+          }
+        },
+        {
+          "steps": 327680,
+          "validation": {
+            "success": 0.89375,
+            "failed": 0.0,
+            "cost": 0.013786105375502478,
+            "rms_angle_deg": 3.729043581426042,
+            "peak_relative_deg": 1.1236362338920944,
+            "residual_relative_rms_deg": 0.009858336119942208,
+            "count": 320,
+            "passes": 286,
+            "physical_failures": 0,
+            "selection_cost": 0.5950049447219784
+          }
+        },
+        {
+          "steps": 393216,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.013799763598843875,
+            "rms_angle_deg": 3.731681181945608,
+            "peak_relative_deg": 1.0686532511010245,
+            "residual_relative_rms_deg": 0.004936826347239362,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.013799763598843875
+          }
+        },
+        {
+          "steps": 458752,
+          "validation": {
+            "success": 0.99375,
+            "failed": 0.0,
+            "cost": 0.014115021561358498,
+            "rms_angle_deg": 3.7109674024732913,
+            "peak_relative_deg": 1.03173323453677,
+            "residual_relative_rms_deg": 0.004166419355900942,
+            "count": 320,
+            "passes": 318,
+            "physical_failures": 0,
+            "selection_cost": 0.04824095981802195
+          }
+        },
+        {
+          "steps": 524288,
+          "validation": {
+            "success": 0.83125,
+            "failed": 0.0,
+            "cost": 0.016774753299428617,
+            "rms_angle_deg": 3.6711140362462418,
+            "peak_relative_deg": 1.0382179994991088,
+            "residual_relative_rms_deg": 0.007312674488471281,
+            "count": 320,
+            "passes": 266,
+            "physical_failures": 0,
+            "selection_cost": 0.938558548042612
+          }
+        },
+        {
+          "steps": 589824,
+          "validation": {
+            "success": 0.76875,
+            "failed": 0.0,
+            "cost": 0.019097152391651124,
+            "rms_angle_deg": 3.6664709824753983,
+            "peak_relative_deg": 1.0410457486630305,
+            "residual_relative_rms_deg": 0.009210650786707509,
+            "count": 320,
+            "passes": 246,
+            "physical_failures": 0,
+            "selection_cost": 1.2810182119522504
+          }
+        },
+        {
+          "steps": 655360,
+          "validation": {
+            "success": 0.553125,
+            "failed": 0.0,
+            "cost": 0.025068484604601683,
+            "rms_angle_deg": 3.8334032054183984,
+            "peak_relative_deg": 1.051443632615937,
+            "residual_relative_rms_deg": 0.023973345539755254,
+            "count": 320,
+            "passes": 177,
+            "physical_failures": 0,
+            "selection_cost": 2.4606297128407526
+          }
+        },
+        {
+          "steps": 720896,
+          "validation": {
+            "success": 0.5625,
+            "failed": 0.0,
+            "cost": 0.027253013588816218,
+            "rms_angle_deg": 3.741491141265688,
+            "peak_relative_deg": 1.1407443431817441,
+            "residual_relative_rms_deg": 0.0242521983161191,
+            "count": 320,
+            "passes": 180,
+            "physical_failures": 0,
+            "selection_cost": 2.409818141197362
+          }
+        },
+        {
+          "steps": 786432,
+          "validation": {
+            "success": 0.53125,
+            "failed": 0.0,
+            "cost": 0.027751277479993258,
+            "rms_angle_deg": 3.7992218103556867,
+            "peak_relative_deg": 1.1603912333939583,
+            "residual_relative_rms_deg": 0.02683867852127144,
+            "count": 320,
+            "passes": 170,
+            "physical_failures": 0,
+            "selection_cost": 2.5809917631993797
+          }
+        },
+        {
+          "steps": 851968,
+          "validation": {
+            "success": 0.5375,
+            "failed": 0.0,
+            "cost": 0.025715577095772307,
+            "rms_angle_deg": 3.8429721815055258,
+            "peak_relative_deg": 1.1046794961574657,
+            "residual_relative_rms_deg": 0.026599190347878325,
+            "count": 320,
+            "passes": 172,
+            "physical_failures": 0,
+            "selection_cost": 2.5463978975160755
+          }
+        },
+        {
+          "steps": 917504,
+          "validation": {
+            "success": 0.459375,
+            "failed": 0.0,
+            "cost": 0.028861086451294517,
+            "rms_angle_deg": 4.134812767353203,
+            "peak_relative_deg": 1.0281867504536693,
+            "residual_relative_rms_deg": 0.044137334656897606,
+            "count": 320,
+            "passes": 147,
+            "physical_failures": 0,
+            "selection_cost": 2.9749255621080866
+          }
+        },
+        {
+          "steps": 983040,
+          "validation": {
+            "success": 0.5125,
+            "failed": 0.0,
+            "cost": 0.023765792289483917,
+            "rms_angle_deg": 4.039951903905399,
+            "peak_relative_deg": 0.9587194357205757,
+            "residual_relative_rms_deg": 0.030782401100866795,
+            "count": 320,
+            "passes": 164,
+            "physical_failures": 0,
+            "selection_cost": 2.6832806973244887
+          }
+        },
+        {
+          "steps": 1048576,
+          "validation": {
+            "success": 0.578125,
+            "failed": 0.0,
+            "cost": 0.01847784881792262,
+            "rms_angle_deg": 3.913803002446218,
+            "peak_relative_deg": 0.8767250103761937,
+            "residual_relative_rms_deg": 0.018885801762211996,
+            "count": 320,
+            "passes": 185,
+            "physical_failures": 0,
+            "selection_cost": 2.3229195823291406
+          }
+        }
+      ],
+      "best": {
+        "steps": 393216,
+        "validation": {
+          "success": 1.0,
+          "failed": 0.0,
+          "cost": 0.013799763598843875,
+          "rms_angle_deg": 3.731681181945608,
+          "peak_relative_deg": 1.0686532511010245,
+          "residual_relative_rms_deg": 0.004936826347239362,
+          "count": 320,
+          "passes": 320,
+          "physical_failures": 0,
+          "selection_cost": 0.013799763598843875
+        }
+      }
+    },
+    {
+      "stage": "formal",
+      "algorithm": "PPO",
+      "seed": 333,
+      "steps": 1048576,
+      "best_steps": 327680,
+      "snapshots": [
+        {
+          "steps": 0,
+          "validation": {
+            "success": 0.834375,
+            "failed": 0.0,
+            "cost": 0.011535843752778514,
+            "rms_angle_deg": 3.879960524842707,
+            "peak_relative_deg": 1.026719749425234,
+            "residual_relative_rms_deg": 0.012171427830978618,
+            "count": 320,
+            "passes": 267,
+            "physical_failures": 0,
+            "selection_cost": 0.9191850272928432
+          }
+        },
+        {
+          "steps": 65536,
+          "validation": {
+            "success": 0.93125,
+            "failed": 0.0,
+            "cost": 0.010888540396252254,
+            "rms_angle_deg": 3.8956134847202377,
+            "peak_relative_deg": 0.9797051884205132,
+            "residual_relative_rms_deg": 0.007019132435571837,
+            "count": 320,
+            "passes": 298,
+            "physical_failures": 0,
+            "selection_cost": 0.3873001526035149
+          }
+        },
+        {
+          "steps": 131072,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.009899405828410087,
+            "rms_angle_deg": 3.971648863665803,
+            "peak_relative_deg": 0.8901541880853777,
+            "residual_relative_rms_deg": 0.0038342934674787375,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.009899405828410087
+          }
+        },
+        {
+          "steps": 196608,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.010481347693743464,
+            "rms_angle_deg": 3.909803287766516,
+            "peak_relative_deg": 0.9069050605570451,
+            "residual_relative_rms_deg": 0.003155219976140408,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.010481347693743464
+          }
+        },
+        {
+          "steps": 262144,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.009404246409406663,
+            "rms_angle_deg": 4.002134891463255,
+            "peak_relative_deg": 0.8461166787996268,
+            "residual_relative_rms_deg": 0.0036486866743276948,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.009404246409406663
+          }
+        },
+        {
+          "steps": 327680,
+          "validation": {
+            "success": 1.0,
+            "failed": 0.0,
+            "cost": 0.007595356679536031,
+            "rms_angle_deg": 4.1469224641775,
+            "peak_relative_deg": 0.7094986582312887,
+            "residual_relative_rms_deg": 0.0032553242041681437,
+            "count": 320,
+            "passes": 320,
+            "physical_failures": 0,
+            "selection_cost": 0.007595356679536031
+          }
+        },
+        {
+          "steps": 393216,
+          "validation": {
+            "success": 0.98125,
+            "failed": 0.0,
+            "cost": 0.00734410165541832,
+            "rms_angle_deg": 4.191255151631521,
+            "peak_relative_deg": 0.6587799187457956,
+            "residual_relative_rms_deg": 0.0031892623001619526,
+            "count": 320,
+            "passes": 314,
+            "physical_failures": 0,
+            "selection_cost": 0.11012279240310326
+          }
+        },
+        {
+          "steps": 458752,
+          "validation": {
+            "success": 0.9625,
+            "failed": 0.0,
+            "cost": 0.008526758336296385,
+            "rms_angle_deg": 4.085873867534031,
+            "peak_relative_deg": 0.7191627078478124,
+            "residual_relative_rms_deg": 0.0024708361784613808,
+            "count": 320,
+            "passes": 308,
+            "physical_failures": 0,
+            "selection_cost": 0.21404812510186605
+          }
+        },
+        {
+          "steps": 524288,
+          "validation": {
+            "success": 0.96875,
+            "failed": 0.0,
+            "cost": 0.009320622516784786,
+            "rms_angle_deg": 4.048814926593075,
+            "peak_relative_deg": 0.7179743225868431,
+            "residual_relative_rms_deg": 0.0020644354425932267,
+            "count": 320,
+            "passes": 310,
+            "physical_failures": 0,
+            "selection_cost": 0.1804884042237552
+          }
+        },
+        {
+          "steps": 589824,
+          "validation": {
+            "success": 0.9,
+            "failed": 0.0,
+            "cost": 0.011252676222210503,
+            "rms_angle_deg": 3.9384110819948726,
+            "peak_relative_deg": 0.726954982706017,
+            "residual_relative_rms_deg": 0.0033923307406900625,
+            "count": 320,
+            "passes": 288,
+            "physical_failures": 0,
+            "selection_cost": 0.5588707324298086
+          }
+        },
+        {
+          "steps": 655360,
+          "validation": {
+            "success": 0.86875,
+            "failed": 0.0,
+            "cost": 0.013501655149059094,
+            "rms_angle_deg": 3.8527249488107045,
+            "peak_relative_deg": 0.7779956085292342,
+            "residual_relative_rms_deg": 0.004981853946833061,
+            "count": 320,
+            "passes": 278,
+            "physical_failures": 0,
+            "selection_cost": 0.7315772382512519
+          }
+        },
+        {
+          "steps": 720896,
+          "validation": {
+            "success": 0.86875,
+            "failed": 0.0,
+            "cost": 0.013728501450518007,
+            "rms_angle_deg": 3.809747126439832,
+            "peak_relative_deg": 0.8120167898108785,
+            "residual_relative_rms_deg": 0.004679462969248358,
+            "count": 320,
+            "passes": 278,
+            "physical_failures": 0,
+            "selection_cost": 0.7316948143799211
+          }
+        },
+        {
+          "steps": 786432,
+          "validation": {
+            "success": 0.803125,
+            "failed": 0.0,
+            "cost": 0.014631224928469744,
+            "rms_angle_deg": 3.8145601631445545,
+            "peak_relative_deg": 0.8064796641874661,
+            "residual_relative_rms_deg": 0.006108190465823647,
+            "count": 320,
+            "passes": 257,
+            "physical_failures": 0,
+            "selection_cost": 1.0908365859130111
+          }
+        },
+        {
+          "steps": 851968,
+          "validation": {
+            "success": 0.79375,
+            "failed": 0.0,
+            "cost": 0.015409385586614827,
+            "rms_angle_deg": 3.787055324939137,
+            "peak_relative_deg": 0.8169000221527613,
+            "residual_relative_rms_deg": 0.006169483986067605,
+            "count": 320,
+            "passes": 254,
+            "physical_failures": 0,
+            "selection_cost": 1.1427363031806297
+          }
+        },
+        {
+          "steps": 917504,
+          "validation": {
+            "success": 0.73125,
+            "failed": 0.0,
+            "cost": 0.017684504745593084,
+            "rms_angle_deg": 3.749586879488594,
+            "peak_relative_deg": 0.8564598361928045,
+            "residual_relative_rms_deg": 0.007372495546879845,
+            "count": 320,
+            "passes": 234,
+            "physical_failures": 0,
+            "selection_cost": 1.484901690216938
+          }
+        },
+        {
+          "steps": 983040,
+          "validation": {
+            "success": 0.69375,
+            "failed": 0.0,
+            "cost": 0.017843163601949003,
+            "rms_angle_deg": 3.7731913040016947,
+            "peak_relative_deg": 0.8388270287938526,
+            "residual_relative_rms_deg": 0.008634137710648788,
+            "count": 320,
+            "passes": 222,
+            "physical_failures": 0,
+            "selection_cost": 1.6899548325287455
+          }
+        },
+        {
+          "steps": 1048576,
+          "validation": {
+            "success": 0.66875,
+            "failed": 0.0,
+            "cost": 0.019660969814541733,
+            "rms_angle_deg": 3.7693343146822413,
+            "peak_relative_deg": 0.9131403312455394,
+            "residual_relative_rms_deg": 0.010627857680906825,
+            "count": 320,
+            "passes": 214,
+            "physical_failures": 0,
+            "selection_cost": 1.8272161156809854
+          }
+        }
+      ],
+      "best": {
+        "steps": 327680,
+        "validation": {
+          "success": 1.0,
+          "failed": 0.0,
+          "cost": 0.007595356679536031,
+          "rms_angle_deg": 4.1469224641775,
+          "peak_relative_deg": 0.7094986582312887,
+          "residual_relative_rms_deg": 0.0032553242041681437,
+          "count": 320,
+          "passes": 320,
+          "physical_failures": 0,
+          "selection_cost": 0.007595356679536031
+        }
+      }
+    }
+  ],
+  "training_total_steps": 4718592,
+  "test_counts": [
+    6400,
+    17280
+  ],
+  "configuration": {
+    "dt_s": 0.05,
+    "horizon_s": 22.0,
+    "deadline_s": 8.0,
+    "command_limit_Nm": 0.5,
+    "hub_inertia": 0.7,
+    "appendage_inertia": 0.3,
+    "frequency_training_Hz": [
+      0.4,
+      0.8
+    ],
+    "damping_training": [
+      0.01,
+      0.04
+    ],
+    "evaluation_frequencies_Hz": [
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "tolerance_deg_or_deg_s": [
+      1.0,
+      0.5,
+      0.1,
+      0.5
+    ],
+    "fail_relative_angle_deg": 10.0,
+    "fail_hub_angle_deg": 170.0,
+    "fail_hub_rate_deg_s": 300.0,
+    "counts": {
+      "development": 48,
+      "validation": 64,
+      "test": 128
+    },
+    "split_seeds": {
+      "development": 202610181601,
+      "validation": 202610181602,
+      "test": 202610181603
+    },
+    "formal_seeds": [
+      111,
+      222,
+      333
+    ],
+    "development_algorithms": [
+      "TD3",
+      "SAC",
+      "PPO"
+    ],
+    "development_steps": 524288,
+    "formal_steps": 1048576,
+    "validation_every": 65536,
+    "bonferroni_comparisons": 24,
+    "bootstrap_repeats": 20000,
+    "residual_origin_zero": true,
+    "potential_shaping_gamma": 0.999,
+    "primary_split": "test",
+    "true_parameters_in_policy": false,
+    "visible_states": [
+      "hub_angle",
+      "hub_rate",
+      "relative_angle",
+      "relative_rate",
+      "own_integral",
+      "previous_sent_command",
+      "elapsed_time"
+    ]
+  },
+  "new_test_protocol": {
+    "version": 1,
+    "task": "Frozen-controller prospective flexible appendage confirmation and stress tests",
+    "new_training_steps": 0,
+    "new_parameter_searches": 0,
+    "old_results_seen": true,
+    "selection": "all nine previously fixed controllers; no test-driven selection or changes",
+    "groups": [
+      "A_original_confirmation",
+      "B_initial_vibration",
+      "C_vibration_and_noise"
+    ],
+    "initial_seed": {
+      "A_original_confirmation": 2026101816101,
+      "B_initial_vibration": 2026101816102,
+      "C_vibration_and_noise": 2026101816103
+    },
+    "noise_seed": 2026101816104,
+    "initial_states_per_group": 128,
+    "frequencies_Hz": [
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "frequency_and_damping_constant_within_episode": true,
+    "dt_s": 0.05,
+    "horizon_s": 22.0,
+    "deadline_s": 8.0,
+    "inertias": [
+      0.7,
+      0.3
+    ],
+    "command_limit_Nm": 0.5,
+    "initial_distributions": {
+      "theta_deg": [
+        -30,
+        30
+      ],
+      "omega_deg_s": [
+        -2,
+        2
+      ],
+      "damping": [
+        0.01,
+        0.04
+      ],
+      "A_q_deg": 0,
+      "A_qdot_deg_s": 0,
+      "BC_q_deg": [
+        -0.05,
+        0.05
+      ],
+      "BC_qdot_deg_s": [
+        -0.2,
+        0.2
+      ]
+    },
+    "observation_noise": {
+      "group": "C only",
+      "distribution": "independent zero-mean Gaussian per scene, component and sample",
+      "component_order": [
+        "theta",
+        "omega",
+        "relative_angle",
+        "relative_rate"
+      ],
+      "std_deg_or_deg_s": [
+        0.01,
+        0.02,
+        0.005,
+        0.02
+      ],
+      "same_sample_for_all_methods": true,
+      "noise_at_initial_sample": true,
+      "noise_in_true_physics_or_acceptance": false,
+      "assumed_sensor_scenario": true,
+      "calibrated_to_real_sensor": false
+    },
+    "acceptance": {
+      "all_samples_between_s": [
+        8,
+        22
+      ],
+      "true_state_tolerances_deg_or_deg_s": [
+        1,
+        0.5,
+        0.1,
+        0.5
+      ],
+      "failure_bounds_deg_or_deg_s": [
+        170,
+        300,
+        10
+      ],
+      "absorption": "failure freezes state, zero subsequent torque"
+    },
+    "methods": [
+      "PID",
+      "PID_safe",
+      "PID_strengthened",
+      "ZVD_PID",
+      "ZVD_PID_refined",
+      "LQR_refined",
+      "PID_PPO_111",
+      "PID_PPO_222",
+      "PID_PPO_333"
+    ],
+    "policy_inputs": "measured four states, own integral, previous sent command, elapsed time; no frequency/damping",
+    "primary": {
+      "metric": "PPO minus reference success fraction",
+      "references": [
+        "PID_strengthened",
+        "PID_safe"
+      ],
+      "training_seeds": [
+        111,
+        222,
+        333
+      ],
+      "comparisons": 18,
+      "familywise_alpha": 0.05,
+      "interval": "two-sided paired cluster percentile bootstrap; simultaneous Bonferroni",
+      "clusters": "128 independent initial states; each cluster contains all five frequencies",
+      "repetitions": 200000,
+      "bootstrap_seed": 2026101816190,
+      "superiority": "each of three seeds has lower CI>0 against BOTH references, evaluated separately for each group",
+      "zero_physical_failure_claim": "reported separately, not silently inferred from success fraction"
+    },
+    "secondary": {
+      "metrics": [
+        "cost",
+        "residual_relative_rms_deg"
+      ],
+      "references": [
+        "PID",
+        "PID_safe",
+        "PID_strengthened",
+        "ZVD_PID",
+        "ZVD_PID_refined",
+        "LQR_refined"
+      ],
+      "comparisons": 108,
+      "familywise_alpha": 0.05,
+      "interval": "same paired clusters; separate simultaneous Bonferroni family",
+      "repetitions": 200000,
+      "bootstrap_seed": 2026101816190,
+      "cost_advantage_requires": "both methods succeed in all 640 episodes and cost-difference upper CI<0",
+      "other_metrics": "full-angle RMS, peak relative angle and frequency summaries descriptive"
+    },
+    "total_episodes": 17280,
+    "formal_results_unchanged": true,
+    "scope": "single-axis two-inertia one-mode numerical model; ideal torque source; measured flexure assumed; no flight/hardware validation"
+  },
+  "training_curves": [
+    {
+      "stage": "development",
+      "algorithm": "SAC",
+      "seed": 16202,
+      "steps": [
+        0,
+        65536,
+        131072,
+        196608,
+        262144,
+        327680,
+        393216,
+        458752,
+        524288
+      ],
+      "validation_success_percent": [
+        83.4375,
+        71.5625,
+        58.12500000000001,
+        45.9375,
+        40.9375,
+        25.937500000000004,
+        44.0625,
+        50.625,
+        82.5
+      ],
+      "selected_steps": 0
+    },
+    {
+      "stage": "development",
+      "algorithm": "TD3",
+      "seed": 16201,
+      "steps": [
+        0,
+        65536,
+        131072,
+        196608,
+        262144,
+        327680,
+        393216,
+        458752,
+        524288
+      ],
+      "validation_success_percent": [
+        83.4375,
+        34.6875,
+        43.4375,
+        45.9375,
+        17.5,
+        19.6875,
+        17.8125,
+        12.812499999999998,
+        11.5625
+      ],
+      "selected_steps": 0
+    },
+    {
+      "stage": "development",
+      "algorithm": "PPO",
+      "seed": 16203,
+      "steps": [
+        0,
+        65536,
+        131072,
+        196608,
+        262144,
+        327680,
+        393216,
+        458752,
+        524288
+      ],
+      "validation_success_percent": [
+        83.4375,
+        85.9375,
+        81.875,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        96.25,
+        92.8125
+      ],
+      "selected_steps": 262144
+    },
+    {
+      "stage": "formal",
+      "algorithm": "PPO",
+      "seed": 111,
+      "steps": [
+        0,
+        65536,
+        131072,
+        196608,
+        262144,
+        327680,
+        393216,
+        458752,
+        524288,
+        589824,
+        655360,
+        720896,
+        786432,
+        851968,
+        917504,
+        983040,
+        1048576
+      ],
+      "validation_success_percent": [
+        83.4375,
+        88.75,
+        90.3125,
+        100.0,
+        100.0,
+        98.4375,
+        91.25,
+        85.9375,
+        78.75,
+        77.1875,
+        69.6875,
+        67.1875,
+        64.375,
+        69.375,
+        66.5625,
+        60.3125,
+        50.625
+      ],
+      "selected_steps": 262144
+    },
+    {
+      "stage": "formal",
+      "algorithm": "PPO",
+      "seed": 222,
+      "steps": [
+        0,
+        65536,
+        131072,
+        196608,
+        262144,
+        327680,
+        393216,
+        458752,
+        524288,
+        589824,
+        655360,
+        720896,
+        786432,
+        851968,
+        917504,
+        983040,
+        1048576
+      ],
+      "validation_success_percent": [
+        83.4375,
+        84.0625,
+        85.9375,
+        80.3125,
+        78.125,
+        89.375,
+        100.0,
+        99.375,
+        83.125,
+        76.875,
+        55.3125,
+        56.25,
+        53.125,
+        53.75,
+        45.9375,
+        51.24999999999999,
+        57.8125
+      ],
+      "selected_steps": 393216
+    },
+    {
+      "stage": "formal",
+      "algorithm": "PPO",
+      "seed": 333,
+      "steps": [
+        0,
+        65536,
+        131072,
+        196608,
+        262144,
+        327680,
+        393216,
+        458752,
+        524288,
+        589824,
+        655360,
+        720896,
+        786432,
+        851968,
+        917504,
+        983040,
+        1048576
+      ],
+      "validation_success_percent": [
+        83.4375,
+        93.125,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        98.125,
+        96.25,
+        96.875,
+        90.0,
+        86.875,
+        86.875,
+        80.3125,
+        79.375,
+        73.125,
+        69.375,
+        66.875
+      ],
+      "selected_steps": 327680
+    }
+  ],
+  "copied_figures": [
+    {
+      "source": "结题报告配图/01_正文用图/图1_本体与柔性附件双惯量模型.png",
+      "file": "图02_双惯量柔性附件模型.png"
+    },
+    {
+      "source": "结题报告配图/01_正文用图/图2_PD反馈与PPO连续力矩补偿结构.png",
+      "file": "图03_PD与PPO补偿控制结构.png"
+    },
+    {
+      "source": "结题报告配图/03_SVG原图/图1_本体与柔性附件双惯量模型.svg",
+      "file": "图02_双惯量柔性附件模型.svg"
+    },
+    {
+      "source": "结题报告配图/03_SVG原图/图2_PD反馈与PPO连续力矩补偿结构.svg",
+      "file": "图03_PD与PPO补偿控制结构.svg"
+    }
+  ]
+}

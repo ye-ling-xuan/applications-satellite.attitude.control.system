@@ -1,0 +1,282 @@
+{
+  "passed": true,
+  "episodes": 17280,
+  "transitions": 7603200,
+  "all_27_controller_group_results_checked": true,
+  "scope": "independent SciPy state-space matrix exponential for every transition and complete recorded-command trajectory; deterministic controllers/actions replayed from recorded measurements; all noise and truth-based metrics reconstructed; not a new training or an independent implementation of PPO",
+  "matrix_exponential_implementation": "scipy.linalg.expm, original second-order physical state equations",
+  "freeze_sha256": "804ffd48e5a2de33ebba8382b733b8f33edfd1c31a0e7dcfcc8d32a138dd8e06",
+  "manifest_sha256": "806e9de8f41e777a8d5a396c61cff833d81d735a6130d5e5624a9abc95e35523",
+  "checks": [
+    {
+      "group": "A_original_confirmation",
+      "name": "PID",
+      "episodes": 640,
+      "max_state_transition_residual": 1.1102230246251565e-16,
+      "max_full_recorded_command_replay_error": 9.236441286000042e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "A_original_confirmation",
+      "name": "PID_safe",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 5.030343173527841e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "A_original_confirmation",
+      "name": "PID_strengthened",
+      "episodes": 640,
+      "max_state_transition_residual": 1.1102230246251565e-16,
+      "max_full_recorded_command_replay_error": 9.592751108332492e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "A_original_confirmation",
+      "name": "ZVD_PID",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 6.026429355543428e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "A_original_confirmation",
+      "name": "ZVD_PID_refined",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 4.4798822956121625e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "A_original_confirmation",
+      "name": "LQR_refined",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 6.111208883234111e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "A_original_confirmation",
+      "name": "PID_PPO_111",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 7.770456641412876e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "A_original_confirmation",
+      "name": "PID_PPO_222",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 7.372442000486948e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "A_original_confirmation",
+      "name": "PID_PPO_333",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 4.155252259895742e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "B_initial_vibration",
+      "name": "PID",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 1.0936221218448706e-14,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "B_initial_vibration",
+      "name": "PID_safe",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 5.658399469192065e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "B_initial_vibration",
+      "name": "PID_strengthened",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 1.1510315156008282e-14,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "B_initial_vibration",
+      "name": "ZVD_PID",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 6.534269653135638e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "B_initial_vibration",
+      "name": "ZVD_PID_refined",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 6.031903305965059e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "B_initial_vibration",
+      "name": "LQR_refined",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 4.835852550376992e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "B_initial_vibration",
+      "name": "PID_PPO_111",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 4.9937555853711915e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "B_initial_vibration",
+      "name": "PID_PPO_222",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 7.134458564835196e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "B_initial_vibration",
+      "name": "PID_PPO_333",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 5.078756188661108e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "C_vibration_and_noise",
+      "name": "PID",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 1.1376919642914346e-14,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "C_vibration_and_noise",
+      "name": "PID_safe",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 5.514292906842744e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "C_vibration_and_noise",
+      "name": "PID_strengthened",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 1.5641628888386078e-14,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "C_vibration_and_noise",
+      "name": "ZVD_PID",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 5.25361004699576e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "C_vibration_and_noise",
+      "name": "ZVD_PID_refined",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 6.439930511602243e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "C_vibration_and_noise",
+      "name": "LQR_refined",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 5.4795848847960515e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "C_vibration_and_noise",
+      "name": "PID_PPO_111",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 4.53857871424157e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "C_vibration_and_noise",
+      "name": "PID_PPO_222",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 6.199556113698629e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    },
+    {
+      "group": "C_vibration_and_noise",
+      "name": "PID_PPO_333",
+      "episodes": 640,
+      "max_state_transition_residual": 2.220446049250313e-16,
+      "max_full_recorded_command_replay_error": 4.6412594362395254e-15,
+      "max_policy_action_error": 0.0,
+      "every_measurement_equals_truth_plus_shared_noise": true,
+      "true_state_acceptance": true
+    }
+  ]
+}
